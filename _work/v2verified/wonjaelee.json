@@ -1,0 +1,94 @@
+[
+  {
+    "id": "wonjaelee-g1",
+    "lecture_key": "wonjaelee",
+    "lecture_label": "03-03 암생물학 패러다임 (이원재 교수, 녹음없음 0.8x)",
+    "topic": "핵심 테제/Take-home: 암 = mutation 정의를 넘어선 동적·적응적 조직수준 생태계 (Genomic-centric→Cell state→Systemic→Data-driven 전환)",
+    "exam_probability": 92,
+    "tier": 1,
+    "stem": "다음 중 강의의 결론 슬라이드(Emerging Concepts and Future Directions)가 제시하는 암생물학의 핵심 테제와 패러다임 전환에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "암은 더 이상 돌연변이(mutation)만으로 정의되지 않으며, 진화·면역·공간조직이 빚어내는 동적이고 적응적인 '조직 수준(tissue-level) 생태계'로 이해된다.",
+      "암 이해의 시각은 genomic-centric view에서 출발하여 cell state, systemic view를 거쳐 data-driven pattern recognition으로 이동해 왔다.",
+      "이 슬라이드가 남기는 미해결 질문에는 '암은 결코 낫지 않는 만성 상처인가', '암은 전신·장기 수준 질환인가', '암은 면역 교육의 실패인가', '왜 암은 치료가 어려운가', '다음 패러다임은 무엇인가'가 포함된다.",
+      "패러다임 전환의 종착점은 암을 단일 우성(dominant) driver 돌연변이 하나로 환원하는 genomic determinism의 재확립이며, 미세환경·면역·공간 맥락은 부차적 변수로 간주된다.",
+      "이러한 생태계적 관점은 암을 암세포 단독(cell-autonomous) 현상이 아니라 숙주·면역·공간조직과의 상호작용 속에서 형성되는 시스템으로 본다."
+    ],
+    "answer_index": 3,
+    "explanation": "정답은 4번입니다. 이 강의의 결론(PAGE 57)은 정확히 그 반대를 말합니다. '암은 더 이상 돌연변이만으로 정의되지 않는다(no longer defined solely by mutations)'가 단 하나의 take-home 문장이고, 시각의 이동도 Genomic-centric view → Cell state → Systemic view → Data-driven pattern recognition 방향으로 '유전자 단일 결정론에서 벗어나는' 쪽입니다. 4번은 이 화살표를 거꾸로 돌려 '결국 단일 driver 돌연변이로 환원하는 genomic determinism의 재확립'이라고 적었으니, 강의 전체 서사(Cracks in the Paradigm에서 'Heterogeneity challenges genomic determinism'이라 명시한 PAGE 18 흐름)와 정면으로 충돌하는 명백한 오류입니다. 나머지 1·2·3·5번은 PAGE 57의 thesis 문장, 시각 이동 순서, Remaining questions 5개, 그리고 cell-autonomous view(PAGE 12)를 넘어선 생태계 관점(PAGE 30·32)을 그대로 반영한 옳은 진술입니다.",
+    "correct_fact": "결론 슬라이드(PAGE 57)의 테제는 '암은 더 이상 돌연변이만으로 정의되지 않으며 진화·면역·공간조직이 빚어내는 동적·적응적 조직수준 생태계'이고, 시각의 이동은 Genomic-centric view → Cell state → Systemic view → Data-driven pattern recognition으로 genomic determinism에서 '벗어나는' 방향이다. genomic determinism의 재확립이 아니다.",
+    "selection_reason": "강의의 단일 thesis가 적힌 마지막 결론 슬라이드(last-slide, PAGE 57). 감사파일 why_high_yield: 녹음 강조 부재 deck에서 시험은 이 결론 문장에서 서술형으로 거의 확실히 출제되며 기존 두 문항 모두 미커버 — 가장 큰 갭(exam_prob 92, 최우선).",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "3월 3일 합동강의 (1).pdf", "page": 57, "caption": "Emerging Concepts and Future Directions — 핵심 테제 및 Genomic-centric→Cell state→Systemic→Data-driven 전환"}
+  },
+  {
+    "id": "wonjaelee-g2",
+    "lecture_key": "wonjaelee",
+    "lecture_label": "03-03 암생물학 패러다임 (이원재 교수, 녹음없음 0.8x)",
+    "topic": "기술이 만든 패러다임 전환 연대표(Sanger/NGS/Single-cell/Spatial multi-omics/AI) + Hypothesis-driven vs Data-driven oncology 비교",
+    "exam_probability": 86,
+    "tier": 1,
+    "stem": "다음 중 '기술이 만든 패러다임 전환' 연대표(PAGE 54)와 Data-Based Oncology(PAGE 55)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "1990년대 Sanger sequencing은 driver mutation의 동정(identification)을, 2000년대 NGS는 cancer genome 차원의 해독을 가능하게 했다.",
+      "2010년대 single-cell 기술은 종양 내 이질성(intra-tumoral heterogeneity)을, 2020년대 spatial multi-omics는 종양 생태계(tumor ecosystem)의 이해를 가능하게 했다.",
+      "현재(Now) AI/ML은 인간의 직관을 넘어선 패턴 발견(pattern discovery beyond human intuition)을 가능하게 하는 단계로 제시된다.",
+      "old paradigm인 hypothesis-driven biology는 'KRAS가 중요한가?'와 같은 가설을 세워 표적 실험을 설계하고 특정 기전을 검증하는 방식이다.",
+      "new paradigm인 data-driven oncology는 먼저 특정 가설을 확정한 뒤 그 가설에 맞는 multi-omics 데이터만 선별 수집하여 검증하며, 데이터는 가설을 뒷받침하는 보조 수단에 머문다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번입니다. PAGE 55의 핵심 대조는 흐름의 '방향'에 있습니다. old paradigm(hypothesis-driven)은 '가설 먼저 → 실험'이고, new paradigm(data-driven)은 정반대로 'Data first → hypothesis generation', 즉 '데이터가 먼저 인간 직관을 넘어선 패턴을 드러내고 거기서 가설이 생성'됩니다(From hypothesis-driven to discovery-driven biology). 5번은 이 화살표를 거꾸로 돌려 '가설을 먼저 확정한 뒤 맞는 데이터만 선별'이라고 적었으니 data-driven의 정의를 정반대로 뒤집은 오류입니다. 1~4번은 PAGE 54 연대표(Sanger→NGS→Single-cell→Spatial multi-omics→AI/ML)와 PAGE 55 hypothesis-driven 정의를 그대로 반영한 옳은 진술입니다.",
+    "correct_fact": "Data-driven oncology(new paradigm)의 본질은 'Data first → hypothesis generation'으로, 데이터가 먼저 인간 직관을 넘어선 패턴을 드러내고 거기서 가설이 생성되는 discovery-driven 방식이다(PAGE 55). 가설을 먼저 확정하고 맞는 데이터만 모으는 것은 정반대인 old(hypothesis-driven) 패러다임이다.",
+    "selection_reason": "결론부 직전 정리 비교표(PAGE 54 연대표, PAGE 55 old vs new 비교표)로 비교표가 명확히 존재. 감사파일 why_high_yield: 기술↔발견의 매칭·비교는 객관식·서술 모두 출제 단골이며 닫힌우주 진위판정 용이, 현재 완전 미커버(exam_prob 86).",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "3월 3일 합동강의 (1).pdf", "page": 54, "caption": "Technology Creates Paradigm Shifts 연대표(Sanger→NGS→Single-cell→Spatial multi-omics→AI) 및 PAGE 55 Hypothesis-driven vs Data-driven oncology 비교"}
+  },
+  {
+    "id": "wonjaelee-g3",
+    "lecture_key": "wonjaelee",
+    "lecture_label": "03-03 암생물학 패러다임 (이원재 교수, 녹음없음 0.8x)",
+    "topic": "Why is cancer so difficult to cure? 4기전 통합(유전이질성→클론선택 / 가소성→persister / 공간보호→hypoxic·stromal / 면역적응→exhaustion) + 바이러스 진화 유비",
+    "exam_probability": 84,
+    "tier": 1,
+    "stem": "다음 중 '왜 암은 치료가 어려운가(Why is cancer so difficult to cure?)'의 4가지 통합 기전(PAGE 61)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "전체 논리는 종양 내 이질성 → 약물 압력(drug pressure) → 클론 선택(clonal selection) → 내성 클론의 확장(resistant expansion)이라는 진화적 흐름으로 정리된다.",
+      "유전적 이질성(genetic heterogeneity)은 약물 압력 아래에서 '이미 존재하던(pre-existing)' 내성 클론의 선택을 통해 내성을 만든다.",
+      "세포 가소성(cellular plasticity)은 약물 내성 persister 상태의 출현(drug-tolerant persister)을 통해 치료를 회피하게 한다.",
+      "공간적 보호(spatial protection)는 약물 농도 구배·저산소 niche·stromal shielding을 통해 암세포를 보호하며, 면역 적응(immune adaptation)은 checkpoint 상향·T세포 소진(exhaustion)·관용(tolerance) 재프로그래밍으로 작용한다.",
+      "암세포는 바이러스 진화와 달리 돌연변이율이 낮고 선택압을 받지 않으며 실시간으로 적응하지 못하므로, 치료 저항은 주로 약물 자체의 약동학적 한계에서 비롯된다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번입니다. PAGE 61은 마지막 정리 슬라이드에서 암을 바이러스 진화에 '유비(similar to virus evolution)'합니다 — 높은 돌연변이율(high mutation rate), 선택압(selective pressure), 약물 내성과 빠른 적응(drug resistance and rapid adaptation), 그리고 'Cancer cells are evolving in real time(실시간으로 진화)'. 5번은 이 유비를 정면으로 부정하여 '돌연변이율이 낮고 선택압이 없으며 실시간 적응하지 못한다'고 적고 원인을 '약물의 약동학적 한계'로 돌렸으니, 슬라이드의 결론(암은 진화하기 때문에 치료가 어렵다)을 정반대로 뒤집은 오류입니다. 1~4번은 PAGE 61의 전체 흐름(heterogeneity→drug pressure→clonal selection→resistant expansion)과 4기전(유전이질성·가소성·공간보호·면역적응)을 그대로 반영한 옳은 진술입니다.",
+    "correct_fact": "PAGE 61은 암을 바이러스 진화에 유비한다: 높은 돌연변이율·선택압·약물 내성과 빠른 적응을 공유하며 'Cancer cells are evolving in real time'. 치료가 어려운 근본 이유는 암의 실시간 진화/적응이지, 돌연변이율이 낮거나 약물의 약동학적 한계 때문이 아니다.",
+    "selection_reason": "마지막 정리 슬라이드(last-slide, PAGE 61)이면서 강의 전체 개념을 4축으로 통합 — 이유 서술/논술형 최적 소재. 감사파일 why_high_yield: summary 가중이 강하고 현재 미커버(exam_prob 84).",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "3월 3일 합동강의 (1).pdf", "page": 61, "caption": "Why is cancer so difficult to cure? — 4기전(유전이질성/가소성/공간보호/면역적응)과 바이러스 진화 유비"}
+  },
+  {
+    "id": "wonjaelee-g4",
+    "lecture_key": "wonjaelee",
+    "lecture_label": "03-03 암생물학 패러다임 (이원재 교수, 녹음없음 0.8x)",
+    "topic": "Tumor Microenvironment(TME) 정의 및 4구성요소 / 세포 아키텍처(stromal·endothelial·immune·organ-resident)",
+    "exam_probability": 80,
+    "tier": 1,
+    "stem": "다음 중 종양 미세환경(Tumor Microenvironment, TME)의 정의·구성요소 및 세포 아키텍처(PAGE 24, 25)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "TME는 암세포를 둘러싼 복잡하고 동적인 생태계로, 면역세포·혈관·섬유아세포·신호분자·세포외기질(ECM) 등으로 구성된다.",
+      "TME의 구성요소는 세포 성분(immune/non-immune), 물리적 niche(ECM, vasculature), 분자 성분(cytokine, exosome), 대사 성분(ROS, pH)으로 분류된다.",
+      "섬유아세포/기질세포(fibroblastic/stromal cells)는 ECM 리모델링·TGF-β 신호·물리적 장벽 형성을 담당하고, 내피세포(endothelial cells)는 혈관신생과 저산소 구배를 형성한다.",
+      "기질세포(stromal)는 그리스어 strôma('침대/바닥')에서 유래했으며, 구조적 지지와 ECM 생산을 통해 장기 특이적 기능세포(실질세포)를 떠받친다.",
+      "내피세포(endothelial cells)는 TME에서 ECM 리모델링과 TGF-β 신호를 주도하는 핵심 면역감시 세포이며, 장기 특이적 거주세포(예: mesothelial cell)는 혈관신생과 저산소 구배 형성을 전담한다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번입니다. PAGE 25의 세포 아키텍처는 역할이 세포별로 명확히 배정되어 있습니다: (1) fibroblastic/stromal → ECM 리모델링·TGF-β·물리적 장벽, (2) endothelial → angiogenesis·hypoxia gradient, (3) immune → 면역 감시·억제·cytokine 생산, (4) organ-specific resident(예: mesothelial cell) → adhesion·암세포 모집(recruitment). 5번은 이 역할들을 서로 뒤바꿔, 내피세포에 '기질세포의 ECM 리모델링·TGF-β'와 '면역세포의 면역감시' 역할을 붙이고 organ-resident(mesothelial)에 '내피세포의 혈관신생·저산소' 역할을 붙였으므로 세포-기능 매칭이 어긋난 오류입니다. 1~4번은 PAGE 24의 TME 정의·4구성요소와 PAGE 25의 stromal 정의·내피세포 역할을 그대로 반영한 옳은 진술입니다.",
+    "correct_fact": "PAGE 25의 세포-역할 매칭: fibroblastic/stromal=ECM 리모델링·TGF-β·물리적 장벽, endothelial=혈관신생·저산소 구배, immune=면역 감시/억제·cytokine, organ-resident(예: mesothelial)=부착·암세포 모집. 내피세포가 ECM 리모델링/TGF-β/면역감시를 주도하거나 mesothelial이 혈관신생을 전담하는 것이 아니다.",
+    "selection_reason": "패러다임 전환(생태계)의 실질 핵심개념이자 Current landscape 진입의 정의 관문. 감사파일 why_high_yield: 구성요소 분류는 단답/매칭, 세포역할은 기전형 변별이며 PAGE 25는 역할 분류 비교표 성격, 현재 미커버(exam_prob 80).",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "3월 3일 합동강의 (1).pdf", "page": 25, "caption": "Cellular Architecture of the TME — fibroblastic/stromal·endothelial·immune·organ-resident 세포별 역할 분류표"}
+  }
+]

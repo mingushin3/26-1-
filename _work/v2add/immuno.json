@@ -1,0 +1,86 @@
+[
+  {
+    "id": "immuno-g1",
+    "lecture_key": "immuno",
+    "lecture_label": "06-02 면역항암·간암 저항성 (성필수 교수)",
+    "topic": "면역관문억제제 반응을 결정하는 CD8+ T세포 분화상태 (terminal exhaustion vs progenitor/central memory) + 치료 후 동적 변화(expansion·TIGIT)",
+    "exam_probability": 88,
+    "tier": 1,
+    "stem": "다음 중 간암(HCC) 면역관문억제제(ICI) 치료에서 PD-1+CD8+ T세포의 분화상태와 치료 반응성의 관계에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "면역관문억제제는 종양 때문에 피로해진(exhausted) T세포의 브레이크(PD-1 등)를 풀어 재활성화·증식시켜 종양을 죽이는 원리이므로, 치료 전 T세포가 어떤 분화상태에 있느냐가 반응성을 좌우한다.",
+      "TCF-1·CCR7을 발현하는 progenitor-exhausted/central memory 표현형의 T세포는 reservoir 역할을 하여 anti-PD-1 투여 시 클론 증식(clonal expansion)을 일으키므로 반응자(responder)에서 우세하다.",
+      "이미 너무 심하게 피로해져 죽기 직전 상태인 terminally-exhausted T세포는 anti-PD-1을 주어도 증식·반응하지 못하므로 ICI 무반응(unresponsive)과 연관된다.",
+      "전향적 코호트에서 atezolizumab+bevacizumab 치료 후 말초혈 CD8+ T세포가 expansion하고 TIGIT가 상향조절되는 환자는 PFS·OS가 양호하여, 이들 동적 변화가 on-treatment biomarker로 활용된다.",
+      "고갈(exhaustion) 프로그램을 관장하는 master 전사인자는 TCF-1이며, TCF-1이 높을수록 terminal exhaustion이 심화되어 ICI에 반응하지 못한다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번입니다. 두 가지를 뒤집어 놓은 함정 선지예요. 첫째, 고갈(exhaustion) 프로그램을 총괄하는 master 전사인자는 TCF-1이 아니라 TOX입니다(교수: 'exhaustion 프로그램을 관장하는 master transcription factor가 TOX, 3년 전 Nature에 깔렸다'). 둘째, TCF-1은 오히려 progenitor/central memory의 마커로, TCF-1·CCR7이 높은 세포가 reservoir 역할을 해서 anti-PD-1에 클론 증식하며 '반응'합니다. 즉 TCF-1↑는 terminal exhaustion이 아니라 반응성과 연결됩니다. 핵심 한 줄: '적당히 지친(progenitor, TCF-1/CCR7) 세포는 브레이크를 풀면 폭발적으로 증식해 종양을 죽이고(responder), 죽기 직전까지 간 terminal exhaustion(TOXhi)은 아무리 anti-PD-1을 줘도 안 깨어난다(non-responder)'. 반응자는 치료 후 말초혈 CD8+ T세포 expansion·TIGIT 상향조절을 보여 on-treatment biomarker가 됩니다.",
+    "correct_fact": "고갈(exhaustion) 프로그램의 master 전사인자는 TOX이며, TCF-1·CCR7은 progenitor/central memory(반응자) 표현형의 마커로 anti-PD-1 투여 시 클론 증식을 일으켜 ICI 반응성과 연관된다.",
+    "selection_reason": "마지막 슬라이드 Summary(p62) 5개 take-home 중 4번째 단독 항목으로 명시되었고, 교수가 강의 말미 핵심포인트 재정리(34:37~)에서 'dynamic expansion ... central memory phenotype ... terminal exhaustion'을 직접 재언급(S2·S5). 비교·기전형 박사 변별 문항인데 기존 4문항 어디에도 미커버였던 최우선 갭.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "202606 대학원 통합강의_ 종양면역학 (1).pdf",
+      "page": 42,
+      "caption": "T세포 분화상태와 클론증식: Central memory/Progenitor-exhausted('Responders to ICIs') vs Terminally-exhausted('ICI unresponsive') 비교 도식"
+    }
+  },
+  {
+    "id": "immuno-g2",
+    "lecture_key": "immuno",
+    "lecture_label": "06-02 면역항암·간암 저항성 (성필수 교수)",
+    "topic": "PD-L1 발현과 면역치료 반응성(상식 암기) + PD-L1 CPS(combined positive score) 계산식·임상 의의",
+    "exam_probability": 86,
+    "tier": 1,
+    "stem": "다음 중 PD-L1 발현 및 PD-L1 CPS(combined positive score)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "PD-L1은 종양세포 표면에 발현하여 T세포의 PD-1과 결합해 T세포 기능을 떨어뜨리며, 항-PD-1/PD-L1 면역항암제는 바로 이 축을 차단하므로 종양의 PD-L1 발현이 높을수록 면역치료 반응이 좋은 경향이 있다.",
+      "종양이 염증을 잘 일으키고 면역원성이 좋을수록 그 결과로 PD-L1 발현이 높아지므로, PD-L1 고발현은 그 종양의 면역원성이 좋다는 간접 지표로 해석할 수 있다.",
+      "CPS의 분자(numerator)는 PD-L1 양성으로 염색된 세포 수로, 종양세포뿐 아니라 림프구·대식세포까지 포함하며, 분모(denominator)는 전체 생존(viable) 종양세포 수이다.",
+      "CPS는 분자÷분모에 100을 곱해 계산하며, 계산값이 100을 넘더라도 최대 점수는 CPS 100으로 정의한다.",
+      "CPS의 분자(numerator)는 PD-L1 양성 '종양세포'만을 세며, 침윤 림프구·대식세포의 PD-L1 염색은 위양성을 줄이기 위해 분자에서 제외하는 것이 표준이다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번입니다. CPS 함정의 핵심이 바로 분자(numerator) 구성입니다. CPS 분자에는 PD-L1 양성으로 염색된 '종양세포 + 림프구 + 대식세포'가 모두 들어갑니다(슬라이드 p36 계산식). 5번처럼 '종양세포만 세고 림프구·대식세포는 제외'한다는 것은 정반대로, 'TPS(tumor proportion score)'와 혼동한 흔한 오개념입니다. 정리하면 CPS = (PD-L1+ 세포[종양세포+림프구+대식세포] ÷ 생존 종양세포 수) × 100, 최대 100으로 cap. 교수가 '이건 상식적으로 하나 기억해 놓으세요'라고 유일하게 직접 암기 지시하고 '임상에서 굉장히 많이 써요'라고 강조한 항목이니 분자에 면역세포가 포함된다는 점을 꼭 잡으세요.",
+    "correct_fact": "CPS 분자에는 PD-L1 양성으로 염색된 종양세포 + 림프구 + 대식세포가 모두 포함된다(분자에서 면역세포를 제외하는 것은 TPS이며 CPS가 아니다).",
+    "selection_reason": "교수가 강의 중 유일하게 '상식적으로 하나 기억해 놓으세요'라고 직접 암기 지시(S6)하고 'CPS는 임상에서 굉장히 많이 써요'라며 임상 의의를 강조(S2)한 항목. 비교표 슬라이드(p36)의 계산식 분자 구성요소는 함정 출제 1순위이며 기존 문항 미커버.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "202606 대학원 통합강의_ 종양면역학 (1).pdf",
+      "page": 36,
+      "caption": "PD-L1 CPS 계산식: 분자=PD-L1 염색세포(종양세포·림프구·대식세포), 분모=생존 종양세포, ×100(최대 100)"
+    }
+  },
+  {
+    "id": "immuno-g3",
+    "lecture_key": "immuno",
+    "lecture_label": "06-02 면역항암·간암 저항성 (성필수 교수)",
+    "topic": "면역치료 저항성 극복 3대 전략 (LRT/항암제 병용으로 cold→hot 전환·면역억제세포 depletion·입양세포치료) 및 각 기전",
+    "exam_probability": 84,
+    "tier": 1,
+    "stem": "다음 중 간암(HCC)의 면역치료 저항성을 극복하기 위한 3대 전략과 그 기전에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "국소치료(LRT; TACE/RFA)나 세포독성 항암제를 면역항암제와 병용하면 종양 괴사로 항원 방출과 전염증성 사이토카인이 증가하여, 면역세포가 부족한 'cold' 종양을 면역반응이 활발한 'hot' 종양으로 전환시킬 수 있다.",
+      "TAM·CAF 같은 면역억제 세포를 표적·고갈(depletion)시키면 면역 장벽이 해제되어 관문억제제·세포치료의 종양 접근성과 효율이 향상되며, 이것이 두 번째 전략이다.",
+      "자가(autologous) 또는 동종(allogeneic) 입양세포치료(CAR-T 등)는 종양 표면 항원을 직접 인식해 공격하는 세 번째 전략으로, 종양 특이 표적 항원의 존재가 성공의 전제이다.",
+      "면역억제 세포는 처음부터 종양 친화적인 것이 아니라, 초기에는 종양을 제거하는 방향으로 기능하다가 종양세포의 조정으로 면역억제 표현형으로 전환되므로 'depletion'이 합리적 표적 전략이 된다.",
+      "LRT/항암제 병용의 목적은 면역세포가 풍부한 'hot' 종양을 'cold'로 전환하여 과도한 자가면역 독성을 줄이는 데 있으며, 이를 통해 관문억제제 반응이 향상된다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번입니다. 전환 방향이 정반대로 뒤집혀 있습니다. LRT(TACE/RFA)나 항암제를 병용하는 이유는 종양을 괴사시켜 항원·전염증성 사이토카인을 쏟아냄으로써 면역세포가 없던 'cold' 종양을 면역반응이 활활 타는 'hot' 종양으로 바꾸는 데 있습니다('cold→hot'). 5번처럼 'hot을 cold로 전환해 자가면역 독성을 줄인다'는 것은 목적·방향이 모두 반대이고, 그래서는 관문억제제 반응이 오히려 떨어집니다. 강의 말미 재정리와 Summary(p62) 마지막 항목의 3전략을 한 묶음으로 외우세요: ① LRT/항암제 병용으로 cold→hot 전환, ② 면역억제세포(TAM·CAF) 제거, ③ 입양세포치료(CAR-T). 또한 면역억제 세포는 '처음엔 종양을 잡으려다 종양에 조정당해 변절'하므로 제거 대상이 된다는 기전(4번)도 핵심입니다.",
+    "correct_fact": "LRT/항암제 병용의 목적은 종양 괴사로 항원·사이토카인을 늘려 'cold' 종양을 'hot'으로 전환(cold→hot)하여 면역치료 반응을 높이는 것이며, 'hot→cold' 전환이 아니다.",
+    "selection_reason": "마지막 슬라이드 Summary(p62) 다섯 번째(마지막) 항목이자 'Feasible ways to overcome immunotherapy resistance' 슬라이드가 4회 반복(S5)되었고, 교수가 말미 핵심포인트 재정리에서 'Combination therapy 혹은 adoptive cell therapy가 임상시험 중'이라고 직접 재정리. 3전략 통합 나열+기전을 묻는 적용형은 기존 문항(immuno-1·2의 개별 터치) 너머의 미커버 갭.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": false,
+      "pdf": "202606 대학원 통합강의_ 종양면역학 (1).pdf",
+      "page": 45,
+      "caption": "Feasible ways to overcome immunotherapy resistance: ① LRT/항암제 병용 ② 면역억제세포 depletion ③ 입양세포치료"
+    }
+  }
+]

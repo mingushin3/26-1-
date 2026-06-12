@@ -1,0 +1,48 @@
+[
+  {
+    "id": "genetherapy-g1",
+    "lecture_key": "genetherapy",
+    "lecture_label": "04-07 유전자치료→유전체교정 (김영광 교수)",
+    "topic": "Jesse Gelsinger 사례(1999) — adenovirus immunotoxicity 사망 기전 + 임상시험 윤리위반 + AAV 전환 영향",
+    "exam_probability": 78,
+    "tier": 1,
+    "stem": "다음 중 1999년 Jesse Gelsinger 사례와 그것이 유전자치료 분야에 미친 영향에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "전달체로 사용된 아데노바이러스는 면역원성(immunogenicity)이 매우 높은데, 당시 면역원성 개념이 정립되지 않은 상태에서 과량의 벡터를 간동맥에 투여하여 과도한 면역반응이 일어났고 4일 만에 사망에 이르렀다.",
+      "그는 부분적 OTC(ornithine transcarbamylase) 결핍을 앓고 있었으나 비교적 잘 조절되던 경증이어서 반드시 유전자치료가 필요한 상태가 아니었음에도 시험에 포함된, 부적절한 대상 선정 문제가 있었다.",
+      "이전 참여자에게서 발생한 중대한 이상반응(Grade III 간독성)이 FDA에 신속히 보고되지 않았고, 중대 이상반응 발생 시 시험을 중단하도록 한 프로토콜이 지켜지지 않은 위반이 있었다.",
+      "그는 다른 환자들의 심각한 부작용이나 전임상 동물 사망에 대한 정보를 충분히 제공받지 못했고, 벡터 자체에 내재한 위험이 과소평가된 정보·동의상의 문제도 있었다.",
+      "그의 사망은 아데노바이러스가 숙주 유전체에 무작위로 삽입되어 세포 증식 유전자를 과활성화시킨 삽입성 genotoxicity 때문이었으며, 이 사건을 계기로 통합형 렌티바이러스 벡터 사용이 본격화되었다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번. 슬라이드 p14는 사인을 'developed a severe immune reaction to the adenovirus and died 4 days later'로 명시하며, 교수도 '뼈아픈 케이스'라며 사망 원인의 핵심을 immunotoxicity(과도한 면역반응)로 강조했습니다. Gelsinger는 면역원성이 매우 높은 아데노바이러스 벡터를 간동맥에 과량 투여받은 뒤 '코비드 백신 부작용과 비슷한' 과도한 면역반응으로 사망했습니다. 5번은 사망 기전을 '유전체 삽입에 의한 genotoxicity(LMO2형 백혈병 기전)'로 뒤바꾼 인과 전도이며, 아데노바이러스는 숙주 유전체에 통합되지 않습니다. 또한 이 사건의 영향은 '통합형 렌티바이러스 본격화'가 아니라, 한동안 유전자치료 개발이 사실상 중단됐다가 면역원성이 낮은 비통합형 AAV 벡터 중심으로 전환된 것입니다(녹음 14:24~14:58). 즉 5번은 사망 기전(immuno→geno)과 후속 전달체 방향(AAV→Lenti)을 모두 정반대로 뒤집은 함정입니다. 나머지 1~4번은 슬라이드 p14(사인) 및 p15(Clinical Trial Conduct Issues / Information Disclosure and Consent Issues 글머리표)와 그대로 일치합니다.",
+    "correct_fact": "Jesse Gelsinger의 사망 원인은 고면역원성 아데노바이러스 벡터의 과량 투여에 따른 immunotoxicity(과도한 면역반응)이며, 삽입성 genotoxicity가 아니다(슬라이드 p14). 아데노바이러스는 유전체에 통합되지 않는다. 이 사건의 여파로 유전자치료 개발이 일시 중단되었고 이후 면역원성이 낮은 비통합형 AAV 벡터 중심으로 전환되었다(렌티바이러스 본격화가 아님).",
+    "selection_reason": "감사 gaps[] recommend_add=true 중 exam_prob 최상위(78). 필수슬라이드 외 항목이지만 교수가 '표시 외에 한 문제 정도 다른 데서 나온다'고 출제를 직접 예고한 비필수 1순위. 3분+ 분량 집중(S1)·18세 자원자 극적 사례전환(S4)·'뼈아픈 케이스' 경고성 발화(S6)로 스크립트 비중이 압도적이며, 슬라이드 p14-15에 사인·윤리위반 항목이 글머리표로 정리되어 C1 진위판정이 가능. 함정이 immunotoxicity↔genotoxicity 인과 전도 + AAV↔Lenti 방향 반전으로 박사 변별력 높음.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "2026_대학원합동강의_김영광 (1).pdf", "page": 15, "caption": "Jesse Gelsinger Case — Clinical Trial Conduct Issues(부적절 대상선정/AE 미보고/프로토콜 위반) 및 Information Disclosure and Consent Issues 글머리표"}
+  },
+  {
+    "id": "genetherapy-g2",
+    "lecture_key": "genetherapy",
+    "lecture_label": "04-07 유전자치료→유전체교정 (김영광 교수)",
+    "topic": "Sickle cell disease / β-thalassemia — BCL11A knockout으로 fetal hemoglobin(α2γ2) 재활성화 (CRISPR knockout의 임상 적용)",
+    "exam_probability": 70,
+    "tier": 1,
+    "stem": "다음 중 겸상적혈구병(sickle cell disease)·β-지중해빈혈에 대한 유전자치료, 특히 유전자가위를 이용한 치료 기전에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "태아 헤모글로빈은 α-globin 2개와 γ-globin 2개(α2γ2)로 이루어지고, 출생 후에는 BCL11A라는 전사인자가 발현되어 γ-globin을 줄이고 β-globin을 늘려 성인형 헤모글로빈(α2β2)으로 전환된다.",
+      "겸상적혈구병은 β-globin 유전자(HBB)의 c.20A>T 단일염기 치환으로 β-globin 사슬에 문제가 생겨 적혈구가 낫 모양으로 변형되는 상염색체 열성 질환이다.",
+      "유전자가위 치료는 BCL11A 유전자에 이중나선 절단을 일으켜 indel→frameshift→premature stop codon→NMD 경로로 BCL11A를 knockout시킴으로써 억눌려 있던 γ-globin 발현을 되살려 fetal hemoglobin을 재활성화한다.",
+      "이 환자들은 β-globin에는 결함이 있어도 γ-globin은 정상이므로, 재활성화된 fetal hemoglobin이 성인형을 대체해도 일상생활에 문제가 없어 증상이 소실된다.",
+      "이 치료는 환자의 조혈모세포를 채취해 체외(ex vivo)에서 편집한 뒤 되돌려주는 방식으로, 유전자가위로 BCL11A를 과발현시켜 γ-globin 억제를 강화함으로써 fetal hemoglobin을 늘리는 원리이며 2023년 FDA 승인을 받았다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번. 강의 결론부(녹음 45:15~45:46)의 핵심 기전은 BCL11A를 '없애는(knockout)' 것입니다. BCL11A는 출생 후 γ-globin 발현을 '억제'하고 β-globin을 늘려 fetal Hb(α2γ2)를 성인형 Hb(α2β2)로 전환시키는 전사인자입니다(녹음 42:59~43:32). 따라서 BCL11A를 knockout하면 억제가 풀려 γ-globin이 다시 켜지고 fetal hemoglobin이 재활성화됩니다(녹음 45:46~46:28). 5번은 'BCL11A를 과발현시켜 γ-globin 억제를 강화'한다고 했는데, 이는 인과를 정반대로 뒤집은 함정입니다. BCL11A를 과발현시키면 오히려 γ-globin이 더 억눌려 fetal Hb가 줄어들어 치료가 되지 않습니다(옳은 방향은 옵션 3번: knockout→γ 재활성화). ex vivo·2023 FDA 승인 부분 자체는 맞지만 핵심 기전 서술이 틀렸으므로 진술 전체가 옳지 않습니다. 1~4번은 슬라이드 p40(HBB c.20A>T, Autosomal Recessive)과 녹음 41:42~46:28의 설명에 그대로 일치합니다(β-globin 결함이어도 γ-globin은 정상이라 fetal Hb로 증상 소실, 5년 추적에서 수혈 중단).",
+    "correct_fact": "BCL11A는 γ-globin을 '억제'하는 전사인자이므로, 유전자가위로 BCL11A를 knockout(과발현이 아님)해야 억제가 풀려 γ-globin이 재발현되고 fetal hemoglobin(α2γ2)이 재활성화된다(녹음 45:15~46:28). β-globin은 결함이 있어도 γ-globin은 정상이라 fetal Hb 대체만으로 증상이 소실된다.",
+    "selection_reason": "감사 gaps[] recommend_add=true 항목(exam_prob 70). deck '마지막 질환 적용·결론부(take-home)' 슬라이드군에 해당해 써머리 가중 최우선 대상이며, 강의 클라이맥스로 분량 집중(S1)·5년 추적 수혈중단 결과 강조. 이미 출제된 Q4(indel→NMD knockout 기전)를 BCL11A에 '적용'하는 통합형이라 기전+적용 변별력이 높고, BCL11A의 억제자 역할을 모르면 빠지는 인과 전도(knockout↔과발현) 함정으로 박사 변별 포인트(γ-chain은 정상이라 fetal Hb로 증상 소실)를 직격.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "2026_대학원합동강의_김영광 (1).pdf", "page": 40, "caption": "Sickle cell disease — Autosomal Recessive, HBB c.20A>T (p.Glu7Val) (슬라이드 p40); BCL11A knockout→fetal hemoglobin 재활성화 기전은 녹음 45:15~46:28 근거"}
+  }
+]

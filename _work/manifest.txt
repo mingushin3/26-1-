@@ -1,0 +1,14 @@
+wonjaelee	03-03	분자생물학/세포신호(불참, 슬라이드 기반)	이원재(WonJae Lee)	chars=23113	rec=None
+golgi	03-10	골지체 비정형 기능 / 소기관-질병	김지윤	chars=48265	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\03-10 강의 골지체의 비정형 기능, 소기관 위치 기반 질병.txt
+bloodomics	03-17	유전체 기반 혈액암 오믹스	정승현(Seung-Hyun Jung)	chars=53576	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\03-17 강의 유전체 분석 기반 혈액암 오믹스 데이터 분석.txt
+scrna	03-24	단일세포 전사체 scRNAseq	이혜옥(Hae-Ock Lee)	chars=70252	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\03-24 강의 단일세포 전사체 분석 입문.txt
+llmngs	03-31	LLM/NGS/정밀의료 바이오인포	의료정보학교실	chars=39584	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\03-31 강의 LLM, NGS, 정밀의료와 바이오인포매틱스 해.txt
+genetherapy	04-07	유전자치료→유전체교정	김영광	chars=39067	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\04-07 강의 유전자 치료 기술과 최신 동향.txt
+ev	04-14	세포외소포(EV)/액체생검	김일진(Iljin Kim)	chars=35768	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\04-14 강의 세포외 소포(EV) 전주기—정의·분류·기능, 액.txt
+nanomrna	04-21	나노메디슨/mRNA-LNP	구희범(Heebeom Koo)	chars=38274	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\04-21 강의 나노메디슨과 mRNA-LNP 유전자 전달의 임상.txt
+dpath	04-28	디지털병리 WSI/AI	이성학(Sung Hak Lee)	chars=82113	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\04-28 강의 디지털 병리 WSI와 딥러닝 기반 AI 병리 —.txt
+thyroid	05-12	갑상선암/CYFRA 21-1 바이오마커	임동석	chars=83821	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\05-12 강의 갑상선암 진단과 새로운 바이오마커 CYFRA 2.txt
+tert	05-19	TERT/B형간염/간암	장정원(JJW)	chars=81469	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\05-19 강의 B형 간염, TERT, 그리고 간암 발생 메커니.txt
+brain	05-26	신경외과/뇌종양	Stephen Ahn	chars=60424	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\05-26 강의 신경외과 및 뇌종양 치료의 최신 지견.txt
+immuno	06-02	면역항암/간암 저항성	성필수(Pil Soo Sung)	chars=51994	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\06-02 강의 면역항암치료 원리와 간암 저항성 극복 전략.txt
+gastric	06-09	위암 진단/분류/맞춤치료	박재명	chars=25061	rec=C:\Users\aimsb\Downloads\26년 1학기 생명의과학세미나 기말고사\06-09 강의 위암의 진단, 분류 및 최신 맞춤형 치료 전략.txt

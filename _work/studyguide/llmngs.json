@@ -1,0 +1,102 @@
+{
+  "code": "llmngs",
+  "lecture_label": "03-31 LLM·NGS·바이오인포 (의료정보학)",
+  "essence": "하나의 서사로 끝난다: NGS로 시퀀싱 비용이 폭락(→$1,000→$100) → 100만명급 코호트로 genotyping은 '됐다' → 남은 숙제는 phenotype 해석(interpretation) → AI/LLM이 그 해석을 가속하되 성능은 사용자 context에 의존한다.",
+  "analogy": "NGS는 30억 글자 책을 잘게 찢어 한꺼번에 읽는 것. 찢긴 조각(short read)을 원본 책으로 다시 붙이는 게 BWA. 다 읽어도(genotyping) 무슨 뜻인지 해석(interpretation)은 아직 숙제. 그 해석을 도와줄 '박사 10명'이 LLM인데, 좋은 질문(context)을 줘야 박사처럼 일한다.",
+  "concepts": [
+    {
+      "heading": "NGS와 비용 폭락 → 정밀의학의 기술적 토대",
+      "points": [
+        "유전체 1인 = 약 30억(3 billion) 글자(염기/letter), 그래서 데이터가 BIG",
+        "NGS = massively parallel(대규모 병렬) high-throughput, short read로 파편화해 한꺼번에 읽음(2007 등장)",
+        "비용: HGP(1990~2000, 약 10년, 약 $30억) → 2015 약 $1,000 → 2022 약 $100",
+        "HGP는 국제 컨소시엄·desktop 아닌 거대장비; NGS 이후 desktop sequencer로 약 2일 만에 해독",
+        "비용↓ → 100만명급 코호트(All of Us 100만, UK Biobank 50만, FinnGen, deCODE) 현실화 → 정밀의학 점화"
+      ]
+    },
+    {
+      "heading": "short read 매핑 = BWA(Burrows-Wheeler) ★방향 주의★",
+      "points": [
+        "파편(short read)은 그 자체로 '쓰레기' → 참조유전체에 정렬(alignment)해야 정보가 됨",
+        "BWA = 가장 빠름 + 메모리 <3Gb + zipping(압축) 기법 차용 (슬라이드 PAGE 15 명시)",
+        "방향: 압축(zipping, 70~80년대 개발) → 후에 정렬(alignment)에 차용 ✅ (반대 아님!)",
+        "참고 대조: 두 시퀀스 비교(pairwise alignment) = Smith-Waterman(dynamic programming). BWA는 파편을 원본으로 재조립하는 short-read mapping",
+        "교수 강조: '전혀 상관없어 보이는 분야 연결(connecting dots)은 아직 인간의 역할'"
+      ]
+    },
+    {
+      "heading": "정밀의학: Genotyping은 됐다, Interpretation이 숙제",
+      "points": [
+        "궁극 목표 = genotype 기반 phenotype 예측(genotype-based prediction of phenotype) (PAGE 34)",
+        "유전체 해독 3단계: (1)Sequencing → (2)Annotate → (3)functional Interpret (순서 고정, PAGE 39)",
+        "genotyping: NGS로 수일 내 $100~$1,000 → 기술적으로 됨",
+        "interpretation: 30억 글자·2만여 유전자 대부분은 근거 부족 → 아직 제한적",
+        "개인 간 차이(SNP) = genome의 약 0.1% = 약 2~3백만 개(geno-wide)"
+      ],
+      "table": {
+        "title": "Genotyping vs Interpretation (강의 핵심 대조)",
+        "columns": ["축", "Genotyping", "Interpretation"],
+        "rows": [
+          ["내용", "30억 염기 해독(읽기)", "서열→표현형 의미 해석"],
+          ["현재 상태", "됨 ($100~$1,000, 수일)", "대부분 미해결(근거 부족)"],
+          ["대표 성공례", "NGS 표준화", "BRCA1/2 (22,000 유전자 중 하나)"],
+          ["3단계 위치", "(1)Sequencing", "(3)functional Interpret"]
+        ]
+      }
+    },
+    {
+      "heading": "DTC·GWAS·PRS, 그리고 Context matters",
+      "points": [
+        "DTC(Direct-to-Consumer): 의료진·유전상담사 안 거치고 소비자가 직접 검체 보내 결과 받음(예: 23andMe, 버컬 스왑)",
+        "DTC 임상 제한 이유 = 변이-표현형 연관의 population-level 근거 부족 (genotyping은 되나 해석 근거가 없음)",
+        "GWAS: 개별 SNP effect size가 작아 환자/정상 각 1,000명 → 만·십만·국가 100만명까지 키워야 robust 신호",
+        "PRS(Polygenic Risk Score): 다수 SNP 효과 '합산'해 위험도를 확률로 추정(다유전자). 단일유전자 확정진단 아님. 일부 major 질환 외 임상 표준 아직 아님",
+        "Context matters: LLM 유용성은 사용자가 주는 right context(도메인 지식)의 질에 의존. 쿼리를 좁게 제한 X → 풍부한 context를 줘야 'PhD 10명' 수준 끌어냄. AI는 multimodal 통합·해석을 가속"
+      ]
+    }
+  ],
+  "traps": [
+    {
+      "qref": "llmngs-1",
+      "topic": "BWA/Burrows-Wheeler 기원 방향",
+      "correct": "✅ Burrows-Wheeler는 데이터 압축(zipping)용으로 70~80년대 개발 → 이후 NGS short read 정렬(alignment)에 차용되어 가장 빠른 매핑 표준(BWA)이 됨. 즉 '압축 → 정렬' 순서.",
+      "trap": "❌ '처음부터 유전체 정렬을 목표로 설계됐다가 후에 데이터 압축으로 응용됐다'(인과·방향 정반대)."
+    },
+    {
+      "qref": "llmngs-2",
+      "topic": "PRS(Polygenic Risk Score)의 정의·규모·임상지위",
+      "correct": "✅ PRS는 다수 SNP 효과를 합산해 위험도를 확률적으로 추정하는 '다유전자' 방법. GWAS는 effect size가 작아 수만~국가 100만명급 대규모 코호트 필요. 일부 major 질환 외엔 임상 표준 아직 아님.",
+      "trap": "❌ 'PRS는 단일 유전자 변이만으로 질환을 확정 진단하고, 수백 명 소수 코호트 기반이며, 이미 거의 모든 복합질환에서 임상 표준으로 정착'(정의·규모·과장 3중 오류)."
+    },
+    {
+      "qref": "llmngs-g1",
+      "topic": "'Context matters' — 사용자 context의 역할",
+      "correct": "✅ LLM 유용성은 사용자가 주는 right context(도메인 지식·콘텐츠) 질에 의존. 쿼리를 좁게 제한하기보다 풍부한 context를 줘야 PhD 수준 성능을 끌어냄. 사용자 전문 context는 핵심 자원이고, 무관해 보이는 분야 연결은 여전히 인간의 역할.",
+      "trap": "❌ '도메인 지식 없이 쿼리를 좁고 구체적으로 여러 번 던지는 게 핵심이며, 사용자의 전문 context는 오히려 모델 성능의 병목(bottleneck)이다'(정반대)."
+    },
+    {
+      "qref": "llmngs-g2",
+      "topic": "유전체 해독 3단계 순서·인과",
+      "correct": "✅ 올바른 3단계 = (1)Sequencing → (2)Annotate → (3)functional Interpret. Sequencing(genotyping)이 먼저이고 functional interpretation이 마지막·미해결 단계.",
+      "trap": "❌ '(1)Sequencing → (3)annotation → (2)functional interpretation 순이며, functional interpretation이 먼저 끝나야 sequencing이 의미를 갖는다'(순서·인과 역전)."
+    }
+  ],
+  "memorize": [
+    "비용: HGP 약$30억/10년 → 2015 $1,000 → 2022 $100. NGS = massively parallel short-read.",
+    "BWA 방향: 압축(zipping) → 정렬(alignment) 차용. (Smith-Waterman = 두 서열 비교/dynamic programming)",
+    "3단계: Sequencing → Annotate → Interpret. genotyping은 됨, interpretation이 숙제.",
+    "PRS = 다수 SNP 합산 확률(다유전자), 100만명급 코호트 필요. Context matters: context를 줘라(쿼리 제한이 병목)."
+  ],
+  "figures": [
+    {
+      "caption": "WGS 비용 곡선: HGP(약 13년, 약 $30억) vs NGS(Illumina X10, 약 2일, 약 $1,000). NGS 등장 시점에서 비용이 급락하는 그래프.",
+      "pdf": "3월 31일_대학원공개강의 (1).pdf",
+      "page": 11
+    },
+    {
+      "caption": "유전체 해독의 3단계: (1) Sequencing nucleotides/base pairs (2) Annotate (3) functional Interpret — 'How to read the genome'.",
+      "pdf": "3월 31일_대학원공개강의 (1).pdf",
+      "page": 39
+    }
+  ]
+}

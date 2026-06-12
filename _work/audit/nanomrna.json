@@ -1,0 +1,130 @@
+{
+  "lecture_key": "nanomrna",
+  "lecture_label": "04-21 나노메디슨·mRNA-LNP (구희범)",
+  "summary_universe": [
+    {
+      "topic": "왜 '나노' 크기인가 — 의료용 NP의 크기 논리(small molecule/protein보다 크고 cell/bacteria보다 작음, 바이러스 유사 50~수백 nm), renal clearance 회피·lung capillary trap 회피·endocytosis uptake·blood circulation 최적화",
+      "source": "슬라이드 p2 'Why nano? DNA, protein, drug < nanoparticle < cell' (도입 핵심 슬라이드)",
+      "exam_prob": 80,
+      "reason": "닫힌우주 슬라이드(p2)가 명시적 부등식 비교로 직접 제시 → C1 진위판정 강함. 도입부 분량 집중(S1)+크기객체 반복비교(S5,S7). 기전·비교형 변별 가능."
+    },
+    {
+      "topic": "EPR 효과(Enhanced Permeability and Retention) 기전 + passive targeting vs active targeting(ligand: antibody/peptide/aptamer)",
+      "source": "슬라이드 p4 'EPR effect, passive and active targeting of tumor tissue' (핵심 개념 슬라이드, Nat. Nanotech. 2007 인용)",
+      "exam_prob": 82,
+      "reason": "슬라이드 제목에 passive/active 비교가 명시 → C1 강함. 종양 leaky vasculature vs 정상혈관 대조(S7), 담화표지 다수(S2). 기전+비교 동시 출제 가능한 고변별 토픽."
+    },
+    {
+      "topic": "유전자 전달 3대 분류: Viral vector(lentivirus 연구용/AAV 임상) vs Physical method(microinjection·electroporation·ultrasound, in vivo 불가) vs Non-viral system(LNP·polymer·EV/exosome)",
+      "source": "슬라이드 p15 'Gene delivery' (Int. J. Mol. Sci. 2024 도식, 분류 앵커)",
+      "exam_prob": 80,
+      "reason": "명시적 3분류 비교구조(S7)+안전성 경고(S6, 'genome integration·사망')+박사과정 경험담 패턴전환(B1). 서술형 1순위. 슬라이드 도식이 분류표를 직접 제공."
+    },
+    {
+      "topic": "mRNA-LNP 백신 플랫폼 vs 바이러스 벡터/단백질-불활화 백신 — 역사적 순서·점유율 비교, COVID로 mRNA-LNP가 백신 최초 적용·완승, 정부 선주문 일화",
+      "source": "슬라이드 p16~18 'mRNA-LNP' (3장 연속 핵심 슬라이드)",
+      "exam_prob": 84,
+      "reason": "deck에서 가장 분량·강조 집중(S1,S5), 비교구조(S7), 경고성+개인 일화 패턴전환(B1). p16~18을 3장 할애한 점이 강조 신호. 비교/기전 서술형 최우선."
+    },
+    {
+      "topic": "mRNA-LNP 구성·제조 원리: ionizable cationic lipid·cholesterol·phospholipid·PEG-lipid 4성분, microfluidic device로 encapsulation, mRNA+LNP 두 핵심기술(Karikó·Weissman pseudouridine 면역회피 + Robert Langer LNP)",
+      "source": "슬라이드 p19 ONPATTRO 'Components: siRNA, ionizable cationic lipids, cholesterol, phospholipids, PEG-lipids' + p29 'Microfluidics for LNP optimization / new ionizable lipid'",
+      "exam_prob": 75,
+      "reason": "LNP 4대 구성요소가 슬라이드 p19에 텍스트로 명시 → C1 진위판정 강함(현재 문항이 봉입 개념만 다루고 4성분 조성은 미커버). 단답·기전 변별 가능."
+    },
+    {
+      "topic": "ONPATTRO(Patisiran): 최초 LNP siRNA 치료제, hATTR amyloidosis, IV infusion, 50 nm LNP, 2018 FDA(COVID 이전), siRNA(double-strand) vs mRNA(single-strand) 차이",
+      "source": "슬라이드 p19 'ONPATTRO (Patisiran): RNAi-based drug ... 2018/USA, siRNA, LNP 50nm'",
+      "exam_prob": 72,
+      "reason": "슬라이드 p19에 제약사·승인연도·적응증·구성이 표/텍스트로 상세 기재 → C1 매우 강함. LNP 역사(2018 siRNA→2020 mRNA)의 비교 앵커. 현재 문항 미커버 갭."
+    },
+    {
+      "topic": "AAV(viral) vs LNP(non-viral) 전달체 장단점 비교: 전달효율·발현지속성·탑재 유전자크기·안전성(genome integration)·생산비용·임상승인 — 상황별 선호",
+      "source": "슬라이드 p15 'Gene delivery' 도식 + 강의 결론부 'AAV·LNP 장단점' (초안 Q5)",
+      "exam_prob": 70,
+      "reason": "교수가 결론부에서 'AAV 절대 나쁜 게 아니라'며 오해방지 경고(S6)와 함께 명시적 장단점 비교(S7). 비교형 변별 우수. 단 세부표는 슬라이드보다 녹음 의존(C1 medium)."
+    },
+    {
+      "topic": "FDA 승인 상용 나노제형 예시: Doxil(doxorubicin/liposome), Abraxane(paclitaxel/albumin NP), Genexol-PM(paclitaxel/polymer micelle, 삼양바이오팜 국내승인)",
+      "source": "슬라이드 p5 'Commercialized nanoparticles for drug delivery' / p6 'for drug & gene delivery'",
+      "exam_prob": 58,
+      "reason": "슬라이드 p5~6이 상용 제형 표를 직접 제시(B2 후보), 교수가 행 단위로 읽어줌. 단답/빈칸 TIER2. 단순암기 비중이라 박사 변별력은 낮아 보조문항급."
+    },
+    {
+      "topic": "Lung/liver/spleen 장기 선택적 LNP 타깃팅 — lipid 조성·비율 디자인으로 IV 후 특정 장기 발현 제어, lung-targeting LNP로 TRAIL & BAK-mRNA 폐암 치료(combination apoptosis)",
+      "source": "슬라이드 p25~27 'mRNA-LNP for lung cancer therapy, lung-targeting LNP, TRAIL & BAK-mRNA' (Chem. Eng. J. 2025)",
+      "exam_prob": 55,
+      "reason": "deck 후반 3장 연속(p25~27) 최신 연구. lipid 조성→장기 타깃팅은 최신 LNP 트렌드로 적용/기전형 변별 가능하나 교수 자기연구 소개 성격(mid). 슬라이드 텍스트로 진위 가능."
+    },
+    {
+      "topic": "Nrf2-mRNA LNP를 이용한 줄기세포 치료 — 항산화 Nrf2 mRNA로 hMSC oxidative stress 저감·생존율↑·DNA repair·골재생(ex vivo treat 후 이식)",
+      "source": "슬라이드 p20~24 'Nanoparticle for mRNA delivery for stem cell therapy, Nrf2-mRNA and Dex' (ACS Nano 2024)",
+      "exam_prob": 50,
+      "reason": "deck 5장 연속(p20~24) 할애로 분량은 크나 교수 자기연구 사례. 단답(Nrf2 역할)~적용형 가능. 슬라이드 제목으로 진위 판정 가능."
+    },
+    {
+      "topic": "Summary 슬라이드 — 'What can materials do in biomedical fields?': Lab↔Clinic 순환구조(Clinical unmet needs→Biomedical application→Lab→Clinic), 생체재료의 범용 적용성·future direction",
+      "source": "슬라이드 p34 'Summary' (deck 유일 명시적 Summary 슬라이드, 마지막 3장 중 take-home)",
+      "exam_prob": 45,
+      "reason": "[써머리 가중] deck 유일 'Summary' 슬라이드. 교수 강조 mid이므로 써머리 가중 강하게 적용. 다만 개념적 take-home(연구철학)이라 변별형 문항화는 제한적, 서술 보조용."
+    }
+  ],
+  "current_topics": [
+    {
+      "id": "nanomrna-1",
+      "topic": "mRNA-LNP 플랫폼 + COVID-19 백신(Pfizer/Moderna vs 바이러스 벡터, Langer, Karikó/Weissman)",
+      "exam_prob_reassessed": 84,
+      "keep": true,
+      "note": "summary_universe 최상위(p16~18 3장 할애) 정조준. 5지선다 이중오류 정답이 견고하고 기전+비교+일화 모두 포섭. 다만 세부는 녹음 의존(scope_confidence medium)이나 토픽 앵커는 슬라이드 존재. 유지."
+    },
+    {
+      "id": "nanomrna-2",
+      "topic": "유전자 전달 3대 분류(Viral / Physical / Non-viral)",
+      "exam_prob_reassessed": 80,
+      "keep": true,
+      "note": "p15 'Gene delivery' 앵커. 명시적 3분류 비교(S7)+경고(S6)로 서술형 1순위 토픽을 객관식화. 정답(맨몸 핵산 전제 부정)이 강의 출발전제를 정확히 반영. 유지."
+    },
+    {
+      "id": "nanomrna-3",
+      "topic": "NP 크기 논리(small molecule·cell·lung capillary 비교) + EPR effect",
+      "exam_prob_reassessed": 82,
+      "keep": true,
+      "note": "p2(크기 부등식)+p4(EPR) 두 핵심 슬라이드 직접 근거로 scope_confidence high. EPR 기전 역전 정답이 깔끔. 닫힌우주 근거가 3문항 중 가장 강함. 유지."
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "mRNA-LNP의 4대 구성성분(ionizable cationic lipid / cholesterol / phospholipid / PEG-lipid)과 microfluidic encapsulation 제조 원리",
+      "source_slide": "p19(ONPATTRO Components 텍스트) + p29(Microfluidics for LNP optimization, new ionizable lipid)",
+      "exam_prob": 75,
+      "why_high_yield": "비교표 아님이나 슬라이드 p19에 4성분이 텍스트로 '명시'되어 C1 진위판정이 매우 강함. 현재 3문항은 LNP의 '봉입/전달 역할'만 다루고 '무엇으로 이뤄졌나(조성)'는 전혀 미커버 → 단답·기전 변별 가능한 명백한 갭. ionizable lipid는 p29 on-going project로도 강조됨.",
+      "recommend_add": true
+    },
+    {
+      "topic": "ONPATTRO(Patisiran): 최초 LNP siRNA 치료제(2018 FDA, COVID 이전), hATTR amyloidosis, 50nm IV LNP / siRNA(double-strand) vs mRNA(single-strand) 차이",
+      "source_slide": "p19 'ONPATTRO (Patisiran): RNAi-based drug ... 2018/USA, siRNA, LNP 50nm, Components...'",
+      "exam_prob": 70,
+      "why_high_yield": "deck에서 가장 텍스트가 풍부한 단일 슬라이드(제약사·연도·적응증·구성·투여경로 표). LNP 기술史의 핵심 앵커(2018 siRNA→2020 mRNA로 동일 플랫폼 전용)로 mRNA-LNP 문항(nanomrna-1)과 비교 시너지. 비교표 성격 + 슬라이드 단독으로 진위판정 가능한데 현재 미커버.",
+      "recommend_add": true
+    },
+    {
+      "topic": "AAV(viral) vs LNP(non-viral) 전달체 장단점 종합 비교(효율·발현지속성·유전자 탑재크기·안전성·비용·임상승인)와 상황별 선호",
+      "source_slide": "p15 'Gene delivery' 도식 (세부 비교는 강의 결론부 'AAV·LNP 장단점')",
+      "exam_prob": 68,
+      "why_high_yield": "교수가 강의 마무리(결론부)에서 'AAV가 절대 나쁜 게 아니라'는 오해방지 경고(S6)와 함께 항목별 장단점을 비교(S7)한 비교표형 토픽 → take-home 성격. 박사 변별 핵심인 기전/비교/적용형. 현재 nanomrna-2가 분류만 다루고 AAV vs LNP 직접 trade-off 비교는 미커버.",
+      "recommend_add": true
+    },
+    {
+      "topic": "FDA 승인 상용 나노제형 예시(Doxil/liposome, Abraxane/albumin, Genexol-PM/polymer micelle·삼양바이오팜)",
+      "source_slide": "p5~6 'Commercialized nanoparticles for drug (& gene) delivery'",
+      "exam_prob": 56,
+      "why_high_yield": "슬라이드 p5~6이 상용제형을 표로 정리, 교수가 행 단위로 읽어줌(B2). 다만 단순암기 위주라 박사 변별력 낮음 → 객관식 distractor/단답 보조문항급. 우선순위는 위 3개보다 낮음.",
+      "recommend_add": false
+    }
+  ],
+  "weak_to_replace": [],
+  "verdict": "needs_additions",
+  "recommended_add_count": 2,
+  "recommended_drop_ids": [],
+  "notes": "현재 3문항(크기+EPR / 유전자전달 3분류 / mRNA-LNP·COVID)은 이 강의 최상위 강조 토픽 3개를 정확히 정조준했고 약문항·중복·단순암기 과잉이 없어 교체(weak_to_replace)는 없음 → drop 0. 다만 닫힌우주(C1) 기준 가장 텍스트가 풍부한 슬라이드 p19(ONPATTRO/LNP 4성분)가 통째로 미커버이고, 강의 결론부의 AAV vs LNP 장단점 비교(take-home)도 미커버라 needs_additions. 권장 추가 2개: (1) LNP 구성성분/제조(p19+p29, exam_prob 75, 최우선), (2) AAV vs LNP 비교 또는 ONPATTRO 역사(p19·p15, exam_prob 68~70). 써머리 가중 적용 결과: 전용 요약슬라이드 p34는 연구철학 take-home이라 변별형 문항화 제한적이므로 독립 추가보다 서술형 마무리 근거로만 활용 권장. FDA 상용제형(p5~6)은 단답 보조용으로 여력 시 1개. 강의 자체가 guest-lecture(자기연구 소개) 성격이라 전반 출제밀도는 mid로 추정되며, 슬라이드 텍스트 빈약 슬라이드(p7~14, p20~33 자기연구)는 niche로 독립 출제 비권장."
+}

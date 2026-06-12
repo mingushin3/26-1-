@@ -1,0 +1,943 @@
+# 강의 번들: 04-07 유전자치료→유전체교정
+- 교수: 김영광
+- 슬라이드 PDF: ['2026_대학원합동강의_김영광 (1).pdf', '2026_대학원합동강의_김영광_시험_필수슬라이드.pdf']
+- 비고: 시험 필수슬라이드(7장)=출제범위 핵심
+
+
+================ [SLIDE TEXT — 출제범위(C1) 닫힌 우주의 사실원] ================
+
+--- [PAGE 1/47] 2026_대학원합동강의_김영광 (1).pdf ---
+Treatment of Genetic disease
+from Gene therapy to genome editing
+가톨릭대학교의과대학병리학교실
+김영광
+(2026.04.07)
+
+--- [PAGE 2/47] 2026_대학원합동강의_김영광 (1).pdf ---
+목차
+I.
+Introduction to gene therapy
+II. Gene replacement/silencing
+III. Genome editing technology
+IV. Gene therapy to disease
+
+--- [PAGE 3/47] 2026_대학원합동강의_김영광 (1).pdf ---
+I. INTRODUCTION TO GENE THERAPY
+
+--- [PAGE 4/47] 2026_대학원합동강의_김영광 (1).pdf ---
+GENE THERAPY
+• Administration of genetic material (DNA or RNA) to modify or 
+manipulate the expression of a gene product or to alter the 
+biological properties of living cells for therapeutic use (FDA)
+1.
+Gene replacement : the delivery of a functional gene to replace a non working 
+gene
+2.
+Gene silencing : Inactivation of a mutated gene that has become toxic to cells
+3.
+Gene addition: overexpression of a “foreign” or exogenous gene to impact 
+cellular function
+4.
+Gene editing: a permanent manipulation of a gene in a patient’s genome
+Bulcha et al., Sig Transduct Target Ther, 2021
+
+--- [PAGE 5/47] 2026_대학원합동강의_김영광 (1).pdf ---
+GENE THERAPY
+Schambach et al., Lancet, 2024
+
+--- [PAGE 6/47] 2026_대학원합동강의_김영광 (1).pdf ---
+GENE THERAPY MODALITIES
+Bulcha et al., Sig Transduct Target Ther, 2021
+
+--- [PAGE 7/47] 2026_대학원합동강의_김영광 (1).pdf ---
+EX VIVO THERAPY
+• Cells are extracted from the patient (Autologous) and transduced 
+with the gene of interest, and then the cells are returned to the Pts
+•
+Similar to Hematopoietic stem-cell transplantation
+
+--- [PAGE 8/47] 2026_대학원합동강의_김영광 (1).pdf ---
+IN VIVO THERAPY
+• Vector-gene construct is stored frozen; it is then thawed and 
+prepared by a pharmacist
+
+--- [PAGE 9/47] 2026_대학원합동강의_김영광 (1).pdf ---
+GENE THERAPY DELIVERY METHODS
+Singh et al., Cancer Gene Ther, 2022
+
+--- [PAGE 10/47] 2026_대학원합동강의_김영광 (1).pdf ---
+GENE THERAPY DELIVERY METHODS
+Singh et al., Cancer Gene Ther, 2022
+
+--- [PAGE 11/47] 2026_대학원합동강의_김영광 (1).pdf ---
+GENE THERAPY; SAFETY ISSUES
+High et al., NEJM, 2019
+
+--- [PAGE 12/47] 2026_대학원합동강의_김영광 (1).pdf ---
+GENOTOXICITY
+Bushman F., 
+Mol Ther, 2020
+
+--- [PAGE 13/47] 2026_대학원합동강의_김영광 (1).pdf ---
+IMMUNOTOXICITY
+Danaeifar M., 
+Clin Exp Med, 2023
+
+--- [PAGE 14/47] 2026_대학원합동강의_김영광 (1).pdf ---
+JESSE GELSINGER CASE
+• The first person died as a result of a gene therapy 
+clinical trial
+• Died at age 18 (September 17, 1999)
+• Suffered from partial ornithine transcarbamylase 
+deficiency (OTC deficiency)
+• He lived on a strict non-protein diet and controlled his 
+disease fairly well
+• He volunteered for a gene therapy experiment; he 
+thought volunteering could help newborn afflicted with 
+OTC
+• In 13 September, he was administered OTC gene 
+delivered by attenuated adenovirus via injection into 
+hepatic artery
+• He developed a severe immune reaction to the 
+adenovirus and died 4 days later
+
+--- [PAGE 15/47] 2026_대학원합동강의_김영광 (1).pdf ---
+JESSE GELSINGER CASE
+Clinical Trial Conduct Issues
+1.Inappropriate subject selection: Gelsinger was included 
+in the trial despite his liver function (ammonia) not meeting 
+the participation criteria.
+2.Inadequate adverse event reporting: Serious adverse 
+events (Grade III liver toxicity) in previous participants 
+were not promptly reported to the FDA.
+3.Protocol violations: The protocol requiring study 
+suspension upon occurrence of serious adverse events 
+was not followed.
+Information Disclosure and Consent Issues
+1.Incomplete information provision: Gelsinger was not 
+informed about serious side effects in other patients or 
+animal deaths in preclinical studies.
+2.Underestimation of potential risks: The inherent risks of 
+the vector itself were not fully recognized.
+
+--- [PAGE 16/47] 2026_대학원합동강의_김영광 (1).pdf ---
+IMMUNOTOXICITIES
+
+--- [PAGE 17/47] 2026_대학원합동강의_김영광 (1).pdf ---
+II. GENE REPLACEMENT/SILENCING
+
+--- [PAGE 18/47] 2026_대학원합동강의_김영광 (1).pdf ---
+GENE THERAPY
+Liu et al., MedComm, 2024
+
+--- [PAGE 19/47] 2026_대학원합동강의_김영광 (1).pdf ---
+EX VIVO THERAPY - HEMATOPOIETIC STEM CELL 
+TRANSPLANTATION
+Daniel-Moreno et al., 
+Bone Marrow Transplant, 2019
+
+--- [PAGE 20/47] 2026_대학원합동강의_김영광 (1).pdf ---
+EX VIVO THERAPY FOR INHERITED BLOOD DISORDER
+Cavazzana et al., Nat Rev Drug Discov, 2019
+
+--- [PAGE 21/47] 2026_대학원합동강의_김영광 (1).pdf ---
+IN VIVO THERAPY
+Year and drug
+Indication
+Regulatory 
+authority
+Vector
+Route of 
+Administration
+2018
+Voretigene neparvovec-rzyl
+(Luxturna)
+Biallelic RPE65-associated 
+retinal dystrophy
+FDA
+AAV2-RPE65
+Subretinal injection
+2019
+Onasemnogene abeparvovec-
+xioi
+(Zolgensma)
+Patients younger than 2 
+years old with Spinal 
+muscular dystrophy 
+FDA
+AAV9-SMN1
+Intravenous injection
+2022
+Etranacogene dezaparvovec-
+drlb
+(Hemgenix)
+Hemophilia B in adults
+FDA
+AAV5-Factor IX
+Intravenous injection
+2023
+Delandistrogene 
+moxeparvovec-rokl
+(Elevidys)
+Ambulatory Patients older 
+than 4 years old with 
+Duchenne muscular 
+dystrophy (DMD)
+FDA
+AAVrh74-dystrophin
+Intravenous injection
+
+--- [PAGE 22/47] 2026_대학원합동강의_김영광 (1).pdf ---
+ZOLGENSMA –국내에서는?
+
+--- [PAGE 23/47] 2026_대학원합동강의_김영광 (1).pdf ---
+GENE SILENCING
+Lauffer et al., Comm Med, 2024
+Gapmer ASOs bind to their target mRNA to form DNA:RNA 
+hybrids that recruit RNase H for the cleavage of mRNA
+siRNAs enter the cell as double strands and are incorporated 
+into the RNA-induced silencing complex (RISC), where the 
+siRNA gets unwound. The siRNA can now bind to its target 
+mRNA and induce cleavage
+Splice-switching ASOs (ssASOs) bind to pre-mRNA and 
+modulate the splicing process.
+
+--- [PAGE 24/47] 2026_대학원합동강의_김영광 (1).pdf ---
+RNA INTERFERENCE
+Paunovska et al., Nat Rev Genetics, 2022
+Nuclear delivery (pre-mRNA)
+
+--- [PAGE 25/47] 2026_대학원합동강의_김영광 (1).pdf ---
+FAMILIAL HYPERCHOLESTEROLEMIA
+
+--- [PAGE 26/47] 2026_대학원합동강의_김영광 (1).pdf ---
+INCLISIRAN
+Wilkinson et al., J Am Heart Assoc, 2021
+
+--- [PAGE 27/47] 2026_대학원합동강의_김영광 (1).pdf ---
+ASO-MEDIATED GENE REGULATION
+Rinaldi et al., Nat Rev Neurol, 2017
+
+--- [PAGE 28/47] 2026_대학원합동강의_김영광 (1).pdf ---
+DUCHENNE MUSCULAR DYSTROPHY-ASO
+Roberts et al., Nat Rev Drug Disc, 2023
+
+--- [PAGE 29/47] 2026_대학원합동강의_김영광 (1).pdf ---
+III. GENOME EDITING TECHNOLOGY
+
+--- [PAGE 30/47] 2026_대학원합동강의_김영광 (1).pdf ---
+RNA-guided engineered nuclease (RGENs)
+Kim et al. Nat Rev Genetics, 2014
+crRNA: CRISPR RNA, 표적 DNA와 상보결합하는 20bp의 guide sequence (protospacer)를 가지고 있음.
+tracrRNA : trans-activating crRNA, 표적과는 상관없이 동일한 염기서열
+crRNA + tracrRNA : single guide RNA (sgRNA)
+PAM : Protospacer adjacent motif (표적 DNA에 존재)
+
+--- [PAGE 31/47] 2026_대학원합동강의_김영광 (1).pdf ---
+Outcome of genome editing
+Kim et al. Nat Rev Genetics, 2014
+Precise genome editing
+Gene knockout
+HDR = Homology directed Repair
+NHEJ = Non-homologous end 
+joining
+Indel = Insertion or deletion
+
+--- [PAGE 32/47] 2026_대학원합동강의_김영광 (1).pdf ---
+Outcome of genome editing
+Tan et al. Nat Rev Cancer, 2022
+Premature termination codon 
+(PTC)에 의한 NMD 
+(Nonsense mediated decay) 
+pathway의 activation
+-> Gene knockout
+
+--- [PAGE 33/47] 2026_대학원합동강의_김영광 (1).pdf ---
+Limitation of conventional Cas9 system
+-
+Homology directed repair에 의한 유전자편집은 
+비효율적이고, indel이 동반되는 경우가 많으며, 세포
+분열이 일어나지 않는 세포에서는 잘 일어나지 않음
+-
+NHEJ에 의한 무작위적인 서열의 변화가 많아, 단일염
+기 변이 등의 유전자치료를 수행하기 어려움
+-
+이중나선절단에 의해 P53 등의 단백질이 활성화되어, 
+세포독성을 일으켜 apoptosis를 유도함
+-
+이중나선절단은 염색체 수준의 rearrangement를 
+일으킬 수 있음
+-
+Off-target 효과가 많음
+
+--- [PAGE 34/47] 2026_대학원합동강의_김영광 (1).pdf ---
+Next-generation genome editors
+Awwad et al. Nat Rev Mol Cell Biol, 2023
+Do not induce Double strand breaks!
+Cas9 D10A nickase
+-> Inactive RuvC domain -> 
+do not cleave nontarget
+strand
+Cas9 H840A nickase
+-> Inactive HNH domain 
+-> do not cleave target 
+strand
+
+--- [PAGE 35/47] 2026_대학원합동강의_김영광 (1).pdf ---
+Gene regulation by CRISPR/Cas9
+Qi et al. Cell, 2013
+Gilbert et al. Cell, 2013
+CRISPR interference (CRISPRi)
+CRISPR activation (CRISPRa)
+-
+Cas9에 catalytic activity를 없앤 형
+태의 dead Cas9 (dCas9)을 사용하여 
+guide RNA에 의한 target specific 
+DNA binding이 가능.
+-
+dCas9에 결합된 repression 혹은 
+activator domain이 target 영역에
+서의 유전자 발현을 조절함.
+
+--- [PAGE 36/47] 2026_대학원합동강의_김영광 (1).pdf ---
+Regulation of gene expression
+Cox et al. Science, 2018
+Kim et al. Nat Biotechnol, 2018
+Cas13 -> RNA에 결합하여 RNA cleavage
+를 일으킴
+Cas13 에 의해 target mRNA cleavage -> 
+Gene knockdown
+Cas13에 의해 target mRNA의 base 
+editing
+
+--- [PAGE 37/47] 2026_대학원합동강의_김영광 (1).pdf ---
+Toolbox Summary
+Knott et al. Science, 2018
+
+--- [PAGE 38/47] 2026_대학원합동강의_김영광 (1).pdf ---
+IV. GENE THERAPY TO DISEASE
+
+--- [PAGE 39/47] 2026_대학원합동강의_김영광 (1).pdf ---
+Cowan et al., NEJM, 2022
+10 Pts, Artemis deficiency
+SICKLE CELL DISEASE, Β-THALASSEMIA
+
+--- [PAGE 40/47] 2026_대학원합동강의_김영광 (1).pdf ---
+Sickle cell disease
+Autosomal Recessive
+HBB c.20A>T (p.Glu7Val)
+
+--- [PAGE 41/47] 2026_대학원합동강의_김영광 (1).pdf ---
+Gene therapy using lentiviral vector
+Wu et al., Biomarker Res, 2024
+Phase III
+
+--- [PAGE 42/47] 2026_대학원합동강의_김영광 (1).pdf ---
+Sickle cell disease
+
+--- [PAGE 43/47] 2026_대학원합동강의_김영광 (1).pdf ---
+FAMILIAL HYPERCHOLESTEROLEMIA
+
+--- [PAGE 44/47] 2026_대학원합동강의_김영광 (1).pdf ---
+THERAPEUTIC STRATEGIES TARGETING PCSK9
+Rifai et al., Nat Rev Cardiol, 2021
+
+--- [PAGE 45/47] 2026_대학원합동강의_김영광 (1).pdf ---
+INCLISIRAN
+Wilkinson et al., J Am Heart Assoc, 2021
+
+--- [PAGE 46/47] 2026_대학원합동강의_김영광 (1).pdf ---
+PSCK9 gene editing to correct hypercholesterolemia
+Musunuru et al. Nature, 2021
+Organ
+LDL-cholesterol
+
+--- [PAGE 47/47] 2026_대학원합동강의_김영광 (1).pdf ---
+경청해 주셔서 감사합니다!
+김영광  Younggwang Kim
+kygwang@catholic.ac.kr
+가톨릭대학교 의과대학 병리학교실
+서울시 서초구 반포대로 222 옴니버스파크 A동 5128호
+Homepage: Ykimlab529.wordpress.com
+
+
+--- [PAGE 1/7] 2026_대학원합동강의_김영광_시험_필수슬라이드.pdf ---
+GENE THERAPY
+• Administration of genetic material (DNA or RNA) to modify or 
+manipulate the expression of a gene product or to alter the 
+biological properties of living cells for therapeutic use (FDA)
+1.
+Gene replacement : the delivery of a functional gene to replace a non working 
+gene
+2.
+Gene silencing : Inactivation of a mutated gene that has become toxic to cells
+3.
+Gene addition: overexpression of a “foreign” or exogenous gene to impact 
+cellular function
+4.
+Gene editing: a permanent manipulation of a gene in a patient’s genome
+Bulcha et al., Sig Transduct Target Ther, 2021
+
+--- [PAGE 2/7] 2026_대학원합동강의_김영광_시험_필수슬라이드.pdf ---
+GENE THERAPY DELIVERY METHODS
+Singh et al., Cancer Gene Ther, 2022
+
+--- [PAGE 3/7] 2026_대학원합동강의_김영광_시험_필수슬라이드.pdf ---
+GENE SILENCING
+Lauffer et al., Comm Med, 2024
+Gapmer ASOs bind to their target mRNA to form DNA:RNA 
+hybrids that recruit RNase H for the cleavage of mRNA
+siRNAs enter the cell as double strands and are incorporated 
+into the RNA-induced silencing complex (RISC), where the 
+siRNA gets unwound. The siRNA can now bind to its target 
+mRNA and induce cleavage
+Splice-switching ASOs (ssASOs) bind to pre-mRNA and 
+modulate the splicing process.
+
+--- [PAGE 4/7] 2026_대학원합동강의_김영광_시험_필수슬라이드.pdf ---
+RNA INTERFERENCE
+Paunovska et al., Nat Rev Genetics, 2022
+Nuclear delivery (pre-mRNA)
+
+--- [PAGE 5/7] 2026_대학원합동강의_김영광_시험_필수슬라이드.pdf ---
+ASO-MEDIATED GENE REGULATION
+Rinaldi et al., Nat Rev Neurol, 2017
+
+--- [PAGE 6/7] 2026_대학원합동강의_김영광_시험_필수슬라이드.pdf ---
+RNA-guided engineered nuclease (RGENs)
+Kim et al. Nat Rev Genetics, 2014
+crRNA: CRISPR RNA, 표적 DNA와 상보결합하는 20bp의 guide sequence (protospacer)를 가지고 있음.
+tracrRNA : trans-activating crRNA, 표적과는 상관없이 동일한 염기서열
+crRNA + tracrRNA : single guide RNA (sgRNA)
+PAM : Protospacer adjacent motif (표적 DNA에 존재)
+
+--- [PAGE 7/7] 2026_대학원합동강의_김영광_시험_필수슬라이드.pdf ---
+Next-generation genome editors
+Awwad et al. Nat Rev Mol Cell Biol, 2023
+Do not induce Double strand breaks!
+Cas9 D10A nickase
+-> Inactive RuvC domain -> 
+do not cleave nontarget
+strand
+Cas9 H840A nickase
+-> Inactive HNH domain 
+-> do not cleave target 
+strand
+
+
+
+================ [DRAFT 분석(초안) — 토픽맵/가중치/모범답안 사실원] ================
+
+260407_김영광_병리학교실
+
+PHASE 1 — 슬라이드 토픽 맵 (닫힌 우주)
+슬라이드에 왕관(👑) 아이콘이 표시된 페이지들이 존재 → 교수가 직접 "표시 있는 부분" 위주로 보라고 명시
+#
+개념/용어
+슬라이드 위치
+왕관 표시
+T1
+Gene Therapy 정의 (FDA) — genetic material DNA or RNA
+Slide 1
+👑
+T2
+Gene therapy 4가지 모달리티 (replacement / silencing / addition / editing)
+Slide 1
+👑
+T3
+Gene therapy 전달 방법 비교표 — AAV vs Lentivirus (+ Adenovirus, Retrovirus 등)
+Slide 2
+👑
+T4
+AAV 특성 (DNA not integrated, Long expression, Low immunogenicity)
+Slide 2
+👑
+T5
+Lentivirus 특성 (DNA integrated=Yes, Long expression, Low immunogenicity)
+Slide 2
+👑
+T6
+Gene Silencing 3가지 기전 — ASO(RNase H), siRNA(RISC), ssASO(Splice-switching)
+Slide 3
+👑
+T7
+ASO 기전: DNA:RNA hybrid → RNase H 모집 → mRNA 분해
+Slide 3
+👑
+T8
+siRNA 기전: dsRNA → RISC 결합 → 표적 mRNA 절단
+Slide 3
+👑
+T9
+ssASO 기전: pre-mRNA 결합 → splicing modulation
+Slide 3
+👑
+T10
+RNA Interference 도해 (siRNA/ASO/ADAR 비교)
+Slide 4
+👑
+T11
+ASO-mediated gene regulation 5가지 경로
+Slide 5
+👑
+T12
+CRISPR-Cas9 구성: crRNA + tracrRNA = sgRNA, PAM(NGG), 20bp guide sequence
+Slide 6
+👑
+T13
+CRISPR-Cas9 절단 기전: PAM 인식 → 이중나선 절단
+Slide 6
+👑
+T14
+Base Editing: Cas9 nickase + cytidine/adenosine deaminase → 단일염기 변환
+Slide 7
+👑
+T15
+Prime Editing: nCas9 + Reverse transcriptase + pegRNA → 원하는 유전형 삽입
+Slide 7
+👑
+T16
+Do not induce Double strand breaks! (Base/Prime editor 공통 특성)
+Slide 7
+👑 빨간 강조
+
+PHASE 2 — 스크립트 강조 신호 탐지 및 가중치
+#
+개념명
+감지 신호
+W
+T1
+Gene Therapy 정의
+S2("한마디로"), S5(반복)
+2
+T2
+4가지 모달리티
+S1(분량), S5(반복 설명), S7(4가지 병렬 비교)
+3
+T3
+전달체 비교표 (AAV vs Lentivirus)
+S1(분량 집중), S7(행·열 단위 직접 읽기), B2(표 직접 행별 설명)
+4
+T4
+AAV 특성
+S2("크나큰 장점"), S5(3회 이상 반복), S6("장점이 있습니다" 강조), S7(Lentivirus와 직접 대비)
+5
+T5
+Lentivirus + Genotoxicity 문제
+S4(백혈병 발생 실제 사례), S6("문제가 생깁니다" 경고), S7(AAV와 대비), B1(S4+S6 동시)
+5
+T6
+Gene Silencing 3가지 기전
+S1(분량), S7(3가지 병렬 비교)
+2
+T7
+ASO 기전 (RNase H)
+S2("아까도 얘기했던"), S5(4회 이상 반복), S7(siRNA와 대비)
+4
+T8
+siRNA 기전 (RISC)
+S2("두 번째"), S5(반복), S7(ASO와 대비), B2(슬라이드 도해 직접 설명)
+4
+T9
+ssASO / Exon skipping
+S4(DMD 환자 사례 전환), S1(분량)
+2
+T10
+RNA Interference 도해
+S1(슬라이드 전체 설명)
+1
+T11
+ASO 5가지 경로
+S1
+1
+T12
+CRISPR sgRNA 구성 + PAM
+S2("다시 한번 얘기"), S5(PAM 조건 3회 반복), S6("그렇지는 않고요" — 오개념 경고)
+4
+T13
+CRISPR 이중나선 절단 + indel → knockdown
+S1(분량), S5(반복), S7(repair 과정 설명)
+3
+T14
+Base Editor — 단일염기 변환, DSB 없음
+S2("결과적으로"), S5(반복), S6("Double strand breaks를 일으키지 않는다" — 슬라이드 빨간 강조), S7(Prime editor와 대비)
+5
+T15
+Prime Editor — Reverse transcriptase, pegRNA
+S2("복잡하니까 결과적으로만"), S5, S7(Base editor와 대비)
+3
+T16
+DSB 없음 (Base/Prime editor 공통)
+슬라이드 빨간 대형 텍스트, S6(스크립트 재강조), S5
+5
+
+PHASE 3 — 티어 분류
+Tier
+토픽
+TIER 1 (W≥3)
+T2, T3, T4, T5, T7, T8, T12, T13, T14, T15, T16
+TIER 2 (W=1~2)
+T1, T6, T9, T10, T11
+TIER 3 (W=0)
+해당 없음
+
+PHASE 3 — 예상 시험 문제 세트
+
+🔥 Q1. [비교형 — 최고 출제 확률]
+AAV와 Lentivirus를 유전자 치료 전달체로 사용할 때의 차이점을 다음 항목을 포함하여 비교하시오: ① 숙주 게놈 통합 여부 ② 유전자 발현 지속기간 ③ 면역원성
+[모범 답안]
+항목
+AAV
+Lentivirus
+숙주 게놈 통합
+No — 핵 내 에피솜 형태로 독립 존재
+Yes — 역전사효소로 DNA 합성 후 숙주 게놈에 무작위 삽입
+유전자 발현 지속기간
+Long
+Long
+면역원성
+Typically low (일부 pre-existing immunity)
+Low immunogenicity
+핵심 문제점
+삽입 없어 안전하나 패키징 용량 제한(4.5kb)
+무작위 삽입으로 genotoxicity 위험 (LMO2 과활성화 → 백혈병 발생 사례)
+Lentivirus는 게놈에 랜덤하게 삽입되는 특성상, 세포 증식 관련 유전자(예: LMO2) 주변에 삽입될 경우 해당 유전자를 과활성화하여 백혈병 등의 암을 유발할 수 있다는 genotoxicity가 가장 큰 임상적 문제점이다.
+[출제 근거] 슬라이드 2 왕관 표시 + 표 전체 행별 직접 낭독(B2) + "크나큰 장점"(S2) + AAV vs Lentivirus 5회 이상 대비 반복(S5+S7). 교수가 "이 두 가지만 쓴다고 생각하시면 됩니다"라고 직접 범위 한정.
+
+
+🔥 Q2. [기전 설명형 — 최고 출제 확률]
+ASO(Antisense Oligonucleotide)와 siRNA의 mRNA 침묵화(silencing) 기전을 비교하여 설명하시오.
+[모범 답안]
+① ASO (Gapmer ASO)
+단일가닥 DNA(ssDNA)
+표적 mRNA에 결합 → DNA:RNA hybrid 형성
+이 하이브리드가 RNase H를 모집
+RNase H가 hybrid 내의 mRNA를 절단 → 표적 유전자 발현 억제
+② siRNA
+이중가닥 RNA(dsRNA)로 세포 진입
+세포 내 프로세싱을 거쳐 단일가닥 RNA로 변환
+**RISC (RNA-Induced Silencing Complex)**에 결합
+RISC-siRNA 복합체가 상보적 서열의 표적 mRNA를 탐색 후 절단 → 발현 억제
+핵심 차이: ASO는 RNase H 의존적 mRNA 분해, siRNA는 RISC 의존적 mRNA 절단이라는 점에서 작용 복합체가 다르다. 또한 ASO는 ssASO 형태로 splicing modulation에도 사용 가능하다.
+[출제 근거] 슬라이드 3 왕관 표시 + 두 기전 나란히 도해(B2+S7) + "아까도 얘기했던"(S2) 4회 반복(S5) + siRNA/ASO 전용 슬라이드 2장 연속 배치.
+
+🔥 Q3. [객관식 — 함정 문제 최고 확률]
+다음 중 CRISPR-Cas9이 표적 DNA를 절단하기 위해 반드시 필요한 서열 조건으로 옳은 것은?
+(가) 표적 서열 내 ATG start codon (나) 표적 서열 바로 옆에 위치한 NGG (PAM sequence) (다) 20bp의 tracrRNA (라) 표적 서열 내 TATA box
+정답: (나) NGG (PAM sequence)
+[모범 답안] CRISPR-Cas9은 crRNA와 tracrRNA가 결합한 sgRNA(single guide RNA)를 이용해 표적 DNA의 20bp 서열과 상보결합한다. 단, 이 결합이 이루어지려면 표적 DNA에 PAM(Protospacer Adjacent Motif) 서열, 즉 NGG가 표적 서열 바로 옆에 존재해야 한다는 제한 조건이 있다. 절단은 가이드 서열의 17번째와 18번째 사이에서 이중나선 절단 형태로 일어난다.
+[출제 근거] S2("다시 한번 얘기를 드리면"), S5(PAM 조건 3회 명시적 반복), S6("그렇지는 않고요" — 학생들이 아무 서열이나 자를 수 있다고 오해할 것을 예상한 교정 발화). 슬라이드 6 PAM(NGG) 빨간 박스 강조.
+
+🔥 Q4. [기전 설명형 — 핵심]
+Base Editor와 Prime Editor의 차이점을 설명하고, 두 기술이 기존 CRISPR-Cas9과 구별되는 공통점을 서술하시오.
+[모범 답안]
+공통점 — Do not induce Double Strand Breaks (DSB 없음) 기존 CRISPR-Cas9은 이중나선 절단(DSB)을 일으켜 indel 발생 및 p53 활성화로 인한 세포 사멸 위험이 있다. Base Editor와 Prime Editor는 모두 Cas9 닉케이스(nCas9)를 사용하여 DSB를 유발하지 않는다.
+Base Editor
+nCas9 + cytidine deaminase (또는 adenosine deaminase) 결합
+C→T 또는 A→G의 **단일 염기 변환(point mutation)**만 가능
+C·G→T·A, A·T→T·A 변환 등
+Prime Editor
+nCas9 + Reverse transcriptase + pegRNA 결합
+pegRNA 안에 우리가 원하는 서열 정보를 삽입
+Reverse transcription을 통해 point mutation, insertion, deletion 등 모든 형태의 유전형 편집 가능
+Base Editor보다 유연하나 구조가 복잡
+[출제 근거] 슬라이드 7 "Do not induce Double strand breaks!" 빨간 대형 텍스트 + S6("이 부분을 한번 읽어보시고", "객관적으로 냈기 때문에") + S5(반복) + S7(두 기술 명시적 대비). 교수가 강의 말미에 "유전자 가위 부분이 약간 어려울 수 있다"고 직접 언급 — 출제를 의식한 발화.
+
+🔥 Q5. [스크립트 단독 강조 — 임상 사례형]
+※ 교수가 "표시 외에 한 문제 정도 다른 데서 나온다"고 했으므로, 스크립트에서 가장 강하게 강조된 임상 사례를 출제 후보로 선정.
+Jesse Gelsinger 사례(1999)에서 유전자 치료제 투여 후 사망이 발생한 원인과, 이 사건이 유전자 치료 분야에 미친 영향을 서술하시오.
+[모범 답안]
+원인 (Immunotoxicity)
+전달체로 아데노바이러스를 사용 → 아데노바이러스는 면역원성(immunogenicity)이 매우 높음
+당시 면역원성 개념이 정립되지 않은 상태에서 과량의 바이러스 벡터 투여
+과도한 면역반응(immune reaction) 발생 → 사망
+추가 문제: 해당 환자는 치료가 반드시 필요한 상태가 아니었으며, 부작용에 대한 충분한 정보 미제공, 프로토콜 위반 등 임상연구 윤리 기준 미준수
+영향
+1999년 이후 유전자 치료제 개발이 사실상 중단
+청문회 및 규제 강화
+이후 전달체 연구 집중 → 면역원성이 낮은 AAV 벡터 중심으로 전환
+2010년대부터 적합한 전달체 확립 후 임상 재개
+[출제 근거] S4(18세 자원 참여자 사례로 극적 전환), S6("연구 사적으로는 뼈아픈 케이스"), S1(분량 집중), S5(사인·배경·영향 반복 설명). 교수가 이 사례를 3분 이상 상세히 서술 — 스크립트 내 비중 압도적.
+
+PHASE 4 — 자기검증
+TIER 1 토픽
+커버 여부
+T2 4가지 모달리티
+✅ Q1 배경 / 전체 맥락
+T3 전달체 비교표
+✅ Q1
+T4 AAV 특성
+✅ Q1
+T5 Lentivirus + genotoxicity
+✅ Q1 + Q5 연결
+T7 ASO 기전
+✅ Q2
+T8 siRNA 기전
+✅ Q2
+T12 CRISPR sgRNA + PAM
+✅ Q3
+T13 Indel → knockdown
+✅ Q4 배경
+T14 Base Editor
+✅ Q4
+T15 Prime Editor
+✅ Q4
+T16 DSB 없음
+✅ Q4 핵심
+✅ "TIER 1 토픽 11개 중 11개 커버. 누락 토픽: 없음"
+
+PHASE 5 — 최종 우선순위 요약
+순위
+문제
+핵심 근거
+🥇 1위
+Q1. AAV vs Lentivirus 비교
+슬라이드 표 직접 낭독(B2) + "이 두 가지만 씁니다" 직접 범위 한정 + 왕관 표시
+🥈 2위
+Q4. Base/Prime Editor + DSB 없음
+슬라이드 빨간 대형 텍스트 + "어려울 수 있다" 출제 의식 발화 + 왕관
+🥉 3위
+Q2. ASO vs siRNA 기전 비교
+슬라이드 3 왕관 + 도해 2장 연속 + RNase H / RISC 반복 4회
+4위
+Q3. CRISPR PAM 조건 (객관식)
+"그렇지는 않고요" 오개념 교정 발화 + PAM NGG 3회 반복 + 빨간 박스
+5위
+Q5. Jesse Gelsinger — 스크립트 강조 1문제
+분량 압도적 + "뼈아픈 케이스" + 3분 상세 설명 + 교수 직접 언급
+
+================ [RECORDING 녹음본 — 교수 오피셜 발화(해설/강조신호 사실원) | file: 04-07 강의 유전자 치료 기술과 최신 동향.txt] ================
+
+04-07 강의: 유전자 치료 기술과 최신 동향
+
+00:00:09
+Speaker 1
+오늘 제가 말씀드릴 내용은, 질전질환의 치료에 관한 내용인데 제가 대학원 수업을 하면서 이곳저곳에서 비슷한 얘기를 많이 해서 들어본 분도 아마 있을 것 같고요. 안 들어보신 분이 있다라고 하면 편하게 들어주시면 될 것 같고 시험을 보는 걸로 알고 있어요. 시험은 제가 가족에 표시를 해놨으니까 그 부분 위주로 보시면 될 것 같고요.
+00:00:46
+Speaker 1
+이게 좀 생소한 분야고 사실, 관련 분야의 연구를 하지 않는 분들은 볼 일이 없는 경우도 있기 때문에 제가 빡세게 이걸 들어라 이렇게 얘기는 못할 것 같은데 어쨌든 좀 편안하게 들어주셨으면 좋겠습니다. 그래서 제가 먼저 말씀드릴 것은 유전질환의 치료에 사용되는 Gene therapy 라는 거에 대해서 말씀을 드릴 거고요.
+00:01:17
+Speaker 1
+Gene therapy 를 할 때 필요한, 여러 가지 모달리티가 있는데 그 모달리티에 대해서 말씀을 드리고 그리고 이제 그 다음에는 제가 제 전문 분야인 Genome editing 관련된 기술들에 대해서 간단하게 말씀을 드리고 그리고 이게 실제로 치료에 적용되는 사례에 대해서 말씀을 드리는 것으로 할 거고요. 가능하면 조금 빨리 끝내려고 하는데 그게 될지는 잘 모르겠네요. 그래서 일단 개념이 좀.
+00:01:50
+Speaker 1
+먼저 설명을 드리려고 하는데 이 Gene therapy, 즉 유전자 치료라고 하는 것은 한마디로 얘기해서 Genetic Material, 즉 DNA 나 RNA 를 직접 세포에 집어넣어 가지고 어떤 치료적 효과를 보는 것이다라고 정의가 되어 있습니다. 근데 이제 조금 구체적인 모달리티를 살펴보게 되면 잘 보이는지 잘 모르겠는데.
+00:02:24
+Speaker 1
+표시가 잘 안되네요. 여기 gene replacement 라고 하는 것은 우리 몸에 어떤 유전자의 발현이 부족한 질환들이 있습니다. 그런 경우에는 우리가 실제로 functional 한 gene 을 넣어줘야 되겠죠. 그래서 유전자를 대체해준다라는 개념이고, 두 번째는, 어떤 유전자가 실제보다 너무 과발현돼서 문제가 되는 경우에는 그 유전자의 발현을 억제시킬 필요가 있습니다.
+00:02:57
+Speaker 1
+다른 말로 이제 사일런싱이라고 하는데 이런 식으로 쓸 수가 있고요. Gene replacement 랑 비슷한 개념인데 Gene edition 이라고 하는 건 무슨, 실제 우리 몸 안에 존재하지 않는 외부 생명체의 유전자를 갖다가 들여놓는 것을 진 에디션이라고 합니다. 실제로 여러분들이 이 분야를 공부할 게 아니면 사실 잘 구별은 안 됩니다. 예를 들면 쥐에서 어떤 형광 단백질을 발현을 시킨다던가 이런 걸 얘기를 하는 거죠.
+00:03:29
+Speaker 1
+그리고 이제 마지막으로는 Genome Editing, 즉 유전자 서열 자체를 바꾸는 Genome Editing 이라는 분야가 있습니다. 그러면은 이제 살펴보게 되면 Gene Edition, 즉 외부에서 유전자를 넣어주는 방법 같은 경우는 되게 옛날부터 이 방법이 잘 세팅이 되어 있어서 임상적으로 사람들이 경험이 많아요. 그리고 실제로 시장에 출시된 약제도 되게 많고 성과를 본 분야도 많기 때문에 연구자들한테 좀 익숙합니다.
+00:04:03
+Speaker 1
+근데 이 진 에디션 방법의 문제가 뭐냐라고 하면 뒤에도 말씀을 드릴텐데 일단 이게, 외부에서 유전자를 집어넣다 보니까 실제로 좀 과발현된 경향이 있어요. 그러니까 우리는 몸에서 10 정도만 필요한데 유전자 치료제를 만들려면 일단 굉장히 강력한 프로모터를 가지고 유전자를 발현시키기 때문에 우리 몸은 실제적으로 필요한 것보다 좀 과발현되는 경우가 있습니다.
+00:04:34
+Speaker 1
+그리고 두 번째는 발현된 유전자 양이 원래는 우리 체내에서 조절을 할 수가 있어야 되거든요. 어떤 때는 100 정도의 유전자 발현이 필요하다라고 하다가 어떤 때는 10 정도만 필요할 수도 있잖아요. 이런 걸 조절하는 게 우리 몸의 생리적인 enhancer 나 이런 regulatory element 들에 의해서 조절이 되는데 이런 외부에서 넣어준 유전자들은 그런 조절이 안 됩니다. 그래서 이 유전자가 굉장히 과발현된 상태로 지속적으로 지속된다는 문제점이 있고요.
+00:05:11
+Speaker 1
+또 이게 대개는 이 전달체가 유전자 내에 어디 랜덤하게 끼어들어가는 경우가 많기 때문에 이게 랜덤하게 끼어들어가면서 거기 있던 유전자를 없애버리거나 혹은 이상하게 만들거나 이런 문제점이 있을 수가 있습니다. 그래서 최근에 나온 기술이 그러면 우리 몸에 실제로 문제가 생긴 유전자 자체를 다시 정상사열로 바꾸자 라고 하는 것이 Genome Editing 기술이고요. 이거에 대해서는 조금 뒤에 말씀을 드릴 텐데 어쨌든 이론적으로는 이게 더 좋은 치료고 한 번 치료가 되면 영구적인 효과를 본다 라고 사람들이 생각을 하고 있습니다.
+00:05:52
+Speaker 1
+그러면 이 유전자 치료제를 전달하는 방법이 크게 두 가지인데, 첫 번째는 인 비보라고 해서 생체내 치료입니다. 이 얘기는 유전자 물질을 그냥 체에다 찔러 넣는 거거든요. 그렇다 보니까 우리 몸 안에 이렇게 돌아다니다가 랜덤하게 세포들 안에 들어가겠죠. 사실 나는 눈에 있는 세포를 치료하고 싶었는데 얘가 간으로 간다든가 아니면 머리 뇌로 간다든가 이런 문제점이 있을 수가 있습니다.
+00:06:24
+Speaker 1
+반대로 X-vivo 라고 하는 방법은 뭐냐면은 우리 몸에서 어떤 세포를 뺀 다음에 외부에서 조정을 해가지고 이걸 정상적인 형태로 잘 만든 다음에 그 만들어진 세포를 다시 이제 우리 몸 안에 넣어주는 형태의 치료를 얘기를 합니다. 사실 이제 이론상 X-vivo 방법이 훨씬 더 안전해 보이는데 이게 가능한 경우가 잘 몇 개 안 돼요. 예를 들면 우리 몸의 근육에 문제가 생겼다고 하면은 근육 전반적으로 다 전달될 수 있는 생체내에 치료를 해야 되는데 X-vivo 치료로는 이걸 할 수가 없습니다.
+00:07:00
+Speaker 1
+근육을 빼가지고 교정해서 다시 넣어준다고 해서 이게 우리 몸의 근육에 가서 다시 생체를 하는 게 아니거든요. 그래서 이 X-vivo 방법은 대개는 혈액 질환에만 적용이 되는 방법입니다. 그래서 대표적인 케이스를 보면. 조혈모세포 이식이라는 방법이 있는데 실제로 많이 하는 방법입니다. 골수에 문제가 생겼거나 혹은 유전자, 혈구세포에 문제가 있는 질환의 사람들은 골수라는 것이 결국 우리 몸에 있는 혈구세포를 모두 만들어내는 기관이기 때문에 여기서 조혈모세포를 채취해서 잘 보관하고 그걸 고쳐놨다가.
+00:07:46
+Speaker 1
+원래 본인이 가지고 있던 조혈모세포를 항암제 같은 걸로 다 날려버릴 수가 있어요. 그런 다음에 외부에서 잘 고쳐진 세포를 다시 투입을 하게 되면 이게 일종의 줄기세포이기 때문에 우리 몸 안에 골수에 생착을 하면서 그때부터는 정상적인 형태의 혈구세포를 막 만들어내게 됩니다. 그렇게 된다라고 하면 일종의 영구적인 치료가 되는 것이죠. 그래서 이전에 이런 골수에 생긴 암, 예를 들면 백혈병이라든지 림프종 혹은 혈구세포에 문제가 생기는 유전질환 등에서는 이런 X vivo 치료제가 많이 사용이 됐었고요.
+00:08:32
+Speaker 1
+반대로 in vivo therapy 같은 경우는 아까 말씀드렸던 것처럼 유전 물질 자체를 우리 몸 안에 전달하는 형태의 치료고요. 그렇다 보니까 이 분야에서 중요한 것은 생체 내에서 유전물질을 어떤 형태로 전달할 거냐는 전달체의 문제가 가장 중요한 부분이 됩니다. 그래서 뒤에서 조금 말씀드리겠지만 대개는 현재까지는 바이러스 기반의 벡터를 이용해서 유전물질을 체내로 전달하는 형태로 활용을 하고 있습니다.
+00:09:06
+Speaker 1
+그러면 생체 내 치료를 할 때 이 전달체가 중요하다고 했는데 그럼 그냥 쉽게 생각할 수 있는 게 이 유전물질을 그냥 물리적으로 때려넣으면 되지 않을까라는 생각을 할 수가 있어요. 근데 이게 생체 뇌다 보니까 생체 내에 전기 충격이라든지 이런 걸 쓸 수가 없거든요. 그렇다 보니까 대개는 이런 바이러스, 형태의 전달체 안에 유전물질, 즉 DNA 나 RNA 를 패키징해서 우리 몸 안의 체내에 주사를 하게 되면 이 바이러스라고 하는 것은 일종의 마갈리언 셀을 감염시키기 위해 진화적으로 만들어진 일종의 전달체고, 이 바이러스 자체가 자기 유전물질을 숙주에 전달하는 형태로 진화를 했기 때문에 이 형태를.
+00:10:00
+Speaker 1
+더 이상 증식하지 않는 형태로 불활성화한 전달체를 이용해서 저희가 유전물질을 전달을 하게 됩니다. 그래서 대개 쓰는 전달체를 살펴보게 되면 여러 가지가 있는데 실제로 현재까지 사용되고 있는 거는 이 두 가지 AAV 라고 하는 전달체랑 렌티바이러스라고 하는 전달체를 거의 사용한다고 생각을 하시면 됩니다. 그래서 이 AAV 같은 경우는 아데노 연관 바이러스라고 우리말로는 번역을 하는데 이게 스스로는 뭔가 감염을 일으키지 않고 다른 바이러스가 감염될 때, 즉 아데노바이러스 같은 게 감염될 때 같이 감염되면서 자기 유전물질을 전달하는 것으로 알려져 있고요.
+00:10:53
+Speaker 1
+그렇다 보니까 바이러스 자체가 어떤 pesogen 이 아니라는 장점이 있습니다. 그리고 이제 우리 몸 안에서 굉장히 전달 효율도 좋다라고 알려져 있고요. 그리고 더 좋은 건 뭐냐면 얘가 우리 몸 안의 유전체 내에 끼어들어가지 않고 세포의 핵에 그냥 따로 떨어져서 존재를 한다는 크나큰 장점이 있습니다. 이게 무슨 소리냐라고 하면, 이 뒤에 나오는 렌티바이러스랑 비교하면 좀 확실해진데요. 이 렌티바이러스는 뭐냐면 RNA 바이러스인데 우리 몸 안에 들어가서 역전사효소라는 걸 가지고 자기의 유전물질을 DNA 로 복제를 합니다.
+00:11:33
+Speaker 1
+그런 다음에 어떻게 하냐면 우리 몸 안에 유전체 30 억 베이스페어 라고 하는 우리 몸 유전체 안에 어떤 랜덤한 부위에 무작위로 끼어들어가요. 이제 그렇다 보니까 어떤 문제가 생기냐면, zenotoxicity 라고 하는 문제가 생깁니다. 조금 더 자세하게 얘기를 하면 이게 우리가 넣는 유전자 물질이 강력한 promoter 와 그다음에 그 안에 있는 유전자 서열로 이루어져 있기 때문에 얘가 이제 어떤 세포의 증식과 관련된 유전자 주위에 들어가게 되면 우리 몸의 세포 증식과 관련된 유전자를.
+00:12:14
+Speaker 1
+과활성화 시킬 수가 있습니다. 그래서 실제로 어떤 문제가 생겼냐면 이게 랜덤하게 어떤 운이 나쁜 거죠. 운 나쁘게 세포의 증식을 조절하는 LMO2 라고 하는 유전자 주위에 들어가서, 우리가 넣어준 이 인핸서가 이 LMO2 를 굉장히 과발현 시켜버린 거죠. 그렇다 보니까 백혈병이라고 하는 암이 생기는 겁니다. 그런 문제점이 여러 보고가 되었고요.
+00:12:44
+Speaker 1
+두 번째 문제는 얘가 랜덤하게 끼어들어가다 보니까 우리 몸 안에 잘 작동하고 있는 유전자, 안쪽으로 확 들어가서 그 잘 작동하던 유전자를 넉아웃을 시킬 수가 있습니다. 그렇게 되면은 얘는 이제 실제로 우리 몸 안에 어떤 유전자를 없애버리는 형태가 되가지고 문제가 생길 수가 있겠죠. 그리고 이제 또 하나의 유전자 치료의 문제점이라고 하면 이제 immunotoxicity 라고 하는 것입니다.
+00:13:16
+Speaker 1
+이게 뭐냐라고 하면은 어쨌든 우리가 넣어주는 그 유전자 물질의 전달체는, 결국 바이러스 기반의 벡터이기 때문에 우리 인간이 살아가면서 이런 바이러스를 접하기 때문에 여기에 대한 면역을 가지고 있어요. 그런데 유전자 치료제를 보통 체내에 투입할 때는 굉장히 과량으로 투입을 하기 때문에 우리 몸에서 실제로 우리가 기대했던 것보다 좀 과도한 면역반응이 일어날 수가 있습니다. 그래서 이게 문제가 돼가지고 그 이제 사람이 사망하는 경우가 이제 유전자 치료제 개발 초창기에 있었습니다.
+00:13:53
+Speaker 1
+그래서 이제 이 타임라인을 좀 살펴보면 이게 그 유전자 치료라고 하는 개념이 나온게 90 년대 초부터 나오기 시작했는데 이제 그 당시에는 이제 이 치료제가 아니면 치료 자체가 불가능한지 그런 유전병들에 대해서, 시도가 되게 됐는데 이제 90 년대 후반에 이런 유전자 치료제를 아데노바이러스라고 하는 전달체에 담아가지고 전달했는데 사람이 죽은 거죠. 이것 때문에.
+00:14:24
+Speaker 1
+그러다 보니까 이게 99 년에 있었던 일인데 그러다 보니까 이제 그 뒤로 관련된 사람들이 청문회에도 불구하고 굉장히 문제가 많이 생겨서 한동안 유전자 치료제의 개발이 거의 중단이 됐었습니다. 그러고 나서 사람들이 연구를 해보니까 우리가 이 전달체와 면역원성이라는 것에 대한 개념이 없었다는 것을 사람들이 알게 된 거죠. 그래서 결과적으로는 2010 년대가 지나면서부터 이런 전달체에 대한 연구가 활발하게 이루어졌고요.
+00:14:58
+Speaker 1
+그에 따라서 적합한 전달체로 결정된 것들이 아까 얘기해드린 AAV 와 같은 그런 전달체에 대한 연구가 활발하게 이루어지게 된 거죠. 사람이 죽었다는 그 케이스에 대해서 조금 말씀을 드려보자면, 제세. 겔싱거라고 하는 친구인데, 이 친구가 이제 제 친구는 아니죠. 저보다 나이가 많은 사람이니까. 어쨌든 1999 년도 9 월 달에 이 친구가 18 세의 나이로 사망을 했습니다.
+00:15:34
+Speaker 1
+근데 이 사람은 간에 어떤 효소 하나가 결핍된 유전병을 앓고 있었는데, 이 유전병을 가지고 있는 사람은 아미노산을 대사하는 과정에 문제가 생기기 때문에 굉장히 strict 한 non-protein diet 를 평생 동안 해야 되는 사람이었던 거죠. 문제는 이 병은 그런데 이 친구는 그렇게까지 심한 친구는 아니어서 strict 한 protein diet 가 굳이 필요 없는 환자였던 겁니다.
+00:16:10
+Speaker 1
+근데 이 친구가 굉장히 숭고한 그런 뜻으로 이 병을 앓는 아기들에게 도움이 되겠다고 하면서 본인이 자원을 한 거죠. 이 치료제에. 그래서 이 치료제를 9 월 13 일날 투여를 받았는데 이 아데노바이러스라고 하는 전달체를 가지고 투여를 받았는데 그러면서 갑자기 굉장히 심한 면역반응이 생긴 거죠. 여러분들 이제 코비드 백신 맞고 가끔 사망하는 분들이 있잖아요.
+00:16:44
+Speaker 1
+비슷한 케이스입니다. 과도한 immune reaction 이 일어나 가지고 이 때문에 환자가 사망을 하게 된 거죠. 그래서 이제 뒤에 사람들이 왜 이런 문제점이 생겼냐 라고 사람들이 연구를 해보니까 지금은 되게 당연하게 생각되는 이런 임상실험에 대한 기준이 제대로 마련되지 않았던 거죠. 사실 이 친구는 굳이 유전자 치료를 받아도 받지 않아도 되는 간 상태였던 거고 그리고 부작용에 대한 리포트도 바로 이루어지지 않았고,
+00:17:20
+Speaker 1
+그 다음에 프로토콜 위반도 몇 개 관찰이 되었고, 이 친구가 치료에 참여할 때 이런 심각한 부작용이 있을 수도 있다는 정보를 제대로 받지 못했다는 게 나중에 드러납니다. 그리고 이 아데노바이러스라는 게 굉장히 면역원성이 심하다는 사실을 뒤늦게 알게 된 거죠. 그래서 이제 굉장히 연구 사적으로는 뼈아픈 케이스인데, 이러한 케이스를 바탕으로 사람들이 좀 더 strict 한 임상 치료 프로토콜을 확립을 하게 되는 계기가 되기도 합니다.
+00:18:00
+Speaker 1
+그래서 조금 더 자세하게 얘기를 하게 되면 이 아데노바이러스라고 하는 것은 일종의 감기 바이러스입니다. 감기 바이러스도 굉장히 우리 몸 안에, 강력하게 발현되는 형태로 작동을 한다라고 알려져 있습니다. 근데 이제 문제는 이게 immunogenicity 가 굉장히 높다라고 하는게 문제였고요. 그래서 이제 최근에는 이 AAV 라고 하는 벡터로 사용이 됐는데 이것의 장점은 아까도 말씀드렸던 것처럼 얘가 이제 우리 몸 안에 지놈 상에 껴들어가지 않는다라고 하는 장점이 있고요.
+00:18:40
+Speaker 1
+그리고 이제 비교적 long term expression 하면서. 세포의 종류에 가리지 않고 잘 감염된다고 알려져 있습니다. Immunogenesity 도 비교적 덜하고요. 그럼 사례들을 살펴보게 되면, Exvivo therapy 는 아까도 얘기했던 것처럼 조혈모세포를 이식하는 치료의 확장판이라고 하면 거의 맞습니다. 그래서 우리 몸의 조혈모세포를 보게 되면.
+00:19:11
+Speaker 1
+이 조혈모세포가 이제 단핵구와 T 세포 그리고 적혈구 그리고 이제 Megakariocyte 라고 하는 뒤에 혈소판이 되는 그런 세포로도 분화를 하게 되고 그 다음에 Neutropy, 호중구라고 하는 세포로도 분화를 하게 됩니다. 대개 이제 이 초창기 유전자 치료제가 시도됐던 분야는 이 조혈모세포가 분화할 때 특정한 백혈구로, 분화를 할 때 필요한 효소가 있는데 그 효소가 결핍된 환자들이 주로 유전병의 치료 크라이테리아가 됐고요.
+00:19:49
+Speaker 1
+이 환자들은 백혈구를 못 만들기 때문에 굉장히 심한 면역 결핍에 시달리게 되고 이 친구들은 거의 무균실에서만, 지내야 되는 그런 환자들이었던 거죠. 그래서 이제 몇 가지 질병들이 있습니다. 그래서 대게는 유전성 혈구질환에서 사용이 되었었고요. 이 경우에는 아까 얘기했던 것처럼 생체내 치료와는 다르게 우리 몸 안의 유전체 안에 안정적으로 발현되게 되려면 오히려 삽입을 해야 된다는 차이점이 있어요.
+00:20:29
+Speaker 1
+왜냐하면 이제 생체 내에는 일단 교정이 되면 우리가 되돌릴 수가 없는데 체외에서 이제 교정하는 경우에는 우리가 잘 교정된 세포만 잘 선별을 해가지고 투여를 할 수 있기 때문에 대개 이제 이런 부분은 문제가 되지 않고 잘 전달이 돼서 stable 하게 유전자가 발현되는지가 이제 더 중요합니다. 이런 경우에는 이제 보통 사람들이 사용하는 벡터가 렌티바이러스라고 하는 벡터를 사용을 하게 됩니다.
+00:21:00
+Speaker 1
+In vivo therapy 같은 경우는 최대로 투여를 하는 건데, 몇 가지 질환들이 있습니다. Ruxterna 라고 해서 RP-65 라고 하는 유전자를 전달하는 질환인데, 이 병 같은 경우는 Retina 즉, 망막에 있는 세포에 문제가 생겨 가지고 망막 앞에 있는 세포가 점차 죽어나가면서 시력이 없어지는 그런 질환이고요. 두 번째는 Spinal muscular dystrophi 라고 하는 질환의, 질환에 대해서 개발된 유전자 치료제, 졸겐스마라고 하는 여러분들이 혹시나 들어봤을 수도 있는 이런 유전자 질환들이 2010 년대 후반부터 서서히 FDA 의 큐브를 받아서 임상에 들어오고 있습니다.
+00:21:47
+Speaker 1
+이 졸겐스마라고 하는 약제는 몇 년 전에 뉴스에도 난 적이 있는데 이게 뭐냐면은, Spinal muscular dystrope 라고 하는 질환이 SMN-1 이라고 하는 유전자가 Rossofunction, 즉 제대로 발현이 되지 않아서 생기는 질환입니다. 그러면 신경세포에 문제가 생겨서 우리 몸의 운동세포, 근육의 명령을 전달하는 신경세포에 문제가 생겨서 시간이 지날수록 점점 사지에 마비가 되고 근육이 약화되는 그런 질환입니다.
+00:22:25
+Speaker 1
+그렇다 보니까, 이 SMN-1 이라고 하는 유전 물질을 뇌척수액에 우리 몸의 신경계에 전달을 하는 그런 치료제를 개발한 건데, 이건 이제 AAB 라고 하는 벡터에다가 이 SMN-1 유전자를 삽입한 유전자 치료제고요. 그래서 이제 그 굉장히 비쌉니다. 한방에 20 억이라고 하는데, 치료제와는 다르게 한 번 맞으면 영구적으로 효과가 있다라고 현재까지 알려져 있습니다.
+00:22:59
+Speaker 1
+그렇게 따지면 20 억이 아주 비싸지 않을 수도 있죠. 두 번째는 Gene silencing 이라고 해서 잘 발현되는 유전자를 넉다운 시키는 방법입니다. 몇 가지 방법들이 있는데, 첫 번째는 Antisense Olivonucleotype 이라고 하는 유전 물질이 있고요. 두 번째는 SiRNA 라고 하는 유전 물질이 있습니다.
+00:23:32
+Speaker 1
+기전을 살짝 얘기를 드리면 ASO 라고 하는 것은 DNA Single Strand DNA 이고요. 얘가 결합하는 것은 우리 몸 안에 있는 mRNA 에 결합을 합니다. 그러면 얘는 DNA 고 RNA 는 RNA 니까 이게 결합하게 되면 DNA RNA 하이브리드가 만들어지는 거죠. 그러면 우리 몸 안에는 이 DNA RNA 하이브리드를 감지해서 RNA 를 분해하는 효소가 있습니다.
+00:24:04
+Speaker 1
+이걸 RNAH 라고 하는데 이 RNAH 가 이런 하이브리드 DNA RNA 를 탐지해서 mRNA 를 분해해버리는 거죠. 결과적으로 어떻게 되냐면 우리 몸의 특정한 서열을 가진 RNA 의 양을 줄일 수가 있습니다. 두 번째는 siRNA 라고 하는 건데 이것은 double strand RNA 입니다. 그러면 얘는 우리 몸 안에 들어가서 다양한 프로세싱 과정을 거쳐 가지고 결과적으로는 single strand RNA 형태로 RISC.
+00:24:42
+Speaker 1
+RNA-Induced Silencing Complex 라고 하는 단백질 복합체에 결합을 하게 됩니다. 그러면 이 SiRNA 와 RISC 는 돌아다니다가 이 SiRNA 서열과 상부적인 RNA 서열을 만나게 되면 얘가 결합해서 이 mRNA 를 분해하게 됩니다. 그러면 똑같은 거죠. 표적 RNA, 특정한 서열을 가진 RNA 를 분해시킬 수 있기 때문에 결과적으로는 특정한 서열을 가진 특정한 유전자의 mRNA 를 다 다음 레귤레이션 할 수가 있습니다.
+00:25:24
+Speaker 1
+이런 식으로 작동을 하는 거고, 또 세 번째는 이 ASO 라고 하는 것은 또 다른 특이한 작용 방법이 있는데 얘가 특정한 Exon 이나 Intron 의 영역에 결합을 하게 되면 Splicing 이라고 하는, 원래 이제 우리 몸 안에 유전자는 exon, thentron, exon, intron 이런 식으로 배열이 되어 있는데 이게 처음에는 pre-mRNA 형태로 전체가 쫙 다 전사가 된 다음에 post-transcriptional modulation 을 통해서 intron 부분이 짤려 나가는 과정을 거치게 됩니다 그런데 이때 이 ASO 가 측정한 exon 에 결합을 하게 되면 이 exon 을.
+00:26:08
+Speaker 1
+빼고 서플라이싱이 되게 만들 수가 있습니다. 그럼 이걸 대체 어디다 쓰느냐? 뒤에서 조금 더 말씀을 드릴게요. 그러면 이제 대표적인 케이스를 한 개만 들어보면 가족성 고콜레스테롤 혈증이라고 하는 병이 있습니다. 이건 뭐냐면 여러분들이 들어보셨을 수도 있겠는데 콜레스테롤이라는 게 있는데 이 콜레스테롤은 우리 몸에 굉장히 필수적인 지방 물질인데, 이 지방 물질이 LDL 콜레스테롤이라고 하는 형태로 혈중에 돌아다니게 되면 혈관 벽에 플락이라고 하는 걸 만들 수가 있습니다.
+00:26:49
+Speaker 1
+그래서 이 LDL 콜레스테롤이 과도하게 높아지면 혈관 벽에 플락이 생겨서 좁아지고 결국은 동맥경화라는 걸 일으킬 수가 있고 이 동맥경화가 심장에 있는 혈관이나 뇌에 있는 혈관에 생기게 되면 뇌졸중이나 심근경색이 생길 수가 있습니다. 그러면은 이 familial hypocolesterol 은 뭐냐면은 이 LDL 콜레스테롤을 대사하는 여러 가지 유전자들에 문제가 생겨가지고 이 LDL 콜레스테롤 레벨이 과도하게 올라가는 질환을 얘기를 합니다. 그러면은 이 siRNA 중에 Inclese 라는 Reckvio 라고 하는 이제 그 브랜드 네임을 가진 약제가 있는데 이게 siRNA 입니다.
+00:27:29
+Speaker 1
+이 siRNA 가 타겟하는 유전자는 PCSK9 이라고 하는 유전자고요. 제가 자세한 메커니즘을 설명을 드리기가 어려운데, PCSK9 유전자는 원래 역할이 뭐냐면, 간세포 바깥에 있는 LDL receptor 라고 하는 단백질을 다운-regulation 하는 역할을 합니다.
+00:27:59
+Speaker 1
+그럼 무슨 얘기냐면, PCSK9 이 과도하게 올라가게 되면, 그 간세포 바깥에 있는 LDL 콜레스테롤 리셉터의 레벨이 떨어지게 되고요. 원래 이 간이 LDL 콜레스테롤을 잘 혈중에서 잘 받아서 간으로 집어넣어 줘야 되는데 그걸 못하기 때문에 결과적으로는 LDL 레벨이 올라가게 되는 거죠. 혈중 콜레스테롤 레벨이 올라가게 되는 겁니다. 그러면은 이 잉클리시란이라고 하는 약제는 뭐냐면은 siRNA 로써 우리 몸 안에 들어가게 되는데 들어갈 때.
+00:28:33
+Speaker 1
+그 hepatocyte 에 있는 즉 간세포 내에 있는 ASGPR 이라고 하는 receptor 에 결합하는 특정한 모티프, 갈락이라고 하는 모티프를 앞에 달고 있거든요. 그러면은 얘는 그냥 이 상태로 띠르릉 들어가서 간세포에 있는 그 receptor 와 결합해서 endocytosis 를 통해서 그대로 들어가게 됩니다. 그러면은 얘가 이제 우리 몸 안에서 single strand 로 바뀌게 되고 이 single strand 는, 아까 얘기했던 것처럼 RISC 라고 하는 컴플렉스에 결합을 하게 돼서 PCSK9 이라고 하는 유전자의 mRNA 에 결합해서 PCSK9 을 다 잘라서 없애버리게 되는 거죠.
+00:29:10
+Speaker 1
+그렇게 되면 PCSK9 이 다음 regulation 되면서 LDL receptor 의 양이 늘어나고요. LDL receptor 의 양이 늘어나면 혈중에 있는 LDL 콜레스테롤을 잘 간세포로 받아들일 수 있기 때문에 혈중 콜레스테롤 레벨이 줄어들게 됩니다. 그래서 이제 아까도 얘기했던 것처럼 ASO 를 이용한 zip regulation 과정을 설명하는 그림입니다. ASO 같은 경우는 아까도 얘기했던 것처럼 RNA.H 라고 하는 애를 끌어오는데 그것은 DNA 와 RNA 의 하이브리드를 만들어서 RNA.H 를 끌어와서 타겟 mRNA 를 잘라버릴 수 있다라고 아까 얘기를 했고요.
+00:29:54
+Speaker 1
+두 번째는 스플라이싱을 모듈레이션 할 수 있다라고 말씀을 드렸는데, 예를 들어보겠습니다. 뭐냐면 Duciem musculotystrophy 라고 하는 질환이 있는데 자세히 설명하자면 시간이 많이 걸려서 생략을 하겠지만 이 병 자체는 우리 몸의 근육에 생기는 질환이고요. 근육의 integrity 가 감소하기 때문에 시간이 지날수록 muscle 이 점점 분해돼 가지고 한 20 세 정도 되면 이 친구들이.
+00:30:26
+Speaker 1
+침대 bed rine 되서 일어나지 못해요. 그러다가 호흡근 마비 혹은 심장근 마비를 통해서 사람이 죽게 되는데 이런 불치병이죠. 불치병 환자들의 유전 어떤 유전자에 문제가 생겼는지를 살펴봤더니 디스트로핀이라고 하는 유전자에 특정한 스플라이싱에 관여하는 어떤 엑손에 문제가 생겼던 거죠. 그래서 사람들이 어떤 식으로 치료를 하게 되냐면.
+00:30:57
+Speaker 1
+원래 환자 같은 경우는 엑손 51 번과 53 번의 프레임이 맞아야 되는데 51 번과 50 번의 프레임이 어긋나게 유전자가 만들어져 있습니다. 그런 유전형을 물려받는 거죠. 그렇기 때문에, 이 치료제는 ASO 라고 하는 치료제를 통해서 엑손 51 번에 엑손의 스키핑, 즉 이 엑손을 빼고 스플라이싱을 해라라는 신호를 줍니다.
+00:31:30
+Speaker 1
+그러면 이 51 번이 없어지기 때문에 그 다음에는 이 엑손 50 번과 53 번이 만나서 이제 쭉 정상은 아니죠 약간 짧아진, mRNA 를 만들게 되는데 얘는 프레임이 맞기 때문에 약간 길이가 짧아져도 어느 정도 functional 한 dystropin 을 만들 수가 있습니다. 그래서 이제 이런 형태로 유전자를 치료하는 방법입니다. 지금까지 좀 너무 사례를 많이 들었는데 여기 표시 보이시죠?
+00:32:05
+Speaker 1
+표시 있는 부분을 잘 보시면 크게 문제없이, 시험문제를 풀 수가 있습니다. 그럼 이제 시간이 얼마 안 남았기 때문에 이제 다음으로 Genome Editing Technology 에 대해서 간단하게 얘기를 드릴게요. Crisper Cas9 이라고 하는 건데 얘는 뭐냐면은 이렇게 생겼고요. Cas9 이라고 하는 단백질 하나가 있고 그 다음에 거기에 달라붙는 가이드 서열을 가진 RNA 가 있습니다. 그럼 이 가이드 서열을 가진 RNA 와 Cas9 이 결합한 복합체가 아까 RISC 처럼 돌아다니다가.
+00:32:39
+Speaker 1
+여기 Guide RNA 에 있는 가이드 서열이 20bpa 인데 20bpa 와 상부 결합하는 타겟 DNA 를 만나면 이 DNA 를 잘라버리는 것이 CRISPR-Cas9 의 원리입니다. 그런데 이 CRISPR-Cas9 디자이너한테 여러분들이 잘 생각해보면 그냥 내가 자르고 싶은 부분에 가이드 시퀀스를 잘라서 RNA 를 만들면 어느 부분을 자를 수. 어느 부분이든지 자를 수 있는 유전자 가위를 만들 수 있을 거라고 생각을 하는데 그렇지는 않고요.
+00:33:14
+Speaker 1
+이 가이드 서열이 결합하기 위해서는 표적 서열 바로 옆에 NGG 라고 하는 서열이 필요합니다. 이게 하나의 제한 조건이고요. 그러면 이 부분을 다시 한번 얘기를 드리면, Cas9 단백질은 그냥 RNA 와 결합한 형태로 작동을 하게 되어 있고요. 이 RNA 서열의 어디를 자를지 안내를 해주는 가이드 서열이 존재합니다. SiRNA 나 ASO 나 똑같은 원리입니다. 대신에 얘 같은 경우는 RNA 가 치료제고요.
+00:33:48
+Speaker 1
+자르는 부분은 DNA 입니다. 그러면은 얘가 이제 타겟 DNA 에 상부 결합을 하게 되면. 가이드 서열의 17 번째와 18 번째 사이에 이중나선 절단을 일으키는 것이 CRISPR-Cas9 의 원리가 되겠습니다. 이때 가이드 서열을 짤 때 필요한 것은 가이드 서열 바로 옆에 타겟 DNA 의 NGG 라고 하는 서열이 있어야 된다 라는 제한 조건 하나가 있습니다.
+00:34:19
+Speaker 1
+그러면 우리가 이걸 어디다 쓰느냐라고 하면 제일 쉽게 쓸 수 있는 게 유전자를 녹아웃 할 때 쓸 수가 있습니다. 만약에 우리 몸 안에서 이런 이중나선 절단이 생기면 보통 우리 몸은 어떤 식으로 반응을 하냐면, 이 부분을 메꾸려고 노력을 해요. End repair 라고 하는 과정을 통해서 잘린 부분 양 끝단을 그냥 붙이는 그런 작용을 합니다. 근데 붙일 때 가끔 실수를 한다고 알려져 있어요. 이게 Error prone 한 repair 과정을 거친다고 알려져 있습니다.
+00:34:54
+Speaker 1
+만약에 제대로 붙게 되면 유전자 가위가 다시 이 부분을 자르게 되고요. 이런 걸 반복을 하다 보면 어떤 문제가 생기냐면, 실제 원래 유전자 서열에서 뭔가 이상한 서열이 덧붙여지거나 뭔가 서열이 잘려나가는 deletion 이 생깁니다. 이걸 insertion 하고 deletion 줄여서 indell 이라고 하는데, indell 이 발생을 하게 되고요. 인델이 발생하게 되면 무슨 일이 생기냐면 프레임이 깨집니다. 원래 3 개의 DNA 베이스 마다 하나의 아미노산을 코딩하는 것이 Central Dogma 의 원리인데 만약에 1 베이스 페어나 2 베이스 페어 deletion 이 생기게 되면 이 뒤쪽의 프레임이 다 깨지면서 결과적으로는 premater stopcodone, 원래는 잊지 말아야 할 stopcodone 이 만들어지게 되구요 이 premater stopcodone 때문에.
+00:35:46
+Speaker 1
+이 유전자에서 발현되는 mRNA 는 우리 몸 안에 어떤 메커니즘, Nonsense Mediated Decay 라고 하는 과정을 통해서 이런 Crematures Topodone 이 있는 mRNA 는 다 분해돼 버립니다. 결과적으로 유전자에 No-Bout 이 일어나게 되는 것이죠. 이것 말고도 사용할 수 있는 방법이 여러 가지가 있는데, 아까 이중나선 절단을 만드는 유전자 가위 같은 경우는 이중나선 절단을 하다 보니까 이거 자체가 어떤 세포에 독식한 거죠.
+00:36:25
+Speaker 1
+그래서 이중나선 절단이 생기게 되면 이 세포가 p53 이라고 하는 단백질이 발현이 되면서 apoptosis 라고 하는 과정으로 빠지게 됩니다. 그러면 우리가 기껏 세포의 유전자를 고쳐놨더니 세포가 죽어버리는 문제가 생길 수가 있겠죠. 그러면 이제 사람들이 생각을 합니다. 나는 그냥 이 유전자의 발현을 줄이거나 올리고 싶다 라고 할 수도 있고요. 혹은 나는 그냥 이 유전자에 생긴 이상한 염기 변화만 고치고 싶다 라는 욕구가 생길 수가 있습니다.
+00:37:00
+Speaker 1
+유전자 가위가 할 수 있는 건 원래 자르는 것 밖에 못하거든요. 그래서 이제 그 다음에 사람들이 생각한 게 그럼 이 CAS9 에다가, 효소 몇 개를 붙여가지고 그냥 단일염기의 변화만 만드는 유전자 가위를 만들겠다고 한 겁니다. 이거는 설명하자면 조금 복잡한데 Cas9 에 이중나선 절단을 만드는 catalytic domain 두 개가 있는데 각각 DNA strand 하나씩 자르게 만들어져 있습니다.
+00:37:37
+Speaker 1
+이때 우리가 이 catalytic domain 하나에 뮤테이션을 주게 되면 얘를 한 가닥만 자르게 만들 수 있고요. 이 한 가닥만 자른 다음에 이 cytidine deaminase 혹은 아데노신 deaminase 라는 것을 만들게 되면 cytosine 이나 아데노신의 NH2 를 디아미네이션 시켜서 얘를 T 나, G 로 만들 수가 있습니다. 근데 이거는 조금 복잡하니까 여러분들이 아주 자세하게 알 필요는 없는데 결과적으로 이게 할 수 있는 건 뭐냐면 이 베이스 에디터라고 하는데 이 베이스 에디터는 단일 염기 변화만 만들어 줄 수 있습니다.
+00:38:18
+Speaker 1
+C 를 T 로 바꾸거나 A 를 G 로 바꾸는 형태의 단일 염기 변화를 만들어 줄 수 있고요. 두 번째는 이 프라임 에디터라고 하는 게 있는데 이거는 좀 복잡하니까 여러분들이 자세하게 알 필요는 없습니다. 이런 게 있다라는 거 정도만 알면 되는데, 얘는 우리가 바꾸고자 하는 유전자 서열을 이 뒤쪽에다가 삽입을 해줍니다. 그런 다음에 이 Cas9 단백질에 Riverse transcriptase 라고 하는 RNA 를 기반으로 DNA 를 합성하는 엔자임이 있는데 이 엔자임을 이용해서 우리가 넣어준 가이드 RNA 서열에 우리가 바꾸고자 하는 서열을 집어넣어서 합성을 할 수가 있거든요.
+00:39:00
+Speaker 1
+결과적으로는 이를 이용해서 우리가 넣어준 가이드 RNA 서열에 있는 유전정보를 그대로 우리 유전자에 복사해 넣을 수가 있습니다. 그래서 결과적으로 얘는 우리가 넣어준 edit, single point mutation 이나 아니면 insertion, deletion 어떤 형태든 우리가 만들어서, Reverse Transcription 을 통해서 우리가 원하는 형태의 유전형을 만들어서 에디팅을 할 수가 있습니다.
+00:39:33
+Speaker 1
+근데 이제 이렇게 설명하면 너무 어려우니까 여러분들은 Base Editor 는 단일연기 변화를 일으키고 Prime Editor 는 우리가 원하는 어떤 형태든 만들어 줄 수 있다. 이 정도만 알고 어떤 게 결합되어 있는지만 아시면 객관식으로 그냥 풀면 되니까 이 부분을 보시면 되겠습니다. 외에는 이제 조금 편하게 들으시면 되는데 이런. 그 Cas9 이 특정한 그 유전자 서열을 표적할 수가 있기 때문에 이 유전자 서열을 프로모터나 enhancer 부분으로 만들고 이 Cas9 에다가 transcription 을 inhibition 하거나 transcription 을 activation 하는 factor 를 넣어가지고 우리가 이 Cas9 의 Guide RNA 에 결합한 유전자를 유전자의 발현을 억지로 증가시키거나 억지로 끌어내릴 수도 있습니다.
+00:40:26
+Speaker 1
+CRISPR Interference CRISPR Activation 이라고 하는데 이런 게 있다 정도만 그냥 듣고 넘어가시면 됩니다. 좀 이제 이건 전문적인 문제이기 때문에 이런 게 있다 정도 이제 알아두시고 그 다음에 그 mRNA 자체를 자르는 CRISPR 도 이제 개발이 됐습니다. 개발이 된 게 이제 발견이 돼서 얘는 아까 얘기했던 siRNA 나 ASO 처럼 표적 RNA 를, 잘라버릴 수 있는 그런 CRISPER 도 발견이 돼서 사람들이 이걸 가지고 연구를 하고 있습니다.
+00:41:03
+Speaker 1
+그래서 이제 간단하게 얘기하면 DNA 를 자르는 유전자 가위, 그 다음에 단일 염기 변화를 만드는 베이스 에디팅, 그 다음에 아까, pas9 에다가 reverse transcriptoase 를 넣어가지고 어떤 형태의 유전형도 만드는 prime editing 과 같은 DNA 레벨의 genome editing 을 할 수 있고요. 그 다음에 transcription level, 유전자의 발현을 증가시키거나 혹은 다운시킬 수도 있고 그 다음에 RNA 레벨에서.
+00:41:42
+Speaker 1
+RNA 를 잘라버리는 그런 여러 가지 툴이 있다 정도 알아두시면 아주 좋을 것 같고요. 시간이 별로 안 남았는데 이건 간단하게 얘기하고 넘어가겠습니다. 그러면 유전자 치료제가 치료제 분야로 들어온 케이스 하나만 더 얘기를 할 건데요. Sekle cell disease 혹은 Beta Talesemia 라고 하는 병이 있는데 이거는 뭐냐면, 헤모글로빈 chain 에 문제가 생긴 질환입니다.
+00:42:14
+Speaker 1
+원래 헤모글로빈은 2 개의 알파글로빈 chain 과 2 개의 베타글로빈 chain 이 tetramo 를 형성하는 형태로 만들어져 있는데 우리 몸 안에서 원래 아기가 태어나기 전에는 엄마 뱃속에서는 fetal hemoglobin 이라고 하는 형태로 존재를 하게 됐고요. 얘는 알파체인 두 개와 감마체인 두 개로 이루어져 있습니다. 그러다가 출산을 하게 된 이후에는 이게 adult 타입의 헤모글로빈으로 바뀌게 될 때 이 adult 타입 헤모글로빈은 알파체인 두 개와 베타체인 두 개로 이루어져 있습니다.
+00:42:59
+Speaker 1
+왜 이렇게 만들어져 있냐라고 하면, 엄마 뱃속에서는 엄마한테서 산소를 전달받아야 되잖아요. 그래서 산소 결합능이 adult 랑 좀 달라야 태반에서 산소를 전달을 받을 수 있기 때문에 이런 형태로 만들어져 있는 거고요. 태어나고 난 뒤에는 이게 필요가 없기 때문에 BCL-11A 라고 하는 transcription factor 가 나오면서 감마글로빈의 발현을 쭉 줄이고 대신에 베타글로빈의 양을 쭉 늘려서 adult hemoglobin 으로 바뀌게 됩니다.
+00:43:32
+Speaker 1
+근데 이제 어떤 병이 있냐면, 이 베타글로빈에 문제가 생기는 Cekle cell disease 라고 하는 병이 있고요. 이 Cekle cell disease 는 베타글로빈 체인의 스무 번째에 있는 DNA 염기서열 중에 염기 하나가 A 가 T 로 바뀐 그런 형태의 질환인데 이 병이 있으면 이 베타글로빈이, 이제 이상하게 바뀌면서 RBC 가 이런 딱딱한 형태의 낫 모양으로 바뀐다고 알려져 있습니다.
+00:44:06
+Speaker 1
+이게 Cekle cell 이라고 해서 Cekle cell disease 라고 하는 건데 그러면 이제 이거를 치료하는 방법이 크게 두 가지가 있는데 정상적인 베타글로빈을 우리 몸 안에 전달해 주는 방법이랑 두 번째는 유전자 가위를 이용해서, 영구적으로 서열을 고쳐주는 두 가지 방법이 있습니다. 두 가지 방법 다 2023 년에 동시에 FDA approve 가 되어서 현재 시장에서 나와 있고요.
+00:44:37
+Speaker 1
+그래서 이게 혈구질환이기 때문에 똑같이 환자의 조혈모세포를 뽑아서 그 체외에서 editing 혹은. 유전물질 전달을 하거나 혹은 유전자 가위로 에디팅을 한 다음에 우리 몸 안에 넣어준 형태로 치료를 하게 됩니다. 그것은 아까 말씀드렸던 내용이니까 너무 자세하게 얘기를 안 할게요. 여기에 대해서 마지막으로 조금만 더 말씀을 드리면.
+00:45:15
+Speaker 1
+유전자 전달 치료제는 그냥 베타글로빈체인에 정상적인 서열을 넣어주는 거니까 이거는 직관적으로 이해가 가는데 유전자가 있는 대체 어떤 식으로 이걸 치료를 하냐라고 하면 유전자가 있는 게, 아까 녹아웃 시키는 건 잘한다고 말씀을 드렸잖아요. 잘라서 이중나선 절단으로 만든 다음에 얘가 이제 끝단이 repair 하면서 에러가 생기니까 유전자를 녹아웃 할 수 있다고 아까 얘기를 드렸는데, 그걸 가지고 BCL-11A 라고 하는 유전자를 넉아웃을 시킵니다.
+00:45:46
+Speaker 1
+그렇게 되면 어떻게 되냐면 adult hemoglobin 이 다시 fital hemoglobin 으로 돌아가게 되거든요. 그러면 이 환자들은 베타글로빈에는 문제가 있는데, 감마 헤모글로빈은 문제가 없기 때문에 결과적으로 fetal hemoglobin 이 나와도 일상생활에 전혀 문제가 없고 결과적으로는 fetal hemoglobin 이 우리 몸에 헤모글로빈을 쫙 대체하면서 증상이 없어지고 정상적인 생활을 할 수 있다라고 알려져 있습니다. 그래서 이제 지금까지 약 5 년 정도 추적 관찰을 했는데 이 환자들이 원래는 거의 일주일에 한 번 정도 수혈을 받아야 되는 환자들인데,
+00:46:28
+Speaker 1
+이 치료제를 받은 이후부터는 더 이상 수혈을 받지 않고 정상적인 생활을 하고 있다라고 하는 Follow Up Data 가 최근에 나왔다고 알려져 있습니다. 그래서 제가 조금 중구난방으로 말씀을 드리긴 했는데 오늘 얘기드릴 건 여기까지고요. 아까 유전자 가위 부분이 약간 어려울 수 있겠다는 생각이 지금 제가 말하면서 조금 들어요. 그래서 이 부분을, 한번 읽어보시고 그렇게 어렵게 안 냈기 때문에 객관적으로 냈기 때문에 혹시나 이해 안 가시는 부분이 있으면 저한테 메일을 보내주시면 되겠습니다.
+00:47:07
+Speaker 1
+오늘 강의는 여기까지 하겠습니다. 수고 많으셨습니다.

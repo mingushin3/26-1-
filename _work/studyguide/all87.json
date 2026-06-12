@@ -1,0 +1,785 @@
+[
+ {
+  "id": "golgi-1",
+  "lecture_key": "golgi",
+  "in_top50": true,
+  "exam_probability": 96,
+  "topic": "Golgi morphodynamics — Condensation vs. Fragmentation (위암 SRCC, YAP)",
+  "correct_fact": "골지 붕괴 약물(MON/GCA/BFA/NIG)로 condensation을 fragmentation으로 유도하면 migration·invasion·proliferation 등 악성 표현형이 '감소'한다(항암 효과; 슬라이드 PAGE 17의 Migration↓·Invasion↓·Proliferation↓). 이것이 골지 morphodynamics를 표적으로 한 신규 항암 전략의 근거다.",
+  "gap": false
+ },
+ {
+  "id": "scrna-1",
+  "lecture_key": "scrna",
+  "in_top50": true,
+  "exam_probability": 95,
+  "topic": "UMI(Unique Molecular Identifier)와 정량 원리",
+  "correct_fact": "올바른 서술: 한 세포 내에서 같은 유전자에 매핑된 read들 중 '동일한 UMI'를 가진 것들은 PCR 증폭 중복으로 묶어 1개로 계수하고, '서로 다른 UMI'를 가진 것만 개별 원본 분자로 각각 계수한다.",
+  "gap": false
+ },
+ {
+  "id": "genetherapy-1",
+  "lecture_key": "genetherapy",
+  "in_top50": true,
+  "exam_probability": 95,
+  "topic": "유전자치료 전달체 비교 — AAV vs Lentivirus (genotoxicity)",
+  "correct_fact": "AAV는 숙주 유전체에 통합되지 않고 핵 내 에피솜으로 존재하므로 삽입성 genotoxicity가 낮다. 무작위 유전체 삽입에 따른 genotoxicity(LMO2 과활성화→백혈병, 정상 유전자 knockout)는 AAV가 아니라 렌티바이러스의 문제다.",
+  "gap": false
+ },
+ {
+  "id": "dpath-1",
+  "lecture_key": "dpath",
+  "in_top50": true,
+  "exam_probability": 95,
+  "topic": "Computational pathology 4대 접근법 (Strongly/Weakly Supervised, Multimodal, Foundation Model)",
+  "correct_fact": "Strongly Supervised는 세포(cell) 단위 어노테이션이 필요한 모델이고(세포 검출·카운팅·IHC 정량화), Weakly Supervised가 슬라이드 단위 라벨(1 slide ↔ 1 label) 또는 영역 단위로 학습하여 세포 단위 어노테이션이 불필요한 모델이다. 두 모델의 어노테이션 단위가 선지 3번에서 정반대로 뒤바뀌어 있다. (슬라이드 p.9/10/17/78/80, 녹음 00:08:01·00:12:27)",
+  "gap": false
+ },
+ {
+  "id": "thyroid-1",
+  "lecture_key": "thyroid",
+  "in_top50": true,
+  "exam_probability": 95,
+  "topic": "CYFRA 21-1의 분자생물학적 생성 기전 (CK19 → Caspase-3 → soluble fragment)",
+  "correct_fact": "Caspase-3 억제제(Z-DEVD-FMK) 처리 시 CYFRA 21-1 방출은 '현저히 감소'한다. Caspase-3는 CK19를 절단하여 CYFRA 21-1을 생성하는 효소이므로 억제하면 생성이 줄어든다(인과관계 증명). Caspase-3는 음성 조절자가 아니라 필수 양성 인자다.",
+  "gap": false
+ },
+ {
+  "id": "tert-1",
+  "lecture_key": "tert",
+  "in_top50": true,
+  "exam_probability": 95,
+  "topic": "TERT 프로모터 돌연변이 기전 (핫스팟·ETS/TCF·G-quadruplex)",
+  "correct_fact": "돌연변이는 G-quadruplex 4중 구조를 '안정화'시키는 것이 아니라 '불안정화(소실)'시켜 gene silencing 효과를 없애고(abrogate the gene silencing effect), 그 결과 TERT 발현이 증가한다(PAGE 21).",
+  "gap": false
+ },
+ {
+  "id": "gastric-1",
+  "lecture_key": "gastric",
+  "in_top50": true,
+  "exam_probability": 95,
+  "topic": "TCGA 분자분류 4아형(EBV/MSI/GS/CIN)과 ACRG 분류의 비교",
+  "correct_fact": "ACRG의 MSS/EMT 아형은 형태학적으로 TCGA의 GS 아형과 닮았지만, 슬라이드에 따르면 CDH1 돌연변이 비율은 약 37%가 아니라 2.8%에 그친다. 이 차이가 인종·유전적 배경에 따른 발암 경로 차이를 시사한다.",
+  "gap": false
+ },
+ {
+  "id": "golgi-2",
+  "lecture_key": "golgi",
+  "in_top50": true,
+  "exam_probability": 94,
+  "topic": "Alzheimer's disease — 골지체 변성이 amyloid-β의 upstream 원인이라는 가설",
+  "correct_fact": "amyloid-β는 골지체를 '통과(processing)'하는 단백이므로, 골지체가 손상되면 amyloid-β의 생성·processing 자체가 비정상화되어 계속 생성된다. 따라서 amyloid-β만 제거(clearance)해서는 골지가 망가진 한 효과가 제한적이다.",
+  "gap": false
+ },
+ {
+  "id": "thyroid-2",
+  "lecture_key": "thyroid",
+  "in_top50": true,
+  "exam_probability": 93,
+  "topic": "Washout Thyroglobulin(wTg)의 진단적 한계 3가지",
+  "correct_fact": "정상 갑상선 조직이 남아 있는 것은 '수술 전'(또는 부분절제 후)이며, 위양성을 줄이기 위해 수술 전 컷오프를 '높게'(약 21.69 ng/mL) 설정한다. 수술 후에는 정상 조직이 제거되어 컷오프를 '낮게'(약 8.0 ng/mL) 설정한다. 선지의 수술 전/후가 서로 뒤바뀌어 있다.",
+  "gap": false
+ },
+ {
+  "id": "wonjaelee-g1",
+  "lecture_key": "wonjaelee",
+  "in_top50": true,
+  "exam_probability": 92,
+  "topic": "핵심 테제/Take-home: 암 = mutation 정의를 넘어선 동적·적응적 조직수준 생태계 (Genomic-centric→Cell state→Systemic→Data-driven 전환)",
+  "correct_fact": "결론 슬라이드(PAGE 57)의 테제는 '암은 더 이상 돌연변이만으로 정의되지 않으며 진화·면역·공간조직이 빚어내는 동적·적응적 조직수준 생태계'이고, 시각의 이동은 Genomic-centric view → Cell state → Systemic view → Data-driven pattern recognition으로 genomic determinism에서 '벗어나는' 방향이다. genomic determinism의 재확립이 아니다.",
+  "gap": true
+ },
+ {
+  "id": "bloodomics-1",
+  "lecture_key": "bloodomics",
+  "in_top50": true,
+  "exam_probability": 92,
+  "topic": "Liquid biopsy와 순환종양DNA(ctDNA)의 분자적 특성 및 분석 원리",
+  "correct_fact": "혈중 cell-free DNA의 대부분은 정상 세포 유래이고 ctDNA는 극소량이다. 따라서 일반 NGS로는 부족하며, 정상 DNA 배경에서 미량의 종양 변이를 검출하려면 ultra high-depth 시퀀싱(또는 digital PCR)과 같은 고민감도 기술이 필요하다.",
+  "gap": false
+ },
+ {
+  "id": "llmngs-1",
+  "lecture_key": "llmngs",
+  "in_top50": true,
+  "exam_probability": 92,
+  "topic": "NGS(차세대 시퀀싱)와 short read mapping 알고리즘(Burrows-Wheeler/BWA), WGS 비용 변화",
+  "correct_fact": "Burrows-Wheeler 알고리즘은 본래 데이터 압축(zipping)을 위해 1970~80년대에 개발된 기법이며, 이후 NGS short read의 유전체 정렬(alignment)에 차용되어 가장 빠른 매핑 도구(BWA)의 표준이 되었다. 즉 '압축 → 정렬'의 순서이지 그 반대가 아니다(슬라이드 PAGE 15 + 녹음 00:24:18 근거).",
+  "gap": false
+ },
+ {
+  "id": "ev-1",
+  "lecture_key": "ev",
+  "in_top50": true,
+  "exam_probability": 92,
+  "topic": "EV 3대 서브타입(엑소좀·마이크로베지클·어팝토틱 바디)의 생성기전 비교",
+  "correct_fact": "세 서브타입을 구분하는 가장 본질적 기준은 생성기전(biogenesis, 엔도솜 경로 vs 세포막 출아 vs 세포사멸 파편화)이며, 크기는 그 결과로 나타나는 부수적 특성이다. 인과 관계가 반대다.",
+  "gap": false
+ },
+ {
+  "id": "tert-2",
+  "lecture_key": "tert",
+  "in_top50": true,
+  "exam_probability": 92,
+  "topic": "HBV 통합 기전 (기질 dslDNA·NHEJ·TERT 통합부위·상호배타성)",
+  "correct_fact": "TERT 프로모터 돌연변이와 HBV-TERT 통합은 상호 배타적(mutually exclusive)으로 발생하며(PAGE 31), 둘 다 동일하게 TERT 활성화를 달성하므로 같은 종양에서 함께 나타나지 않는다.",
+  "gap": false
+ },
+ {
+  "id": "brain-1",
+  "lecture_key": "brain",
+  "in_top50": true,
+  "exam_probability": 92,
+  "topic": "CAR-γδ T 항원 선택 (HER2·GD2·B7-H3 비교) 및 면역미세환경",
+  "correct_fact": "GD2는 GBM의 grade가 높아질수록 발현이 '감소'하며 정상 조직에서 오히려 발현이 높다. 발현이 많은 종양은 오히려 면역적으로 양호한 경향을 보인다. (고악성도에서 발현이 증가하는 것은 B7-H3이다.)",
+  "gap": false
+ },
+ {
+  "id": "immuno-1",
+  "lecture_key": "immuno",
+  "in_top50": true,
+  "exam_probability": 92,
+  "topic": "암관련 섬유아세포(CAF)와 FAP-STAT3 축",
+  "correct_fact": "Matrix CAF 표현형이 우세할수록 환자 예후는 '나쁘며(불량하며)', 이는 간암 특이적이 아니라 위암·폐암 등 다른 고형암에도 공통된 현상이다.",
+  "gap": false
+ },
+ {
+  "id": "gastric-2",
+  "lecture_key": "gastric",
+  "in_top50": true,
+  "exam_probability": 92,
+  "topic": "Claudin 18.2(CLDN18.2)와 zolbetuximab의 표적 노출 기전",
+  "correct_fact": "CLDN18.2는 HER2 아형의 마커가 아니라, 마땅한 표적이 없어 포기했던 GS(유전체안정형) 아형에서 새로운 치료 표적으로 활용된다. zolbetuximab이 화학요법 병용으로 생존을 연장하는 대표적 적용 맥락이 바로 이 GS/미만형 아형이다.",
+  "gap": false
+ },
+ {
+  "id": "golgi-3",
+  "lecture_key": "golgi",
+  "in_top50": true,
+  "exam_probability": 90,
+  "topic": "GIST — Mutant KIT의 Golgi tethering과 imatinib 내성",
+  "correct_fact": "imatinib 내성의 구조적 원인은 mutant KIT가 세포막이 아닌 '골지체에 tethering'되어 있어, 세포막 KIT를 표적으로 설계된 imatinib의 접근·결합이 제한되기 때문이다. KIT가 세포막으로 더 이동하는 것이 아니라, 오히려 세포막에 10%도 존재하지 않는다.",
+  "gap": false
+ },
+ {
+  "id": "bloodomics-g1",
+  "lecture_key": "bloodomics",
+  "in_top50": true,
+  "exam_probability": 90,
+  "topic": "Bone marrow organoid의 다발골수종(MM) 연구 활용 근거 (primary culture 곤란·동물모델 대체 → 환자 암세포 공배양 ex vivo 모델, drug screening·마커 기능검증)",
+  "correct_fact": "골수 오가노이드는 그 자체를 환자 특이적으로 만드는 것이 아니라, 표준화된 플랫폼(기술)으로 사용하고 거기에 환자에서 생검한 '암세포'를 공배양하여 환자를 대변하는 ex vivo 모델을 구축한다. 이를 통해 drug screening 및 오믹스로 발굴한 마커의 기능 검증을 수행한다.",
+  "gap": true
+ },
+ {
+  "id": "scrna-2",
+  "lecture_key": "scrna",
+  "in_top50": true,
+  "exam_probability": 90,
+  "topic": "UMAP/tSNE(비선형 차원축소)와 graph-based clustering의 구분",
+  "correct_fact": "올바른 서술: UMAP은 국소(local) 구조 보존에는 강하나 전역(global) 거리 관계는 보존하지 않으므로, 떨어진 클러스터 간 2D 거리를 세포 유형 간 분화 거리로 해석해서는 안 된다.",
+  "gap": false
+ },
+ {
+  "id": "ev-2",
+  "lecture_key": "ev",
+  "in_top50": true,
+  "exam_probability": 90,
+  "topic": "엑소좀 biogenesis — 이중 함입(double invagination), MVB 수송(RAB), Topology Preservation",
+  "correct_fact": "RAB27/RAB31이 MVB를 세포막 쪽으로 수송하여 방출을 촉진하고, RAB7이 MVB를 라이소좀 쪽으로 보내 분해시킨다. 선지는 RAB의 역할 방향이 정반대로 뒤바뀌어 있다.",
+  "gap": false
+ },
+ {
+  "id": "dpath-2",
+  "lecture_key": "dpath",
+  "in_top50": true,
+  "exam_probability": 90,
+  "topic": "CNN 기반 WSI 분석 파이프라인 (Convolution·Pooling·FC Layer·Softmax)",
+  "correct_fact": "Pooling은 feature map의 크기를 '축소'하는 연산으로, 필요한 주요 특징만 남겨 오버피팅을 방지한다(슬라이드 p.6, 녹음 00:05:39). 선지 3번의 '크기를 확대하여 세부 정보를 보존'은 풀링의 작용을 정반대로 서술한 오류이다.",
+  "gap": false
+ },
+ {
+  "id": "dpath-g1",
+  "lecture_key": "dpath",
+  "in_top50": true,
+  "exam_probability": 90,
+  "topic": "Foundation Model vs CNN — 개념·차이·장단점 (단일모델 다중 downstream, 적은 라벨 fine-tuning, 컴퓨팅 비용↑; UNI로 EBV·MSI 성능 향상)",
+  "correct_fact": "라벨링 비용이 큰 의료 WSI 환경에서 적은 데이터로도 좋은 성능을 기대할 수 있어 유리한 쪽은 Self/Semi-supervised 기반 'Foundation Model'이다(슬라이드 p.81). 기존 CNN은 task마다 별도 모델을 처음부터 학습해야 하므로 라벨이 부족할수록 불리하다. 선지 3번은 FM과 CNN의 장점을 정반대로 뒤집은 오류이다. 실측에서도 UNI Foundation Model이 CNN을 능가했다(EBV 약 0.94→0.988, MSI 0.827→0.898, 녹음 00:46대).",
+  "gap": true
+ },
+ {
+  "id": "tert-g1",
+  "lecture_key": "tert",
+  "in_top50": true,
+  "exam_probability": 90,
+  "topic": "텔로미어 단축의 이중적 역할(dual role) + Cancer Paradox + maintenance/stabilization vs elongation 용어 구분",
+  "correct_fact": "종양 세포가 얻는 것은 텔로미어의 '연장(net elongation, 정상 이상 증가)'이 아니라 짧은 상태에서의 '유지·안정화(maintenance/stabilization)'이며, 그 주된 기전이 telomerase 활성화이다. 암 조직의 텔로미어는 여전히 정상 조직보다 짧다(PAGE 12·11·16·18).",
+  "gap": true
+ },
+ {
+  "id": "brain-2",
+  "lecture_key": "brain",
+  "in_top50": true,
+  "exam_probability": 90,
+  "topic": "줄기세포(MSC) 기반 IL-12 + anti-PD-1 병용치료의 기전적 합리성",
+  "correct_fact": "병용치료는 지속적인 항종양 면역기억을 유도하여, 한번 종양이 제거된 개체에 동일 종양을 재투여(rechallenge)하면 종양이 형성되지 않는다(Sustained Tumor Rejection on Rechallenge).",
+  "gap": false
+ },
+ {
+  "id": "immuno-2",
+  "lecture_key": "immuno",
+  "in_top50": true,
+  "exam_probability": 90,
+  "topic": "CAR-T 세포치료의 원리와 HCC 표적 GPC-3",
+  "correct_fact": "GPC-3는 HCC 환자의 약 50%에서만 발현하고, 발현하더라도 이질적(heterogeneous)으로 발현하여 모든 환자·전 종양에서 균일한 반응을 기대하기 어렵다.",
+  "gap": false
+ },
+ {
+  "id": "gastric-3",
+  "lecture_key": "gastric",
+  "in_top50": true,
+  "exam_probability": 90,
+  "topic": "HER2 표적치료의 진화: T-DXd(ADC)의 bystander effect와 면역항암제 병용",
+  "correct_fact": "bystander effect는 표적세포에서 방출된 페이로드가 세포막을 투과해 인접한 HER2 음성(항원 비발현) 암세포까지 함께 타격하는 효과를 말한다. 즉 인접 세포에 '전혀 영향을 주지 못한다'가 아니라, 오히려 '인접 세포까지 죽인다'는 것이 핵심 특징이다.",
+  "gap": false
+ },
+ {
+  "id": "bloodomics-2",
+  "lecture_key": "bloodomics",
+  "in_top50": true,
+  "exam_probability": 88,
+  "topic": "종양 내 이질성(Intratumor heterogeneity)과 진화 궤적(evolution tree) 기반 치료 전략",
+  "correct_fact": "drugable 마커가 진화 트리의 trunk(몸통)에 있을 때가 branch(가지)에 있을 때보다 더 좋은 치료 반응을 기대할 수 있다. trunk 변이는 거의 모든 암세포가 공유하지만, branch 변이는 일부 클론에만 있어 표적치료 시 가지 일부만 제거된다.",
+  "gap": false
+ },
+ {
+  "id": "scrna-3",
+  "lecture_key": "scrna",
+  "in_top50": true,
+  "exam_probability": 88,
+  "topic": "3' vs 5' scRNA-seq와 TCR/BCR immune profiling",
+  "correct_fact": "올바른 서술: 5' scRNA-seq로 TCR/BCR을 분석할 때는 V(D)J 정보를 모두 담기 위해 일반 발현용(약 100 bp)보다 '긴' 약 400 bp 길이의 라이브러리를 제작한다.",
+  "gap": false
+ },
+ {
+  "id": "llmngs-2",
+  "lecture_key": "llmngs",
+  "in_top50": true,
+  "exam_probability": 88,
+  "topic": "정밀의학(Precision Medicine): Genotyping vs Phenotype 해석, DTC 유전자검사, GWAS/PRS, 대규모 코호트",
+  "correct_fact": "PRS는 다수의 SNP 효과를 합산해 질환 위험도를 '확률적으로' 추정하는 다유전자(polygenic) 방법이며, GWAS는 effect size가 작아 수만~수십만, 국가 단위 100만 명 규모의 대규모 코호트가 있어야 robust한 신호를 얻는다. PRS는 아직 일부 major 질환을 제외하면 임상 진료 수준이 낮아 표준으로 정착되지 않았다(녹음 00:50:34~00:52:22 근거).",
+  "gap": false
+ },
+ {
+  "id": "genetherapy-2",
+  "lecture_key": "genetherapy",
+  "in_top50": true,
+  "exam_probability": 88,
+  "topic": "Gene silencing 3기전 — ASO(RNase H) vs siRNA(RISC) vs ssASO(splicing)",
+  "correct_fact": "RNase H를 모집하는 것은 단일가닥 DNA인 ASO(DNA:RNA 하이브리드 형성)이고, RISC에 결합하여 mRNA를 절단하는 것은 이중가닥 RNA인 siRNA다. 둘을 뒤바꾸면 안 된다.",
+  "gap": false
+ },
+ {
+  "id": "thyroid-3",
+  "lecture_key": "thyroid",
+  "in_top50": true,
+  "exam_probability": 88,
+  "topic": "Washout Tg vs Washout CYFRA 21-1 진단성능 비교 및 Universal cutoff",
+  "correct_fact": "정상 갑상선 조직에서 분비되어 수술 전후 컷오프가 크게 변동하는 것은 'Tg'다. CYFRA 21-1이 오히려 암 특이적이어서 수술 상태와 무관하게 컷오프(~1.12 ng/mL)가 거의 일정하다. 선지에서 두 마커의 설명이 뒤바뀌어 있다.",
+  "gap": false
+ },
+ {
+  "id": "thyroid-g1",
+  "lecture_key": "thyroid",
+  "in_top50": true,
+  "exam_probability": 88,
+  "topic": "Take-home message 4가지 + On-going/Future study (마지막 요약 슬라이드 통합)",
+  "correct_fact": "Take-home 4번 메시지는 'Only one preliminary paper is not enough! Validation process is also important'(슬라이드 55), 즉 예비 논문 한 편으로는 부족하며 validation 과정이 반드시 필요하다는 것이다. 2019 pilot이 reject(슬라이드 43)된 뒤 validation study(슬라이드 44, Clin Cancer Res 2025)로 재현되어 임상 유용성이 확립되었다. '검증 없이 곧바로 도입 가능'은 강의 결론과 정반대다.",
+  "gap": true
+ },
+ {
+  "id": "tert-3",
+  "lecture_key": "tert",
+  "in_top50": true,
+  "exam_probability": 88,
+  "topic": "HBsAg 혈청소실(기능적 완치) 후에도 지속되는 HCC 위험",
+  "correct_fact": "HBsAg가 소실되어도 핵 내 통합 HBV DNA·cccDNA가 잔존하여 직접 발암 잠재성(direct oncogenic potential)이 지속되므로(PAGE 69), 감시를 중단해서는 안 되고 6개월 간격 초음파 감시를 지속해야 한다.",
+  "gap": false
+ },
+ {
+  "id": "tert-g2",
+  "lecture_key": "tert",
+  "in_top50": true,
+  "exam_probability": 88,
+  "topic": "HBV 통합의 cis-effect vs trans-effect 비교 (ctHBx, preS결실 표면항원/ER stress, HBV-MLL4 fusion, HBx-LINE1 lncRNA) + 염색체 불안정성",
+  "correct_fact": "ER stress를 일으키는 trans-effect 분자는 'preS가 부분 결실된 변형 표면(surface) 단백질'의 과생산·ER 축적이지(PAGE 56), preC/C에서 증폭된 정상 HBcAg가 아니다. 통합체는 완전한 preS/S ORF와 3'-절단 X(ctHBx)를 보유하여 surface·X 단백을 만든다.",
+  "gap": true
+ },
+ {
+  "id": "brain-3",
+  "lecture_key": "brain",
+  "in_top50": true,
+  "exam_probability": 88,
+  "topic": "Blood-Brain Barrier(BBB)와 뇌 약물전달(drug delivery) 전략",
+  "correct_fact": "뇌실 내(ICV/ventricular) 전달은 임상적으로 유의미한 전달 경로로, 동일·유사 용량에서 전신 투여보다 효과적이며 줄기세포 치료의 핵심 전달 전략이다.",
+  "gap": false
+ },
+ {
+  "id": "immuno-g1",
+  "lecture_key": "immuno",
+  "in_top50": true,
+  "exam_probability": 88,
+  "topic": "면역관문억제제 반응을 결정하는 CD8+ T세포 분화상태 (terminal exhaustion vs progenitor/central memory) + 치료 후 동적 변화(expansion·TIGIT)",
+  "correct_fact": "고갈(exhaustion) 프로그램의 master 전사인자는 TOX이며, TCF-1·CCR7은 progenitor/central memory(반응자) 표현형의 마커로 anti-PD-1 투여 시 클론 증식을 일으켜 ICI 반응성과 연관된다.",
+  "gap": true
+ },
+ {
+  "id": "gastric-g1",
+  "lecture_key": "gastric",
+  "in_top50": true,
+  "exam_probability": 88,
+  "topic": "항암제 다제내성(MDR) 다중기전과 차세대 신약 파이프라인(이중표적/dual-payload ADC, 기질분해 CAR-T)",
+  "correct_fact": "차세대 CAR-T는 기질분해효소를 '스스로 분비하도록' 조작되어 두꺼운 기질(stroma) 장벽을 분해하고 고형암 내부로 침투하는 모델이다. 즉 기질분해효소 분비를 '억제'하거나 기질을 '보존'하는 것이 아니라, 분해하여 침투를 돕는 것이 핵심이다.",
+  "gap": true
+ },
+ {
+  "id": "ev-3",
+  "lecture_key": "ev",
+  "in_top50": true,
+  "exam_probability": 87,
+  "topic": "EV 치료제 개발의 병목 — 표적전달(간/비장 축적), 엔도솜 탈출, 약물 탑재 효율",
+  "correct_fact": "20%를 넘는 탑재 효율을 얻기가 매우 어렵고 고효율 방법(소니케이션)은 막 손상을 유발하므로, 현재 임상시험은 물질을 탑재한 EV보다 줄기세포(MSC) 유래 EV 자체를 그대로 사용하는 경우가 많다.",
+  "gap": false
+ },
+ {
+  "id": "wonjaelee-g2",
+  "lecture_key": "wonjaelee",
+  "in_top50": true,
+  "exam_probability": 86,
+  "topic": "기술이 만든 패러다임 전환 연대표(Sanger/NGS/Single-cell/Spatial multi-omics/AI) + Hypothesis-driven vs Data-driven oncology 비교",
+  "correct_fact": "Data-driven oncology(new paradigm)의 본질은 'Data first → hypothesis generation'으로, 데이터가 먼저 인간 직관을 넘어선 패턴을 드러내고 거기서 가설이 생성되는 discovery-driven 방식이다(PAGE 55). 가설을 먼저 확정하고 맞는 데이터만 모으는 것은 정반대인 old(hypothesis-driven) 패러다임이다.",
+  "gap": true
+ },
+ {
+  "id": "golgi-g1",
+  "lecture_key": "golgi",
+  "in_top50": true,
+  "exam_probability": 86,
+  "topic": "Aging — age-associated Golgi stress: ZIP13/Zinc·CREB3 cleavage·Golgi-MT 연결, Golgi fragmentation을 senescence의 '하류 부산물'이 아니라 'upstream(원인)'으로 보는 가설 (Developmental Cell 2025)",
+  "correct_fact": "김지윤 교수의 노화 연구(Developmental Cell, 2025; 슬라이드 PAGE 28-30)는 아연 결핍(ZIP13 KO/TPEN으로 Zinc↓)과 골지 스트레스의 상호작용이 microtubule 의존 신호전달·후성유전 조절을 저해함을 보였고, Golgi fragmentation을 노화의 단순 부산물(하류 결과)이 아니라 senescence를 가속·개시할 수 있는 upstream 요인으로 본다. 슬라이드 근거: ZIP13=Golgi Zinc transporter, ZIP13 KO→Golgi stress response↓·Golgi fragmentation, TPEN=Zinc chelator로 Zinc↓(senescence mimic)→Golgi stress response↓·microtubule dynamics↓, Senescent cell→Golgi stress response↓·Golgi-associated microtubule↓, 논문 제목에 'zinc deficiency and Golgi stress hinders ... signaling and epigenetic regulation' 명시. 따라서 '부산물·하류로 확정, 원인 가능성 배제'는 연구 메시지와 정반대다.",
+  "gap": true
+ },
+ {
+  "id": "dpath-g2",
+  "lecture_key": "dpath",
+  "in_top50": true,
+  "exam_probability": 86,
+  "topic": "Take-home / Conclusion (p.95) — AI=암병리 표준도구, 5년내 임상승인 바이오마커, 미개척: 예후·치료반응·morphology-genotype, 미래=multimodal dataset/DL로 response·resistance 예측",
+  "correct_fact": "강의 결론(슬라이드 p.95)의 핵심 메시지는 multimodal 지향이다 — 미래 연구는 여러 modality를 통합한 더 큰 multimodal dataset 구축과 multimodal DL로 치료 반응(response)·저항성(resistance)을 예측하는 방향이다('Future work will focus on... curating larger multimodal datasets... using multimodal DL for predicting response and resistance', p.95). 교수도 녹음 마무리에서 '멀티모달 딥러닝을 하는 게 대세'(00:52대)라고 명시한다. 선지 5번의 'unimodal 단일 modality 집중·단일모달 우위 마무리'는 결론 방향을 정반대로 뒤집은 오류이다.",
+  "gap": true
+ },
+ {
+  "id": "immuno-g2",
+  "lecture_key": "immuno",
+  "in_top50": true,
+  "exam_probability": 86,
+  "topic": "PD-L1 발현과 면역치료 반응성(상식 암기) + PD-L1 CPS(combined positive score) 계산식·임상 의의",
+  "correct_fact": "CPS 분자에는 PD-L1 양성으로 염색된 종양세포 + 림프구 + 대식세포가 모두 포함된다(분자에서 면역세포를 제외하는 것은 TPS이며 CPS가 아니다).",
+  "gap": true
+ },
+ {
+  "id": "golgi-4",
+  "lecture_key": "golgi",
+  "in_top50": true,
+  "exam_probability": 85,
+  "topic": "골지체의 Unconventional 기능 (Signaling hub, DNA damage sensing, microtubule, innate immunity)",
+  "correct_fact": "골지체에서 생성되는 acentrosomal microtubule은 세포 내 microtubule의 약 30%이고, 나머지 약 70%는 중심체(centrosome)에서 생성된다. 비율(30% vs 70%)을 혼동하지 말 것.",
+  "gap": false
+ },
+ {
+  "id": "scrna-4",
+  "lecture_key": "scrna",
+  "in_top50": true,
+  "exam_probability": 85,
+  "topic": "기본 분석 워크플로우 — Normalization, Feature selection, Scaling(Z-transformation), QC",
+  "correct_fact": "올바른 서술: %mito = (MT-gene UMI 합 / 전체 UMI)×100이며, QC 임계값은 조직·세포 종류·실험 조건에 따라 분포가 달라지므로 데이터마다 분포를 시각화한 뒤 개별적으로 결정해야 한다(고정값이 아니다).",
+  "gap": false
+ },
+ {
+  "id": "scrna-g1",
+  "lecture_key": "scrna",
+  "in_top50": true,
+  "exam_probability": 85,
+  "topic": "Drop-out 현상과 sparse matrix(.mtx) 저장 구조",
+  "correct_fact": "올바른 서술: drop-out으로 생긴 0(technical zero)과 본래 비발현인 0(true zero)은 행렬 안에서 섞여 있어 통계적으로 구분하기 어려우며, 이 때문에 별도의 모델링이 필요한 문제가 된다. 0이 모두 명확한 비발현인 것은 아니다.",
+  "gap": true
+ },
+ {
+  "id": "genetherapy-3",
+  "lecture_key": "genetherapy",
+  "in_top50": true,
+  "exam_probability": 85,
+  "topic": "Base Editor vs Prime Editor — nickase 사용, DSB 없음",
+  "correct_fact": "단일염기 치환만 가능한 것은 Base Editor이고, insertion·deletion을 포함한 원하는 모든 형태의 편집이 가능한 것은 reverse transcriptase+가이드 RNA(pegRNA)를 쓰는 Prime Editor다. 둘의 역할이 뒤바뀌었다.",
+  "gap": false
+ },
+ {
+  "id": "tert-g3",
+  "lecture_key": "tert",
+  "in_top50": true,
+  "exam_probability": 85,
+  "topic": "세포노화(senescence) + p53 분기 (senescence vs apoptosis vs malignant transformation)",
+  "correct_fact": "p53이 '온전'하면 세포가 senescence/apoptosis로 진입해 악성 전환을 '억제'(보호 기전)하고, p53 기능이 '소실'되면 노화·사멸 장벽을 우회하여 malignant transformation·불멸화로 진행한다(PAGE 7·74·82 'p53 functioning?'). 4번은 이 인과가 정반대다.",
+  "gap": true
+ },
+ {
+  "id": "brain-4",
+  "lecture_key": "brain",
+  "in_top50": true,
+  "exam_probability": 85,
+  "topic": "GBM에서 근치적 수술절제(curative resection)가 불가능한 이유 / Maximal Safe Resection",
+  "correct_fact": "절제량이 많을수록 종양학적 예후는 좋아지지만(절제량↑ = 예후↑) 신경기능 손상이 한계가 된다. 따라서 기능 보존과 종양 제거량의 trade-off에서 균형점을 찾는 'Maximal Safe Resection(최대 안전 절제)'이 표준 전략이다.",
+  "gap": false
+ },
+ {
+  "id": "wonjaelee-g3",
+  "lecture_key": "wonjaelee",
+  "in_top50": false,
+  "exam_probability": 84,
+  "topic": "Why is cancer so difficult to cure? 4기전 통합(유전이질성→클론선택 / 가소성→persister / 공간보호→hypoxic·stromal / 면역적응→exhaustion) + 바이러스 진화 유비",
+  "correct_fact": "PAGE 61은 암을 바이러스 진화에 유비한다: 높은 돌연변이율·선택압·약물 내성과 빠른 적응을 공유하며 'Cancer cells are evolving in real time'. 치료가 어려운 근본 이유는 암의 실시간 진화/적응이지, 돌연변이율이 낮거나 약물의 약동학적 한계 때문이 아니다.",
+  "gap": true
+ },
+ {
+  "id": "scrna-g2",
+  "lecture_key": "scrna",
+  "in_top50": false,
+  "exam_probability": 84,
+  "topic": "PCA(선형 차원축소) 원리 + Elbow plot으로 PC 수 결정 + PCA→UMAP/clustering 입력 관계",
+  "correct_fact": "올바른 서술: PCA는 슬라이드 p.25/p.34에 명시된 대로 '선형(linear)' 차원축소이고, UMAP/tSNE가 '비선형(non-linear)' 방법이다. 분석 순서는 PCA로 먼저 PC를 뽑은 뒤 그 PC 값을 입력으로 UMAP/clustering을 수행하는 것이며(p.38), PCA가 UMAP 결과를 재투영하는 후처리가 아니다.",
+  "gap": true
+ },
+ {
+  "id": "thyroid-g2",
+  "lecture_key": "thyroid",
+  "in_top50": false,
+  "exam_probability": 84,
+  "topic": "Washout CYFRA 21-1의 discordance rescue 임상적용 (불일치 22→90.9% 구제, 동일검체 추가측정, 양방향 정정)",
+  "correct_fact": "Discordance rescue는 양방향이다(슬라이드 37). washout Tg의 위양성(benign 88개 중 15개 오분류)을 CYFRA가 true negative로 정정해 불필요한 neck dissection을 막는 방향과, FNAC가 놓친 전이(42개 중 6개)를 회수하는 방향이 함께 작동한다. CYFRA가 위음성만 찾아낸다는 단정은 틀렸다.",
+  "gap": true
+ },
+ {
+  "id": "immuno-3",
+  "lecture_key": "immuno",
+  "in_top50": false,
+  "exam_probability": 84,
+  "topic": "장-간 축(gut-liver axis)과 면역글로불린 A(IgA)의 면역억제",
+  "correct_fact": "간에 유입된 IgA는 대식세포의 PD-L1 발현을 '상향조절(upregulation)'하고 T세포 세포독성을 떨어뜨려 면역치료 효능을 '저하'시킨다.",
+  "gap": false
+ },
+ {
+  "id": "immuno-g3",
+  "lecture_key": "immuno",
+  "in_top50": false,
+  "exam_probability": 84,
+  "topic": "면역치료 저항성 극복 3대 전략 (LRT/항암제 병용으로 cold→hot 전환·면역억제세포 depletion·입양세포치료) 및 각 기전",
+  "correct_fact": "LRT/항암제 병용의 목적은 종양 괴사로 항원·사이토카인을 늘려 'cold' 종양을 'hot'으로 전환(cold→hot)하여 면역치료 반응을 높이는 것이며, 'hot→cold' 전환이 아니다.",
+  "gap": true
+ },
+ {
+  "id": "golgi-5",
+  "lecture_key": "golgi",
+  "in_top50": false,
+  "exam_probability": 82,
+  "topic": "Golgi Stress Response(GSR), GOMED(alternative autophagy), Golgi outpost",
+  "correct_fact": "Golgi outpost의 실제 주된 역할은 트래피킹 톨게이트(gateway)가 아니라, 수상돌기로 microtubule을 방출(공급)하는 것이다. 톨게이트 역할은 초기 가설이었으나 실제로는 아니었다.",
+  "gap": false
+ },
+ {
+  "id": "genetherapy-4",
+  "lecture_key": "genetherapy",
+  "in_top50": false,
+  "exam_probability": 82,
+  "topic": "CRISPR-Cas9 구성·PAM·indel→NMD knockout",
+  "correct_fact": "PAM(NGG)은 sgRNA가 아니라 표적 DNA에 존재하며, 표적 서열 '바로 옆'에 위치해야 하는 짧은 인식 모티프다. 20bp는 PAM이 아니라 표적과 상보결합하는 guide sequence(crRNA)의 길이다.",
+  "gap": false
+ },
+ {
+  "id": "dpath-3",
+  "lecture_key": "dpath",
+  "in_top50": false,
+  "exam_probability": 82,
+  "topic": "Lunit SCOPE IO 기반 Immune Phenotype(TIL 공간분석)과 ICI 반응 예측",
+  "correct_fact": "Immune-excluded는 'CE의 TIL density는 threshold 미만(낮음)이고 CS의 TIL density는 threshold(357/mm²) 이상(높음)'인 표현형으로, TIL이 stroma에 머물러 종양 상피로 침투하지 못한 상태이다(슬라이드 p.13, 녹음 00:09:49). 선지 3번은 CE/CS의 고저 조건을 정반대로 뒤집은 오류이다.",
+  "gap": false
+ },
+ {
+  "id": "thyroid-4",
+  "lecture_key": "thyroid",
+  "in_top50": false,
+  "exam_probability": 82,
+  "topic": "CYFRA 21-1 선정 근거 및 cystic PTC proteomics (Dinets 2015)·예후 연관성",
+  "correct_fact": "cystic PTC proteomics에서 S100A13은 민감도는 약 94%로 높았으나 특이도가 약 35%로 매우 낮아 임상 적용이 불가능했다. 민감도·특이도 약 82%/82%로 가장 균형 잡힌 CYFRA(CK19)가 최종 선정되었다. S100A13의 특이도 96%·균형 마커 선정은 틀린 진술이다.",
+  "gap": false
+ },
+ {
+  "id": "brain-5",
+  "lecture_key": "brain",
+  "in_top50": false,
+  "exam_probability": 82,
+  "topic": "뇌종양 3분류(Primary benign/malignant/Metastatic) 및 Intra-axial vs Extra-axial",
+  "correct_fact": "전체 뇌종양의 약 50%를 차지하는 흔한 범주는 '전이성 악성(폐암·유방암·흑색종 전이)'이다. '전이성 양성'은 사실상 거의 존재하지 않는 개념이다.",
+  "gap": false
+ },
+ {
+  "id": "brain-g1",
+  "lecture_key": "brain",
+  "in_top50": false,
+  "exam_probability": 81,
+  "topic": "CAR-T 합성 원리(MHC restriction 한계 vs 항체 항원인지) 및 1~3세대 신호 구조",
+  "correct_fact": "CAR의 scFv는 세포 표면 항원에 직접 결합하므로 MHC 제시(presentation)에 의존하지 않으며 HLA-matching이 필요 없다. CAR가 고안된 이유 자체가 T세포의 'MHC restriction' 한계를 우회하기 위함이다.",
+  "gap": true
+ },
+ {
+  "id": "wonjaelee-g4",
+  "lecture_key": "wonjaelee",
+  "in_top50": false,
+  "exam_probability": 80,
+  "topic": "Tumor Microenvironment(TME) 정의 및 4구성요소 / 세포 아키텍처(stromal·endothelial·immune·organ-resident)",
+  "correct_fact": "PAGE 25의 세포-역할 매칭: fibroblastic/stromal=ECM 리모델링·TGF-β·물리적 장벽, endothelial=혈관신생·저산소 구배, immune=면역 감시/억제·cytokine, organ-resident(예: mesothelial)=부착·암세포 모집. 내피세포가 ECM 리모델링/TGF-β/면역감시를 주도하거나 mesothelial이 혈관신생을 전담하는 것이 아니다.",
+  "gap": true
+ },
+ {
+  "id": "bloodomics-3",
+  "lecture_key": "bloodomics",
+  "in_top50": false,
+  "exam_probability": 80,
+  "topic": "scRNA-seq(10X) 원리 — Cell Barcode와 UMI의 역할",
+  "correct_fact": "세포 구분(cell demultiplexing)은 10X(Cell) Barcode의 역할이다. UMI는 PCR 증폭 전 각 mRNA 분자에 부착되어 동일 UMI reads를 중복 제거함으로써 실제 mRNA 분자 수를 정량하는 역할을 한다.",
+  "gap": false
+ },
+ {
+  "id": "bloodomics-g2",
+  "lecture_key": "bloodomics",
+  "in_top50": false,
+  "exam_probability": 80,
+  "topic": "Bulk vs single-cell(scRNA-seq) 비교 및 scRNA-seq의 ITH/TME 연구 장점(비편향·rare population 검출·TME 동시분석·cell-cell communication)",
+  "correct_fact": "rare population(희귀 소수 클론) 검출과 bias 없는 분석은 scRNA-seq(single-cell)의 장점이다. bulk는 조직을 통째로 분석해 세포집단이 뒤섞인 평균 특성만 측정하므로 소수 집단이 묻혀 검출이 어렵다.",
+  "gap": true
+ },
+ {
+  "id": "llmngs-g1",
+  "lecture_key": "llmngs",
+  "in_top50": false,
+  "exam_probability": 80,
+  "topic": "'Context matters' — AI/LLM 연구활용에서 사용자 context(도메인 지식)가 성능을 좌우하고, AI가 genomic big data 해석·multimodal 통합을 가속한다 (Summary bullet#1·#7, 강의 수미상관 thesis)",
+  "correct_fact": "AI/LLM의 유용성은 사용자가 주는 'right context'(도메인 지식·콘텐츠)의 질에 의존하며, 쿼리를 좁게 제한하기보다 풍부한 context를 제공해야 PhD 수준 성능을 끌어낼 수 있다. 사용자의 전문 context는 병목이 아니라 오히려 성능을 좌우하는 핵심 자원이고, 무관해 보이는 분야를 잇는 통찰은 여전히 인간의 역할이다(슬라이드 PAGE 7·40 + 녹음 00:06:52·00:09:37·00:25:00 근거).",
+  "gap": true
+ },
+ {
+  "id": "ev-4",
+  "lecture_key": "ev",
+  "in_top50": false,
+  "exam_probability": 80,
+  "topic": "EV 분리법 비교 — 초고속 원심분리(UC, 골든스탠다드), SEC, TFF, 침전(면역침전)",
+  "correct_fact": "TFF는 액체가 흐르는 방향과 여과가 일어나는 방향을 직각(수직)으로 두는(tangential) 방식으로, 평행이 아니다. 이 직각 배치 덕분에 클로깅 없이 대량 여과가 가능하다.",
+  "gap": false
+ },
+ {
+  "id": "thyroid-g3",
+  "lecture_key": "thyroid",
+  "in_top50": false,
+  "exam_probability": 80,
+  "topic": "Breast cancer vs Thyroid cancer washout biomarker 활용도 비교 (p54 전용 비교표)",
+  "correct_fact": "CYFRA 21-1은 유방암 특이 마커가 아니라 상피종양 활성을 반영하는 비특이 마커다(슬라이드 54 Marker specificity 행). washout 마커 효용은 유방암에서 낮고(supplemental tool; SLNB 등 이미 확립), 갑상선암에서 높다(Tg가 lineage-특이적이라 CYFRA가 보완, 특히 CK19+/dedifferentiated암). 선지5는 특이성과 효용 방향이 모두 뒤바뀌었다.",
+  "gap": true
+ },
+ {
+  "id": "brain-g2",
+  "lecture_key": "brain",
+  "in_top50": false,
+  "exam_probability": 80,
+  "topic": "면역항암치료 3시대(Coley→Rosenberg/사이토카인→Checkpoint 2018노벨상→세포치료) 및 GBM checkpoint 단독 실패(CheckMate 143)",
+  "correct_fact": "GBM에서 면역관문억제제는 단독(CheckMate 143)과 병용 모두 OS 개선에 실패했으며(슬라이드 p39 '재발성 GBM — OS 개선 없음'), 이것이 더 강력한 세포치료제(CAR-T·γδ T·NK)로 전환된 논리적 근거다. GBM 표준치료는 여전히 수술(Maximal safe resection)+방사선+Temozolomide이다(p14·p29).",
+  "gap": true
+ },
+ {
+  "id": "immuno-4",
+  "lecture_key": "immuno",
+  "in_top50": false,
+  "exam_probability": 80,
+  "topic": "위장관암 면역치료 저항 원인: 신항원·이질성·TAM·하이퍼프로그레션",
+  "correct_fact": "악성 흑색종은 신항원 부하가 '높아' 면역원성이 가장 '좋은' 종양으로, 단일 면역항암제 반응률이 약 60~70%에 이르는 대표적 '면역치료 고반응성' 종양이다.",
+  "gap": false
+ },
+ {
+  "id": "gastric-4",
+  "lecture_key": "gastric",
+  "in_top50": false,
+  "exam_probability": 80,
+  "topic": "글로벌 진료지침의 분화와 MATTERHORN 수술전후 면역치료",
+  "correct_fact": "MATTERHORN에서 durvalumab 병용군의 36개월 전체생존율은 68.6%로, 화학요법 단독 대조군의 61.9%보다 높았다. 즉 병용군이 대조군을 명확히 앞섰으며, 사망위험비(HR)도 약 22% 낮추었다.",
+  "gap": false
+ },
+ {
+  "id": "wonjaelee-2",
+  "lecture_key": "wonjaelee",
+  "in_top50": false,
+  "exam_probability": 78,
+  "topic": "패러다임 전환: 종양 이질성(genetic vs non-genetic), 종양 진화(clonal vs branching), 비유전적 가소성, 면역 편집(immune editing)",
+  "correct_fact": "암의 진화는 점진적·선형(stepwise/clonal)으로만 일어나는 것이 아니라, 분지진화(branching evolution)처럼 최소 선택압 하에서 '점진적이 아니라 폭발적으로(in bursts)' 일어나기도 한다 — 암은 자기 고유의 진화 동역학을 따른다(PAGE 20).",
+  "gap": false
+ },
+ {
+  "id": "scrna-g3",
+  "lecture_key": "scrna",
+  "in_top50": false,
+  "exam_probability": 78,
+  "topic": "Multi-modal data generation — CITE-seq의 ADT(Antibody-Derived Tag)로 표면 단백질 phenotype 동시 측정",
+  "correct_fact": "올바른 서술: CITE-seq는 한 세포에서 transcript와 표면 단백질을 동시에 측정하는 multi-modal 방식이며(슬라이드 p.52·p.54), ADT(표면 단백질)와 transcript는 서로 보완 관계로 함께 분석할 때 더 정확하다. ADT가 transcript를 대체하지 않으며, transcript를 버리고 ADT만 쓰는 것이 표준이 아니다.",
+  "gap": true
+ },
+ {
+  "id": "genetherapy-g1",
+  "lecture_key": "genetherapy",
+  "in_top50": false,
+  "exam_probability": 78,
+  "topic": "Jesse Gelsinger 사례(1999) — adenovirus immunotoxicity 사망 기전 + 임상시험 윤리위반 + AAV 전환 영향",
+  "correct_fact": "Jesse Gelsinger의 사망 원인은 고면역원성 아데노바이러스 벡터의 과량 투여에 따른 immunotoxicity(과도한 면역반응)이며, 삽입성 genotoxicity가 아니다(슬라이드 p14). 아데노바이러스는 유전체에 통합되지 않는다. 이 사건의 여파로 유전자치료 개발이 일시 중단되었고 이후 면역원성이 낮은 비통합형 AAV 벡터 중심으로 전환되었다(렌티바이러스 본격화가 아님).",
+  "gap": true
+ },
+ {
+  "id": "ev-g1",
+  "lecture_key": "ev",
+  "in_top50": false,
+  "exam_probability": 78,
+  "topic": "EV 마커 체계 — Tetraspanin(CD9/CD63/CD81), MISEV 마커 Category 1~5, 네거티브 마커, 권장 3 pos + 1~2 neg",
+  "correct_fact": "EV 동정 권장 조합은 포지티브 마커 3개 + 네거티브 마커 1~2개다(녹음 00:42). 선지는 포지티브/네거티브 개수가 정반대로 뒤바뀌어 있다.",
+  "gap": true
+ },
+ {
+  "id": "brain-g3",
+  "lecture_key": "brain",
+  "in_top50": false,
+  "exam_probability": 78,
+  "topic": "Brain immune privilege(면역특권) 및 면역억제 TME가 GBM 면역치료에 미치는 영향 / steroid 딜레마",
+  "correct_fact": "GBM의 종양미세환경(TME)은 강력하게 '면역억제적'이며, 이것이 BBB·낮은 TMB와 함께 checkpoint inhibitor 단독요법이 GBM에서 실패하는 핵심 원인이다. (친염증·면역활성 환경이 아니다.)",
+  "gap": true
+ },
+ {
+  "id": "gastric-g2",
+  "lecture_key": "gastric",
+  "in_top50": false,
+  "exam_probability": 78,
+  "topic": "액체생검(liquid biopsy)/ctDNA — MRD 감시, 클론진화·내성획득 실시간 포착, 조직생검 대비 시간해상도",
+  "correct_fact": "조직생검은 한 시점을 담은 '사진'(정적)에, ctDNA는 연속 촬영된 '영상'(동적)에 비유된다. 따라서 높은 시간해상도로 클론진화·내성 획득을 실시간 추적할 수 있는 쪽은 ctDNA이며, 조직생검이 아니다.",
+  "gap": true
+ },
+ {
+  "id": "wonjaelee-1",
+  "lecture_key": "wonjaelee",
+  "in_top50": false,
+  "exam_probability": 76,
+  "topic": "고전적 암생물학 패러다임 (Cell-autonomous view, Oncogene/Tumor suppressor, Oncogene addiction, Driver/Passenger mutation)",
+  "correct_fact": "Oncogene addiction은 암세포가 특정 활성화 종양유전자/신호경로에 생존·증식을 '의존'하기 때문에 그 표적을 차단하면 유독 취약해지는 현상이다(표적치료가 듣는 근거, PAGE 15). 내성을 만드는 기전이 아니라 표적치료 감수성의 근거이며, 의존에서 '벗어나는' 것이 아니다.",
+  "gap": false
+ },
+ {
+  "id": "nanomrna-1",
+  "lecture_key": "nanomrna",
+  "in_top50": true,
+  "exam_probability": 76,
+  "topic": "mRNA-LNP 플랫폼과 COVID-19 백신 (Pfizer/Moderna vs 바이러스 벡터, Robert Langer, Karikó/Weissman)",
+  "correct_fact": "바이러스 벡터(AZ·얀센) 백신이 mRNA-LNP보다 안전성 역사가 더 길었고(전통 플랫폼), 정부는 이를 근거로 바이러스 벡터를 대량 선주문했으나, COVID 이후 효능·점유율은 mRNA-LNP(화이자·모더나)가 압도적 우위를 보여 결과적으로 바이러스 벡터 선주문은 잘못된 판단이었다.",
+  "gap": false
+ },
+ {
+  "id": "scrna-g4",
+  "lecture_key": "scrna",
+  "in_top50": false,
+  "exam_probability": 75,
+  "topic": "Spatial Transcriptomics(Visium) vs scRNA-seq — 위치 보존, Spatial Barcode × Gene, 해상도·feature 발전 방향",
+  "correct_fact": "올바른 서술: Visium은 슬라이드(p.57)대로 spatial barcode 기반으로 '위치(spot)' 단위로 측정하므로 한 spot에 여러 세포가 섞일 수 있어 처음부터 단일세포(~10μm) 해상도로 각 세포를 분해하는 방식이 아니다. 단일세포 수준의 분해는 Xenium 등 더 높은 해상도 기술이 지향하는 방향이다.",
+  "gap": true
+ },
+ {
+  "id": "llmngs-g2",
+  "lecture_key": "llmngs",
+  "in_top50": false,
+  "exam_probability": 75,
+  "topic": "유전체 해독의 3단계(Sequencing→Annotate→functional Interpret)와 human/medical genetics의 궁극 목표인 'Genotype-based prediction of phenotype', SNP(개인 간 차이 ~0.1%)·BRCA1/2 genotype-phenotype 예시 (PAGE 30~34·39, Summary bullet#6)",
+  "correct_fact": "유전체 해독의 올바른 3단계는 (1) Sequencing → (2) Annotate → (3) functional Interpret이다(PAGE 39). Sequencing(genotyping)이 가장 먼저 수행되고 functional interpretation이 마지막·미해결 단계이며, 해석이 먼저 끝나야 sequencing이 의미를 갖는다는 것은 순서가 반대다. Human/medical genetics의 궁극 목표는 genotype-based prediction of phenotype이고(PAGE 34), 개인 간 SNP 차이는 genome의 ~0.1%(약 2~3백만 개)이며(PAGE 33), BRCA1/2는 22,000개 유전자 중 genotype-phenotype 관계의 대표 예시다(PAGE 30·31).",
+  "gap": true
+ },
+ {
+  "id": "nanomrna-g1",
+  "lecture_key": "nanomrna",
+  "in_top50": false,
+  "exam_probability": 75,
+  "topic": "mRNA-LNP의 4대 구성성분(ionizable cationic lipid / cholesterol / phospholipid / PEG-lipid)과 microfluidic encapsulation 제조 원리 (p19 ONPATTRO Components + p29 On-going projects)",
+  "correct_fact": "ionizable cationic lipid는 LNP의 핵심 기능성 성분으로, 그 화학 구조를 바꾸면 mRNA 전달 효율과 독성이 달라진다. 교수 연구실이 새로운 ionizable lipid를 합성해 '저독성·고효율'을 추구하는 on-going project(p29 'Developing new ionizable lipid & LNP')가 바로 이 점을 보여준다. LNP는 ionizable cationic lipid·cholesterol·phospholipid·PEG-lipid의 4대 지질과 봉입 핵산으로 구성되며(p19), microfluidic device로 핵산을 봉입(encapsulation)해 제조한다.",
+  "gap": true
+ },
+ {
+  "id": "ev-g2",
+  "lecture_key": "ev",
+  "in_top50": false,
+  "exam_probability": 72,
+  "topic": "EV 엔지니어링·탑재 전략 — pre vs post-isolation 로딩, PTGFRN/Tetraspanin scaffold, intein cleavable linker, endosomal escape용 viral protein, EV-bioPROTAC",
+  "correct_fact": "intein 절단성 링커는 표적세포 진입 후 잘려서 화물을 scaffold로부터 분리·방출시켜야 화물이 기능한다(녹음 00:54~00:55). 결합 상태를 유지하면 기능할 수 없다. 선지는 절단 목적을 정반대로 뒤집었다.",
+  "gap": true
+ },
+ {
+  "id": "genetherapy-g2",
+  "lecture_key": "genetherapy",
+  "in_top50": false,
+  "exam_probability": 70,
+  "topic": "Sickle cell disease / β-thalassemia — BCL11A knockout으로 fetal hemoglobin(α2γ2) 재활성화 (CRISPR knockout의 임상 적용)",
+  "correct_fact": "BCL11A는 γ-globin을 '억제'하는 전사인자이므로, 유전자가위로 BCL11A를 knockout(과발현이 아님)해야 억제가 풀려 γ-globin이 재발현되고 fetal hemoglobin(α2γ2)이 재활성화된다(녹음 45:15~46:28). β-globin은 결함이 있어도 γ-globin은 정상이라 fetal Hb 대체만으로 증상이 소실된다.",
+  "gap": true
+ },
+ {
+  "id": "ev-g3",
+  "lecture_key": "ev",
+  "in_top50": false,
+  "exam_probability": 70,
+  "topic": "MISEV2023 분류 축·명명 — small/large EV vs 엑소좀 용어, 분류 6축, NVEP(엑소미어/슈퍼미어, 지질이중막 없음)",
+  "correct_fact": "엑소미어·슈퍼미어(NVEP)는 지질이중막이 '없는' 비소포성 입자이므로 EV가 아니며, EV의 서브타입도 아니다(별도 NVEP 범주). 선지는 막의 유무와 분류를 정반대로 뒤집었다.",
+  "gap": true
+ },
+ {
+  "id": "nanomrna-2",
+  "lecture_key": "nanomrna",
+  "in_top50": false,
+  "exam_probability": 70,
+  "topic": "유전자 전달 3대 방법 분류 (Viral vector / Physical method / Non-viral delivery system)",
+  "correct_fact": "맨몸의 DNA·RNA를 세포에 그냥 노출시키면 세포 내로 잘 들어가지도, 제대로 발현되지도 않는다. 바로 이 때문에 외부 핵산을 세포 안으로 효율적으로 넣어주는 전달체(viral vector, physical method, non-viral system)가 필요하다.",
+  "gap": false
+ },
+ {
+  "id": "nanomrna-g2",
+  "lecture_key": "nanomrna",
+  "in_top50": false,
+  "exam_probability": 70,
+  "topic": "ONPATTRO(Patisiran): 최초 LNP siRNA 치료제(2018 FDA, COVID 이전), hATTR amyloidosis, 50nm IV LNP / siRNA(double-strand) vs mRNA(single-strand) 차이 (p19)",
+  "correct_fact": "ONPATTRO(Patisiran)는 p19에 명시된 대로 2018년 미국에서 FDA 승인된 siRNA-LNP 치료제(hATTR amyloidosis, 50nm, IV infusion)로 COVID-19 백신(mRNA-LNP, 2020)보다 먼저 등장했다. 즉 siRNA-LNP가 먼저이고, 그 LNP 플랫폼에 봉입 핵산만 mRNA로 바꿔 COVID 백신이 탄생했다(녹음 32:56). ONPATTRO는 double-strand siRNA, mRNA-LNP 백신은 single-strand mRNA를 봉입한다.",
+  "gap": true
+ },
+ {
+  "id": "nanomrna-3",
+  "lecture_key": "nanomrna",
+  "in_top50": false,
+  "exam_probability": 66,
+  "topic": "의료용 나노파티클의 크기(size) 논리 — small molecule·cell·lung capillary와의 비교 및 EPR effect",
+  "correct_fact": "EPR 효과는 종양 혈관이 빠른 신생혈관 형성으로 인해 정상 조직보다 성기고 틈(leaky)이 많은 구조를 갖기 때문에, 적절한 크기의 나노파티클이 그 틈으로 종양 조직에 빠져나가 축적(retention)되는 현상이다(passive targeting).",
+  "gap": false
+ },
+ {
+  "id": "nanomrna-g3",
+  "lecture_key": "nanomrna",
+  "in_top50": false,
+  "exam_probability": 64,
+  "topic": "mRNA-LNP 응용: lung-targeting LNP로 TRAIL & BAK-mRNA를 IV 투여하여 폐암 치료 — luciferase 영상으로 lung-specific 발현 확인, 지질 조성·비율 튜닝으로 organ targeting (p25~27 'mRNA-LNP for lung cancer therapy')",
+  "correct_fact": "p25~27의 mRNA-LNP 폐암 연구는 LNP에 직접 주사한 것이 아니라 'Intravenous injection'(IV, 정맥주사)으로 혈액 순환을 거쳐 lung을 표적한 lung-targeting LNP다. IV 경로는 본래 여러 장기로 분포할 수 있으나 lipid 조성·비율을 디자인해 lung·liver·spleen 중 lung 쪽으로 전달을 치우치게 만든 것이며, luciferase imaging으로 lung-specific 발현을 확인했다. TRAIL은 extrinsic(외부 TRAIL receptor), BAK은 intrinsic(cytosol signaling) 경로로 apoptosis를 일으키는 combination therapy다.",
+  "gap": true
+ }
+]

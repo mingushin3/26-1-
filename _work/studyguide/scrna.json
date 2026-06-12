@@ -1,0 +1,128 @@
+{
+  "code": "scrna",
+  "lecture_label": "03-24 scRNAseq (이혜옥)",
+  "essence": "scRNA-seq는 세포 하나하나의 transcriptome으로 cellular identity/state를 정의한다. 시험은 (1) UMI/barcode 정량 원리, (2) 분석 워크플로우(QC→Normalization→FeatureSelection→Scaling→PCA→UMAP/clustering)의 각 단계 '역할 뒤집기', (3) 3' vs 5'/TCR·BCR, drop-out, CITE-seq, spatial 같은 키워드 정의를 함정으로 묻는다.",
+  "analogy": "raw 데이터는 '카톡 단톡방 로그'다. Cell Barcode=누가 보냈나(사람), UMI=원본 메시지인가 복붙(증폭)인가. 같은 UMI는 복붙이니 1개로 합치고, 다른 UMI는 진짜 다른 분자라 따로 센다.",
+  "concepts": [
+    {
+      "heading": "UMI vs Cell Barcode (정량의 심장, 무조건 출제)",
+      "points": [
+        "Cell Barcode = 한 GEM(oil droplet) 안 bead의 모든 oligo가 '동일' 서열 → 세포 식별자(누구 세포냐)",
+        "UMI = 같은 bead라도 oligo마다 '서로 다른' 서열 → 원본 분자 식별자",
+        "같은 UMI = PCR 증폭 복제물 → 묶어서 1개로 계수 / 다른 UMI = 다른 원본 분자 → 각각 계수",
+        "read 20개라도 UMI가 5종 → 발현값 = 5 (★)",
+        "효과: PCR 증폭 bias 제거 → count가 단순 read count보다 낮아짐(정상)",
+        "필수슬라이드 도식: 동일 UMI(AGCTTATGCT) O/X로 중복 제거"
+      ]
+    },
+    {
+      "heading": "분석 워크플로우 — 각 단계의 '역할'을 정확히",
+      "points": [
+        "QC: nFeature(nGene) 낮음=빈droplet/저품질, 높음=doublet / %mito 높음=죽는 세포 → 임계값은 데이터마다 다름(고정 아님, violin/scatter로 결정)",
+        "%mito = (MT-gene UMI / Total UMI) × 100, 13개 MT-genes",
+        "Normalization(LogNormalize): count/세포 total UMI × scalefactor(기본 10,000) → ln(+1). depth 차이 보정",
+        "FeatureSelection(FindVariableFeatures): cell-to-cell 변이 큰 HVG 기본 2,000개 → downstream(PCA) 입력",
+        "Scaling(Z-transform): 평균0·SD1 → 고발현 housekeeping 유전자가 PCA dominate 막기",
+        "DEG: FindAllMarkers, 기본 Wilcoxon"
+      ]
+    },
+    {
+      "heading": "차원축소: PCA(선형) → UMAP/tSNE(비선형) + clustering",
+      "table": {
+        "title": "PCA vs UMAP/tSNE (순서·선형성 함정)",
+        "columns": ["항목", "PCA", "UMAP/tSNE"],
+        "rows": [
+          ["선형성", "선형(linear) p.34", "비선형(non-linear) p.25/p.38"],
+          ["역할", "상관 feature 묶은 PC(metafeature) 생성, 먼저 차원축소", "PCA의 PC를 입력받아 시각화"],
+          ["순서", "1단계(입력 생성)", "후단계(PC 사용) — PCA가 UMAP 후처리 아님"],
+          ["거리 해석", "PC 수는 Elbow plot(heuristic)으로 결정", "국소(local) 신뢰 O / 전역(클러스터 간) 거리 의미 X"]
+        ]
+      },
+      "points": [
+        "graph-based clustering: PCA공간 KNN graph → Jaccard로 edge보정 → Louvain(default) modularity 최적화",
+        "UMAP과 clustering 모두 같은 PC 입력 → 결과 비슷하게 보임",
+        "★ UMAP은 차원축소(시각화), clustering은 군집 정의 — 별개. 용어 혼용 금지"
+      ]
+    },
+    {
+      "heading": "3' vs 5'/TCR·BCR + drop-out·CITE-seq·Spatial 키워드",
+      "points": [
+        "3'/5' 모두 poly-A를 oligo-dT로 포착 시작 / 5'은 TSO로 full-length cDNA",
+        "3': cDNA 잘라 3'말단 ~100bp만 시퀀싱 → 유전자 식별엔 충분, 단 V(D)J clonality는 못 봄",
+        "5'+TCR/BCR: V(D)J가 5'쪽 → 정보 다 담으려면 ~400bp 긴 라이브러리(★100bp 아님)",
+        "drop-out: 실재 transcript인데 미검출→0. true zero와 섞여 구분 어려움(별도 모델링 필요)",
+        "sparse matrix: 0 아닌 값만 좌표 저장 → barcodes.tsv/features.tsv/matrix.mtx. '154 1 21'=154번 유전자, 1번 세포, UMI 21",
+        "CITE-seq: ADT(항체+oligo barcode)로 표면단백질+transcript 동시측정(multi-modal). 보완관계, 항체 specificity 검증 필요",
+        "Spatial(Visium): spatial barcode로 위치(spot)단위 측정 → 한 spot에 여러 세포(단일세포 해상도 아님). Xenium ~476 panel, 'higher resolution & more features'로 발전"
+      ]
+    }
+  ],
+  "traps": [
+    {
+      "qref": "scrna-1",
+      "topic": "UMI 중복 제거 방향",
+      "correct": "✅ 같은 유전자 read 중 '동일 UMI'는 증폭 중복으로 묶어 1개로, '다른 UMI'는 각각 원본 분자로 계수",
+      "trap": "❌ 다른 UMI를 제거하고 동일 UMI만 개별 분자로 센다 (방향 정반대)"
+    },
+    {
+      "qref": "scrna-2",
+      "topic": "UMAP 전역 거리 해석",
+      "correct": "✅ UMAP은 국소(local) 구조만 신뢰 가능, 떨어진 클러스터 간 2D 거리는 생물학적 의미 없음",
+      "trap": "❌ UMAP은 전역(global) 거리를 잘 보존하므로 클러스터 간 거리를 분화 거리로 직접 해석 권장"
+    },
+    {
+      "qref": "scrna-3",
+      "topic": "5' TCR/BCR 라이브러리 길이",
+      "correct": "✅ 5' TCR/BCR은 V(D)J 다 담으려고 일반(~100bp)보다 긴 ~400bp 라이브러리 제작",
+      "trap": "❌ TCR/BCR 분석 시 일반 발현용보다 짧은 ~100bp 라이브러리 제작"
+    },
+    {
+      "qref": "scrna-4",
+      "topic": "QC 임계값 고정 여부",
+      "correct": "✅ %mito=(MT UMI/Total UMI)×100, QC 임계값은 조직·세포별 분포가 달라 데이터마다 시각화 후 개별 결정",
+      "trap": "❌ QC 임계값(%mito)을 조직·세포와 무관하게 모든 데이터셋에서 5%로 고정 적용"
+    },
+    {
+      "qref": "scrna-g1",
+      "topic": "drop-out의 0 구분",
+      "correct": "✅ drop-out의 0(technical)과 본래 비발현 0(true)은 섞여 있어 구분 어려움 → 별도 처리 필요",
+      "trap": "❌ drop-out의 0은 모두 명확한 비발현(true zero)이라 완벽히 구분돼 별도 처리 불필요"
+    },
+    {
+      "qref": "scrna-g2",
+      "topic": "PCA 선형성·순서",
+      "correct": "✅ PCA는 선형(linear) 차원축소이고 먼저 PC를 뽑아 UMAP/clustering 입력으로 씀(UMAP이 비선형)",
+      "trap": "❌ PCA가 비선형 차원축소이고 UMAP은 PCA 결과를 선형 재투영하는 후처리 단계"
+    },
+    {
+      "qref": "scrna-g3",
+      "topic": "CITE-seq ADT 역할",
+      "correct": "✅ CITE-seq는 transcript+표면단백질 동시측정(multi-modal), ADT와 transcript는 보완 관계로 함께 분석",
+      "trap": "❌ ADT가 transcript보다 항상 정확해 transcript를 버리고 ADT만으로 세포 유형 정의하는 것이 표준"
+    },
+    {
+      "qref": "scrna-g4",
+      "topic": "Visium 해상도",
+      "correct": "✅ Visium은 spatial barcode로 위치(spot) 단위 측정 → 한 spot에 여러 세포 섞임(단일세포 해상도 아님)",
+      "trap": "❌ Visium은 처음부터 단일세포(~10μm) 해상도로 각 세포를 분해해 한 spot에 여러 세포 섞이지 않음"
+    }
+  ],
+  "memorize": [
+    "같은 UMI=복제물 1개로, 다른 UMI=따로 센다. read 20·UMI 5종 → 발현값 5.",
+    "PCA=선형(먼저)→UMAP/tSNE=비선형(시각화). UMAP 국소만 믿고 클러스터 간 거리는 무의미.",
+    "5' TCR/BCR=400bp(길게), 일반 3'=100bp. QC 임계값은 데이터마다 다름(5% 고정 X).",
+    "%mito=(MT UMI/Total UMI)×100, HVG 기본 2000개, LogNormalize scalefactor 10000."
+  ],
+  "figures": [
+    {
+      "pdf": "20260324_대학원합동강의_필수슬라이드_.pdf",
+      "page": 1,
+      "caption": "UMI/Cell Barcode 도식 — 동일 UMI(AGCTTATGCT)는 O/X로 중복 제거되어 1개로 계수되는 정량 원리(필수슬라이드)"
+    },
+    {
+      "pdf": "20260324_대학원합동강의_scRNAseq_.pdf",
+      "page": 30,
+      "caption": "QC 단계 — nFeature/nCount/percent.mt violin plot, %mito 계산식, 필터링 subset 코드. 임계값은 데이터마다 결정"
+    }
+  ]
+}

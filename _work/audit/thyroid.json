@@ -1,0 +1,131 @@
+{
+  "lecture_key": "thyroid",
+  "lecture_label": "05-12 갑상선암 바이오마커 (임동석)",
+  "summary_universe": [
+    {
+      "topic": "Take-home message 4가지 (unmet need 출발 / fancy omics 대신 known marker 재적용 / production~removal 분자특성 이해 / preliminary 1편 부족·validation 필수)",
+      "source": "슬라이드 p55 TAKE-HOME MESSAGE = 본 deck의 마지막 결론 슬라이드(요약)",
+      "exam_prob": 88,
+      "reason": "deck 전체를 관통하는 explicit 마지막 요약 슬라이드. 교수 강조도 mid라도 써머리 가중 최우선. On-going/Future study(proteomics·cost-effectiveness·IHC CK19/caspase-3·multicenter·신의료기술)까지 명시되어 통합 사고형 서술 1순위."
+    },
+    {
+      "topic": "Breast cancer vs Thyroid cancer FNA washout biomarker 활용도 비교 (target LN / standard approach / marker specificity / treatment impact / 임상 트렌드 / 효용)",
+      "source": "슬라이드 p54 = 강의 후반부 전용 비교 TABLE(행·열 정리)",
+      "exam_prob": 80,
+      "reason": "마지막 3~6장 내 위치한 전용 비교표 슬라이드. S7(체계적 비교·대조)+B2(행/열 단위 표) 동시 충족하는 비교문제 1순위 포맷. 박사 변별 적용형."
+    },
+    {
+      "topic": "Washout CYFRA 21-1의 discordance rescue 임상적용 (FNAC+Tg 불일치 22개 중 90.9%(20/22) 정확진단 구제, Zero additional procedures)",
+      "source": "슬라이드 p37·p39 (2019 pilot 130 LN flowchart) + p52 (2025 검증 FNAC+CYFRA 95.1% accuracy)",
+      "exam_prob": 85,
+      "reason": "초안 TIER1 T24(W=4). 13.9% 불필요수술 문제를 실제로 해결하는 clinical-action 토픽이라 임상 적용형 서술 고출제. 2019→2025 동일결론 반복(S5)+경고성 발화(S6)."
+    },
+    {
+      "topic": "Washout Tg vs CYFRA 21-1 진단성능 head-to-head + Universal cutoff(~1.12 ng/mL) 안정성 (정상조직·TgAb 비의존)",
+      "source": "슬라이드 p35(분포 overlap)·p49(수술상태별 universal line)·p50(head-to-head 표)·p38/p52(A~F 조합 성능)",
+      "exam_prob": 88,
+      "reason": "후반부 비교표·그래프 집중. S7+B2. universal cutoff는 트랩 포인트(Tg 21.69/8.0 vs CYFRA 1.14/1.10) 동반 비교문제 단골."
+    },
+    {
+      "topic": "CYFRA 21-1 분자생성 기전 (CK19 40kDa → Caspase-3 233-SVEVD 절단 → 19kDa soluble fragment) + Dohmoto 2001 인과검증(Z-DEVD-FMK)",
+      "source": "슬라이드 p19·p20·p31·p42 (반복 등장, 기전 정의)",
+      "exam_prob": 95,
+      "reason": "초안 최고 가중 W=5~6. 기전 설명형·트랩(Caspase-3 양성인자, 억제제 시 감소) 최우선. 박사 변별 기전형."
+    },
+    {
+      "topic": "Washout Tg 3가지 한계 (cutoff 편차 0.2~50 / 정상조직 위양성·수술전후 cutoff 차이 / TgAb 위음성) + 9% discordance·13.9%(36/259) 불필요수술",
+      "source": "슬라이드 p15(3한계)·p13~14(cutoff 표·13.9%)·p16(discordant 케이스)",
+      "exam_prob": 93,
+      "reason": "초안 최고 가중 W=6. S1+S2+S5+S6+S7+B2 전부 발동. 수술 전/후 cutoff 뒤바꿈 트랩 단골."
+    },
+    {
+      "topic": "CYFRA 21-1 선정 5근거 + cystic PTC proteomics (Dinets 2015: 1581→4단백질 CK19/S100A13/ANXA3/CMBL, S100A13 sens94%/spec35% 트랩, CK19 82/82)",
+      "source": "슬라이드 p30(Why CYFRA? 요약)·p27·p28·p17(이상적 biomarker 3조건)·p21~25(타암 fluid 선행데이터)",
+      "exam_prob": 82,
+      "reason": "슬라이드 30이 explicit 'Why did we choose CYFRA?' 요약 슬라이드(써머리 가중). 근거통합·연구디자인 사고형. S100A13 특이도 트랩 박사 변별."
+    },
+    {
+      "topic": "이상적 신규 바이오마커 조건 3가지 (cancer marker not thyroid tissue marker / Tg처럼 측정용이 / 갑상선암 특이) — Clinical questions & unmet needs",
+      "source": "슬라이드 p17·p18 (Objective)",
+      "exam_prob": 70,
+      "reason": "연구 설계의 출발점 명시 슬라이드. S2(반드시·조건)+S7. CYFRA 충족여부 평가형 적용문제 가능."
+    },
+    {
+      "topic": "CYFRA 21-1 예후 예측력 (TERT promoter OR 3.35 / LN meta OR 5.43 / Distant meta OR 4.27) — 진단 넘어 risk stratification",
+      "source": "슬라이드 p51 (Lee 2025 prognostic OR)",
+      "exam_prob": 72,
+      "reason": "후반부 슬라이드 + 진단→예후 패턴전환(S4)+B2(OR 직접 읽음). OR 수치 매칭 트랩(단답/객관식) 동반 가능. 강조도 mid라 단독 서술보다 적용형 통합 가능."
+    },
+    {
+      "topic": "New Clinical Paradigm 5단계 워크플로우 + Zero Additional Procedures (suspicious LN→FNAC→동일needle Tg washout→CYFRA→>1.12 확정 action)",
+      "source": "슬라이드 p53 (초안 표기) / 본 deck 마지막부 정리 슬라이드",
+      "exam_prob": 68,
+      "reason": "정리·통합형. 다만 SLIDE TEXT 원문 p53은 decision letter 맥락이라 5단계 워크플로우의 슬라이드 진위는 초안 의존도 높음 → 닫힌우주(C1) 확신도 중간. 출제시 순서배열형."
+    }
+  ],
+  "current_topics": [
+    {
+      "id": "thyroid-1",
+      "topic": "CYFRA 21-1 분자생성 기전 (CK19→Caspase-3→soluble fragment) + Dohmoto Z-DEVD-FMK 트랩",
+      "exam_prob_reassessed": 95,
+      "keep": true,
+      "note": "최고 가중 기전 토픽을 정확히 적중. Caspase-3가 음성조절자라는 4번 오답선지는 슬라이드 31+초안 기전과 정합하는 박사급 트랩. 강력 유지."
+    },
+    {
+      "id": "thyroid-2",
+      "topic": "Washout Tg 3가지 한계 + 수술 전/후 cutoff 방향성 트랩(21.69 vs 8.0) + 13.9% 불필요수술",
+      "exam_prob_reassessed": 93,
+      "keep": true,
+      "note": "W=6 최고 가중. 수술 전/후 뒤바꿈(선지4)은 교수가 녹음에서 명시 강조한 핵심 트랩(p15·p13~14 근거). 강력 유지."
+    },
+    {
+      "id": "thyroid-3",
+      "topic": "Tg vs CYFRA 진단성능 + Universal cutoff 안정성 (마커 역할 뒤바꿈 트랩)",
+      "exam_prob_reassessed": 88,
+      "keep": true,
+      "note": "head-to-head + universal cutoff(p49·p35·p50) 비교 토픽 적중. 선지5의 두 마커 설명 뒤바꿈은 고변별 트랩. 유지."
+    },
+    {
+      "id": "thyroid-4",
+      "topic": "CYFRA 선정 5근거 + Dinets cPTC proteomics·S100A13 specificity 35% 트랩 + 예후 연관",
+      "exam_prob_reassessed": 82,
+      "keep": true,
+      "note": "p30 요약슬라이드 기반 근거통합형. S100A13 특이도 35% 트랩(선지3)은 명시된 박사 변별 함정. 단, 선지5가 예후(TERT/LN/distant)를 한 문항 안에 끼워 넣어 p51 예후토픽을 '덮은 듯' 보이나 정답근거가 아닌 보조선지라 예후 독립출제 갭은 남음. 유지."
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "Take-home message 4가지 + on-going/future study (마지막 요약 슬라이드 통합 서술)",
+      "source_slide": "p55 TAKE-HOME MESSAGE (deck의 마지막 결론/요약 슬라이드)",
+      "exam_prob": 88,
+      "why_high_yield": "explicit summary/last-slide. 강의 전체 메시지를 압축한 마지막 정리 슬라이드 → 써머리 가중 최우선. 현재 4문항 어디에도 take-home 메시지(known marker 재적용·validation 필수 등)를 직접 묻는 문항이 없음. 강조도 mid일수록 마지막장 가중 강화 원칙 적용.",
+      "recommend_add": true
+    },
+    {
+      "topic": "Breast cancer vs Thyroid cancer washout biomarker 활용도 5측면 비교",
+      "source_slide": "p54 (전용 비교 TABLE, 강의 후반부 정리 슬라이드)",
+      "exam_prob": 80,
+      "why_high_yield": "비교표 슬라이드. S7+B2 동시 충족하는 비교문제 최적 포맷이며 마지막 3~6장 내 위치. 현재 문항 미커버. 박사 변별 적용·비교형으로 출제 가능성 높음.",
+      "recommend_add": true
+    },
+    {
+      "topic": "Washout CYFRA 21-1의 discordance rescue 임상적용 (불일치 22→90.9% 구제, FNAC+CYFRA 95.1% accuracy, Zero additional procedures)",
+      "source_slide": "p37·p39 (2019 130 LN) + p52 (2025 95.1%)",
+      "exam_prob": 84,
+      "why_high_yield": "비교표/그래프 기반 임상적용 토픽(초안 TIER1 T24, W=4). 13.9% 불필요수술을 실제 해결하는 clinical-action 시나리오라 적용형 서술 고출제. 현재 문항은 성능수치만 다루고 'discordant 환자에서 어떻게 구제하는가'라는 적용 시나리오는 미커버.",
+      "recommend_add": true
+    },
+    {
+      "topic": "CYFRA 21-1 예후 예측력 (TERT OR 3.35 / LN OR 5.43 / Distant OR 4.27) — 진단 넘어 risk stratification",
+      "source_slide": "p51 (Lee 2025 prognostic OR)",
+      "exam_prob": 72,
+      "why_high_yield": "후반부 슬라이드 + 진단→예후 패턴전환(S4). 비교표는 아니나 OR 수치 매칭 트랩이 가능. thyroid-4 선지에 보조로 언급될 뿐 독립 출제 미커버. 강조도 mid라 단독 신설보다 take-home/적용형 통합 권장.",
+      "recommend_add": false
+    }
+  ],
+  "weak_to_replace": [],
+  "verdict": "needs_additions",
+  "recommended_add_count": 2,
+  "recommended_drop_ids": [],
+  "notes": "현재 4문항은 기전(p31)·wTg한계(p15)·성능비교/universal cutoff(p49)·선정근거/proteomics(p30) 등 본문 핵심 고가중 토픽을 정확·강건하게 적중하며 모두 keep(약문항·단순암기·중복 없음 → drop 불필요). 다만 '써머리 가중' 원칙상 deck의 마지막 결론/정리 슬라이드 2장이 비커버 갭: (1) p55 TAKE-HOME MESSAGE 통합 서술(최우선), (2) p54 Breast vs Thyroid 전용 비교표. 추가로 p37/p52 discordance rescue 임상적용형도 고출제이나 우선순위상 p55·p54 다음. 예후 p51은 thyroid-4 보조선지로 부분 노출되어 단독 신설 비권장(통합 흡수). 권장 추가 2문항: ①take-home 메시지 통합·연구전략 함의(서술), ②Breast vs Thyroid 비교(적용·비교형). C1 주의: p53 'New Clinical Paradigm 5단계'와 일부 OR/2025 세부수치는 SLIDE TEXT 원문보다 초안 의존도가 높아(스캔 표 텍스트 누락) 출제 시 슬라이드 진위 재확인 필요 [UNCERTAIN: p44~53 표/그래프 OCR 텍스트가 번들 SLIDE TEXT에 비어 있음]."
+}

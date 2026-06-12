@@ -1,0 +1,48 @@
+[
+  {
+    "id": "wonjaelee-1",
+    "lecture_key": "wonjaelee",
+    "lecture_label": "03-03 암생물학 패러다임 변화 (이원재 교수, 녹음없음 0.8x)",
+    "topic": "고전적 암생물학 패러다임 (Cell-autonomous view, Oncogene/Tumor suppressor, Oncogene addiction, Driver/Passenger mutation)",
+    "exam_probability": 76,
+    "tier": 1,
+    "stem": "다음 중 고전적 암생물학 패러다임(classical paradigm)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "종양억제유전자(tumor suppressor)는 세포분열을 조절하여 비정상적 증식을 억제하는 단백질을 암호화하며, RB·p53·APC·BRCA2 등이 대표적이다.",
+      "원종양유전자(proto-oncogene)가 돌연변이를 통해 종양유전자(oncogene)로 전환되면 암을 유발할 잠재력을 가지며, KRAS·MYC·HER2/neu·BRAF 등이 그 예이다.",
+      "Cell-autonomous view에서 악성도는 특정 세포 내부의 유전적·후성유전적 변화에 의해 주도되며, 암세포는 주변 미세환경과 무관하게 증식·생존할 수 있다.",
+      "Driver mutation은 암 성장을 촉진하고 흔히 치료 표적이 될 수 있는(actionable) 반면, passenger mutation은 선택적 이득을 부여하지 않아 일반적으로 표적치료의 대상이 되지 않는다.",
+      "Oncogene addiction은 암세포가 특정 활성화된 종양유전자나 신호경로에 대한 의존에서 벗어나 다양한 경로로 생존을 분산시킴으로써 표적치료에 내성을 갖게 되는 현상을 말한다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번입니다. Oncogene addiction(종양유전자 중독)은 슬라이드 정의 그대로 '암세포가 특정 활성화된 종양유전자 또는 신호경로에 생존·증식을 의존(rely on)하게 되어, 그로 인해 표적치료에 유독 취약해지는(uniquely vulnerable)' 현상입니다. 즉 의존 때문에 그 한 점을 막으면 무너지는 '아킬레스건'이 생긴다는 개념이고, 이것이 바로 표적치료(Trastuzumab→HER2, Imatinib→BCR-ABL, Gefitinib→EGFR 등)가 듣는 근거입니다. 5번은 '의존에서 벗어나 경로를 분산시켜 내성을 갖는다'고 방향을 정반대로 뒤집어 놓았으므로 명백히 틀립니다. 나머지 1~4번은 모두 슬라이드(PAGE 8·12·13·15)의 핵심 정의와 일치하는 옳은 진술입니다.",
+    "correct_fact": "Oncogene addiction은 암세포가 특정 활성화 종양유전자/신호경로에 생존·증식을 '의존'하기 때문에 그 표적을 차단하면 유독 취약해지는 현상이다(표적치료가 듣는 근거). 내성을 만드는 기전이 아니라 표적치료 감수성의 근거이며, 의존에서 '벗어나는' 것이 아니다.",
+    "selection_reason": "S7(고전 패러다임 내 oncogene/tumor suppressor, driver/passenger 등 비교·대조 구조 다수)와 강의 전체 서사의 출발점(Classical paradigm)에 해당. oncogene addiction은 별도 슬라이드(PAGE 15)에 정의+표로 강조되어 출제 1순위 후보.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "3월 3일 합동강의 (1).pdf", "page": 15, "caption": "Oncogene addiction 정의와 표적 종양유전자-암종-약물 대응표"}
+  },
+  {
+    "id": "wonjaelee-2",
+    "lecture_key": "wonjaelee",
+    "lecture_label": "03-03 암생물학 패러다임 변화 (이원재 교수, 녹음없음 0.8x)",
+    "topic": "패러다임 전환: 종양 이질성(genetic vs non-genetic), 종양 진화(clonal vs branching), 비유전적 가소성, 면역 편집(immune editing)",
+    "exam_probability": 78,
+    "tier": 1,
+    "stem": "다음 중 고전적 패러다임에서 '암을 생태계로 보는' 패러다임 전환(paradigm shift)을 뒷받침하는 개념들에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "유전적 이질성(genetic heterogeneity)은 subclone 차이·copy number variation·추가 돌연변이 등 DNA 수준 변화에 기인하는 반면, 비유전적 이질성(non-genetic heterogeneity)은 EMT-like·stem-like·drug-tolerant persister 등 전사 상태(cell state)의 차이로 나타난다.",
+      "암의 진화는 점진적·단계적(stepwise)으로만 일어나며, 분지진화(branching evolution)나 폭발적(in bursts) 양상은 관찰되지 않고 항상 선형적 계통수를 따른다.",
+      "전이는 선형적(linear) 과정이 아니라 진화적(evolutionary) 과정으로, linear progression과 parallel progression 모델로 설명될 수 있다.",
+      "비유전적 가소성(non-genetic plasticity)에 따르면 종양 세포 상태 전환은 클론 선택만으로 일어나는 것이 아니며, 염증 신호·저산소·치료 유발 스트레스 등이 새로운 유전적 돌연변이 없이도 상태 변화를 유도할 수 있다.",
+      "면역 편집(immune editing)에서 종양 집단은 면역 매개 선택압(immune-mediated selective pressure) 아래 killing·selection·survival 과정을 거치며, 면역계는 단순 방어체계가 아니라 암 진행의 전신적 파트너로 작용할 수 있다."
+    ],
+    "answer_index": 1,
+    "explanation": "정답은 2번입니다. 이 강의의 핵심 메시지 중 하나가 '암은 자기 고유의 진화 동역학을 따른다(Cancer follows its own evolutionary dynamics)'이며, 슬라이드는 clonal evolution(stepwise progression, 선형 계통)과 branching evolution(phylogenetic tree, 최소 선택압, 점진적이 아니라 '폭발적으로 bursts' 발생)을 명확히 대조합니다(PAGE 20). 따라서 '항상 선형적이고 단계적으로만 일어나며 분지진화나 폭발적 양상은 없다'는 2번은 강의의 결론을 정면으로 뒤집은 명백히 틀린 진술입니다. 나머지 1·3·4·5번은 각각 이질성의 유전/비유전 구분(PAGE 19), 전이의 진화적 성격(PAGE 10), 비유전적 가소성(PAGE 47), 면역 편집·면역-암 crosstalk(PAGE 32·33)의 슬라이드 핵심을 정확히 반영한 옳은 진술입니다.",
+    "correct_fact": "암의 진화는 점진적·선형(stepwise/clonal)으로만 일어나는 것이 아니라, 분지진화(branching evolution)처럼 최소 선택압 하에서 '점진적이 아니라 폭발적으로(in bursts)' 일어나기도 한다 — 암은 자기 고유의 진화 동역학을 따른다.",
+    "selection_reason": "강의 제목('패러다임 변화')의 중심 축이자 S7(genetic vs non-genetic, clonal vs branching, linear vs parallel 등 비교·대조 구조가 연속 반복)에 정확히 해당. 패러다임 전환의 결론 문장들이 슬라이드마다 한 줄 강조로 반복되어 서술/비교형 출제 최우선.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "3월 3일 합동강의 (1).pdf", "page": 20, "caption": "Clonal evolution(stepwise) vs Branching evolution(phylogenetic tree, bursts) 대조 — 유전적 이질성의 발생 방식"}
+  }
+]

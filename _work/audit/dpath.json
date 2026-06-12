@@ -1,0 +1,124 @@
+{
+  "lecture_key": "dpath",
+  "lecture_label": "04-28 디지털병리 (이성학)",
+  "summary_universe": [
+    {
+      "topic": "Computational pathology 4대 접근법 비교 (Strongly/Weakly Supervised, Multimodal, Foundation Model) — 어노테이션 단위·적용 task",
+      "source": "슬라이드 pp.9/10/17/78/80 (동일 도표 5회 반복) + 강의 뼈대 비교표",
+      "exam_prob": 95,
+      "reason": "동일 비교 도표가 5회 반복 등장(S5)하여 강의 전체 구조 축. 4모델 나란히 비교(S7)+행단위 낭독(B2). 거의 확정적 출제. 닫힌우주 슬라이드로 진위 판정 가능."
+    },
+    {
+      "topic": "CNN 기반 WSI 분석 파이프라인 (패치추출→Convolution→Pooling(크기 축소)→FC Layer→Softmax)",
+      "source": "슬라이드 pp.3/4/5/6/7 (전처리·CNN 2장 분량)",
+      "exam_prob": 88,
+      "reason": "기전 설명형 대학원 변별 핵심. pp.6-7 2장 분량(S1), 얼룩말 비유 패턴전환(S4), '결국에는' 반복(S5). Pooling 축소/확대 트랩 빈출."
+    },
+    {
+      "topic": "Foundation Model 개념 + 기존 CNN 대비 차이·장단점 (한 모델 다중 downstream, fine-tuning, 컴퓨팅 비용 큼; EBV 0.947→0.988, MSI 0.827→0.898)",
+      "source": "슬라이드 pp.81-88 (8장, 특히 p.83-84 'CNN-based Model vs Foundation Model' 비교 슬라이드, p.85-86 특성·성능, p.88 UNI)",
+      "exam_prob": 90,
+      "reason": "[마지막 1/3 deck 핵심·비교표] 8장 분량(S1)+전용 비교 슬라이드(S7). 교수가 EBV/MSI AUROC 향상수치를 직접 낭독(B2)하고 '각광받는' 최신 트렌드로 강조. 써머리 가중 최우선 대상이나 현재 미커버."
+    },
+    {
+      "topic": "Take-home / Conclusion — 'THE FUTURE IS MULTIMODAL' (AI는 암 병리 표준도구, 5년 내 임상승인 바이오마커 다수, 미래는 multimodal dataset·치료반응/저항 예측)",
+      "source": "슬라이드 p.95 (Conclusion/Take-home, Annual Review 인용) + p.97 Thank you (사실상 마지막 콘텐츠 슬라이드)",
+      "exam_prob": 88,
+      "reason": "[마지막 슬라이드/요약 직접] 전용 요약 deck은 없으나 p.95가 결론·정리 슬라이드. 교수강조도 mid이므로 써머리 가중 강하게 적용→고출제. 닫힌우주 진위판정 가능. 현재 미커버."
+    },
+    {
+      "topic": "Basic vs Advanced DL applications 비교 (Basic: 검출·서브타이핑·그레이딩 자동화, AUROC≥0.9, Tx 권고 불변 / Advanced: H&E로 mutation·생존·치료반응 예측, AUROC 0.7~0.8, 신규 바이오마커)",
+      "source": "슬라이드 pp.18/19/20 (별도 비교 박스) + 요약 p.95 재언급",
+      "exam_prob": 78,
+      "reason": "전형적 비교·대조 구조(S7)+분량(S1)+반복(S5). 두 영역 AUROC 차이의 '기전적 이유'까지 묻는 서술형 1순위. 요약 슬라이드 재언급. 현재 미커버."
+    },
+    {
+      "topic": "Multiple Instance Learning(MIL) + CLAM (bag=slide / instance=patch, 열쇠-자물쇠 비유, attention 기반 ROI, weakly supervised 연관)",
+      "source": "슬라이드 pp.70/71/72 (한국어 전용 상세 슬라이드 + CLAM/CTransPath)",
+      "exam_prob": 75,
+      "reason": "영어 중심 강의에서 이례적으로 한국어 전용 슬라이드 2장(S1)+열쇠 비유 강한 패턴전환(S4). 기전 설명형 변별 문항. 현재 미커버."
+    },
+    {
+      "topic": "Lunit SCOPE IO Immune Phenotype(TIL 공간분석) 3분류와 ICI 반응 예측 (Inflamed/Immune-excluded/Immune-desert, CE/CS threshold, PD-L1 보완 바이오마커)",
+      "source": "슬라이드 pp.12/13/14/15",
+      "exam_prob": 80,
+      "reason": "4장 분량(S1)+3유형 비교(S7)+AUROC 0.7609 vs 0.5561 직접 낭독(B2). 임상 적용형 변별. 현재 커버됨."
+    },
+    {
+      "topic": "H&E로 mutation 예측의 생물학적 근거 + Generalizability/Overfitting (driver mutation→형태 변화, external validation 시 AUC 하락, 다기관 대용량으로 극복; CODiPAI MSI 0.91)",
+      "source": "슬라이드 p.40, p.22, p.53 + 녹음 '범용성 떨어진다/과적합' 반복",
+      "exam_prob": 72,
+      "reason": "경고성 발화(S6 '과적합에 빠집니다')+분량(S1)+TCGA vs external 비교(S7). 기전·해법 세트 암기 변별. 현재 미커버."
+    },
+    {
+      "topic": "TCGA 위암 분자분류 4군 (EBV/MSI/CIN/GS) 비율·특성과 H&E 딥러닝 예측력 차이 (MSI·EBV 높고 CIN·GS 낮음, 기전: 조직학적 특징성)",
+      "source": "슬라이드 pp.43/44/51/52/53",
+      "exam_prob": 65,
+      "reason": "4군 비교표(S7)+분량(S1)+행단위 낭독(B2). 단 후반 deck이나 요약 슬라이드 밖. 비교형 가능하나 우선순위 중위."
+    },
+    {
+      "topic": "위암 WHO 조직학적 subtype 형태·예후 (Tubular/Papillary/Poorly cohesive(SRCC)/Mucinous/Mixed; Papillary 역설적 예후불량, PCC 5년<15%)",
+      "source": "슬라이드 pp.24-29 (6장, p.29 WHO/JGCA/Lauren 비교표)",
+      "exam_prob": 60,
+      "reason": "분량 6장(S1)+분류표(S7,B2). 단 병리 도메인 암기 비중 높아 박사 변별력 다소 낮음. 트랩(Papillary)만 객관식 가치."
+    }
+  ],
+  "current_topics": [
+    {
+      "id": "dpath-1",
+      "topic": "Computational pathology 4대 접근법 비교 (어노테이션 단위 함정)",
+      "exam_prob_reassessed": 95,
+      "keep": true,
+      "note": "강의 뼈대 도표 5회 반복(pp.9/10/17/78/80)+교수 명시(셀단위 vs 슬라이드단위). 어노테이션 단위를 정반대로 뒤집은 trap이 닫힌우주로 정확히 falsifiable. 최강 keep. 갭의 Foundation Model 문항과 주제 중복 위험은 있으나 본 문항은 4모델 '구분', 갭은 'CNN vs FM 기전·성능'으로 초점이 달라 양립 가능."
+    },
+    {
+      "id": "dpath-2",
+      "topic": "CNN WSI 분석 파이프라인 (Pooling 축소/확대 함정)",
+      "exam_prob_reassessed": 88,
+      "keep": true,
+      "note": "pp.6-7 기전 핵심. Pooling이 feature map을 '축소'한다는 슬라이드 p.6 명문(녹음 '이렇게 줄어듭니다' 00:05:39)과 정반대로 서술한 trap이 견고. 대학원 기전 변별. keep."
+    },
+    {
+      "id": "dpath-3",
+      "topic": "Lunit SCOPE IO Immune Phenotype + ICI 반응 예측 (Immune-excluded CE/CS 함정)",
+      "exam_prob_reassessed": 80,
+      "keep": true,
+      "note": "pp.12-15. Immune-excluded 정의(CE 낮음·CS 높음)를 정반대로 뒤집은 trap이 슬라이드 p.13·녹음 00:09:49로 falsifiable. 임상 적용형 변별. keep. 다만 niche 단일 연구 사례라 써머리 우선순위에서 갭 문항들보다는 낮음."
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "Foundation Model vs CNN — 개념·차이·장단점 (한 모델로 다중 downstream, 적은 라벨 fine-tuning, 컴퓨팅 비용↑; UNI로 EBV 0.947→0.988, MSI 0.827→0.898 향상)",
+      "source_slide": "pp.81-88 (특히 p.83-84 'CNN-based Model vs Foundation Model' 전용 비교 슬라이드, p.81 FM 정의, p.88 UNI)",
+      "exam_prob": 90,
+      "why_high_yield": "마지막 1/3 deck 핵심+전용 비교표(p.83-84). 8장 분량(S1)+비교구조(S7)+교수 AUROC 향상수치 직접 낭독(B2)+'각광받는 최신 트렌드' 강조. 써머리 가중(교수강조 mid→강하게 적용) 최우선. 현재 3문항이 전혀 미커버한 최대 갭. 기전·비교형으로 박사 변별 우수.",
+      "recommend_add": true
+    },
+    {
+      "topic": "Take-home / Conclusion — 'THE FUTURE IS MULTIMODAL' (AI=암병리 표준도구, 5년내 임상승인 바이오마커, 미개척: 예후·치료반응·morphology-genotype, 미래=multimodal dataset/DL)",
+      "source_slide": "p.95 (Conclusion·Take-home 슬라이드, Annual Review of Cancer Biology 2023) + p.93 GMAI/p.94 MLLM",
+      "exam_prob": 86,
+      "why_high_yield": "마지막 콘텐츠 슬라이드(요약/결론). 전용 요약 deck 부재→p.95 결론 슬라이드에 써머리 가중 최우선 적용. 교수가 멀티모달이 '대세'라고 마무리 발화(녹음 00:52:55)로 명시. 종합 서술형(현황+미개척+미래)으로 출제 가능. 현재 미커버.",
+      "recommend_add": true
+    },
+    {
+      "topic": "Basic vs Advanced DL applications 비교 (Basic: 검출·서브타이핑·그레이딩 자동화, AUROC≥0.9, Tx 권고 불변 / Advanced: mutation·생존·치료반응 예측, AUROC 0.7~0.8 하락, 신규 바이오마커) — AUROC 차이의 기전적 이유 포함",
+      "source_slide": "pp.18-20 (별도 비교 박스) + 요약 p.95 재언급",
+      "exam_prob": 78,
+      "why_high_yield": "비교·대조 구조(S7)+분량(S1)+요약 슬라이드 재언급. 'Basic은 왜 AUROC 높고 Advanced는 낮은가'를 묻는 기전+비교형으로 박사 변별 강함. 현재 미커버. (추가 여력 있을 때 3순위)",
+      "recommend_add": false
+    },
+    {
+      "topic": "Multiple Instance Learning(MIL)/CLAM 기전 (bag=slide, instance=patch, 열쇠-자물쇠 비유, attention 기반 ROI 추론, weakly supervised 연관)",
+      "source_slide": "pp.70-72 (한국어 전용 상세 슬라이드)",
+      "exam_prob": 75,
+      "why_high_yield": "영어 중심 강의의 이례적 한국어 전용 슬라이드 2장(강한 강조 신호 S1)+열쇠 비유 패턴전환(S4). 기전 설명형 변별. 단 마지막 요약 슬라이드는 아니므로 써머리 가중 4순위. 현재 미커버.",
+      "recommend_add": false
+    }
+  ],
+  "weak_to_replace": [],
+  "verdict": "needs_additions",
+  "recommended_add_count": 2,
+  "recommended_drop_ids": [],
+  "notes": "현재 3문항(dpath-1/2/3)은 모두 기전·비교형 양질 trap 문항으로 keep, 교체 불요. 그러나 닫힌우주의 '마지막 1/3 deck'(Foundation Model pp.81-88, 결론 p.95) 고출제 영역이 통째로 미커버 상태가 최대 결함. 전용 요약 deck이 없고 교수강조도 mid이므로 써머리 가중 원칙을 강하게 적용해, (1) Foundation Model vs CNN(p.83-84 비교표, exam_prob 90)과 (2) Take-home 'FUTURE IS MULTIMODAL'(p.95, exam_prob 86) 2문항을 우선 추가 권장. 추가 여력이 더 있으면 Basic vs Advanced(pp.18-20)·MIL/CLAM(pp.70-72) 순으로 보강. 모든 권장 후보는 슬라이드(C1 닫힌우주)로 진위 판정 가능."
+}

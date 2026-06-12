@@ -1,0 +1,112 @@
+{
+  "lecture_key": "gastric",
+  "lecture_label": "06-09 위암 (박재명)",
+  "summary_universe": [
+    {
+      "topic": "TCGA 4아형(EBV/MSI/GS/CIN) vs ACRG(MSS/EMT) 분자분류 비교 — CDH1 37% vs 2.8%, 인종/유전적 발암경로 차이",
+      "source": "강의록 p1-2 (4쪽 전체가 요약성격). 녹음서 교수가 '오늘의 키포인트', 2014 Nature 명시",
+      "exam_prob": 95,
+      "reason": "교수 직접 'keypoint' 못박음 + 비교표 구조(S7) + 반복(S5). 4쪽 요약본의 핵심 분류 프레임워크"
+    },
+    {
+      "topic": "HER2 표적치료 진화: trastuzumab → T-DXd(ADC)의 bystander effect, pembrolizumab 병용(ORR>70%)",
+      "source": "강의록 p2-3. 녹음서 교수가 '시험문제 토픽: Her2' 직접 명시, '제 형님/한국 최초 연구' 강조",
+      "exam_prob": 92,
+      "reason": "교수가 시험 토픽으로 직접 거명 + NEJM 논문 강조(S2) + 기전 단계별 도식 설명(B2)"
+    },
+    {
+      "topic": "Claudin 18.2(CLDN18.2) + zolbetuximab — 극성붕괴 시 표면노출 기전, GS/미만형 아형 활용, 2024 FDA 승인",
+      "source": "강의록 p2-3 (3절). 녹음서 '시험 토픽: 클라우딘' 명시, '되게 재밌는 내용' 반복",
+      "exam_prob": 90,
+      "reason": "교수가 시험 토픽 거명 + '노출되어 접근가능한가' 정의 정교화(기전형) + 반복(S5)+패턴전환(S4)"
+    },
+    {
+      "topic": "항암제 다제내성(MDR) 다중기전 — ABC수송체/PI3K-AKT-mTOR/TME(Treg·MDSC)/EMT/후성유전(DNMT·HDAC) + 차세대 파이프라인(이중표적·dual-payload ADC, 기질분해 CAR-T)",
+      "source": "강의록 p3-4 (5절). 녹음 37:00~ '마지막 슬라이드' 명시 구간, 차세대 신약(과제) 강조",
+      "exam_prob": 88,
+      "reason": "마지막 슬라이드(p4)+요약성 본문. '하나가 아니라 여러 기전으로 내성 발생'을 교수가 명시 강조(S6 경고성). 다중기전 나열=비교/통합형 출제 1순위, 박사변별 기전문항 최적. 현재 미커버"
+    },
+    {
+      "topic": "액체생검(liquid biopsy)/ctDNA — 조직생검 한계 극복, MRD 감시, 클론진화·내성획득 실시간 포착(시간해상도)",
+      "source": "강의록 p3 (3절 후반). 녹음 37:30~39:30 교수 본인 연구주제, 메틸레이션 스터디 1억 실패담",
+      "exam_prob": 78,
+      "reason": "마지막 슬라이드 인접 + 교수 본인연구로 패턴전환(S4)+실패경험담(S4) 강력. '조직=사진 vs ctDNA=영상' 비유=출제포인트. 현재 미커버"
+    },
+    {
+      "topic": "글로벌 진료지침 분화(韓日 ESD/MIS vs 美NCCN/유럽ESMO 수술전후 전신요법) + MATTERHORN(FLOT+durvalumab, HR↓22%, 36개월 OS 68.6% vs 61.9%) + D1/D2 림프절절제",
+      "source": "강의록 p3 (4절). 녹음서 D1/D2(일본 NEGM), 韓日中 vs 美 지침 분화 설명",
+      "exam_prob": 80,
+      "reason": "비교·대조 구조(S7) + 패러다임 전환연구. 단 녹음서 MATTERHORN 직접언급 약함. D1/D2 비교는 녹음 강조 추가요소"
+    },
+    {
+      "topic": "위암 역학·중개연구 당위성 — 한국 최고 발생률, 내시경 검진→사망위험 41%↓, 병기별 생존율 양극화(국소 97% vs 원격전이 6.4%), 헬리코박터 공통분모, Lauren 장형/미만형",
+      "source": "강의록 p1 (1절). 녹음 5~9분 검진/병기차이/Lauren 분류 비유강조(장진영 사례=S4)",
+      "exam_prob": 60,
+      "reason": "요약본 도입부 + 검진효과/병기양극화 수치 강조. 단 암기성 비중 높아 박사변별력은 중하. 단답/객관식 적합"
+    },
+    {
+      "topic": "면역항암(PD-1/PD-L1) 기전 + CPS(병정:tumor ratio) 점수, 면역치료의 'long tail'(생존곡선 꼬리) 특징",
+      "source": "강의록 본문엔 PD-L1/면역관문 간접등장. 녹음 25~30분 PD-1/PD-L1 기전, CPS, '안 돌아가시는 분들=꼬리' 강조",
+      "exam_prob": 55,
+      "reason": "녹음 강조 강하나 강의록 SLIDE TEXT엔 PD-L1이 MATTERHORN/RTK 맥락으로만 등장(C1 닫힌우주 제약). 독립 기전문항보다 선지/단답 수준"
+    }
+  ],
+  "current_topics": [
+    {
+      "id": "gastric-1",
+      "topic": "TCGA 4아형 vs ACRG(MSS/EMT) 분자분류 비교 (CDH1 37% vs 2.8% 함정)",
+      "exam_prob_reassessed": 95,
+      "keep": true,
+      "note": "교수 명시 keypoint, 닫힌우주 핵심 분류축. 함정선지가 슬라이드 본문(2.8%)으로 정확 falsifiable. 최우선 유지"
+    },
+    {
+      "id": "gastric-2",
+      "topic": "CLDN18.2 + zolbetuximab 노출기전 (HER2아형 오귀속 함정)",
+      "exam_prob_reassessed": 90,
+      "keep": true,
+      "note": "교수 시험토픽 직접거명. 기전형(극성붕괴→표면노출) 고변별. GS아형 활용 함정도 본문으로 판정가능. 유지"
+    },
+    {
+      "id": "gastric-3",
+      "topic": "HER2/T-DXd bystander effect + pembrolizumab 병용 (bystander 정의역전 함정)",
+      "exam_prob_reassessed": 90,
+      "keep": true,
+      "note": "교수 시험토픽 거명+NEJM 강조. bystander 기전 함정이 본문과 정면대립으로 명확. 유지"
+    },
+    {
+      "id": "gastric-4",
+      "topic": "글로벌 지침 분화 + MATTERHORN 수술전후 면역치료 (36개월 OS 수치역전 함정)",
+      "exam_prob_reassessed": 78,
+      "keep": true,
+      "note": "비교·대조+패러다임전환으로 유효. 단 함정이 단순 수치(68.6 vs 61.9) 뒤바꿈이라 기전변별보다 암기성. D1/D2 림프절 비교를 통합하면 박사변별력 상향 여지. 유지하되 약간 약한 축"
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "항암제 다제내성(MDR) 다중기전 + 차세대 파이프라인(이중표적/dual-payload ADC, 기질분해 CAR-T)",
+      "source_slide": "강의록 p3-4 (5절) — 본 강의 마지막 본문/마지막 슬라이드 구간",
+      "exam_prob": 88,
+      "why_high_yield": "last-slide(p4) + 4쪽 전체가 요약성격. 교수가 '내성은 하나가 아니라 여러 기전으로 발생'을 경고성으로 명시(S6). ABC수송체·PI3K-AKT-mTOR·TME·EMT·후성유전 5기전 나열=통합/비교형 출제 1순위이자 박사변별 기전문항 최적. 현재 4문항이 전혀 미커버",
+      "recommend_add": true
+    },
+    {
+      "topic": "액체생검/ctDNA — MRD 감시, 클론진화·내성획득 실시간 포착, 조직생검(한시점 사진) vs ctDNA(연속영상) 비교",
+      "source_slide": "강의록 p3 (3절 후반), 마지막 슬라이드 인접",
+      "exam_prob": 78,
+      "why_high_yield": "교수 본인 연구주제로 패턴전환(S4)+메틸레이션 실패담(S4) 강력 강조. p1의 '미세잔존질환(MRD) 감지·제어'라는 중개연구 핵심질문과 직결되는 회귀 토픽. 시간해상도 개념=적용형 출제 적합. 현재 미커버",
+      "recommend_add": true
+    },
+    {
+      "topic": "위암 역학/중개연구 당위성 — 검진 41%↓, 병기 양극화(97% vs 6.4%), Lauren 장형/미만형 발암경로 차이",
+      "source_slide": "강의록 p1 (1절) — 요약본 도입부",
+      "exam_prob": 60,
+      "why_high_yield": "요약본 도입 핵심수치 + Lauren 장형(단계적)/미만형(급발생) 발암기전 비교(S7). 단 암기성↑로 박사변별 중하 → 우선순위는 위 두 갭보다 낮음. 보충 시 단답/객관식 권장",
+      "recommend_add": false
+    }
+  ],
+  "weak_to_replace": [],
+  "verdict": "needs_additions",
+  "recommended_add_count": 2,
+  "recommended_drop_ids": [],
+  "notes": "4쪽 강의록 전체가 요약성격이고 슬라이드덱이 없어 본문 6개 절 전체가 summary_universe. 현재 4문항은 2~4절(분류·HER2·CLDN18.2·지침)을 양질로 커버하나, 본 강의의 '마지막 슬라이드'에 해당하는 5절(MDR 다중기전+차세대 파이프라인)과 3절 후반 액체생검/ctDNA가 통째로 누락. 둘 다 교수가 강의 종반에 직접 강조(MDR은 경고성 S6, ctDNA는 본인 연구·실패담 S4)했고 비교/기전형이라 박사변별에 최적 → 2문항 추가 권장(MDR 다중기전 통합형, ctDNA 적용형). 역학(1절)은 암기성이 강해 추가 시 객관식 보조문항으로만. 기존 4문항은 모두 함정이 슬라이드 본문으로 falsifiable하여 교체 불필요. gastric-4는 함정이 단순 수치역전이라 상대적으로 약하나 비교·패러다임 가치로 유지(필요시 D1/D2 림프절 비교 통합으로 강화 가능)."
+}

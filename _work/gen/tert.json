@@ -1,0 +1,86 @@
+[
+  {
+    "id": "tert-1",
+    "lecture_key": "tert",
+    "lecture_label": "05-19 TERT·B형간염·간암 (장정원 교수)",
+    "topic": "TERT 프로모터 돌연변이 기전 (핫스팟·ETS/TCF·G-quadruplex)",
+    "exam_probability": 95,
+    "tier": 1,
+    "stem": "다음 중 간세포암(HCC)에서의 TERT 프로모터 돌연변이에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "TERT 프로모터 돌연변이는 현재까지 보고된 모든 암을 통틀어 가장 흔한 비암호화(non-coding) 체세포 돌연변이이다.",
+      "핫스팟 위치에서 C가 T로 치환되어 ETS/TCF 전사인자의 새로운 결합 모티프가 생성되면서 TERT 전사가 증가한다.",
+      "정상 프로모터의 G-rich 서열이 형성하는 4중 구조(G-quadruplex)가 돌연변이로 안정화되어 gene silencing이 강화됨으로써 TERT 발현이 증가한다.",
+      "간세포암에서는 주요 핫스팟 중 거의 유일하게 -124(C228T) 돌연변이만 관찰되며, UV 관련 암인 멜라노마는 -146(C250T)이 우세하다.",
+      "TERT 프로모터 돌연변이는 전암 병변(dysplastic nodule) 단계에서 이미 나타나는 gate-keeper(최초 driver) 돌연변이이다."
+    ],
+    "answer_index": 2,
+    "explanation": "정답은 3번입니다. 방향이 정반대로 뒤집혀 있어요. 정상 TERT 프로모터는 G-rich 서열이 겹겹이 4중 구조(G-quadruplex)를 형성해 전사를 '억제(silencing)'하고 있습니다. C→T 핫스팟 돌연변이가 생기면 이 4중 구조가 '불안정화·소실'되면서 억제(repressor)가 풀려 TERT 발현이 '증가'합니다. 즉 G-quadruplex 안정화가 아니라 '안정성 소실'이 발현 증가의 기전입니다. 장 교수가 '반드시 꼭 아셔야 합니다'라며 가장 강조한 부분으로, 활성화 기전은 두 축(① C→T로 뾰족하던 자리가 뭉툭해져 ETS/TCF 전사인자가 붙기 좋아짐 → 전사 증가, ② G-quadruplex 불안정화 → 억제 해제)입니다. 나머지 1·2·4·5번은 모두 슬라이드(PAGE 21·22·23·28)와 일치하는 옳은 진술입니다.",
+    "correct_fact": "돌연변이는 G-quadruplex 4중 구조를 '안정화'시키는 것이 아니라 '불안정화(소실)'시켜 gene silencing 효과를 없애고, 그 결과 TERT 발현이 증가한다.",
+    "selection_reason": "S2('반드시 꼭 아셔야 합니다' 직접 강조)+S4(내과보드 개인경험)+S5(반복)+S7(정상 vs 돌연변이 비교)+B1 동시발동. DRAFT에서 W=7로 최고 가중치, 시험 1순위 토픽.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "대학원합동강의-JJW-P20236 (1).pdf",
+      "page": 21,
+      "caption": "TERT 프로모터 핫스팟(-124 C228T, -146 C250T)과 ETS/TCF 결합모티프 생성 및 G-quadruplex 불안정화 도식"
+    }
+  },
+  {
+    "id": "tert-2",
+    "lecture_key": "tert",
+    "lecture_label": "05-19 TERT·B형간염·간암 (장정원 교수)",
+    "topic": "HBV 통합 기전 (기질 dslDNA·NHEJ·TERT 통합부위·상호배타성)",
+    "exam_probability": 92,
+    "tier": 1,
+    "stem": "다음 중 간세포암에서 HBV(B형간염바이러스) 통합(integration)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "통합의 기질이 되는 것은 복제 과정에서 에러로 생기는 이중가닥 선형 DNA(dslDNA)이며, 이완형 원형 DNA(rcDNA)는 통합되지 않는다.",
+      "숙주 게놈에 자발적으로 생긴 이중가닥 절단(DSB) 부위로 서열 상동성과 무관하게 끼어드는 비상동성 말단결합(NHEJ)이 주된 통합 기전이다.",
+      "통합되는 숙주 유전자 중 가장 빈번한 부위는 TERT 프로모터이며, HBV 게놈 측에서는 C-말단 HBx를 만드는 nt 1600~1800 영역이 흔한 절단점이다.",
+      "TERT 프로모터 돌연변이와 HBV의 TERT 통합은 흔히 동일 종양에서 함께 발생하여 상승작용으로 TERT 발현을 극대화한다.",
+      "종양에서는 비무작위적으로 TERT 등 암 관련 유전자(genic 영역)에 선택적으로 통합되는 반면, 비종양에서는 상대적으로 무작위·intergenic하게 통합된다."
+    ],
+    "answer_index": 3,
+    "explanation": "정답은 4번입니다. 사실관계가 정반대예요. TERT 프로모터 돌연변이와 'HBV의 TERT 통합'은 서로 'mutually exclusive(상호 배타적)'입니다. 즉 한 종양에서 둘이 함께 나타나지 않고 거의 둘 중 하나만 발생합니다. 이유는 둘 다 최종 효과가 똑같이 'TERT 활성화'인데, 한 경로만으로도 이미 암을 일으킬 수 있어 두 번째 기전이 추가 이득(선택적 이점)을 주지 않기 때문입니다(장 교수: '한 가지 자체로도 cancer를 일으킬 수 있어 굳이 두 가지가 다 발생할 필요가 없다'). 나머지 1·2·3·5번은 슬라이드(PAGE 40·41·48·49·31)와 일치합니다: rcDNA는 통합 안 되고 dslDNA만 통합, NHEJ가 주기전, 숙주 측 최다 부위는 TERT 프로모터·HBV 측은 nt 1600~1800(C-term HBx), 종양은 genic 선택적 통합·비종양은 intergenic 무작위.",
+    "correct_fact": "TERT 프로모터 돌연변이와 HBV-TERT 통합은 상호 배타적(mutually exclusive)으로 발생하며, 둘 다 동일하게 TERT 활성화를 달성하므로 같은 종양에서 함께 나타나지 않는다.",
+    "selection_reason": "S4('굉장히 무서운 부분')+S5(mutually exclusive·NHEJ 반복)+S6(경고)+S7(NHEJ vs MMEJ, cis vs trans, T vs NT 비교)+B2(슬라이드 표 직접 설명). 교수가 'mutually exclusive'를 명시적으로 강조.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "대학원합동강의-JJW-P20236 (1).pdf",
+      "page": 31,
+      "caption": "33쌍 조직 분석: HBV-TERT 통합과 TERT 프로모터 핫스팟 돌연변이의 상호 배타적(mutually exclusive) 분포"
+    }
+  },
+  {
+    "id": "tert-3",
+    "lecture_key": "tert",
+    "lecture_label": "05-19 TERT·B형간염·간암 (장정원 교수)",
+    "topic": "HBsAg 혈청소실(기능적 완치) 후에도 지속되는 HCC 위험",
+    "exam_probability": 88,
+    "tier": 1,
+    "stem": "다음 중 HBsAg 혈청소실(seroclearance, 기능적 완치) 이후의 HBV 지속성과 간암 위험에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "통합된 HBV DNA는 cccDNA보다 안정적으로 핵 내에 존재하여, 바이러스 복제 없이도 ctHBx 등 종양 단백질을 지속적으로 생성한다.",
+      "현재의 항바이러스제는 역전사 단계만 차단하므로 통합 HBV DNA에는 작용하지 못해 통합 자체를 제거하지 못한다.",
+      "HBsAg 소실 후 발생한 HCC 조직에서도 TERT-HBV 통합이 확인되며, HBsAg 양성 HCC와 통합의 생물학적 기능에 본질적 차이가 없다.",
+      "HBsAg가 소실되면 직접적 발암 잠재성(direct oncogenic potential)도 함께 소멸하므로, 정기적 초음파 감시(surveillance)를 중단해도 된다.",
+      "HBsAg 소실 후에도 연간 약 0.38~0.86%의 HCC가 발생하므로 6개월 간격의 초음파 감시를 지속해야 한다."
+    ],
+    "answer_index": 3,
+    "explanation": "정답은 4번입니다. 결론이 반대로 뒤집혀 있어요. HBsAg가 음성이 되어도(기능적 완치) 핵 내에는 통합 HBV DNA와 cccDNA가 그대로 살아있어 'direct oncogenic potential(직접 발암 잠재성)'이 사라지지 않습니다. 장 교수가 실제로 HBsAg 소실 후 간암이 생긴 7명을 추적했더니 모두 TERT-HBV 통합이 있었고 통합 부위가 모두 암 관련 유전자였습니다. 그래서 'S항원이 음성이라 해도 B형간염이 없다고 할 수 없고, 무조건 병원에 오게 해서 6개월마다 초음파 감시를 계속해야 한다'고 반복 강조했습니다('이것은 반드시 우리가 알고 있어야 해요'). 따라서 감시를 중단해도 된다는 4번이 명백한 오류입니다. 나머지 1·2·3·5번은 슬라이드(PAGE 63·64·66·69) 및 교수 발화와 일치합니다.",
+    "correct_fact": "HBsAg가 소실되어도 핵 내 통합 HBV DNA·cccDNA가 잔존하여 직접 발암 잠재성이 지속되므로, 감시를 중단해서는 안 되고 6개월 간격 초음파 감시를 지속해야 한다.",
+    "selection_reason": "S4(HBsAg 소실 후 HCC 7명 직접 추적 데이터)+S5('반드시 알고 있어야 해요' 반복)+S6('S항원 음성이라도 B형간염 없다고 할 수 없다' 경고)+B1 동시발동. 교수가 가이드라인 감시 근거로 직접 제시.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": false,
+      "pdf": "대학원합동강의-JJW-P20236 (1).pdf",
+      "page": 69,
+      "caption": "HBsAg 소실 후 HCC 발생 환자에서 지속 확인되는 TERT-HBV 통합"
+    }
+  }
+]

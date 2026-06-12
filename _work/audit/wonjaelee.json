@@ -1,0 +1,166 @@
+{
+  "lecture_key": "wonjaelee",
+  "lecture_label": "03-03 암생물학 패러다임 (이원재, 녹음없음)",
+  "summary_universe": [
+    {
+      "topic": "강의 전체 서사축(Context): Introduction(What is Cancer) → Classical paradigm → Paradigm Shift → Current landscape → Future perspective",
+      "source": "슬라이드 p2 (Context, 사실상 목차/roadmap)",
+      "exam_prob": 80,
+      "reason": "녹음 없는 deck에서 p2 Context는 시험 출제의 골격. 5단계 패러다임 변천 서사 자체가 '비교/흐름 서술형'의 1순위 프레임."
+    },
+    {
+      "topic": "핵심 테제(Take-home): 암은 더 이상 mutation만으로 정의되지 않으며, 진화·면역·공간조직이 빚어내는 동적·적응적 조직수준 생태계다 (Genomic-centric → Cell state → Systemic → Data-driven)",
+      "source": "슬라이드 p57 (Emerging Concepts and Future Directions, 결론/마지막장)",
+      "exam_prob": 92,
+      "reason": "강의의 단일 thesis 문장이자 마지막 정리 슬라이드. 녹음 강조 부재 시 시험은 거의 항상 이 결론 문장에서 서술형 출제. 최우선 summary 가중."
+    },
+    {
+      "topic": "Remaining/Future questions: 만성상처 가설, 전신/장기수준 질환, 면역교육 실패, 왜 치료가 어려운가, 다음 패러다임",
+      "source": "슬라이드 p57~p62 (Future perspective, 마지막 6장)",
+      "exam_prob": 85,
+      "reason": "마지막 3~6장 결론 묶음. 교수가 던지는 open question은 '논술/이유 서술형' 출제의 전형. 특히 p61 'Why hard to cure' 4기전은 강의 전체를 통합."
+    },
+    {
+      "topic": "Hallmarks of Cancer (Hanahan & Weinberg 2000/2011)",
+      "source": "슬라이드 p11 (대표 figure/정리)",
+      "exam_prob": 70,
+      "reason": "암생물학 표준 정리 figure. 닫힌우주의 canonical 비교/그림 슬라이드로 단답·그림 식별형 단골."
+    },
+    {
+      "topic": "Cell-autonomous view (자족성 성장, oncogenic driver, intrinsic resistance, metabolic reprogramming) — 고전 패러다임의 정의",
+      "source": "슬라이드 p12",
+      "exam_prob": 72,
+      "reason": "Classical paradigm의 한 축. 현재 Q1이 부분 커버. 비유전적/생태계 패러다임과의 대조 기준점."
+    },
+    {
+      "topic": "Oncogene / Tumor suppressor, Driver vs Passenger, Oncogene addiction + 표적치료 대응표",
+      "source": "슬라이드 p7,8,12,13,14,15 (p15는 oncogene-암종-약물 비교표)",
+      "exam_prob": 78,
+      "reason": "Classical paradigm 핵심 + p15 비교표(B2 표 읽기형). 현재 Q1이 직접 커버."
+    },
+    {
+      "topic": "동일 driver mutation, 상이한 임상결과 (BRAF V600E 흑색종 vs 대장암; EGFR NSCLC co-mutation/형질전환; BRCA PARP 내성) — lineage/co-mutation/clonal heterogeneity/acquired resistance",
+      "source": "슬라이드 p16,17 (패러다임의 균열을 보여주는 비교사례표)",
+      "exam_prob": 74,
+      "reason": "고전→전환의 핵심 전환점이자 명시적 비교표(p17). 기전·비교형 변별 문항 후보. 현재 미커버."
+    },
+    {
+      "topic": "종양 이질성: genetic vs non-genetic(cell state) heterogeneity, clonal vs branching evolution(bursts)",
+      "source": "슬라이드 p18,19,20",
+      "exam_prob": 80,
+      "reason": "패러다임 전환 중심축, 연속 비교(VS) 슬라이드. 현재 Q2가 직접 커버."
+    },
+    {
+      "topic": "약물내성 재발의 기전(6가지: 2차 돌연변이, drug efflux, DNA repair/escape, TME, 후성/가소성, 이질성) 및 tumor-intrinsic을 넘어서는 질문",
+      "source": "슬라이드 p21,22,23",
+      "exam_prob": 73,
+      "reason": "기전 나열형(p22 6항목)+ '암세포 단독으로 설명 불가' 전환 논리(p23). 박사변별 기전형 후보. 현재 미커버."
+    },
+    {
+      "topic": "Tumor Microenvironment(TME) 정의·구성(cellular/physical/molecular/metabolic) 및 stromal/endothelial/immune/organ-resident 세포 역할",
+      "source": "슬라이드 p24,25",
+      "exam_prob": 78,
+      "reason": "패러다임 전환의 실질적 핵심개념(ecosystem의 정의). Current landscape 진입 관문. 현재 미커버."
+    },
+    {
+      "topic": "Paradigm Shift: 암을 생태계로 — Tumor-Host interaction(host reprogramming), Cancer-Immune crosstalk, Immune surveillance→editing(killing/selection/survival), Hot vs Cold tumor",
+      "source": "슬라이드 p30,31,32,33,34",
+      "exam_prob": 82,
+      "reason": "'Cancer as an Ecosystem' 패러다임 전환의 본체. 면역편집은 Q2가 일부 커버하나 ecosystem/host-reprogramming 축은 별도 고출제."
+    },
+    {
+      "topic": "Myeloid/innate immune cell의 TME 내 context-dependent 역할, Pre-metastatic niche, Organotropism(Seed&Soil), tissue-resident immune cell, NETs",
+      "source": "슬라이드 p28,29,35~44",
+      "exam_prob": 68,
+      "reason": "Current landscape의 다수 슬라이드 분량(S1 분량집중). 단 교수 본인 연구(NET, omentum FALC)는 niche 가능성도. 비교/기전 단답 후보."
+    },
+    {
+      "topic": "Current Trends 통합: Space / Time / Plasticity 3축 정리",
+      "source": "슬라이드 p45 (현재동향 요약 슬라이드)",
+      "exam_prob": 80,
+      "reason": "Current landscape의 명시적 요약(summary) 슬라이드. 3축 분류는 단답/매칭/서술 모두 가능한 정리장 — 강한 summary 가중."
+    },
+    {
+      "topic": "비유전적 가소성·후성유전 리프로그래밍·스트레스 유발 세포상태 변화 (mutation 없는 진화)",
+      "source": "슬라이드 p46,47,48,49",
+      "exam_prob": 72,
+      "reason": "Plasticity 축의 기전. Q2가 p47을 일부 커버하나 후성/스트레스 기전(p48,49)은 미커버."
+    },
+    {
+      "topic": "기술이 만든 패러다임 전환: Bulk→Single-cell→Spatial→Multi-omics→AI/ML 연대표, Hypothesis-driven→Data-driven oncology",
+      "source": "슬라이드 p50~55 (특히 p54 연대표, p55 old vs new 비교표)",
+      "exam_prob": 86,
+      "reason": "기술-패러다임 대응 연대표(p54)+old vs new 비교표(p55)는 전형적 비교/매칭 출제 표. 결론부 직전 정리장으로 강한 summary 가중. 현재 완전 미커버."
+    },
+    {
+      "topic": "Patient-level Systems Oncology 통합 (Mutation·Ecosystem·Plasticity·Single-cell·Spatial·Multi-omics·Data-driven의 통합)",
+      "source": "슬라이드 p56 (통합 정리 슬라이드)",
+      "exam_prob": 75,
+      "reason": "강의 전체 개념을 한 장에 통합한 종합 정리장. 서술형 통합문항 소재."
+    },
+    {
+      "topic": "Why is cancer so difficult to cure? 4기전(유전이질성·가소성·공간보호·면역적응) + 바이러스 진화 유비",
+      "source": "슬라이드 p61 (마지막장 종합)",
+      "exam_prob": 84,
+      "reason": "마지막 장 + 강의 전체를 4축으로 통합하는 결론. 이유 서술/논술형 최우선. 현재 미커버."
+    }
+  ],
+  "current_topics": [
+    {
+      "id": "wonjaelee-1",
+      "topic": "고전적 암생물학 패러다임 (Cell-autonomous view, Oncogene/Tumor suppressor, Oncogene addiction, Driver/Passenger)",
+      "exam_prob_reassessed": 74,
+      "keep": true,
+      "note": "Classical paradigm(p7,8,12,13,15) 정확 커버. 오답선지(oncogene addiction 방향 역전)가 슬라이드 정의로 명확히 진위판정 가능 — 닫힌우주 부합. 다만 summary/마지막장이 아닌 '강의 도입축'이라 단독 최고출제는 아님. 기전 변별보다 정의 비교형에 가까워 75% 선에서 keep."
+    },
+    {
+      "id": "wonjaelee-2",
+      "topic": "패러다임 전환: 종양 이질성(genetic vs non-genetic), 진화(clonal vs branching), 비유전 가소성, 면역 편집",
+      "exam_prob_reassessed": 80,
+      "keep": true,
+      "note": "강의 제목('패러다임 변화')의 중심축을 정조준, 비교·대조(VS) 슬라이드(p18-20,33,47) 다수 커버. 닫힌우주 적합·기전/비교형으로 박사변별 양호. 가장 강한 keep 문항."
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "핵심 테제/Take-home: 암 = mutation 정의를 넘어선 동적·적응적 조직수준 생태계 (Genomic-centric→Cell state→Systemic→Data-driven 전환)",
+      "source_slide": "p57 (Emerging Concepts & Future Directions, 마지막 결론 슬라이드)",
+      "exam_prob": 92,
+      "why_high_yield": "강의 단일 thesis가 적힌 결론/마지막장(last-slide). 녹음 강조 부재 시 시험은 이 결론 문장에서 서술형으로 거의 확실히 출제. 현재 두 문항 모두 미커버 — 가장 큰 갭.",
+      "recommend_add": true
+    },
+    {
+      "topic": "기술이 만든 패러다임 전환 연대표 + Hypothesis-driven vs Data-driven oncology 비교",
+      "source_slide": "p54 (연대표), p55 (old vs new 비교표)",
+      "exam_prob": 86,
+      "why_high_yield": "결론부 직전 정리 비교표(비교표 명확 존재). 기술(Sanger/NGS/Single-cell/Spatial/AI)↔발견(driver/genome/ITH/ecosystem)의 매칭·비교는 객관식·서술 모두 출제 단골. 닫힌우주 진위판정 용이. 현재 완전 미커버.",
+      "recommend_add": true
+    },
+    {
+      "topic": "Tumor Microenvironment(TME) 정의 및 4구성요소 / 세포 아키텍처(stromal·endothelial·immune·organ-resident)",
+      "source_slide": "p24, p25 (+ p30 ecosystem 전환)",
+      "exam_prob": 80,
+      "why_high_yield": "패러다임 전환(생태계)의 실질 핵심개념이자 Current landscape의 정의 관문. 구성요소 분류는 단답/매칭, 세포역할은 기전형 변별. 비교표(p25 역할 분류) 성격. 현재 미커버.",
+      "recommend_add": true
+    },
+    {
+      "topic": "Why is cancer so difficult to cure? 4기전 통합(유전이질성→클론선택 / 가소성→persister / 공간보호→hypoxic·stromal / 면역적응→exhaustion) + 바이러스 진화 유비",
+      "source_slide": "p61 (마지막장, 종합)",
+      "exam_prob": 84,
+      "why_high_yield": "마지막 정리 슬라이드(last-slide)이면서 강의 전체 개념을 4축으로 통합 — '이유 서술/논술형' 최적 소재. summary 가중 강함. 현재 미커버.",
+      "recommend_add": true
+    },
+    {
+      "topic": "Current Trends 3축 정리(Space/Time/Plasticity) 및 동일 driver-상이 임상결과(BRAF/EGFR/BRCA) 비교",
+      "source_slide": "p45 (요약 슬라이드), p17 (비교사례표)",
+      "exam_prob": 80,
+      "why_high_yield": "p45는 Current landscape의 명시적 summary 정리장, p17은 명시적 비교표. 매칭/비교형 고출제이나 추가문항 4개 한도상 우선순위 차순위 — 보강 후보로 기록.",
+      "recommend_add": false
+    }
+  ],
+  "weak_to_replace": [],
+  "verdict": "needs_additions",
+  "recommended_add_count": 4,
+  "recommended_drop_ids": [],
+  "notes": "현재 2문항(Q1 고전 패러다임, Q2 패러다임 전환=이질성/진화/면역편집)은 모두 닫힌우주(C1) 적합·keep 가치 있는 양질 문항으로 교체할 약문항 없음(weak_to_replace 0, drop 0). 그러나 녹음 부재 deck 특성상 시험범위의 우주는 마지막 정리/결론 슬라이드(p45,54-57,61)와 비교표(p17,25,54-55)에 집중되는데, 현재 문항은 강의 전반부(Classical→Shift 도입)에 편중되어 결론부/Current landscape/Future perspective가 통째로 비어 있음. 따라서 verdict=needs_additions. 권장 추가 4문항: (1) p57 핵심 테제 서술형, (2) p54-55 기술-데이터 패러다임 전환 비교/매칭형, (3) p24-25 TME 정의·구성 기전형, (4) p61 'why hard to cure' 4기전 통합 논술형. 이로써 도입-전환-현재-미래의 5단계 서사를 균형 커버하고 박사변별(기전·비교·통합) 비중을 확보한다. 추가 권고: p57·p61·p55는 단순암기 아닌 통합서술형으로 출제해 변별력 극대화."
+}

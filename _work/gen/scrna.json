@@ -1,0 +1,114 @@
+[
+  {
+    "id": "scrna-1",
+    "lecture_key": "scrna",
+    "lecture_label": "03-24 단일세포 전사체 scRNAseq (이혜옥 교수)",
+    "topic": "UMI(Unique Molecular Identifier)와 정량 원리",
+    "exam_probability": 95,
+    "tier": 1,
+    "stem": "다음 중 10X Chromium 3' scRNA-seq에서 UMI(Unique Molecular Identifier)와 cell barcode를 이용한 정량 원리에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "cell barcode는 한 oil droplet(GEM) 안의 bead에 달린 모든 oligo가 동일한 서열을 공유하여, 해당 read가 어느 세포에서 유래했는지를 표지한다.",
+      "UMI는 동일 bead의 oligo마다 서로 다른 서열을 가지며, 같은 UMI 서열을 가진 read들은 동일 원본 분자의 PCR 증폭 산물로 간주하여 1개로 계수한다.",
+      "동일한 transcript에서 유래한 read가 20개 검출되더라도 서로 다른 UMI가 5종류라면 그 유전자의 발현값은 5로 계수된다.",
+      "UMI 방식은 PCR 증폭 bias를 줄여주지만, 그 결과 유전자 발현값(count)이 단순 read count보다 낮게 형성되는 경향이 있다.",
+      "한 세포 내에서 같은 유전자에 매핑된 read들 중 서로 다른 UMI를 가진 것은 증폭 중복으로 제거되고, 동일 UMI를 가진 것만 개별 분자로 계수된다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번. UMI 정량의 핵심은 '같은 UMI = 같은 원본 분자의 증폭물 → 1개로 합침', '다른 UMI = 다른 원본 분자 → 각각 셈'입니다. 즉 동일 UMI를 가진 read들이 중복(증폭물)으로 묶여 제거되어야 하는데, 5번은 이 관계를 정반대로 뒤집어 '다른 UMI를 제거하고 같은 UMI만 센다'고 서술했으므로 명백히 틀렸습니다. 교수님이 강의에서 '같은 UMI는 증폭의 산물이다, 그래서 트랜스크립트가 20개 나와도 UMI 5종이면 발현값은 5'라고 직접 예시를 들어 설명했고, 'UMI는 어떤 형태로든 시험에 꼭 냅니다'라고 명시했습니다.",
+    "correct_fact": "올바른 서술: 한 세포 내에서 같은 유전자에 매핑된 read들 중 '동일한 UMI'를 가진 것들은 PCR 증폭 중복으로 묶어 1개로 계수하고, '서로 다른 UMI'를 가진 것만 개별 원본 분자로 각각 계수한다.",
+    "selection_reason": "선정사유: 교수가 '저는 이제 (UMI를) 꼭 냅니다'라고 시험 출제를 직접 명시(S6 경고성+직접 시험언급). DRAFT 가중치 W=6 최상위, S1·S4·S5·S6·B1 중첩.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "20260324_대학원합동강의_필수슬라이드_.pdf",
+      "page": 1,
+      "caption": "UMI/Cell Barcode 도식 — 동일 UMI(AGCTTATGCT)는 O/X로 중복 제거되어 1개로 계수되는 원리를 보여주는 필수슬라이드"
+    }
+  },
+  {
+    "id": "scrna-2",
+    "lecture_key": "scrna",
+    "lecture_label": "03-24 단일세포 전사체 scRNAseq (이혜옥 교수)",
+    "topic": "UMAP/tSNE(비선형 차원축소)와 graph-based clustering의 구분",
+    "exam_probability": 90,
+    "tier": 1,
+    "stem": "다음 중 scRNA-seq 분석에서 차원축소(UMAP/tSNE)와 cell clustering의 관계에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "UMAP은 비선형 차원축소(시각화) 방법이고, graph-based clustering은 별개의 군집 정의 알고리즘으로 서로 다른 목적의 방법이다.",
+      "UMAP과 clustering 모두 PCA로 얻은 PC 값을 입력으로 사용하고 nearest neighbor 개념에 기반하므로 결과가 비슷하게 보이는 경향이 있다.",
+      "UMAP 플롯에서 같은 클러스터 내부에 모인 세포들은 서로 유사하다고 신뢰할 수 있지만, 떨어져 있는 클러스터 간의 2D 거리는 생물학적 의미를 크게 두지 않는다.",
+      "graph-based clustering은 PCA 공간에서 KNN graph를 구성하고 Jaccard similarity로 edge weight를 보정한 뒤 Louvain 등 modularity 최적화로 세포를 군집화한다.",
+      "UMAP은 PCA보다 전역적(global) 거리 관계를 잘 보존하므로, 클러스터 간 거리를 세포 유형 간 분화 거리로 직접 해석하는 것이 권장된다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번. UMAP의 강점은 국소(local) 구조 보존, 즉 '가까운 세포끼리 뭉치는 것'은 믿을 수 있다는 점입니다. 반대로 전역(global) 거리, 즉 '떨어진 클러스터 간 거리'는 보존되지 않아 생물학적 의미가 없습니다. 5번은 이를 정반대로 서술했습니다. 교수님은 '논문 리뷰어 중에 (UMAP을 클러스터링이라 부르면) 거의 경기를 일으키는 분들이 있다', 'UMAP은 차원축소법이고 클러스터링은 클러스터링이다'라며 용어 혼용을 강하게 경고했고, '클러스터 내부는 믿을 수 있지만 떨어져 있는 클러스터 간 거리는 크게 의미가 없다'고 명시했습니다.",
+    "correct_fact": "올바른 서술: UMAP은 국소(local) 구조 보존에는 강하나 전역(global) 거리 관계는 보존하지 않으므로, 떨어진 클러스터 간 2D 거리를 세포 유형 간 분화 거리로 해석해서는 안 된다.",
+    "selection_reason": "선정사유: 교수가 '리뷰어 중에 경기를 일으키는 분들이 있다'며 강하게 경고(S6)하고 'UMAP은 차원축소, 클러스터링은 클러스터링'을 반복 강조(S2·S5·S7). DRAFT W=4.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": false,
+      "pdf": "",
+      "page": 0,
+      "caption": ""
+    }
+  },
+  {
+    "id": "scrna-3",
+    "lecture_key": "scrna",
+    "lecture_label": "03-24 단일세포 전사체 scRNAseq (이혜옥 교수)",
+    "topic": "3' vs 5' scRNA-seq와 TCR/BCR immune profiling",
+    "exam_probability": 88,
+    "tier": 1,
+    "stem": "다음 중 3' scRNA-seq와 5' scRNA-seq의 비교 및 TCR/BCR 시퀀싱에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "3'과 5' scRNA-seq 모두 cDNA 1차 합성은 mRNA의 poly-A tail을 oligo-dT로 포착하여 시작하며, 5'은 template switch oligo(TSO)를 이용해 full-length cDNA를 만든다.",
+      "일반적인 유전자 발현 정량용 3' scRNA-seq에서는 cDNA를 잘라 3' 말단 약 100 bp만 시퀀싱하며, 이 길이로도 어느 유전자에서 왔는지는 충분히 식별할 수 있다.",
+      "TCR/BCR의 항원 특이성을 결정하는 V(D)J 부위는 수용체의 5' 쪽에 위치하고 3' 쪽에는 특이성과 무관한 constant region이 길게 존재한다.",
+      "3' scRNA-seq는 3' 말단의 constant region 정보만 읽혀 개별 세포의 V(D)J 다양성(clonality)을 구분할 수 없으므로 immune profiling에 적합하지 않다.",
+      "5' scRNA-seq로 TCR/BCR을 분석할 때는 V(D)J 정보를 모두 담기 위해 일반 발현용보다 짧은 약 100 bp 길이의 라이브러리를 제작한다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번. 5'으로 만든 full-length cDNA에는 V(D)J 정보가 모두 들어 있지만, 일반 발현용처럼 100 bp만 읽으면 V·D·J 서열을 다 담을 수 없습니다. 그래서 TCR/BCR 라이브러리는 더 '길게' 약 400 bp로 제작합니다. 5번은 길이를 100 bp로 잘못(짧게) 적었으므로 틀렸습니다. 교수님은 '100 bp만 읽으면 TCR/BCR 정보를 다 알 수 없어서 이때는 400 bp 정도의 길이로 라이브러리를 제작한다, 그러면 VDJ 정보가 다 들어와 clonality를 알 수 있다'고 명확히 설명했습니다.",
+    "correct_fact": "올바른 서술: 5' scRNA-seq로 TCR/BCR을 분석할 때는 V(D)J 정보를 모두 담기 위해 일반 발현용(약 100 bp)보다 '긴' 약 400 bp 길이의 라이브러리를 제작한다.",
+    "selection_reason": "선정사유: '왜냐하면 얘네가 가지는 정보가 또 있기 때문'이라는 담화표지(S2)와 함께 3' vs 5' 비교·대조(S7), '3'은 적합하지 않아요' 경고(S6) 중첩. DRAFT W=4.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": false,
+      "pdf": "",
+      "page": 0,
+      "caption": ""
+    }
+  },
+  {
+    "id": "scrna-4",
+    "lecture_key": "scrna",
+    "lecture_label": "03-24 단일세포 전사체 scRNAseq (이혜옥 교수)",
+    "topic": "기본 분석 워크플로우 — Normalization, Feature selection, Scaling(Z-transformation), QC",
+    "exam_probability": 85,
+    "tier": 1,
+    "stem": "다음 중 Seurat 기본 분석 워크플로우(QC → Normalization → Feature selection → Scaling → PCA)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "QC에서 nFeature_RNA(nGene)가 너무 낮은 세포는 빈 droplet/저품질 세포, 비정상적으로 높은 세포는 doublet으로 의심하여 필터링하고, %mito가 높은 세포는 죽어가는 세포로 보아 제거한다.",
+      "LogNormalize는 각 세포의 유전자 count를 그 세포의 total UMI로 나누고 scale factor(기본 10,000)를 곱한 뒤 자연로그를 취해, 세포 간 sequencing depth 차이를 보정한다.",
+      "FindVariableFeatures로 cell-to-cell variation이 큰 highly variable gene을 기본 2,000개 선별하여 PCA 등 downstream 분석에 사용한다.",
+      "Scaling(Z-transformation)은 각 유전자의 발현값에서 평균을 빼고 표준편차로 나눠 평균 0·표준편차 1로 맞추는데, 이는 발현량이 큰 housekeeping 유전자가 PCA를 지배(dominate)하는 것을 막기 위함이다.",
+      "%mito는 (mitochondrial gene의 UMI 합 / 전체 UMI) × 100으로 계산하며, 이 QC 임계값은 조직·세포 종류와 무관하게 모든 데이터셋에서 동일하게 5%로 고정하여 적용해야 한다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번. %mito 계산식 자체((MT-gene UMI/Total UMI)×100)는 맞지만, '임계값을 데이터와 무관하게 5%로 고정'한다는 부분이 틀렸습니다. 교수님은 'QC 파라미터들은 데이터마다 되게 달라요, 그래서 반드시 이걸 보고 어디서 끊어낼지 결정해야 한다'고 강조했습니다. 조용한 B/T세포처럼 본래 transcript가 적은 세포나 조직 특성에 따라 분포가 다르므로, violin/scatter plot으로 분포를 확인한 뒤 데이터마다 임계값을 정해야 합니다(튜토리얼의 nFeature 200~2500, %mito 5%는 그 PBMC 데이터에 대한 예시값일 뿐입니다).",
+    "correct_fact": "올바른 서술: %mito = (MT-gene UMI 합 / 전체 UMI)×100이며, QC 임계값은 조직·세포 종류·실험 조건에 따라 분포가 달라지므로 데이터마다 분포를 시각화한 뒤 개별적으로 결정해야 한다(고정값이 아니다).",
+    "selection_reason": "선정사유: 교수가 '반드시 이거를 보고 어디서 끊어낼지 결정', '데이터마다 되게 달라요'라고 경고(S2·S6)하고 violin/scatter plot을 직접 행단위로 해설(B2). Scaling은 '하우스키핑 진이 도미네이트'(S6)로 강조. DRAFT W=4.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "20260324_대학원합동강의_scRNAseq_.pdf",
+      "page": 30,
+      "caption": "QC 단계 — nFeature/nCount/percent.mt violin plot과 %mito 계산식, 필터링 subset 코드가 제시된 슬라이드"
+    }
+  }
+]

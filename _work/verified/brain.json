@@ -1,0 +1,117 @@
+[
+  {
+    "id": "brain-1",
+    "lecture_key": "brain",
+    "lecture_label": "05-26 신경외과·뇌종양 (Stephen Ahn 교수)",
+    "topic": "CAR-γδ T 항원 선택 (HER2·GD2·B7-H3 비교) 및 면역미세환경",
+    "exam_probability": 92,
+    "tier": 1,
+    "stem": "다음 중 교모세포종(GBM) CAR 치료의 표적 항원으로 검토된 HER2, GD2, B7-H3의 발현 특성 및 면역미세환경과의 관계에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "B7-H3는 정상 조직보다 종양에서, 특히 고악성도 GBM에서 발현이 가장 높아 specificity 측면에서 표적으로 유리하다.",
+      "GD2는 GBM의 grade가 높아질수록 오히려 발현이 증가하여, 가장 악성도가 높은 종양에서 표적 효율이 극대화된다.",
+      "GD2는 정상 조직에서도 발현되는 탓에 on-target/off-tumor toxicity 우려가 있어 안전성 측면에서 불리하다.",
+      "HER2와 B7-H3는 발현이 높을수록 면역억제 환경도 함께 강해지는 동일한 패턴을 보인다.",
+      "B7-H3는 면역억제가 심한 '가장 안 좋은' 종양에서 발현이 높아, 면역치료가 가장 필요한 환자에게 효과를 낼 수 있다는 점이 표적 선택의 논리였다."
+    ],
+    "answer_index": 1,
+    "explanation": "이 문항의 핵심 함정은 GD2의 발현 방향입니다. 교수는 '이상하게 얘네(GD2)는 grade가 높아지면 오히려 발현이 줄고, 또 정상이 더 많이 나와서'라고 명시했습니다. 즉 GD2는 grade가 높아질수록 발현이 '감소'하고 정상조직 발현이 많아 toxicity가 우려되는, 표적으로는 까다로운 항원입니다. 반대로 B7-H3는 고악성도에서 발현이 가장 높고(specific) 면역억제 환경과 동반 상승하여 '가장 필요한 환자에서 효과'를 기대할 수 있어 최종 선택되었습니다. 따라서 'GD2가 grade 높을수록 발현 증가'라는 2번 선지가 방향이 정반대로 뒤집힌 명백한 오류입니다.",
+    "correct_fact": "GD2는 GBM의 grade가 높아질수록 발현이 '감소'하며 정상 조직에서 오히려 발현이 높다. 발현이 많은 종양은 오히려 면역적으로 양호한 경향을 보인다. (고악성도에서 발현이 증가하는 것은 B7-H3이다.)",
+    "selection_reason": "S1(분량집중)+S5(B7-H3 반복강조)+S6('이상하게 얘네는','톡시시티가 있을 것 같고')+S7(세 항원 병렬비교)+B2(항원 비교표 read-aloud), W=6. 교수 본인 연구이며 DRAFT의 'GD2 vs B7-H3 답을 거꾸로 쓰지 말 것' 함정 포인트 1순위.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "260526_대학원강의자료.pdf", "page": 96, "caption": "B7H3 CAR γδ T cells — Normal/Other Glioma/GBM 간 B7-H3 발현 비교(고악성 GBM에서 최고 발현)"}
+  },
+  {
+    "id": "brain-2",
+    "lecture_key": "brain",
+    "lecture_label": "05-26 신경외과·뇌종양 (Stephen Ahn 교수)",
+    "topic": "줄기세포(MSC) 기반 IL-12 + anti-PD-1 병용치료의 기전적 합리성",
+    "exam_probability": 90,
+    "tier": 1,
+    "stem": "다음 중 줄기세포(MSC) 기반 IL-12 발현 치료제와 anti-PD-1 항체의 병용 전략에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "anti-PD-1 항체는 주로 CD8 T세포와 T-reg에 작용하고, IL-12는 주로 CD4 T세포 등 다른 면역세포를 자극하여 작용 세포군이 non-overlapping이므로 병용의 기전적 합리성이 있다.",
+      "IL-12는 단독 전신 투여 시 독성이 크지만, 줄기세포가 종양에 도달한 뒤 국소적으로 발현시키면 독성을 최소화할 수 있다.",
+      "줄기세포는 면역세포와 달리 동종(allogeneic)으로 사용해도 면역반응이 적고, pathotropism으로 종양 병변을 '문제 부위'로 인식해 찾아간다.",
+      "병용치료는 면역기억을 형성하지 못하므로, 동일 종양을 재투여(rechallenge)하면 다시 종양이 형성된다.",
+      "실험에서 줄기세포 치료제는 종양 내(국소)로, anti-PD-1은 전신(systemic)으로 투여하여 combinational effect를 확인하였다."
+    ],
+    "answer_index": 3,
+    "explanation": "교수는 '면역이 한번 암에서 생기면 다시 암세포를 줬을 때 이제 안 생깁니다'라고 명확히 말했습니다. 즉 병용치료는 지속적인 항종양 면역기억(immune memory)을 형성하여, rechallenge(재투여) 시 종양이 다시 생기지 않는 것이 핵심 결과입니다(슬라이드 p83/88 'Sustained Tumor Rejection on Rechallenge'). 따라서 '면역기억을 형성하지 못해 재투여 시 종양이 형성된다'는 4번 선지는 결과를 정반대로 뒤집은 오류입니다. 나머지 선지의 핵심: PD-1(CD8/T-reg)과 IL-12(CD4)의 작용세포가 겹치지 않아 시너지가 나고, IL-12는 국소발현으로 독성을 줄이며, 줄기세포는 동종 사용·pathotropism이 장점이고, 줄기세포는 국소·anti-PD-1은 전신 투여로 효과를 확인했다는 점은 모두 옳습니다.",
+    "correct_fact": "병용치료는 지속적인 항종양 면역기억을 유도하여, 한번 종양이 제거된 개체에 동일 종양을 재투여(rechallenge)하면 종양이 형성되지 않는다(Sustained Tumor Rejection on Rechallenge).",
+    "selection_reason": "S1(분량집중 약 3-4분)+S2('희망인데','다행히')+S4(본인 연구 패턴전환)+S5(줄기세포 장점 반복)+S7(PD-1 vs IL-12 작용세포 비교)+B1, W=6. 교수 본인 연구 1순위 영역, DRAFT 함정 포인트 'PD-1=CD8/Treg, IL-12=CD4 섞지 말 것' 직결.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "260526_대학원강의자료.pdf", "page": 83, "caption": "Sustained Tumor Rejection on Rechallenge — 병용치료의 항종양 면역기억"}
+  },
+  {
+    "id": "brain-3",
+    "lecture_key": "brain",
+    "lecture_label": "05-26 신경외과·뇌종양 (Stephen Ahn 교수)",
+    "topic": "Blood-Brain Barrier(BBB)와 뇌 약물전달(drug delivery) 전략",
+    "exam_probability": 88,
+    "tier": 1,
+    "stem": "다음 중 뇌종양 치료에서의 약물전달(drug delivery)과 혈액뇌장벽(BBB)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "종양 부위에서 BBB가 부분적으로 깨져 있다고 알려져 있으나, 정량화 연구상 약물은 정상 수준의 약 절반 정도만 종양으로 진입한다.",
+      "폐·간·장 등 다른 장기는 모든 혈류가 통과하고 면적이 넓으며 종양의 혈관신생이 활발해 delivery 이슈를 크게 고민하지 않는다.",
+      "원발성 중추신경계 림프종은 약제는 많지만, 뇌 도달을 위해 용량을 올리면 neurotoxicity가 발생하는 딜레마가 있다.",
+      "GBM은 다른 암과 달리 전신(몸)으로 전이가 거의 일어나지 않으므로, 뇌에 국소적으로만 잘 전달하면 치료 가능성이 있다는 점이 delivery 전략의 근거가 된다.",
+      "동일 용량 조건에서 뇌실(ventricular) 전달은 효과가 거의 없고, 오직 정맥(systemic) 투여 용량을 크게 올려야만 항종양 효과가 나타났다."
+    ],
+    "answer_index": 4,
+    "explanation": "교수의 실제 발화는 '벤티리클(뇌실)로 주면 비슷한 용량에서 효과가 (전신보다) 좋아서, 큰 용량을 주면 효과가 좋더라'는 취지이며, 슬라이드 p78은 ICV 전달을 'Clinically Relevant Route'로 명시합니다. 즉 ICV(뇌실 내) 전달은 임상적으로 의미 있는 우월한 경로로 제시되었고, 줄기세포 치료의 핵심 전달 전략 중 하나입니다. 따라서 '뇌실 전달은 효과가 거의 없고 정맥 용량을 올려야만 효과가 난다'는 5번 선지는 사실을 정반대로 진술한 오류입니다. 나머지: BBB로 약 절반만 진입, 타 장기는 delivery 부담이 적음, 림프종의 neurotoxicity 딜레마, GBM 비전이성이 국소전달 전략의 근거라는 점은 모두 옳습니다.",
+    "correct_fact": "뇌실 내(ICV/ventricular) 전달은 임상적으로 유의미한 전달 경로로, 동일·유사 용량에서 전신 투여보다 효과적이며 줄기세포 치료의 핵심 전달 전략이다.",
+    "selection_reason": "S1(분량집중)+S2('drug delivery 이슈를 어떻게 해결')+S4(본인 연구 패턴전환)+S5(BBB·delivery 반복)+S7(타 장기 비교)+B1, W=6. DRAFT TOP-5 출제확률 1위 토픽.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "260526_대학원강의자료.pdf", "page": 78, "caption": "Effective tumor suppression via intraventricular(ICV) delivery — 임상적 전달 경로로서의 뇌실 내 투여"}
+  },
+  {
+    "id": "brain-4",
+    "lecture_key": "brain",
+    "lecture_label": "05-26 신경외과·뇌종양 (Stephen Ahn 교수)",
+    "topic": "GBM에서 근치적 수술절제(curative resection)가 불가능한 이유 / Maximal Safe Resection",
+    "exam_probability": 85,
+    "tier": 1,
+    "stem": "다음 중 교모세포종(GBM)이 다른 고형암과 달리 수술만으로 완치(curative resection)되지 않는 이유 및 'Maximal Safe Resection'에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "MRI상 T2 high signal로 보이는 영역은 단순 부종이 아니라 이미 microscopic infiltration이 존재하여, 이를 모두 제거하기 어렵고 제거해도 예후가 제한된다.",
+      "폐암은 lobectomy, 위암·대장암은 광범위 territory 절제가 가능하지만, 뇌는 vital organ이라 종양 주변 정상조직을 광범위하게 동반 절제할 수 없다.",
+      "뇌 심부의 cancer stem cell과, 정상 뇌세포 내 mosaicism 형태로 잠재하다 trigger에 의해 활성화되는 특성 때문에 종양을 모두 제거해도 재발/신생이 가능하다.",
+      "절제량과 예후는 무관하므로, 신경기능을 최대한 보존하기 위해 가능한 한 절제 범위를 최소화하는 것이 표준 전략이다.",
+      "1~2mm 차이의 추가 절제가 수개월의 생존 차이와 신경학적 기능 차이를 만들 만큼, 절제량과 기능보존은 상반되는 trade-off 관계에 있다."
+    ],
+    "answer_index": 3,
+    "explanation": "교수는 '종양을 많이 떼면 성적(예후)이 무조건 좋아지지만 기능 보존이 엄청 상반된다'고 했고, '1mm, 2mm 덧대는 것에 따라 예후가 몇 달 달라진다'고 강조했습니다. 즉 절제량이 많을수록 예후는 좋아지지만 기능 손상 때문에 무한정 떼지 못하는 trade-off에서 균형점을 찾는 것이 'Maximal Safe Resection'입니다. 따라서 '절제량과 예후는 무관하니 절제를 최소화하는 것이 표준'이라는 4번 선지는 핵심 개념(절제량↑ = 예후↑)을 정면으로 부정하는 오류입니다. 나머지: T2 high에 microscopic infiltration 존재, vital organ trade-off, cancer stem cell·mosaicism, 1~2mm가 예후를 가른다는 점은 모두 옳습니다.",
+    "correct_fact": "절제량이 많을수록 종양학적 예후는 좋아지지만(절제량↑ = 예후↑) 신경기능 손상이 한계가 된다. 따라서 기능 보존과 종양 제거량의 trade-off에서 균형점을 찾는 'Maximal Safe Resection(최대 안전 절제)'이 표준 전략이다.",
+    "selection_reason": "S1(분량집중)+S2('가장 제한점','어쩔 수 없이')+S5('완치 불가','1mm·2mm' 반복)+S6+S7(폐암·위암·대장암 비교), W=5. DRAFT TOP-5 출제확률 4위, 함정 포인트 'curative surgery 불가 이유 4개' 직결.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "260526_대학원강의자료.pdf", "page": 16, "caption": "Onco-Functional Balances — 종양학적 결과와 기능적 결과의 균형"}
+  },
+  {
+    "id": "brain-5",
+    "lecture_key": "brain",
+    "lecture_label": "05-26 신경외과·뇌종양 (Stephen Ahn 교수)",
+    "topic": "뇌종양 3분류(Primary benign/malignant/Metastatic) 및 Intra-axial vs Extra-axial",
+    "exam_probability": 82,
+    "tier": 1,
+    "stem": "다음 중 뇌종양의 분류 체계(원발 양성/원발 악성/전이) 및 Intra-axial vs Extra-axial 개념에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "원발성 양성 종양(수막종, 신경초종, 뇌하수체 선종 등)은 대개 뇌 실질 바깥(막·신경초)에서 발생하는 extra-axial 종양으로, 뇌를 밀고 들어오며 경계가 비교적 명확하다.",
+      "신경교종(glioma)·교모세포종은 뇌 실질 내부에서 자라는 intra-axial 종양으로, 침윤성이어서 경계가 불명확하고 완전 절제가 어렵다.",
+      "전정신경초종(vestibular schwannoma)은 주로 뇌신경(cranial nerve) 7·8번에 호발하여, 수술 시 청신경·안면신경 보존이 난이도의 핵심이 된다.",
+      "교모세포종(Grade 4)은 원발성 악성 종양으로 평균 생존이 2년 미만이며, 수술·방사선·테모졸로마이드를 시행해도 예후가 좋지 않다.",
+      "'전이성 양성(metastatic benign)' 종양이 가장 흔한 범주로 전체 뇌종양의 약 50%를 차지하며, 신경외과 수술의 효과가 가장 크다."
+    ],
+    "answer_index": 4,
+    "explanation": "교수는 '전이 양성은 사실상 거의 없는 개념'이라고 명확히 말했고, 슬라이드 p5는 '전이성 양성 = 드물며 임상적 의미 제한적', '전이성 악성(폐암·유방암·흑색종 전이) = 전체 뇌종양의 ~50%'로 명시합니다. 즉 전체 뇌종양의 약 50%를 차지하는 것은 '전이성 양성'이 아니라 '전이성 악성'입니다. 따라서 '전이성 양성이 가장 흔하며 50%를 차지한다'는 5번 선지는 (a) 존재가 희박한 범주를 가장 흔하다고 한 점, (b) 양성/악성을 뒤바꾼 점에서 이중으로 틀린 진술입니다. 나머지: 양성=extra-axial(경계 명확)/glioma=intra-axial(침윤·경계 불명확), schwannoma의 7·8번 뇌신경 호발, GBM 2년 미만 예후는 모두 옳습니다.",
+    "correct_fact": "전체 뇌종양의 약 50%를 차지하는 흔한 범주는 '전이성 악성(폐암·유방암·흑색종 전이)'이다. '전이성 양성'은 사실상 거의 존재하지 않는 개념이다.",
+    "selection_reason": "S2('크게 두 가지로 나눌 수 있다','전이 양성은 거의 없는 개념')+S5(분류 반복)+S7(세 범주 병렬비교)+B2(분류표 read-aloud), W=5. DRAFT TOP-5 출제확률 5위, 슬라이드 5페이지 분류표 근거.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "260526_대학원강의자료.pdf", "page": 5, "caption": "뇌종양의 분류 체계 — 전이성 악성이 전체 뇌종양의 약 50%"}
+  }
+]

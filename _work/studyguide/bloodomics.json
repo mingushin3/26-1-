@@ -1,0 +1,106 @@
+{
+  "code": "bloodomics",
+  "lecture_label": "03-17 혈액암 오믹스 (정승현)",
+  "essence": "혈액암(특히 다발골수종 MM, 골수섬유증 PMF)을 '오믹스'로 해부하는 강의. 핵심은 종양 내 이질성(ITH)을 어떻게 극복·활용하느냐 → 액체생검(ctDNA)으로 비침습 모니터링, scRNA-seq로 세포 하나하나 + 미세환경(TME)까지 해상, 골수 오가노이드로 ex vivo 검증. 교수가 직접 출제 예고한 Summary 4대 키워드(ITH / Liquid biopsy / scRNA-seq / Bone marrow organoid)가 곧 시험 범위다.",
+  "analogy": "조직생검=한 동네만 보고 '서울 전체'를 판단(공간 편향). 액체생검+scRNA-seq=혈액 한 방울·세포 하나하나로 도시 전역 인구 분포를 실시간 위성 스캔. ctDNA는 정상 DNA 바다에 떠 있는 극소량 종양 신호라 '초고감도 망원경'이 필요하다.",
+  "concepts": [
+    {
+      "heading": "종양 내 이질성(ITH)과 진화트리 — 표적은 trunk에",
+      "points": [
+        "ITH = 한 종양 안에 형태·분자적으로 다른 암세포 집단 공존 (intra vs inter/interpatient 구분)",
+        "임상 문제 3종: 진단오류(1부위 생검=공간편향) / 치료저항·재발(저항 클론 생존) / 분자프로파일 시공간 역동변화",
+        "진화트리: drugable 마커가 ★trunk(몸통)★에 있으면 거의 모든 세포 공유 → 표적치료 굿. branch(가지)에만 있으면 일부 클론만 제거 → 반응 제한",
+        "MM은 ITH가 높아 단일부위 BM 생검으로 다 못 잡음 → 액체생검 필요"
+      ]
+    },
+    {
+      "heading": "액체생검(Liquid biopsy)과 ctDNA",
+      "points": [
+        "Liquid biopsy 소스: CTC(크기·EpCAM) / ctDNA(160~170bp 단편) / exosome(DNA·mRNA·miRNA·protein)",
+        "ctDNA = apoptosis/necrosis로 히스톤 단위 절단 → 약 160~170bp 짧은 단편, 반감기 짧음(fresh prep 중요)",
+        "★반전★ cell-free DNA의 '대부분은 정상세포 유래', ctDNA는 극소량 → 일반 NGS 부족, ultra high-depth(또는 digital PCR) 고감도 기술 필요",
+        "장점: 비침습·반복채취 용이 → VAF 종적 모니터링으로 이미징보다 조기 반응 평가, ITH 폭넓게 반영",
+        "MM 데이터: 변이부담 진행 따라↑(MGUS 1.0→SMM 1.8→MM 1.9), BM-ctDNA 공유변이 MM 68.9% vs MGUS 25%, TET2=낮은 2년 PFS"
+      ]
+    },
+    {
+      "heading": "scRNA-seq(10X) — bulk와의 차이 + 바코드 체계",
+      "points": [
+        "Sample index=시료(환자) 구분(demux) / 10X(Cell) Barcode=세포 구분 / UMI=mRNA 분자 정량",
+        "한 gel bead의 모든 oligo = 동일 Cell Barcode, 비드마다 다른 바코드",
+        "UMI: PCR 전 각 mRNA에 부착 → 동일 UMI reads는 PCR artifact로 중복제거 → reads 아닌 'UMI 수'로 카운트 = amplification bias 보정",
+        "bulk=조직 통째 평균만 → vs → scRNA-seq=세포 하나하나, bias 없음, rare population·TME(T·NK 등) 동시검출, cell-cell communication(ligand/receptor) 예측"
+      ],
+      "table": {
+        "title": "Bulk vs single-cell(scRNA-seq)",
+        "columns": ["항목", "Bulk", "scRNA-seq(single-cell)"],
+        "rows": [
+          ["측정 단위", "조직 통째 → 평균값", "세포 하나하나 개별 전사체"],
+          ["ITH 분석", "subclone 뒤섞여 평균만", "직접 분석 가능"],
+          ["rare population", "묻혀서 검출 어려움", "bias 없이 잘 검출 ★"],
+          ["TME/면역세포", "분리 안 됨", "암세포+T/NK 동시 분석"],
+          ["cell-cell 상호작용", "불가", "ligand/receptor로 예측"]
+        ]
+      }
+    },
+    {
+      "heading": "골수 오가노이드(Bone marrow organoid)",
+      "points": [
+        "왜? MM은 primary culture 잘 안 됨 + 동물모델(PDX)은 고비용·동물실험 축소 추세",
+        "전략: 오가노이드 '자체'를 환자특이로 만드는 게 아님 → 표준 플랫폼(기술)로 사용 + 환자 골수생검 '암세포'를 공배양 → 환자 대변 ex vivo 모델",
+        "프로파일링 '예측'보다 직접 drug screening이 더 직접적·우수",
+        "제작물에서 혈관형성·hematopoiesis·spongy bone 등 골수 미세환경 재현 관찰"
+      ]
+    }
+  ],
+  "traps": [
+    {
+      "qref": "bloodomics-1",
+      "topic": "ctDNA 양 & 검출 기술",
+      "correct": "✅ cell-free DNA의 대부분은 정상세포 유래이고 ctDNA는 극소량 → 일반 NGS로 부족, ultra high-depth 시퀀싱(또는 digital PCR) 같은 고감도 기술 필요",
+      "trap": "❌ ctDNA가 정상 DNA보다 양적으로 풍부해서 일반 NGS로도 손쉽게 종양 변이를 검출할 수 있다 (양·기술 방향 반대)"
+    },
+    {
+      "qref": "bloodomics-2",
+      "topic": "진화트리 trunk vs branch",
+      "correct": "✅ drugable 마커가 trunk(몸통)에 있을 때가 branch(가지)에 있을 때보다 더 좋은 치료 반응 (trunk=거의 모든 세포 공유)",
+      "trap": "❌ 마커가 branch에 있을 때가 trunk에 있을 때보다 더 우수한 치료 반응을 기대 (trunk/branch 뒤바뀜)"
+    },
+    {
+      "qref": "bloodomics-3",
+      "topic": "UMI vs Cell Barcode 역할",
+      "correct": "✅ 세포 구분(cell demux)은 10X(Cell) Barcode 역할. UMI는 PCR 전 각 mRNA에 붙어 동일 UMI 중복제거로 분자 수를 정량",
+      "trap": "❌ UMI가 같은 바코드 세포들을 한 클러스터로 묶어 세포 종류를 구분(demux)한다 (UMI에 Cell Barcode 기능을 잘못 부여)"
+    },
+    {
+      "qref": "bloodomics-g1",
+      "topic": "골수 오가노이드 활용 전략",
+      "correct": "✅ 오가노이드는 표준 플랫폼(기술)으로 쓰고 거기에 환자 생검 '암세포'를 공배양 → 환자 대변 ex vivo 모델 (drug screening·마커 기능검증)",
+      "trap": "❌ 오가노이드 자체를 환자별로 새로 만들어 환자특이 오가노이드를 완성한 뒤 '정상 조혈세포'를 공배양한다 (자체 제작+정상세포로 이중 뒤집힘)"
+    },
+    {
+      "qref": "bloodomics-g2",
+      "topic": "bulk vs scRNA-seq의 rare population",
+      "correct": "✅ rare population 검출·bias 없는 분석은 scRNA-seq의 장점. bulk는 조직 통째 평균이라 소수집단이 묻힘",
+      "trap": "❌ bulk가 세포별 발현을 그대로 보존해 scRNA-seq보다 rare population을 더 민감하게 검출한다 (bulk/single-cell 장점 뒤바뀜)"
+    }
+  ],
+  "memorize": [
+    "출제범위=Summary 4대(ITH / Liquid biopsy / scRNA-seq / Bone marrow organoid). 교수 직접 예고.",
+    "표적은 trunk에 있어야 굿 / ctDNA는 극소량→고감도 필요 / 세포구분=Cell Barcode·정량=UMI",
+    "rare population·TME·cell-cell 상호작용 = scRNA-seq 장점(bulk 아님). ctDNA는 160~170bp.",
+    "오가노이드=환자특이 제작 아님, 표준 플랫폼+환자 암세포 공배양 ex vivo 모델."
+  ],
+  "figures": [
+    {
+      "pdf": "합동강의_20260317.pdf",
+      "page": 11,
+      "caption": "Liquid biopsy 검출 소스: CTC(크기·EpCAM)/ctDNA(160~170bp 단편)/exosome(DNA·mRNA·miRNA·protein) 모식도"
+    },
+    {
+      "pdf": "합동강의_20260317.pdf",
+      "page": 28,
+      "caption": "10X single cell 3' solution GEM 내부: Sample index(시료 구분)/10X Barcode(세포 구분)/UMI(mRNA 정량)"
+    }
+  ]
+}

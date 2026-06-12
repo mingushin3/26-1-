@@ -1,0 +1,1314 @@
+# 강의 번들: 03-24 단일세포 전사체 scRNAseq
+- 교수: 이혜옥(Hae-Ock Lee)
+- 슬라이드 PDF: ['20260324_대학원합동강의_scRNAseq_.pdf', '20260324_대학원합동강의_필수슬라이드_.pdf']
+- 비고: 필수슬라이드(2장) 존재
+
+
+================ [SLIDE TEXT — 출제범위(C1) 닫힌 우주의 사실원] ================
+
+--- [PAGE 1/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Introduction to Single cell RNA sequencing
+Department of Microbiology
+The Catholic University of Korea
+Hae-Ock Lee 이혜옥
+haeocklee@gmail.com
+단일세포전사체분석
+
+--- [PAGE 2/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+1.What is single cell RNA sequencing?
+
+--- [PAGE 3/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Mutation A
+Mutation B
+Mutation C
+Mutation D
+Mutation E
+Mutation F
+Mutation G
+Mutation H
+Mutation I
+Mutation J
+Gene A
+Gene B
+Gene C
+Gene D
+Gene E
+Gene F
+Gene G
+Gene H
+Gene I
+Gene J
+Gene A
+Gene B
+Gene C
+Gene D
+Gene E
+Gene F
+Gene G
+Gene H
+Gene I
+Gene J
+Gene expression
+scRNA-seq
+Mutation
+Open chromatin
+scATAC-seq
+Cells
+Features
+37*10^12 cells
+~20000
+Protein-coding genes
+0  1  5  0 …
+5  0  0  0 …
+……………….…
+10000 cells
+2000 features
+Cell biology at a genomic level or
+Genomics at a cellular level
+Spots
+Gene A
+Gene B
+Gene C
+Gene D
+Gene E
+Gene F
+Gene G
+Gene H
+Gene I
+Gene J
+Spatial gene 
+expression
+gene expression phenotype of individual cells
+
+--- [PAGE 4/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Cellular identity and states are defined by thousands of gene expression
+Single cell RNA sequencing defines cellular identity and states at a transcriptome level
+Data analysis
+Data production
+
+--- [PAGE 5/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+
+
+--- [PAGE 6/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Heterogeneity!
+
+--- [PAGE 7/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+PMID32079746
+https://science.sciencemag.org/content/367/6480/eaay3224.long
+>When 시료에존재하는다양한세포군분석& 바이오마커발굴
+Heterogeneity!
+
+--- [PAGE 8/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+PMID32327758
+https://www.nature.com/articles/s41591-020-0868-6
+
+--- [PAGE 9/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+PMID31209336
+https://www.nature.com/articles/s41591-019-0468-5
+>As references : Normal tissue references to disease conditions
+
+--- [PAGE 10/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+
+
+--- [PAGE 11/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+
+
+--- [PAGE 12/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+
+
+--- [PAGE 13/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+2. How to generate single cell RNA sequencing data?
+
+--- [PAGE 14/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+1) Sampling
+2) Single cell capture
+3) cDNA synthesis and barcoding 
+4) Sequencing library preparation
+Experimental procedures to generate single cell RNA sequencing data
+
+--- [PAGE 15/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Genome Biol. 2014 Aug 30;15(8):452. PMID: 25222669
+Cell 2015 May 161(5):1204 PMID: 26000488
+10X genomics
+Chromium system
+Abundant population
+Rare cell population
+Single cell separation and/or capture platforms
+Fluidigm C1
+
+--- [PAGE 16/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+The human cell atlas white paper, arXiv:1810.05192
+Study publication date
+Current Opinion in Systems Biology Volume 4, 2017
+Technical advances increase the number of cells analyzed
+(Massively-parallel scRNA-Seq)
+
+--- [PAGE 17/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Most widely used commercial scRNA-seq platform 10X Chromium system
+PMID 28091601 & 24363023
+10X Genomics
+
+--- [PAGE 18/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+3’ scRNA-seq
+
+--- [PAGE 19/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+10X Genomics
+3. Sequencing
+
+--- [PAGE 20/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Unique Molecular Identifier (UMI)
+Cell Barcode
+Genes
+0  1  5  0 …
+5  0  0  0 …
+……………….…
+UMI counts
+PMID 28091601 & 24363023
+AGCTTATGCT
+Gene A
+AGCTTATGCT
+Gene A
+TTGATGCTAG
+Gene A
+O
+X
+O
+
+--- [PAGE 21/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+5’ scRNA-seq: gene expression
+10X Genomics
+
+--- [PAGE 22/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+5’ scRNA-seq: TCR/BCR expression
+
+--- [PAGE 23/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+3. How to analyze single cell RNA sequencing data?
+
+--- [PAGE 24/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Basic workflow of single cell RNA sequencing analysis
+log-normalization
+log2 TPM-like values
+Gene-Cell 
+matrix
+Filtered 
+Gene-Cell 
+matrix
+~5,000 cells
+~30,000 genes
+~3,000 cells
+~20,000 genes
+Gene filtration
+Remove genes 
+with null 
+expression
+Cell filtration
+nGene
+nUMI
+%Mito
+Raw 
+sequencing 
+data
+UMI counts
+Filtered 
+Gene-Cell 
+matrix
+Feature 
+selection
+Filtered 
+Gene-Cell 
+matrix
+~3,000 cells
+~20,000 genes
+~3,000 cells
+~2,000 genes
+Scaling
+Z-score
+Dimensional reduction
+1) PCA PC selection
+2) UMAP/tSNE
+Cell clustering
+Cluster-specific 
+genes
+Cluster 1
+Cluster 2
+Cluster 3
+T cells
+Macrophages
+B cells
+Fold change
+and P-value
+Cell identification
+Cell Ranger processing
+Demultiplexing
+Alignment to transcriptome
+Barcode and UMI filtering
+Marking duplicates
+Filtering cells
+
+--- [PAGE 25/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Cellular landscape and gene~cell network analysis
+Unsupervised cell 
+clustering using 
+dimensional reduction
+Selection of 
+DEGs specific to 
+each cluster
+Confirmation of 
+expression of canonical 
+marker genes 
+Estimation of cell 
+subpopulations
+based on gene expression 
+patterns
+PCA(Linear)
+tSNE, UMAP etc(Non-
+linear)
+Pseudotime
+Cellular network
+Gene regulatory network
+
+--- [PAGE 26/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+https://www.embopress.org/doi
+/pdf/10.15252/msb.20188746
+R and bioconductor tools: 
+https://github.com/drisso/bioc2016singlecell
+https://hemberg-
+lab.github.io/scRNA.seq.course/
+Seurat: 
+https://satijalab.org/seurat/get_started.html
+Scanpy: 
+https://scanpy.readthedocs.io/en/stable/tutori
+als.html
+Analysis Overview
+
+--- [PAGE 27/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+https://satijalab.org/seurat/
+Butler et al., Nature Biotechnology 2018.
+Stuart*, Butler*, et al., Cell 2019
+Analysis Tutorials
+
+--- [PAGE 28/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+install.packages(‘Seurat’)
+library(Seurat)
+# Load the dataset
+pbmc.data <- Read10X(data.dir = path*)
+# Initialize the Seurat object with the raw (non-normalized data)
+# Keep all genes expressed in >= 1 cells, keep all cells with >= 0 features
+pbmc <- CreateSeuratObject(counts=pbmc.data, min.cells=1, min.features=0, 
+project="10X_PBMC")
+Part 1. Load the data 
+Sparse matrix
+barcodes.tsv
+features.tsv
+matrix.mtx
+barcodes.tsv
+features.tsv
+matrix.mtx
+Barcodes.tsv
+Features.tsv
+Matrix.mtx
+In the directory path*
+if a line in mtx file is 154 1 21, this indicates:
+The gene at line number 154 in genes.tsv.
+The cell-barcode at line number 1 in barcodes.tsv.
+UMI count = 21 for the gene and barcode combination.
+https://satijalab.org/seurat/articles/pbmc3k_tutorial.html#setup-the-seurat-object-1
+
+--- [PAGE 29/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Object 
+Member $
+$RNA
+Slot @
+ex) pbmc
+@assays
+@counts
+Slot @
+@data
+@scale.data
+@var.features
+@meta.data
+@project name
+: raw counts (UMI)
+: log normalized   
+counts
+: z-score or
+mean-centered
+: variable genes
+: nFeature,
+nCount,
+cluster….
+: by user     
+:
+:
+...
+Structure of Seurat object
+
+--- [PAGE 30/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+2. Preprocessing workflow: QC and selecting cells for further analysis 
+•
+The number of unique genes detected in each cell.
+Low-quality cells or empty droplets will often have very few genes
+Cell doublets or multiplets may exhibit an aberrantly high gene count
+•
+The total number of molecules detected within a cell (correlates strongly with unique 
+genes)
+•
+The percentage of reads that map to the mitochondrial genome
+Low-quality / dying cells often exhibit extensive mitochondrial contamination
+The [[ operator can add columns to object metadata. This is a great place to stash QC stats
+pbmc[["percent.mt"]] <- PercentageFeatureSet(pbmc, pattern = "^MT-")
+# Visualize QC metrics as a violin plot
+VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3)
+plot1 <- FeatureScatter(pbmc, feature1 = "nCount_RNA", feature2 = "percent.mt") 
+plot2 <- FeatureScatter(pbmc, feature1 = "nCount_RNA", feature2 = "nFeature_RNA") 
+plot1 + plot2
+pbmc <- subset(pbmc, subset = nFeature_RNA > 200 & nFeature_RNA < 2500 & percent.mt < 5)
+
+Mitochondrial genes (13 MT-genes) : "MT-ND1"  "MT-ND2"  "MT-CO1"  "MT-CO2"  "MT-ATP8" "MT-ATP6" "MT-CO3"  "MT-
+ND3"  "MT-ND4L" "MT-ND4"  "MT-ND5"  "MT-ND6"  "MT-CYB“
+percent.mt = 
+𝑈𝑀𝐼𝑠𝑜𝑓𝑀𝑇−𝑔𝑒𝑛𝑒𝑠
+𝑇𝑜𝑡𝑎𝑙𝑈𝑀𝐼𝑠
+× 100
+
+--- [PAGE 31/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+3. Normalizing the data
+By default, global-scaling normalization method “LogNormalize” that normalizes the feature expression 
+measurements for each cell by the total expression, multiplies this by a scale factor (10,000 by default), and log-
+transforms the result. 
+Normalized values are stored in pbmc[["RNA"]]@data.
+pbmc <- NormalizeData(pbmc, normalization.method = "LogNormalize", scale.factor = 10000)
+For clarity, in this previous line of code (and in future commands), we provide the default values for certain 
+parameters in the function call. However, this isn’t required and the same behavior can be achieved with:
+pbmc <- NormalizeData(pbmc)
+ln
+𝑈𝑀𝐼𝑠
+𝑇𝑜𝑡𝑎𝑙𝑈𝑀𝐼𝑠× 104 + 1
+Cell 1
+Cell 2
+Cell 3
+Total UMIs
+1000
+500
+100
+Count
+Cell 1
+Cell 2
+Cell 3
+Gene A
+10
+5
+20
+Gene B
+6
+20
+5
+Gene C
+12
+15
+8
+Normalization per cell
+Cell 1
+Cell 2
+Cell 3
+Gene A
+4.615121
+4.615121
+7.601402
+Gene B
+4.110874
+5.993961
+6.216606
+Gene C
+4.795791
+5.70711
+6.685861
+The number of sequencing reads vary between cells. 
+Normalization corrects the difference.
+
+--- [PAGE 32/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+4. Identification of highly variable features (feature selection)
+We next calculate a subset of features that exhibit high cell-to-cell variation in the dataset (i.e, they are highly 
+expressed in some cells, and lowly expressed in others). We and others have found that focusing on these genes in 
+downstream analysis helps to highlight biological signal in single-cell datasets.
+Our procedure in Seurat3 is described in detail here, and improves on previous versions by directly modeling the 
+mean-variance relationship inherent in single-cell data, and is implemented in the FindVariableFeatures function. By 
+default, we return 2,000 features per dataset. These will be used in downstream analysis, like PCA.
+
+--- [PAGE 33/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+5. Scaling the data
+http://www.statistics4u.info/fundstat_eng/ee_ztransform.html
+
+--- [PAGE 34/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+6. Perform linear dimensional reduction
+
+--- [PAGE 35/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+7. Determine the ‘dimensionality’ of the dataset
+To overcome the extensive technical noise in any 
+single feature for scRNA-seq data, Seurat clusters 
+cells based on their PCA scores, with each PC 
+essentially representing a ‘metafeature’ that combines 
+information across a correlated feature set. The top 
+principal components therefore represent a robust 
+compression of the dataset. However, how many 
+components should we choose to include? 10? 20? 
+100?
+In Macosko et al, we implemented a resampling test 
+inspired by the JackStraw procedure. We randomly 
+permute a subset of the data (1% by default) and 
+rerun PCA, constructing a ‘null distribution’ of feature 
+scores, and repeat this procedure. We identify 
+‘significant’ PCs as those who have a strong 
+enrichment of low p-value features.
+
+--- [PAGE 36/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+7. Determine the ‘dimensionality’ of the dataset
+An alternative heuristic method 
+generates an ‘Elbow plot’: a ranking of 
+principle components based on the 
+percentage of variance explained by 
+each one (ElbowPlot() function). In this 
+example, we can observe an ‘elbow’ 
+around PC9-10, suggesting that the 
+majority of true signal is captured in the 
+first 10 PCs.
+#We encourage users to repeat downstream analyses with a different number of PCs (10, 15, 
+or even 50!). As you will observe, the results often do not differ dramatically.
+
+--- [PAGE 37/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+8. Cluster the cells
+Seurat v3 applies a graph-based clustering approach, building upon initial strategies in 
+(Macosko et al).
+First construct a KNN graph based on the euclidean distance in PCA space, and refine 
+the edge weights between any two cells based on the shared overlap in their local 
+neighborhoods (Jaccard similarity)
+To cluster the cells, we next apply modularity optimization techniques such as the 
+Louvain algorithm (default) or SLM [SLM, Blondel et al., Journal of Statistical Mechanics], 
+to iteratively group cells together, with the goal of optimizing the standard modularity 
+function.
+#We encourage users to repeat analyses with different parameters: number of PCs and 
+resolutions.
+https://www.cell.com/cell/pdfExtended/S0092-8674(15)00549-8
+
+--- [PAGE 38/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+9. Run non-linear dimensional reduction (UMAP/tSNE)
+Seurat offers several non-linear dimensional reduction techniques, such as tSNE and UMAP, to visualize and explore 
+these datasets. The goal of these algorithms is to learn the underlying manifold of the data in order to place similar 
+cells together in low-dimensional space. Cells within the graph-based clusters determined above should co-localize on 
+these dimension reduction plots. As input to the UMAP and tSNE, we suggest using the same PCs as input to the 
+clustering analysis.
+
+--- [PAGE 39/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+10. Finding differentially expressed features (cluster biomarkers)
+https://rdrr.io/github/satijalab/seurat/man/FindAllMarkers.html
+Denotes which test to use. Available options are:
+"wilcox" : Identifies differentially expressed genes between two groups of cells using a Wilcoxon Rank Sum test (default)
+"bimod" : Likelihood-ratio test for single cell gene expression, (McDavid et al., Bioinformatics, 2013)
+"roc" : Identifies 'markers' of gene expression using ROC analysis. For each gene, evaluates (using AUC) a classifier built on that gene 
+alone, to classify between two groups of cells. An AUC value of 1 means that expression values for this gene alone can perfectly classify 
+the two groupings (i.e. Each of the cells in cells.1 exhibit a higher level than each of the cells in cells.2). An AUC value of 0 also means 
+there is perfect classification, but in the other direction. A value of 0.5 implies that the gene has no predictive power to classify the two 
+groups. Returns a 'predictive power' (abs(AUC-0.5) * 2) ranked matrix of putative differentially expressed genes.
+"t" : Identify differentially expressed genes between two groups of cells using the Student's t-test.
+"negbinom" : Identifies differentially expressed genes between two groups of cells using a negative binomial generalized linear model.
+Use only for UMI-based datasets
+"poisson" : Identifies differentially expressed genes between two groups of cells using a poisson generalized linear model. Use only for 
+UMI-based datasets
+"LR" : Uses a logistic regression framework to determine differentially expressed genes. Constructs a logistic regression model predicting 
+group membership based on each feature individually and compares this to a null model with a likelihood ratio test.
+"MAST" : Identifies differentially expressed genes between two groups of cells using a hurdle model tailored to scRNA-seq data. Utilizes 
+the MAST package to run the DE testing.
+"DESeq2" : Identifies differentially expressed genes between two groups of cells based on a model using DESeq2 which uses a negative 
+binomial distribution (Love et al, Genome Biology, 2014).This test does not support pre-filtering of genes based on average difference 
+(or percent detection rate) between cell groups. However, genes may be pre-filtered based on their minimum detection rate (min.pct) 
+across both cell groups. To use this method, please install DESeq2, using the instructions at 
+https://bioconductor.org/packages/release/bioc/html/DESeq2.html
+One vs. others
+
+--- [PAGE 40/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Ways to look at  cluster gene expression
+Violin plots
+
+--- [PAGE 41/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Feature plots
+
+--- [PAGE 42/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Heatmap
+
+--- [PAGE 43/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+11. Assigning cell type identity to clusters
+Cluster ID
+Markers
+Cell Type
+0
+IL7R, CCR7
+Naive CD4+ T
+1
+CD14, LYZ
+CD14+ Mono
+2
+IL7R, S100A4
+Memory CD4+
+3
+MS4A1
+B
+4
+CD8A
+CD8+ T
+5
+FCGR3A, MS4A7
+FCGR3A+ Mono
+6
+GNLY, NKG7
+NK
+7
+FCER1A, CST3
+DC
+8
+PPBP
+Platelet
+
+--- [PAGE 44/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+11. Assigning cell type identity to clusters
+UMAP (Uniform Manifold Approximation and Projection)
+-Handles nonlinear relationships (better than 
+PCA for visualization)
+-Produces clear clusters
+-Works well with large datasets
+Each dot = one cell
+Distance between dots = similarity
+Clusters = cell types or states
+
+--- [PAGE 45/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+
+
+--- [PAGE 46/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Batch correction to combine >2 datasets
+
+--- [PAGE 47/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+
+
+--- [PAGE 48/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Stuart, Butler, et al. Cell 2019
+
+--- [PAGE 49/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Introduction to scRNA-seq integration
+# Goal
+Comparative analyses on complex cell types
+# Datasets
+Interferon-b treated or non-treated groups of PBMCs
+(Kang et al., Nat. Biotechnol. 2017)
+https://satijalab.org/seurat/articles/integration_introduction.html
+Stimulated vs. Control PBMC
+•Create an ‘integrated’ data assay 
+•Identify common cell types 
+•Find cell-type specific responses to 
+stimulation
+
+--- [PAGE 50/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+
+
+--- [PAGE 51/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+
+
+--- [PAGE 52/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+4. Multi-modal data generation
+
+--- [PAGE 53/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Nat Methods. 2019 May;16(5):409-412. doi: 10.1038/s41592-019-0392-0. PMID 31011186
+Nat Rev Genet. 2019 May;20(5):257-272. doi: 10.1038/s41576-019-0093-7. PMID 30696980
+
+--- [PAGE 54/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Antibody-derived Tags (ADT) for surface protein phenotype
+CITE-seq, REAP-seq
+Nat Methods. 2017 Sep;14(9):865-868. doi: 10.1038/nmeth.4380. PMID: 28759029 
+https://www.biolegend.com/en-us/search-results?PageSize=25&Keywords=totalseq&Category=PRIM_AB
+
+--- [PAGE 55/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+scATAC-seq
+Assay for Transposase-Accessible Chromatin with high-throughput sequencing 
+for regulatory landscape of chromatin
+Transposase, loaded with sequencing adapters, inserts only in regions of open 
+chromatin and generates sequencing library fragments that can be PCR amplified
+Nature. 2015 Jul 23;523(7561):486-90. PMID26083756
+
+--- [PAGE 56/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Single cell CRISPR screening
+For the gene perturbation phenotype screening at a large scale 
+(proliferation, cell survival, drug resistance, etc)
+Cells expressing CRISPR-Cas9 are transduced with a pool of guide RNAs (gRNAs)
+Cell. 2016 Dec 15;167(7):1853-1866.e17.  PMID 27984732
+
+--- [PAGE 57/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Visium by 10X genomics
+Spatial Barcode
+Genes
+0  1  5  0 …
+5  0  0  0 …
+……………….…
+UMI counts
+Spatial Transcriptomics
+In situ
+Cell. 2021 Feb 4;184(3):810-826.e23. PMID33406409
+
+--- [PAGE 58/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Xenium, 10X genomics
+
+Human Multicancer+TME panel ~476 genes
+(지니너스) etc
+
+--- [PAGE 59/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+10X genomics
+
+--- [PAGE 60/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Using Xenium Explorer
+
+--- [PAGE 61/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+https://spatialgenomics.com/technology/
+https://vizgen.com/technology/
+Hybridization based
+SeqFISH
+MERFISH
+Expands smFISH with combinatorial labeling, sequential imaging, and error-robust barcoding
+Nat Methods 2017 Dec;14(12):1153-1155.
+Science. 2015 Apr 24;348(6233):aaa6090.
+PNAS. 2016 Sep 27;113(39):11046-51
+
+--- [PAGE 62/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Towards higher resolution & more features
+10X Visium HD
+STOmics stereo-seq
+Xenium 5000 genes
+
+--- [PAGE 63/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+
+
+--- [PAGE 64/64] 20260324_대학원합동강의_scRNAseq_.pdf ---
+Keywords
+Single cell RNA sequencing
+Cellular identity and states at a transcriptome level
+Drop-out
+Cell barcodes
+UMI
+Full-length, 5’, 3’ sequencing
+CITE-seq
+Spatial transcriptomics
+single cell BCR/TCR sequencing
+Cell Ranger
+Normalization
+Scaling, z-transformation
+Principal component analysis
+Data visualization, PCA, UMAP, tSNE
+Cell type annotation, cluster DEG
+
+
+--- [PAGE 1/2] 20260324_대학원합동강의_필수슬라이드_.pdf ---
+Unique Molecular Identifier (UMI)
+Cell Barcode
+Genes
+0  1  5  0 …
+5  0  0  0 …
+……………….…
+UMI counts
+PMID 28091601 & 24363023
+AGCTTATGCT
+Gene A
+AGCTTATGCT
+Gene A
+TTGATGCTAG
+Gene A
+O
+X
+O
+
+--- [PAGE 2/2] 20260324_대학원합동강의_필수슬라이드_.pdf ---
+Keywords
+Single cell RNA sequencing
+Cellular identity and states at a transcriptome level
+Drop-out
+Cell barcodes
+UMI
+Full-length, 5’, 3’ sequencing
+CITE-seq
+Spatial transcriptomics
+single cell BCR/TCR sequencing
+Cell Ranger
+Normalization
+Scaling, z-transformation
+Principal component analysis
+Data visualization, PCA, UMAP, tSNE
+Cell type annotation, cluster DEG
+
+
+
+================ [DRAFT 분석(초안) — 토픽맵/가중치/모범답안 사실원] ================
+
+260324_미생물학교실_이혜옥 교수님
+
+PHASE 1 — 슬라이드 토픽 맵 구성
+슬라이드(Keywords 슬라이드 포함 전체)에 등장하는 모든 개념/용어/표/그래프를 추출합니다.
+
+[토픽 #1] Single cell RNA sequencing (scRNA-seq) 정의 — "Cell biology at a genomic level / Genomics at a cellular level" 슬라이드, 서론 슬라이드
+[토픽 #2] Cell by Feature Matrix (Gene-Cell Matrix) — 슬라이드 p.3, p.24 (행렬 구조: cells × genes, UMI counts)
+[토픽 #3] Drop-out — Keywords 슬라이드(p.64), 분석 워크플로우 슬라이드 p.24
+[토픽 #4] Cell Barcode — Keywords 슬라이드, p.18 3' scRNA-seq 슬라이드, UMI 슬라이드 p.20
+[토픽 #5] UMI (Unique Molecular Identifier) — 별도 슬라이드 p.20, Keywords 슬라이드, p.1(UMI 슬라이드)
+[토픽 #6] 10X Genomics Chromium System — p.15, p.17 (가장 널리 쓰이는 플랫폼, oil emulsion/GEM 방식)
+[토픽 #7] 3' scRNA-seq — p.18 (Poly-A tail 캡처, 3' end 100bp 시퀀싱, 라이브러리 구조)
+[토픽 #8] 5' scRNA-seq — p.21, p.22 (TSO, 프로모터 정보, TCR/BCR 연계)
+[토픽 #9] TCR/BCR 시퀀싱 (Immune profiling) — p.22 (VDJ gene, clonality, 400bp 라이브러리)
+[토픽 #10] Cell Ranger — Keywords 슬라이드, p.24 (demultiplexing, alignment, barcode/UMI filtering, marking duplicates)
+[토픽 #11] QC 파라미터 (nGene, nUMI, %Mito) — p.24, p.30 (퍼센트 미토콘드리아 계산식 포함)
+[토픽 #12] Normalization (Log-normalization) — p.24, p.31 (ln(UMI/Total UMI × 10⁴ + 1) 수식)
+[토픽 #13] Feature Selection (Highly Variable Genes, HVG) — p.24, p.32 (default 2000 genes, VST method)
+[토픽 #14] Scaling (Z-transformation) — p.24, p.33 (Z = (X-μ)/σ, mean=0, SD=1)
+[토픽 #15] PCA (Principal Component Analysis, 선형 차원 축소) — p.24, p.34, p.35, Keywords 슬라이드
+[토픽 #16] PC 수 결정 (Elbow Plot / JackStraw) — p.35, p.36
+[토픽 #17] UMAP / tSNE (비선형 차원 축소) — p.38, p.44, Keywords 슬라이드 (UMAP 특성: 클러스터 내부 신뢰 가능, 클러스터 간 거리 무의미)
+[토픽 #18] Graph-based Clustering (KNN, Louvain algorithm) — p.37 (Euclidean distance in PCA space, Jaccard similarity)
+[토픽 #19] DEG 분석 (Differentially Expressed Genes) / 클러스터 마커 유전자 — p.39, p.24, Keywords 슬라이드 (Wilcoxon default, 다양한 통계 방법)
+[토픽 #20] Cell Type Annotation — p.43, p.44 (marker gene 기반, Seurat UMAP 최종 결과)
+[토픽 #21] Seurat 오브젝트 구조 — p.29, p.45 (@counts, @data, @scale.data, @var.features)
+[토픽 #22] Sparse Matrix (barcodes.tsv / features.tsv / matrix.mtx) — p.28
+[토픽 #23] Batch Effect / Batch Correction — p.46, p.47, p.48, p.49, p.50, p.51 (CCA, Harmony, MNN 등)
+[토픽 #24] CITE-seq (ADT, Antibody-Derived Tags) — p.54, Keywords 슬라이드
+[토픽 #25] scATAC-seq — p.55 (open chromatin, transposase-accessible)
+[토픽 #26] Single cell CRISPR screening — p.56 (perturbation, gRNA barcoding)
+[토픽 #27] Spatial Transcriptomics (Visium) — p.57, Keywords 슬라이드 (spatial barcode, ~100μm resolution)
+[토픽 #28] Xenium (in situ, high-resolution spatial) — p.58, p.59, p.60 (probe, rolling circle amplification, ~2μm)
+[토픽 #29] SeqFISH / MERFISH — p.61 (hybridization-based, combinatorial barcoding)
+[토픽 #30] Human Cell Atlas (HCA) — p.5 (컨소시엄 미션)
+[토픽 #31] Doublet / Multiplet — p.30 (doublet = 이상 고발현 세포, QC 제거 대상)
+[토픽 #32] Full-length / 3' / 5' sequencing 비교 — Keywords 슬라이드 (full-length, 5', 3' 키워드 병기)
+[토픽 #33] Data Visualization (Violin plot, Feature plot, Heatmap) — p.40, p.41, p.42, Keywords 슬라이드
+
+PHASE 2 — 스크립트 강조 신호 탐지 (가중치 부여)
+
+[토픽 #5] UMI | 감지된 신호: S1(스크립트 분량 집중, UMI 설명에 매우 긴 분량 할애), S4(트랜스크립트 20개 → UMI 5개 계수 예시로 패턴 전환), S5(반복: "UMI", "Unique Molecular Identifier" 반복 3회 이상), S6(경고성: "꼭 냅니다", "증폭 바이어스를 줄여주기 위해"), B1(S4+S6 동시) | 총 W = 6점
+[토픽 #17] UMAP vs 클러스터링 구분 | 감지된 신호: S2("헷갈리는데", "가끔 논문 보냈는데 리뷰어 중에 거의 경기를 일으키는 분들이 있어요"), S5(UMAP은 차원축소, 클러스터링은 클러스터링 — 반복 강조), S6("경기를 일으키는", "용어만 바꿔쓰면 되죠"), S7(UMAP vs 클러스터링 비교·대조 구조) | 총 W = 4점
+[토픽 #15] PCA (선형 차원 축소) | 감지된 신호: S1(PCA 설명에 상당한 분량), S4(covariance matrix → eigenvalue 설명으로 패턴 전환), S5(PC, 주성분분석 반복), S7(PCA linear vs UMAP/tSNE non-linear 대조) | 총 W = 4점
+[토픽 #11] QC 파라미터 (nGene, nUMI, %Mito) | 감지된 신호: S2("반드시 이거를 보고 어디서 끊어낼지"), S5(%Mito 설명 반복), S6("데이터마다 되게 달라요", "죽어가는 셀이니까"), B2(슬라이드 바이올린플랏·수식 직접 언급) | 총 W = 4점
+[토픽 #12] Normalization | 감지된 신호: S1(normalization 과정 분량 집중), S5(TPM, log-normalization 반복), S7(셀마다 다른 UMI count → 표준화 필요 대조) | 총 W = 3점
+[토픽 #14] Scaling (Z-transformation) | 감지된 신호: S2("도미네이트하게 됩니다"), S5(평균 0, SD 1로 반복), S6("하우스키핑 진이 도미네이트" 경고성), S7(발현값 높은 유전자 vs 낮은 유전자 비교) | 총 W = 4점
+[토픽 #7] 3' scRNA-seq | 감지된 신호: S1(3' 시퀀싱 원리 분량 집중), S5(Poly-A, 3' 반복), S7(3' vs 5' 대조) | 총 W = 3점
+[토픽 #8/9] 5' scRNA-seq / TCR/BCR 시퀀싱 | 감지된 신호: S2("왜냐하면 얘네가 가지는 정보가 또 있기 때문이에요"), S5(VDJ 반복), S7(3' vs 5' — 3'은 constant region만, 5'은 VDJ 정보 포함 대조), S6("적합하지 않아요") | 총 W = 4점
+[토픽 #18] Graph-based Clustering | 감지된 신호: S1(클러스터링 설명 분량), S4(Louvain 알고리즘 언급), S7(KNN graph + Jaccard similarity 구조 설명) | 총 W = 3점
+[토픽 #3] Drop-out | 감지된 신호: S2("0인데가 되게 많아요"), S5(drop-out 반복 언급), S6("놓치는 경우가 되게 많아요") | 총 W = 3점
+[토픽 #23] Batch Correction | 감지된 신호: S1(batch 관련 슬라이드 분량 다수), S7(여러 방법 비교·대조: CCA, Harmony, MNN 등) | 총 W = 2점
+[토픽 #24] CITE-seq (ADT) | 감지된 신호: S2("transcript로 정의한 population이 surface protein으로 sorting한 population과 같다는 걸 어느 시점에선 증명해줘야"), S6("망하기 시작이죠", "binding specificity 확인해야"), B1(S4+S6) | 총 W = 3점
+[토픽 #27] Spatial Transcriptomics (Visium) | 감지된 신호: S1(스파셜 설명 분량), S5(스파셜 반복), S7(싱글셀 vs 스파셜 비교) | 총 W = 3점
+[토픽 #13] Feature Selection (HVG) | 감지된 신호: S1, S5(2000개 반복) | 총 W = 2점
+[토픽 #6] 10X Chromium System | 감지된 신호: S1(플랫폼 설명 분량), S5(oil emulsion, GEM 반복) | 총 W = 2점
+[토픽 #16] Elbow Plot / PC 수 결정 | 감지된 신호: S2("heuristic하다"), S6("PC를 많이 쓴다고 꼭 좋은 거는 아니에요") | 총 W = 2점
+[토픽 #4] Cell Barcode | 감지된 신호: S5(cell barcode 반복) | 총 W = 1점
+[토픽 #25] scATAC-seq | 감지된 신호: S1 | 총 W = 1점
+[토픽 #19] DEG / 마커 유전자 | 감지된 신호: S5 | 총 W = 1점
+나머지 토픽(#20, #21, #22, #26, #28~#33) — 신호 미감지 | W = 0점
+
+PHASE 3 — 출제 확률 티어 분류 + 예상 문제 생성
+Tier 분류
+TIER 1 (W ≥ 3점) — 서술형/논술형 출제 확률 95%+
+#
+개념
+W
+#5
+UMI
+6
+#17
+UMAP vs Clustering 구분
+4
+#15
+PCA (선형 차원 축소)
+4
+#11
+QC 파라미터 (nGene, nUMI, %Mito)
+4
+#14
+Scaling / Z-transformation
+4
+#8/9
+5' scRNA-seq / TCR·BCR 시퀀싱
+4
+#12
+Normalization
+3
+#7
+3' scRNA-seq
+3
+#18
+Graph-based Clustering
+3
+#3
+Drop-out
+3
+#24
+CITE-seq (ADT)
+3
+#27
+Spatial Transcriptomics (Visium)
+3
+TIER 2 (W = 1~2점) — 객관식/단답형 출제 확률 70%+
+#
+개념
+예상 출제 형태
+#23
+Batch Correction
+객관식 (방법 매칭)
+#13
+Feature Selection (HVG, 2000 default)
+단답형
+#6
+10X Chromium System
+객관식
+#16
+Elbow Plot / PC 수 결정
+단답형
+#4
+Cell Barcode
+단답형
+#25
+scATAC-seq
+객관식
+#19
+DEG (Wilcoxon default)
+단답형
+TIER 3 (W = 0점) — 오답 선지 또는 기본 암기용
+Human Cell Atlas 미션, Seurat 오브젝트 세부 슬롯, Doublet 정의, SeqFISH/MERFISH, CRISPR screening, Xenium 세부, Sparse matrix 구조, Data visualization 종류
+
+예상 시험 문제 & 모범 답안
+
+Q1. [문제 유형: 기전 설명형] UMI(Unique Molecular Identifier)란 무엇이며, scRNA-seq에서 일반적인 transcript read count 대신 UMI를 사용하는 이유를 설명하시오.
+[모범 답안] UMI는 각 mRNA 분자에 개별적으로 부착된 고유한 짧은 뉴클레오타이드 서열이다. 10X Chromium 시스템에서 bead의 oligonucleotide에 포함되어 있으며, 같은 cell barcode를 공유하더라도 각 분자마다 다른 UMI 서열을 가진다. scRNA-seq 과정에서는 cDNA 증폭(PCR amplification) 과정이 필수적으로 포함되는데, 이때 동일한 원본 transcript로부터 유래한 PCR 산물들이 다량 생성된다. 단순 read count를 사용하면 증폭 횟수에 따른 bias가 생겨 실제 발현량을 과대 추정하게 된다. UMI를 사용하면 동일한 UMI 서열을 가진 reads는 동일한 원본 분자에서 유래한 PCR 증폭물로 간주하여 1개로 계수하고, 서로 다른 UMI 서열을 가진 reads만 개별 분자로 계수한다. 이를 통해 PCR 증폭 bias를 제거하고 원본 transcript의 실제 분자 수를 정량화할 수 있다. 결과적으로 UMI count는 raw read count보다 낮게 형성되지만 더 정확한 유전자 발현 정보를 반영한다.
+[출제 근거] 신호 S1+S4+S5+S6+B1 동시 발동. 스크립트에서 "20개 트랜스크립트 → UMI 5종으로 계수" 사례 제시 후 "꼭 냅니다"라는 경고성 발화, 3회 이상 반복 설명. 교수가 시험 출제를 직접 암시.
+
+Q2. [문제 유형: 비교·적용형] scRNA-seq 데이터 분석에서 UMAP과 클러스터링(clustering)은 서로 다른 목적의 방법이다. 두 방법의 차이를 설명하고, UMAP 플롯에서 클러스터 간 거리가 생물학적으로 의미를 갖지 않는 이유를 서술하시오.
+[모범 답안] UMAP(Uniform Manifold Approximation and Projection)은 비선형 차원 축소(dimensionality reduction) 방법으로, 고차원 PCA 공간에서의 세포 간 유사성 구조를 2D 평면에 시각화하기 위한 도구이다. 반면 클러스터링은 PCA 값을 기반으로 nearest neighbor graph를 구성하고, 이를 Louvain algorithm 등의 modularity optimization 방법으로 세포 군집을 정의하는 독립적인 분석 과정이다. 두 방법 모두 PCA 결과를 입력으로 사용하고 nearest neighbor 개념을 활용하기 때문에 결과가 유사하게 보일 수 있으나, UMAP은 시각화 알고리즘이고 클러스터링은 군집 정의 알고리즘으로 엄연히 구분된다. UMAP 플롯에서 클러스터 내부의 세포들은 서로 유사하다고 신뢰할 수 있지만, 서로 다른 클러스터 간의 2D상 거리는 고차원 공간에서의 실제 거리를 선형적으로 반영하지 않는다. UMAP은 국소적(local) 구조 보존에 강하지만 전역적(global) 거리 관계는 보존하지 않으므로, 떨어져 있는 클러스터 간의 거리는 생물학적 유사성의 척도로 해석할 수 없다.
+[출제 근거] 신호 S2+S5+S6+S7 동시 발동. 스크립트에서 "리뷰어 중에 경기를 일으키는 분들이 있어요"라는 강한 경고성 발화, 용어 혼용 위험에 대한 반복 강조.
+
+Q3. [문제 유형: 기전 설명형] scRNA-seq 분석 기본 워크플로우에서 normalization 후 scaling(z-transformation)을 수행하는 이유를 설명하시오. Z-transformation의 수식을 제시하고, 이 단계를 거치지 않을 경우 발생할 수 있는 문제점을 서술하시오.
+[모범 답안] Normalization은 세포마다 포획되는 총 transcript 수가 다른 기술적 편차를 보정하기 위해 각 세포의 UMI count를 총 UMI count로 나누고 10,000을 곱한 뒤 log-transformation을 적용하는 과정이다. 이후 highly variable genes(HVG) 2,000개를 선별하여 PCA 등의 분석에 사용하는데, 이 유전자들은 발현 수준이 서로 매우 다르다. 발현량이 높은 유전자(예: 하우스키핑 유전자)는 절대값이 크기 때문에 PCA 등의 분석에서 다른 유전자들보다 훨씬 크게 기여하여 결과를 왜곡한다. 이를 방지하기 위해 각 유전자의 발현값을 Z-transformation으로 표준화한다.
+Z = (X - μ) / σ (μ: 해당 유전자의 평균 발현값, σ: 표준편차)
+이 과정을 통해 모든 유전자의 평균은 0, 표준편차는 1로 맞춰지며, 모든 유전자가 동등한 가중치로 PCA 분석에 기여하게 된다. Scaling을 수행하지 않으면 발현량이 높은 하우스키핑 유전자들이 PCA와 클러스터링을 지배(dominate)하여 세포 유형을 구분하는 생물학적 신호를 가리게 된다.
+[출제 근거] 신호 S2+S5+S6+S7 발동. 스크립트에서 "하우스키핑 진이 도미네이트하게 됩니다"라는 경고성 발화 후 반복 설명. 슬라이드에 Z = (X-μ)/σ 수식 명시.
+
+Q4. [문제 유형: 비교·적용형] 3' scRNA-seq와 5' scRNA-seq를 비교하고, 5' scRNA-seq를 사용해야 하는 상황과 그 이유를 설명하시오. 특히 TCR/BCR 분석에서 5' 방법이 필요한 이유를 VDJ 유전자 구조와 연결하여 서술하시오.
+[모범 답안] 3' scRNA-seq는 mRNA의 poly-A tail을 포착하여 cDNA를 합성하고 3' 말단 약 100 base pair를 시퀀싱하는 방법이다. 대부분의 유전자 발현 분석에 적합하며, 현재 가장 널리 사용된다. 반면 5' scRNA-seq는 Template Switch Oligo(TSO)를 이용하여 mRNA의 5' 말단부터 cDNA를 합성하며, 풀랭스 cDNA를 만든 후 라이브러리를 제작한다.
+5' scRNA-seq를 특별히 사용해야 하는 대표적 상황은 T세포 수용체(TCR)와 B세포 수용체(BCR)의 클로날리티(clonality) 분석이다. TCR과 BCR의 항원 특이성은 V(Variable), D(Diversity), J(Joining) 유전자 절편의 재조합으로 결정되며, 이 VDJ 다양성 부위는 수용체의 5' 쪽에 위치한다. 3' 시퀀싱에서는 항원 특이성과 무관한 constant region(3' 말단)만 읽히므로 개별 세포가 어떤 항원을 인식하는지 구분할 수 없다. 5' scRNA-seq에서는 풀랭스 cDNA에 VDJ 정보가 모두 포함되어 있어, 약 400 base pair 라이브러리를 제작하여 V, D, J 서열을 모두 읽을 수 있다. 이를 통해 T세포 또는 B세포 각각의 클론 정보를 알 수 있고, 면역 반응에서 특정 항원을 인식하는 세포들의 확장(clonal expansion)을 분석하는 immune profiling이 가능해진다.
+[출제 근거] 신호 S2+S5+S6+S7 발동. 스크립트에서 "왜냐하면 얘네가 가지는 정보가 또 있기 때문"이라는 담화 표지와 함께 3' vs 5' 비교·대조 구조 명확히 제시.
+
+Q5. [문제 유형: 기전 설명형] scRNA-seq 분석에서 QC(Quality Control) 단계에 사용되는 세 가지 주요 파라미터를 설명하고, 미토콘드리아 유전자 비율(%Mito)이 높은 세포를 제거하는 이유를 서술하시오. 또한 이 파라미터들의 임계값을 데이터마다 다르게 설정해야 하는 이유를 설명하시오.
+[모범 답안] scRNA-seq QC에서 사용하는 세 가지 주요 파라미터는 다음과 같다.
+① nGene (nFeature_RNA): 각 세포에서 감지된 고유 유전자의 수. 값이 너무 낮은 세포는 빈 droplet(empty droplet) 또는 저품질 세포일 가능성이 높아 제거한다. 반대로 값이 비정상적으로 높은 세포는 두 개의 세포가 함께 포획된 doublet일 가능성이 있어 제거 대상이 된다.
+② nUMI (nCount_RNA): 세포 내에서 감지된 총 UMI 수. nGene과 강한 양의 상관관계를 보이며, 전반적인 포획 효율을 반영한다.
+③ %Mito (percent.mt): 전체 UMI 중 미토콘드리아 유전자(사람의 경우 "MT-"로 시작하는 13개 유전자)에서 유래한 UMI의 비율로, 공식은 (MT-gene UMIs / Total UMIs) × 100이다.
+%Mito가 높은 세포를 제거하는 이유는, 세포막이 손상되거나 죽어가는 세포(dying cell)에서는 세포질의 mRNA가 유출되는 반면 미토콘드리아는 이중막 구조로 보호되어 상대적으로 미토콘드리아 RNA 비율이 증가하기 때문이다. 이런 세포는 실제 생물학적 상태를 반영하지 않고 분석을 오염시킨다.
+QC 임계값을 데이터마다 다르게 설정해야 하는 이유는, 조직 유형, 세포 종류, 실험 조건에 따라 정상적인 세포가 가지는 유전자 수와 %Mito의 분포가 근본적으로 다르기 때문이다. 예를 들어 T세포나 B세포와 같이 전사적으로 조용한(transcriptionally quiet) 세포는 정상적으로도 매우 낮은 UMI 수를 가지며, 어떤 조직은 생물학적으로 높은 미토콘드리아 활성을 가질 수 있다. 따라서 반드시 각 데이터의 분포를 시각화한 후 임계값을 결정해야 한다.
+[출제 근거] 신호 S2+S5+S6+B2 발동. 스크립트에서 "반드시 이거를 보고 어디서 끊어낼지 결정해야 합니다", "데이터마다 되게 달라요"라는 담화 표지와 경고성 발화. 슬라이드에 %Mito 공식 명시.
+
+Q6. [문제 유형: 기전 설명형] scRNA-seq에서 drop-out 현상이란 무엇이며, 왜 발생하는지 설명하시오. 이 현상이 데이터 행렬의 특성에 미치는 영향을 서술하시오.
+[모범 답안] Drop-out이란 실제로 세포 내에 존재하는 transcript임에도 불구하고 scRNA-seq 데이터에서 검출되지 않아 발현값이 0으로 기록되는 현상이다. 이는 단일 세포 한 개에서 유래하는 cDNA를 증폭하여 시퀀싱해야 하는 scRNA-seq의 특성상, 포획 효율(capture efficiency)이 낮아 일부 transcript가 역전사(RT) 과정에서 누락되기 때문에 발생한다. 결과적으로 Gene-Cell 발현 행렬에는 0 값이 매우 많이 포함되어 sparse matrix(희소 행렬) 형태를 띠게 된다. 이로 인해 실제로 낮게 발현되는 유전자와 drop-out으로 인해 0이 된 경우를 구분하기 어려운 통계적 문제가 생기며, 데이터 저장 및 분석 효율을 위해 barcodes.tsv, features.tsv, matrix.mtx 형태의 sparse matrix 파일 형식을 사용한다.
+[출제 근거] 신호 S2+S5+S6 발동. "0인데가 되게 많아요", "놓치는 경우가 되게 많아요" 경고성 발화 및 반복 강조.
+
+Q7. [문제 유형: 비교·적용형] scRNA-seq 분석에서 PCA가 1차 차원 축소 도구로 사용되는 이유를 설명하고, PCA 이후 몇 개의 PC를 사용할지 결정하는 방법(Elbow plot)을 서술하시오. 또한 PCA와 UMAP의 관계를 설명하시오.
+[모범 답안] 스케일링된 유전자 발현 데이터는 세포 수 × 유전자 수 차원의 매우 고차원 행렬이다(예: 3,000세포 × 2,000 유전자). 이를 직접 클러스터링이나 시각화에 사용하면 계산 비용이 크고 노이즈의 영향을 많이 받는다. PCA(Principal Component Analysis)는 공분산 행렬(covariance matrix)에서 고유값(eigenvalue)을 추출하여 데이터의 분산을 가장 잘 설명하는 새로운 축(principal component, PC)을 정의하는 선형 차원 축소 방법이다. 각 PC는 여러 유전자들이 함께 움직이는 패턴을 하나의 축으로 요약하므로, 차원은 줄어들지만 생물학적 정보는 압축되어 보존된다. 통상 상위 20~50개의 PC가 데이터의 주요 분산을 설명한다.
+사용할 PC 수는 Elbow plot으로 결정한다. Elbow plot은 각 PC의 표준편차(설명하는 분산의 크기)를 순서대로 나타낸 그래프로, 값이 급격히 감소하다가 완만해지는 '팔꿈치(elbow)' 지점 근방에서 PC 수를 결정하는 휴리스틱(heuristic) 방법이다. 이후 UMAP과 클러스터링 모두 이 선택된 PC 값을 입력으로 사용한다. UMAP은 PCA로 축소된 PC 공간에서의 nearest neighbor 구조를 2D 평면에 최대한 보존하여 시각화하는 비선형 차원 축소 방법이다.
+[출제 근거] 신호 S1+S4+S5+S7 발동. PCA 원리, covariance 설명, UMAP과의 관계 비교 구조가 스크립트에서 상세히 반복됨.
+
+Q8. [문제 유형: 기전 설명형] CITE-seq에서 ADT(Antibody-Derived Tag)를 사용하는 원리를 설명하고, transcript 수준의 유전자 발현만으로는 충분하지 않아 단백질 정보(ADT)가 필요한 구체적인 예시를 들어 서술하시오.
+[모범 답안] CITE-seq에서 ADT는 세포 표면 단백질에 결합하는 항체에 poly-A tail을 가진 올리고뉴클레오타이드 바코드를 부착한 것이다. 항체가 세포 표면 단백질에 결합하면, 10X Chromium 시스템의 oil droplet 내에서 이 올리고뉴클레오타이드도 mRNA와 함께 poly-A tail 포획 방식으로 cDNA가 합성된다. 결과적으로 동일한 세포에서 유전자 발현(transcript) 정보와 표면 단백질(ADT) 정보를 동시에 얻을 수 있다.
+단백질 정보가 필요한 대표적인 예는 CD4이다. CD4는 CD4+ T세포의 대표적 마커이지만, transcript 수준에서는 단핵구(monocyte)/대식세포(macrophage) 계열에서도 높은 발현이 관찰되어 transcript만으로는 CD4+ T세포와 단핵구 계열 세포를 구분하기 어렵다. 반면 세포 표면 단백질 수준에서는 CD4 단백질이 CD4+ T세포에 특이적으로 높게 발현되므로, ADT 데이터를 함께 분석하면 훨씬 정확한 세포 유형 구분이 가능하다. 또한 기존 면역학 연구에서 세포 기능 연구(functional study)는 표면 단백질 기반의 FACS sorting으로 수행되어 왔으므로, transcript 기반 세포 정의가 단백질 기반 sorting 집단과 동일함을 검증하는 데도 ADT 데이터가 활용된다.
+[출제 근거] 신호 S2+S6+B1 발동. "transcript로 정의한 population이 surface protein으로 sorting한 population과 같다는 걸 증명해줘야 되는 거죠"라는 강한 담화 표지 및 경고성 발화.
+
+Q9. [문제 유형: 비교·적용형] Spatial Transcriptomics(공간 전사체학)와 기존 scRNA-seq를 비교하고, Visium(10X Genomics)의 작동 원리와 한계를 설명하시오.
+[모범 답안] 기존 scRNA-seq는 조직을 단일 세포 현탁액으로 해리(dissociation)한 뒤 개별 세포의 유전자 발현 정보를 Cell × Gene 행렬 형태로 얻는다. 이 과정에서 세포가 원래 조직 내에서 차지하던 위치(공간 정보)는 소실된다. Spatial Transcriptomics는 이 공간 정보를 보존한 채로 전사체를 측정하는 방법이다.
+Visium(10X Genomics)은 유리 슬라이드 위에 공간 바코드(spatial barcode)를 부착한 올리고뉴클레오타이드를 배열한 뒤, 그 위에 조직 절편을 올려놓는다. 조직에서 방출된 mRNA가 poly-A tail을 통해 슬라이드의 올리고뉴클레오타이드에 결합하여 공간 바코드를 달고 cDNA가 합성되므로, 최종 데이터는 "어느 위치(spot)에서 어떤 유전자가 얼마나 발현되었는가"를 담은 Spatial Barcode × Gene 행렬이 된다. Visium의 해상도는 약 100μm로, 이는 단일 세포(~10μm) 수준보다 넓어 하나의 spot에 여러 세포가 포함된다. 따라서 엄밀한 의미의 단일 세포 해상도가 아닌 regional analysis이며, 이를 sub-cellular 해상도로 개선한 것이 Xenium(~2μm), Stereo-seq(~200nm) 등이다. 해상도가 높아질수록 비용이 증가하고 검출 영역이 좁아지는 trade-off가 존재한다.
+[출제 근거] 신호 S1+S5+S7 발동. 스크립트에서 scRNA-seq와 spatial 비교 구조 명확히 제시, Method of the Year 2020 언급.
+
+PHASE 4 — 자기검증 (Self-Audit)
+A. 커버율 계산
+TIER 1 토픽: #5, #17, #15, #11, #14, #8/9, #12, #7, #18, #3, #24, #27 → 총 12개
+생성된 문제로 커버된 TIER 1 토픽:
+Q1 → #5 (UMI) ✓
+Q2 → #17 (UMAP vs Clustering) ✓
+Q3 → #14 (Scaling) + #12 (Normalization) ✓✓
+Q4 → #7 (3' scRNA-seq) + #8/9 (5'/TCR/BCR) ✓✓
+Q5 → #11 (QC) ✓
+Q6 → #3 (Drop-out) ✓
+Q7 → #15 (PCA) + #16 (Elbow plot, TIER 2) ✓
+Q8 → #24 (CITE-seq) ✓
+Q9 → #27 (Spatial Transcriptomics) ✓
+미커버: #18 (Graph-based Clustering) → 보충 필요
+커버율: 11/12 × 100 = 91.7% ✅ (90% 이상 충족)
+B. 중복 제거 Q2(UMAP vs Clustering)와 Q7(PCA + UMAP 관계)이 UMAP을 부분 공유하나, Q2는 UMAP의 시각적 해석 한계에 초점, Q7은 PCA → UMAP 연결 흐름에 초점으로 실질적 중복 없음. 유지.
+보충 문제 추가 (누락 토픽 #18)
+Q10. [보충: 단답형/서술형] scRNA-seq 분석에서 사용하는 graph-based clustering의 원리를 간략히 서술하시오.
+[모범 답안] PCA로 축소된 PC 공간에서 각 세포 간 Euclidean distance를 계산하여 K-Nearest Neighbor(KNN) 그래프를 구성한다. 이후 두 세포 사이의 엣지 가중치를 Jaccard similarity(두 세포의 nearest neighbor 집합이 겹치는 정도)로 보정한다. 마지막으로 Louvain algorithm 등의 modularity optimization 방법을 적용하여 내부 연결이 밀집된 세포 군집을 클러스터로 정의한다.
+[출제 근거] 슬라이드 p.37에 명시. 스크립트에서 원리 설명 포함(S1, S7).
+
+C. 최종 점검 문장
+"TIER 1 토픽 12개 중 12개 커버 (보충 문제 Q10 추가 후). 누락 토픽: 없음"
+
+PHASE 5 — 최종 결과물 출력
+【A. 핵심 개념 티어별 정리】
+TIER 1 개념 (출제 확률 95%+)
+UMI (Unique Molecular Identifier) | S1+S4+S5+S6+B1 | 고유 분자 식별자. 증폭 산물을 구분하여 PCR amplification bias를 제거하고 원본 transcript 분자 수를 정량. 같은 cell barcode 내에서 동일 UMI = 동일 원본 분자 → 1개로 계수.
+UMAP vs Clustering 구분 | S2+S5+S6+S7 | UMAP은 비선형 차원 축소 시각화 도구이고 Clustering은 별개의 군집 정의 알고리즘. 둘 다 PCA 결과를 입력으로 사용하나 목적이 다름. UMAP에서 클러스터 내부는 신뢰 가능하나 클러스터 간 거리는 생물학적 의미 없음.
+PCA (Principal Component Analysis) | S1+S4+S5+S7 | 선형 차원 축소. covariance matrix에서 eigenvalue 추출. 함께 움직이는 유전자들을 새로운 PC 축으로 요약. 상위 20~50개 PC 사용.
+QC 파라미터 (nGene / nUMI / %Mito) | S2+S5+S6+B2 | nGene↓ = 빈 droplet 또는 dead cell; nGene↑ = doublet 의심; %Mito = (MT-gene UMI / Total UMI)×100; %Mito↑ = dying cell. 임계값은 데이터마다 반드시 육안으로 확인 후 결정.
+Scaling (Z-transformation) | S2+S5+S6+S7 | Z = (X-μ)/σ. 평균 0, SD 1로 표준화. 발현량이 높은 유전자(하우스키핑 유전자)가 PCA를 dominate하는 문제를 방지.
+5' scRNA-seq / TCR·BCR 시퀀싱 | S2+S5+S6+S7 | 5' 방법은 TSO 사용. 풀랭스 cDNA에 VDJ 정보 포함 → 400bp 라이브러리 제작 → TCR/BCR clonality 분석(immune profiling) 가능. 3'은 constant region만 읽혀 VDJ 구분 불가.
+Normalization (Log-normalization) | S1+S5+S7 | ln(UMI/Total UMI × 10⁴ + 1). 세포간 총 transcript 수 차이 보정. 결과는 @data slot에 저장.
+3' scRNA-seq | S1+S5+S7 | Poly-A tail 포획 → oligo-dT 프라이머 → 3' 말단 ~100bp 시퀀싱. Cell barcode + UMI + cDNA insert 구조.
+Graph-based Clustering | S1+S4+S7 | PC space에서 KNN graph 구성 → Jaccard similarity로 edge weight 보정 → Louvain algorithm으로 modularity 최적화.
+Drop-out | S2+S5+S6 | 실제 존재하는 transcript가 포획되지 않아 발현값 = 0이 되는 현상. 단일 세포 포획 효율의 한계에서 기인. Gene-Cell matrix가 sparse해지는 원인.
+CITE-seq (ADT) | S2+S6+B1 | 항체에 poly-A 올리고 바코드 부착 → mRNA와 동시 시퀀싱 → 동일 세포의 transcript + 표면 단백질 동시 측정. CD4 예시: transcript만으로 단핵구와 CD4+ T세포 구분 어려움.
+Spatial Transcriptomics (Visium) | S1+S5+S7 | 슬라이드 위 공간 바코드 올리고에 조직 mRNA 포획 → Spatial Barcode × Gene 행렬. Visium 해상도 ~100μm (단일 세포 수준 아님). 위치 정보 보존.
+
+TIER 2 개념 (출제 확률 70%+)
+Batch Correction | 객관식 — 대표 방법: CCA(Seurat v2), Harmony, MNN, Integration(Seurat v3). Batch effect = 비생물학적 요인에 의한 데이터 차이.
+Feature Selection (HVG) | 단답형 — default 2,000개 highly variable genes 선별. VST method 사용.
+10X Chromium System | 객관식 — oil emulsion(GEM) 방식. 세포 1개 + bead 1개 확률적 포획. 현재 scRNA-seq 데이터의 99% 이상 생산.
+Elbow Plot | 단답형 — PC별 표준편차 그래프. 기울기 변화 지점(elbow)에서 사용할 PC 수 결정. Heuristic 방법.
+Cell Barcode | 단답형 — 어느 세포에서 왔는지 표지. 동일 droplet의 모든 bead가 동일한 barcode 보유.
+scATAC-seq | 객관식 — Transposase가 open chromatin 부위에 삽입 및 태깅 → 전사 활성화 영역 규명. Epigenome 데이터.
+DEG / FindAllMarkers | 단답형 — Default: Wilcoxon Rank Sum test. One vs. others 방식.
+
+【B. 예상 시험 문제 & 모범 답안】
+위 Q1~Q10 참조 (PHASE 3에 전체 수록).
+문항 유형 비율 검토:
+단순 암기형: Q6(drop-out 정의) → 약 10%
+기전/원리 설명형: Q1(UMI), Q3(Scaling), Q5(QC), Q8(CITE-seq), Q10(Clustering) → 약 50%
+비교·적용형: Q2(UMAP vs Clustering), Q4(3' vs 5'), Q7(PCA+UMAP), Q9(Spatial vs scRNA-seq) → 약 40%
+✅ 출제 규칙(암기 ≤30%, 기전 ≥40%, 비교 ≥30%) 충족.
+
+================ [RECORDING 녹음본 — 교수 오피셜 발화(해설/강조신호 사실원) | file: 03-24 강의 단일세포 전사체 분석 입문.txt] ================
+
+03-24 강의: 단일세포 전사체 분석 입문
+
+00:00:12
+Speaker 1
+바로 강의를 시작하겠습니다. 안녕하세요. 저는 미생물학부실의 이옥희라고 하고요. 오늘 반일세포 전사체 분석을 소개하는 내용으로 1 시간 정도 강의를 준비를 했습니다. 보니까 얼굴 중에 이 내용을 좀 알고 계시는 분들도 있는데 또 생소한 분들이랑 많이 섞여 있어서 그냥 인트로덕션하는 강의입니다. 편하게 들어주시면 될 것 같습니다. 먼저 단일세포 전자체 분석, 싱글셀 RNA 시퀀싱에 대해서 실험을 간단히 설명을 드릴 거고 가장 기본적인 분석이 어떤 형태로 되는지를 말씀드릴 겁니다.
+00:00:55
+Speaker 1
+기본적으로 싱글셀 RNA 시퀀싱 분석을 통해서 얻고자 하는 것은 세포, 세포를 이제 지노믹 레벨에서 굉장히 많은 유전자의 발현값으로 피노타입을 정리를 하고자 합니다. 그래서 이거를 뒤집어 보면 셀 레벨에서 지노믹스를 보는 거라고 볼 수도 있고요. 다양한 지노믹 툴이 싱글 셀 수준에서, 개별 세포 수준에서 보는 것이.
+00:01:28
+Speaker 1
+간 형태인데요. 이제 실험 방법에 있어서 가장 효율적으로 안정화된 것이 미진 익스프레션을 보는 것이고, 싱글셀, RNA 시퀀싱이 되어다가 압도적으로 다른 지노믹 데이터보다 많이 사용이 됩니다. 그래서 개별 세포들과 여러 가지 유전자의 발현값들을 가지고 세포의 상태 등을 정리를 하게 되겠고요. 이게 이제 확장이 되면 굉장히 다양한 지노믹 피처, 또 나아가서는 프로테오믹 피처까지 연결해서 볼 수가 있습니다. 포르테이션도 볼 수 있고 제한적이긴 하지만 크로아틴이 오픈되어 있는지 그런 것도 볼 수가 있고 그리고 요즘에 많이 하는 Spatial Transcriptomics 에서는 세포가 발현하는 유전자 값이 아니라 티슈에서, 특정 로케이션에서 발현되는 유전자 값으로 데이터를 볼 수도 있습니다.
+00:02:16
+Speaker 1
+데이터 형태를 보게 되면 이렇게 이제 Cell by feature 라고 하는 지능 매트릭스가 생성이 되고 굉장히 많은 셀, 3 천개, 2 만개, 많이 모으면 100 만개, 모으게 되겠고, 거기에 이제 유전자, 우리 몸에 있는 유전자가 다양한 세포에서 다 발현하는 것을 모아놓으면 3 만개, 5 만개까지 갈 수 있지만 그 유전자를 다 발현하지는 않으니까 통상적으로는 2 만개 이내의 유전자 feature 를 익스프레션 값으로 보게 되는데 이 익스프레션을 표현하는 것은 UMI, Unique Molecular Identifier 라고 해서 조금 그냥 트랜스크립트를 카운트하는 거랑은 다른 방법을 사용을 합니다.
+00:02:53
+Speaker 1
+이제 이런 데이터 형태를, 개별 세포 수준에서 gene expression 값으로 보고 그걸 우리가 해석할 수 있도록 데이터를 presentation 하는 방법을 다양하게 보완을 해야 되겠죠. 그래서 기본적으로 싱글셀 RNA 시퀀싱 얘기할 때는 요즘에는 massively parallel 이라고 해서 되게 많은 숫자의 세포에서 데이터를 얻는 것을 중요하게 여기고 있고, 그래야지 어떤 파뮬레이션에서 다양한 비처 레어 세포들을 잘 볼 수 있다고 하고요.
+00:03:23
+Speaker 1
+그렇게 하려니까 아무래도 여러 가지 솔리드 티슈는 이렇게 싱글 셀 서스펜션을 만들어줘야 합니다. 싱글 셀 서스펜션이 이미 되어 있는 혈액이라든지 골수에서의 면역 세포 같은 것들은 이런 디소시에이션 과정이 필요하지는 않고요. 그래서 여기에서 있는 거를 세부해서 진 익스프레션 값을 얻도록 하는 데이터 프로덕션 단계가 있을 것이고, 데이터가 이렇게 나오면 사실 3,000 개라고만 해도 3,000 개의 세포에서 2 만 개의 유전자를 가지고 얘를 가지고 해석을 하는 것은 어떤 시각화 없이는 가능하지 않습니다.
+00:04:02
+Speaker 1
+그래서 데이터 어낼리시스의 여러 형태가 존재하는데, 그것의 가장 기본적인 클러스터링까지 살펴보도록 하겠습니다. 이런 데이터 생산이 가능해진다는 걸 알고 나서 데이터를 어떻게 활용할 것인가 맨 처음에 중요성을 알아본 사람들이 휴먼셀 아티다스 민간 컨소시엄을 구성한 그런 멤버들이 되겠고요. 한 2016 년에 만들어졌고 기본적으로 이 컨소시엄 미션 같은 걸 보면 싱글셀 RNA 시퀀싱의 강점을 볼 수가 있습니다.
+00:04:33
+Speaker 1
+세포가 Fundamental Units of Life 인데, 얘들에 대한 인체에서의 모든 레퍼런스 맵을 만들겠다라고 하는 걸로 목표를 설정을 했고 그렇게 하면 실제로 건강한 상태와 질병 상태에서의 세포를 비교해서 진단, 모니터링, 그 다음에 더라퓨틱스를 찾거나 하는 데도 활용을 할 수 있다. 이렇게 확장 가능할 거라고 생각을 했습니다. 그래서 이런 민간 컨소시엄은 아직도 복제를 하고요. 이것들이 많은 경우 여러 나라에서 국제 과제로.
+00:05:07
+Speaker 1
+생성이 되기도 했습니다. 그래서 몇 개 논문을 쭉 펴놨는데요, 아마 싱글셀 RMA 시퀀싱 논문 보신 분들은 이런 형태의 그림을 굉장히 많이 봤을 겁니다. 여기에서 각각의 점들이 세포 하나하나씩이고, 이 예제로 갖고 온 것은 Tabulus 사피엔스에서 어쨌든 인체 지도인데 싱글셀 트랜스크립톤 수준에서 다양한 장기에서 세포들을, 이제 위치에 따라서 조금 이제 비슷한 것끼리 뭉치는 거죠. 그런 식으로 이제 시각화를 했고 여기서는 뭐 마이크로바이옴과 같이 연계 분석을 했었어요.
+00:05:39
+Speaker 1
+그래서 그냥 이런 그림들이 나오는 거를 보실 수가 있는데 이것도 이게 뭐 특별히 너무 너무 많이 나와 가지고 얘네가 굉장히 특별한 건 아니고 좋은 페이퍼들 중에 하나입니다. 이거 같은 경우는 이제 그, 가슴 쌤 다이믹 디벨롭먼트에서 티 셀이 만들어질 때 어떤 식으로 형태로 분화하느냐, 그러니까 디벨롭먼트 샘플을 모았어요. 실제로 굉장히 이제. 보면은 프리네이탈부터 모아서 살모스를 결국 가락든지 엔자임 디소시에이션 했든지 셀을 뽑았겠죠.
+00:06:11
+Speaker 1
+그리고 트랜스크립톰을 가지고 얘들이 어떻게 변화하는지 분화하는지 이런 걸 팔로우 업을 했습니다. 이건 맨 처음에 나온 대표적 그림이고 시각화 위해서 그린 그림이고 여기에서의 다양한 피처들을 분석을 하게 되겠죠. 그래서 이런 그림을 만들어내는 작업이 가장 기본적인 분석 단계입니다. 이거는 COVID-19 나왔을 때 이미 lung 에 대한 데이터는 여러 컨소시엄에서 가지고 있었는데 이 바이러스가 어느 세포를 타깃해서 infection 을 할까 라는 것을 사람들이 궁금해할 때 H2 발현이 어디에서 이루어지는지 굉장히 빠르게 보고 저도 논의할 때는 참여를 했었는데 한 두 달 만에 논문을 투고해서 발표를 했던 것 같아요.
+00:06:55
+Speaker 1
+그래서 굉장히 필요한 부분을 빠르게 제공을 할 수도 있겠죠. 두 달 만에 그런 건 이제 일어날 것 같지는 않아요. 그래서 그게 이제 점차적으로 어떤 레퍼런스 맵을 제공하는 거에서 점점 디즈즈 상태랑 비교를 하는 걸로 갔죠. 그래서 기본적인 시각화를 하고 나서는 그 다음에 얘들을 가지고 뭔가 컨트롤 그룹과 디즈즈 그룹을 비교하는 그런 많은 스터디들이 있었고요. 그 예제 중에 이제 하나가 기본적으로 어떤 클러스터에서 발현하는 이미 알려진 리셉터와 리반드 페어를 가지고 얘네가 굉장히 높은 값으로 발현이 되면 서로 인터랙션을 한다 라고 추론을 하는 그런 형태의 분석도 수행을 했습니다.
+00:07:37
+Speaker 1
+당연히 이제 나중에 실제로 프로테인으로 만들어져서 얘들이 가까이 있어서 인터랙션을 하는지 봐야 증명이 되는 단계가 되겠고요. 그래서 보시면 사실 트랜스크립텀 데이터는 많은 경우에 이런, cypodesis generation 을 하는 단계입니다. 그래서 실제로 그런 인터랙션을 하는지 봐야 되는 상태가 되겠고요. 이런 예제들도 이거는 immune checkpoint inhibitor therapy 를 받은 환자 중에 responder 와 non-responder 를 모아서 걔들이 가지는 면역 세포들이 약간 특이점이 있는지 비교를 하는 이것도 결국 세포군을 정의를 하고 반응군과 비반응군 사이에.
+00:08:18
+Speaker 1
+특정 세포 타입끼리 비교를 하는 형태로 진행이 됐겠죠. 이런 무수한 스터디들이 진행이 되고 있고 앞으로도 질병들이 많이 있고 하니까 계속 될 것 같습니다. 그리고 이렇게 레퍼런스를 만들었으면 제공을 해야 해서 사실 이런 레퍼런스, 아틀라스, 아니면 MAP 이런, 그거를 표방을 하는 굉장히 많은 웹사이트들이 있어요. 저는 이제 Lung Cancer 를 주로 스터디를 하는데 Lung Mat 같은 경우도 Lung Mat 컨소시엄도 깨끗하게 진행이 되고 HTAN 해가지고 그런 것도 있고 튜머 가지고 맵하는 것도 있고 GTX 포탈 같은 경우는 티슈 스터디 하는 분들도 이제 많이 알고 있는 포탈일 텐데요.
+00:09:03
+Speaker 1
+이거는 원래 이제 미국 NIH 에서 만들었던 다양한 티슈에서, gene expression 과 phinotype, snip 발현을 가지고 genotype 이 phinotype 에 미치는 영향을 원래 연구하기 위해서 만들어졌던 그룹이고, 이 포탈에서는 tissue specific 한 feature 들을 이전에는 벌크 RNA 시퀀싱이나 이런 걸로 제시를 했는데, 이제 싱글셀 단계로 넘어가서 실제로 여러 장기들에 대해서 티슈의 특이적인 이런 세포 구성이나 이런 것까지 제공을 하는.
+00:09:38
+Speaker 1
+그런 레퍼런스 사이트가 됐습니다. 실제로 여기서 다운로드를 할 수 있는 데이터도 여러 종류가 있게 됩니다. 그래서 레퍼런스 맵도 많이 제공을 하고 논문에서는 그런 레퍼런스를 활용을 해서 실제 디즈즈 환자를 가지고 비교를 하든지 아니면 레퍼런스가 되는 분도 같이 제너레이션해서 비교를 하는 연구들이 많이 이루어지고 있습니다. 그러면 이런 싱글셀 RNA 시퀀싱 데이터는 어떻게 얻어질까요? 디소세이션 하는 과정은 말씀을 드렸고 그걸 딱 건너갔는데 보통 엔자임 디소세이션을 하게 되죠.
+00:10:15
+Speaker 1
+스트레스를 덜 받게 하는 다양한 방식들이 나와 있는데 아무래도 쉽게 37 도씨에서 엔자임 디소세이션을 하는 게 가장 많이 쓰이게 되겠습니다. 그 다음에는 싱글셀을 분리를 하든지, 아니면 어떤 형태로든 그 세포 안에 있는 mRNA 에 태깅을 할 수 있는 방법을 찾아야 되겠죠. 그래서 싱글 셀을 캡처를 하고 그 안에 있는 cDNA 를 만들면서 이때 어느 셀에서 왔는지 구분할 수 있는 바코드를 붙여야 합니다. 물리적으로 구분하는 것은 약간 좀 시대가 지나간 게 물리적으로 다 구분을 하면 100 만 개의 외를 만들 수는 없잖아요.
+00:10:53
+Speaker 1
+그러니까 이제 바코딩하는 형태로 넘어갔다고 볼 수가 있고, 이렇게 바코딩된 cDNA 를 어떤 형태로든 증폭을 해서 시퀀싱을 할 수 있는 라이브러리 상태로 만들어 주게 됩니다. 이 싱글셀 RNA 시퀀싱이 요즘에는 웬만한 셀바이올로지, 다양한 셀이죠, 혈액 기타 등등 안 쓰이는 데가 없는데 그렇게 된 데는 사실 플랫폼 개발이 굉장히 결정적이었습니다. 이게 굉장히 오래전부터 세포에서 트랜스립트를 보는 것은 되게 오래전부터 수행이 됐죠.
+00:11:24
+Speaker 1
+마우스 파이프팅, 한 10 년 전까지도 쓰일, 어쩌면 아직도 레어셀에서는 쓰일 수도 있는데 시리얼 다일루션을 하거나 플로우 백스 솔팅을 하거나 이런 식으로 물리적으로 분리를 한 다음에 아주 소량의 트랜스크립트를 증폭을 해서 보는 방법들이 있었는데 2013 년에 플루이다임 C1 이라는 장비가 소개가 됐고 2016 년 그 즈음에, 10X 지노믹스의 크로미움 시스템이라는 장비가 들어왔습니다.
+00:11:55
+Speaker 1
+이거는 실제로 물리적인 세퍼레이션을 하는 것이기 때문에 일종의 웰 기반이어서 굉장히 많이 확산이 되지는 않았지만 데이터는 굉장히 좋은 데이터가 나오기는 합니다. 그 다음에 지금 가장 대부분 싱글셀 RNA 시퀀싱 데이터의 99% 이상이 생산이 되는 10X 지노믹스의 크로미움 시스템은 오일 이머전을 이용하는 방식입니다. 그래서 이 방식이 이제 나오고부터 실제로 싱글셀에서 스터디한 세포의 개수들이 엄청나게 늘어나게 됐고요.
+00:12:31
+Speaker 1
+그리고 여기 크로미움 시스템을 통해서 가장 많은 세포의 싱글셀 RNA 시퍼신 데이터가 얻어졌다는 걸 볼 수가 있습니다. 그래서 이 플랫폼을 설명을 드릴 거고 다양한 분야에 있으실 텐데 활용을 하는 것도 아마 테덱스 크로미움 시스템을, 활용할 가능성이 90% 이상이라고 생각을 합니다. 그래서 이거는 이게 사실 초기 버전이죠. 이렇게 크지 않은 네고 박스가 되겠고 지금은 좀 크로미움 X 라고 해서 더 많이 돌릴 수 있는 실제로 어드밴스도 있었겠지만 약간 팔아먹으려고 그런 것 같기도 한데 어쨌든 이렇게 작은 박스처럼 생긴 거고 여기에 이렇게 채널을 집어넣게 됩니다.
+00:13:15
+Speaker 1
+이 채널에는 오일이랑 셀, 리에이전트, 비드가 들어가게 돼요. 그러면 이 장비는 사실은 오일 이머전을 퐁퐁퐁 만들어내는 장비입니다. 그러면 플로우 레이트를 조절을 해서 오일 이멀젼이 만들어지는데 거기에 확률적으로 세포 하나, 비드 하나가 들어갈 확률이 가장 높은 그런 방식으로 플로우 레이트를 조정합니다. 그래서 여기에는 항상 사실 더블렛이 있기는 해요. 요즘 플로우 레이트로 더블렛은 5%보다 아래쪽으로.
+00:13:46
+Speaker 1
+이렇게 해서 분석하는데 보통은 더블레에서 제거하고 할 수 있다라고 이야기를 합니다. 그래서 이렇게 가두어진 오일 안에 생성된 오일 안에 비드와 세포 하나가 갇히게 되고 여기는 이제 리에이전트가 있겠죠. 그걸 자세히 살펴보게 되면 이 비드에는 이렇게 올리고가 달려 있습니다. 무수히 많은 올리고가 달려 있어요. 이게 얘들의 테크놀로지겠죠. 그래서 이 올리버를 살펴보게 되면 올리고보다 되게 긴 것 같은데 어쨌든, 폴리 DT, 폴리 ATA 를 잡는 포션이 있게 되겠고 여기에서 이제 CDNA 합성, 펄스 스트랜 합성이 시작이 될 수가 있겠죠.
+00:14:24
+Speaker 1
+그리고 UMI 라고 하는 아까 트랜스크립트를 계수하는 방식이라고 말씀드렸는데 대해서 설명을 드리겠습니다. 그리고 여기에는 얘네는 10X 바코드라고 부르는 셀 바코드가 있습니다. 몇 뭔지 정확히 기억이 안 나는데 한 10 개 정도 시퀀스로, 이제 어느 셀에서 왔는지를 표지를 할 수가 있습니다. 그러니까 이 안에 들어있는 무수히 많은 바코드들은 10x 바코드는 다 똑같은 걸 달고 있겠죠. 그래야지 이 셀에서 왔다는 것을 표지를 할 수가 있을 테니까 반면에 UMI 는 10 단계 정도의 다른 시퀀스를 가지고 있습니다.
+00:14:57
+Speaker 1
+그래야지 이제 트랜스크립트를 계수를 할 수가 있어요. 뒤쪽에 다시 설명을 하고 그럼 다시 이쪽으로 넘어가서 보시면 이제 비드가 작아졌어요. 여기 달려 있는데 폴리에이 테일을 잡아서 여기서 first strand cDNA 합성이 이루어지죠. 그럼 이 시퀀스를 달고 cDNA 가 만들어지고 템플릿 스위치, 이 엔자임이 그래요. 얘가 이제 이렇게 붙여요. 붙이는 성질이 있어서 이 스위치 올리버를 써서 반대쪽을 합성을 하게 되면 cDNA 가 이 시퀀스들을 모두 가지고 합성이 되게 됩니다.
+00:15:29
+Speaker 1
+그래서 cDNA 상태에서 amplification 이 좀 이루어지고, 여기는 뭐 효율에 따라서 좀 다르긴 하겠지만 이제 풀랭스, CDNA 를 만들어요. 근데 그 다음에는 시퀀싱은 얼마나 많이 있느냐가 이제 비용으로 직결이 되거든요. 그러다 보니까 티슈 하나에 한 시퀀싱을 하기만 해도 비쌌는데, 그 한 번에 3000 개의 선포를 한다고 하면 그 비용을 감당할 수가 없죠. 물론 그거 말고 다른 이유도 있긴 하지만 그래서 이 cDNA 를 전체를 시퀀싱을 하는 게 아니라 이 3' 싱글셀 RNA 시퀀싱 같은 경우에는 3'에서 시작을 했잖아요.
+00:16:09
+Speaker 1
+여기 셀바코드는 그쪽에 달려있는데 3' 쪽에 한 100 베이스 정도만 시퀀싱을 합니다. 그래서 이렇게 짧게 만들어주는 그런 작업들을 해요. 그리고 시퀀싱을 할 수 있는 어댑터들을 양쪽에 붙여줍니다. 그래서 만들어지는 라이브러리를 보면 이게 이제 지금 이게 그림을 따온 지가 좀 돼서 얘네가 인덱스를 약간 바꿨을 수도 있는데 어쨌든 아까 CDNA 가 합성이 됐는데 잘라서 라이브러리를 만들었기 때문에 어느 진에서 왔는지 판단할 수 있는 시퀀스가 100 페이스페어 정도가 있고요.
+00:16:41
+Speaker 1
+그 정도면 무슨 진인지는 충분히 알 수 있어요. 어느 진이 어느 셀에서 왔는지 10x 바코드 혹은 셀 바코드라고 부르는 거 그리고 얼마나 있는지를 알 수가 있습니다. 그래서 이렇게 해서 3' 싱글셀 RNA 시퀀싱 데이터가 만들어집니다. UMI 설명드린다고 했는데 UMI 는 어떤 형태로든 답지에 하나든 어쨌든 별로 문제될 게 없어서 저는 이제 꼭 냅니다. UMI 같은 경우는 지금 여기 예제에서 보시는 것처럼 한 오일 drop 안에 세포의 밭, 비드에 붙어있는 올리브에 한 10 만 개 정도의 유니크.
+00:17:20
+Speaker 1
+Molecular identifier 가 붙어 있다라고 말씀드릴 수 있는데 여기 보시면은 특정 진이 이렇게 트랜스크립트가 제가 보기엔 한 20 개쯤 나왔어요. 20 개쯤 나와서 기존의 벌크 시퀀싱 방법이라면 내가 트랜스크립트를 개수하는 건 20 이겠죠. 20 트랜스크립트 리드일 거예요. 근데 여기서는 유니크 Molecular identifier 가 한 종, 두 종, 세 종, 네 종, 다섯 종. 그래서 얘네의 고유한, 발현값은 5 다 이렇게 합니다. 왜냐하면 이렇게 같은 UMI 는 증폭의 산물이다 라고 보는 거예요.
+00:17:53
+Speaker 1
+그래서 이런 방식으로 계량을 하는 것은 증폭 바이어스를 줄여주기 위해서 그렇게 사용을 합니다. 그러다 보니까 UMI 를 사용을 하게 되면 사실 굉장히 진 익스프레션 값이 되게 낮게 생성이 돼요. 그래서 이거를 좀 올려주기 위해서 고정하는 그런 것들이 있게 되겠고요. 어쨌든 이제는 셀 바코드, 굉장히 많은 셀, Gene, Feature, 그리고 발현이 얼마나 되는지 UMI 카운트가 들어가 있는 이런 매트릭스를 생성을 하게 됩니다.
+00:18:25
+Speaker 1
+여기 보면 0 인데가 되게 많아요. 그래서 16 셀 RNA 시퀀싱이 제로 데이터를, 드랍아웃이 많다고 표현하는데 많은 이유는 세포 하나에 있는 cDNA 를 증폭해서 잡아내야 하기 때문에 놓치는 경우가 되게 많아요. 그럼 이제 transcript 가 하나도 안 나오는 0 이 되겠죠. 그래서 그런 형태의 데이터가 나오게 됩니다. 3 프라임 시글셀 RNA 시퀀싱이 가장 기본적인 시퀀싱이 되겠고 보통 cDNA 를 합성할 때.
+00:18:57
+Speaker 1
+폴리에 ATA 를 잡아서 올리고 DT 로 만들기 때문에 사실 3 프라임이 좀 더 효과적이겠죠. 만약 이걸 파이프라임 RNA 식으로 내려가려면 폴리에 ATA 를 잡아서 first strand 합성을 하고, 파이프라임 쪽에 이 많은 떨거지들을 데리고, 셀바코드, UMI 를 데리고, 스위치, 올리고에 해당하는 데 붙어서 세컨드 스트랜드 합성할 때 이런 탭들을 붙여야 합니다. 실제로 이렇게 5' RNA 시퀀시를 해요.
+00:19:28
+Speaker 1
+왜냐하면 얘네가 가지는 정보가 또 있기 때문이에요. 5'을 하니까 프로모터 관련 정보들이 조금 더 나오게 되고 또 하나는 T-cell receptor 나 B-cell receptor 같은 경우에는 항원 특이점 시퀀스가 V, D, J, Gene 이 있고 constant resion 이 되게 길게 있습니다. 그러니까 3'에는, TCR 이나 BCR 의 Specificity 와는 상관없는 컨스턴트한 시퀀스가 되게 많은 거예요. 그래서 얼마나 다양한 이런 T 세포 수용체, B 세포 수용체가 나와요.
+00:20:01
+Speaker 1
+보기에 적합하지 않아요. 그래서 이제 5 프라임 시퍼식을 하게 되면 CDNA 합성을 1 차적으로 한다고 이제 말씀을 드렸잖아요. 그러면 걔들은 어쨌든 뭐 중간에 뭔가 비효율적으로 안 되는 거 빼고는 풀랭스 CDNA 를 만듭니다. 그러니까 얘들은 PCR 이나 BCR 의 VEJ 정보를 모두 가지고 있어요. 그래서 그 라이브러리를 만들 때 아까 3 프라임 RNA 식이나 아니면 5 프라임 싱글셀 RNA 식은, 100 페이스페어만 읽었는데 그러면 TCR, BCR 정보를 모두 알 수가 없어요.
+00:20:34
+Speaker 1
+그래서 이때는 400 페이스페어 정도의 길이로 라이브러리를 제작합니다. 그러면 VDJ 정보가 다 들어오고 그래서 T 셀이나 B 셀의 클러널러티 정보도 이제 알 수가 있습니다. 그래서 이 5' 싱글셀 RNA 시퀀싱을 뭐 immune profiling 이렇게 이름을 부르기도 해요. 어쨌든 파이프라임 쪽에 정보가 있기 때문에 이렇게 하게 되는 것입니다. 그래서 이 TCR, BCR 까지 작성을 했는데 뭐 TCR, BCR 을 증폭을 잘 하려면 얘네가 워낙에 이제 항원을 인지하는 부분은 베리에이션이 심하니까 바깥쪽에 좀 그 유니크하지 않은 데를 잡아서 증폭을 시키겠죠.
+00:21:15
+Speaker 1
+그래서 어쨌든 TCR 이나 BCR 의 루미침환을 시키게 됩니다. 이렇게 5 프라임 싱글셀 RNA 시퀀싱은 이면 프로파일링으로도 연결이 됩니다. 이렇게 이제 데이터를 어떻게 시퀀싱 하는지 설명드렸고 그 다음에는 이제 분석하는 과정이 되겠습니다. 그러면 이제 아까 어쨌든 시퀀싱 위드들이 좀 나오는 거죠. 시퀀싱 위드들이 좀 나왔으면 싱글 셀이 아니어도 벌크 티슈 가지고 시퀀싱 한 것도 이 시퀀싱 위드가 도대체 어디서 왔는지 레퍼런스 트랜스립톤에 맵핑을 해야 돼요.
+00:21:50
+Speaker 1
+그래서 이제 그런 과정을 보통은 이제, 회사에서 받아서 하는 사람들은 안 건드립니다. 회사에서 해서 줘요. 어쨌든 트랜스크립토 이제 맵핑을 하고 또 하나는 우리가 시퀀싱을 하면서 여러 가지 인덱스를 붙이고 또 우리가 솔팅이 필요한 거 많이 붙였죠. UMI 를 붙였고 정량하려고 그 다음에 셀바코드도 되게 많이 붙였죠. 걔네들을 이제 솔팅하는 작업이 이루어집니다. 이런 작업들을 하는 게 셀 레이저라고 하는 회사에서 제공하는 파이프라인이에요.
+00:22:21
+Speaker 1
+그래서 보통 이렇게 맵핑을 하고, 시퀀싱 할 때 에러도 들어가기 때문에 사실 에러 하나 정도는 얘네가 무시하고 갈 수 있어요. 얘네가 이 화이트 리스트를 갖고 있거든요. 그러니까 뭔가 이렇게 장사를 하려면 엄청난 노력을 하기는 해야 되는 게 UNI 심판디에 대한 시퀀스 정보가 있고 그 시퀀스들은 굉장히 복사해서 서로 겹치는 게 없어요. 마찬가지로 셀 바코드도 그래요. 그래서 얘네가 파티 리스트가 있습니다. 그러니까 시퀀싱 에러가 하나쯤 나와도.
+00:22:54
+Speaker 1
+제 짝으로 이제 맵핑을 하게 됩니다. 아니면 너무 다른 건 버리게 되겠죠. 어쨌든 그런 여러 가지 sorting 과 맵핑 과정이 이제 이루어지게 됩니다. 그래서 프로세싱을 해서 이제 했으니 이제 셀 바코드랑 진이랑 얼마나 발현이 됐는지도 붙여놓은 매트릭스 생성을 했어요. 그렇게 되면 여기서는 예제로 5000 셀, 3 만 지 이렇게 했는데 여기에는 아까 드라마 아웃이 되게 많다고 했잖아요. 드라마 아웃이 많으니까, 셀인데 깡통 셀들도 되게 많아요.
+00:23:25
+Speaker 1
+그리고 진들도 진이 커튼에 있는데 찌끄레기 진도 되게 많아요. 거의 발현이 하나도 안 된 진도 있고 당연히 잘라내야 되고 세포가 한 5 천 개 중에 한 개 셀, 두 개 셀이 발현하는 진들도 있어요. 그런 것들을 잘라내서 좀 몸무게를 줄입니다. 그래야지 분석 파이프라인이 잘 돌아가고 또 하나는 그런 것들이 이미지를 만들고 방해가 되기 때문에 나쁜 퀄리티가 안 좋은 셀, 정보가 별로 없는지 이런 것들은 좀 필터를 하게 됩니다.
+00:23:57
+Speaker 1
+그래서 필터드 진셀 매트릭스를 기본적으로 보통 회사에서 제공을 해요. 이 파이프라인을 거치고 완전히 깡통인 것을 제거를 한 그런 매트릭스를 얻게 됩니다. 이 상태에서 용사 파이프라인은 기본적으로 먼저 노멀리제이션을 해요. 셀마다 발현하는 트랜스크립트 숫자가 다르거든요. 그것도 사실은 중요한 정보이기는 해요. 되게 조용한 B 셀, T 셀은 트랜스크립트 수가 진짜 적거든요. 그게 그냥 테크니컬한 이유로 적은 게 아니라 실제로 그런 특징이기는 하지만 그런 부분도 있긴 하지만 또 테크니컬한 이슈에 의해서 셀마다 잡히는 트랜스크립트 수가 다 다른데 그거를 굉장히 매시브하게 분석을 하려면 하나씩 따지는 게 아니라 트랜스크립트 퍼 밀리언 같은 비율로 바꿔주는 작업을 하게 되는 거죠.
+00:24:49
+Speaker 1
+그래서 전체 UMI 카운트로 나눠줍니다. 전체 UMI 카운트로 나눠져서 Transcript per million 같은 비율로 만들어주고, 로그 노멀리제이션을 시켜주게 됩니다. 그래서 또 range 도 좀 줄여주고 그래서 이런 노멀리제이션을 거치게 됩니다. 노멀리제이션을 했어요. 그러면 이 짐들을 다 이용을 해서 그러면 들어보셨을 것 같은데 차원 축소, 디멘션 인덕션 클러스터링을 하느냐? 그렇지 않아요. 이 중에서 이 데이터 중에서 베리에이션이 되게 높은 유전자를 뽑아내는 그렇게 하는 게 훨씬 효율적이라고 알려져 있어요.
+00:25:25
+Speaker 1
+이 중에는 이 내 데이터 파뮬레이션 안에 헥테루지네이트를, 설명하는데 아무짝에 쓸모없는 진들이 훨씬 더 많아요. 그런 거를 데리고 가면 오히려 방해가 됩니다. 그래서 이 안에서 가장 베리어블한 진을 디폴트는 보통 2000 개 정도를 뽑아가지고 얘네를 가지고 유전자는 발현값이 제각각이에요. 되게 발현값이 높은 유전자도 있고 되게 낮은 유전자들도 있어요. 걔네들을 똑같이 쓰게 되면 발현값이 높은 유전자들이 도미네이트하게 되는데 대표적으로 발현값이 높은 애들이 뭐가 있죠?
+00:26:00
+Speaker 1
+하우스키핑 진. 우리가 셀을 분류를 하는 데는 크게 도움이 되지 않는 그런 것들이 되게 많습니다. 그래서 그냥 그대로 갖고 가면 안 되고 얘들의 발현 수준을 다 맞춰주는 스케일링을 이제 지스케일링을 하게 됩니다. 그래서 이렇게 한 거를 가지고 이거를 가지고 Principle component analysis, 주성분 분석 이런 걸 진행을 하고 그 값을 가지고 다시 차원 축소를 해서 이렇게 2D 에서 아까 봤던, 이렇게 세포들을 색칠을 해놓은 그런 디멘션 인덕션을 하게 됩니다.
+00:26:34
+Speaker 1
+이제 또 PC 값을 가지고 클러스터링도 진행을 해요. 그리고 이렇게 클러스터가 됐으면 이제 뭐 내부에서 차등 발량 분석을 하거나 이때는 이제 모든 진이 다 돌아와야겠죠. 이거는 내가 클러스터링 할 때 이렇게 쓰긴 했지만 뭐 스케일링도 하고 다 했는데 이거 같은 경우는 안 해가지고 쓰면 그러니까 이제 비교를 할 때는 이만 개진 다 가지고 이것저것 분석을 해봐야겠죠. 어쨌든 이런 과정입니다. 이거를 한 단계 한 단계 한 번 더 살펴보도록 하겠습니다. 그래서 이제 앞에 말씀드린 그런 게 이제 이게 Principal Component Analysis 를 통해서 일차적인 차원 축소를 하고요.
+00:27:12
+Speaker 1
+그러니까 3 천 개 진인데 그냥 줄여가지고 한 놈만 해가지고 3 천 개 진에 2 만 개의 유전자인데 그거를 머릿속에 얘네가 얼마나 유사한지 그 데이터를 모두 사용해서 내 머릿속에 떠올릴 수가 없잖아요. 그래서 이제 차원 축소를 하는데, PCA 분석을 하게 되면 상당히 진행을 하지만 이게 또 메모리는 2D 인데 이거를 다 고려를 하려면 너무 많습니다. 그래서 요번은 보통 리니어 차원 축소라고 부르는데 이제 PCA 분석을 한 PC 값을 가지고 한 번 더 축소를 하게 됩니다.
+00:27:43
+Speaker 1
+그래서 여러분이 요즘에 논문에서 많이 보는 뉴맵이라고 하는 형태의 차원 축소를 하게 되고요. 그리고 이제 가끔 이 뉴맵은 어쨌든 이렇게 차원 축소를 해서 보여주는 방식인데, 클러스터링과 약간 헷갈리는 게 이건 차원 축소법이지만 클러스터링도 사실 PC 를 가지고 진행을 하게 되고 요즘에 쓰는 싱글셀 RLC 데이터의 클러스터링도 얼마나 네이버, 가까운 네이버로 구성이 되었느냐로 클러스터링을 하게 돼요.
+00:28:15
+Speaker 1
+그러니까 유맵도 사실 얼마나 가까운 네이버가 있느냐로 그림을 그리거든요. 그러니까 비슷하게 나올 수밖에 없고, 용어를 쓸 때 왔다갔다 쓰기도 하죠. 그래서 크게 문제는 없는데 가끔 논문 보냈는데 리뷰어들 중에 거의 경기를 일으키는 분들이 있어요. 유맵은 선행축소 방법이고 클러스터링은 클러스터링이예요. 그냥 용어만 바꿔쓰면 되죠. 어쨌든 굉장히 유사한 방식으로 진행이 됩니다. 그래서 클러스터링을 했으면 이게 힌맵을 그린 거고 클러스터가 0 번부터 매겨져서 1, 2, 3, 4 쭉 나가게 되는데.
+00:28:52
+Speaker 1
+이제 흰맵 보면 유전자 이제 발현 값으로 그냥 대충 봐서 1 번 이거는 이제 같은 세포군이겠다 이런 게 보이기도 해요. 여기서 나오는 차등 발현 유전자를 기반으로 어느 세포인지 이제 ID 를 합니다. CD68, CD14, 라이소자임 이런 지능 발현을 하는 모노사이드 지능 메이크업 페이지 계열들 CD3DG 발현하는 T 셀 계열들 여기서 더 쪼개면 여기 표현은 안 했지만, T line positive T lympocyte CD4 T lympocyte 여기서 더 나가면 요즘에 30 개, 40 개까지 다 구분을 합니다.
+00:29:28
+Speaker 1
+스테이트가 사실 안정적이진 않지만 어쨌든 transcript 기반으로 차이가 있는 세포들을 이제 구분을 합니다. 오늘 이제 여기까지 한 번 더 설명을 할 거고 그 다음 단계에서 이 gene expression 을 기반으로 내가 어떻게 늘어나서 어떻게 변하는지 찾는지, 아니면 여러 데이터베이스를 활용해서 리셉터 이란드 데이터베이스를 활용을 해서 그게 많은 세포끼리 인터렉션을 한다고 선을 긋든지 아니면 이제 세포 내에서 같이 움직이는, 같이 높아지고 같이 낮아지는 그런 유전자들을 가지고 지인 네트워크를.
+00:30:00
+Speaker 1
+작성을 하든지 이런 다양한 일부만 가져온 거고 어쨌든 트랜스크립트 발현 값을 가지고 그 발현들이 세포 내에서 어떻게 움직이느냐를 가지고 다양한 분석들을 해낼 수가 있습니다. 그래서 이게 되게 오래전에 나왔지만 여전히 좋은 참고 자료가 되겠고요. 그래서 이제 넣어놨고 저는 신입생 오면 일단 한 번도 본 적이 없다 그러면 이제 SORA 를 찾아보라고 합니다. R 기반으로 가는 거고, SORA, 슈렛,
+00:30:30
+Speaker 1
+원하는 대로 그냥 부르고 있어요. 어쨌든 구글에서 솔라 치게 되면 라울사티자랩에서 만든 솔라 쪽으로 연결이 되고 이게 제가 지난 주에 한 번 업데이트를 했는데 지금 5.4 버전까지 나와 있는 것 같아요. 그래서 Get Started 를 누르면 가장 이제 기본적인 Introductory 비니엣으로 넘어갑니다. Introductory 비니엣에서 1 차 단계는 이제 격파해야 될 1 차 단계는, 2,700 개의 Piplar Blood Mononuclear Cell PBMC 데이터셋이 되겠고 이게 가장 기본적인 튜토리얼을 진행하게 됩니다.
+00:31:08
+Speaker 1
+사실 굉장히 R 만 깔고 R 스튜디오에서 작업을 할 수 있으면 따라가는 거는 거의 콘트롤 엔터 진행되는 수준이라 볼 수가 있어요. 그럼 이제 이 파이프라인은 가장 기본적인 파이프라인 데이터 여러분이 이 강의를 계기로 나도 싱글셀 데이터를 조금은 봐야겠다 라고 하면, 계속 이제 보면서 할 수 있게 간단히 스텝마다 조금 설명을 더 드리도록 하겠습니다. R 이니까 패키지 활용을 해서 그냥 패키지가 다 하는 거죠. 제가 하는 일은 없고 패키지가 다 하는데 이 패키지는 먼저 데이터를 불러들여요.
+00:31:42
+Speaker 1
+근데 우리의 데이터 형태가 아까 그 회사에서 셀레인저 빌려가지고 아웃컷을 준다고 말씀을 드렸는데 이게 파일이 갈라져서 바코드, 피처, 매트릭스 파일로 갈라져 옵니다. 얘가 뭐냐? 아까 빈 값통이 되게 많다고 그랬잖아요. Expression 값이 0 인데, 그거를 우리가 알고 있는 엑셀처럼 그런 파일 형태로 하면 그 0 이 들어갈 때마다 다 공간을 차지하는 거예요. 되게 데이터 사이즈가 커지는 거예요. 근데 거기 따로 통이에요. 그래서 여기 있는 것처럼 만약에 이제 매트릭스 파일이, 바코드는 이제 셀 바코드 정보가 있고, 해쳐는 내 진들이 쫙 들어가 있어요.
+00:32:17
+Speaker 1
+진 네임들이. 매트릭스는 만약에 매트릭스 파일을 열었는데 15, 4, 1, 21 써져 있으면, 이거는 진이, 픽쳐스의 154 번째 진이 1, 첫 번째 3 가지에 대해서 UMI Count 21 만큼 발현을 하고 있다. 이런 뜻이에요. 어쨌든 이 데이터를 읽어드립니다. 읽어들여서 첫 번째 단계가 이거를 가지고 쉘아웃 젝트라는 걸 만들어라 라고 해요. 그럼 쉘아웃 젝트라는 거는 얘네가 어쨌든 패키지가 일 다 했어요.
+00:32:50
+Speaker 1
+얘네가 내재된, 함수를 가지고 이런 데이터 Structure 를 만들게 됩니다. 내 오브젝트 이름은 제가 넣어줬고요, 여러 가지 Slot 을 만들어요. 그래서 여기 보면은 내 RNA Assay 이고, 여기에 따라다니는 데이터들도 있고, 프로젝트 네임은 하나쯤 지어주는 게 좋아요. 나중에 관리하려면. 그런 Slot 들을 쫙 만들어서 로우 카운트가 일단 들어가 있습니다. 그래서 이거를 일단 만들고 어떻게 생겼는지 보면은 여기가 다 비어 있어요.
+00:33:24
+Speaker 1
+비어 있지만 이런 리스트를, 오브젝트를 이제 만들어 놓고 있습니다. 그래서 따라가면서 분석을 진행을 하는데 맨 첫 단계는 아까 Cell by Geen Matrix 를 불러들였잖아요. 먼저 QC 단계를 거쳐야 됩니다. 방해되는 셀도 치우고 아니면 내 데이터만 무겁게 만들고 아무짝에도 쓸모없는 것들도 치워야 돼요. 근데 이제 그런 정보들은 내 데이터가 얼마나 많은 feature, 그러니까 Geen 들을 발견하는지, 그리고 바닥에 깔려 있는, 진이라고는 5 개 밖에 안까진 색 이런 건 버려야죠.
+00:33:57
+Speaker 1
+이거는 이제 Y 축에서 여기 보면 이렇게 뚱뚱한 데에는 세포가 되게 많이 모여 있는 데예요. 한 800 개 정도의 유전자, 서로 다른 유전자를 발견한 세포가 가장 많고요. 그리고 바닥에 깔린 거는 뭐 200 개 밑은 치워버릴 수도 있고 좀 더 낮춰가지고 나는 뉴초프 이런 거 되게 해보고 싶어. 그러면은, 뭐 이거 확 늦출 수도 있어요. 데이터는 지저분해지겠지만 카운트는 트랜스크립트 이제 UMI 카운트 값이 되겠고요. 그러니까 gene 보다는 숫자가 조금 더 높게 형성이 되어 있겠죠.
+00:34:28
+Speaker 1
+여기에 QC 파라미터를 하나를 더합니다. 그게 마이토콘드리아의 gene 이에요. 사람 유전자는 마이토콘드리아가 만들어내는 gene 이렇게 대문자 mt 로 시작을 합니다. 대문자 mt 로 시작하는 유전자가 얼마나 되는지 퍼센트를 계산을 하고, 그래서 이 토탈 UMI 중에 MTA 로 시작하는 요진이 얼마나 되는지를 따져가지고 일정 이상이 되는 것들은 죽어가는 셀이니까 방해만 되는 셀이니까 이제 잘라버리는 겁니다.
+00:35:00
+Speaker 1
+그래서 이 PBMC 데이터는 굉장히 좋은 레퍼런스 데이터이기 때문에 사실 퍼센트 마이토가 굉장히 낮게 형성이 되어 있어요. 이 QC 파라미터들은 데이터마다 되게 달라요. 그래서 반드시 이거를 보고 어디서 끊어낼지 이제 결정을 해야 됩니다. 그거를 뭐 두 개의 좌표로, 하는 거고 이렇게 보통은 이제 나쁜 셀을 끊어내는데 저 위쪽에 있는 것도 끊어내기도 해요. 얘네는 더블렛이다라고 끊어내기도 합니다. 근데 굉장히 블라스팅하는 셀이라든지 남은 싱글셀 RNA 싱 데이터를 조금 꼬아서 더블렛들을 모아가지고 셀이 둘이 같이 있는 거니까 분석을 하고 싶다.
+00:35:35
+Speaker 1
+그러면 뭐 그냥 두는 거죠. QC 단계에서부터 약간 플랜들이 조금 들어가게 됩니다. 진을 별로 안 가지고 있는 그런 되게 어려운 유치원 필 같은 걸 분석을 해야 된다 그러면 그걸 확 낮춰야 되는 거고 나도 뭐 둘씩 들어가 있는 것도 좀 특이하게 보고 싶어 그러면은 또 이제 데리고 가고 아니면 걔들 다 방해된다고 하면 이제 끊어내는 단계입니다. 그래서 나쁜 것들 끊어내고 노말가이 샀다고 아까 말씀드렸어요. 그래서 기본적으로 셀들마다 트랜스크립트가 다른 양을 가지고 있기 때문에 토탈 위에나 이런 나눠서.
+00:36:11
+Speaker 1
+만들어주고, 너무 숫자가 작게 되니까 만 정도로 곱하고, 이거 그냥 예전에 처음 10 세 REC 분석한 사람들 그냥 많이 못해버렸어요. 적절한 것 같은데 어쨌든 뭐 이유는 없어요. 로그화 시켜서 좀 레인지를 이렇게 좀 범위를 줄여주게 되죠. 그러고 나서 모든 피쳐를 사용을 하면 노이즈가 되게 크고 방해가 되니까 내 데이터에서 되게 variable 피쳐를 가지는, 그러니까 샌들마다 배리에이션이 되게 큰 유전자를 뽑아내게 됩니다.
+00:36:43
+Speaker 1
+뽑아내는 작업을 하게 되는데 보통은 발현값이 크면 배리에이션도 커져요. 수치가 많이 왔다 갔다 하니까. 그래서 그것까지 고려해서 발현값이 적은 애들은 레인지가 좀 작아도 사실 배리에이션이 꽤 큰 거거든요. 그것까지 고려를 해서 디폴트는 2000 개 유전자를 뽑아내서 걔를 가지고 기본적인 PCA 분석을 하게 됩니다. 그 전에 먼저 스케일링을 해줘요. 안 하고도 또 특이적으로 볼 수 있는 것들이 있긴 한데 스케일링을 하는 이유는, 예제로든 어떤 유전자는 굉장히 발현값이 낮아요.
+00:37:19
+Speaker 1
+100 정도면 되게 높은데 어쨌든 이 정도 발현값을 가지고 어떤 유전자는 되게 높은 발현을 하거든요. 어쨌든 이걸 그대로 갖고 가게 되면 거의 모든 분서에서 이런 발현값이 높은 유전자들이 뭔가 세포를 구분하고 정리를 하는데 도미네이트를 하게 됩니다. 그래서 기본적으로는 이제 g-transformation 을 하는데 발현값에서 평균값을 빼주고 standard deviation 으로 나눠주는 거예요. 그러면 이게 하는 일은 결국 평균을 0 으로 만들고 standard deviation 은 1 로 만들게 됩니다.
+00:37:52
+Speaker 1
+어쨌든 그런 식으로 해서 물론 내 유전자 발현이 세포 내에서의 베리에이션은 있지만 그 레인지 정도를 모든 유전자가 좀 골고루 비교를 할 수 있게 스케일링을 해주게 됩니다. 이걸 가지고 Pricipal Component Analysis 를 해요. PCA 분석은, 다른 주성분 분석은 진짜 많이 들어보셨을 텐데요, 보통 주성분 분석하게 되면, 그림 보게 되면, 힘랩 보게 되면, 위쪽 가로축이 개별 세포가 되겠고, 세로축이 이제 G 인데, 가장 내 데이터의 variance 를 설명을 많이 해주는 PC-1 같은 경우 보면은 셀 세포들이 이렇게 반으로 잘 잘리는 걸 볼 수가 있어요.
+00:38:36
+Speaker 1
+그래서 같이 움직이는 특징을 가진 축을 새로 만들었다라고 생각을 해주시면 돼요. 계산하는 데에서는 covariance 매트릭스에서 IGM 밸류를 뽑아내는 거다 이렇게 하는데 어쨌든 잘 모르겠어도 covariance 에요. 같이 움직이는 그런 feature 들을 뽑아냈다고 보시면 돼요. 그리고 그 feature 에는 물론 많은 기여를 하는 유전자들이 존재를 해요. 그러니까 이렇게 한번 PCA 분석을 해서 차원 축소를 하게 되면, 사실은 PCA 같은 경우는 내가 진이 2 만 개가 있고 세포가 3 천 개가 있으면 3 천 개로 뽑아낼 수 있거든요.
+00:39:15
+Speaker 1
+그렇긴 하지만 내 데이터의 variance 는 앞쪽에서 결정이 돼요. 그러니까 PCA 를, 통상 아무리 많이 써도 100 개, 150 개까지 쓴 걸 저도 보기는 했는데 어쨌든 요즘에 대부분 20,30 개 수준에서 이렇게 같이 움직이는 식들의 새로운 축을 정의를 한 것을 한 50 개 미만 사용을 하게 됩니다. 그래서 PC 분석을 해가지고 이 세포들이 어떻게 분포를 하는지 나타낼 수가 있어요.
+00:39:49
+Speaker 1
+그러면 1 차적인 차원 축소를 할 수가 있는데, 그렇게 되면 내가 1 차적인 차원 축소를 했는데, 얼마나 많은 PC 를 가지고, 다음 단계를 해야 되거든요. 다음 단계를 결정을 하는데 얼마나 많은 PC 값을 사용하는 게 좋을까 라고 할 때 보통 이 elbow plot 을 많이 써요. 이 elbow plot 은 어쨌든 PC 보면 1 부터 쭉 있고 PC1 이 내 데이터의 variance 를 가장 많이 설명하는 아이거든요. 여기서 보면 그래서 standard deviation 설명하는 게 이 정도고 점점 줄어들어요.
+00:40:20
+Speaker 1
+그러다가 어느 순간에 확 줄어들죠. 그래서 보통은 그냥 되게 이것도 정답이 있는 건 아니고, huristic 하다고 표현하죠. 그냥 대충 몰라요. 명목점에서 두세 개 더 간 데를 한다든지 나는 한 가지도 놓치지 않을 거예요 하면 더 길게 가지고 갈 수도 있어요. 그런데 PC 를 많이 쓴다고 꼭 좋은 거는 아니에요. 오히려 구분하는데 방해가 되기도 해요. 어쨌든 그렇게 좀 사용을 하고 그러면 이제 클러스터를 클러스터링을 하는데 지금 아마.
+00:40:56
+Speaker 1
+이거 제가 이거는 예전에 카피해가지고 실라 버전 3 했는데 아마 아직도 그래프 베이스 클러스터링 하는 게 맞고요. 이제 PC 값을 가지고 쓰는 거예요. 한 번 차원 축소 했잖아요. 그래서 내가 2 만 개 필터링 했더라도 13,000 개 유전자 쓰는 것보다는 PC 값으로 내가 한 30 개로 줄였어. 그럼 훨씬 쉽죠. 그리고 각각의 PC 는 또 유전자들이 같이 움직이는 유전자들의 집합을 모아놨으니까 사실 굉장히 많은 정보량이 있는 거예요. 하지만 4 월은 훨씬 축소되어 있죠.
+00:41:27
+Speaker 1
+PC 값을 가지고 셀들이 PC 를 가지고 계산한 거에서 얼마나 비슷한 애들이 많이 모여 있는지 Nearist 네이버 그래프를 만들고 네이버가 서로 많이 겹치는 것들을 클러스터링하는 그런 방법으로 클러스터링을 해요. 디폴트가 제가 듣기로는 디폴트로 들어가 있는 게 무뱅 알고리즘인가 이렇게 알고 있는데 사실 더 정확하게 하려면, 좀 다른 걸로 디폴트에서 좀 바꿔 쓴다라는 이야기를 하고 있습니다.
+00:42:00
+Speaker 1
+어쨌든 PC 를 사용을 해서 이렇게 PC 값을 가지고 얼마나 비슷한지 유클리디안 디스턴스 라든지 계산하는 것들 있잖아요. 그런 거를 이제 계산을 하고 어쨌든 네이버 그래프를 생성을 하고 그 다음에 걔들을 표현을 할 때도 Umap 도 PC 값을 써요. 이제 Umap 도 얼마나 이제, 네이버 위치가 비슷한 거를 내가 사원을 30 개의 PC 를 가졌을 때랑 내가 유맵으로 2D 로 찌그러뜨렸는데 여기서의 구조가 가장 유지가 잘 되는 방법으로 계속 돌려가지고 이러한 맵을 작성을 한다고 해요.
+00:42:38
+Speaker 1
+그래서 사실은 유맵 같은 경우 아무 생각 없이 한 번 돌리고 이제 논문 해야지, 이 그림인데 하면 살짝 다른 게 나와요. 왜냐면 이게 계속 랜덤 시드를 통해서 돌아가는 거니까 그런 것까지 고려를 하면 뭔가 시드 설정을 하거나 해야 되는데 사실 굉장히 이게 크지 않으면 크게 문제 삼지는 않습니다. 어쨌든 뉴맵도 그렇고, 클러스터링하는 차원 축소해서 보여주는 것도 그렇고, 클러스터링도 그렇고, PC 로 기본적으로 1 차 차원 축소를 하고 걔를 가지고 쓰기 때문에 굉장히 비슷하게 가는데 뉴맵을 설명할 때 보통.
+00:43:16
+Speaker 1
+되게 가까운 애들은 뭉치는 성향이 있어서 클러스터 내부의 것은 믿을 수 있지만 이제 얘랑 얘가 얘랑 얘보다 굉장히 가까운 관계냐 그러면 반드시 그렇지는 않다라고 얘기를 해요. 하지만 아마 여기서는 더 가까울 거예요. 어쨌든 간에 이 떨어져 있는 클러스터들 간의 거리는 크게 의미가 없다라고 표현을 합니다. 내부에서 결속된 이 세포들은 비슷한 것은 맞다. 유맵은 거기에 되게 강하다.
+00:43:46
+Speaker 1
+디매져 리덕션을 해줄 수 있는 방법이다라고 이야기를 하고 있습니다. 어쨌든 클러스터링까지 했으면 이제 클러스터 사이의 차등 발현 분석은 조직에서 하는 거랑 다르지 않아요. 그래서 이제 어쨌든 내가 비교하는 것들은 비교를 하면 되는 거고, 걔들을 표현을 하는데 논문에서 이렇게 많이 보신 것들, 바이올린 플랏이라고 부르는 것들, 클러스터별로 유전자 발현값들을 찍어낸 거고, 분포들이에요. 점 하나가 세포들이죠. 얘네가 충분한 숫자가 되면 이렇게 세포가 많은 데서는 뚱뚱하게 형성을 하게 됩니다.
+00:44:20
+Speaker 1
+어쨌든 바이올린 플랏도 이제 많이 보셨을 것 같고 피처 플랏은 이 차원 축소를 한, 요즘에 거의 맵에다가 발현값을 찍어 놓는 거예요. 그래서 피처 플랏을 보면 아까 거기에는 어떤 클러스터 별로 뭉친 정보가 있지만 얘는 보면 진짜 이렇게 모여 있는지 그런 정보가 또 조금 보이긴 하죠. 위치도 보이긴 하니까 그래서 이제 피처 플랏이라는 것도 이제 많이 사용하고, 흰맵을 통해서 그거를 통해서 어떻게 묶을까 많이 결정을 하는데 뭐 구분은 되어 있지만 클러스터가 0 번 1 번은 같은 셀인 게 보이잖아요.
+00:44:57
+Speaker 1
+어쨌든 이런 것도 참고를 할 수가 있겠습니다. 그래서 차동과등 분석하는 박수를 가지고 저는 이제 웬만한 이뮨셀들은 그냥 셀 타입을 지정을 할 수가 있어요. 사실 틀릴 수도 있는데 어쨌든 이뮨셀에 대한 프로파일링이 가장, 12 세 RNA 식 데이터를 적용하기에 좋은 파큘레이션이었고, 그래서 레퍼런스들도 되게 잘 되어 있어요. 어쨌든 이렇게 지정을 할 수 있는데, 나는 사실 뭐 그동안 안 봤던 시스템을 봐서 내가 무슨 셀타가 있는지 잘 모른다.
+00:45:28
+Speaker 1
+그러면 이제 레퍼런스를 활용을 할 수 있어요. 이거는 어쨌든 이름을 붙여넣거나 준 거고, 레퍼런스 활용을 하는데, 그래서 이제, 순서가 바뀔 수도 있죠. 내가 커진을 가지고 나의 마그네즈와 논문을 찾아서 해포타입을 지정을 했는데 이게 맞는지 알고 싶다. 그럼 크로스 체크로 싱글 R 처럼 레퍼런스에 대한 코릴레이션 기반으로 보는 방법이라든지 조금 더 머신러닝 방법, AI 방법 이런 식으로 하는 셀타이피스트, 아지모스 이런 방법들을 쓸 수가 있어요.
+00:45:59
+Speaker 1
+이거 다 툴로 있으니까 다 활용을 할 수가 있어요. 아니면 반대로 갈 수도 있어요. 분석을 무지하게 하는 사람이어서 오늘은 혈액세터인데, 내일은 키드입니다. 전신을 돌아다닐 수 있어요. 다 모르잖아요. 그러니까 그런 경우에는 오히려 이런 거를 먼저 러닝을 하고 그 다음에 나랑 공동연구를 하는 사람과 함께 맞춰보는 그런 순서로 갈 수도 있어요. 어쨌든 이렇게 폭탄을 지정을 하는 게 1 차 운성이고 이걸 쭉 러닝을 하고 나면 여기가 다 채워집니다.
+00:46:29
+Speaker 1
+아까는 처음에는. 오브젝트를 하면은 데이터 구조를 만들고 러닝을 하면서 거기에 빈 데다가 데이터를 채워넣는 형식입니다. 필요한 데이터를 끄집어내서 그래프화를 할 겁니다. 이게 기본 분석이 되겠고요. 몇 가지 데이터 하면서 나오는 용어나 이런 거를 몇 가지 더 설명을 드리면 배치 커렉션 얘기도 많이 나와요. 어느 데이터에나 코호트로 스터디를 하면 배치 이펙트가 있죠.
+00:47:03
+Speaker 1
+그래서 보정을 하는 것들을 하는데 싱글셀 데이터도 여기 드럭을 치고 안 치는데 싱글셀 데이터 같이 넣으면 보통 이렇게 나와요. 배치 1, 배치 2 가 거의 대부분 미러 이미지죠. 셀 타입은 쉐어를 하고 있어서. 그래서 그냥 첫 봐도 얘랑 비슷해서 비교하면 좋겠는데 그건 내 맘대로 했다고 사람들이 뭐라고 하니까 같은 클로스만 확인을 해야 돼요. 그런 것들이 벌크 방식보다는 싱글 셀에 맞는 방식이 더 잘 맞는다.
+00:47:33
+Speaker 1
+그래서 여러 가지가 제안이 되었고 이렇게 엇갈려 있는 애들을 같이 구성을 해주면 같은 클러스터를 이제 비교를 해야죠. 이렇게 하면 사실 여기가 맞을지 모르겠지만 신디포, 신디포 셀인데 내가 결정하는 거고 요거는 여기 같은 신디포 셀에 모여 있으면 걔들을 비교를 하면 되는 거죠. 그래서 이렇게 하는데 뭐 별 그 방법들은 잘 못하거나, 시블셀 방법을 고안을 했는데 되게 여러 가지 방법들이 나와 있어요. 이건 초기에 쉘에서 만들었던 그룹들이 어쨌든 캘리데이터에 있는 거를 레퍼런스, 비교 데이터죠.
+00:48:08
+Speaker 1
+거기 데이터와 유사한지 보는 경우 있죠. 그런 식으로 이제 앵커를 찾는다라는 식으로 하는 방법도 있고 아니면은 뭐 계속 돌리면서 뭐 이렇게, 비슷한 것끼리 묶어놨는데 다시 조금씩 조정을 하면서 서로 다른 데이터들이 더 많이 섞이는 방식으로 하는 거예요. 되게 다양한 방법들이 있어요. 어쨌든 그런 방법들이 있어서 이렇게 쓰면 클러스터가 구분이 되어 있는데 배치 컬렉션을 하고 나서는 클러스터를 같이 잡을 수가 있고 비교 분석을 할 수 있는 형태로 가게 됩니다.
+00:48:50
+Speaker 1
+그래서 쉐라에서 나오는 첫 튜토리얼을, 파인드 앵커라는 좀 전에 있는 레퍼런스와 캐리 데이터 사이에 공통 앵커를 찾는 방식으로 진행이 됩니다. 되게 많은 방식들이 나와서 그걸 어떤 게 좋은지 평가하는 파라미터들도 많이 제안이 되는데 이것도 이제 좀 된 부분인데 보시면은 로고 데이터는 이 정도인데 케라스니 성우니 뭐 이거 이런 것들을 잘 섞어주더라 그런 식으로 해서 배치 컬렉션을 진행을 하고 동작을 하게 됩니다.
+00:49:21
+Speaker 1
+거의 다 됐어요. 이거는 이제 싱글셀 RNA 식 설명은 여기까지고요. 근데 싱글셀 RNA 시퀀싱 방법이 되게 많이 확장이 됐어요. 다른 지노믹 데이터에서 볼 수도 있고 그리고 뭐 프로티온 데이터도 좀 볼 수가 있어요. 그래서 많이 쓰이는 방법들 몇 가지만 설명을 드리면 기본적인 지능 익스프레션을 볼 수도 있지만 여러 가지로 볼 수 있다라는 리뷰 데이터도 있고 이것도 19 년 이후에 할 수 있는 게 되게 많이 늘어났어요. 이때는 뭐 이런거는 잘 못한다고 그랬는데 그것도 의심을 하고 그리고 또 하나는 지금 perturbation 으로도 쓰일 수가 있어서 그런 리뷰들이 있고요.
+00:49:58
+Speaker 1
+대표적인 것 중에 하나가 아까 여기, 오일 이멀전 안에 셀이랑 비드를 가두고 원래는 여기 CDNA 합성을 할 때 셀 바코드를 달아서 어느 셀에서 왔니? 하고 이제 알 수 있는 거였는데 여기 항체에 염색을 할 때 항체에다가 몰리모를 붙여놔요. 그러면 얘가 이제 시퀀싱을 할 수 있는 형태거든요. 시퀀싱을 하면 아까 어느 셀에서 왔고 트랜스크립트가 얼마나 있니? 했는데 어느 셀에서 왔고 그 셀에 얼마나 붙었느냐가 이제 계수가 되는 거죠.
+00:50:28
+Speaker 1
+그래서 여기 예제로 보여준 데이터 같은 경우는 RNA 발현값으로 CG3E 가 이렇게 발현이 측정이 됐는데, Antibody derived tack 이라는 이름을 쓰기도 하고, 시퀀싱 방법이 사이트식, 립식, 립식이 조금 일찍 나온 것 같기도 한데, 어쨌든 사이트식이라는 용어를 제일 많이 써요. 어쨌든 셀룰러 인덱싱 이렇게 하는 약자였던 것 같은데, 그 데이터를 보게 되면 이거는 서피스 스테이닝 프로파일이에요.
+00:50:59
+Speaker 1
+이런 게 도움이 되는 게 대표적인 게 CD4, CD4 는 원래 CD4 positive T cell 이 가장 높아야 되거든요. 근데 트랜스크립트 수준은 사실 매크로베이즈가 그냥 무지하게 나와요. 모노사이트 계열로. 트랜스크립트만으로도 구분이 잘 안 되는 거죠. 그래서 이런 서피스 프로테인 데이터와 특히 있는 셀에서는 같이 분석을 하면 더 정확하다. 그리고 많은 면역 스터디에 있어서는 세포를 sorting 을 해서 functional study 를 했는데 사실 surface protein 기반으로 sorting 을 해서 진행을 했거든요.
+00:51:32
+Speaker 1
+그래서 우리가 싱글셀 데이터로 transcript 로 정의를 하고 functional 에티까지 내 맘대로 막 얘기를 하는데 사실은 거기에 계획이 있어요. 그 transcript 로 정의한 population 이 이렇게 surface protein 으로 sorting 한 population 과 같다라는 걸 사실은 어느 시점에서는 증명을 해줘야 되는 거죠. 근데 그게 없는 경우도 있죠. 굉장히 많습니다. 트랜스립트는 셀들을 완전히 바이트라인으로 찢어놓을 수가 있는데 걔네가 실제로 펑셔널하게 어떻게 연결이 되는지는 데이터가 충분하지는 않아요. 이 데이터도 되게 활용도가 높고 다만 항체에 염색을 해야 되니까 저거 어 이거 되게 잘됐네 하고 이제 몇 천만원 들여가지고 200 개 항체를 염색했다면 이제 망하기 시작이죠.
+00:52:14
+Speaker 1
+왜냐하면 스페스픽스 하티가 굉장히. 그래서 어쨌든 필요할 때 활용을 하면 좋지만, 항체의 binding, specificity 기능을 확인을 해야 된다라는 거고, ritexic 도 많이 활용을 하는데 이거는 DNA 가지고 보는 겁니다. Transposase accessible chromatic 이 오픈 크로마틱이에요. 전사가 되게 활성화된 영역을 보는 게 되겠고 이거를 하려면 cell membrane 을 벗겨내고 핵 상태로 이렇게 만들어집니다. nuclei 는 isolation 을 해서 걔네를 가지고.
+00:52:49
+Speaker 1
+transpose 가 엑세스 하게 되면 자르거든요. 자르는 영역은 자르면 붙일 수 있다. 그래서 이 시물셀 RNA 식을 활용을 하는 여러 가지 방법들은 잘랐으면 붙일 수 있다. 아니면 택했으면 붙일 수 있다. 이런 방식이기 때문에 accessable 한 데 자르고 택을 붙였으니까 그 택을 가지고 있는 애를 시퀀싱을 하게 되면 오픈 영역들이 이렇게 시퀀스 리그가 많이 잡히게 되겠죠. 그래서 어느 영역이 열려있는 것을 볼 수가 있습니다. 그래서 싱글셀 에택식을 함으로써 보통 표현을 할 때 어쨌든 이거를 에피지넘 데이터라고 표현을 하죠.
+00:53:27
+Speaker 1
+그러면 DNA 에서 진 시퀀스가 아닌 오픈되어 있는 영역을 보는 거니까 근데 트랜스크립트 보는 거랑 약간 비슷한 진술 중에서는 비슷한 데이터를 주기도 하는데 어쨌든 추가적인 정보. 크리스퍼 스크린팅 보통 이제 가이드 RNA 잘라주는 거랑 가이드 자르잖아요. 잘라 쓰면 뭐다? 붙일 수 있다. 팩을 붙이고 그 영역을 시퀀싱을 할 수가 있습니다. 그러니까 내가 어느 책을 타겟팅을 했고, 그럼 무수히 많은 지니 익스프레션을 보면 지니 익스프레션 피노타입을 붙여볼 수가 있고, 내가 매니퓰레이션이나 특정 유전자가 어떤 피노타입 영향을 미치는지 볼 수가 있는 거죠.
+00:54:06
+Speaker 1
+그래서 이제 크리스피아 스크리닝 같은데 perturbation 하는 시퀀싱에도 활용이 됩니다. 그리고 이제 이런 다양한 데이터에서 마지막으로 가시는 게, 스파셜 트랜스크립트입니다. 아까 데이터는 셀 바이 진 매트릭스였는데, 이거는 이 바코드를 이 스멜링드에다가 심었어요. 그러니까 이 위에다가 조직을 붙이고 거기에서 CDL 에 합성을 하게 되면 여기에 붙은 바코드를 달고 합성을 하게 됩니다. 그러니까 이제 스파셜 바코드를 가진 어디에서 왔는지, 어느 셀에서 왔니?
+00:54:39
+Speaker 1
+가 아니라 이 유리판 어디서 왔니? 하고, 할 수 있는 스파셜, 바코드, 진, ENI, 카운트 정보를 얻을 수가 있습니다. 이게 테넥스 지노믹스에서 만든 초기 버전의 비지움이라고 하는 플랫폼이 되겠고요. 초기 버전 비지움 플랫폼은 여전히 쓰이고 있는데 약 100 나이트론의 레솔루션을 가집니다. 그러니까 싱글 셀 수준은 아니에요. 근데 홀 트랜스립터는 됩니다. 물론 제가 알기로는 T 셀 리셉터 같은 건 맵핑이 안 되는 걸로 알고 있어요.
+00:55:09
+Speaker 1
+그러니까 그 정도는 없지만. 하는 게 나온다라고는 하는데 어쨌든 간에 레솔루션이 셀보다는 넓습니다. 그래서 이걸 보통 이제 리저널 어네이시스라고 불러요. 근데 트랜스크립트는 오히려 리저널로 보니까 싱글셀에서 보는 것보다 피처는 많이 줄 수도 있죠. 그래서 사라질 줄 알았는데 리저널 보는 게 상당히 중요한 데도 많아서 여전히 살아남아 있는 방법입니다. 어쨌든 싱글셀이랑 되게 유사하죠. 다만 이 코드가 로케이션으로 붙어있다.
+00:55:41
+Speaker 1
+볼 수가 있습니다. 그래서 이게 100 마이크론 짜리가 우리 싱글셀 수준에서 해야 되는데 점점 레볼루션이 높아지겠죠. 그 방법 중에 하나가 그 같은 회사에서 나온, 이 회사 거를 주로 써가지고 저희 예전 코스닥 대 디렉터, 어쨌든 여기에서 주로 쓰는데 제뉴움이라고 하는 방법 같은 경우는 그것도 프로, 그러니까 여러 패널을 써요. 500 대 유전자에 대한, 프로브가 붙게 되겠고, 이 프로브가 rolling circle amplification 이라고 막 증폭을 해요.
+00:56:17
+Speaker 1
+이제 많은 시그널을 줄 수가 있겠죠. 이거를 이제 형광 디텍션을 해요. 그러니까 인시츄 방식으로 디텍션을 하는 거예요. 그래서 이제 거의 형광 시그널을 보는 방식으로 디텍션을 하는데, 프로브가 붙어서, 또 에러 레이즈를 줄이려고 두 개의 프로브가 같이 붙어야만 증폭을 하는 방식으로 해서 그 진이 여기에 발현된다는 걸 볼 수가 있습니다. 정확한 레졸루션을 얘기해 주지는 않지만 보통 한 2 마이크론 레졸루션이라고 해요. 보통 우리가 셀이 10 마이크론 내외인 경우가 많으니까 셀보다 더 고해상도의 레졸루션입니다.
+00:56:56
+Speaker 1
+팬서를 가지고 프로브 방식으로 보기 때문에 시퀀싱 데이터가 나오지는 않죠. 그래서 난 시퀀스로 뭘 해야 되는데 그러면 적합하진 않고 진으로 봐야 되는데 그냥 패널로 했잖아요. 그냥 시퀀싱에 익숙한 분들도 계실 것 같은데 시퀀싱도 패널이죠. 사실 뎁스는 훨씬 깊죠. 되게 많이 읽을 수 있어요. 그래서 그런 면에서 또 얘가 장점이 있어요. 그냥 시퀀싱 방식으로 했는데 놓쳤던 애를 얘는 증폭을 확 시키니까 디텍션을 하기도 합니다. 그러면 여기서 이슈가 하나 더 나와요.
+00:57:27
+Speaker 1
+아까는 리저널이니까 상관이 없었는데 얘는 셀보다, 하이 레졸루션이에요. 그러면 내 셀이 어디 있는지 금을 보여야죠. 셀 세그멘테이션을 시켜야 돼요. 이게 지금 통상적인 방식은 핵을 염색을 해서 핵을 기준으로 적당히 바운더리를 합니다. 그것도 뭐 AI 알고리즘을 써서 어쩌고 하는데 부정확합니다. 세포 모양이 제각각이잖아요. 그리고 세포가 엄청 찌그러져 있는 데는 사실 정확한 바운더리를 보는 거가, 가능하지는 않아요. 그래서 이제 알고리즘을 개선시켜야 되는 것들도 있지만 데이터 형태 자체가 단순히 알고리즘 개선만 하면 안 되는 부분이 있어요.
+00:58:05
+Speaker 1
+어쨌든 셀이 어디까지인지 이제 경계를 지었으니까 셀이 어딘지 하면은 이제 셀 데이터랑 똑같아졌어요. 셀이 어딘지 그었으니까 이 셀마다 무슨 유전자를 얼마나 발현을 했는지 이제 셀 바이 지금 매트릭스로 나오죠. 근데 얘는 하나가 추가적인 정보를 달고 있어요. 이 셀이 어디에 찍혔었는지 코딘의 정보를 달고 나오고 있다. 어쨌든 그런 정보가 되겠고. 그래서 이것도 이거는 보통 오히려 추는 분석을 많이 안 하고 인시츄 방식이니까 회사에서 제공하는 데서 캡처에서도 굉장히 많이 활용을 해요.
+00:58:40
+Speaker 1
+세그멘테이션도 볼 수가 있고 그 안에 점 크기도 조절해서 얼마나 많은 유전자를 찍어낼지 결정을 할 수가 있습니다. 굉장히 좋은 방법입니다. 이게 인시츄 방식이니까 이거 말고도 인시츄 방식으로 볼 수 있는 커버셔라 플랫폼들이 있어요. 시크피쉬, 멀피쉬 이런 건데 걔네 다 이제 프로그 방식이 되겠고 얘는 좀 더 이제 형광 가위를 다양하게 사용을 하고 시퀀셜하게 보게 됩니다. 이게 붙이고 떼내고 약간 이런 방식으로 가는 거죠.
+00:59:14
+Speaker 1
+아니면 붙이고 블리칭해버리는 이런 방식이고 또 하나는 플루그가 붙으면 무수히 많은 거예요. 멀핏이 보통 한 500 개의 유전자를 붙인다고 하면은, 지대로 붙는 것도 있지만 안 붙는 것도 있을 거잖아요. 그래서 이제 프로브를, 그러니까 진을 디텍션 하는 올리브를 쓰는데 그걸 굉장히 열어져 있어요. 그리고 내 거에 붙는 올리브가 붙지만 어떤 진에 대한 올리브를 다양하게 짜게 되면 사실 이 올리고는 그 진에 붙는 거고 어떤 건 안 붙는 거고 하고 코드화를 시킬 수가 있어요.
+00:59:46
+Speaker 1
+붙었다 1, 안 붙었다 1 해가지고 유전자마다 이런 코드가 생성이 되게 돼요. 하나쯤 틀리는 거는 또 에러리 커넥션을 할 수가 있어요. 뭐 이런 식으로 여러 가지 좀. 붙을 때 배럴을 제거하는 그런 방식들을 이제 고안을 합니다. 이거 같은 경우도 워크피쉬 사는 기관들이 조금씩 늘어나고 있긴 해요. CPC 상단 기관을 사용하고 있고요. 그리고 아까의 비지온이 더 고해상도로 나타나게 됩니다.
+01:00:17
+Speaker 1
+볼 트랜스펙트를 볼 수 있으니까 되게 파워풀하잖아요. 그러니까 촘촘하게 덮을 수가 있는 거죠. 그래가지고 지금은 좀 이제, 서브셀룰러 레졸루션을 볼 수 있어요. 그러면 어떻게 되겠어요? 비싸지겠죠. 비싸지고 디텍션하는 영역이 줄어들어요. 그러면 사실은 릴라이얼하게 디텍션 할 수 있는 그런 게 줄어들어요. 되게 작은 영역에서 증폭을 해서 봐야 되면 사실 놓칠 가능성이 크거든요.
+01:00:47
+Speaker 1
+그래서 저는 아까 노 레졸루션 같은 경우는 사라지지 않았는데 안 사라지고 계속 남아있는 것들이 그런 장단점들이 있습니다. 현재 있는 스파셜 트랜스립토인 중에서 가장 레솔루션이 높은 거는 스톤인지 사의 스테레오십이라는 거예요. 요거는 이제 나노볼이라는 걸 써서 어쨌든 얘도 조직을 얹는 데다가 바코드를 태깅을 할 수 있는 건데 그게 굉장히 뭐 레솔루션을 우리가 한 200 나노미터인가 이런 식으로 볼 수가 있어요. 근데 뭐 또 어찌 보면 그런 거예요.
+01:01:18
+Speaker 1
+그거를 200 나노미터를 다 살려서 분석이 가능하겠어요. 데이터 사이즈도 좋고 나노미터도. 결국은 빈을 합쳐요. 합치니까 굳이 200 나눈 돈으로 봐야되나라는 생각도 좀 들긴 합니다. 비싸기도 하고. 어쨌든 간에 근데 고해상도로 높아지고 트랜스키톤도 더 많이. 요즘 스팟이랑 트랜스키톤 인기가 많이 쓰이고 그게 점점 많이 쓰이는 걸 볼 수가 있는데 조금씩 하면서 다른 나라들보다 조금 늦게.
+01:01:52
+Speaker 1
+고민이 있긴 하니까. 싱글셀은 2013 년에 메소드 네이처 메소드 그래미로 선정이 됐고, 스파샬이 2020 년 그때 선정이 됐어요. 여전히 스파샬이 지금 늘어난 추세고, 싱글셀은 조금 줄어들기는 하지만 굉장히 보편화되었기 때문에 싱글셀도 여전히 조정을 했습니다. 지노믹 데이터를 셀에 대해서 익힐 수 있는 셀베이어즈의 기본적인 행동입니다. 사용이 되고 있습니다.
+01:02:23
+Speaker 1
+그래서 아마 대부분 시험문제 이 용어들을 정확히 알고 있으면 되지 않을까 싶습니다.
+01:02:48
+Speaker 2
+스물셋, 128 시.

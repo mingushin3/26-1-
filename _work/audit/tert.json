@@ -1,0 +1,137 @@
+{
+  "lecture_key": "tert",
+  "lecture_label": "05-19 TERT·B형간염·간암 (장정원)",
+  "summary_universe": [
+    {
+      "topic": "TERT 프로모터 돌연변이 활성화 기전 (핫스팟 -124/-146 C>T, ETS/TCF 결합모티프 생성, G-quadruplex 불안정화 → silencing 소실)",
+      "source": "슬라이드 p21-23 + Summary(III) p82 'TERT: most common non-coding somatic mutation'",
+      "exam_prob": 95,
+      "reason": "Summary(III)에 명시된 take-home. 교수 '반드시 꼭 아셔야 합니다' 직접 강조(S2). 정상 vs 돌연변이 비교(S7). 기전 방향(안정화 아니라 소실)이 변별 포인트."
+    },
+    {
+      "topic": "TERT 활성 4대 조절기전 (TERT promoter mutation / HBV integration / TERT amplification / TERT translocation)",
+      "source": "슬라이드 p20 + Summary(III) p82 (네 항목 글머리표로 정리)",
+      "exam_prob": 88,
+      "reason": "Summary(III) 마지막장에 4개 글머리표로 정리된 핵심 열거형. 단답·빈칸·4지선다 1순위. 현재 문항은 이 4축 중 mutation/integration 2개만 부분 언급."
+    },
+    {
+      "topic": "텔로미어 단축의 이중적 역할(dual role) + Cancer Paradox (개인 긴 TL=암위험↑ vs 암조직 짧은 TL, elongation 아닌 maintenance/stabilization)",
+      "source": "슬라이드 p10·p12 + Summary(III) p82 'Dual role of telomere shortening' + p74 critically short telomere",
+      "exam_prob": 90,
+      "reason": "Summary(III)에 'Dual role of telomere shortening→DDR' 명시. 교수가 '착각하면 안 되는 게'·'헷갈리시면 안 돼요'로 반복 경고(S6·S2·S5). 비교/역설 구조(S7). 박사 변별형."
+    },
+    {
+      "topic": "세포노화(senescence) 정의·특성 + p53 의존 senescence vs apoptosis vs malignant transformation 분기",
+      "source": "슬라이드 p7·p74·p82(p53 functioning?) + 교수 발화(p53 intact→senescence)",
+      "exam_prob": 85,
+      "reason": "Summary(III) p82에 'Cell senescence and crisis(apoptosis)'·'p53 functioning?' 명시. 교수가 3회 이상 반복하며 3-way 분기 설명(S5·S7). 기전 설명형 고변별."
+    },
+    {
+      "topic": "HBV 통합 기전 (기질 dslDNA만 통합·rcDNA 불통합, 자발적 DSB+NHEJ 무작위 삽입, 숙주 게놈 rearrangement)",
+      "source": "슬라이드 p40·p41·p42 + Summary(I) p80 'Linear dsDNA substrate / NHEJ → host-virus rearrangement'",
+      "exam_prob": 92,
+      "reason": "Summary(I)에 글머리표로 정리. 교수 '굉장히 무서운 부분' 생생 묘사(S4)+NHEJ 반복(S5)+NHEJ vs MMEJ 비교(S7). 기전 설명형 1순위."
+    },
+    {
+      "topic": "HBV 통합 부위 (숙주: TERT promoter 최다 > MLL4 > CCNE1; HBV측: nt1600~1800 C-term HBx; 종양 genic-선택적 vs 비종양 intergenic-무작위)",
+      "source": "슬라이드 p46·p47·p48·p49·p51·p53 + Summary(I) p80 'Genic in T vs Intergenic in NT / most common TERT,MLL4'",
+      "exam_prob": 88,
+      "reason": "Summary(I)에 명시. 비교표(S7)+교수 표 직접 설명(B2). 종양 vs 비종양 통합분포 차이가 변별 포인트."
+    },
+    {
+      "topic": "HBV 통합의 cis-effect vs trans-effect (cis: TERT promoter 삽입 발현↑; trans: ctHBx 항아폽토시스·세포주기·전이, preS결실 표면항원 ER stress, HBV-MLL4 fusion, HBx-LINE1 lncRNA) + 염색체 불안정성",
+      "source": "슬라이드 p45·p53·p56·p57·p58·p60·p73 + Summary(II) p81 'Cis/Trans-effects, fusion-transcripts'",
+      "exam_prob": 90,
+      "reason": "Summary(II) p81에 cis/trans 3대 효과 정리. 명확한 비교표(S7)+교수 행/열 직접 설명(B2). 비교·적용형 고변별."
+    },
+    {
+      "topic": "TERT 프로모터 돌연변이와 HBV-TERT 통합의 상호 배타성(mutually exclusive) + 합산 TERT alteration ~65-68% (HCC 유형 무관)",
+      "source": "슬라이드 p29·p30·p31 + 교수 발화('mutually exclusive', 한 경로로 충분)",
+      "exam_prob": 85,
+      "reason": "교수가 'mutually exclusive' 명시 강조(S5·S6). HBV/HCV/NBNC 비교(S7). 두 경로 동일 최종효과(TERT 활성)이므로 중복 불필요라는 논리 변별."
+    },
+    {
+      "topic": "HBsAg 혈청소실(기능적 완치) 후에도 지속되는 HCC 위험 (통합 HBV·cccDNA 잔존, direct oncogenic potential 지속, 연 0.38~0.86% HCC, 6개월 감시 지속)",
+      "source": "슬라이드 p63·p64·p66·p67·p68·p69·p70 + Summary(II) p81 'HCC risk still remains after HBsAg seroclearance'",
+      "exam_prob": 90,
+      "reason": "Summary(II) 마지막 글머리표. 교수 7명 추적 데이터(S4)+'반드시 알고 있어야 해요' 반복(S5)+'S항원 음성이라도 B형간염 없다고 못한다' 경고(S6). 임상 적용형 1순위."
+    },
+    {
+      "topic": "TERT alteration / telomere length의 예후 바이오마커 역할 + telomere addiction = actionable target",
+      "source": "슬라이드 p27·p32·p33·p34·p35·p76·p77 + Summary(III) p82 'potential biomarker / emerging telomerase-based therapy'",
+      "exam_prob": 75,
+      "reason": "Summary(III)에 biomarker·therapy 명시. 교수: high TERT→OS불량·TACE시 TTP단축. p77 'telomerase addiction is an actionable therapeutic target' take-home. TACE에서 high TERT TTP P=0.0081 등 표 설명(B2)."
+    },
+    {
+      "topic": "텔로머레이즈 복합체 구성·Hayflick limit·ALT (TERT 촉매·TERC RNA템플릿 451nt·Shelterin 6단백·연 20-40bp 단축·암 85-95% telomerase/5-15% ALT)",
+      "source": "슬라이드 p4·p5·p6·p9·p13",
+      "exam_prob": 65,
+      "reason": "도입부 기초 정의. 객관식·빈칸·단답 출제 단골(TERC 길이, Hayflick 종별 횟수, ALT 비율). 단순 암기형이라 박사 변별력은 낮으나 객관식 커버 필요."
+    }
+  ],
+  "current_topics": [
+    {
+      "id": "tert-1",
+      "topic": "TERT 프로모터 돌연변이 기전 (핫스팟·ETS/TCF·G-quadruplex 불안정화)",
+      "exam_prob_reassessed": 95,
+      "keep": true,
+      "note": "summary_universe 최상위 항목 정확 적중. Summary(III) take-home이자 교수 최강조(W=7). G-quadruplex '안정화→silencing 강화' 반전 trap이 박사 변별형으로 탁월. 유지."
+    },
+    {
+      "id": "tert-2",
+      "topic": "HBV 통합 기전 (dslDNA·NHEJ·TERT 통합부위·상호배타성)",
+      "exam_prob_reassessed": 92,
+      "keep": true,
+      "note": "Summary(I) 통합기전과 p31 상호배타성을 동시에 묶은 고밀도 문항. 다만 선지에 통합기전+통합부위+상호배타성+cis/trans 분포가 한 문항에 과밀집되어 별도 비교문항으로 분화 여지 있음. 유지."
+    },
+    {
+      "id": "tert-3",
+      "topic": "HBsAg 혈청소실(기능적완치) 후 지속되는 HCC 위험",
+      "exam_prob_reassessed": 90,
+      "keep": true,
+      "note": "Summary(II) 마지막 글머리표 정조준. 교수 7명 추적+반복+경고 동시발동. 감시중단 가능 반전 trap이 임상 적용형으로 우수. 유지."
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "텔로미어 단축의 이중적 역할(dual role) + Cancer Paradox + 'maintenance/stabilization vs elongation' 용어 구분",
+      "source_slide": "p10·p12·p74 + Summary(III) p82 'Dual role of telomere shortening'",
+      "exam_prob": 90,
+      "why_high_yield": "Summary(III)/마지막장에 명시된 take-home. 교수가 '착각하면 안 되는 게'·'헷갈리시면 안 돼요'로 가장 강하게 반복 경고한 핵심 비교/역설 주제(S2·S5·S6·S7). 현재 3문항 어디에도 미커버. 박사 변별형 서술 1순위.",
+      "recommend_add": true
+    },
+    {
+      "topic": "HBV 통합의 cis-effect vs trans-effect 비교 (대표 분자 예시: ctHBx, preS결실 표면항원/ER stress, HBV-MLL4 fusion, HBx-LINE1 lncRNA) + 염색체 불안정성",
+      "source_slide": "p45·p56·p57·p58·p73 + Summary(II) p81 (비교표/글머리표)",
+      "exam_prob": 88,
+      "why_high_yield": "Summary(II)에 cis/trans 3대 효과로 정리된 비교표 항목(B2 교수 행/열 직접 설명). tert-2가 통합 '기전·부위·상호배타성'에 치우쳐 trans-effect 분자기전(ctHBx/preS/MLL4/LINE1)은 미커버. 비교·적용형 고변별.",
+      "recommend_add": true
+    },
+    {
+      "topic": "세포노화(senescence) + p53 분기 (senescence vs apoptosis vs malignant transformation)",
+      "source_slide": "p7·p74 + Summary(III) p82 'Cell senescence and crisis(apoptosis)', 'p53 functioning?'",
+      "exam_prob": 85,
+      "why_high_yield": "Summary(III) 마지막장에 'p53 functioning?'까지 명시. 교수가 3회 이상 반복하며 p53 intact→senescence(보호기전), p53 소실→apoptosis 회피→malignant transformation의 3-way 분기를 상세 설명(S5·S7). 현재 미커버. 기전 설명형 고변별.",
+      "recommend_add": true
+    },
+    {
+      "topic": "TERT 활성 4대 조절기전 열거 (promoter mutation/HBV integration/amplification/translocation)",
+      "source_slide": "p20 + Summary(III) p82 (4개 글머리표)",
+      "exam_prob": 78,
+      "why_high_yield": "Summary(III) 마지막장 글머리표 열거형으로 객관식/단답 단골. 현재 mutation·integration 2축만 부분 언급, amplification·translocation 미커버. 단 단순 열거형이라 박사 변별력은 중간 → 추가 시 객관식 보강용.",
+      "recommend_add": false
+    },
+    {
+      "topic": "TERT alteration / telomere length 예후 바이오마커 + telomere addiction = actionable target",
+      "source_slide": "p27·p32·p33·p77 + Summary(III) p82 'potential biomarker / telomerase-based therapy'",
+      "exam_prob": 72,
+      "why_high_yield": "Summary(III)·p77 take-home('actionable therapeutic target'). high TERT→OS불량/TACE TTP단축(P=0.0081) 표 설명(B2). 다만 임상 outcome 데이터 위주라 우선순위는 위 3개 갭보다 후순위. 여유 시 보강.",
+      "recommend_add": false
+    }
+  ],
+  "weak_to_replace": [],
+  "verdict": "needs_additions",
+  "recommended_add_count": 3,
+  "recommended_drop_ids": [],
+  "notes": "현재 3문항(tert-1/2/3)은 모두 summary_universe 최상위 항목을 정확 적중하고 반전 trap 설계가 우수하여 전부 keep, 교체할 약문항 없음. 다만 deck의 명시적 Summary 슬라이드(p80 Summary I=HBV통합 events, p81 Summary II=cis/trans+HBsAg소실후 위험, p82 Summary III=텔로미어 dual role+senescence+TERT 4기전+biomarker)를 기준으로 보면, 교수 강조도 mid에 따라 써머리 가중을 강하게 적용할 때 미커버 고출제 주제 3개가 두드러진다: (1)텔로미어 dual role/Cancer Paradox(p82 명시·교수 최다 반복경고), (2)cis vs trans effect 비교(p81 비교표·trans 분자기전 미커버), (3)senescence+p53 분기(p82 'p53 functioning?' 명시). 이 3개는 모두 박사 변별형(기전·비교)이며 현 deck의 약점인 '통합/임상' 편중을 '텔로미어 생물학' 축으로 균형 보완한다. TERT 4기전 열거·biomarker는 객관식 보강 여유분(recommend_add=false). 권장 추가 3문항(서술형 위주): Cancer Paradox/dual role 1, cis-vs-trans 비교 1, senescence-p53 1."
+}

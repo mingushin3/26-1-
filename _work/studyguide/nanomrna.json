@@ -1,0 +1,113 @@
+{
+  "code": "nanomrna",
+  "lecture_label": "04-21 나노메디슨·mRNA-LNP (구희범)",
+  "essence": "나노파티클은 '크기'로 승부하는 전달체다. 핵산(siRNA·mRNA)을 LNP에 봉입해 세포 안으로 넣어주는 것이 핵심이며, 2018 ONPATTRO(siRNA-LNP)가 깔아준 LNP 플랫폼 위에서 COVID mRNA 백신이 탄생했다.",
+  "analogy": "LNP는 '핵산 택배 상자'다. 맨몸의 mRNA는 세포가 절대 안 받지만(반송), 지질 상자에 포장(encapsulation)하면 배송 완료. 상자 재료(ionizable lipid) 조성만 바꾸면 폐·간·비장 중 원하는 '동(洞)'으로 배달지를 바꾼다.",
+  "concepts": [
+    {
+      "heading": "왜 하필 '나노' 크기인가 (수십~수백 nm)",
+      "points": [
+        "small molecule·protein 보다 크고 → bacteria·cell 보다 작다 → 바이러스와 유사 크기",
+        "너무 작으면(small molecule) → 신장(kidney) renal clearance로 빨리 빠짐 → 순환 시간 ↑ 위해 나노 크기 필요",
+        "너무 크면 → 폐모세혈관(lung capillary)에 trap → IV 순환 적합 크기로 조절",
+        "최종 목적지는 세포 내부 → 세포보다 작아야 endocytosis로 uptake됨",
+        "근거 슬라이드 p2: 'DNA, protein, drug … < nanoparticle < cell'"
+      ]
+    },
+    {
+      "heading": "EPR 효과 = 수동 타겟팅의 기전",
+      "points": [
+        "암 = 빠른 성장 → angiogenesis(신생혈관) 급조 → 정상보다 성기고 틈(leaky) 많은 혈관",
+        "적절 크기 나노파티클 → 그 틈으로 종양에 빠져나감(Permeability) + 림프배출 약해 잘 안 빠짐(Retention)",
+        "IV 주사만 해도 정상조직보다 종양에 ↑ 축적 = passive targeting",
+        "표면에 antibody·peptide·aptamer ligand 부착 → active targeting으로 선택성 강화",
+        "★함정주의: 종양혈관은 '촘촘'이 아니라 '성김'. 거꾸로 출제 1순위"
+      ]
+    },
+    {
+      "heading": "유전자 전달 3대 방법 + mRNA-LNP 플랫폼",
+      "points": [
+        "출발 전제: 맨몸 DNA·RNA를 배지에 넣어도 세포가 원형 그대로 안 받음 → 전달체 필요",
+        "① Viral vector: 감염능 유지+병원유전자 제거. 렌티=연구용, AAV=임상승인. 고효율·장기발현 BUT genome integration·면역과활성 → 드물게 사망",
+        "② Physical(microinjection/electroporation/ultrasound): in vitro 굿, 사람(in vivo) X",
+        "③ Non-viral(LNP·polymer·EV/exosome): 안전성 우위, 사람 적용 가능 → 중간 대안",
+        "두 핵심 기술: mRNA 변형(Karikó·Weissman, uridine→pseudouridine 면역회피, 노벨상) + LNP 전달(Robert Langer, MIT 화공과, Moderna 공동창업)"
+      ],
+      "table": {
+        "title": "COVID 백신 플랫폼 — 역사 순서 & 안전성",
+        "columns": ["플랫폼", "대표", "역사", "안전성 역사", "효능/점유율 결과"],
+        "rows": [
+          ["바이러스 벡터", "AZ·얀센", "전통(오래됨)", "길다(타 질병 백신 검증)", "mRNA에 완패"],
+          ["mRNA-LNP", "화이자·모더나", "COVID때 백신 첫 등장", "짧다(신생)", "완승(효능 우위)"]
+        ]
+      }
+    },
+    {
+      "heading": "LNP 조성·제조·장기 타겟팅 응용",
+      "points": [
+        "LNP 4대 지질: ionizable cationic lipid + cholesterol + phospholipid + PEG-lipid (+ 봉입 핵산) — p19 ONPATTRO Components 명시",
+        "제조: 핵산을 lipid들과 microfluidic device로 흘려 포뮬레이션 → LNP 형성, 핵산 encapsulation",
+        "ionizable lipid = 핵심 기능성분(비활성 충전제 X) → 화학구조 바꾸면 독성↓·전달효율↑ 결정 (p29 연구중)",
+        "ONPATTRO(Patisiran): 2018 FDA(USA), siRNA-LNP, hATTR amyloidosis, 50nm, IV infusion → COVID(2020 mRNA-LNP)보다 먼저",
+        "siRNA=double-strand / mRNA=single-strand. 같은 LNP 플랫폼, 봉입 핵산만 교체",
+        "폐암 연구(p25~27): TRAIL & BAK-mRNA를 lung-targeting LNP에 실어 IV 주사(직접주사 X)→혈액순환→폐 표적. 지질 조성·비율 디자인으로 lung/liver/spleen 중 하나로 organ targeting. luciferase+luciferin 영상으로 발현부위 확인. TRAIL=extrinsic(receptor), BAK=intrinsic(cytosol) → combination therapy"
+      ]
+    }
+  ],
+  "traps": [
+    {
+      "qref": "nanomrna-1",
+      "topic": "백신 안전성 역사 & 정부 선주문 판단",
+      "correct": "✅ 바이러스 벡터(AZ·얀센)가 mRNA-LNP보다 안전성 역사가 더 길어 정부가 대량 선주문했으나, 효능·점유율은 mRNA-LNP(화이자·모더나)가 완승 → 선주문은 결과적으로 잘못된 판단.",
+      "trap": "❌ 바이러스 벡터가 안전성 역사가 더 '짧아' 정부가 이를 기피한 것이 결과적으로 옳은 판단이었다 (역사·판단 모두 거꾸로)."
+    },
+    {
+      "qref": "nanomrna-2",
+      "topic": "전달체가 필요한 이유(출발 전제)",
+      "correct": "✅ 맨몸 DNA·RNA를 세포에 그냥 노출시키면 잘 들어가지도 발현되지도 않는다 → 그래서 전달체(viral/physical/non-viral)가 필요하다.",
+      "trap": "❌ DNA·RNA를 배지에 그냥 넣어주면 세포가 원형 그대로 잘 받아 발현하므로 전달체 없이도 높은 효율을 얻는다."
+    },
+    {
+      "qref": "nanomrna-3",
+      "topic": "EPR 효과 기전",
+      "correct": "✅ 종양 혈관은 빠른 신생혈관 형성으로 정상보다 성기고 틈(leaky)이 많아, 나노파티클이 그 틈으로 종양에 빠져나가 축적(retention)된다 = passive targeting.",
+      "trap": "❌ 종양 혈관이 정상보다 촘촘·치밀해서 나노파티클이 통과 못하고 정상 조직에만 축적된다 (촘촘/통과불가/정상축적 전부 거꾸로)."
+    },
+    {
+      "qref": "nanomrna-g1",
+      "topic": "ionizable cationic lipid의 역할",
+      "correct": "✅ ionizable cationic lipid는 LNP의 핵심 기능성분으로, 화학구조를 바꾸면 mRNA 전달효율·독성이 달라진다(p29 새 ionizable lipid 합성으로 저독성·고효율 추구).",
+      "trap": "❌ ionizable cationic lipid는 봉입에 관여 안 하는 비활성 충전제라 구조를 바꿔도 전달효율·독성에 거의 영향이 없다."
+    },
+    {
+      "qref": "nanomrna-g2",
+      "topic": "ONPATTRO vs COVID 백신 역사 선후",
+      "correct": "✅ ONPATTRO(siRNA-LNP)는 2018 FDA 승인으로 COVID mRNA-LNP 백신(2020)보다 먼저 등장. siRNA-LNP가 먼저, 그 플랫폼에 핵산만 mRNA로 바꿔 COVID 백신 탄생.",
+      "trap": "❌ COVID mRNA-LNP 백신이 먼저 상용화된 뒤, 그 mRNA를 siRNA로 교체해 만든 첫 후속작이 ONPATTRO이며 2018보다 나중에 승인되었다 (선후 전도)."
+    },
+    {
+      "qref": "nanomrna-g3",
+      "topic": "폐암 LNP의 투여 경로·분포",
+      "correct": "✅ p25~27 폐암 LNP는 폐에 직접 주사한 게 아니라 IV(정맥) 주사로 혈액순환을 거쳐 lung을 표적. IV는 본래 여러 장기로 가나 지질 조성을 디자인해 lung 쪽으로 치우치게 만든 것(lung/liver/spleen 중 조절).",
+      "trap": "❌ 폐에 직접(direct) 주사한 국소 투여라 혈액순환을 거치지 않으며, lung 외 다른 장기로 분포할 가능성이 원리상 전혀 없다."
+    }
+  ],
+  "memorize": [
+    "맨몸 mRNA는 세포에 안 들어간다 → LNP로 봉입(encapsulation)해야 전달됨",
+    "EPR = 종양혈관이 '성기다(leaky)' → 틈으로 새어 들어가 축적 (촘촘 아님!)",
+    "ONPATTRO(siRNA-LNP) 2018 먼저 → COVID mRNA-LNP 2020 나중. siRNA=double, mRNA=single",
+    "ionizable lipid = LNP 핵심 기능성분(독성↓·효율↑ 결정), 비활성 충전제 아님"
+  ],
+  "figures": [
+    {
+      "pdf": "20260421_합동강의_koo.pdf",
+      "page": 4,
+      "caption": "EPR 효과와 종양 조직의 passive/active targeting — leaky tumor vasculature를 통한 나노파티클 축적"
+    },
+    {
+      "pdf": "20260421_합동강의_koo.pdf",
+      "page": 18,
+      "caption": "COVID-19 백신 플랫폼 분류 — 단백질/불활화, 바이러스 벡터, mRNA-LNP의 역사적 순서 및 점유율 비교"
+    }
+  ]
+}

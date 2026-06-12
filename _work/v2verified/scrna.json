@@ -1,0 +1,114 @@
+[
+  {
+    "id": "scrna-g1",
+    "lecture_key": "scrna",
+    "lecture_label": "03-24 단일세포 전사체 scRNAseq (이혜옥 교수)",
+    "topic": "Drop-out 현상과 sparse matrix(.mtx) 저장 구조",
+    "exam_probability": 85,
+    "tier": 1,
+    "stem": "다음 중 scRNA-seq의 drop-out 현상과 그로 인한 sparse matrix(barcodes.tsv/features.tsv/matrix.mtx) 저장 형식에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "drop-out은 세포 내에 실제로 존재하는 transcript임에도 검출되지 않아 발현값이 0으로 기록되는 현상으로, 세포 하나의 미량 cDNA를 증폭해 포착해야 하는 낮은 capture 효율이 주된 원인이다.",
+      "drop-out으로 기록된 0은 모두 명확한 비발현(true zero)이므로, 본래 발현이 낮은 유전자의 0과 기술적으로 완벽히 구분되어 별도의 결측 처리가 필요 없다.",
+      "drop-out 때문에 Gene-Cell 행렬에는 0이 매우 많아 sparse(희소) 행렬이 되며, 모든 0을 일반 표 형태로 저장하면 0마다 공간을 차지해 파일 크기가 비효율적으로 커진다.",
+      "Cell Ranger는 이를 0이 아닌 값만 좌표로 기록하는 sparse 형식으로 분리 저장하여, barcodes.tsv(세포 바코드)·features.tsv(유전자)·matrix.mtx(발현값) 세 파일로 출력한다.",
+      "matrix.mtx 파일의 한 줄이 '154 1 21'이면, features.tsv의 154번째 유전자가 barcodes.tsv의 1번째 세포에서 UMI count 21로 발현되었음을 의미한다."
+    ],
+    "answer_index": 1,
+    "explanation": "정답은 2번. drop-out의 핵심 문제는 '0이 두 종류로 섞인다'는 점입니다. 즉 실제로 발현이 없어서 0인 경우(true zero)와, 실재하는 transcript를 포획하지 못해 0이 된 경우(technical drop-out)가 한 행렬 안에 뒤섞여 있어 둘을 구분하기 어렵습니다. 2번은 '모든 0이 명확한 비발현이라 완벽히 구분되어 처리가 필요 없다'고 단정해 정반대로 서술했으므로 틀렸습니다. 교수님은 녹음에서 '0인 데가 되게 많아요, drop-out이 많다고 표현하는데, 세포 하나에 있는 cDNA를 증폭해서 잡아내야 하기 때문에 놓치는 경우가 되게 많아요, 그럼 transcript가 하나도 안 나오는 0이 되겠죠'라고 반복·경고했습니다. 또 데이터가 '바코드·피처·매트릭스 파일로 갈라져' 오는 이유를 '0이 들어갈 때마다 다 공간을 차지하면 데이터 사이즈가 커지기 때문'이라 설명하고, '154 1 21'이면 'features의 154번째 진이 1번째 바코드(세포)에서 UMI count 21'이라고 직접 읽어 주었습니다(슬라이드 p.28).",
+    "correct_fact": "올바른 서술: drop-out으로 생긴 0(technical zero)과 본래 비발현인 0(true zero)은 행렬 안에서 섞여 있어 통계적으로 구분하기 어려우며, 이 때문에 별도의 모델링이 필요한 문제가 된다. 0이 모두 명확한 비발현인 것은 아니다.",
+    "selection_reason": "선정사유: 2장뿐인 '필수슬라이드' 중 하나인 요약(마지막) Keywords 슬라이드의 단독 항목('Drop-out')으로, 교수가 강의 종반에 '이 용어들을 정확히 알고 있으면 된다'고 출제를 직접 예고. '154 1 21' 예시는 슬라이드 p.28에 그대로 명시되어 닫힌우주 근거 충족. 교수가 '0인 데가 되게 많아요', '놓치는 경우가 되게 많아요'라고 반복·경고(S2·S5·S6). DRAFT W=3 TIER1인데 기존 4문항(scrna-1~4)에 미커버.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": false,
+      "pdf": "",
+      "page": 0,
+      "caption": ""
+    }
+  },
+  {
+    "id": "scrna-g2",
+    "lecture_key": "scrna",
+    "lecture_label": "03-24 단일세포 전사체 scRNAseq (이혜옥 교수)",
+    "topic": "PCA(선형 차원축소) 원리 + Elbow plot으로 PC 수 결정 + PCA→UMAP/clustering 입력 관계",
+    "exam_probability": 84,
+    "tier": 1,
+    "stem": "다음 중 scRNA-seq 분석에서 PCA(주성분분석)와 PC 수 결정(Elbow plot), 그리고 PCA가 downstream(UMAP/clustering)과 맺는 관계에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "PCA는 비선형(non-linear) 차원축소이므로 데이터의 굽은 manifold를 직접 학습해 2D 평면에 표현하며, UMAP은 그 PCA 결과를 선형으로 재투영하는 후처리 단계이다.",
+      "PCA는 함께 움직이는(상관된) feature들을 하나로 묶은 새로운 축(PC)을 정의하는 선형(linear) 차원축소 방법이다.",
+      "각 PC는 상관된 유전자 집합을 요약한 'metafeature'에 해당하므로, 수천~수만 차원을 상위 일부 PC로 줄여도 데이터의 주요 변이와 생물학적 정보를 압축해 보존한다.",
+      "Elbow plot은 PC를 variance 설명력 순으로 늘어놓아 곡선이 완만해지는 '팔꿈치' 지점에서 사용할 PC 수를 정하는 heuristic 방법으로, PC 수를 달리해도 downstream 결과가 극적으로 달라지지는 않는 경우가 많다.",
+      "graph-based clustering과 UMAP은 모두 PCA로 얻은 PC 값을 입력으로 사용하므로, 동일한 PC 집합을 입력으로 주면 두 결과가 서로 비슷하게 나오는 경향이 있다."
+    ],
+    "answer_index": 0,
+    "explanation": "정답은 1번. 선형/비선형이 정반대로 뒤집혔고 순서도 거꾸로입니다. 슬라이드는 PCA를 'linear dimensional reduction'(p.34)이자 'PCA(Linear)'(p.25)로, UMAP/tSNE를 'Non-linear'(p.25, p.38 'non-linear dimensional reduction')로 명시합니다. 실제 분석 순서는 PCA로 먼저 차원을 줄인 뒤(예: 상위 PC), 그 PC 값을 입력으로 UMAP과 clustering을 수행하는 것이지, PCA가 UMAP 결과를 재투영하는 후처리가 아닙니다(p.38 'As input to the UMAP and tSNE, we suggest using the same PCs as input to the clustering analysis'). 슬라이드 p.35는 각 PC가 'metafeature'로서 상관된 feature 집합을 요약한다고 명시하며, p.36은 Elbow plot이 'heuristic method'이고 PC 수(10/15/50)를 달리해도 결과가 극적으로 달라지지 않는다고 적습니다. 교수님은 녹음에서 'covariance 매트릭스에서 eigenvalue를 뽑아내는 것, 같이 움직이는 feature 축을 새로 만든다', 'PC를 많이 쓴다고 꼭 좋은 거는 아니에요', 'UMAP도 PC 값을 쓰고 clustering도 PC를 가지고 진행하니까 비슷하게 나올 수밖에 없다'고 설명했습니다.",
+    "correct_fact": "올바른 서술: PCA는 슬라이드 p.25/p.34에 명시된 대로 '선형(linear)' 차원축소이고, UMAP/tSNE가 '비선형(non-linear)' 방법이다. 분석 순서는 PCA로 먼저 PC를 뽑은 뒤 그 PC 값을 입력으로 UMAP/clustering을 수행하는 것이며(p.38), PCA가 UMAP 결과를 재투영하는 후처리가 아니다.",
+    "selection_reason": "선정사유: 요약 Keywords 슬라이드('Principal component analysis', 'Data visualization, PCA, UMAP, tSNE')에 명기된 항목 + 전용 슬라이드 p.34('linear dimensional reduction'), p.35('metafeature'), p.36(Elbow plot 'heuristic'), p.25('PCA(Linear)' vs 'Non-linear'), p.38(PCA의 PC를 UMAP/clustering 입력으로). PCA linear vs UMAP/tSNE non-linear 대조(S7), PC 수 결정 heuristic 강조. DRAFT W=4 TIER1인데 기존 문항에서 독립 미커버(scrna-2는 UMAP/clustering 구분에 초점). 정답·오답 모두 슬라이드 직접 근거.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": false,
+      "pdf": "",
+      "page": 0,
+      "caption": ""
+    }
+  },
+  {
+    "id": "scrna-g3",
+    "lecture_key": "scrna",
+    "lecture_label": "03-24 단일세포 전사체 scRNAseq (이혜옥 교수)",
+    "topic": "Multi-modal data generation — CITE-seq의 ADT(Antibody-Derived Tag)로 표면 단백질 phenotype 동시 측정",
+    "exam_probability": 78,
+    "tier": 1,
+    "stem": "다음 중 multi-modal scRNA-seq의 한 방식인 CITE-seq와 그 핵심 요소인 ADT(Antibody-Derived Tag)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "CITE-seq에서 ADT는 항체의 결합 특이성(binding specificity)에 의존하므로, 검증 없이 많은 항체 패널을 무작정 적용하면 비특이 결합 때문에 데이터가 망가질 수 있어 항체별 specificity 확인이 필요하다.",
+      "ADT는 transcript보다 항상 세포 유형을 정확히 구분하므로, CITE-seq에서는 transcript(mRNA) 데이터를 버리고 ADT 정보만으로 세포 유형을 정의하는 것이 표준 절차이다.",
+      "CITE-seq는 한 세포에서 transcript(mRNA)와 표면 단백질(surface protein) 정보를 함께 얻는 multi-modal data generation 방식의 하나이다.",
+      "ADT는 세포 표면 단백질에 결합하는 항체에 시퀀싱 가능한 oligonucleotide 바코드를 붙인 것으로, 이를 통해 surface protein phenotype을 측정한다.",
+      "ADT(표면 단백질)와 transcript는 서로를 대체하기보다 보완하는 정보로, 둘을 함께 분석하면 transcript 단독보다 세포 유형 해석이 더 정확해질 수 있다."
+    ],
+    "answer_index": 1,
+    "explanation": "정답은 2번. 슬라이드 p.54는 ADT를 'Antibody-derived Tags (ADT) for surface protein phenotype'로, 그리고 CITE-seq를 p.52 'Multi-modal data generation' 단원의 한 방식으로 명시합니다. CITE-seq의 핵심은 한 세포에서 transcript와 표면 단백질을 '함께' 측정해 서로 보완한다는 데 있지, ADT가 transcript를 대체하는 것이 아닙니다. 2번은 'transcript를 버리고 ADT만 쓰는 게 표준'이라고 했으므로 multi-modal(동시 측정)이라는 정의 자체와 모순되어 틀렸습니다. 교수님은 녹음에서 'transcript로 정의한 population이 surface protein으로 sorting한 population과 같다는 걸 어느 시점에선 증명해줘야 한다', '몇 천만원 들여 수백 개 항체를 염색했다면 binding specificity를 확인해야 한다, 안 그러면 망하기 시작이죠'라며 항체 특이성 검증을 강조했습니다. 즉 ADT는 항체 수가 제한적이고 비특이 결합 위험이 있어 transcript를 대체하는 것이 아니라 함께 분석해야 합니다.",
+    "correct_fact": "올바른 서술: CITE-seq는 한 세포에서 transcript와 표면 단백질을 동시에 측정하는 multi-modal 방식이며(슬라이드 p.52·p.54), ADT(표면 단백질)와 transcript는 서로 보완 관계로 함께 분석할 때 더 정확하다. ADT가 transcript를 대체하지 않으며, transcript를 버리고 ADT만 쓰는 것이 표준이 아니다.",
+    "selection_reason": "선정사유: 요약(마지막) Keywords 슬라이드의 단독 항목('CITE-seq')이자 p.52 'Multi-modal data generation' 단원, p.54 'Antibody-derived Tags (ADT) for surface protein phenotype' 슬라이드에 직접 근거. 교수가 '항체 specificity 확인해야'(S6)·'transcript로 정의한 population이 surface protein sorting과 같음을 증명'(S2)을 강조. 정답·오답을 슬라이드의 ADT 정의('surface protein phenotype')와 multi-modal(동시측정) 정의에 맞춰 닫힌우주 안에서 판정 가능하도록 교정(원안의 CD4-monocyte 등 스크립트 단독 세부 의존 축소). DRAFT W=3 TIER1, 기존 문항 미커버.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": false,
+      "pdf": "",
+      "page": 0,
+      "caption": ""
+    }
+  },
+  {
+    "id": "scrna-g4",
+    "lecture_key": "scrna",
+    "lecture_label": "03-24 단일세포 전사체 scRNAseq (이혜옥 교수)",
+    "topic": "Spatial Transcriptomics(Visium) vs scRNA-seq — 위치 보존, Spatial Barcode × Gene, 해상도·feature 발전 방향",
+    "exam_probability": 75,
+    "tier": 1,
+    "stem": "다음 중 Spatial Transcriptomics(공간 전사체)와 scRNA-seq의 비교, 그리고 Visium·Xenium 등 공간 전사체 기술에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "scRNA-seq는 조직을 단일세포 현탁액으로 dissociation하면서 세포의 위치 정보가 소실되는 반면, spatial transcriptomics는 위치 정보를 보존한 채 전사체를 측정한다.",
+      "Visium은 cell barcode 대신 spatial barcode를 슬라이드에 심어 둔 뒤 조직 mRNA를 포획하므로, 최종 데이터는 '어느 세포'가 아니라 '슬라이드의 어느 위치(spot)'에서 왔는지를 담은 Spatial Barcode × Gene 행렬이 된다.",
+      "공간 전사체 기술은 해상도와 측정 feature 수를 더 높이는 방향(higher resolution & more features)으로 발전하고 있으며, 이미 완성·정체된 분야가 아니라 여러 신기술이 계속 등장하는 영역이다.",
+      "Xenium은 슬라이드에 명시된 대로 수백 개 규모의 panel 유전자(예: 약 476개)를 표적으로 측정하는 방식이므로, 모든 유전자를 포괄하는 whole-transcriptome 데이터가 그대로 나오지는 않는다.",
+      "Visium은 처음부터 단일세포(~10μm) 수준의 해상도로 각 세포를 개별 분해하여 측정하므로, 한 spot에 여러 세포가 섞이는 문제는 발생하지 않는다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번. 슬라이드 p.57(Visium)은 spatial barcode 기반의 'Spatial Barcode × Gene' 행렬과 'In situ'를 보여 주며, Visium의 측정 단위는 개별 세포가 아니라 슬라이드 위의 위치(spot)입니다. 따라서 처음부터 단일세포 해상도로 각 세포를 분해한다는 5번은 틀렸습니다(한 spot에 여러 세포가 섞일 수 있어 단일세포 수준이 아닙니다). 교수님은 녹음에서 Visium을 '약 100마이크론 레솔루션, 싱글셀 수준은 아니에요, 리저널 어낼리시스, 홀 트랜스크립톰은 됩니다'라고 설명했고, '고해상도로 갈수록 비싸지고 디텍션 영역이 줄어든다', 'regional(Visium)은 사라질 줄 알았는데 계속 남아 있다'고 했습니다. 슬라이드 p.58은 Xenium을 'Human Multicancer+TME panel ~476 genes'로, p.62는 'Towards higher resolution & more features'(Visium HD, Stereo-seq, Xenium 5000 genes)로 명시해 4번(panel 표적, whole-transcriptome 아님)과 3번(해상도·feature 확장 방향)을 뒷받침합니다.",
+    "correct_fact": "올바른 서술: Visium은 슬라이드(p.57)대로 spatial barcode 기반으로 '위치(spot)' 단위로 측정하므로 한 spot에 여러 세포가 섞일 수 있어 처음부터 단일세포(~10μm) 해상도로 각 세포를 분해하는 방식이 아니다. 단일세포 수준의 분해는 Xenium 등 더 높은 해상도 기술이 지향하는 방향이다.",
+    "selection_reason": "선정사유: 요약(마지막) Keywords 슬라이드의 단독 항목('Spatial transcriptomics')이며 본deck 마지막 단원(p.57 Visium 'Spatial Barcode × Gene', 'In situ'; p.58 Xenium '~476 genes' panel; p.62 'Towards higher resolution & more features')으로 '마지막 슬라이드 집중출제' 원칙 직접 적용. singlecell vs spatial 비교(S7). 정답·오답을 슬라이드에 실제 적힌 사실(Spatial Barcode × Gene, ~476 panel, higher resolution & more features)에 맞춰 판정 가능하도록 교정(원안의 정확한 μm/nm 수치·rolling circle 등 스크립트 단독 세부에 정오답을 걸지 않음). DRAFT W=3 TIER1, 기존 문항 미커버.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "20260324_대학원합동강의_scRNAseq_.pdf",
+      "page": 57,
+      "caption": "Spatial Transcriptomics(Visium) 도식 — Spatial Barcode × Gene 행렬과 In situ 개념(p.57). 이후 p.58 Xenium(~476 genes panel), p.62 'Towards higher resolution & more features'(Visium HD, Stereo-seq)와 비교하는 시각자료"
+    }
+  }
+]

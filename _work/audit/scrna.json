@@ -1,0 +1,175 @@
+{
+  "lecture_key": "scrna",
+  "lecture_label": "03-24 scRNAseq (이혜옥)",
+  "summary_universe": [
+    {
+      "topic": "UMI(Unique Molecular Identifier) 정량 원리 — 동일 UMI=증폭산물 1계수 / 다른 UMI=원본분자 각각 계수",
+      "source": "필수슬라이드 p.1(UMI/Cell Barcode 도식, O/X 중복제거) + 본deck p.20 + 요약 Keywords 슬라이드(p.64/필수슬라이드 p.2)",
+      "exam_prob": 97,
+      "reason": "2장뿐인 '필수슬라이드' 중 1장이 통째로 UMI 도식. 교수가 녹음에서 '저는 이제 꼭 냅니다'라고 출제를 직접 명시(S6+직접언급). 요약 Keywords 슬라이드에도 UMI 명기. 닫힌우주·써머리·교수강조 3중 충족 최상위."
+    },
+    {
+      "topic": "Cell Barcode — 동일 droplet/bead의 모든 oligo가 같은 서열을 공유하여 세포 출처 표지(UMI와 구분)",
+      "source": "필수슬라이드 p.1(Cell Barcode 도식) + 요약 Keywords 슬라이드 + 본deck p.18,p.20",
+      "exam_prob": 80,
+      "reason": "필수슬라이드 도식에서 UMI와 나란히 제시되는 비교 축. 요약 Keywords에 'Cell barcodes' 단독 명기. UMI 정량과 한 문항 내 비교·대조(S7) 1순위 소재."
+    },
+    {
+      "topic": "Drop-out / Sparse matrix(barcodes·features·matrix.mtx) — 포획효율 한계로 실재 transcript가 0으로 기록",
+      "source": "요약 Keywords 슬라이드(p.64/필수슬라이드 p.2, 'Drop-out' 명기) + 본deck p.28(sparse matrix), p.24",
+      "exam_prob": 85,
+      "reason": "요약(마지막) 슬라이드 Keywords의 단독 항목. 교수가 '0인데가 되게 많아요', '놓치는 경우가 되게 많아요' 반복·경고(S2·S5·S6). 써머리 가중 + DRAFT W=3 TIER1인데 현재 미커버."
+    },
+    {
+      "topic": "Normalization(LogNormalize) — total UMI로 나눠 ×scale factor(10,000) 후 log, 세포간 depth 보정 ln(UMI/Total×10^4+1)",
+      "source": "요약 Keywords 슬라이드('Normalization') + 본deck p.31(수식·예시표), p.24",
+      "exam_prob": 82,
+      "reason": "요약 Keywords 단독 항목 + 수식 슬라이드 존재. DRAFT W=3 TIER1. 현재 QC/Scaling과 묶인 한 문항 안에 선지로만 들어가 독립 비중이 낮음."
+    },
+    {
+      "topic": "Scaling(Z-transformation) — Z=(X-μ)/σ, mean0/SD1; housekeeping 고발현 유전자의 PCA dominate 방지",
+      "source": "요약 Keywords 슬라이드('Scaling, z-transformation') + 본deck p.33, p.24",
+      "exam_prob": 85,
+      "reason": "요약 Keywords 단독 항목. 교수 '하우스키핑 진이 도미네이트하게 됩니다' 경고(S6) + 기전형 변별. DRAFT W=4 TIER1. 현재 통합문항 선지로만 존재."
+    },
+    {
+      "topic": "PCA(선형 차원축소) — covariance에서 eigenvalue, 같이 움직이는 유전자축 요약; 상위 20~50 PC; Elbow plot으로 PC수 결정",
+      "source": "요약 Keywords 슬라이드('Principal component analysis','Data visualization, PCA, UMAP, tSNE') + 본deck p.34~36",
+      "exam_prob": 84,
+      "reason": "요약 Keywords에 PCA 명기 + 전용 슬라이드 3장. 교수 분량집중·반복(S1·S5). DRAFT W=4 TIER1인데 현재 4문항에서 독립 커버 없음(UMAP문항 선지로만 언급). 고출제 미커버 핵심."
+    },
+    {
+      "topic": "UMAP/tSNE(비선형 차원축소) vs graph-based clustering(KNN+Jaccard+Louvain) 구분",
+      "source": "요약 Keywords 슬라이드('Data visualization, PCA, UMAP, tSNE') + 본deck p.37(clustering), p.38·p.44(UMAP)",
+      "exam_prob": 90,
+      "reason": "요약 Keywords 명기 + 교수가 '리뷰어 중 경기를 일으키는 분' 강한 경고(S6), 용어구분 반복(S5·S7). 현재 scrna-2가 정확히 커버 중."
+    },
+    {
+      "topic": "3' vs 5' scRNA-seq + TCR/BCR immune profiling(V(D)J 5'위치, 400bp 라이브러리, clonality)",
+      "source": "요약 Keywords 슬라이드(\"Full-length, 5', 3' sequencing\",'single cell BCR/TCR sequencing') + 본deck p.18,p.21,p.22",
+      "exam_prob": 88,
+      "reason": "요약 Keywords 2개 항목으로 명기 + 비교·대조(S7)·경고('적합하지 않아요',S6)·담화표지(S2). 현재 scrna-3가 커버 중."
+    },
+    {
+      "topic": "QC 파라미터(nGene/nUMI/%Mito) — empty/dead/doublet 판별, %Mito=(MT UMI/Total UMI)×100, 임계값 데이터별 결정",
+      "source": "본deck p.24,p.30(violin/scatter, %Mito 공식, subset 코드)",
+      "exam_prob": 82,
+      "reason": "교수가 violin/scatter plot 직접 행해설(B2) + '데이터마다 되게 달라요','반드시 보고 끊어낼지 결정'(S2·S6). 요약 Keywords 단독항목은 아니나 강조도 높음. 현재 scrna-4가 커버 중."
+    },
+    {
+      "topic": "Feature selection(HVG) — cell-to-cell variation 큰 유전자 default 2,000개 선별 → downstream(PCA)",
+      "source": "요약 Keywords에는 미명기; 본deck p.32, p.24",
+      "exam_prob": 60,
+      "reason": "워크플로 필수 단계지만 요약 Keywords 단독항목 아님(DRAFT W=2 TIER2). 단답/선지급. 현재 scrna-4 선지로 커버."
+    },
+    {
+      "topic": "Cell Ranger — demultiplexing/alignment/barcode·UMI filtering/marking duplicates(white-list 보정)",
+      "source": "요약 Keywords 슬라이드('Cell Ranger') + 본deck p.24",
+      "exam_prob": 68,
+      "reason": "요약 Keywords 단독항목 + 교수 white-list·sorting 해설. 단순 파이프라인 암기성이라 객관식/단답 비중. 현재 미커버이나 변별력 보통."
+    },
+    {
+      "topic": "CITE-seq(ADT, Antibody-Derived Tags) — transcript+표면단백 동시측정; CD4 예시(monocyte transcript 노이즈)",
+      "source": "요약 Keywords 슬라이드('CITE-seq') + 본deck p.53,p.54",
+      "exam_prob": 78,
+      "reason": "요약 Keywords 단독항목 + 교수 'transcript로 정의한 population이 surface protein sorting과 같다는 걸 증명해줘야'(S2·S6), '200개 항체 망하기 시작'(S6) 강조. DRAFT W=3 TIER1인데 현재 미커버. 써머리 가중 고출제."
+    },
+    {
+      "topic": "scATAC-seq — transposase가 open chromatin에 삽입·태깅, regulatory landscape(epigenome)",
+      "source": "요약 Keywords에는 미명기; 본deck p.55",
+      "exam_prob": 55,
+      "reason": "멀티모달 1슬라이드, 요약 Keywords 미포함(DRAFT W=1 TIER2). 객관식/distractor급. 미커버이나 저비중."
+    },
+    {
+      "topic": "Spatial Transcriptomics(Visium) vs scRNA-seq — 위치보존, spatial barcode×gene, ~100μm regional(단일세포 아님); Xenium(~2μm,probe+RCA)·Stereo-seq",
+      "source": "요약 Keywords 슬라이드('Spatial transcriptomics') + 본deck p.57~62",
+      "exam_prob": 75,
+      "reason": "요약 Keywords 단독항목 + 마지막 6장 deck의 절반이 spatial(p.57~62), 2020 Method of the Year 언급(S1·S5·S7 비교). DRAFT W=3 TIER1인데 현재 미커버. 마지막 슬라이드 집중 가중."
+    },
+    {
+      "topic": "Cell type annotation / cluster DEG(FindAllMarkers, Wilcoxon default, marker table)",
+      "source": "요약 Keywords 슬라이드('Cell type annotation, cluster DEG') + 본deck p.39(DE test 목록), p.43(marker table), p.44",
+      "exam_prob": 65,
+      "reason": "요약 Keywords 단독항목 + marker→celltype 표(p.43) 존재. 다만 교수 강조 약(S5단발). 단답/객관식급, 현재 미커버."
+    }
+  ],
+  "current_topics": [
+    {
+      "id": "scrna-1",
+      "topic": "UMI 정량 원리(동일 UMI=증폭중복 1계수 / 다른 UMI=원본분자 각각)",
+      "exam_prob_reassessed": 97,
+      "keep": true,
+      "note": "필수슬라이드(2장 중 1장) 정면 도식 + 교수 직접 출제명시('꼭 냅니다'). 써머리 가중·교수강조 모두 최상위. 5번 선지의 정/역 뒤집기가 정밀하고 박사 변별력 높음. 유지 필수, 덱의 앵커 문항."
+    },
+    {
+      "id": "scrna-2",
+      "topic": "UMAP/tSNE(비선형 시각화) vs graph-based clustering 구분 + UMAP 클러스터간 거리 무의미",
+      "exam_prob_reassessed": 90,
+      "keep": true,
+      "note": "요약 Keywords('PCA, UMAP, tSNE') 명기 + 교수 최강 경고(S6 '리뷰어 경기'). local 보존/global 미보존 5번 함정이 개념 변별력 높음. 유지."
+    },
+    {
+      "id": "scrna-3",
+      "topic": "3' vs 5' scRNA-seq + TCR/BCR(V(D)J 5'위치, 400bp 라이브러리)",
+      "exam_prob_reassessed": 88,
+      "keep": true,
+      "note": "요약 Keywords 2항목 명기 + 비교·경고 신호. 라이브러리 길이(100 vs 400bp) 함정이 기전형 변별. 유지."
+    },
+    {
+      "id": "scrna-4",
+      "topic": "워크플로 통합(QC→Normalization→Feature selection→Scaling→PCA) %Mito 임계값 고정 오류 함정",
+      "exam_prob_reassessed": 82,
+      "keep": true,
+      "note": "교수 강조도 높은 QC를 정답축으로 한 좋은 통합문항. 다만 한 문항이 Norm/HVG/Scaling/QC 4개 TIER1을 선지로만 묶어, 각 주제의 독립 출제 위험을 단일 함정으로 환원. 유지하되 Scaling·Normalization·PCA의 독립 보충이 필요(아래 gaps 참고)."
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "Drop-out / sparse matrix(.mtx) 현상·원인·행렬 영향",
+      "source_slide": "요약 Keywords 슬라이드(p.64/필수슬라이드 p.2 'Drop-out') + 본deck p.28",
+      "exam_prob": 85,
+      "why_high_yield": "summary/last-slide: 2장 필수슬라이드 중 요약 Keywords의 단독 항목. 교수 반복·경고(S2·S5·S6, '0인데가 되게 많아요'). DRAFT W=3 TIER1인데 현재 4문항 어디에도 미커버. 써머리 가중 최우선.",
+      "recommend_add": true
+    },
+    {
+      "topic": "CITE-seq(ADT) — transcript+표면단백 동시측정, CD4 예시로 transcript 단독 한계",
+      "source_slide": "요약 Keywords 슬라이드('CITE-seq') + 본deck p.53~54",
+      "exam_prob": 78,
+      "why_high_yield": "summary/last-slide: 요약 Keywords 단독항목 + 마지막 멀티모달 구간. 교수 강한 담화·경고(S2·S6 'CD4 transcript는 monocyte도 발현','200개 항체 망하기 시작'). DRAFT W=3 TIER1, 미커버. 적용·기전형 변별 우수.",
+      "recommend_add": true
+    },
+    {
+      "topic": "Spatial Transcriptomics(Visium) vs scRNA-seq — 위치보존, ~100μm regional(단일세포 아님), Xenium/Stereo-seq trade-off",
+      "source_slide": "요약 Keywords 슬라이드('Spatial transcriptomics') + 본deck 마지막 6장 p.57~62",
+      "exam_prob": 75,
+      "why_high_yield": "summary/last-slide + 비교표/그림: 본deck 마지막 6장의 절반이 spatial, 교수가 강의 종반 비중 있게 비교(S7). 요약 Keywords 단독항목. DRAFT W=3 TIER1, 미커버. '마지막 슬라이드 집중출제' 원칙 직접 적용.",
+      "recommend_add": true
+    },
+    {
+      "topic": "PCA(선형 차원축소) 원리 + Elbow plot으로 PC수 결정, PCA→UMAP/clustering 입력 관계",
+      "source_slide": "요약 Keywords 슬라이드('Principal component analysis') + 본deck p.34~36",
+      "exam_prob": 84,
+      "why_high_yield": "summary: 요약 Keywords 명기 + 전용 슬라이드 3장 + 교수 covariance/eigenvalue 분량집중(S1·S4). DRAFT W=4 TIER1인데 현재 scrna-2 선지로만 스침, 독립 미커버. 기전형 고변별.",
+      "recommend_add": true
+    },
+    {
+      "topic": "Scaling(Z-transformation) 단독 — housekeeping dominate 방지 기전",
+      "source_slide": "요약 Keywords 슬라이드('Scaling, z-transformation') + 본deck p.33",
+      "exam_prob": 80,
+      "why_high_yield": "summary: 요약 Keywords 단독항목, 교수 'housekeeping 도미네이트' 경고(S6), DRAFT W=4 TIER1. 현재 scrna-4 선지 내 1개로만 다뤄져 독립 출제시 미흡. 다만 add 한도 고려시 PCA/CITE/Spatial/Drop-out보다 후순위.",
+      "recommend_add": false
+    },
+    {
+      "topic": "Cell Ranger 파이프라인 / Cell type annotation·DEG",
+      "source_slide": "요약 Keywords 슬라이드('Cell Ranger','Cell type annotation, cluster DEG') + 본deck p.24,p.39,p.43",
+      "exam_prob": 66,
+      "why_high_yield": "summary: 요약 Keywords 항목이나 암기성 강하고 교수 강조 약. 객관식/단답급. 서술형 덱의 핵심 변별 문항으로는 후순위.",
+      "recommend_add": false
+    }
+  ],
+  "weak_to_replace": [],
+  "verdict": "needs_additions",
+  "recommended_add_count": 4,
+  "recommended_drop_ids": [],
+  "notes": "현재 4문항(UMI, UMAP/clustering, 3'/5'+TCR/BCR, 워크플로 통합QC)은 모두 keep — 약문항·중복·단순암기 없음(교체 불필요). 문제는 커버리지 갭: 2장뿐인 필수슬라이드 중 하나가 '요약 Keywords 슬라이드'(deck p.64와 동일, 교수가 강의 마지막에 '시험문제 이 용어들 정확히 알면 된다'고 명시)인데, 그 Keywords의 단독 항목 중 Drop-out·CITE-seq·Spatial transcriptomics·PCA가 현재 문항에 독립적으로 빠져 있음. 써머리 가중 + 교수강조도 high 보정 원칙상 이 4개가 최우선 보충 대상. scrna-4가 Normalization/Feature selection/Scaling/QC 4개 TIER1을 한 문항 선지로 압축하고 있어, 그중 Scaling·Normalization·PCA의 독립 출제 위험이 남으나 add 한도(4)는 Drop-out·CITE-seq·Spatial·PCA 우선. 권장 추가 4문항: (1)Drop-out/sparse matrix 기전형, (2)CITE-seq ADT 적용형(CD4 예시), (3)Spatial(Visium) vs scRNA-seq 비교·해상도 trade-off형, (4)PCA+Elbow+UMAP 입력관계 기전형. 추가 후 예상 커버율: 요약 Keywords 13개 핵심항목 대비 약 92% 도달."
+}

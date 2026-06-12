@@ -1,0 +1,71 @@
+[
+  {
+    "id": "nanomrna-g1",
+    "lecture_key": "nanomrna",
+    "lecture_label": "04-21 나노메디슨·mRNA-LNP (구희범 교수)",
+    "topic": "mRNA-LNP의 4대 구성성분(ionizable cationic lipid / cholesterol / phospholipid / PEG-lipid)과 microfluidic encapsulation 제조 원리 (p19 ONPATTRO Components + p29 On-going projects)",
+    "exam_probability": 75,
+    "tier": 1,
+    "stem": "다음 중 ONPATTRO 슬라이드(p19)와 On-going projects 슬라이드(p29)에 근거한 lipid nanoparticle(LNP)의 구성성분 및 제조 원리에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "LNP는 ionizable cationic lipid, cholesterol, phospholipid, 그리고 PEG-lipid를 핵심 지질 성분으로 포함하며, 여기에 봉입할 핵산(siRNA 또는 mRNA)이 함께 들어간다.",
+      "mRNA(또는 siRNA)를 여러 lipid와 함께 microfluidic device로 흘려보내며 포뮬레이션하면 LNP가 형성되고, 그 안에 핵산이 encapsulation되어 갇힌다.",
+      "교수 연구실은 on-going project로 새로운 ionizable lipid를 직접 합성하여, 어떤 화학 구조의 lipid가 독성은 낮추고 mRNA 전달 효율은 높이는지를 탐색하고 있다.",
+      "ionizable cationic lipid는 봉입 자체에는 관여하지 않는 비활성 충전제이므로, 그 화학 구조를 바꾸어도 LNP의 mRNA 전달 효율이나 독성에는 거의 영향을 주지 않는다.",
+      "동일한 LNP 제조 플랫폼에 봉입 핵산만 siRNA에서 mRNA로 바꾸면 mRNA-LNP가 되며, ONPATTRO(siRNA)와 COVID-19 백신(mRNA)은 사실상 같은 LNP 기술 위에 서 있다."
+    ],
+    "answer_index": 3,
+    "explanation": "정답은 4번입니다. ionizable cationic lipid는 LNP에서 '비활성 충전제'가 아니라 가장 핵심적인 성분입니다. 교수가 p29 on-going project로 강조한 것이 바로 '새로운 ionizable lipid를 합성해서, 어떤 화학 구조의 lipid를 썼을 때 LNP가 독성은 적게, mRNA 전달은 더 효율적으로 하는가'를 연구하는 것이었습니다(녹음 38:31~39:13). 즉 ionizable lipid의 구조를 바꾸는 것이 곧 전달 효율과 독성을 결정하는 핵심 변수이므로, '구조를 바꿔도 영향이 거의 없다'는 4번은 정확히 거꾸로 된 진술입니다. 나머지는 모두 옳습니다: p19에 'Components: siRNA, ionizable cationic lipids, cholesterol, phospholipids, and PEG-lipids'로 4대 지질+핵산이 명시(1번), mRNA를 lipid들과 함께 microfluidic device로 만들고 그 안에 mRNA가 encapsulation됨(2번, 녹음 26:01), 새 ionizable lipid 합성으로 저독성·고효율 추구(3번, p29 'Developing new ionizable lipid & LNP' + 녹음 39:13), siRNA→mRNA로 봉입물만 바꾼 동일 LNP 플랫폼(5번, 녹음 32:19~32:56).",
+    "correct_fact": "ionizable cationic lipid는 LNP의 핵심 기능성 성분으로, 그 화학 구조를 바꾸면 mRNA 전달 효율과 독성이 달라진다. 교수 연구실이 새로운 ionizable lipid를 합성해 '저독성·고효율'을 추구하는 on-going project(p29 'Developing new ionizable lipid & LNP')가 바로 이 점을 보여준다. LNP는 ionizable cationic lipid·cholesterol·phospholipid·PEG-lipid의 4대 지질과 봉입 핵산으로 구성되며(p19), microfluidic device로 핵산을 봉입(encapsulation)해 제조한다.",
+    "selection_reason": "감사 gaps[] 중 exam_prob 최상위(75) 항목. 슬라이드 p19에 LNP 4대 구성성분이 텍스트로 '명시'되어 닫힌우주(C1) 진위판정이 가장 강하고, p29 On-going projects 슬라이드 텍스트에 'Developing new ionizable lipid & LNP'와 'Microfluidics & simulation for LNP optimization'이 명시됨(S1 분량집중+S5 반복). 기존 3문항이 LNP의 '봉입/전달 역할'만 다루고 '무엇으로 이뤄졌나(조성)'는 미커버한 갭. ionizable lipid의 역할을 비활성 충전제로 뒤바꾼 정밀 오류로 대학원 기전 변별.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "20260421_합동강의_koo.pdf", "page": 19, "caption": ""}
+  },
+  {
+    "id": "nanomrna-g2",
+    "lecture_key": "nanomrna",
+    "lecture_label": "04-21 나노메디슨·mRNA-LNP (구희범 교수)",
+    "topic": "ONPATTRO(Patisiran): 최초 LNP siRNA 치료제(2018 FDA, COVID 이전), hATTR amyloidosis, 50nm IV LNP / siRNA(double-strand) vs mRNA(single-strand) 차이 (p19)",
+    "exam_probability": 70,
+    "tier": 1,
+    "stem": "다음 중 ONPATTRO(Patisiran) 슬라이드(p19)와 LNP 기술史에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "ONPATTRO는 RNA interference(RNAi) 기반 치료제로, hereditary transthyretin-mediated(hATTR) amyloidosis의 다발신경병증 치료에 사용되며 정맥(IV) infusion으로 투여된다.",
+      "ONPATTRO는 약 50 nm 크기의 lipid nanoparticle(LNP) 제형으로, 2018년 미국(USA)에서 FDA 승인을 받아 COVID-19 백신보다 먼저 임상에 적용되었다.",
+      "ONPATTRO가 봉입한 핵산은 double-strand의 짧은 siRNA이고, COVID-19 mRNA-LNP 백신이 봉입한 핵산은 single-strand의 mRNA로, 두 제형은 봉입 핵산의 형태에서 차이가 있다.",
+      "ONPATTRO의 등장은 LNP 기술이 2000년대 초부터 이어진 오랜 역사 끝에 siRNA 제형으로 먼저 임상·제품화된 사례로, 이후 COVID로 같은 플랫폼이 mRNA에 전용되었다.",
+      "ONPATTRO는 COVID-19 백신용 mRNA-LNP가 먼저 상용화된 뒤, 그 mRNA를 siRNA로 교체하여 만들어진 첫 후속 siRNA 치료제로서 2018년보다 나중에 승인되었다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번입니다. 역사적 선후 관계가 완전히 뒤집혀 있습니다. p19 슬라이드에 ONPATTRO의 'FDA approval year / Country: 2018 / USA'가 명시되어 있고, 교수가 강조한 핵심은 'siRNA 제형인 ONPATTRO가 2018년에 먼저 임상승인(COVID 이전)되었고, 그 LNP 플랫폼이 있었기 때문에 COVID가 터졌을 때 mRNA에 바로 적용되어 화이자·모더나 백신이 탄생했다'는 것입니다(녹음 32:19~32:56). 즉 siRNA-LNP(2018)가 먼저이고 mRNA-LNP(2020)가 나중인데, 5번은 'mRNA-LNP가 먼저 나오고 ONPATTRO가 그 후속'이라며 순서를 거꾸로 뒤집었습니다. 또한 ONPATTRO는 'mRNA를 siRNA로 교체해 만든' 것이 아니라 독립적으로 먼저 개발·승인된 제형입니다. 나머지는 모두 옳습니다: RNAi 기반·hATTR amyloidosis·IV infusion(1번, p19), 50nm LNP·2018/USA·COVID 이전(2번, p19 + 녹음 32:19), siRNA는 double-strand·mRNA는 single-strand(3번, 녹음 32:19), 2000년대 초부터의 LNP 역사 끝에 siRNA로 먼저 제품화 후 mRNA로 전용(4번, 녹음 32:19~32:56).",
+    "correct_fact": "ONPATTRO(Patisiran)는 p19에 명시된 대로 2018년 미국에서 FDA 승인된 siRNA-LNP 치료제(hATTR amyloidosis, 50nm, IV infusion)로 COVID-19 백신(mRNA-LNP, 2020)보다 먼저 등장했다. 즉 siRNA-LNP가 먼저이고, 그 LNP 플랫폼에 봉입 핵산만 mRNA로 바꿔 COVID 백신이 탄생했다(녹음 32:56). ONPATTRO는 double-strand siRNA, mRNA-LNP 백신은 single-strand mRNA를 봉입한다.",
+    "selection_reason": "감사 gaps[] 중 exam_prob 70 항목. 슬라이드 p19는 deck에서 제약사(Alnylam)·승인연도(2018/USA)·적응증(hATTR)·구성·투여경로(IV)·형태(50nm LNP)가 텍스트로 가장 풍부하게 기재된 단일 슬라이드로 닫힌우주 진위판정이 매우 강함(틀린 선지의 핵심 사실 '2018'이 슬라이드에 명시). LNP 기술史의 핵심 앵커(2018 siRNA→2020 mRNA)로 기존 mRNA-LNP 문항과 비교 시너지가 크지만 ONPATTRO 세부는 미커버. 역사적 선후를 뒤집은 인과 전도형 오류로 대학원 변별.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "20260421_합동강의_koo.pdf", "page": 19, "caption": ""}
+  },
+  {
+    "id": "nanomrna-g3",
+    "lecture_key": "nanomrna",
+    "lecture_label": "04-21 나노메디슨·mRNA-LNP (구희범 교수)",
+    "topic": "mRNA-LNP 응용: lung-targeting LNP로 TRAIL & BAK-mRNA를 IV 투여하여 폐암 치료 — luciferase 영상으로 lung-specific 발현 확인, 지질 조성·비율 튜닝으로 organ targeting (p25~27 'mRNA-LNP for lung cancer therapy')",
+    "exam_probability": 64,
+    "tier": 1,
+    "stem": "다음 중 mRNA-LNP를 이용한 폐암 치료 연구 슬라이드(p25~27, 'Intravenous injection of TRAIL & BAK-mRNA by lung-targeting LNP')에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "이 연구는 TRAIL과 BAK라는 두 가지 치료 단백질을 만들어내는 mRNA를 LNP에 실어, 정맥(IV) 주사로 혈액 순환을 통해 폐(lung)를 표적해 폐암을 치료한 것이다.",
+      "LNP를 이루는 lipid의 종류와 조성·비율을 잘 디자인하면, IV 주사로 혈액 순환을 시키더라도 lung·liver·spleen 중 원하는 한 장기로 전달을 어느 정도 조절(targeting)할 수 있다.",
+      "luciferase를 발현하는 mRNA를 IV로 주사하고 luciferin substrate를 투여하면, mRNA가 전달·발현된 부위에서 luminescence가 떠 발현 위치를 영상으로 확인할 수 있다.",
+      "TRAIL은 세포 바깥의 TRAIL receptor에 결합해 apoptosis를 일으키고, BAK은 cytosol 내부의 signaling pathway를 건드려 intrinsic하게 apoptosis를 유도하므로, 두 경로를 동시에 자극하는 combination therapy가 된다.",
+      "이 LNP는 폐에 직접(direct) 주사하여 약물을 국소 투여한 제형이므로 혈액 순환을 거치지 않으며, 따라서 lung 외의 다른 장기로 LNP가 분포할 가능성은 원리상 존재하지 않는다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번입니다. 투여 경로와 분포 원리가 슬라이드·강의 내용과 정반대로 서술되어 있습니다. 슬라이드 p25~27의 부제는 'Intravenous injection of TRAIL & BAK-mRNA by lung-targeting LNP'로, 이 제형은 폐에 '직접 주사'한 것이 아니라 '정맥(IV) 주사'로 혈액 순환을 거쳐 폐를 표적한 것입니다(녹음 34:46~35:51, '이거 lung에 다이렉트 인젝션 한 거 아니거든요. IV 인젝션을 해서 블러드 서큘레이션으로 돌렸을 때 lung에 이렇게 타겟팅'). 또한 'lung-targeting'은 자연적으로 lung 외 분포 가능성이 있는 IV 경로에서 지질 조성을 디자인해 lung 쪽으로 '치우치게(targeting)' 만든 것이지, 다른 장기로 갈 가능성이 원리상 0이라는 뜻이 아닙니다(녹음 36:34, lung·liver·spleen 중 하나로 컨트롤). 따라서 '직접 주사·혈액순환 없음·타 장기 분포 불가능'이라 한 5번은 틀립니다. 나머지는 모두 옳습니다: TRAIL & BAK-mRNA를 LNP로 실어 IV로 lung 표적 폐암 치료(1번, p25~27 부제 + 녹음 37:14), 지질 조성·비율 디자인으로 lung/liver/spleen 중 하나로 organ targeting(2번, 녹음 36:34), luciferase mRNA + luciferin으로 발현 부위 luminescence 영상화(3번, 녹음 35:20), TRAIL=extrinsic(TRAIL receptor)·BAK=intrinsic(cytosol) 이중 apoptosis combination therapy(4번, 녹음 37:14).",
+    "correct_fact": "p25~27의 mRNA-LNP 폐암 연구는 LNP에 직접 주사한 것이 아니라 'Intravenous injection'(IV, 정맥주사)으로 혈액 순환을 거쳐 lung을 표적한 lung-targeting LNP다. IV 경로는 본래 여러 장기로 분포할 수 있으나 lipid 조성·비율을 디자인해 lung·liver·spleen 중 lung 쪽으로 전달을 치우치게 만든 것이며, luciferase imaging으로 lung-specific 발현을 확인했다. TRAIL은 extrinsic(외부 TRAIL receptor), BAK은 intrinsic(cytosol signaling) 경로로 apoptosis를 일으키는 combination therapy다.",
+    "selection_reason": "g3(AAV vs LNP 장단점)이 닫힌우주(C1) 위반(슬라이드 p15는 'Gene delivery' 제목·인용만 있어 AAV/장단점 텍스트 부재, 비교 내용 전부 스크립트 단독)이며 기존 nanomrna-2(viral/non-viral 분류·각 장단점)와 내용 중복이라 제거하고, 같은 강의의 슬라이드-텍스트 기반 고출제 갭으로 대체. 슬라이드 p25~27 부제 'Intravenous injection of TRAIL & BAK-mRNA by lung-targeting LNP'는 추출 가능한 슬라이드 텍스트로 IV·lung-targeting·TRAIL/BAK가 명시되어 C1 진위판정이 강함(S1 분량집중: 녹음 34:46~37:14에서 가장 상세히 설명, S4 luciferase 영상 사례 전환). 투여경로/분포원리를 통째로 뒤집은 정밀 오류로 대학원 변별.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "20260421_합동강의_koo.pdf", "page": 25, "caption": ""}
+  }
+]

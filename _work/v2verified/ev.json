@@ -1,0 +1,71 @@
+[
+  {
+    "id": "ev-g1",
+    "lecture_key": "ev",
+    "lecture_label": "04-14 세포외소포(EV)·액체생검 (김일진 교수)",
+    "topic": "EV 마커 체계 — Tetraspanin(CD9/CD63/CD81), MISEV 마커 Category 1~5, 네거티브 마커, 권장 3 pos + 1~2 neg",
+    "exam_probability": 78,
+    "tier": 1,
+    "stem": "다음 중 EV의 마커 체계(Tetraspanin, MISEV 마커 카테고리, 포지티브/네거티브 마커)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "Tetraspanin(CD9·CD63·CD81)은 막을 4번 관통하는(4개의 transmembrane 도메인) 막단백질로, EV막에 발현되는 대표적 포지티브 마커이며 MISEV 분류상 막관통/GPI-고정 단백질(Category 1)에 해당한다.",
+      "MISEV 마커 Category 4(핵·미토콘드리아·ER·골지·오토파고솜·퍼옥시솜 구성성분)는 EV에서 검출되면 안 되는 네거티브 마커로, 분리 과정에서 깨진 세포소기관 찌꺼기의 오염 여부를 판정하는 데 쓰인다.",
+      "EV 동정 시 권장되는 마커 조합은 네거티브 마커 3개와 포지티브 마커 1~2개로, 오염 배제를 우선 확인한 뒤 EV 존재를 보조적으로 확인하는 순서가 표준이다.",
+      "Category 2는 세포 내부 물질을 둘러싼 지질이중막 구조를 갖는 세포질(cytosolic) 쪽 단백질, Category 5는 EV 자체에 존재하지 않지만 표면에 결합하여 함께 동정되는 분비/루멘 단백질로 구분된다.",
+      "Tetraspanin은 세포질 쪽 아미노산이 palmitoylation 수식을 받으면 서로 가까이 군집하여 TEM(Tetraspanin-enriched microdomain)을 형성하고, 이 도메인에서 함입(endocytosis)·ILV 형성이 잘 일어난다."
+    ],
+    "answer_index": 2,
+    "explanation": "마커 개수를 정반대로 뒤집은 선지가 정답입니다. 교수가 명확히 강조했듯이 권장 조합은 '포지티브 마커 3개 + 네거티브 마커 1~2개'입니다. 즉 EV가 실제로 존재한다는 증거(포지티브)를 3개로 충분히 확보하는 것이 주목적이고, 오염 배제용 네거티브 마커는 1~2개면 됩니다(녹음 00:42 '보통 권장하는 것은 3개의 포지티브 마커, 1개나 2개의 네거티브 마커'). 3번은 이 둘을 통째로 맞바꿔 '네거티브 3 + 포지티브 1~2'라고 했으므로 틀립니다. 나머지는 모두 슬라이드 p32(Category 1~5 본문)와 교수 발화·p36~38(Tetraspanin/TEM)에 부합합니다: Category 1=막관통/GPI-고정(Tetraspanin은 4-TM 막단백질), Category 4=세포소기관 유래 네거티브 마커, Category 2=세포질/루멘 쪽 단백질, Category 5=표면 결합 단백질, palmitoylation→TEM 군집→함입이 핵심입니다.",
+    "correct_fact": "EV 동정 권장 조합은 포지티브 마커 3개 + 네거티브 마커 1~2개다(녹음 00:42). 선지는 포지티브/네거티브 개수가 정반대로 뒤바뀌어 있다.",
+    "selection_reason": "감사 why_high_yield: p32에 Category 1~5 본문 텍스트가 직접 박힌 표 슬라이드(닫힌우주 진위 강함)이며 현재 4문항이 전혀 커버하지 못한 deck 중반 표 슬라이드. 포지티브 vs 네거티브 구분·권장 개수·Category 분류는 객관식 distractor 최적이고 마커는 summary 가중 영역. 교수가 카테고리와 권장 개수를 직접 읽어줌(녹음 00:41~00:42).",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "2026학년도 1학기 합동강의 강의원고_김일진.pdf", "page": 32, "caption": "EV markers — MISEV 마커 Category 1~5 분류표(포지티브/네거티브 마커 및 표면결합 단백질)"}
+  },
+  {
+    "id": "ev-g2",
+    "lecture_key": "ev",
+    "lecture_label": "04-14 세포외소포(EV)·액체생검 (김일진 교수)",
+    "topic": "EV 엔지니어링·탑재 전략 — pre vs post-isolation 로딩, PTGFRN/Tetraspanin scaffold, intein cleavable linker, endosomal escape용 viral protein, EV-bioPROTAC",
+    "exam_probability": 72,
+    "tier": 1,
+    "stem": "다음 중 EV에 원하는 물질을 탑재하는 엔지니어링 전략(pre/post-isolation 로딩, scaffold, linker)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "Pre-isolation(분리 전) 로딩은 부모세포(parent cell)에 원하는 물질을 유전적으로 발현시켜, EV가 생성되는 과정에서 자연스럽게 탑재되도록 하는 방법이다.",
+      "Post-isolation(분리 후, exogenous) 로딩은 분리해 낸 EV에 초음파(sonication)·전기천공(electroporation)·단순 인큐베이션 등으로 물질을 직접 넣어주는 방법이다.",
+      "Pre-isolation 로딩에서는 PTGFRN, CD81·CD9 같은 EV막 표적 단백질(scaffold)에 원하는 단백질을 융합시키며, 그중 PTGFRN은 탑재 효율이 높아 벤처기업이 많이 활용한다.",
+      "탑재 단백질을 scaffold에 연결할 때 쓰는 intein 기반 절단성(cleavable) 링커는, 화물이 표적세포에 도달해도 절단되지 않고 scaffold에 결합된 상태를 유지하도록 설계해야 기능을 발휘할 수 있다.",
+      "엔도솜 탈출(endosomal escape) 효율을 높이기 위해 바이러스 유래 단백질을 EV에 공동 발현시키는 전략을 병행하기도 한다."
+    ],
+    "answer_index": 3,
+    "explanation": "절단성 링커의 목적을 정반대로 서술한 선지가 정답입니다. 교수 설명대로 화물 단백질(HIF)을 EV에 싣기 위해 tetraspanin(CD81) scaffold에 '연결'해 두는데, 이렇게 묶여 있으면 정작 표적세포 안에서는 기능을 할 수 없습니다(녹음 00:54 '연결이 되어있으면 정작 얘가 타겟셀에 갔을 때 펑션을 할 수가 없기 때문에... 분리가 되어야'). 그래서 중간에 intein 같은 절단성(cleavable) 링커를 넣어, 표적세포에 들어간 뒤 '잘려서 분리·방출'되어야 비로소 기능합니다(녹음 00:55). 4번은 '절단되지 않고 결합 상태를 유지해야 기능한다'고 목적을 뒤집었으므로 옳지 않습니다. 나머지는 모두 슬라이드 p35·p49~51(엔지니어링/Protein loading/bioPROTAC) 도식 및 교수 발화에 부합합니다: pre=유전적 발현(분리 전), post(exogenous)=소니/전기천공/인큐베이션(분리 후), PTGFRN/CD81 scaffold(PTGFRN 고효율·벤처 활용), 엔도솜 탈출용 viral protein 공동발현.",
+    "correct_fact": "intein 절단성 링커는 표적세포 진입 후 잘려서 화물을 scaffold로부터 분리·방출시켜야 화물이 기능한다(녹음 00:54~00:55). 결합 상태를 유지하면 기능할 수 없다. 선지는 절단 목적을 정반대로 뒤집었다.",
+    "selection_reason": "감사 why_high_yield: deck 마지막 3~6장(p46~51)=take-home/교수 본인 연구 결론부 → 써머리 가중 강하게 적용. pre/post-isolation 구분과 cleavable linker(intein)·endosomal escape용 viral protein 공동발현은 적용형 변별문항으로 적합하며 현재 미커버. 교수가 EV-bioPROTAC 등 본인 연구로 결론부에 직접 설명(녹음 00:46~00:48, 00:54~00:58).",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "2026학년도 1학기 합동강의 강의원고_김일진.pdf", "page": 51, "caption": "EV-based bioPROTAC — scaffold(CD81)·화물 단백질·intein 절단성 링커·endosomal escape 전략 도식(교수 연구 결론부)"}
+  },
+  {
+    "id": "ev-g3",
+    "lecture_key": "ev",
+    "lecture_label": "04-14 세포외소포(EV)·액체생검 (김일진 교수)",
+    "topic": "MISEV2023 분류 축·명명 — small/large EV vs 엑소좀 용어, 분류 6축, NVEP(엑소미어/슈퍼미어, 지질이중막 없음)",
+    "exam_probability": 70,
+    "tier": 1,
+    "stem": "다음 중 MISEV2023의 EV 분류·명명 체계와 NVEP(엑소미어·슈퍼미어)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "MISEV2023은 EV를 Size, Density, Biochemical composition, Biological function, Environmental condition, Cell of origin의 6가지 축으로 분류할 수 있다고 제시한다.",
+      "실험실에서는 분리된 입자가 엔도솜 경로에서 왔는지 세포막 출아에서 왔는지 구분할 수 없으므로, '엑소좀' 대신 크기 기반의 'small EV', 'medium/large EV' 같은 용어 사용을 권장한다.",
+      "엑소미어(2018년 보고, 약 30~50 nm)와 슈퍼미어(2021년 보고)는 지질이중막에 둘러싸인 작은 소포로, 엑소좀보다 더 작은 EV 서브타입(NVEP)으로 분류된다.",
+      "표면 단백질 발현을 기준으로 명명할 때는 'CD9 positive EV'처럼 특정 마커를 명시하여 표현할 수 있다.",
+      "슈퍼미어는 엑소미어를 침전시킨 뒤 남은 상층액을 다시 침전시키는 과정에서 발견되었으며, 실제 존재 여부와 특성에 대해 아직 논란이 있다."
+    ],
+    "answer_index": 2,
+    "explanation": "NVEP의 본질을 정반대로 서술한 선지가 정답입니다. NVEP는 이름 그대로 'Non-Vesicular Extracellular Particle' — 즉 지질이중막이 '없는' 입자입니다(녹음 00:05 '인기질 이중막으로 쌓여 있지 않은 작은 입자'). 엑소미어·슈퍼미어는 막 없이 단백질·RNA·소분자가 뭉쳐진 형태이므로, 막(지질이중막)을 정의 요건으로 하는 EV에 속하지 '않고' 별도 NVEP 범주로 분류됩니다(녹음 00:38 '넌 베지클러 엑스트라셀룰러 파티클, EP로 분류'). 3번은 '지질이중막에 둘러싸인 소포로 EV 서브타입(NVEP)'이라고 해서 막의 유무와 분류를 모두 뒤집었으므로 옳지 않습니다(NVEP는 EV 서브타입이 아님). 나머지는 모두 슬라이드 p25~27 및 교수 발화에 부합합니다: 6축 분류(p27 본문에 직접 명시), small/medium/large EV 권장 명명, CD9 positive 식 마커 명명, 슈퍼미어 발견 경위와 논란.",
+    "correct_fact": "엑소미어·슈퍼미어(NVEP)는 지질이중막이 '없는' 비소포성 입자이므로 EV가 아니며, EV의 서브타입도 아니다(별도 NVEP 범주). 선지는 막의 유무와 분류를 정반대로 뒤집었다.",
+    "selection_reason": "감사 why_high_yield: p27에 분류 6축(Size/Density/Biochemical composition/Biological function/Environmental condition/Cell of origin)이 본문 텍스트로 명시된 표 슬라이드(닫힌우주 진위 강함). '엑소좀 대신 small EV' 권고는 강의 처음·끝 반복(S5). NVEP=지질이중막 없어 EV 아님은 단답/객관식 distractor 고빈도이며 현재 미커버. 교수가 도입·결론에서 명명 권고를 반복(녹음 00:05~00:06, 00:36~00:38).",
+    "study_strength": "★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "2026학년도 1학기 합동강의 강의원고_김일진.pdf", "page": 27, "caption": "Classification(MISEV2023) — EV 분류 6축 본문 + NVEP(엑소미어/슈퍼미어) 위치"}
+  }
+]

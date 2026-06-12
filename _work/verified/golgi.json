@@ -1,0 +1,117 @@
+[
+  {
+    "id": "golgi-1",
+    "lecture_key": "golgi",
+    "lecture_label": "03-10 골지체 비정형기능 (김지윤 교수)",
+    "topic": "Golgi morphodynamics — Condensation vs. Fragmentation (위암 SRCC, YAP)",
+    "exam_probability": 96,
+    "tier": 1,
+    "stem": "다음 중 위암(gastric cancer)에서 관찰되는 골지체 형태 변화(Golgi morphodynamics)와 그 기전에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "지금까지 알려진 거의 모든 암(cancer)에서 골지체는 fragmentation(파편화)된 상태로 관찰되며, 암세포는 이 파편화 상태에 적응하여 오히려 생존에 이용한다.",
+      "정상 세포에서 골지체가 파편화되면 더 이상 정상 기능을 할 수 없어 apoptosis로 진행하지만, 암세포는 폭발적 에너지 대사로 증가한 ROS에 의한 막성 소기관 손상에 적응되어 있다.",
+      "일부 난치성 위암 세포주에서는 fragmentation이 아닌 Golgi condensation(응축)이 관찰되며, condensation이 증가할수록 악성도(malignancy)가 증가한다.",
+      "Golgi condensation은 Golgi-associated microtubule의 정렬을 강화하여 YAP의 핵 내 이동을 촉진하고, 그 결과 migration·invasion·proliferation이 증가한다.",
+      "골지 붕괴 약물(Monensin, Golgicide A, Brefeldin A, Nigericin 등)을 처리해 condensation을 fragmentation으로 유도하면 migration·invasion·proliferation 같은 악성 표현형이 더욱 증가하여 종양 악성도가 높아진다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번. 항암 효과의 방향이 정반대로 뒤집혀 있습니다. 슬라이드(강의원고 PAGE 17)는 골지 붕괴(fragmentation) 약물 처리 시 'Migration↓ · Invasion↓ · Proliferation↓'로 명시하고, 김지윤 교수도 condensation 상태의 악성 위암 세포주에 골지 붕괴 약물을 처리해 fragmentation으로 '붕괴'시키면 migration·invasion·proliferation 같은 악성 표현형이 오히려 '줄어드는' 항암 효과가 나타난다고 했습니다(xenograft에서 종양 크기 감소). 즉 condensation→악성↑이고 이를 깨뜨리는 것이 치료 전략인데, 5번은 이를 '악성도 증가'로 거꾸로 서술해 틀렸습니다. 나머지 1~4번은 모두 강의 그대로의 정설입니다: 거의 모든 암은 ROS로 인한 fragmentation에 적응(정상세포라면 apoptosis), 일부 난치성 위암(특히 SRCC)은 condensation이며 condensation↑=악성도↑, 그 기전이 Golgi-MT 정렬 강화→YAP 핵이동 촉진→악성 표현형 증가입니다.",
+    "correct_fact": "골지 붕괴 약물(MON/GCA/BFA/NIG)로 condensation을 fragmentation으로 유도하면 migration·invasion·proliferation 등 악성 표현형이 '감소'한다(항암 효과; 슬라이드 PAGE 17의 Migration↓·Invasion↓·Proliferation↓). 이것이 골지 morphodynamics를 표적으로 한 신규 항암 전략의 근거다.",
+    "selection_reason": "S4(교수가 수개월 밤새워 세포주 분류한 직접 연구 경험담)+S5(반복)+S6(SRCC 최고 악성도, 부친 사례 경고)+S7(condensation vs fragmentation 비교)+B1 동시 발동. 강의 최다 시간 할애, draft W=7로 최고점. Cancer Research 게재 논문. [검증: 정답 선지의 오류를 슬라이드 PAGE 17의 'Migration↓·Invasion↓·Proliferation↓' 표기에 직접 근거하도록 보강해, 슬라이드 PAGE 17의 'YAP↑' 표기에 기댄 반박 여지를 제거함.]",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "2026_합동강의_약리학교실 김지윤_강의원고.pdf", "page": 19, "caption": "위암에서 Golgi condensation↑ → YAP↑ → Malignancy↑ 모식도 (SRCC가 최고 악성)"}
+  },
+  {
+    "id": "golgi-2",
+    "lecture_key": "golgi",
+    "lecture_label": "03-10 골지체 비정형기능 (김지윤 교수)",
+    "topic": "Alzheimer's disease — 골지체 변성이 amyloid-β의 upstream 원인이라는 가설",
+    "exam_probability": 94,
+    "tier": 1,
+    "stem": "다음 중 알츠하이머 치매(Alzheimer's disease)에서 골지체의 역할에 관한 김지윤 교수의 가설 및 근거로 옳지 않은 것은?",
+    "options": [
+      "알츠하이머·파킨슨·ALS 등 퇴행성 뇌질환 환자의 사후 뇌조직에서 골지체가 손상되어 있다는 사실은 이미 30년 이상 알려져 있었으나, 기존에는 신경퇴행의 부산물(결과)로 해석되었다.",
+      "현재 레켐비(lecanemab) 등 FDA 승인 치료제는 대부분 amyloid-β clearance를 목표로 하는 면역치료제이지만, 적응증(indication)이 좁고 극적 효과가 부족하다.",
+      "젊고 건강한 뉴런에 Golgi fragmentation 유발 약물을 처리하면 amyloid-β가 생성되는데, 이는 골지 손상이 amyloid-β 생성에 선행하는 사건일 수 있음을 시사한다.",
+      "골지체를 특이적으로 손상시킨 마우스 모델에서는 amyloid-β·phospho-tau 축적과 함께 인지·기억 장애가 나타나 치매 표현형이 재현되었다.",
+      "amyloid-β는 골지체를 통과하지 않는 단백이므로, 골지체가 손상되더라도 amyloid-β 생성 자체는 영향을 받지 않고 clearance 단계에서만 문제가 발생한다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번. 사실이 정반대입니다. 교수는 '아밀로이드 베타가 골지체를 지나가거든요. 그럼 골지체가 망가져 있으면 아밀로이드 베타 백날 클리어런스 해봐야 계속 나올 것 같다'고 명확히 말했습니다. 즉 amyloid-β는 골지체를 '통과'하므로 골지가 망가지면 processing 이상으로 계속 '생성'됩니다. 바로 이 점이 기존 amyloid-β clearance 치료법(레켐비)의 근본 한계를 설명하는 핵심 논리이고, 5번은 이를 '골지를 통과하지 않는다/생성에 영향 없다'로 뒤집어 틀렸습니다. 나머지는 모두 강의 그대로입니다: 골지 손상은 30년 전부터 알려졌으나 부산물로 치부(1번), 레켐비는 좁은 적응증·미약한 효과(2번), 젊은 뉴런에 fragmentation 약물→amyloid-β 생성(3번), 골지 손상 마우스에서 치매 표현형 재현(4번).",
+    "correct_fact": "amyloid-β는 골지체를 '통과(processing)'하는 단백이므로, 골지체가 손상되면 amyloid-β의 생성·processing 자체가 비정상화되어 계속 생성된다. 따라서 amyloid-β만 제거(clearance)해서는 골지가 망가진 한 효과가 제한적이다.",
+    "selection_reason": "S1(가장 긴 분량)+S2('어떻게 생각했냐면')+S4(연구 방향 전환 경험)+S6(레켐비 한계 지적)+S7(기존 가설 vs 새 가설 비교)+B1. draft W=7 최고점, 현재 연구실 주력 주제. [검증: AD·amyloid-β·p-tau·Golgi fragmentation은 슬라이드 PAGE 31~44 닫힌우주 내. 레켐비(2번)는 정답이 아닌 '옳은' distractor로만 사용되고 녹음 근거가 명확하므로 유지.]",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "", "page": 0, "caption": ""}
+  },
+  {
+    "id": "golgi-3",
+    "lecture_key": "golgi",
+    "lecture_label": "03-10 골지체 비정형기능 (김지윤 교수)",
+    "topic": "GIST — Mutant KIT의 Golgi tethering과 imatinib 내성",
+    "exam_probability": 90,
+    "tier": 1,
+    "stem": "다음 중 위장관 기질 종양(GIST)에서 mutant KIT와 imatinib(글리벡) 내성에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "GIST는 위장관 악성종양의 약 1~3%를 차지하는 희귀암으로, 상피세포(epithelial)가 아닌 기질세포(stromal) 기원이며 근육층에서 발생한다.",
+      "GIST는 여러 유전자 돌연변이가 축적되는 일반적 암과 달리, receptor tyrosine kinase인 KIT의 단일 돌연변이만으로 암화가 일어날 수 있다.",
+      "제약회사들이 세포막의 mutant KIT를 표적으로 개발한 치료제들이 대부분 실패한 이유는, 사람·마우스·세포주 어디서든 mutant KIT가 세포막에 10%도 존재하지 않기 때문이다.",
+      "Mutant KIT는 세포막이 아닌 골지체에 위치(Golgi tethering)하면서 GRB2 등 신호전달 단백을 골지체로 recruit하여 oncogenic signaling을 활성화한다.",
+      "imatinib 내성이 잘 생기는 이유는 mutant KIT가 골지체를 빠르게 떠나 세포막으로 과도하게 이동함으로써 약물이 결합할 표적이 세포막에 과잉 축적되기 때문이다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번. 위치가 완전히 거꾸로입니다. 교수의 핵심 발견은 mutant KIT가 '세포막에 10%도 없고 거의 다 골지체에 tethering 되어 있다'는 것입니다. imatinib(글리벡)은 세포막의 KIT를 겨냥해 설계됐는데 정작 표적이 골지에 있으니 접근·결합이 제한되어 내성이 생기는 것입니다. 5번은 'KIT가 세포막으로 과도하게 이동/세포막에 과잉 축적'이라고 정반대로 서술해 틀렸습니다. 나머지는 강의 그대로입니다: GIST는 위(장관)암의 1~3% 희귀암·stromal 기원·근육층 발생(1번), KIT 단일 돌연변이 암화(2번), 세포막 KIT 표적 치료제 실패 이유는 KIT가 세포막에 거의 없어서(3번), Golgi tethering으로 GRB2 recruit(4번).",
+    "correct_fact": "imatinib 내성의 구조적 원인은 mutant KIT가 세포막이 아닌 '골지체에 tethering'되어 있어, 세포막 KIT를 표적으로 설계된 imatinib의 접근·결합이 제한되기 때문이다. KIT가 세포막으로 더 이동하는 것이 아니라, 오히려 세포막에 10%도 존재하지 않는다.",
+    "selection_reason": "S4(약리학교실 협업 직접 연구)+S5(반복)+S6('모든 제약회사 다 fail')+S7(세포막 KIT vs 골지 KIT 비교)+B1. draft W=6, Cell Death & Differentiation(2023) 게재. [검증: GIST·Golgi tethering·KIT는 슬라이드 PAGE 21~27 닫힌우주 내, 1~4번 전부 슬라이드/녹음 일치.]",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "", "page": 0, "caption": ""}
+  },
+  {
+    "id": "golgi-4",
+    "lecture_key": "golgi",
+    "lecture_label": "03-10 골지체 비정형기능 (김지윤 교수)",
+    "topic": "골지체의 Unconventional 기능 (Signaling hub, DNA damage sensing, microtubule, innate immunity)",
+    "exam_probability": 85,
+    "tier": 1,
+    "stem": "다음 중 골지체(Golgi apparatus)의 비전형적(unconventional) 기능에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "세포 내 에너지 대사의 마스터키인 mTORC1은 Trans-Golgi Network(TGN)에서 활성화되며, 활성화 위치에 따라 작동 모드(mode)가 달라진다.",
+      "DNA가 손상되면 DNA-PK(DNA-dependent protein kinase)가 활성화되어 골지체를 직접 조절하며, 이는 세포 소기관이 염색체(DNA)와 crosstalk함을 시사한다.",
+      "선천면역의 핵심 마스터키인 NLRP3 inflammasome은 Trans-Golgi Network(TGN)에서 조립·생성되어, 골지체가 면역 반응의 플랫폼 역할을 함을 보여준다.",
+      "세포 내 microtubule의 약 70%가 골지체에서 생성되는 acentrosomal microtubule이며, 세포 이동 시 골지체가 방향을 잡아 microtubule을 방출한다.",
+      "ER→Golgi 경로를 거치지 않고 분비되는 unconventional secretion(type 4, Golgi-bypassing UPS)이 존재하며, 아이러니하게도 이 경로에 골지체 단백이 관여한다."
+    ],
+    "answer_index": 3,
+    "explanation": "정답은 4번. 수치 비율이 뒤바뀌었습니다. 교수는 'microtubule이 센트로좀(centrosome)에서 70% 정도가 나오고, 세포 내 30%의 microtubule은 골지체에서 나온다. 그걸 acentrosomal microtubule이라 부른다'고 했습니다. 즉 골지체 유래는 약 30%이고 70%가 아닙니다(70%는 중심체 유래). 세포가 이동할 때 골지체가 방향을 잡아 microtubule을 쏴주는 부분은 맞지만, 비율을 70%로 바꿔 틀린 선지가 됐습니다. 나머지는 강의 그대로 정확합니다: mTORC1은 TGN에서 활성화·위치에 따라 모드 변화(1번), DNA 손상 시 DNA-PK가 골지 조절·DNA crosstalk(2번), NLRP3 inflammasome은 TGN에서 생성(3번), type 4 Golgi-bypassing UPS에 골지 단백이 관여하는 아이러니(5번).",
+    "correct_fact": "골지체에서 생성되는 acentrosomal microtubule은 세포 내 microtubule의 약 30%이고, 나머지 약 70%는 중심체(centrosome)에서 생성된다. 비율(30% vs 70%)을 혼동하지 말 것.",
+    "selection_reason": "S2('단순 sorting organelle이 아니라 signaling platform')+S5(반복 강조)+S7(conventional vs unconventional 비교). Part I 전체 요약 슬라이드 직접 수록, 교수 '요약에서 다 나온다' 명시. 30% 수치는 B2(도식 직접 수치 언급)로 단답 대비 빈출. [검증: mTORC1/DNA-PK·GOLPH3/NLRP3/Cancer metastasis(microtubule)/unconventional secretion 모두 슬라이드 PAGE 6~10 및 요약(PAGE 45) 닫힌우주 내. 1·2·3·5번 전부 녹음 일치, 정답 4번의 30/70 역전 확인.]",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "", "page": 0, "caption": ""}
+  },
+  {
+    "id": "golgi-5",
+    "lecture_key": "golgi",
+    "lecture_label": "03-10 골지체 비정형기능 (김지윤 교수)",
+    "topic": "Golgi Stress Response(GSR), GOMED(alternative autophagy), Golgi outpost",
+    "exam_probability": 82,
+    "tier": 1,
+    "stem": "다음 중 골지 스트레스 반응(GSR), GOMED(alternative autophagy), Golgi outpost에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "ER에 unfolded protein이 축적되면 세포가 생존을 위해 반응(UPR)을 하듯이, 골지체가 fragmentation되면 세포(특히 뉴런)가 복구를 시도하는 과정을 Golgi Stress Response(GSR)로 본다.",
+      "GOMED는 일반 autophagy가 완전히 shutdown된 절체절명의 상황에서 작동하는 2차 보완책(alternative autophagy)으로, 일반 autophagy를 대체하여 작동한다.",
+      "일반 autophagy의 막(membrane) 공급원은 주로 ER인 반면, GOMED는 Trans-Golgi Network(TGN)에서 막을 가져와 autophagosome 유사 구조를 만들고 lysosome과 융합한다.",
+      "Golgi outpost는 뉴런 수상돌기(dendrite)의 분지점에 존재하는 소형 골지 구조물로, 주된 역할은 수상돌기 트래피킹의 톨게이트(gateway) 역할이다.",
+      "Golgi outpost가 소실되면 microtubule 공급이 끊겨 dendrite가 무너지고 시냅스 형성이 저해되어 신경퇴행이 유발되며, 이는 2018년 Cell 논문으로 보고되었다."
+    ],
+    "answer_index": 3,
+    "explanation": "정답은 4번. 기능을 '폐기된 초기 가설'로 잘못 적었습니다. 교수는 'Golgi outpost가 트래피킹의 톨게이트인가 보다 했는데, 그게 아니었고 아쉽게도 microtubule을 뻗어주는 역할만 했다'고 명확히 정정했습니다. 즉 outpost의 실제 기능은 트래피킹 게이트웨이가 '아니라' microtubule 방출입니다. 4번은 폐기된 초기 가설을 마치 실제 주된 기능인 것처럼 단정해 틀렸습니다. 나머지는 정확합니다: ER stress→UPR 유추로 골지 fragmentation→GSR(1번), GOMED는 autophagy shutdown 시 작동하는 2차 보완책(2번), GOMED 막 공급원은 TGN(일반 autophagy는 ER)(3번), outpost 소실→microtubule 공급 중단→dendrite 붕괴→신경퇴행(2018 Cell)(5번).",
+    "correct_fact": "Golgi outpost의 실제 주된 역할은 트래피킹 톨게이트(gateway)가 아니라, 수상돌기로 microtubule을 방출(공급)하는 것이다. 톨게이트 역할은 초기 가설이었으나 실제로는 아니었다.",
+    "selection_reason": "S2('ER 스트레스는 다 아시죠')+S4(교수가 밀고 있는 키워드·박사 지도교수도 의문 제기)+S5(반복)+S7(ER stress vs GSR, 일반 autophagy vs GOMED 비교). draft W=4. 요약 슬라이드 GSR/GOMED/outpost 직접 항목. [검증: GSR/GOMED(EGAD)/Golgi outpost 모두 요약 슬라이드(PAGE 45) 닫힌우주 내. 1·2·3·5번 전부 녹음 일치, 정답 4번의 '톨게이트=주된 역할' 단정 오류 확인.]",
+    "study_strength": "★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "", "page": 0, "caption": ""}
+  }
+]

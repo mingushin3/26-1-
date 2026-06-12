@@ -1,0 +1,120 @@
+{
+  "code": "genetherapy",
+  "lecture_label": "04-07 유전자치료 (김영광)",
+  "essence": "유전질환을 DNA/RNA를 세포에 넣어 고치는 것이 핵심. 전달체(AAV vs Lentivirus)·발현억제(ASO vs siRNA)·유전체교정(Cas9→Base/Prime editor)의 'A vs B' 짝을 정반대로 뒤집는 함정이 시험의 전부다.",
+  "analogy": "유전자치료=고장난 글자(유전자)를 고치는 작업. AAV는 '책상 위에 메모지(에피솜)'로 따로 두고, Lentivirus는 '책 본문에 직접 끼워넣어' 다른 문장(LMO2)을 망가뜨린다. Cas9은 가위(자름), Base editor는 지우개로 한 글자만, Prime editor는 펜으로 아무 글자나 새로 쓴다.",
+  "concepts": [
+    {
+      "heading": "전달체 — AAV vs Lentivirus (가장 길게 대비, 왕관 표시)",
+      "points": [
+        "in vivo 주력 전달체는 이 둘만 거의 사용 → 교수 직접 범위 한정",
+        "genotoxicity(삽입돌연변이) = Lentivirus 문제, AAV는 아님 ← 절대 뒤집지 마라",
+        "Lentivirus 위험 실제 사례: LMO2 과활성화 → 백혈병 / 정상유전자 knockout"
+      ],
+      "table": {
+        "title": "AAV vs Lentivirus",
+        "columns": ["항목", "AAV", "Lentivirus"],
+        "rows": [
+          ["숙주 유전체 통합", "No (핵 내 에피솜으로 따로)", "Yes (역전사효소→DNA→무작위 삽입)"],
+          ["바이러스 종류", "그 자체로 비병원성", "RNA 바이러스"],
+          ["발현 지속", "Long-term", "Long (안정 발현)"],
+          ["면역원성", "비교적 낮음", "낮음"],
+          ["핵심 문제", "패키징 용량 제한", "genotoxicity (LMO2→백혈병)"]
+        ]
+      }
+    },
+    {
+      "heading": "Gene silencing — ASO vs siRNA vs ssASO (왕관, 도해 직접 설명)",
+      "points": [
+        "ASO=단일가닥 DNA → DNA:RNA 하이브리드 → RNase H가 mRNA 분해",
+        "siRNA=이중가닥 RNA → 프로세싱→단일가닥 → RISC 결합 → mRNA 절단",
+        "ssASO=pre-mRNA 결합 → splicing 조절(DMD exon 51 skipping)",
+        "임상 예: Inclisiran=siRNA, PCSK9 mRNA 표적 → LDL수용체↑ → 혈중 LDL↓"
+      ],
+      "table": {
+        "title": "RNase H ↔ RISC 절대 안 헷갈리기",
+        "columns": ["기전", "핵산", "동원 복합체", "결과"],
+        "rows": [
+          ["ASO (Gapmer)", "단일가닥 DNA", "RNase H", "하이브리드 내 mRNA 분해"],
+          ["siRNA", "이중가닥 RNA", "RISC", "표적 mRNA 절단"],
+          ["ssASO", "단일가닥(ASO)", "(없음)", "pre-mRNA splicing 조절"]
+        ]
+      }
+    },
+    {
+      "heading": "유전체교정 — Cas9 → Base/Prime editor (왕관, 빨간 강조)",
+      "points": [
+        "Cas9 구성: crRNA(20bp 가이드)+tracrRNA=sgRNA / PAM(NGG)은 표적 DNA에 존재",
+        "PAM 함정: PAM은 sgRNA가 아니라 표적 DNA 쪽, 표적 바로 옆 / 20bp는 PAM이 아니라 guide 길이",
+        "Cas9 knockout 경로: DSB → NHEJ error-prone → indel → frameshift → PTC → NMD",
+        "차세대 공통: DSB를 일으키지 않음(nCas9) → p53 활성화·apoptosis 위험↓ (빨간 강조 'Do not induce DSB!')"
+      ],
+      "table": {
+        "title": "Base Editor vs Prime Editor",
+        "columns": ["항목", "Base Editor", "Prime Editor"],
+        "rows": [
+          ["구성", "nCas9 + deaminase", "nCas9 + 역전사효소 + pegRNA"],
+          ["가능한 편집", "단일염기 치환만 (C→T, A→G)", "치환+insertion+deletion 모두"],
+          ["DSB", "없음(nickase)", "없음(nickase)"],
+          ["nickase 도메인", "D10A=RuvC 불활성(non-target strand 못 자름)", "H840A=HNH 불활성(target strand 못 자름)"]
+        ]
+      }
+    }
+  ],
+  "traps": [
+    {
+      "qref": "genetherapy-1",
+      "topic": "AAV vs Lentivirus genotoxicity 방향",
+      "correct": "✅ AAV는 유전체 비통합(핵 내 에피솜)이라 삽입성 genotoxicity가 낮고, LMO2 과활성화→백혈병·정상유전자 knockout 같은 삽입성 genotoxicity는 Lentivirus의 문제다.",
+      "trap": "❌ AAV가 숙주 유전체에 안정 통합되어 genotoxicity가 Lentivirus보다 더 크다 (AAV↔Lenti 정반대로 뒤집음)."
+    },
+    {
+      "qref": "genetherapy-2",
+      "topic": "ASO(RNase H) vs siRNA(RISC) 작용복합체",
+      "correct": "✅ RNase H를 모집하는 것은 단일가닥 DNA인 ASO(하이브리드 형성), RISC에 결합해 mRNA를 자르는 것은 이중가닥 RNA인 siRNA다.",
+      "trap": "❌ siRNA가 RNase H를 모집해 분해하고, ASO가 RISC에 결합해 절단한다 (복합체·핵산종류를 서로 뒤바꿈)."
+    },
+    {
+      "qref": "genetherapy-3",
+      "topic": "Base Editor vs Prime Editor 역할",
+      "correct": "✅ 단일염기 치환만 가능한 것은 Base Editor, insertion·deletion 포함 원하는 모든 편집이 가능한 것은 역전사효소+pegRNA를 쓰는 Prime Editor다.",
+      "trap": "❌ Prime Editor가 단일염기 치환만 가능하고, insertion/deletion에는 Base Editor를 써야 한다 (둘의 역할 정반대)."
+    },
+    {
+      "qref": "genetherapy-4",
+      "topic": "PAM의 위치·길이",
+      "correct": "✅ PAM(NGG)은 sgRNA가 아니라 표적 DNA에, 표적 서열 바로 옆에 존재하는 짧은 모티프다. 20bp는 PAM이 아니라 표적과 상보결합하는 guide sequence(crRNA)의 길이다.",
+      "trap": "❌ PAM은 sgRNA 내부에 위치하는 20bp 인식 모티프로 가이드 RNA 조립에 필요하다 (위치 DNA→RNA, 길이 NGG→20bp 왜곡)."
+    },
+    {
+      "qref": "genetherapy-g1",
+      "topic": "Jesse Gelsinger 사망 기전",
+      "correct": "✅ Gelsinger 사망 원인은 고면역원성 아데노바이러스 과량 투여에 의한 immunotoxicity(과도한 면역반응)다. 아데노바이러스는 유전체에 통합되지 않으며, 이후 면역원성 낮은 비통합형 AAV 중심으로 전환됐다.",
+      "trap": "❌ 사망은 아데노바이러스의 유전체 무작위 삽입(genotoxicity) 때문이었고, 이를 계기로 통합형 렌티바이러스 사용이 본격화됐다 (immuno↔geno, AAV↔Lenti 모두 뒤집음)."
+    },
+    {
+      "qref": "genetherapy-g2",
+      "topic": "Sickle cell — BCL11A knockout으로 fetal Hb 재활성화",
+      "correct": "✅ BCL11A는 γ-globin을 억제하는 전사인자이므로, 유전자가위로 BCL11A를 knockout해야 억제가 풀려 γ-globin이 재발현되고 fetal hemoglobin(α2γ2)이 재활성화된다.",
+      "trap": "❌ BCL11A를 과발현시켜 γ-globin 억제를 강화함으로써 fetal hemoglobin을 늘린다 (knockout↔과발현 인과 정반대)."
+    }
+  ],
+  "memorize": [
+    "통합(genotoxicity)=Lentivirus / 비통합 에피소m=AAV. Gelsinger 사망=immunotoxicity(아데노)",
+    "ASO=DNA→RNase H / siRNA=RNA→RISC / ssASO=splicing(DMD exon skip)",
+    "PAM=NGG, 표적 DNA에·표적 바로 옆 / 20bp는 guide(crRNA) 길이",
+    "Base=단일염기만(deaminase) / Prime=무엇이든(역전사효소+pegRNA) / 둘 다 DSB 없음. BCL11A는 knockout해야 fetal Hb 부활"
+  ],
+  "figures": [
+    {
+      "pdf": "2026_대학원합동강의_김영광_시험_필수슬라이드.pdf",
+      "page": 2,
+      "caption": "GENE THERAPY DELIVERY METHODS 비교표 — AAV(비통합/에피솜·long expression·저면역원성) vs Lentivirus(통합·genotoxicity)"
+    },
+    {
+      "pdf": "2026_대학원합동강의_김영광_시험_필수슬라이드.pdf",
+      "page": 7,
+      "caption": "Next-generation genome editors — Cas9 D10A(RuvC 불활성)/H840A(HNH 불활성) nickase, 'Do not induce Double strand breaks!'"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "thyroid-1",
+    "lecture_key": "thyroid",
+    "lecture_label": "05-12 갑상선암·CYFRA 21-1 바이오마커 (임동석 교수)",
+    "topic": "CYFRA 21-1의 분자생물학적 생성 기전 (CK19 → Caspase-3 → soluble fragment)",
+    "exam_probability": 95,
+    "tier": 1,
+    "stem": "다음 중 CYFRA 21-1의 분자생물학적 기원과 생성 기전에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "Cytokeratin 19(CK19)는 상피세포의 세포골격을 구성하는 40 kDa의 산성 단백질로, 정상 갑상선 조직에서는 발현이 미약하나 분화 갑상선암(특히 유두암)으로 진행할수록 발현이 증가한다.",
+      "CYFRA 21-1은 CK19 자체가 아니라, 암세포의 아포토시스 과정에서 활성화된 Caspase-3가 CK19를 특정 부위에서 절단하여 방출된 약 19 kDa의 가용성 단편이다.",
+      "CYFRA 21-1 수치 상승은 단순한 종양 부피가 아니라 진행 중인 종양세포의 활성 아포토시스(active apoptosis)와 CK19 발현 증가를 동시에 반영한다.",
+      "Dohmoto 등(2001)은 폐암 세포주에서 Caspase-3 억제제(Z-DEVD-FMK)를 처리하면 CYFRA 21-1 방출이 오히려 증가함을 보여, Caspase-3가 CYFRA 21-1 생성을 억제하는 음성 조절자임을 증명하였다.",
+      "폐암 세포주 연구에서 CK19 mRNA 발현, Caspase-3 발현, CYFRA 21-1 방출량이 서로 양의 상관관계를 보였다."
+    ],
+    "answer_index": 3,
+    "explanation": "정답(틀린 선지)은 4번이다. Dohmoto 등(2001)의 폐암 세포주 실험은 정반대를 보여줬다. Caspase-3는 CK19를 잘라 CYFRA 21-1을 '만들어내는' 효소이므로, Caspase-3 억제제(Z-DEVD-FMK)를 처리하면 자르는 작용이 차단되어 CYFRA 21-1 방출이 '현저히 감소'한다. 교수는 '잘라주는 게 많아지면 단백질이 많이 나오는데, Caspase-3 inhibitor를 썼더니 확 떨어졌다 → 이걸로 인과관계를 증명한 것'이라고 강조했다. 즉 Caspase-3는 음성 조절자가 아니라 CYFRA 21-1 생성에 '필수적인 양성 인자'다. 나머지 선지는 모두 옳다: CK19(40 kDa, 1989년부터 알려진 PTC 마커) → Caspase-3 절단 → 19 kDa 단편(CYFRA 21-1) 경로와, 25년간 유일한 기전 증명 논문인 Dohmoto의 세 가지 양의 상관관계가 핵심이다.",
+    "correct_fact": "Caspase-3 억제제(Z-DEVD-FMK) 처리 시 CYFRA 21-1 방출은 '현저히 감소'한다. Caspase-3는 CK19를 절단하여 CYFRA 21-1을 생성하는 효소이므로 억제하면 생성이 줄어든다(인과관계 증명). Caspase-3는 음성 조절자가 아니라 필수 양성 인자다.",
+    "selection_reason": "교수가 강의 전반에 걸쳐 CK19-Caspase-3-CYFRA 경로를 3회 이상 반복(S5)하고, 임상 스토리에서 기초 기전으로 패턴 전환(S4)하며 '25년간 유일한 기전 논문'이라 강조(S6)했다. 초안 가중치 W=5~6의 최우선 토픽이며 트랩 포인트(Caspase-3, Z-DEVD-FMK)로 명시.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "대학원발표_2026_갑상선암_biomarker (2).pdf", "page": 31, "caption": "CK19(40 kDa)와 CYFRA 21-1(CK19에서 유래한 가용성 단편)의 정의 슬라이드 — Caspase-3 절단 기전 이해의 핵심 시각자료"}
+  },
+  {
+    "id": "thyroid-2",
+    "lecture_key": "thyroid",
+    "lecture_label": "05-12 갑상선암·CYFRA 21-1 바이오마커 (임동석 교수)",
+    "topic": "Washout Thyroglobulin(wTg)의 진단적 한계 3가지",
+    "exam_probability": 93,
+    "tier": 1,
+    "stem": "다음 중 갑상선암 림프절 전이 진단에서 Washout Thyroglobulin(wTg)을 단독 사용할 때의 한계점에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "Tg assay마다 기능 민감도(0.1~3 ng/mL)가 다르고 제시된 컷오프 값도 0.2~50 ng/mL로 기관·키트마다 편차가 커서 진단 기준의 표준화가 어렵다.",
+      "Tg는 갑상선 여포세포에서 생성되는 갑상선 lineage 특이 단백질이어서, 수술 전이나 부분절제 후 잔존 정상 갑상선 조직이 있는 환자에서는 위양성(false positive)이 발생할 수 있다.",
+      "약 10~15%의 환자에서 항갑상선글로불린 항체(TgAb)가 존재하며, TgAb는 wTg 수치를 실제보다 낮춰 위음성(false negative)을 유발하므로 진단 민감도를 저하시킨다.",
+      "정상 갑상선 조직의 간섭 때문에 wTg 컷오프는 정상 조직이 남아 있는 수술 후(postoperative)에 더 높게 설정해야 하고, 정상 조직이 제거된 수술 전(preoperative)에 더 낮게 설정한다.",
+      "이러한 한계들로 인해 표준 경로(FNAC+wTg)에서도 약 9%의 불일치(discordance)가 발생하며, 림프절 절제 사례 중 약 13.9%(36/259)에서 불필요한 수술이 시행될 수 있다."
+    ],
+    "answer_index": 3,
+    "explanation": "정답(틀린 선지)은 4번이다. 수술 전/후 관계가 정반대로 뒤바뀌어 있다. 정상 갑상선 조직이 남아 있는 것은 '수술 전(preoperative)'이다. 정상 조직이 Tg를 계속 분비해 위양성을 일으키므로, 위양성을 줄이려면 수술 전 컷오프를 '높게'(예: 21.69 ng/mL) 설정해야 한다. 반대로 갑상선을 모두 제거한 '수술 후(postoperative)'에는 정상 조직이 없어 조금만 올라가도 재발/전이로 볼 수 있으므로 컷오프를 '낮게'(예: 8.0 ng/mL) 설정한다. 교수는 '수술 전에는 정상 조직이 사이로글로불린을 자꾸 내니까 수치를 높이 설정해야 갑상선암이라고 확정할 수 있고, 수술 후에는 정상 조직이 없으니 조금만 올라가도 전이로 진단한다'고 명확히 설명했다. 나머지 3가지 한계(컷오프 편차, 정상조직 위양성, TgAb 위음성)와 임상 결과(9% discordance, 13.9% 불필요 수술)는 모두 옳다.",
+    "correct_fact": "정상 갑상선 조직이 남아 있는 것은 '수술 전'이며, 위양성을 줄이기 위해 수술 전 컷오프를 '높게'(약 21.69 ng/mL) 설정한다. 수술 후에는 정상 조직이 제거되어 컷오프를 '낮게'(약 8.0 ng/mL) 설정한다. 선지의 수술 전/후가 서로 뒤바뀌어 있다.",
+    "selection_reason": "초안 가중치 W=6(최고)인 토픽. 교수가 '리얼월드는 그렇지 않다'(S6 경고), 컷오프 편차·정상조직·TgAb 한계를 반복 설명(S5), 슬라이드 15 한계 표를 행 단위로 읽어줌(B2), 수술 전·후 비교 구조(S7)가 동시 발동.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "대학원발표_2026_갑상선암_biomarker (2).pdf", "page": 15, "caption": "Washout Tg의 3가지 한계 슬라이드"}
+  },
+  {
+    "id": "thyroid-3",
+    "lecture_key": "thyroid",
+    "lecture_label": "05-12 갑상선암·CYFRA 21-1 바이오마커 (임동석 교수)",
+    "topic": "Washout Tg vs Washout CYFRA 21-1 진단성능 비교 및 Universal cutoff",
+    "exam_probability": 88,
+    "tier": 1,
+    "stem": "다음 중 Washout Tg와 Washout CYFRA 21-1의 진단 성능 및 컷오프 특성 비교에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "Washout Tg 값은 양성(전이) 림프절과 음성(양성) 림프절 사이에서 분포가 상당히 겹치는(overlap) 반면, CYFRA 21-1 값은 두 군 사이에서 겹침이 거의 없다.",
+      "CYFRA 21-1은 갑상선암 유래 마커여서 정상 갑상선 조직과 TgAb의 영향을 받지 않으므로, 수술 전(약 1.14 ng/mL)과 수술 후(약 1.10 ng/mL)의 컷오프가 거의 일정한 universal cutoff(~1.12 ng/mL)를 보인다.",
+      "Washout Tg의 컷오프는 수술 전(약 21.69 ng/mL)과 수술 후(약 8.0 ng/mL) 사이에서 크게 변동하여, 임상 표준화의 큰 장애물이 된다.",
+      "2025년 검증 연구에서 Washout CYFRA 21-1(AUC 약 0.959)은 Washout Tg(AUC 약 0.832)보다 높은 진단 정확도를 보였다.",
+      "수술 전후 컷오프가 크게 변동하는 이유는 CYFRA 21-1이 정상 갑상선 조직에서도 분비되기 때문이며, Washout Tg는 암 특이적이어서 수술 상태와 무관하게 컷오프가 일정하다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답(틀린 선지)은 5번이다. 두 마커의 역할이 완전히 뒤바뀌어 있다. '정상 갑상선 조직에서도 분비되어' 수술 전후 컷오프가 크게 변동하는 것은 CYFRA 21-1이 아니라 'Tg(사이로글로불린)'다. Tg는 갑상선 lineage 특이 마커여서 정상 조직 유무에 따라 컷오프가 21.69 → 8.0 ng/mL로 크게 흔들린다. 반대로 CYFRA 21-1은 암세포의 CK19 발현·아포토시스를 반영하는 암 특이적 마커이므로 정상 조직 영향을 받지 않아, 수술 전후 컷오프가 1.14 ≈ 1.10 ng/mL로 거의 일정한 universal line(~1.12)을 유지한다. 교수는 '빨간 것(Tg)은 수술 전후 차이가 많이 나는데 파란 것(CYFRA)은 별로 차이가 안 난다 → CYFRA가 훨씬 universal한 마커'라고 그래프로 강조했다. 나머지 선지(분포 overlap 차이, universal cutoff, Tg 변동, AUC 비교)는 모두 옳다.",
+    "correct_fact": "정상 갑상선 조직에서 분비되어 수술 전후 컷오프가 크게 변동하는 것은 'Tg'다. CYFRA 21-1이 오히려 암 특이적이어서 수술 상태와 무관하게 컷오프(~1.12 ng/mL)가 거의 일정하다. 선지에서 두 마커의 설명이 뒤바뀌어 있다.",
+    "selection_reason": "교수가 수술 전후 안정성을 파란(CYFRA)/빨간(Tg) 그래프로 직접 행 단위 비교(B2)하고 'universal 마커'임을 반복 강조(S5,S7). 초안 가중치 W=4(T31 Universal cutoff)+W=3(T32 Head-to-Head)의 핵심 비교 토픽.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "대학원발표_2026_갑상선암_biomarker (2).pdf", "page": 49, "caption": "수술 상태별 Washout Tg vs CYFRA 21-1 컷오프 비교 — CYFRA의 universal line(~1.12 ng/mL) 안정성 시각화"}
+  },
+  {
+    "id": "thyroid-4",
+    "lecture_key": "thyroid",
+    "lecture_label": "05-12 갑상선암·CYFRA 21-1 바이오마커 (임동석 교수)",
+    "topic": "CYFRA 21-1 선정 근거 및 cystic PTC proteomics (Dinets 2015)·예후 연관성",
+    "exam_probability": 82,
+    "tier": 1,
+    "stem": "다음 중 연구자가 CYFRA 21-1을 갑상선암 림프절 전이 washout 바이오마커로 선정한 근거와 선행 데이터에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "이상적인 새 바이오마커의 조건은 정상 갑상선 조직이 아닌 암에서만 나오는 'cancer marker'이고, 사이로글로불린처럼 측정이 쉬우며, 다른 암에서는 발현이 낮아야 한다는 것이다.",
+      "Dinets 등(2015)의 cystic PTC proteomics에서 약 1,581개 단백질을 분석해 최종 4개의 상향조절 단백질(CK19, S100A13, ANXA3, CMBL)을 도출하였다.",
+      "cystic PTC proteomics에서 S100A13은 민감도가 약 94%로 가장 높아 특이도(약 96%)와 함께 가장 균형 잡힌 마커로 최종 선정되었고, CYFRA(CK19)는 보조 후보에 그쳤다.",
+      "유방암 액와 림프절과 비소세포폐암 흉수 등 다른 암의 fluid/washout 검체에서 CYFRA 21-1의 진단적 유용성이 먼저 입증되어 있어, 이를 갑상선암에 적용할 근거가 되었다.",
+      "높은 Washout CYFRA 21-1은 림프절 전이, 원격 전이, TERT promoter mutation 등 예후 악화 인자와 유의하게 연관되어, 진단을 넘어 위험도 분류(prognostic) 도구로도 활용될 가능성이 있다."
+    ],
+    "answer_index": 2,
+    "explanation": "정답(틀린 선지)은 3번이다. S100A13에 대한 함정 선지다. Dinets(2015) cystic PTC proteomics에서 S100A13은 민감도가 약 94%로 가장 높았지만 '특이도가 약 35%로 매우 낮아' 임상 적용이 불가능했다. 교수는 'S100보다 사이프라(CK19)가 더 높게 나왔다'고 했고, 결국 민감도·특이도 약 82%/82%로 가장 균형 잡힌 CYFRA(CK19)가 선정되었다. 선지처럼 S100A13의 특이도가 96%이고 균형 잡혀 최종 선정되었다는 것은 명백히 틀렸다(특이도 35% → 균형 붕괴, 임상 적용 불가). 나머지 선지는 모두 옳다: 슬라이드 17의 이상적 biomarker 3조건, 1,581→최종 4개 단백질(CK19/S100A13/ANXA3/CMBL), 유방암·NSCLC fluid 선행 데이터, 그리고 CYFRA가 TERT·LN·distant metastasis 등 예후 인자와 연관된다는 점이 핵심이다.",
+    "correct_fact": "cystic PTC proteomics에서 S100A13은 민감도는 약 94%로 높았으나 특이도가 약 35%로 매우 낮아 임상 적용이 불가능했다. 민감도·특이도 약 82%/82%로 가장 균형 잡힌 CYFRA(CK19)가 최종 선정되었다. S100A13의 특이도 96%·균형 마커 선정은 틀린 진술이다.",
+    "selection_reason": "교수가 'S100보다 사이프라가 높게 나왔다'고 직접 비교(S7)하고, 슬라이드 30의 'Why did we choose CYFRA 21-1?' 5근거를 명시적으로 정리(S1,S5). 초안 트랩 포인트(S100A13 specificity 35%)로 명시된 박사과정 변별 함정.",
+    "study_strength": "★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "대학원발표_2026_갑상선암_biomarker (2).pdf", "page": 30, "caption": "CYFRA 21-1 선정 5가지 근거 요약 슬라이드"}
+  }
+]

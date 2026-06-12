@@ -1,0 +1,86 @@
+{
+  "lecture_key": "bloodomics",
+  "lecture_label": "03-17 혈액암 오믹스 (정승현)",
+  "summary_universe": [
+    {
+      "topic": "종양 내 이질성(Intratumor heterogeneity, ITH) 개념 + inter/intra 구분 + 진화 트리(trunk/branch) 기반 표적치료 전략",
+      "source": "Summary 필수슬라이드(p63/단독 필수슬라이드.pdf) 1번 항목 + 본문 p8~10",
+      "exam_prob": 95,
+      "reason": "Summary 슬라이드 4대 항목 1순위이자 교수 직접 출제예고(58:59) 1번. 본문에서 분량 최다(S1)+inter/intra 명시 비교(S7)+진단오류/치료저항 경고(S6)+evolution tree trunk vs branch 비유(S4). 비교형+적용형 고변별."
+    },
+    {
+      "topic": "Liquid biopsy 정의 + 검출 소스 3종(CTC=크기·EpCAM / ctDNA=160~170bp / exosome=DNA·mRNA·miRNA·protein) + tissue 대비 장점(비침습·반복채취·ITH 부분극복)",
+      "source": "Summary 필수슬라이드(p63) 2번 항목 + 본문 p11~12",
+      "exam_prob": 93,
+      "reason": "Summary 4대 항목 2순위, 교수 출제예고 '왜 좋은지' 명시. CTC/ctDNA/exosome 표 모식도(B2)+'중점적으로'(S2)+tissue vs liquid 비교(S7). 비교·정의 결합형 출제 1순위."
+    },
+    {
+      "topic": "ctDNA 분자적 특성(히스톤 단위 절단 160~170bp, 짧은 반감기→fresh prep) + 정상 cfDNA 다수/ctDNA 극소량 → ultra high-depth seq(또는 digital PCR) 필요성",
+      "source": "본문 p11, p13~16 + 녹음 15:40~17:37 (Summary의 ctDNA 하위 핵심)",
+      "exam_prob": 90,
+      "reason": "교수가 '오늘 좀 중점적으로'(S2) 명시, 160~170bp 수치 직접 언급(B2), '엄청 민감한 테크놀로지'(S6). 강의 최장 분량 구간. 기전형 고변별 (방향 함정 다수)."
+    },
+    {
+      "topic": "scRNA-seq(10X) 원리 — GEM/Sample index(시료 구분)/Cell(10X) Barcode(세포 구분)/UMI(mRNA 정량·PCR bias 보정)",
+      "source": "Summary 필수슬라이드(p63) 3번 항목 + 본문 p26~30",
+      "exam_prob": 85,
+      "reason": "Summary 4대 항목 3순위, 교수 출제예고 명시. p28~29 표/도식을 행 단위로 직접 설명(B2)+'결국'(S2)+분량 집중(S1). 3요소 역할 혼동 함정 출제 용이."
+    },
+    {
+      "topic": "Bulk vs single-cell(scRNA-seq) 비교 + scRNA-seq의 ITH/TME 연구상 장점(비편향, rare population 검출, TME·면역세포 동시분석, cell-cell communication 예측)",
+      "source": "본문 p18~19, p25~26, p40~43 + 녹음 26:19~27:36",
+      "exam_prob": 80,
+      "reason": "scRNA-seq 항목의 핵심 논리축. bulk('평균만 잡음') vs single-cell 명시 비교(S7)+'rare population 잘 찾음' 강조(S2/S4). 비교·적용형 서술 고변별. 초안 Q4가 별도 문항으로 분리한 부분."
+    },
+    {
+      "topic": "Bone marrow organoid — MM은 primary culture 곤란·동물모델 고비용/대체추세 → 오가노이드 플랫폼에 환자 암세포 공배양으로 ex vivo 모델 구축, drug screening·마커 기능검증 연결",
+      "source": "Summary 필수슬라이드(p63) 4번 항목 + 본문 p60~62 + 녹음 56:07~59:17",
+      "exam_prob": 88,
+      "reason": "Summary 4대 항목 4순위(마지막장)이며 교수 출제예고(58:59)에서 4개 중 하나로 직접 명명(S2+S6). '제일 중요한 거'라 표현하며 출제 예고에 포함. 현재 문항 미커버 → 최우선 갭."
+    }
+  ],
+  "current_topics": [
+    {
+      "id": "bloodomics-1",
+      "topic": "Liquid biopsy & ctDNA 분자특성/분석원리 (Summary 2번 + ctDNA 하위)",
+      "exam_prob_reassessed": 93,
+      "keep": true,
+      "note": "Summary 2번 항목 정면 커버. cfDNA 다수/ctDNA 극소량→고심도 시퀀싱이라는 교수 최강조 반전 포인트(S6)를 정답함정으로 포착. 160~170bp·반감기·ITH 부분극복·종적 모니터링까지 포괄한 강문항. 유지."
+    },
+    {
+      "id": "bloodomics-2",
+      "topic": "Intratumor heterogeneity + evolution tree(trunk/branch) 표적치료 (Summary 1번)",
+      "exam_prob_reassessed": 90,
+      "keep": true,
+      "note": "Summary 1번이자 출제예고 1순위 정면 커버. trunk/branch 방향 반전을 정답함정으로, inter/intra 구분·spatial bias·치료저항·역동변화 전 선지가 슬라이드 근거. 최고 변별. 유지."
+    },
+    {
+      "id": "bloodomics-3",
+      "topic": "scRNA-seq(10X) Barcode/UMI/Sample index 원리 (Summary 3번)",
+      "exam_prob_reassessed": 82,
+      "keep": true,
+      "note": "Summary 3번 항목 커버. UMI↔Cell Barcode 역할 혼동을 정답함정으로 포착, p28~29 도식 근거 명확. 다만 bulk vs single-cell '장점/비교' 축은 미포함(아래 gap에서 보완 권장). 유지."
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "Bone marrow organoid의 MM 연구 활용 근거 (primary culture 곤란·동물모델 대체 → 환자 암세포 공배양 ex vivo 모델, drug screening·마커 기능검증)",
+      "source_slide": "Summary 필수슬라이드 p63 4번 항목 + 본문 p60~62 (마지막 3~6장 take-home)",
+      "exam_prob": 88,
+      "why_high_yield": "summary 슬라이드 + last-slide(마지막장) 동시 해당. 교수 직접 출제예고(58:59)에서 4개 중 하나로 명명하고 '제일 중요한 거'로 도입(S2+S6). 현재 3문항이 전혀 커버하지 못한 명백한 누락 — Summary 4대 키워드 중 유일하게 비커버.",
+      "recommend_add": true
+    },
+    {
+      "topic": "Bulk vs single-cell(scRNA-seq) 비교 및 scRNA-seq의 ITH/TME 연구 장점(비편향·rare population 검출·TME 동시분석·cell-cell communication)",
+      "source_slide": "본문 p18~19, p25~26, p40~43 (Summary 3번 scRNA-seq 항목의 비교·적용 축)",
+      "exam_prob": 78,
+      "why_high_yield": "Summary 3번 항목의 핵심 비교프레임. 현재 bloodomics-3은 바코드/UMI '원리'만 다루고 'bulk 대비 왜/언제 쓰나'라는 비교·적용 축(S7+S4)은 비커버. 박사/석사 변별형(비교·적용) 출제 1순위인데 갭. 비교표 성격 강함.",
+      "recommend_add": true
+    }
+  ],
+  "weak_to_replace": [],
+  "verdict": "needs_additions",
+  "recommended_add_count": 2,
+  "recommended_drop_ids": [],
+  "notes": "현재 3문항은 모두 강문항(써머리 1·2·3번 + 방향 반전 함정형)으로 keep. 교체할 약문항·단순암기·중복 없음(M=0). 그러나 교수 출제예고(58:59)와 Summary 필수슬라이드의 4대 키워드(ITH/Liquid biopsy/scRNA-seq/Bone marrow organoid) 중 4번 'Bone marrow organoid'가 전혀 커버되지 않아 닫힌우주(C1)+써머리 가중 원칙상 최우선 갭. 강조도 mid이지만 마지막장+필수슬라이드+직접 출제예고가 겹쳐 써머리 가중을 강하게 적용함. 추가 1: Bone marrow organoid 활용근거(기전·적용 서술형). 추가 2: Bulk vs scRNA-seq 비교/장점(비교·적용형)으로 scRNA-seq 항목의 비교축 보강. 두 추가 모두 단순암기 아닌 기전·비교형으로 대학원 변별 충족."
+}

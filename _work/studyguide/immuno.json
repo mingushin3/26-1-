@@ -1,0 +1,121 @@
+{
+  "code": "immuno",
+  "lecture_label": "06-02 면역항암·간암 저항성 (성필수)",
+  "essence": "간암(HCC) 면역치료가 잘 안 듣는 이유는 TME의 면역억제 세력(TAM·CAF·IgA)과 환자 T세포의 분화상태 때문. 핵심은 '왜 저항하는가'와 '어떻게 cold→hot으로 뒤집어 극복하는가'를 방향까지 정확히 외우는 것.",
+  "analogy": "종양은 'CAF가 콜라겐으로 쌓은 성벽' 안에 숨은 성. ICI는 지친 군대(T세포)의 브레이크를 푸는 것이고, LRT/항암제 병용은 성에 불을 질러 '차가운 성(cold)'을 '뜨거운 전장(hot)'으로 바꾸는 작전.",
+  "concepts": [
+    {
+      "heading": "면역치료가 안 듣는 이유(Pitfalls) — 닫힌 우주의 뼈대",
+      "points": [
+        "신항원(neoantigen)↑ → 면역원성↑ → 반응↑. 흑색종(자외선 변이)>HCC(중간)>췌장암(낮음)",
+        "흑색종 단일제 반응률 ~60–70%(고반응성), HCC ~35%",
+        "종양 내 이질성(heterogeneity): inflamed 부위는 제거, cold 부위는 잔존 → 부분반응",
+        "TAM/CAF/Treg/MDSC/TAN/plasma cell = 면역억제 6대 세력",
+        "염증성 배경 간(지방간)에서 anti-PD-1 → 역설적 하이퍼프로그레션 가능",
+        "6대 Pitfalls 슬라이드가 6회 반복 = 최우선 암기"
+      ]
+    },
+    {
+      "heading": "TME 면역억제 세력: CAF(FAP-STAT3) · IgA(gut-liver axis)",
+      "points": [
+        "CAF = ECM(콜라겐) '성벽'으로 면역세포·CAR-T 물리 차단 + PD-L1·억제 사이토카인",
+        "FAP→STAT3 활성화 → CAF 생존↑. FAP 억제 → STAT3↓·apoptosis↑(Bcl-2↓) → CAF 사멸",
+        "혈청 soluble FAP: HCC에서↑, 주로 CAF가 생산",
+        "Matrix CAF 우세 → 예후 나쁨 + 위암·폐암 등 공통(HCC 특이 아님)",
+        "장 dysbiosis → IgA 과다생성 → 문맥 통해 간 축적",
+        "간내 IgA → 대식세포·CAF 결합 → PD-L1 upregulation·T세포 독성↓ → 면역치료 저하",
+        "치료적: CAF는 depletion 대상(FAP CAR-T, nintedanib 약물재배치)"
+      ]
+    },
+    {
+      "heading": "반응 예측: PD-1+CD8 T세포 분화상태 + 바이오마커",
+      "points": [
+        "ICI = 지친(exhausted) T세포 브레이크(PD-1) 풀기 → 치료 전 분화상태가 반응 좌우",
+        "고갈 master 전사인자 = TOX (TCF-1 아님!)",
+        "반응자: 치료 후 말초혈 CD8 T세포 expansion + TIGIT↑ = on-treatment biomarker (ate+bev)"
+      ],
+      "table": {
+        "title": "T세포 분화상태 vs ICI 반응성",
+        "columns": ["표현형", "마커", "ICI 반응"],
+        "rows": [
+          ["Progenitor-exhausted / central memory", "TCF-1↑ CCR7↑", "Responder (클론 증식 O)"],
+          ["Terminally-exhausted", "PD1ʰⁱ TIM3ʰⁱ TOXʰⁱ", "Non-responder (안 깨어남)"]
+        ]
+      }
+    },
+    {
+      "heading": "PD-L1 CPS 계산식 + 저항 극복 3대 전략",
+      "points": [
+        "PD-L1↑ → 면역원성 좋다는 간접지표 → ICI 반응 경향↑",
+        "CPS 분자 = PD-L1 염색세포(종양세포+림프구+대식세포), 분모 = 생존 종양세포, ×100",
+        "CPS 최대 100으로 cap (100 초과 계산돼도 100). cf. TPS=종양세포만",
+        "극복① LRT(TACE/RFA)/항암제 병용 → 괴사·항원·사이토카인↑ → cold→hot 전환",
+        "극복② 면역억제세포(TAM·CAF) depletion",
+        "극복③ 입양세포치료(CAR-T): 종양 특이 표적항원 필수",
+        "CAR-T 표적 GPC-3: 정상 장기 비발현(off-tumor 독성↓ 장점) BUT HCC 50%·heterogeneous 발현(단점)"
+      ]
+    }
+  ],
+  "traps": [
+    {
+      "qref": "immuno-1",
+      "topic": "Matrix CAF 예후·특이성",
+      "correct": "✅ Matrix CAF 우세 → 예후 나쁨, 간암 특이 아니라 위암·폐암 공통 현상",
+      "trap": "❌ Matrix CAF 많을수록 예후 좋고, 간암에 국한된 간암 특이적 현상이다"
+    },
+    {
+      "qref": "immuno-2",
+      "topic": "GPC-3 발현 양상",
+      "correct": "✅ GPC-3는 HCC 약 50%에서만, 발현해도 heterogeneous → 균일 반응 기대 어려움",
+      "trap": "❌ GPC-3는 HCC 거의 100%에서 균일(homogeneous)하게 발현해 모든 환자에 균일 반응"
+    },
+    {
+      "qref": "immuno-3",
+      "topic": "간내 IgA의 PD-L1 방향",
+      "correct": "✅ 간내 IgA → 대식세포 PD-L1 upregulation·T세포 독성↓ → 면역치료 효능 저하",
+      "trap": "❌ IgA가 PD-L1을 downregulation해 항종양 T세포 반응을 증강, 면역치료 효능을 높인다"
+    },
+    {
+      "qref": "immuno-4",
+      "topic": "흑색종 면역원성",
+      "correct": "✅ 흑색종은 신항원 부하↑·면역원성 최상 → 단일제 반응률 ~60–70%(고반응성)",
+      "trap": "❌ 흑색종은 신항원 부하 낮아 면역원성 최저, 반응률 10~20% 불응성 종양이다"
+    },
+    {
+      "qref": "immuno-g1",
+      "topic": "고갈 master 전사인자 / TCF-1 역할",
+      "correct": "✅ 고갈 master TF = TOX. TCF-1·CCR7은 progenitor/CM(반응자) 마커로 클론증식·반응 연관",
+      "trap": "❌ 고갈 master 전사인자는 TCF-1이며, TCF-1↑일수록 terminal exhaustion 심화·ICI 무반응"
+    },
+    {
+      "qref": "immuno-g2",
+      "topic": "CPS 분자 구성",
+      "correct": "✅ CPS 분자 = PD-L1 양성 종양세포 + 림프구 + 대식세포 모두 포함",
+      "trap": "❌ CPS 분자는 PD-L1 양성 종양세포만 세고 림프구·대식세포는 분자에서 제외한다(=TPS와 혼동)"
+    },
+    {
+      "qref": "immuno-g3",
+      "topic": "LRT/항암제 병용의 전환 방향",
+      "correct": "✅ LRT/항암제 병용 → 괴사·항원·사이토카인↑ → cold→hot 전환으로 반응↑",
+      "trap": "❌ 병용의 목적은 hot→cold 전환으로 자가면역 독성을 줄여 관문억제제 반응을 높이는 것"
+    }
+  ],
+  "memorize": [
+    "신항원↑→면역원성↑→반응↑ : 흑색종(~60–70%) > HCC(~35%) > 췌장암",
+    "고갈 master TF = TOX / 반응자 마커 = TCF-1·CCR7(progenitor·CM) / 반응자는 치료 후 expansion+TIGIT↑",
+    "CPS 분자 = 종양세포+림프구+대식세포, 최대 100 (TPS=종양세포만)",
+    "극복 3전략: ①LRT·항암제 병용 cold→hot ②면역억제세포 depletion ③입양세포치료(CAR-T, GPC-3 50%·heterogeneous)"
+  ],
+  "figures": [
+    {
+      "pdf": "202606 대학원 통합강의_ 종양면역학 (1).pdf",
+      "page": 42,
+      "caption": "T세포 분화상태와 클론증식: Central memory/Progenitor-exhausted('Responders to ICIs') vs Terminally-exhausted('ICI unresponsive')"
+    },
+    {
+      "pdf": "202606 대학원 통합강의_ 종양면역학 (1).pdf",
+      "page": 36,
+      "caption": "PD-L1 CPS 계산식: 분자=PD-L1 염색세포(종양세포·림프구·대식세포), 분모=생존 종양세포, ×100(최대 100)"
+    }
+  ]
+}

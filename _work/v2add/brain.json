@@ -1,0 +1,71 @@
+[
+  {
+    "id": "brain-g1",
+    "lecture_key": "brain",
+    "lecture_label": "05-26 신경외과·뇌종양 (Stephen Ahn 교수)",
+    "topic": "CAR-T 합성 원리(MHC restriction 한계 vs 항체 항원인지) 및 1~3세대 신호 구조",
+    "exam_probability": 81,
+    "tier": 1,
+    "stem": "다음 중 CAR(Chimeric Antigen Receptor)-T 세포가 고안된 이론적 배경(T세포의 항원 인지 한계 vs 항체의 항원 인지)과 CAR 분자의 구조 및 1~3세대 신호 구성에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "T세포는 항원을 직접 인지하지 못하고 MHC에 의해 processing된 짧은 펩타이드만 인식하는데, MHC는 개인마다 다양(polymorphic)하고 같은 MHC라도 결합 펩타이드가 달라 항원 제시가 불안정하다.",
+      "항체-항원 반응은 클론 단위로 안정적으로 결합하여 인식이 정확하지만, 항체 단독의 직접적 세포 살해 능력은 T세포보다 약하다.",
+      "CAR는 항체에서 따온 scFv(항원 인식부)와 T세포의 signaling domain(CD3ζ 등 살해부)을 융합한 키메라 수용체로, '인지는 항체처럼, 살해는 T세포처럼' 작동하도록 설계되었다.",
+      "1세대 CAR는 signal 1(CD3ζ) 단독, 2세대는 여기에 공동자극(costimulatory) 신호 1개(CD28 또는 4-1BB), 3세대는 공동자극 신호 2개를 추가한 구조이다.",
+      "CAR는 scFv를 통해 MHC에 제시된 펩타이드를 인식하므로, 환자와 MHC 일치(HLA-matching)가 맞아야만 표적 항원을 인지할 수 있다는 점이 핵심 장점이다."
+    ],
+    "answer_index": 4,
+    "explanation": "이 문항의 핵심은 CAR가 만들어진 '이유' 자체를 뒤집은 함정입니다. 교수는 'T세포는 MHC class라는 게 프로세스인데 펩타이드를 인지하고, 이게 사람마다 너무 다르고 복잡해서 인지가 안 되는데, 반대로 항원-항체는 클론이면 딱딱 인식되니까, 항원 인식 부위를 T세포 signal domain과 합쳐서 키메라(CAR)를 만들었다'고 설명했습니다. 즉 CAR의 존재 이유 자체가 'MHC 제약(restriction)을 우회'하는 것입니다. CAR의 scFv는 MHC에 제시된 펩타이드가 아니라 세포 표면 항원에 직접 결합하므로 MHC-비의존적이고 HLA-matching이 불필요합니다. 따라서 'scFv가 MHC 제시 펩타이드를 인식해 HLA 일치가 필요하다'는 5번 선지는 CAR의 본질을 정반대로 진술한 오류입니다. 나머지: T세포의 MHC 제약·불안정성, 항체의 안정적 인지+약한 살해력, scFv+CD3ζ 키메라 설계, 1~3세대 signal 구성(1세대 signal1 / 2세대 +costim1개 / 3세대 +costim2개)은 모두 옳습니다.",
+    "correct_fact": "CAR의 scFv는 세포 표면 항원에 직접 결합하므로 MHC 제시(presentation)에 의존하지 않으며 HLA-matching이 필요 없다. CAR가 고안된 이유 자체가 T세포의 'MHC restriction' 한계를 우회하기 위함이다.",
+    "selection_reason": "DRAFT W=5 TIER1(Q3)이나 현재 5문항 어디에도 미커버. 모든 세포치료(CAR-T·CAR-NK·γδ T) 단원의 기초 기전이며, Part2 도입부에서 교수가 'CAR가 나온 배경을 간단히' 직접 설명(S1 분량집중+S2 '왜 그러면'+S4 분자설계 비유로 전환+S7 T세포 vs 항체 비교). generation별 signal 배합은 TIER2 배합형(T2-9)으로도 예고된 직격 토픽.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "260526_대학원강의자료.pdf", "page": 55, "caption": "Evolution of CAR — 1세대(CD3ζ)→2세대(+costim 1개)→3세대(+costim 2개) 신호 구조 진화"}
+  },
+  {
+    "id": "brain-g2",
+    "lecture_key": "brain",
+    "lecture_label": "05-26 신경외과·뇌종양 (Stephen Ahn 교수)",
+    "topic": "면역항암치료 3시대(Coley→Rosenberg/사이토카인→Checkpoint 2018노벨상→세포치료) 및 GBM checkpoint 단독 실패(CheckMate 143)",
+    "exam_probability": 80,
+    "tier": 1,
+    "stem": "다음 중 면역항암치료의 역사적 발전(Coley→사이토카인→면역관문억제제→세포치료)과, GBM에서 면역관문억제제(checkpoint inhibitor)가 실패한 이유에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "1890년대 Coley는 세균 독소를 종양에 주입해 종양 퇴행을 관찰했는데, 실제 기전은 박테리아가 암을 직접 죽인 것이 아니라 독소로 모인 면역세포가 항종양 효과를 낸 것이었다.",
+      "1980년대 Rosenberg는 멜라노마(면역치료에 잘 반응하는 암) 환자에게 IL-2 등 비특이적(non-specific) 고용량 사이토카인을 투여해 일부에서 극적 효과를 보였으나, 심한 부작용과 단기 재발이 한계였다.",
+      "CTLA-4·PD-1 등 면역관문 차단제는 2018년 Allison과 Honjo의 노벨생리의학상으로 정점에 올랐으며, 흑색종 등에서 큰 성공을 거두었다.",
+      "GBM에서는 CheckMate 143 등에서 면역관문억제제가 단독은 실패했으나 병용(combination)에서는 명확한 생존 개선을 보여, 현재 GBM 표준치료로 정착하였다.",
+      "GBM에서 checkpoint inhibitor가 듣지 않는 주요 원인으로는 BBB 장벽, 면역억제적 종양미세환경(TME), 낮은 종양변이부담(TMB)이 제시된다."
+    ],
+    "answer_index": 3,
+    "explanation": "교수는 'GBM은 이미 2010년대 임상을 했지만 단독에서는 다 실패했고 지금까지도 단일이나 콤비에서 실패했다. 그래서 더 강력하게 넣어주자며 세포치료제 개념이 나왔다'고 명확히 말했고, 슬라이드 p39(CheckMate 143)도 'GBM 재발성 — OS 개선 없음'으로 명시합니다. 즉 GBM에서는 checkpoint가 단독뿐 아니라 병용에서도 실패했고, 그 결과가 바로 세포치료제로의 전환 논리입니다. 따라서 '병용에서는 명확한 생존 개선을 보여 GBM 표준치료로 정착했다'는 4번 선지는 사실을 정반대로 뒤집은 오류이며, GBM 표준치료는 여전히 수술+방사선+TMZ입니다. 나머지: Coley의 면역세포 매개 기전, Rosenberg의 IL-2 비특이 사이토카인, 2018 노벨상/흑색종 성공, GBM 실패 3대 원인(BBB·TME·낮은 TMB)은 모두 옳습니다.",
+    "correct_fact": "GBM에서 면역관문억제제는 단독(CheckMate 143)과 병용 모두 OS 개선에 실패했으며, 이것이 더 강력한 세포치료제(CAR-T·γδ T·NK)로 전환된 논리적 근거다. GBM 표준치료는 여전히 수술+방사선+Temozolomide이다.",
+    "selection_reason": "DRAFT W=5 TIER1(Q12)이나 현재 미커버. 'GBM에서 왜 checkpoint가 실패했는가'는 강의 전체(세포치료 전환)의 논리적 축으로 기전 설명형 1순위. S1(분량집중)+S2('로젠버그라는 분이','노벨상 받으면서')+S5(시대별 반복)+S7(시대 간 병렬비교)+B2(p39 연도/약제 타임라인 read-aloud). 슬라이드 p37-40에 시대별 비교표가 정리된 출제 직격 구간.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "260526_대학원강의자료.pdf", "page": 39, "caption": "2세대 면역관문억제제 — CTLA-4(1990s)→PD-1(2014)→2018 노벨상→2021 GBM CheckMate 143 실패 타임라인"}
+  },
+  {
+    "id": "brain-g3",
+    "lecture_key": "brain",
+    "lecture_label": "05-26 신경외과·뇌종양 (Stephen Ahn 교수)",
+    "topic": "Brain immune privilege(면역특권) 및 면역억제 TME가 GBM 면역치료에 미치는 영향 / steroid 딜레마",
+    "exam_probability": 78,
+    "tier": 1,
+    "stem": "다음 중 뇌의 면역특권(immune privilege)과 면역억제적 종양미세환경(TME)이 GBM 면역치료에 미치는 영향에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "뇌 실질 내 농양(brain abscess)이 생겨도 발열 등 전신 알람 신호가 약한 것은, 뇌가 면역학적으로 특권화된(immune-privileged) 부위임을 보여주는 임상적 단서이다.",
+      "뇌에 면역세포(microglia 등)가 전혀 없는 것은 아니나, 종양 주변은 면역을 억제하는 환경으로 둘러싸여 있어 면역치료가 잘 듣지 않는다.",
+      "임상에서 종양 부종 완화를 위해 사용하는 스테로이드는 투여된 T세포 등 면역세포를 억제하므로, 스테로이드 저항성 T세포를 개발하려는 시도가 있다.",
+      "면역억제적 TME 때문에 GBM은 'Why GBM Remains Incurable'의 핵심 생물학적 장벽(BBB·이질성·암줄기세포·면역억제 TME) 중 하나로 면역억제 환경이 꼽힌다.",
+      "뇌는 면역특권 부위이므로 종양미세환경이 면역을 강하게 활성화하는 친(pro)염증 환경으로 유지되며, 이 때문에 checkpoint inhibitor 단독요법이 GBM에서 특히 잘 듣는다."
+    ],
+    "answer_index": 4,
+    "explanation": "교수는 '뇌는 면역세포가 아예 없는 게 아니라 면역을 억제하는 환경으로 둘러싸여 있다'고 했고, 뇌농양에 열이 안 나는 예를 들며 '몸이 알람 신호를 주지 않고 회피하게 진화된, 엄청 면역 억제적인 환경'이라 강조했습니다. 즉 GBM의 TME는 친염증·면역활성이 아니라 강력하게 '면역억제적'이며, 바로 이 때문에 checkpoint inhibitor 단독요법이 GBM에서 실패합니다(BBB·면역억제 TME·낮은 TMB). 따라서 'TME가 친염증·면역활성 환경으로 유지되어 checkpoint 단독이 특히 잘 듣는다'는 5번 선지는 방향과 인과가 모두 정반대인 오류입니다. 나머지: 뇌농양에 발열 약함(면역특권 단서), microglia 존재하나 억제환경, 스테로이드의 면역세포 억제와 저항성 T세포 개발, p70의 4대 장벽 중 면역억제 TME 포함은 모두 옳습니다.",
+    "correct_fact": "GBM의 종양미세환경(TME)은 강력하게 '면역억제적'이며, 이것이 BBB·낮은 TMB와 함께 checkpoint inhibitor 단독요법이 GBM에서 실패하는 핵심 원인이다. (친염증·면역활성 환경이 아니다.)",
+    "selection_reason": "DRAFT W=5 TIER1(Q8)이나 현재 미커버. p70 'Why GBM Remains Incurable'의 4대 핵심 장벽(BBB·heterogeneity·cancer stem cell·immunosuppressive TME)을 한 장에 정리한 conclusion-type 슬라이드 직결. S4(뇌농양 비유로 패턴전환)+S6('회피')+B1(S4+S6 동시발생)으로 강조된 고변별 기전형. checkpoint 실패·세포치료 필요성의 기전적 토대.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "260526_대학원강의자료.pdf", "page": 70, "caption": "Why Glioblastoma Remains Incurable — BBB·Heterogeneity·Cancer stem cell·Immunosuppressive TME 4대 장벽"}
+  }
+]

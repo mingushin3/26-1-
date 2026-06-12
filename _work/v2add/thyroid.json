@@ -1,0 +1,71 @@
+[
+  {
+    "id": "thyroid-g1",
+    "lecture_key": "thyroid",
+    "lecture_label": "05-12 갑상선암·CYFRA 21-1 (임동석 교수)",
+    "topic": "Take-home message 4가지 + On-going/Future study (마지막 요약 슬라이드 통합)",
+    "exam_probability": 88,
+    "tier": 1,
+    "stem": "다음은 본 강의의 마지막 요약 슬라이드(TAKE-HOME MESSAGE)와 향후 연구 방향에 관한 설명이다. 다음 중 옳지 않은 것은?",
+    "options": [
+      "진단 바이오마커는 통계적 차이의 유무가 아니라 임상적 미충족 수요(clinical unmet needs)와 임상 의사결정에 미치는 영향(impact on clinical decision)에서 출발해야 한다.",
+      "때로는 화려한(\"fancy\") omics 신규 마커를 새로 발굴하기보다, 폐암 등에서 이미 잘 알려진 마커를 치료 상태(treatment status) 같은 다른 상황에 재적용하는 것이 더 효과적일 수 있다.",
+      "바이오마커를 적용하기 전에 그 분자의 생성(production)부터 제거(removal)까지 전 과정의 분자 특성을 항상 염두에 두어야 한다.",
+      "예비(preliminary) 논문 한 편으로도 마커의 임상적 유용성이 충분히 입증되므로, 별도의 독립적 검증(validation) 과정 없이 곧바로 임상에 도입할 수 있다.",
+      "향후 연구 방향으로는 washout fluid의 proteomics를 통한 추가 마커 발굴, washout CYFRA 21-1의 비용효과성 분석, CK-19/caspase-3의 IHC 기전 연구, 다기관 전향적 연구, 신의료기술 등재 신청 등이 제시되었다."
+    ],
+    "answer_index": 3,
+    "explanation": "정답(틀린 선지)은 4번이다. 슬라이드 55의 take-home message 네 번째 메시지는 정확히 그 반대다 — 'Only one preliminary paper is not enough! Validation process is also important', 즉 '예비 논문 한 편으로는 부족하며 검증 과정이 반드시 중요하다'는 것이다. 실제로 2019년 단일기관 130 LN pilot study는 한 차례 reject(슬라이드 43 decision letter: 'replicate your observations in an independent series')된 뒤, 2025년 dual-center 검증연구(슬라이드 44)로 재현되어서야 임상 유용성이 확립되었다. 따라서 '검증 없이 곧바로 도입 가능'은 강의 결론과 정면으로 어긋난다. 나머지 4개 선지는 모두 슬라이드 55(마지막 요약 슬라이드)에 그대로 기재된 옳은 진술이다: ①임상 미충족 수요·의사결정 영향에서 출발, ②fancy omics보다 known marker 재적용(다른 situation/treatment status), ③production~removal 분자 특성 이해, ⑤On-going/Future study 5항목(proteomics·cost-effectiveness·IHC CK19/caspase-3·multi-center prospective·신의료기술).",
+    "correct_fact": "Take-home 4번 메시지는 'preliminary 논문 한 편으로는 부족하며 validation 과정이 반드시 필요하다'이다. 2019 pilot이 reject된 뒤 2025 dual-center 검증연구로 재현되어 임상 유용성이 확립되었다. '검증 없이 곧바로 도입 가능'은 강의 결론과 정반대다.",
+    "selection_reason": "슬라이드 p55 TAKE-HOME MESSAGE는 deck 전체를 압축한 explicit 마지막 요약/결론 슬라이드로, 써머리 가중 최우선 갭(why_high_yield: explicit summary/last-slide). 교수가 마지막에 4개 bullet을 직접 읽어주며(B2) 강조(S2 'take-home message'·S5 반복)했고, on-going/future study까지 명시되어 통합 사고형 출제 1순위이나 현재 4문항 어디에도 take-home 메시지를 직접 묻는 문항이 없어 갭으로 식별됨.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "대학원발표_2026_갑상선암_biomarker (2).pdf", "page": 55, "caption": "TAKE-HOME MESSAGE 4가지(unmet need 출발 / known marker 재적용 / production~removal 분자특성 / validation 필수) + On-going·Future study 5항목 — deck 마지막 요약 슬라이드"}
+  },
+  {
+    "id": "thyroid-g2",
+    "lecture_key": "thyroid",
+    "lecture_label": "05-12 갑상선암·CYFRA 21-1 (임동석 교수)",
+    "topic": "Washout CYFRA 21-1의 discordance rescue 임상적용 (불일치 22→90.9% 구제, FNAC+CYFRA 95.1% accuracy, Zero additional procedures)",
+    "exam_probability": 84,
+    "tier": 1,
+    "stem": "다음 중 FNAC와 Washout Tg 결과가 불일치(discordant)하는 환자에서 Washout CYFRA 21-1을 적용해 진단을 구제하는 임상 시나리오에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "2019년 pilot study(130 LN)에서 FNAC와 washout Tg로 판단이 혼란스러웠던 불일치 림프절은 22개(16.9%)였고, 여기에 washout CYFRA 21-1 기준을 적용하자 그중 90.9%(20/22)가 정확한 진단으로 구제되었다.",
+      "이 적용은 FNAC·washout Tg를 시행하고 남은 동일 검체로 CYFRA 21-1을 추가 측정하는 방식이므로, 환자에게 추가 천자나 시술을 요구하지 않는다(Zero additional procedures).",
+      "Washout CYFRA 21-1은 수술 상태와 무관하게 FNAC와 washout Tg의 진단 정확도를 높일 수 있어, 특히 두 검사가 불일치할 때 추가로 평가하는 검사로 권고된다.",
+      "검증연구(2025)에서 FNAC에 washout CYFRA 21-1을 결합한 진단법은 정확도 약 95.1%에 도달하여, FNAC+washout Tg 조합(약 89% 수준)보다 임상적으로 의미 있는 향상을 보였다.",
+      "Washout CYFRA 21-1을 적용해 구제되는 불일치 케이스는 거의 전적으로 FNAC 음성·washout Tg 양성을 CYFRA로 '양성(전이)'으로 정정하는 경우로, CYFRA가 위음성 림프절을 추가로 찾아내는 데에만 기여한다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답(틀린 선지)은 5번이다. CYFRA의 구제 방향을 한쪽으로만 단정한 인과 왜곡 선지다. 슬라이드 37의 표를 보면 washout Tg는 양성 88개 양성 LN 중 15개를 '전이로 오분류(위양성)'한 반면 CYFRA의 위양성은 단 2~3개였다. 즉 discordance rescue의 상당 부분은 'Tg가 양성으로 잘못 부른 양성(benign) 림프절을 CYFRA로 음성(true negative)으로 되돌려 불필요한 수술을 막는' 방향이며, 동시에 FNAC가 놓친 전이를 양성으로 회수하는 방향도 함께 작동한다. 따라서 'CYFRA가 위음성 림프절을 추가로 찾아내는 데에만 기여한다'는 진술은 절반만 맞고 핵심(위양성 정정→불필요수술 회피)을 누락·왜곡한 틀린 설명이다. 교수도 '애매한 환자에서 CYFRA가 양성이면 수술 근거, 음성이면 불필요한 neck dissection을 피한다'는 양방향 효용을 강조했다. 나머지 선지는 모두 옳다: ①슬라이드 39의 22개(16.9%)→90.9%(20/22) 구제, ②동일 검체 추가측정·zero additional procedures(슬라이드 40), ③수술 상태 무관·불일치 시 평가 권고(슬라이드 40), ④FNAC+CYFRA 95.1% accuracy vs FNAC+Tg ~89%(슬라이드 38·52).",
+    "correct_fact": "Discordance rescue는 양방향이다. washout Tg의 위양성(88개 양성 LN 중 15개 오분류)을 CYFRA가 true negative로 정정해 불필요한 neck dissection을 막는 방향과, FNAC가 놓친 전이를 회수하는 방향이 함께 작동한다. CYFRA가 위음성만 찾아낸다는 단정은 틀렸다.",
+    "selection_reason": "초안 TIER1 T24(W=4). 13.9% 불필요수술을 실제로 해결하는 clinical-action 토픽으로 2019→2025 동일결론 반복(S5)+경고성 발화(S6)가 발동된 고출제 적용형이나, 현재 문항은 성능 수치(thyroid-3)만 다루고 '불일치 환자를 실제로 어떻게 구제하는가'라는 적용 시나리오는 미커버라 갭으로 식별됨(audit why_high_yield).",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "대학원발표_2026_갑상선암_biomarker (2).pdf", "page": 37, "caption": "FNAC·washout Tg·washout CYFRA 21-1의 130 LN 분류 교차표 — Tg 위양성 15개를 CYFRA가 정정하는 양방향 discordance rescue 도식(p39 22→20/22 90.9% 구제와 연계)"}
+  },
+  {
+    "id": "thyroid-g3",
+    "lecture_key": "thyroid",
+    "lecture_label": "05-12 갑상선암·CYFRA 21-1 (임동석 교수)",
+    "topic": "Breast cancer vs Thyroid cancer washout biomarker 활용도 5측면 비교 (p54 전용 비교표)",
+    "exam_probability": 80,
+    "tier": 1,
+    "stem": "다음 중 유방암과 갑상선암에서 US-guided FNA washout 바이오마커의 임상 활용도를 비교한 설명(슬라이드 54)으로 옳지 않은 것은?",
+    "options": [
+      "주 표적 림프절은 유방암이 액와 림프절(axillary LN), 갑상선암이 경부 림프절(cervical LN, 특히 재발·전이 결절)로 서로 다르다.",
+      "유방암은 액와 초음파·core needle biopsy·감시림프절 생검(SLNB) 같은 효과적인 조직학적·외과적 병기설정법이 이미 확립되어 있어 washout 바이오마커에 대한 임상적 필요가 제한적이다.",
+      "갑상선암에서 정확한 림프절 진단은 재수술(reoperation), 방사성요오드(RAI) 전략, 국소치료, 적극적 감시 결정에 직접 영향을 주므로 washout 바이오마커의 임상적 효용이 상대적으로 높다.",
+      "유방암에서는 저용적 림프절 병변을 검출해도 액와 수술이 점차 축소(de-escalation)되는 추세여서 치료를 크게 바꾸지 않는 반면, 갑상선암에서는 정확한 경부 림프절 진단의 중요성이 커지고 있다.",
+      "CYFRA 21-1은 유방암에 특이적인 마커여서 유방암 액와 림프절 진단에서는 활용도가 높지만, 갑상선암에서는 비특이적이어서 보완적 가치가 낮다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답(틀린 선지)은 5번이다. 마커 특이성과 활용도 방향이 모두 뒤집힌 선지다. 슬라이드 54의 'Marker specificity' 행은 'CYFRA 21-1 is NOT breast cancer–specific; it reflects epithelial tumor activity and can be elevated in other cancers'라고 명시한다. 즉 CYFRA 21-1은 유방암 특이적 마커가 '아니라' 상피종양 활성을 반영하는 범용 마커다. 또한 효용 방향도 반대다 — 유방암에서는 SLNB 등 외과적 병기설정이 이미 확립되어 washout 마커의 효용이 '낮고'(supplemental tool), 갑상선암에서는 Tg가 thyroid-lineage 특이적이라 CYFRA 21-1이 보완 마커로(특히 CK19 양성·역분화 갑상선암에서) 효용이 '높다'. 따라서 'CYFRA가 유방암 특이적이라 유방암에서 활용도 높고 갑상선에서 보완가치 낮다'는 진술은 표와 정반대다. 나머지 선지는 모두 슬라이드 54 표의 옳은 진술이다: ①target LN(axillary vs cervical), ②유방암은 SLNB 확립→필요 제한적, ③갑상선암 진단이 reoperation·RAI·국소치료·active surveillance에 직접 영향, ④유방암 axillary surgery de-escalation vs 갑상선암 진단 중요성 증가.",
+    "correct_fact": "CYFRA 21-1은 유방암 특이 마커가 아니라 상피종양 활성을 반영하는 비특이 마커다. washout 마커 효용은 유방암에서 낮고(SLNB 등 이미 확립), 갑상선암에서 높다(Tg가 lineage-특이적이라 CYFRA가 보완, 특히 CK19+/역분화암). 선지5는 특이성과 효용 방향이 모두 뒤바뀌었다.",
+    "selection_reason": "슬라이드 p54는 강의 후반부(마지막 3~6장) 전용 Breast vs Thyroid 비교 TABLE로, S7(체계적 비교·대조)+B2(행/열 단위 표를 직접 읽어줌)가 동시 충족되는 비교문제 최적 포맷이며 현재 4문항 미커버 갭(audit why_high_yield: 비교표 슬라이드, 박사 변별 적용·비교형). 마지막장 가중 강화 원칙 적용 대상.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "대학원발표_2026_갑상선암_biomarker (2).pdf", "page": 54, "caption": "US-guided FNA Washout Biomarkers between Breast Ca and Thyroid Ca — target LN/standard approach/marker specificity/treatment impact/clinical trend/utility 6행 비교표"}
+  }
+]

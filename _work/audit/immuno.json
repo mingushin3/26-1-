@@ -1,0 +1,136 @@
+{
+  "lecture_key": "immuno",
+  "lecture_label": "06-02 면역항암 (성필수)",
+  "summary_universe": [
+    {
+      "topic": "면역기반 치료가 잘 안 듣는 6대 Pitfalls (낮은 면역원성·이질성·염증간 유래 비정상 T세포·면역억제세포·자가면역독성 한계·biomarker 부재)",
+      "source": "슬라이드 p4·5·7·11·14·35(6회 반복) + Summary p62 1번 항목 + 강의 말미 핵심포인트 재정리",
+      "exam_prob": 95,
+      "reason": "Summary 슬라이드(p62) 첫 항목이자 6회 반복된 강의 척추. 교수가 말미(34:37~)에 직접 '핵심 포인트 첫 번째'로 재정리. 써머리+last-slide+최다반복 삼중 가중."
+    },
+    {
+      "topic": "신항원(neoantigen) 부하와 면역원성·면역치료 반응성 (흑색종>HCC>췌장암), 종양=바이러스감염 비유",
+      "source": "슬라이드 p6(PCAWG neoantigen 표) + 6 Pitfalls 1번 항목으로 Summary p62에 응축",
+      "exam_prob": 88,
+      "reason": "PCAWG 그래프를 행 단위로 읽어줌(B2), 바이러스 비유(S4), 흑색종~60-70% vs HCC~35% vs 췌장암 비교(S7). 비교표·기전 결합 고출제."
+    },
+    {
+      "topic": "종양 내 이질성(intratumoral heterogeneity) + 공간전사체 (inflamed/intermediate/cold 혼재)",
+      "source": "슬라이드 p8·9·10 + Pitfalls 2번으로 Summary p62 응축",
+      "exam_prob": 82,
+      "reason": "'solid cancer의 가장 큰 문제점'으로 직접 강조(S2), 대학원생 대상 spatial 설명(S4). 비교·기전형."
+    },
+    {
+      "topic": "염증 배경 장기 & Hyperprogression (anti-PD1이 역설적으로 간 섬유화·종양↑, Pfister Nature 2021)",
+      "source": "슬라이드 p12·13 + Pitfalls 3번",
+      "exam_prob": 78,
+      "reason": "'센세이션하게 나왔던 논문'으로 강조(S2·S4), 역설 개념. 기전형 변별 문항 소재."
+    },
+    {
+      "topic": "TME 면역억제 세포 표현형 전환 + 6 players (TAM·MDSC·Treg·CAF·TAN·plasma cell)",
+      "source": "슬라이드 p15 + Summary p62 2번 항목(TAM·CAF barrier)",
+      "exam_prob": 85,
+      "reason": "'내가 가장 중요하게 보는 게 면역억제세포'(S2·S6) + '무슨 말인지 아시겠어요?'(S3). Summary 2번 항목으로 응축."
+    },
+    {
+      "topic": "TAM(tumor-associated macrophage): 정상 대식세포→TAM 전환, IL-12/15, PD-L1↑·Treg↑, 침윤↑=예후↓",
+      "source": "슬라이드 p16·17·18 + Summary p62 2번 항목",
+      "exam_prob": 84,
+      "reason": "TAM 전용 섹션·어원 설명(S4)·IL-12/15 문답(S3)·본인 단일세포 재발률 데이터(S1). Summary barrier 항목의 절반."
+    },
+    {
+      "topic": "CAF(cancer-associated fibroblast) '성벽' 장벽 + FAP-STAT3 축 + Matrix CAF 나쁜 예후 + 제거(depletion) 대상",
+      "source": "슬라이드 p20~26·50~53 + Summary p62 2번 항목",
+      "exam_prob": 92,
+      "reason": "강의 말미 '오늘의 핵심 포인트 중 하나'로 직접 출제 예고(S2)+'성벽' 비유(S4)+'제거의 대상, 아시겠어요?'(S3)+본인 주력연구(S1)+B1. Summary barrier 핵심."
+    },
+    {
+      "topic": "장-간 축(gut-liver axis) & IgA: dysbiosis→간내 IgA 축적→대식세포/CAF 결합→PD-L1↑·T세포 독성↓",
+      "source": "슬라이드 p28~34 + Summary p62 3번 항목(intrahepatic IgA polarizes TAM/CAF)",
+      "exam_prob": 86,
+      "reason": "Summary 3번 단독 항목. 본인·학생 주력연구 분량집중(S1), 다수 비유·문답(S4), 'PD-L1 upregulation' 반복(S5), 말미 '장도 건강해야 암 치료도 잘 된다' 재정리."
+    },
+    {
+      "topic": "PD-L1 발현↑=면역치료 반응↑ (상식 암기) + CPS(combined positive score) 계산식·임상 의의",
+      "source": "슬라이드 p36(CPS 정의)·p38·39(ate+bev 예후) + 위암 biomarker p37",
+      "exam_prob": 80,
+      "reason": "교수 '이건 상식적으로 하나 기억해 놓으세요'(S6 직접 암기지시)+'임상에서 굉장히 많이 써요'(S2). CPS 계산식(분자=종양+림프구+대식세포)은 함정 출제 1순위 단답·객관식."
+    },
+    {
+      "topic": "면역관문억제제 반응 T세포 분화상태: terminal exhaustion(TOX, 무반응) vs progenitor/central memory(TCF-1·CCR7, 반응) + 치료 후 expansion·TIGIT↑",
+      "source": "슬라이드 p41·42·43 + Summary p62 4번 항목(PD-1+CD8 T세포 분화상태 ↔ dynamic 변화)",
+      "exam_prob": 83,
+      "reason": "Summary 슬라이드 4번 단독 항목으로 명시 + 말미 핵심포인트 재정리에서 'dynamic expansion' 직접 재언급(S2·S5). 비교형(terminal vs progenitor) 고출제인데 현재 문항 미커버."
+    },
+    {
+      "topic": "면역치료 저항성 극복 3전략: ① LRT/항암제 병용(cold→hot) ② 면역억제세포 제거 ③ 입양세포치료(CAR-T)",
+      "source": "슬라이드 p45·46·49·54(4회 반복)·p47·48 + Summary p62 5번 항목",
+      "exam_prob": 84,
+      "reason": "Summary 마지막 항목 + 4회 반복(S5) + 말미 재정리. 3전략 나열·기전형 서술 고출제."
+    },
+    {
+      "topic": "CAR-T 원리·항암제 대비 장점·핵심조건(종양특이 표적)·혈액암>고형암 + HCC 표적 GPC-3 장단점(주요장기 비발현 vs 50%·heterogeneous)",
+      "source": "슬라이드 p55~61 + Summary p62 5번(adoptive cell therapy)",
+      "exam_prob": 90,
+      "reason": "'CAR-T에서 제일 중요한 건 타겟'(S2·S6), 항암제 vs CAR-T 비교(S4·S7), GPC-3 '50%·heterogeneous' 반복 강조. Summary 마지막 항목 일부."
+    }
+  ],
+  "current_topics": [
+    {
+      "id": "immuno-1",
+      "topic": "CAF와 FAP-STAT3 축 (성벽 장벽·Matrix CAF 예후·depletion 대상)",
+      "exam_prob_reassessed": 92,
+      "keep": true,
+      "note": "Summary p62 2번(CAF barrier)+말미 '핵심 포인트 중 하나' 직접 예고. 오답선지(3번)가 예후 방향+종양특이성 이중오류로 박사변별 우수. 최강 keep."
+    },
+    {
+      "id": "immuno-2",
+      "topic": "CAR-T 원리·항암제 비교·핵심조건 + GPC-3 장단점",
+      "exam_prob_reassessed": 90,
+      "keep": true,
+      "note": "Summary 5번(adoptive cell therapy) 항목. '제일 중요한 건 타겟' 직접 강조. 5번 오답(100% 균일발현)이 50%·heterogeneous 정반대로 강한 변별. keep. (figure page 59가 맞고 61은 hYP7 사례로 caption 점검 권고)"
+    },
+    {
+      "id": "immuno-3",
+      "topic": "장-간 축 & IgA의 면역억제 (PD-L1 upregulation 방향)",
+      "exam_prob_reassessed": 86,
+      "keep": true,
+      "note": "Summary p62 3번 단독 항목. 방향 역전 오답(PD-L1 downregulation→효능↑)이 교수 반복강조(S5)와 정면충돌하는 우량 변별 문항. keep."
+    },
+    {
+      "id": "immuno-4",
+      "topic": "위장관암 면역치료 저항 원인 묶음: 신항원·이질성·TAM·하이퍼프로그레션",
+      "exam_prob_reassessed": 85,
+      "keep": true,
+      "note": "Summary 1번(Pitfalls)+여러 핵심개념(neoantigen·heterogeneity·TAM·hyperprogression)을 한 문항에 묶어 커버리지 효율 최상. 흑색종 역전 오답이 명확. 다만 4개 개념 묶음이라 개별 심화는 얕음 → 분화/요약 갭 보완 필요. keep."
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "면역관문억제제 반응 vs 무반응 T세포 분화상태 (terminal exhaustion TOX vs progenitor/central memory TCF-1·CCR7) + 치료 후 CD8 expansion·TIGIT↑ on-treatment biomarker",
+      "source_slide": "p41·42·43 + Summary p62 4번 항목",
+      "exam_prob": 83,
+      "why_high_yield": "Summary(last-slide) 5개 take-home 중 4번째 단독 항목으로 명시. 교수가 말미 핵심포인트 재정리(34:37~)에서 'dynamic expansion ... central memory phenotype ... terminal exhaustion'을 직접 재언급(S2·S5). 비교·기전형(박사 변별)인데 현재 4문항 어디에도 미커버. summary+비교구조 결합 최우선 갭.",
+      "recommend_add": true
+    },
+    {
+      "topic": "PD-L1↑=면역치료 반응↑(상식 암기) + CPS 계산식(분자=종양세포+림프구+대식세포 / 분모=생존 종양세포 ×100, 최대 100)·임상 의의",
+      "source_slide": "p36(CPS 정의)·p38·39(ate+bev 예후)",
+      "exam_prob": 80,
+      "why_high_yield": "교수가 '이건 상식적으로 하나 기억해 놓으세요'라고 유일하게 직접 암기 지시(S6)한 항목이며 'CPS 임상에서 굉장히 많이 써요'(S2). 비교표 슬라이드(p36) 계산식의 분자 구성요소는 함정 출제 1순위. 현재 미커버 — 단답/객관식(함정형) 또는 정의 변별 문항으로 보완 필요.",
+      "recommend_add": true
+    },
+    {
+      "topic": "면역치료 저항성 극복 3대 전략 (LRT/항암제 병용으로 cold→hot 전환·면역억제세포 depletion·입양세포치료) 및 각 기전",
+      "source_slide": "p45·46·49·54(4회 반복) + Summary p62 5번 항목",
+      "exam_prob": 84,
+      "why_high_yield": "Summary 마지막 항목 + 4회 반복(S5) + 말미 재정리. immuno-1(CAF depletion)·immuno-2(CAR-T)가 개별 전략을 부분 터치하나 '3전략 통합 나열+기전'을 묻는 적용·서술형은 미커버. last-slide+반복 가중. 단 immuno-2와 부분중첩이라 add 우선순위는 T세포 분화·CPS 다음.",
+      "recommend_add": true
+    }
+  ],
+  "weak_to_replace": [],
+  "verdict": "needs_additions",
+  "recommended_add_count": 2,
+  "recommended_drop_ids": [],
+  "notes": "현재 4문항은 모두 Summary(p62) 핵심 항목에 직접 대응(1·CAF=barrier, 2·CAR-T=adoptive therapy, 3·IgA, 4·Pitfalls)하며 오답선지가 모두 '방향 역전형'이라 박사/석사 변별이 우수 — 약문항·단순암기·중복 없음, 전원 keep(drop 0). 다만 닫힌우주·써머리 가중 기준에서 Summary p62 5개 take-home 중 '4번 항목(PD-1+CD8 T세포 분화상태↔dynamic 변화)'이 통째로 미커버 상태이며, 이는 마지막 슬라이드 단독 항목+말미 재정리에서 재언급된 고출제 비교형이라 최우선 보완 대상. 또한 교수가 유일하게 '상식으로 기억하라'고 직접 지시한 PD-L1/CPS도 함정 출제 위험이 커 보완 권장. 현실적 추가 2문항(① T세포 분화·exhaustion 비교형 서술/객관식, ② PD-L1·CPS 계산식 함정형)을 권장하며, 저항극복 3전략은 immuno-2와 일부 중첩되므로 여력 시 3번째로 추가. 모든 후보는 슬라이드(p36·41~43·45~54)로 진위 판정 가능해 C1 닫힌우주 충족."
+}

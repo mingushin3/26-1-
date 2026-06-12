@@ -1,0 +1,58 @@
+[
+  {
+    "id": "llmngs-g1",
+    "lecture_key": "llmngs",
+    "lecture_label": "03-31 LLM·NGS·바이오인포 (의료정보학)",
+    "topic": "'Context matters' — AI/LLM 연구활용에서 사용자 context(도메인 지식)가 성능을 좌우하고, AI가 genomic big data 해석·multimodal 통합을 가속한다 (Summary bullet#1·#7, 강의 수미상관 thesis)",
+    "exam_probability": 80,
+    "tier": 1,
+    "stem": "다음 중 이 강의가 제시한 'Context matters' 명제와 AI/LLM의 바이오·헬스케어 데이터 활용에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "AI/LLM은 biomedical research·coding·bio-big data 분석의 실용적 도구가 되었으나, 그 유용성(usefulness)은 사용자가 제공하는 'right context'의 질에 의존한다.",
+      "LLM을 'PhD 수준의 협업자'처럼 활용하려면 사용자가 자신만의 콘텐츠(전문 도메인 지식)를 갖추고 그 수준에 맞는 질문(context)을 줄 수 있어야 하며, 콘텐츠가 없으면 평균적 일반인과의 대화 수준에 머문다.",
+      "AI는 genomic big data의 관리·해석을 가속하고, 유전체·EMR·영상 등 multimodal 데이터를 통합해 bioinformatics를 실세계 정밀의학으로 번역(translate)하는 데 기여할 수 있다.",
+      "Burrows-Wheeler 알고리즘이 본래 데이터 압축용이었다가 short-read 정렬의 표준이 된 사례처럼, 서로 무관해 보이는 분야를 연결하는 통찰(connecting dots)은 현 단계에서 여전히 인간(사용자)의 context가 담당하는 역할로 제시된다.",
+      "End-to-end AI 모델이 등장한 현 시점에서 핵심은 도메인 지식 없이도 쿼리를 가능한 한 좁고 구체적으로 여러 번 제한해 던지는 것이며, 사용자의 전문 context는 오히려 모델 성능의 병목(bottleneck)으로 작용한다."
+    ],
+    "answer_index": 4,
+    "explanation": "이 강의의 처음과 끝을 잇는 핵심 메시지가 'Context matters'(슬라이드 PAGE 7·PAGE 40 Summary 첫·마지막 bullet)입니다. 5번이 정확히 거꾸로 뒤집힌 진술이라 옳지 않습니다. 교수는 오히려 '쿼리를 자꾸 제한을 주려고 하면 그 자체가 병목(병력)이다, 컨텍스트만 줘라'(녹음 00:09:37)라고 명시했습니다. 즉 좁은 쿼리를 여러 번 던지는 것이 좋은 게 아니라, 사용자가 풍부한 context(자신의 콘텐츠·도메인 지식)를 주는 것이 핵심이며, '병목'은 사용자의 context가 아니라 그것을 주지 못하는 상태입니다(PAGE 7 헤드라인 '인간이 병목돼버렸다'는 인간의 통찰이 불필요하다는 뜻이 아니라, 인간이 context를 제대로 못 따라가면 그 지점이 병목이 된다는 의미). 교수는 'PhD 10명을 recruit할 수준의 질문을 주어야 LLM이 진짜 파워풀해진다'(00:06:52)고 했고, BWA(압축→정렬 차용)나 스티브 잡스 connecting dots를 들며 '전혀 상관없어 보이는 것을 연결하는 건 아직 인간의 역할'(00:25:00·00:26:08)이라 강조했습니다. 따라서 1·2·3·4는 모두 슬라이드·녹음대로 옳고, 5만 인과·방향이 반대로 뒤집힌 오답입니다.",
+    "correct_fact": "AI/LLM의 유용성은 사용자가 주는 'right context'(도메인 지식·콘텐츠)의 질에 의존하며, 쿼리를 좁게 제한하기보다 풍부한 context를 제공해야 PhD 수준 성능을 끌어낼 수 있다. 사용자의 전문 context는 병목이 아니라 오히려 성능을 좌우하는 핵심 자원이고, 무관해 보이는 분야를 잇는 통찰은 여전히 인간의 역할이다(슬라이드 PAGE 7·40 + 녹음 00:06:52·00:09:37·00:25:00 근거).",
+    "selection_reason": "Summary(마지막 슬라이드 p40)의 첫·마지막 bullet(#1·#7)이자 강의 도입(p3·p5·p6·p7)과 결론(p28)을 잇는 수미상관 take-home thesis. 감사파일 why_high_yield: '교수 강조도 low일수록 summary 가중을 강하게 적용→마지막 슬라이드 take-home 최우선', 기존 2문항(NGS·정밀의학)이 이 AI/context 축을 전혀 묻지 않아 명백한 갭. 적용형(왜 context가 bottleneck인지)으로 박사 변별.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": false,
+      "pdf": "3월 31일_대학원공개강의 (1).pdf",
+      "page": 40,
+      "caption": "Summary 슬라이드 7개 bullet (bullet#1 'usefulness depends on right context', bullet#7 'AI can accelerate ... translate bioinformatics into real-world precision medicine')"
+    }
+  },
+  {
+    "id": "llmngs-g2",
+    "lecture_key": "llmngs",
+    "lecture_label": "03-31 LLM·NGS·바이오인포 (의료정보학)",
+    "topic": "글로벌·국가 단위 대규모 코호트 비교(All of Us 100만 vs UK Biobank 50만 vs FinnGen/deCODE/한국 100만)와 '왜 2015년에 Precision Medicine이 가능해졌나(=NGS $1,000)'의 인과 + effect size가 작아 대규모 코호트가 필요한 이유 (Summary bullet#5)",
+    "exam_probability": 70,
+    "tier": 1,
+    "stem": "다음 중 정밀의학을 위한 글로벌·국가 단위 대규모 코호트와 그 추진 배경에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "미국 All of Us 프로젝트는 정상인 자원자(volunteer) 100만 명 이상을 모아 유전정보를 확보하고 그 위에 의료정보를 prospective하게 축적·관찰하는 nation-wide 코호트로, 약물유전체학(right drug·right patient·right dose) 발전 등을 목표로 한다.",
+      "국가별로 핀란드 FinnGen, 아이슬란드 deCODE(신생아 채혈), 한국 국가 통합 바이오뱅크(약 100만 명) 등 수십만~100만 명 규모의 코호트가 NGS를 기반으로 유전정보를 먼저 확보한 뒤 임상·EMR 데이터를 결합해 축적되고 있다.",
+      "2015년에 비로소 Precision Medicine 이니셔티브가 현실화될 수 있었던 가장 큰 기술적 진보는 NGS 덕분에 1인 전장유전체 시퀀싱 비용이 약 $1,000까지 떨어진 것으로, 가장 비싼 요소였던 시퀀싱 비용의 하락이 100만 명 규모 코호트 시퀀싱을 가능케 했다.",
+      "단일 SNP가 복합질환에 미치는 effect size가 작기 때문에, 1,000명 규모로는 robust한 신호를 얻기 어렵고 만 명·십만 명·국가 단위 100만 명까지 코호트를 키워야 의미 있는 연관(association)이 드러난다.",
+      "영국 UK Biobank는 약 100만 명 규모로 All of Us(50만 명)보다 크며, 처음부터 건강한 자원자를 광범위하게(broad) 모집해 표현형 정의 없이 출발했다는 점이 그 강점으로 꼽힌다."
+    ],
+    "answer_index": 4,
+    "explanation": "5번이 옳지 않습니다. 규모와 설계 특성이 두 군데서 뒤바뀌어 있습니다. (1) 규모: All of Us(미국)가 약 100만 명, UK Biobank(영국)가 약 50만 명입니다(녹음 00:34:18~00:34:54 '오로버스(All of Us)는 100만 명, UK 바이오뱅크는 50만 명. 조금 작으니까 50만 명'). 5번은 두 숫자를 정확히 뒤집었습니다. (2) 설계: 교수는 'All of Us는 (자원자를) 좀 broad하게 본 데이터인데, UK는 처음부터 환자를 아주 (잘) define하고 들어와서 지금 벌써 아주 유용한 데이터'라고 했습니다(00:34:54~00:35:27). 즉 '처음부터 표현형/대상자를 define하고 들어온' 쪽은 UK Biobank이고, 'broad·define 없이 출발한' 쪽이 All of Us입니다. 5번은 이 특성마저 거꾸로 UK에 갖다 붙였습니다. 나머지는 모두 슬라이드·녹음대로 옳습니다: 1번 PAGE 24(volunteer 100만·prospective·pharmacogenomics), 2번 핀젠/디코드(아이슬란드 신생아)/한국 100만(00:35:27~00:36:33), 3번 PAGE 25·녹음 00:33:45~00:34:18('왜 2015년? NGS 1000달러, 가장 비싼 게 시퀀싱 가격이었는데 1000달러가 되니 100만 명 코호트가 가능'), 4번 녹음 00:50:34~00:51:06(effect size가 작아 만 명·십만 명·100만 명이 필요).",
+    "correct_fact": "All of Us(미국)≈100만 명, UK Biobank(영국)≈50만 명으로 All of Us가 더 크다. UK Biobank는 처음부터 대상자/표현형을 명확히 define하고 출발한 점이 강점이고, All of Us는 자원자를 broad하게 모은 코호트다. 2015년 Precision Medicine을 가능케 한 핵심은 NGS로 인한 시퀀싱 비용 $1,000 하락이며, 단일 SNP의 effect size가 작아 만~100만 명 규모 코호트가 있어야 robust한 연관이 드러난다(녹음 00:33:45~00:35:27·00:50:34 근거).",
+    "selection_reason": "Summary 독립 bullet#5(글로벌·국가 코호트). 감사파일 why_high_yield: 기존 Q2는 '대규모 코호트'를 한 선지로 스칠 뿐 코호트 간 규모/설계 차이와 effect size 논리를 직접 묻지 않아 미커버. 녹음 분량집중(S1, 00:34:54~00:37:07)·비교대조(S7, All of Us↔UK Biobank↔국가 바이오뱅크) 신호 강함. 비교·적용형으로 박사 변별.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "3월 31일_대학원공개강의 (1).pdf",
+      "page": 24,
+      "caption": "대규모 코호트 비교표: All of Us(US, ~100만, broad volunteer) vs UK Biobank(UK, ~50만, 사전 define) vs FinnGen/deCODE/한국 국가 바이오뱅크(~100만), prospective follow-up·pharmacogenomics 목표"
+    }
+  }
+]

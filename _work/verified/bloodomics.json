@@ -1,0 +1,71 @@
+[
+  {
+    "id": "bloodomics-1",
+    "lecture_key": "bloodomics",
+    "lecture_label": "03-17 혈액암 오믹스 (정승현 교수)",
+    "topic": "Liquid biopsy와 순환종양DNA(ctDNA)의 분자적 특성 및 분석 원리",
+    "exam_probability": 92,
+    "tier": 1,
+    "stem": "다음 중 액체생검(liquid biopsy)과 순환종양DNA(ctDNA)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "ctDNA는 세포가 apoptosis/necrosis로 사멸할 때 DNA가 히스톤 단위로 절단되어 방출되므로, 약 160~170 bp의 매우 짧은 단편으로 존재한다.",
+      "혈중 cell-free DNA 중 ctDNA가 정상 세포 유래 DNA보다 양적으로 훨씬 풍부하기 때문에, 일반 NGS로도 손쉽게 종양 변이를 검출할 수 있다.",
+      "ctDNA는 혈류로 방출된 뒤 수 시간 내에 분해되는 짧은 반감기를 가지므로, 검출 민감도를 위해 시료를 fresh하게 처리하는 것이 중요하다.",
+      "apoptosis/necrosis는 특정 subclone에 국한되지 않고 무작위로 일어나므로, ctDNA는 단일 부위 조직생검보다 종양 내 이질성(ITH)을 더 폭넓게 반영할 수 있다.",
+      "혈액은 반복 채취가 용이하여 치료 경과 중 ctDNA의 VAF를 종적으로 모니터링함으로써 이미징보다 더 조기에 치료 반응을 평가할 수 있다."
+    ],
+    "answer_index": 1,
+    "explanation": "정답(옳지 않은 것)은 2번입니다. 교수님이 강의에서 가장 강조한 핵심 반전 포인트예요. 혈중 cell-free DNA의 '대부분은 정상 세포에서 유래'하며 암세포에서 나온 ctDNA는 양적으로 '극소량'에 불과합니다(녹음 16:34~17:07 '정상 세포에서 유래되는 핵산들이 양적으로 훨씬 더 많을 수밖에 없습니다'). 즉 ctDNA는 정상 DNA보다 훨씬 적습니다(2번은 방향이 완전히 반대). 바로 이 극소량 신호를 정상 DNA 배경에서 끄집어내야 하기 때문에 '일반 NGS'가 아니라 ultra high-depth(고심도) 시퀀싱, PCR이라면 일반 PCR이 아니라 digital PCR 같은 '엄청 민감한' 기술이 필요하다고 하셨습니다. 나머지 선지(1·3·4·5)는 모두 슬라이드와 발화 그대로의 정확한 사실입니다: 160~170bp(히스톤 단위 절단, PAGE 11), 짧은 반감기로 fresh prep 필수(15:40), apoptosis/necrosis의 무작위성 덕분에 ITH 부분 극복(18:21), 그리고 반복 채취 기반 종적 VAF 모니터링이 이미징보다 조기 평가에 유리(PAGE 16, 24:03~24:39).",
+    "correct_fact": "혈중 cell-free DNA의 대부분은 정상 세포 유래이고 ctDNA는 극소량이다. 따라서 일반 NGS로는 부족하며, 정상 DNA 배경에서 미량의 종양 변이를 검출하려면 ultra high-depth 시퀀싱(또는 digital PCR)과 같은 고민감도 기술이 필요하다.",
+    "selection_reason": "교수 직접 출제예고(58:59)에서 'Liquid biopsy가 왜 좋은지'를 4대 출제범위로 명시(S2). ctDNA 특성 설명에서 S1(최장 분량)+S6('샘플 프레시 중요','엄청 민감한 테크놀로지')+B2(160~170bp 수치 직접 언급)가 중첩 발동.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "합동강의_20260317.pdf", "page": 11, "caption": "Liquid biopsy 검출 소스(CTC=크기·EpCAM, ctDNA=160~170bp 단편, exosome=DNA/mRNA/miRNA/protein) 모식도"}
+  },
+  {
+    "id": "bloodomics-2",
+    "lecture_key": "bloodomics",
+    "lecture_label": "03-17 혈액암 오믹스 (정승현 교수)",
+    "topic": "종양 내 이질성(Intratumor heterogeneity)과 진화 궤적(evolution tree) 기반 치료 전략",
+    "exam_probability": 88,
+    "tier": 1,
+    "stem": "다음 중 종양 내 이질성(intratumor heterogeneity, ITH)과 이를 활용한 치료 전략에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "ITH는 동일 환자에서 유래한 한 종양 조직 내에서도 형태적·분자적으로 서로 다른 암세포 집단이 공존하는 현상으로, intertumor(interpatient) heterogeneity와는 구별된다.",
+      "표적항암제의 drugable 마커가 진화 트리의 가지(branch)에 위치할 때 표적치료를 하면 trunk에 위치할 때보다 더 우수한 치료 반응을 기대할 수 있다.",
+      "ITH는 한 번·한 부위 생검만으로 종양 전체의 분자 프로파일을 대표하지 못하게 만들어 진단 오류(공간적 편향)의 위험을 높인다.",
+      "조직 내에 약제 저항성을 가진 다양한 악성 클론이 존재하므로 ITH는 치료 저항성과 재발의 주요 원인이 된다.",
+      "ITH는 암의 적응과 진화를 촉진하여 암의 분자 프로파일이 고정되지 않고 시공간적으로 역동적으로 변하게 만든다."
+    ],
+    "answer_index": 1,
+    "explanation": "정답(옳지 않은 것)은 2번입니다. trunk와 branch의 방향이 뒤바뀐 함정이에요. 교수님 설명에 따르면(녹음 10:07~10:39), drugable 마커가 진화 트리의 '몸통(trunk)'에 있으면 거의 모든 암세포가 그 변이를 공유하므로 표적치료 시 좋은 반응을 기대할 수 있습니다. 반대로 마커가 '가지(branch)'에만 있으면 '약을 줘봤자 가지 일부만 잘려 나가기 때문에' 좋은 반응을 기대할 수 없습니다. 따라서 'branch에 있을 때가 trunk보다 더 우수하다'는 2번은 명백히 반대 진술입니다. 나머지 선지(1·3·4·5)는 모두 강의에서 정확히 설명된 ITH의 정의(intra vs inter 구분, PAGE 8, 07:43~08:19), 진단 오류(spatial bias, PAGE 9, 08:57), 치료 저항성/재발 유발(PAGE 9), 분자 프로파일의 시공간적 역동 변화(08:19)로 옳은 진술입니다.",
+    "correct_fact": "drugable 마커가 진화 트리의 trunk(몸통)에 있을 때가 branch(가지)에 있을 때보다 더 좋은 치료 반응을 기대할 수 있다. trunk 변이는 거의 모든 암세포가 공유하지만, branch 변이는 일부 클론에만 있어 표적치료 시 가지 일부만 제거된다.",
+    "selection_reason": "교수 직접 출제예고(58:59)에서 '종양 내 이질성의 개념'을 4대 출제범위 1순위로 명시. inter/intra 명시적 비교(S7)+진단오류·치료저항성 경고(S6)+분량 최다(S1)+evolution tree trunk/branch 비유(S4) 중첩.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "합동강의_20260317.pdf", "page": 10, "caption": "종양 내 이질성과 환자별 진화 궤적(evolution tree) 형태 및 trunk/branch 표적 위치에 따른 치료 반응 예측"}
+  },
+  {
+    "id": "bloodomics-3",
+    "lecture_key": "bloodomics",
+    "lecture_label": "03-17 혈액암 오믹스 (정승현 교수)",
+    "topic": "scRNA-seq(10X) 원리 — Cell Barcode와 UMI의 역할",
+    "exam_probability": 80,
+    "tier": 1,
+    "stem": "다음 중 10X 기반 single-cell RNA sequencing의 바코드 체계와 정량 원리에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "UMI(Unique Molecular Identifier)는 동일한 바코드를 공유하는 서로 다른 세포들을 한 클러스터로 묶어 세포 종류를 구분(demultiplexing)하는 데 사용된다.",
+      "하나의 gel bead 표면에 부착된 모든 oligonucleotide는 동일한 10X(Cell) Barcode를 가지며, 서로 다른 gel bead는 서로 다른 Cell Barcode를 가진다.",
+      "Sample index는 여러 환자 시료를 섞어 시퀀싱했을 때 어느 서열이 몇 번 환자에서 유래했는지 시료를 구분(demultiplexing)하는 역할을 한다.",
+      "PCR 증폭으로 동일 mRNA가 여러 reads로 뻥튀기되어도, 동일한 UMI를 가진 reads는 PCR artifact로 간주해 중복 제거함으로써 amplification bias를 보정한다.",
+      "amplification bias로 인한 발현 왜곡은 sequencing reads 수가 아니라 유전자별 UMI 수를 세어 카운트함으로써 제거할 수 있다."
+    ],
+    "answer_index": 0,
+    "explanation": "정답(옳지 않은 것)은 1번입니다. UMI와 Cell Barcode의 역할이 뒤바뀐 전형적인 함정이에요. 세포를 구분(어느 서열이 어느 세포에서 왔는지 추적)하는 것은 'UMI'가 아니라 '10X(Cell) Barcode'의 역할입니다(녹음 38:08~38:42 '세포를 구분해줘야 하는데 그 역할을 해주는 게 10X 바코드'). UMI(Unique Molecular Identifier)는 PCR 이전에 각 mRNA 분자에 부착되어, 동일 UMI를 가진 reads를 PCR artifact로 제거해 실제 transcript 분자 수를 정량(카운트)하는 역할입니다(39:57~40:27). 즉 1번은 UMI에 Cell Barcode의 기능을 잘못 붙인 진술입니다. 나머지 선지(2·3·4·5)는 모두 강의 그대로 옳습니다: 한 비드의 모든 올리고는 동일 Cell Barcode이고 서로 다른 비드는 다른 바코드(38:42), Sample index는 시료(환자) demultiplexing(37:22, PAGE 28~29), 동일 UMI 중복 제거로 PCR bias 보정(40:27), 그리고 reads가 아니라 유전자별 UMI 수를 세어 amplification bias 제거(PAGE 29 명시).",
+    "correct_fact": "세포 구분(cell demultiplexing)은 10X(Cell) Barcode의 역할이다. UMI는 PCR 증폭 전 각 mRNA 분자에 부착되어 동일 UMI reads를 중복 제거함으로써 실제 mRNA 분자 수를 정량하는 역할을 한다.",
+    "selection_reason": "교수 직접 출제예고(58:59)에서 'scRNA-seq'를 4대 출제범위로 명시. UMI/Cell Barcode/Sample index 원리를 도식과 함께 행 단위로 직접 설명(B2)+'결국' 등 담화표지(S2)+분량 집중(S1) 발동.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "합동강의_20260317.pdf", "page": 28, "caption": "10X single cell 3' solution GEM 내부 구조: Sample index(시료 구분)/10X Barcode(세포 구분)/UMI(mRNA 정량)"}
+  }
+]

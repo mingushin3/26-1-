@@ -1,0 +1,129 @@
+{
+  "lecture_key": "genetherapy",
+  "lecture_label": "04-07 유전자치료 (김영광)",
+  "summary_universe": [
+    {
+      "topic": "Gene therapy FDA 정의 + 4가지 모달리티 (replacement / silencing / addition[gene editing] / genome editing)",
+      "source": "필수슬라이드 p1/7 (deck p4) — 출제범위 명시 1번 슬라이드",
+      "exam_prob": 80,
+      "reason": "교수가 '표시(왕관)한 부분 위주로 보라'고 직접 범위 한정한 첫 필수슬라이드. 4개 병렬 정의(S7)이며 객관식 정의-매칭/빈칸의 단골. 필수슬라이드 1순위라 가중 상향."
+    },
+    {
+      "topic": "전달체 비교 — AAV(비통합/에피솜, long expression, 저면역원성) vs Lentivirus(통합, genotoxicity, LMO2→백혈병)",
+      "source": "필수슬라이드 p2/7 (deck p9-10) 비교표 — 필수슬라이드 + 비교표",
+      "exam_prob": 95,
+      "reason": "필수슬라이드 비교표를 행별 직접 낭독(B2). '크나큰 장점'(S2)·LMO2 백혈병 실제사례(S4)·'문제가 생깁니다' 경고(S6)·AAV↔Lenti 5회 대비(S5+S7). 교수가 '이 두 가지를 거의 사용'이라 범위 한정. 최고 출제확률."
+    },
+    {
+      "topic": "Gene silencing 3기전 — Gapmer ASO(RNase H), siRNA(RISC), ssASO(splice-switching)",
+      "source": "필수슬라이드 p3/7 (deck p23) — 필수슬라이드 + 3기전 비교표/도해",
+      "exam_prob": 90,
+      "reason": "필수슬라이드 + 3기전 병렬 비교(S7). RNase H/RISC '아까도 얘기했던' 반복(S2+S5). siRNA/ASO 전용 슬라이드 연속 배치. ASO↔siRNA 작용복합체 뒤바꿈 함정의 최적 소재."
+    },
+    {
+      "topic": "RNA interference 도해 (siRNA / ASO / pre-mRNA nuclear delivery 분류)",
+      "source": "필수슬라이드 p4/7 (deck p24) — 필수슬라이드",
+      "exam_prob": 55,
+      "reason": "필수슬라이드 7장에 포함되어 출제범위지만 스크립트 강조는 약함(S1 위주). silencing 기전 문항의 보조/도해형. 필수슬라이드 가중으로 중위."
+    },
+    {
+      "topic": "ASO-mediated gene regulation 다중 경로 (RNase H 분해 + splice modulation/exon skipping) — DMD exon 51 skipping 적용",
+      "source": "필수슬라이드 p5/7 (deck p27-28) — 필수슬라이드 + 임상적용",
+      "exam_prob": 78,
+      "reason": "필수슬라이드. ssASO splice-switching의 실제 적용으로 DMD exon 51 skipping을 DMD 환자 사례 전환(S4)+분량(S1)으로 상세 설명. '왜 exon을 빼면 functional dystrophin이 되는가'는 기전·적용형 변별 문항감. 필수슬라이드+적용으로 고가중."
+    },
+    {
+      "topic": "CRISPR-Cas9 구성 — crRNA(20bp guide)+tracrRNA=sgRNA, PAM(NGG)은 표적 DNA에 위치, 17/18번째 절단",
+      "source": "필수슬라이드 p6/7 (deck p30) RGENs — 필수슬라이드",
+      "exam_prob": 88,
+      "reason": "필수슬라이드. PAM '다시 한번'(S2)·3회 반복(S5)·'그렇지는 않고요' 오개념 교정(S6). PAM 위치/길이 함정 최적. 교수가 '유전자 가위 부분 어려울 수 있다'며 출제 의식."
+    },
+    {
+      "topic": "Indel→frameshift→premature stop codon→NMD→gene knockout (NHEJ error-prone repair)",
+      "source": "deck p31-33 (필수슬라이드 인접 기전) — 녹음 32:39~35:46 상세",
+      "exam_prob": 75,
+      "reason": "DSB→NHEJ→indel→PTC→NMD knockout 경로를 분량 집중(S1)으로 상세 설명. 기전 연쇄 서술형 변별 문항감. 필수슬라이드 6번(CRISPR)과 직결되는 핵심 기전."
+    },
+    {
+      "topic": "Next-gen genome editors — Base Editor(nCas9+deaminase, 단일염기) vs Prime Editor(nCas9+RT+pegRNA, 모든 형태), Cas9 D10A(RuvC)/H840A(HNH) nickase, DSB 없음",
+      "source": "필수슬라이드 p7/7 (deck p34) — 필수슬라이드, 빨간 대형 'Do not induce DSB!' 강조",
+      "exam_prob": 90,
+      "reason": "필수슬라이드 + 빨간 대형 강조(S6). 교수가 'Base=단일염기, Prime=원하는 어떤 형태든, 객관식으로 그냥 풀면 된다'고 출제 직접 언급. Base↔Prime 역할 뒤바꿈 함정 최적. nickase 도메인 대응도 변별 소재."
+    },
+    {
+      "topic": "Jesse Gelsinger 사례(1999) — immunotoxicity(아데노바이러스 과면역반응 사망), 임상시험 윤리위반(부적절 대상선정/AE 미보고/프로토콜 위반/정보미제공), 유전자치료 개발 중단→AAV 전환 영향",
+      "source": "deck p14-15 (별도 상세 슬라이드 2장, 본문 텍스트 풍부) — 비필수지만 슬라이드 본문 존재",
+      "exam_prob": 78,
+      "reason": "교수가 '표시 외에 한 문제 정도 다른 데서 나온다'고 명시 → 비필수 출제 1순위. 3분+ 분량(S1), 18세 자원자 극적 전환(S4), '뼈아픈 케이스' 경고성(S6), 사인·배경·영향 반복(S5). 슬라이드에 윤리위반 5개 항목이 글머리표로 정리되어 C1 진위판정 가능."
+    },
+    {
+      "topic": "Sickle cell disease / β-thalassemia 유전자치료 — HBB c.20A>T, BCL11A knockout으로 fetal hemoglobin 재활성화, 2023 FDA 동시 승인(전달 vs 유전자가위)",
+      "source": "deck p39-46 (강의 마지막 질환 적용부, deck 끝부분) — 마지막 슬라이드군",
+      "exam_prob": 70,
+      "reason": "deck '마지막 질환 적용' 결론부(take-home). knockout→NMD 기전을 BCL11A에 '적용'해 fetal Hb 복귀를 설명 → 기전+적용 통합 변별 문항감. 강의 클라이맥스로 분량 집중(S1), 5년 follow-up 수혈 중단 결과 강조. 비필수지만 마지막 슬라이드 가중."
+    },
+    {
+      "topic": "Familial hypercholesterolemia / Inclisiran(siRNA, PCSK9 표적)→LDL receptor 증가→LDL 감소; PCSK9 gene editing(Musunuru) ",
+      "source": "deck p25-26, p43-46 — siRNA 대표 임상사례(필수슬라이드 silencing의 적용)",
+      "exam_prob": 62,
+      "reason": "siRNA 작용기전의 대표 임상사례로 분량 집중(S1) 설명. PCSK9↓→LDLR↑→LDL↓ 인과 사슬은 silencing 적용형 문항감. 단 silencing 필수슬라이드의 종속 사례라 단독 출제확률은 중하위. 현재 Q2 오답선지로 이미 일부 흡수됨."
+    },
+    {
+      "topic": "Ex vivo vs In vivo therapy 구분 (ex vivo=조혈모세포/혈액질환/Lentivirus 통합 선호, in vivo=전달체 의존/AAV)",
+      "source": "deck p7-8, p19-21 (in vivo 승인약 표: Luxturna/Zolgensma/Hemgenix/Elevidys)",
+      "exam_prob": 60,
+      "reason": "ex vivo에서는 '오히려 안정적 통합이 필요'(Lentivirus 선호) vs in vivo 전달체 의존이라는 비교 구조(S7). in vivo 승인약 4종 비교표(B2 소재). 비필수슬라이드라 가중 중위지만 적용형 함정 변별력 있음."
+    }
+  ],
+  "current_topics": [
+    {
+      "id": "genetherapy-1",
+      "topic": "AAV vs Lentivirus 비교 (통합 여부/발현/면역원성/genotoxicity·LMO2)",
+      "exam_prob_reassessed": 95,
+      "keep": true,
+      "note": "필수슬라이드 p2 비교표 직접 낭독(B2)+5신호 발동. 최고 출제확률 항목을 정확히 적중. 오답선지(5번)가 AAV/Lenti genotoxicity를 뒤바꾼 정밀 함정으로 박사 변별력 높음. 핵심 keep."
+    },
+    {
+      "id": "genetherapy-2",
+      "topic": "Gene silencing 3기전 ASO(RNase H)/siRNA(RISC)/ssASO + Inclisiran",
+      "exam_prob_reassessed": 90,
+      "keep": true,
+      "note": "필수슬라이드 p3 적중. 4번 오답이 RNase H↔RISC, DNA↔RNA를 교차 뒤바꾼 최상급 함정. Inclisiran·DMD까지 선지로 흡수해 p5(ASO regulation)도 부분 커버. keep."
+    },
+    {
+      "id": "genetherapy-3",
+      "topic": "Base Editor vs Prime Editor + nickase(D10A/H840A) + DSB 없음",
+      "exam_prob_reassessed": 90,
+      "keep": true,
+      "note": "필수슬라이드 p7 적중. 교수가 '객관식으로 냈다'고 직접 출제 시사. Base↔Prime 역할 뒤바꿈+nickase 도메인 대응으로 변별력 최상. keep."
+    },
+    {
+      "id": "genetherapy-4",
+      "topic": "CRISPR-Cas9 구성/PAM/indel→NMD knockout",
+      "exam_prob_reassessed": 88,
+      "keep": true,
+      "note": "필수슬라이드 p6 + indel→PTC→NMD 기전(deck p31-33) 통합 적중. 5번 오답이 PAM 위치(DNA→RNA)·길이(20bp 혼동) 뒤바꿈 함정. '그렇지는 않고요' 오개념 교정 발화 직격. keep."
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "Jesse Gelsinger 사례 — immunotoxicity 사망 기전(아데노바이러스 고면역원성·과량투여) + 임상시험 윤리위반 4~5항목 + 유전자치료 개발중단→AAV 전환 영향",
+      "source_slide": "deck p14-15 (별도 상세 슬라이드 2장, 윤리위반 글머리표 본문 존재)",
+      "exam_prob": 78,
+      "why_high_yield": "비필수슬라이드이나 교수가 '표시 외에 한 문제 정도 다른 데서 나온다'고 출제를 명시적으로 예고한 비필수 1순위 후보. 3분+ 분량(S1)·극적 사례전환(S4)·'뼈아픈 케이스'(S6)로 스크립트 비중 압도. 슬라이드에 사인·윤리위반 항목이 글로 정리되어 C1 진위판정 가능(서술형 적합). 비교표는 아니나 임상·윤리 서술형 변별 문항감.",
+      "recommend_add": true
+    },
+    {
+      "topic": "Sickle cell disease / β-thalassemia — BCL11A knockout으로 fetal hemoglobin 재활성화(α2γ2) 치료 기전 (CRISPR knockout의 실제 임상 적용)",
+      "source_slide": "deck p39-46 (강의 마지막 질환 적용·결론부, deck 끝 4~6장)",
+      "exam_prob": 70,
+      "why_high_yield": "deck '마지막 슬라이드군(take-home/결론)'에 해당해 써머리 가중 최우선 대상. knockout→NMD 기전(이미 Q4가 다룬 기전)을 BCL11A에 '적용'하는 통합형이라 기전+적용 변별력 높음. fetal Hb가 왜 증상을 없애는가(γ-chain은 정상)는 박사 변별 포인트. 비교표는 아니나 마지막 슬라이드 가중으로 고출제.",
+      "recommend_add": true
+    }
+  ],
+  "weak_to_replace": [],
+  "verdict": "needs_additions",
+  "recommended_add_count": 2,
+  "recommended_drop_ids": [],
+  "notes": "현재 4문항은 시험 필수슬라이드 7장 중 핵심 5장(p1·정의는 Q1 배경으로만, p2/p3/p6/p7 정면 적중, p5 ssASO/DMD는 Q2 선지로 부분 흡수)을 효율적으로 덮고, 모든 함정이 역할 뒤바꿈형 정밀오류라 박사 변별력이 높음 — 약문항 없음(weak_to_replace 0). 다만 (1) 교수가 '표시 외 1문제 출제'를 명시 예고한 비필수 1순위 Jesse Gelsinger(immunotoxicity·윤리), (2) deck 마지막 슬라이드군의 결론 사례인 Sickle cell/BCL11A knockout→fetal Hb 적용형이 현재 문항에서 전혀 안 덮임. 둘 다 분량·강조·말미 슬라이드 가중이 강해 보완 권장. 필수슬라이드 p4(RNAi 도해)는 Q2의 silencing 도해로 충분히 흡수되어 별도 추가 불필요. 추가 시 Gelsinger는 서술형(기전+윤리), Sickle/BCL11A는 기전적용형(knockout→fetal Hb)이 변별력상 최적."
+}

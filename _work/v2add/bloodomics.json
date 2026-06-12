@@ -1,0 +1,48 @@
+[
+  {
+    "id": "bloodomics-g1",
+    "lecture_key": "bloodomics",
+    "lecture_label": "03-17 혈액암 오믹스 (정승현 교수)",
+    "topic": "Bone marrow organoid의 다발골수종(MM) 연구 활용 근거 (primary culture 곤란·동물모델 대체 → 환자 암세포 공배양 ex vivo 모델, drug screening·마커 기능검증)",
+    "exam_probability": 90,
+    "tier": 1,
+    "stem": "다음 중 다발골수종(MM) 연구에 골수 오가노이드(bone marrow organoid)를 활용하려는 전략에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "다발골수종은 환자 암세포를 체외에서 직접 배양하는 primary culture 자체가 잘 되지 않는 암종에 속하여, 종래의 단순 세포 배양 기반 drug screening이 어렵다.",
+      "환자 유래 이종이식(PDX) 같은 동물 모델은 비용이 과다하고 최근 동물실험을 줄이려는 추세가 강해지면서 그 활용에 제약이 커지고 있다.",
+      "골수 오가노이드 자체를 환자별로 새로 제작하여 환자 특이적 오가노이드를 완성한 뒤, 거기에 정상 조혈세포를 공배양하여 정상 골수 미세환경을 재현하는 것이 핵심 전략이다.",
+      "치료 반응을 유전자 프로파일링으로 '예측'하는 것보다, 환자 모델에 직접 약물을 스크리닝하여 반응을 보는 것이 더 직접적이고 좋은 접근으로 평가된다.",
+      "실제 제작한 골수 오가노이드에서 혈관 형성, 조혈(hematopoiesis), 스폰지 형태의 bone 구조 등 골수 미세환경의 특성이 재현되는 것이 관찰되었다."
+    ],
+    "answer_index": 2,
+    "explanation": "정답(옳지 않은 것)은 3번입니다. 인과·전략이 뒤바뀐 정밀 함정이에요. 교수님 전략의 핵심은 오가노이드 '자체'를 환자 특이적으로 만드는 게 아니라, 고도화된 프로토콜로 만든 골수 오가노이드를 '하나의 기술(플랫폼)처럼' 사용하고, 거기에 환자에게서 골수 생검으로 얻은 '암세포'를 함께 공배양하는 것입니다(녹음 57:26~58:06: '오가노이드 자체를 환자 특이적으로 만든다기보다 ... 하나의 약간 기술처럼 사용을 하는 거고 여기다가 환자에서 골수 바이옵시한 암세포가 들어있는 셀들을 같이 컬쳐'). 그 결과 '엄밀한 의미의 환자 특이적 오가노이드는 아니지만 그 환자를 대변할 수 있는' 모델이 됩니다. 3번은 (a) 오가노이드 자체를 환자별로 만들어 환자 특이적으로 '완성'한다는 점과 (b) 환자 암세포가 아닌 '정상 조혈세포'를 넣는다는 점에서 이중으로 뒤집힌 틀린 진술입니다. 나머지 선지는 모두 슬라이드·발화 그대로 옳습니다: MM은 primary culture가 잘 안 되는 암종(56:54~57:26), 동물모델 고비용+동물 대체 추세(56:07~56:54), 프로파일링 '예측'보다 직접 drug screening이 더 좋음(56:07), 제작한 오가노이드에서 혈관·hematopoiesis·spongy bone 관찰(58:06~58:42, PAGE 60~62).",
+    "correct_fact": "골수 오가노이드는 그 자체를 환자 특이적으로 만드는 것이 아니라, 표준화된 플랫폼(기술)으로 사용하고 거기에 환자에서 생검한 '암세포'를 공배양하여 환자를 대변하는 ex vivo 모델을 구축한다. 이를 통해 drug screening 및 오믹스로 발굴한 마커의 기능 검증을 수행한다.",
+    "selection_reason": "Summary 필수슬라이드(p63/단독 필수슬라이드.pdf) 4대 키워드 중 마지막 항목이자 마지막장(last-slide)에 해당. 교수가 강의 종료부(58:42~59:17)에서 '제일 중요한 거'라 도입하며 4대 출제범위 중 하나로 직접 출제예고(S2+S6). 현재 3문항이 전혀 커버하지 못한 유일한 Summary 키워드 갭으로 최우선 보완. 비커버 → 기전·전략 적용형으로 대학원 변별.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "합동강의_20260317.pdf", "page": 60, "caption": "Bone marrow organoid 플랫폼 + 환자 암세포 공배양 ex vivo 모델 모식도(혈관·조혈·spongy bone 재현, drug screening·마커 기능검증 연결) — Summary 마지막 항목"}
+  },
+  {
+    "id": "bloodomics-g2",
+    "lecture_key": "bloodomics",
+    "lecture_label": "03-17 혈액암 오믹스 (정승현 교수)",
+    "topic": "Bulk vs single-cell(scRNA-seq) 비교 및 scRNA-seq의 ITH/TME 연구 장점(비편향·rare population 검출·TME 동시분석·cell-cell communication)",
+    "exam_probability": 80,
+    "tier": 1,
+    "stem": "다음 중 bulk sequencing과 single-cell RNA sequencing(scRNA-seq)의 비교 및 scRNA-seq의 종양 내 이질성(ITH) 연구상 장점에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "기존 bulk 분석은 조직을 통째로 분석하여 다양한 subclone·세포집단이 뒤섞인 채 측정되므로, 결국 집단의 '평균적' 특성만 잡아낼 수밖에 없다.",
+      "scRNA-seq는 조직 내 세포를 하나하나 분리해 개별 세포 수준에서 전사체를 측정하므로, ITH를 더 직접적으로 분석할 수 있다.",
+      "bulk 분석은 개별 세포를 분리하지 않고도 평균이 아닌 세포별 발현을 그대로 보존하므로, scRNA-seq보다 rare population을 더 민감하게 검출하는 데 유리하다.",
+      "scRNA-seq는 암세포뿐 아니라 주변 종양 미세환경(TME)의 T세포·NK세포 등 면역세포를 동시에 분석할 수 있어 면역항암제 반응 예측 마커 발굴에 활용된다.",
+      "scRNA-seq는 각 세포의 ligand/receptor 발현 데이터를 바탕으로 암세포와 TME 세포 간의 cell-cell communication(상호작용)을 예측할 수 있다."
+    ],
+    "answer_index": 2,
+    "explanation": "정답(옳지 않은 것)은 3번입니다. bulk와 single-cell의 장점이 뒤바뀐 함정이에요. rare population(희귀 소수 집단)을 잘 검출하는 것은 bulk가 아니라 scRNA-seq의 장점입니다. 교수님은 'bulk 분석은 다양한 subclone·population이 다 뒤섞인 채 분석되어 평균적 특성밖에 못 잡지만, single-cell에서는 개별 세포 수준으로 스크리닝하므로 bias가 없고 아주 rare한 population도 잘 찾아낼 수 있다'고 명확히 설명했습니다(녹음 26:19~26:58). 즉 bulk는 정의상 세포를 분리하지 않고 평균을 내는 방식이라 '세포별 발현을 그대로 보존'한다는 3번 자체가 모순이며, rare population 검출 우위 역시 정반대입니다. 나머지 선지는 모두 옳습니다: bulk=조직 통째 분석으로 평균만 포착(26:19~26:58), scRNA-seq=세포 하나하나 분리 측정으로 ITH 직접 분석(25:09~25:39), 암세포+TME 면역세포 동시 분석으로 면역항암제 반응 마커 발굴(25:39~26:19, PAGE 25·31, 32:33), ligand/receptor 기반 cell-cell communication 예측(PAGE 40~43).",
+    "correct_fact": "rare population(희귀 소수 클론) 검출과 bias 없는 분석은 scRNA-seq(single-cell)의 장점이다. bulk는 조직을 통째로 분석해 세포집단이 뒤섞인 평균 특성만 측정하므로 소수 집단이 묻혀 검출이 어렵다.",
+    "selection_reason": "Summary 필수슬라이드 3번 'scRNA-seq' 항목의 핵심 비교·적용 축. 교수 출제예고(58:59)에서 'scRNA-seq'를 4대 출제범위로 명시. 현재 bloodomics-3은 바코드/UMI '원리'만 다루어 'bulk 대비 왜/언제 쓰나'라는 비교축(S7)+'rare population 잘 찾음' 강조(S2/S4)가 비커버였던 갭. bulk vs single-cell 명시적 비교(S7)는 비교 문제 출제 1순위. 기존 문항과 토픽 비중복.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "합동강의_20260317.pdf", "page": 18, "caption": "Bulk(조직 평균) vs single-cell omics(개별 세포·TME 동시분석·rare population 검출) 비교 도식 — scRNA-seq의 ITH 연구 장점"}
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "dpath-g1",
+    "lecture_key": "dpath",
+    "lecture_label": "04-28 디지털병리 WSI·AI (이성학 교수)",
+    "topic": "Foundation Model vs CNN — 개념·차이·장단점 (단일모델 다중 downstream, 적은 라벨 fine-tuning, 컴퓨팅 비용↑; UNI로 EBV·MSI 성능 향상)",
+    "exam_probability": 90,
+    "tier": 1,
+    "stem": "다음 중 병리 Foundation Model(FM)과 기존 CNN 기반 모델의 차이 및 특성에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "Foundation Model은 대규모 비지도(self/semi-supervised) 데이터로 사전학습(pre-training)을 완료한 범용 모델로, 사전학습 과정에서 데이터의 일반적 패턴·구조·상관관계를 학습한다.",
+      "기존 CNN 기반 모델은 MSI 예측, EBV 예측, mutation 예측 등 task마다 별도의 모델을 각각 학습시켜야 하는 반면, Foundation Model은 한 번 사전학습한 뒤 적은 양의 레이블 데이터로 fine-tuning하여 여러 downstream task에 적용할 수 있다.",
+      "의료 WSI는 데이터 수집·라벨링 비용이 크기 때문에, 대신 task마다 처음부터 학습시키는 기존 CNN 방식이 Foundation Model 기반 self/semi-supervised 방식보다 적은 데이터에서도 더 좋은 성능을 기대할 수 있어 라벨 부족 상황에 유리하다.",
+      "실제 위암(gastric cancer) 데이터에서 CNN 기반 모델의 EBV classification AUROC는 약 0.947, MSI는 약 0.827이었으나, UNI Foundation Model로는 EBV 0.988, MSI 0.898로 오히려 CNN보다 향상된 성능을 보였다.",
+      "Foundation Model은 하나의 모델로 다양한 task를 수행할 수 있는 장점이 있으나, 대규모 모델을 학습하고 유지하는 데 필요한 컴퓨팅 자원과 비용이 매우 크다는 단점이 있다."
+    ],
+    "answer_index": 2,
+    "explanation": "정답은 3번입니다. Foundation Model과 CNN의 장점이 정반대로 뒤바뀐 함정입니다. 슬라이드(p.81)는 '의료 WSI 데이터는 수집·라벨링 비용이 크기 때문에, Foundation Model을 활용하여 Self/Semi-supervised Learning 기반 모델을 개발하면 적은 데이터에서도 더 좋은 성능을 기대할 수 있다'고 명시합니다. 즉 라벨이 부족한 의료 데이터 상황에서 유리한 쪽은 '기존 CNN'이 아니라 'Foundation Model'입니다. 교수도 녹음에서 'Foundation 모델은 한 번만 트레이닝시키면 MSI도 예측하고 뮤테이션도 예측한다'(00:50대)며 단일모델 다중 task 이점을 강조하고, 실제 위암 데이터에서 CNN의 EBV 0.947·MSI 0.827을 UNI로 각각 0.988·0.898로 끌어올렸다(CNN보다 높음)고 직접 낭독합니다. 따라서 'task마다 처음부터 학습하는 CNN이 적은 데이터에서 더 유리하다'는 3번은 두 모델의 장점을 정반대로 서술한 오류입니다. 나머지 1·2·4·5번은 슬라이드 p.81·p.88 및 녹음 그대로 옳은 진술입니다.",
+    "correct_fact": "라벨링 비용이 큰 의료 WSI 환경에서 적은 데이터로도 좋은 성능을 기대할 수 있어 유리한 쪽은 Self/Semi-supervised 기반 'Foundation Model'이다(슬라이드 p.81). 기존 CNN은 task마다 별도 모델을 처음부터 학습해야 하므로 라벨이 부족할수록 불리하다. 선지 3번은 FM과 CNN의 장점을 정반대로 뒤집은 오류이다. 실측에서도 UNI Foundation Model이 CNN을 능가했다(EBV 0.947→0.988, MSI 0.827→0.898, 녹음 00:50대).",
+    "selection_reason": "마지막 1/3 deck의 핵심 비교 영역(pp.81-88)이며 p.83-84에 'CNN-based Model vs Foundation Model' 전용 비교 슬라이드가 배치(S7)+8장 분량(S1). 교수가 EBV/MSI AUROC 향상 수치를 직접 행 단위로 낭독(B2)하고 '요새 각광받는' 최신 트렌드로 강조. 써머리 가중 최우선 대상이나 기존 3문항이 전혀 미커버한 최대 갭(why_high_yield: exam_prob 90).",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "DL_Pathology_2026-대학원-ver1.3 (1).pdf",
+      "page": 83,
+      "caption": "CNN-based Model vs Foundation Model 비교 — task별 개별 학습(CNN) vs 단일 사전학습+다중 downstream fine-tuning(FM), EBV/MSI AUROC 향상"
+    }
+  },
+  {
+    "id": "dpath-g2",
+    "lecture_key": "dpath",
+    "lecture_label": "04-28 디지털병리 WSI·AI (이성학 교수)",
+    "topic": "Take-home / Conclusion — 'THE FUTURE IS MULTIMODAL' (AI=암병리 표준도구, 5년내 임상승인 바이오마커, 미개척: 예후·치료반응·morphology-genotype, 미래=multimodal dataset/DL)",
+    "exam_probability": 86,
+    "tier": 1,
+    "stem": "다음 중 강의 결론(Conclusion / Take-home) 슬라이드가 제시한 디지털병리 AI의 현황과 미래 전망에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "AI는 이미 암 조직병리(cancer histopathology)에서 표준 도구(standard tool)로 자리잡았으며, 향후 5년 이내에 임상적으로 승인된(clinically approved) 바이오마커를 다수 산출할 것으로 전망된다.",
+      "AI 도구를 지능적으로 활용하면 진단 워크플로를 개선하고 인적 오류(human error)를 줄이며, 관찰자 간 재현성(inter-observer reproducibility)을 향상시킬 수 있다.",
+      "예후 인자(prognostic feature)의 발견, 치료 성공 예측, 형태학적 표현형(morphology)과 유전형(genotype)의 관계 규명 등의 영역은 아직 'surface를 긁기 시작한' 초기 단계로 미개척 영역이 많다.",
+      "향후 연구는 개별 질환 모델을 위해 다양한 modality를 통합하는 더 큰 multimodal dataset을 구축하고, multimodal DL을 활용해 치료에 대한 반응(response)과 저항성(resistance)을 함께 예측하는 방향으로 진행될 것이다.",
+      "미래 핵심 과제는 여러 modality를 통합하기보다 H&E 단일 modality에 집중한 unimodal 모델의 정밀도를 높이는 것이며, 이는 교수가 강의를 'THE FUTURE IS MULTIMODAL'이 아닌 단일모달 우위로 마무리한 결론과도 일치한다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번입니다. 강의 전체 결론의 방향을 정반대로 뒤집은 함정입니다. 결론 슬라이드(p.95, Annual Review of Cancer Biology 2023 인용)는 'Future work will focus on developing more focused prognostic models by curating larger multimodal datasets... and using multimodal DL for predicting response and resistance to treatment'이라 명시합니다. 즉 미래의 핵심은 단일 modality가 아니라 '더 큰 multimodal dataset 구축 + multimodal DL'입니다. 교수도 녹음에서 ' 멀티모달 데이터셋을 이용해 가지고 멀티모달 딥러닝을 하는 게 대세다'(00:52대)라며 'THE FUTURE IS MULTIMODAL'로 강의를 마무리합니다. 따라서 'unimodal 단일 modality 집중이 미래 과제이고 교수가 단일모달 우위로 마무리했다'는 5번은 결론의 방향을 정반대로 서술한 명백한 오류입니다. 나머지 1·2·3·4번은 모두 p.95 결론 슬라이드 그대로 옳은 진술입니다(AI는 표준도구, 5년내 임상승인 바이오마커, 관찰자 간 재현성 향상, 예후·치료반응·morphology-genotype은 미개척, 미래=multimodal dataset/DL로 response·resistance 예측).",
+    "correct_fact": "강의 결론(p.95)의 핵심 메시지는 'THE FUTURE IS MULTIMODAL' — 미래 연구는 여러 modality를 통합한 더 큰 multimodal dataset 구축과 multimodal DL로 치료 반응(response)·저항성(resistance)을 예측하는 방향이다(녹음 00:52대 '멀티모달 딥러닝이 대세'). 선지 5번의 'unimodal 단일 modality 집중·단일모달 우위 마무리'는 결론 방향을 정반대로 뒤집은 오류이다.",
+    "selection_reason": "마지막 콘텐츠 슬라이드(p.95 Conclusion/Take-home, p.97 Thank you 직전)로 사실상 강의의 요약·결론. 전용 요약 deck이 없어 써머리 가중을 가장 강하게 적용해야 하는 대상이며, 교수가 멀티모달이 '대세'라고 직접 마무리 발화(녹음 00:52대)로 강조. 현황+미개척+미래를 묶는 종합형으로 출제 가능하나 기존 3문항이 전혀 미커버(why_high_yield: exam_prob 86).",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": false,
+      "pdf": "DL_Pathology_2026-대학원-ver1.3 (1).pdf",
+      "page": 95,
+      "caption": "Conclusion / Take-home — AI는 암병리 표준도구, 5년내 임상승인 바이오마커, 미래는 multimodal dataset·multimodal DL로 치료 반응·저항성 예측"
+    }
+  }
+]

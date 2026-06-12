@@ -1,0 +1,58 @@
+[
+  {
+    "id": "llmngs-g1",
+    "lecture_key": "llmngs",
+    "lecture_label": "03-31 LLM·NGS·바이오인포 (의료정보학)",
+    "topic": "'Context matters' — AI/LLM 연구활용에서 사용자 context(도메인 지식)가 성능을 좌우하고, AI가 genomic big data 해석·multimodal 통합을 가속한다 (Summary bullet#1·#7, 강의 수미상관 thesis)",
+    "exam_probability": 80,
+    "tier": 1,
+    "stem": "다음 중 이 강의가 제시한 'Context matters' 명제와 AI/LLM의 바이오·헬스케어 데이터 활용에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "AI/LLM은 biomedical research·coding·bio-big data 분석의 실용적 도구가 되었으나, 그 유용성(usefulness)은 사용자가 제공하는 'right context'의 질에 의존한다.",
+      "LLM을 'PhD 수준의 협업자'처럼 활용하려면 사용자가 자신만의 콘텐츠(전문 도메인 지식)를 갖추고 그 수준에 맞는 질문(context)을 줄 수 있어야 하며, 콘텐츠가 없으면 평균적 일반인과의 대화 수준에 머문다.",
+      "AI는 genomic big data의 관리·해석을 가속하고, 유전체·EMR·영상 등 multimodal 데이터를 통합해 bioinformatics를 실세계 정밀의학으로 번역(translate)하는 데 기여할 수 있다.",
+      "Burrows-Wheeler 알고리즘이 본래 데이터 압축('zipping')용이었다가 short-read를 genome에 정렬(mapping)하는 표준이 된 사례처럼, 서로 무관해 보이는 분야를 연결하는 통찰(connecting dots)은 현 단계에서 여전히 인간(사용자)의 context가 담당하는 역할로 제시된다.",
+      "End-to-end AI 모델이 등장한 현 시점에서 핵심은 도메인 지식 없이도 쿼리를 가능한 한 좁고 구체적으로 여러 번 제한해 던지는 것이며, 사용자의 전문 context는 오히려 모델 성능의 병목(bottleneck)으로 작용한다."
+    ],
+    "answer_index": 4,
+    "explanation": "이 강의의 처음과 끝을 잇는 핵심 메시지가 'Context matters'(슬라이드 PAGE 7 'Context matters', PAGE 40 Summary 첫 bullet 'usefulness depends on the right context')입니다. 5번이 정확히 거꾸로 뒤집힌 진술이라 옳지 않습니다. 교수는 오히려 '쿼리를 자꾸 제한을 주려고 하면, 그 자체가 병목이다, 컨텍스트만 줘라'(녹음 00:09:37)라고 명시했습니다. 즉 좁은 쿼리를 여러 번 던지는 것이 좋은 게 아니라, 사용자가 풍부한 context(자신의 콘텐츠·도메인 지식)를 주는 것이 핵심이며, 사용자의 전문 context는 병목이 아니라 성능을 좌우하는 핵심 자원입니다. 교수는 'PhD를 recruit할 수준의 질문을 주어야 LLM이 진짜 파워풀해진다'(00:06:52)고 했고, BWA(압축→정렬 차용)나 connecting dots를 들며 '전혀 상관없어 보이는 것을 연결하는 건 아직 인간의 역할'(00:25:00·00:26:08)이라 강조했습니다. 1번은 Summary bullet#1, 3번은 Summary bullet#7(PAGE 40)에 그대로 있고, 4번은 PAGE 15(Burrows-Wheeler·zipping·short-read mapping)에 슬라이드 근거가 있으며 녹음 해설로 보강됩니다. 따라서 1·2·3·4는 모두 옳고, 5만 인과·방향이 반대로 뒤집힌 오답입니다.",
+    "correct_fact": "AI/LLM의 유용성은 사용자가 주는 'right context'(도메인 지식·콘텐츠)의 질에 의존하며, 쿼리를 좁게 제한하기보다 풍부한 context를 제공해야 PhD 수준 성능을 끌어낼 수 있다. 사용자의 전문 context는 병목이 아니라 오히려 성능을 좌우하는 핵심 자원이고, 무관해 보이는 분야를 잇는 통찰은 여전히 인간의 역할이다(슬라이드 PAGE 7·40 + 녹음 00:06:52·00:09:37·00:25:00 근거).",
+    "selection_reason": "Summary(마지막 슬라이드 PAGE 40)의 첫·마지막 bullet(#1·#7)이자 강의 도입(PAGE 7)과 결론(PAGE 28)을 잇는 수미상관 take-home thesis. 마지막 요약 슬라이드 take-home을 최우선 가중하고, 기존 NGS·정밀의학 문항이 이 AI/context 축을 묻지 않아 명백한 갭. 적용형(왜 좁은 쿼리가 병목인지)으로 박사 변별.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": false,
+      "pdf": "3월 31일_대학원공개강의 (1).pdf",
+      "page": 40,
+      "caption": "Summary 슬라이드 7개 bullet (bullet#1 'usefulness depends on right context', bullet#7 'AI can accelerate ... translate bioinformatics into real-world precision medicine')"
+    }
+  },
+  {
+    "id": "llmngs-g2",
+    "lecture_key": "llmngs",
+    "lecture_label": "03-31 LLM·NGS·바이오인포 (의료정보학)",
+    "topic": "유전체 해독의 3단계(Sequencing→Annotate→functional Interpret)와 human/medical genetics의 궁극 목표인 'Genotype-based prediction of phenotype', SNP(개인 간 차이 ~0.1%)·BRCA1/2 genotype-phenotype 예시 (PAGE 30~34·39, Summary bullet#6)",
+    "exam_probability": 75,
+    "tier": 1,
+    "stem": "다음 중 강의가 제시한 human/medical genetics(정밀의학)의 궁극 목표와 유전체 해독 과정에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "Human/medical genetics(및 정밀의학)의 궁극 목표는 개인의 유전형(genotype)에 기반해 표현형(phenotype)을 예측하는 'genotype-based prediction of phenotype'으로 제시되며, 이는 genotyping과 interpretation 두 축으로 나뉜다.",
+      "유전체 해독(how to read the genome)은 (1) 염기서열 결정(sequencing nucleotides/base pairs) → (3) annotation → (2) functional interpretation 순서의 3단계로 진행되며, 마지막 functional interpretation이 먼저 끝나야 비로소 sequencing이 의미를 갖는다.",
+      "두 개인 사이의 유전체 차이(SNP, single nucleotide polymorphism)는 전체 genome의 약 0.1% 수준이며, 이는 genome-wide로 약 2~3백만 개에 해당한다.",
+      "BRCA1/2는 표현형(유방암)과 유전형(BRCA1/2 변이) 사이의 관계를 보여주는 'perfect example'로 제시되지만, 이는 인간 유전체의 약 22,000개 유전자 중 하나의 예시에 불과하다.",
+      "질병의 이해를 위해서는 DNA의 어떤 letter 변화든 그것이 단백질 구조·splicing·발현 수준 등 생화학적 특성에 미치는 영향을 정밀하게 규명하고, 그 영향을 표현형적 결과(phenotypic consequence)로 해석해야 한다."
+    ],
+    "answer_index": 1,
+    "explanation": "2번이 옳지 않습니다. 단계의 순서가 뒤바뀌었고 인과도 거꾸로입니다. 슬라이드 PAGE 39('유전체 해독의 3단계')는 (1) Sequencing nucleotides(or base pairs) → (2) Annotate → (3) (functional) Interpret 순서를 명시합니다. 즉 sequencing이 먼저이고 functional interpretation이 마지막 단계이며, '해석이 먼저 끝나야 sequencing이 의미를 갖는다'는 진술은 순서·인과를 모두 뒤집은 오답입니다. 교수도 'genotyping(시퀀싱)은 이미 가능하고, 안 되는 것은 30억 글자·2만 유전자의 해석(interpretation)'이라며 sequencing이 선행되고 해석이 남은 과제임을 강조했습니다(녹음 00:45:50~00:46:20). 나머지는 모두 슬라이드대로 옳습니다: 1번 PAGE 34('Genotype-based prediction of phenotypes' = ultimate goal, 'Genotyping'·'Interpretation'), 3번 PAGE 33('~0.1% of total genome (2-3 millions geno-wide)'), 4번 PAGE 30·31(BRCA1/2 'perfect example of phenotype(breast cancers) and genotype(BRCA1/2 mutations) relationship', 'One example among 22,000 genes'), 5번 PAGE 32(Troyanskaya 인용: 어떤 letter 변화든 protein structure·splicing·expression에 미치는 영향을 규명하고 phenotypic consequence로 해석).",
+    "correct_fact": "유전체 해독의 올바른 3단계는 (1) Sequencing → (2) Annotate → (3) functional Interpret이다(PAGE 39). Sequencing(genotyping)이 가장 먼저 수행되고 functional interpretation이 마지막·미해결 단계이며, 해석이 먼저 끝나야 sequencing이 의미를 갖는다는 것은 순서가 반대다. Human/medical genetics의 궁극 목표는 genotype-based prediction of phenotype이고(PAGE 34), 개인 간 SNP 차이는 genome의 ~0.1%(약 2~3백만 개)이며(PAGE 33), BRCA1/2는 22,000개 유전자 중 genotype-phenotype 관계의 대표 예시다(PAGE 30·31).",
+    "selection_reason": "Summary bullet#6('A central goal of human genetics is genotype-based prediction of phenotype through sequencing, annotation, and functional interpretation')의 핵심 축. PAGE 32·34·39가 정의·목표·3단계를, PAGE 30·31·33이 BRCA·SNP 예시를 모두 슬라이드로 제공하는 닫힌우주 내부 사실원. 기존 코호트 문항이 닫힌우주(슬라이드)에 UK Biobank·50만·FinnGen·deCODE·effect size가 전혀 없어 C1 위반으로 제거되었고, 그 자리를 이 슬라이드 근거 고출제 갭으로 대체. 비교·순서 변별(3단계 순서·인과 역전)으로 박사 수준 변별.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": false,
+      "pdf": "3월 31일_대학원공개강의 (1).pdf",
+      "page": 39,
+      "caption": "유전체 해독의 3단계: (1) Sequencing nucleotides/base pairs (2) Annotate (3) functional Interpret — 'How to read the genome'"
+    }
+  }
+]

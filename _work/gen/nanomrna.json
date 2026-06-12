@@ -1,0 +1,71 @@
+[
+  {
+    "id": "nanomrna-1",
+    "lecture_key": "nanomrna",
+    "lecture_label": "04-21 나노메디슨·mRNA-LNP (구희범 교수)",
+    "topic": "mRNA-LNP 플랫폼과 COVID-19 백신 (Pfizer/Moderna vs 바이러스 벡터, Robert Langer, Karikó/Weissman)",
+    "exam_probability": 76,
+    "tier": 1,
+    "stem": "다음 중 mRNA-LNP(lipid nanoparticle) 플랫폼과 COVID-19 백신에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "mRNA 자체만 세포에 그대로 투여하면 발현되지 못하므로, LNP는 mRNA를 봉입(encapsulation)하여 세포 내로 전달하는 핵심 운반체 역할을 한다.",
+      "mRNA 형태(mRNA-LNP)의 백신은 COVID-19 때 백신으로서 처음 사용되었으며, 아스트라제네카·얀센의 바이러스 벡터 백신보다 더 새로운 플랫폼이다.",
+      "Karikó와 Weissman은 uridine을 pseudouridine으로 치환하는 등의 변형을 통해 외부 mRNA가 세포 내 면역 인식을 회피하고 일정 기간 유지·번역되도록 하는 데 기여하였다.",
+      "Moderna 공동창업자인 Robert Langer가 MIT 화학공학(chemical engineering) 교수라는 점은 백신을 이루는 두 핵심 기술 중 하나가 LNP 전달 기술임을 보여준다.",
+      "전통적인 바이러스 벡터 백신은 mRNA-LNP 플랫폼보다 안전성 역사가 짧았기 때문에, 정부가 선주문에서 바이러스 벡터를 기피한 것이 결과적으로 옳은 판단이었다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번입니다. 교수님이 직접 들려준 '선주문 뉴스' 일화의 핵심은 정반대입니다. 아스트라제네카·얀센(바이러스 벡터)은 기존에 여러 질환 백신으로 오래 써와서 '안전성이 입증된' 전통 플랫폼이었고, 화이자·모더나(mRNA-LNP)는 백신으로 처음 쓰이는 신생 플랫폼이라 '검증 안 된 것'으로 여겨졌습니다. 그래서 정부는 바이러스 벡터를 왕창 선주문했는데, 뚜껑을 열어보니 mRNA form이 효능·성능에서 '완승'을 거두며 화이자·모더나가 급부상했습니다. 즉 바이러스 벡터에 베팅한 것은 결과적으로 '틀린' 판단이었습니다. 5번은 안전성 역사의 길이를 거꾸로 서술(바이러스 벡터가 더 짧다)했고, 결론도 정반대로 뒤집은 이중 오류입니다. 나머지 4개는 모두 옳습니다: mRNA 그대로는 세포에 안 들어가므로 LNP가 필수(1번), mRNA-LNP는 COVID 때 백신으로 첫 등장한 신생 플랫폼(2번), 노벨상의 pseudouridine 치환 면역회피(3번), Langer가 화공과 교수라는 점이 LNP 전달기술의 중요성을 상징(4번).",
+    "correct_fact": "바이러스 벡터(AZ·얀센) 백신이 mRNA-LNP보다 안전성 역사가 더 길었고(전통 플랫폼), 정부가 이를 근거로 바이러스 벡터를 대량 선주문했으나, COVID 이후 점유율은 mRNA-LNP(화이자·모더나)가 압도적 우위를 보여 결과적으로 바이러스 벡터 선주문은 잘못된 판단이었다.",
+    "selection_reason": "S4+S6 동시 발동(B1): 교수가 '정부 선주문 비판' 개인 일화로 패턴 전환 후 '속지 듣보자' 식 경고성 발화. S5(COVID 백신 반복 재언급), S7(바이러스 벡터 vs mRNA-LNP 비교). 강의에서 분량·강조가 최대인 핵심 토픽.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "20260421_합동강의_koo.pdf", "page": 18, "caption": "COVID-19 백신 플랫폼 분류 — 단백질/불활화, 바이러스 벡터, mRNA-LNP의 역사적 순서 및 점유율 비교"}
+  },
+  {
+    "id": "nanomrna-2",
+    "lecture_key": "nanomrna",
+    "lecture_label": "04-21 나노메디슨·mRNA-LNP (구희범 교수)",
+    "topic": "유전자 전달 3대 방법 분류 (Viral vector / Physical method / Non-viral delivery system)",
+    "exam_probability": 70,
+    "tier": 1,
+    "stem": "다음 중 유전자 전달(gene delivery) 방법의 분류와 특성에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "Viral vector는 바이러스 본래의 세포 감염 능력은 유지한 채 질병 관련 유전자를 제거하고 원하는 유전자를 끼워 넣은 것으로, 렌티바이러스는 주로 연구용, AAV는 임상 승인 사례가 있다.",
+      "Physical method(microinjection, electroporation, ultrasound)는 세포막을 일시적으로 뚫거나 열어 유전자를 넣는 방식으로, 세포 실험에는 잘 적용되지만 사람(in vivo)에게는 적용하기 어렵다.",
+      "Non-viral delivery system은 LNP, 고분자 나노파티클, 엑소좀(EV) 등을 이용하며, 바이러스 벡터의 genome integration·과도한 면역자극 같은 안전성 문제를 회피하면서 사람에게 적용 가능한 대안으로 등장하였다.",
+      "DNA·RNA를 배지에 그냥 넣어주면 세포가 원형 그대로 잘 받아들여 발현시키므로, 별도의 전달체 없이도 충분히 높은 유전자 발현 효율을 얻을 수 있다.",
+      "Viral vector는 전달 효율이 높고 장기 발현이 가능하지만, host genome integration이나 면역 과활성화로 드물게 사망 사례가 보고되는 등 안전성 위험을 항상 안고 있다."
+    ],
+    "answer_index": 3,
+    "explanation": "정답은 4번입니다. 교수님이 강조한 핵심 전제가 정반대로 뒤집혀 있습니다. 강의에서 '배지에 DNA나 RNA를 그냥 썩어(넣어)봤자, 세포가 그걸 원형 그대로 딱 먹고 발현될 부위로 가지고 가서 발현시킬 리가 없잖아요. 당연히'라고 했습니다. 바로 이 '맨몸 핵산은 세포에 안 들어가고 발현되지 않는다'는 문제 때문에 전달체(delivery system)가 필요해졌고, 그래서 viral vector → physical method → non-viral system이라는 분류가 등장한 것입니다. 4번은 이 출발점 자체를 부정하므로 명백히 틀립니다. 나머지는 모두 옳습니다: 병원성 유전자를 빼고 목적 유전자를 넣는 viral vector 개념(1번), 사람엔 못 쓰는 physical method(2번), 안전성 문제를 피하며 사람에게 쓸 수 있는 중간 대안으로 등장한 non-viral system(3번), viral vector의 고효율·장기발현 vs 사망 사례 포함 안전성 위험(5번).",
+    "correct_fact": "맨몸의 DNA·RNA를 세포에 그냥 노출시키면 세포 내로 들어가지도, 제대로 발현되지도 않는다. 바로 이 때문에 외부 핵산을 세포 안으로 효율적으로 넣어주는 전달체(viral vector, physical method, non-viral system)가 필요하다.",
+    "selection_reason": "S7(viral/physical/non-viral 3분류 명시적 비교) + S6('사람이 죽어나가게 됩니다' 경고성 발화) + B1(개인 박사과정 경험담 패턴전환과 경고 동시). 명시적 분류·비교 구조로 서술형 1순위 토픽.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": false, "pdf": "20260421_합동강의_koo.pdf", "page": 15, "caption": ""}
+  },
+  {
+    "id": "nanomrna-3",
+    "lecture_key": "nanomrna",
+    "lecture_label": "04-21 나노메디슨·mRNA-LNP (구희범 교수)",
+    "topic": "의료용 나노파티클의 크기(size) 논리 — small molecule·cell·lung capillary와의 비교 및 EPR effect",
+    "exam_probability": 66,
+    "tier": 1,
+    "stem": "다음 중 의료용 나노파티클이 수십~수백 nm 크기로 설계되는 이유와 EPR 효과에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "나노파티클은 small molecule이나 protein보다는 크고 박테리아나 세포(cell)보다는 작아, 대략 바이러스와 비슷한 크기 범위를 가진다.",
+      "small molecule은 크기가 너무 작아 신장(kidney)을 통한 renal clearance로 빠르게 제거되므로, 나노파티클은 이보다 커서 혈중 순환 시간을 늘릴 수 있다.",
+      "최종 약물 전달 목적지는 세포 내부이므로, 전달체가 세포보다 작아야 세포가 endocytosis로 나노파티클을 uptake할 수 있다.",
+      "나노파티클이 너무 커지면 폐모세혈관(lung capillary)에 trap되므로, 혈액 순환에 적합하도록 적절한 크기로 조절해야 한다.",
+      "EPR 효과는 종양 혈관이 정상 조직보다 촘촘하고 치밀하게 형성되어, 나노파티클이 종양 혈관을 통과하지 못하고 정상 조직에만 축적되는 현상을 말한다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번입니다. EPR 효과의 기전이 정반대로 뒤집혀 있습니다. 교수님 설명대로 암은 굉장히 빠르게 자라는 조직이라 신생혈관(angiogenesis)이 급격히 만들어지는데, 그 결과 정상 조직처럼 촘촘하지 못하고 '틈(gap)을 가진 성긴(leaky)' 구조의 혈관이 됩니다. 나노파티클은 크기를 잘 조절하면 바로 이 틈을 통과해 종양 조직으로 빠져나가고, 종양은 림프 배출이 약해 한번 들어간 입자가 잘 빠지지 않아 축적(retention)됩니다. 그래서 IV 주사만 해도 정상 조직보다 종양에 더 많이 쌓이는 것이 EPR(Enhanced Permeability and Retention) 효과입니다. 5번은 '촘촘하고 치밀', '통과 못함', '정상 조직에만 축적'으로 모두 거꾸로 서술한 오류입니다. 나머지는 옳습니다: 바이러스와 유사한 크기 범위(1번), small molecule은 renal clearance로 빨리 빠지므로 나노가 순환 연장(2번), 세포보다 작아야 endocytosis로 먹힘(3번), 너무 크면 lung capillary에 trap(4번).",
+    "correct_fact": "EPR 효과는 종양 혈관이 빠른 신생혈관 형성으로 인해 정상 조직보다 성기고 틈(leaky)이 많은 구조를 갖기 때문에, 적절한 크기의 나노파티클이 그 틈으로 종양 조직에 빠져나가 축적(retention)되는 현상이다(passive targeting).",
+    "selection_reason": "S1(강의 도입부 긴 분량의 크기 논리 설명) + S5(small molecule·세포·바이러스와 반복 비교) + S7(여러 크기 객체와 체계적 비교, 종양 vs 정상 혈관 구조 대조) + S2('결국에는', '그렇기 때문에' 담화 표지 다수).",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {"needed": true, "pdf": "20260421_합동강의_koo.pdf", "page": 4, "caption": "EPR 효과와 종양 조직의 passive/active targeting — leaky tumor vasculature를 통한 나노파티클 축적"}
+  }
+]

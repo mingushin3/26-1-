@@ -1,0 +1,97 @@
+{
+  "lecture_key": "llmngs",
+  "lecture_label": "03-31 LLM·NGS·바이오인포",
+  "summary_universe": [
+    {
+      "topic": "AI/LLM은 biomedical research·coding·bio-big data 분석의 실용 도구가 되었으나 그 유용성은 'right context'에 의존한다",
+      "source": "Summary 슬라이드 p40 bullet#1 + 별도 summary.pdf bullet#1 (요약), 본문 p3·p5·p6·p7(‘Context matters’/AI keyword)",
+      "exam_prob": 78,
+      "reason": "강의 도입부와 Summary 첫 bullet에 동시 등장하는 강의의 framing 명제. 녹음에서 ‘컨텍스트(콘텐츠)가 있어야 한다’를 반복(00:06:52·00:08:30·00:09:37·00:10:11)하며 박사학위 10명 recruit 비유로 강조. summary 가중 + S5 반복."
+    },
+    {
+      "topic": "Genomic data는 거대하다: 한 사람 유전체 ≈ 30억 bp, NGS가 massively parallel short-read 시퀀싱을 가능케 함",
+      "source": "Summary p40 bullet#2 + summary.pdf bullet#2 (요약), 본문 p10·p14·p15",
+      "exam_prob": 90,
+      "reason": "Summary 핵심 bullet이자 본문 다수 슬라이드. ‘30억 글자=책 파편화’ 비유를 녹음에서 3회+ 반복(00:21:28·00:22:05). 현재 Q1이 직접 커버."
+    },
+    {
+      "topic": "WGS 비용의 극적 하락(HGP ~$30억/10년 → 2015 ~$1,000 → 2022 ~$100)이 대규모 유전체 분석·정밀의학을 현실화",
+      "source": "Summary p40 bullet#3 + summary.pdf bullet#3 (요약), 본문 p11·p12 (비용 곡선 그래프)",
+      "exam_prob": 88,
+      "reason": "Summary bullet + 비용 곡선 그래프를 교수가 직접 읽어줌(B2, 녹음 00:14:27·00:15:33). NGS 등장 시점=급락 지점 강조. 현재 Q1이 커버."
+    },
+    {
+      "topic": "Precision medicine: one-size-fits-all에서 ‘right drug, right patient, right dose’로 전환(personalized→precision, paradigm shift)",
+      "source": "Summary p40 bullet#4 + summary.pdf bullet#4 (요약), 본문 p18·p19·p20·p21·p24",
+      "exam_prob": 80,
+      "reason": "Summary bullet + ‘paradigm shift’/‘one-size doesn’t fit all’ 전용 슬라이드. 녹음에서 imprecision medicine(약효 환자 1명당 3~24명 무효) 사례. 현재 Q2 부분 커버."
+    },
+    {
+      "topic": "글로벌 대규모 코호트 이니셔티브(All of Us 100만, UK Biobank 50만, 국가 바이오뱅크/FinnGen/deCODE/한국 100만)가 유전체+임상 데이터 결합으로 예방·진단·치료·약물유전체학 향상",
+      "source": "Summary p40 bullet#5 + summary.pdf bullet#5 (요약), 본문 p24·p26·p27·p28",
+      "exam_prob": 72,
+      "reason": "Summary 독립 bullet. 녹음에서 All of Us·UK Biobank·아이슬란드·한국 국가바이오뱅크를 길게(S1 분량집중) 설명(00:34:54~00:37:07). 현재 Q2에서 ‘대규모 코호트’ 일부만 스쳐감 → 코호트 비교는 미커버."
+    },
+    {
+      "topic": "인간유전학의 궁극 목표 = genotype 기반 phenotype 예측 (sequencing → annotation → functional interpretation 3단계)",
+      "source": "Summary p40 bullet#6 + summary.pdf bullet#6 (요약), 본문 p32·p34·p39",
+      "exam_prob": 89,
+      "reason": "Summary bullet + ‘유전체해독 3단계’ 전용 슬라이드(p39). 강의 한 줄 서사(genotyping은 됨/해석이 숙제)의 골격. 현재 Q2가 직접 커버."
+    },
+    {
+      "topic": "AI가 genomic big data의 관리·해석을 가속하고 bioinformatics를 실세계 정밀의학으로 번역(translate)할 수 있음",
+      "source": "Summary p40 bullet#7 + summary.pdf bullet#7 (요약), 본문 p28(‘accelerated by AI’)·p6·p7",
+      "exam_prob": 76,
+      "reason": "Summary 마지막 bullet(take-home). 강의 도입 AI 서사와 수미상관. multimodal 통합 해석을 녹음에서 강조(00:10:41·00:52:57). 현재 문항 미커버 → gap."
+    },
+    {
+      "topic": "BWA/Burrows-Wheeler 알고리즘: 본래 데이터 압축(zipping)용 → NGS short-read 정렬 표준으로 차용(가장 빠름·<3Gb 메모리), Smith-Waterman(dynamic programming)과 구분",
+      "source": "본문 p15(필수 비교 슬라이드), 녹음 00:23:13~00:25:00",
+      "exam_prob": 84,
+      "reason": "Summary에는 직접 없으나 교수가 가장 길게(S1)·인과 방향(압축→정렬) 반복(S5)하고 connecting-dots 일화(S4)로 강조한 토픽. 현재 Q1이 정밀 distractor로 직접 커버."
+    },
+    {
+      "topic": "DTC(Direct-to-Consumer) 유전자검사 개념·국내 12개 항목·임상 제한 사유(근거 부족), PRS(Polygenic Risk Score)와 GWAS",
+      "source": "본문 p35·p36·p37·p38, 녹음 00:49:02~00:52:22",
+      "exam_prob": 70,
+      "reason": "p35에 ‘Today’s special recommendation!’로 강조 표기 + GWAS 전용 슬라이드(p37). 녹음에서 23andMe 상장폐지·OTC 비유·PRS robust 조건(코호트 규모)을 비교(S7). 현재 Q2가 커버."
+    }
+  ],
+  "current_topics": [
+    {
+      "id": "llmngs-1",
+      "topic": "NGS massively parallel short-read 시퀀싱 + WGS 비용 변화(HGP→$1000→$100) + BWA/Burrows-Wheeler 매핑(압축→정렬 차용 방향)",
+      "exam_prob_reassessed": 90,
+      "keep": true,
+      "note": "Summary bullet#2·#3을 동시에 덮고, 교수가 가장 길게 강조한 BWA 인과방향(압축→정렬)을 정밀 distractor(answer_index=3)로 검증. 기전·비교형으로 박사 변별력 높음. 닫힌우주(p11·p15) 진위판정 가능. 유지."
+    },
+    {
+      "id": "llmngs-2",
+      "topic": "정밀의학 genotyping vs interpretation(3단계), BRCA1/2 two-hit, DTC, GWAS/PRS, 대규모 코호트",
+      "exam_prob_reassessed": 87,
+      "keep": true,
+      "note": "Summary bullet#4·#6과 강의 핵심 서사(‘genotyping은 됨, 해석이 숙제’)를 직접 커버. PRS 정의·코호트 규모·임상정착 3중 오류 distractor(answer_index=4)로 박사 변별력 우수. 다만 5지선다 한 문항에 BRCA/DTC/PRS/GWAS/코호트를 과적재 → 코호트 비교·AI 가속 측면은 충분히 못 물음(gap 유발). 유지."
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "‘Context matters’ — AI/LLM을 연구도구로 활용할 때 사용자 context(도메인 지식)의 질이 성능을 좌우한다 + AI가 genomic big data 해석·multimodal 통합을 가속한다 (Summary bullet#1+#7, 강의 수미상관 thesis)",
+      "source_slide": "Summary 슬라이드 p40 bullet#1·#7 + summary.pdf, 본문 p6·p7·p28",
+      "exam_prob": 80,
+      "why_high_yield": "summary/last-slide: Summary 첫·마지막 bullet이자 강의 도입(p3·p5·p6·p7)과 결론(p28·p40)을 잇는 framing 명제. 교수 강조도 low일수록 summary 가중을 강하게 적용 → 마지막 슬라이드 take-home은 최우선. 현재 두 문항(NGS·정밀의학)이 이 ‘AI/context’ 축을 전혀 묻지 않아 명백한 갭. 적용형(왜 context가 bottleneck인지)으로 박사 변별 가능.",
+      "recommend_add": true
+    },
+    {
+      "topic": "글로벌·국가 단위 대규모 코호트 비교(All of Us 100만 vs UK Biabank 50만 vs 국가 바이오뱅크/FinnGen/deCODE)와 ‘왜 2015년에 Precision Medicine이 가능해졌나(=NGS $1000)’의 인과 연결",
+      "source_slide": "Summary p40 bullet#5 + 본문 p24·p26·p27·p28",
+      "exam_prob": 70,
+      "why_high_yield": "summary: Summary 독립 bullet#5인데 현재 Q2는 ‘대규모 코호트’를 한 선지로 스칠 뿐 코호트 간 차이/규모 논리(effect size 작음→대규모 필요)를 직접 묻지 않음. 녹음 분량집중(S1)·비교대조(S7) 신호 강함. 비교·적용형으로 변별 가능.",
+      "recommend_add": true
+    }
+  ],
+  "weak_to_replace": [],
+  "verdict": "needs_additions",
+  "recommended_add_count": 2,
+  "recommended_drop_ids": [],
+  "notes": "현 2문항은 모두 keep 가치가 높고(둘 다 Tier1·기전/비교형·닫힌우주 검증가능) 교체할 약문항 없음(weak 0). 다만 Summary 슬라이드(p40)와 별도 summary.pdf의 7개 bullet을 출제범위 우주로 최우선 가중하면, bullet#1+#7(AI/‘context matters’ thesis, 강의 수미상관 take-home)이 통째로 미커버이고 bullet#5(글로벌/국가 코호트 비교)도 사실상 미커버다. 교수 강조도 low인 만큼 써머리 가중을 강하게 적용해 이 2개 갭을 보완 문항으로 추가 권장. 추가 시 단순암기 회피하고 ‘왜 context가 bottleneck인가/왜 대규모 코호트가 필요한가(effect size)’식 기전·적용형으로 구성하면 박사 변별력 확보. PHASE4 커버율 관점: Tier1(=exam_prob≥80) summary 토픽 6개 중 현재 4개 커버(67%)→90% 미만이므로 보충 필요와 일치."
+}

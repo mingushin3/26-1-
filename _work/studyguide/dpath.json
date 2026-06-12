@@ -1,0 +1,99 @@
+{
+  "code": "dpath",
+  "lecture_label": "04-28 디지털병리 WSI·AI (이성학)",
+  "essence": "유리슬라이드를 디지털화한 WSI를 패치로 잘라 CNN으로 분석 → 검출·서브타이핑·mutation·예후·치료반응까지 예측하는 게 핵심. 모델은 어노테이션 강도에 따라 4단계(Strongly→Weakly→Multimodal→Foundation)로 발전하고, 미래는 멀티모달이 대세.",
+  "analogy": "WSI는 통째로 못 먹는 거대 피자라 한입 크기 '패치'로 자른다. CNN의 conv→pooling 반복은 사진을 점점 작은 썸네일로 줄여 '핵심 윤곽'만 남기는 과정. 어노테이션은 '세포 하나하나(Strongly) vs 슬라이드 한 장에 라벨 하나(Weakly)'의 손품 차이.",
+  "concepts": [
+    {
+      "heading": "WSI 전처리 + CNN 파이프라인",
+      "points": [
+        "WSI = 유리슬라이드 1장 통째 스캔한 단일 고해상도 영상 → 수십억 픽셀, 파일 1~4GB, 다중계층 피라미드 저장",
+        "패치추출: 통째 처리 대신 256×256~1024×1024 정사각 패치로 분할",
+        "전처리 3종: 배경제거(계산부담↓), 조직/세포분할, 색상정규화(슬라이드 간 색차 보정→학습 불균형↓)",
+        "Convolution=필터 이동하며 곱·합 → feature map 생성, 차원 축소",
+        "Pooling=feature map 크기 '축소'(확대 아님!) → 주요특징만 남겨 오버피팅 방지",
+        "FC Layer=Flatten된 특징 종합→최종 분류, Softmax=각 클래스 확률화(큰 값↑ 작은 값↓)"
+      ]
+    },
+    {
+      "heading": "AI Task 단위 + 4대 모델 접근법",
+      "points": [
+        "Patch-level: 개별 패치만 분석, 패치 간 위치·상관관계 미사용 → 공간정보 소실 가능 but 다양성·성능↑",
+        "Slide-level: 패치 예측을 종합(Aggregation), 병변/암 확률 히트맵 생성",
+        "→ 어노테이션 강도 순으로 4단계 발전 (강의 뼈대, 5회 반복)"
+      ],
+      "table": {
+        "title": "Computational Pathology 4대 모델 (어노테이션 단위가 함정)",
+        "columns": ["모델", "어노테이션/입력", "용도", "특징"],
+        "rows": [
+          ["Strongly Supervised", "세포(cell) 단위", "구조 검출·세포 카운팅·IHC 정량화", "미리 정의된 구조 탐지"],
+          ["Weakly Supervised", "1 slide ↔ 1 label", "진단·그레이딩·서브타이핑·mutation·반응·예후", "세포 어노테이션 불필요"],
+          ["Multimodal", "Weakly + 추가데이터(분자)", "정밀도 향상", "이미지+molecular 융합"],
+          ["Foundation Model", "대규모 self/semi-supervised 사전학습", "1회 학습→다중 downstream fine-tune", "라벨 적어도 OK, but 컴퓨팅 비용↑"]
+        ]
+      }
+    },
+    {
+      "heading": "임상 응용: TIL 면역표현형 & Foundation Model",
+      "points": [
+        "Lunit SCOPE IO: WSI를 1mm² 그리드로 분할, CE(상피)/CS(기질)의 TIL density로 면역표현형 분류",
+        "Inflamed=CE TIL≥106/mm² → ICI 후 OS·PFS 개선",
+        "Immune-excluded=CE TIL 낮음 & CS TIL≥357/mm² 높음 (TIL이 stroma에 갇힘)",
+        "Immune-desert=CE·CS 둘 다 낮음",
+        "PD-L1 TPS 1~49%: IP 예측력 AUROC 0.7609 > PD-L1 TPS 0.5561 (P<.05) → PD-L1 보완 바이오마커",
+        "UNI(FM): 실측에서 CNN 능가 (EBV 0.94→0.988, MSI 0.827→0.898)",
+        "결론(p.95): AI는 암병리 표준도구, 5년내 임상승인 바이오마커, 미래=multimodal dataset+multimodal DL로 response·resistance 예측"
+      ]
+    }
+  ],
+  "traps": [
+    {
+      "qref": "dpath-1",
+      "topic": "Strongly vs Weakly 어노테이션 단위",
+      "correct": "✅ Strongly Supervised가 세포(cell) 단위 어노테이션 필요(세포 검출·카운팅·IHC 정량화), Weakly Supervised가 1 slide↔1 label(영역/슬라이드 단위)로 세포 어노테이션 불필요.",
+      "trap": "❌ Strongly가 슬라이드 단위 라벨만으로 학습해 세포 어노테이션이 불필요하고, Weakly가 세포 하나하나를 어노테이션한다(두 모델 정반대로 뒤바꿈)."
+    },
+    {
+      "qref": "dpath-2",
+      "topic": "Pooling의 작용 방향",
+      "correct": "✅ Pooling은 feature map 크기를 '축소'하여 주요 특징만 남기고 오버피팅을 방지한다.",
+      "trap": "❌ Pooling이 feature map 크기를 '확대'하여 세부정보를 보존함으로써 오버피팅을 방지한다(작용 방향 정반대)."
+    },
+    {
+      "qref": "dpath-3",
+      "topic": "Immune-excluded 정의 (CE/CS TIL density)",
+      "correct": "✅ Immune-excluded = CE의 TIL density는 threshold 미만(낮음) & CS의 TIL density는 threshold(357/mm²) 이상(높음) → TIL이 stroma에 갇혀 상피로 침투 못함.",
+      "trap": "❌ Immune-excluded는 CE TIL이 충분히 높고 CS TIL이 낮은 상태다(CE/CS 고저 조건 정반대로 뒤집음; 이건 오히려 inflamed에 가까움)."
+    },
+    {
+      "qref": "dpath-g1",
+      "topic": "Foundation Model vs CNN 라벨 부족 상황 유불리",
+      "correct": "✅ 라벨링 비용 큰 의료 WSI에서 적은 데이터로도 좋은 성능을 기대하는 쪽은 self/semi-supervised 기반 Foundation Model. CNN은 task마다 별도 모델을 처음부터 학습해야 해 라벨 부족 시 불리.",
+      "trap": "❌ task마다 처음부터 학습하는 기존 CNN이 적은 데이터에서 FM보다 좋은 성능을 기대할 수 있어 라벨 부족에 유리하다(FM·CNN 장점 정반대로 뒤바꿈)."
+    },
+    {
+      "qref": "dpath-g2",
+      "topic": "강의 결론의 미래 방향 (multimodal)",
+      "correct": "✅ 결론(p.95): 미래는 더 큰 multimodal dataset 구축 + multimodal DL로 치료 response·resistance 예측이 대세.",
+      "trap": "❌ 미래 핵심은 멀티모달이 아니라 H&E 단일 modality에 집중한 unimodal 모델 정밀도 향상이며 교수도 단일모달 우위로 마무리했다(결론 방향 정반대)."
+    }
+  ],
+  "memorize": [
+    "Strongly=세포단위 / Weakly=1슬라이드 1라벨. (헷갈리면 끝)",
+    "Pooling=축소(↓), 오버피팅 방지. 확대 아님.",
+    "Immune-excluded=CE 낮음·CS 높음(TIL이 기질에 갇힘). 357/mm².",
+    "Foundation Model=라벨 적어도 OK·1회 학습 다중 task, 비용↑. 미래는 multimodal."
+  ],
+  "figures": [
+    {
+      "pdf": "DL_Pathology_2026-대학원-ver1.3 (1).pdf",
+      "page": 9,
+      "caption": "Strongly/Weakly Supervised·Multimodal·Foundation Model 4대 접근법 비교 도표 (어노테이션 단위와 적용 task) — 강의 뼈대, 5회 반복"
+    },
+    {
+      "pdf": "DL_Pathology_2026-대학원-ver1.3 (1).pdf",
+      "page": 13,
+      "caption": "Immune Phenotype 3분류 — CE/CS의 TIL density threshold 기준 (Inflamed / Immune-excluded / Immune-desert)"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "tert-g1",
+    "lecture_key": "tert",
+    "lecture_label": "05-19 TERT·B형간염·간암 (장정원 교수)",
+    "topic": "텔로미어 단축의 이중적 역할(dual role) + Cancer Paradox + maintenance/stabilization vs elongation 용어 구분",
+    "exam_probability": 90,
+    "tier": 1,
+    "stem": "다음 중 텔로미어 길이(단축)의 이중적 역할(dual role)과 암 발생의 역설(Cancer Paradox)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "비악성 세포에서 텔로미어 단축은 임계 길이에 도달하면 DNA 손상 반응을 활성화시켜 복제 노화로 증식을 차단하므로, 형질전환 세포·초기 종양의 성장을 막는 항암(종양 억제) 방향으로 작용한다.",
+      "반대로 종양의 진행(progression) 단계에서는 텔로미어의 '안정화(stabilization)'가 요구되며, 종양 세포에서 이 안정화를 이루는 주된 기전은 텔로머레이즈(telomerase) 활성화이다.",
+      "선천적으로 텔로미어가 길거나 긴 텔로미어 관련 변이 유전자를 가진 개인은 오히려 주요 암의 발생 위험이 증가하지만, 정작 거의 모든 암 조직의 텔로미어는 인접 정상 조직보다 짧다.",
+      "거의 모든 암에서 텔로미어가 정상 조직보다 짧다는 사실은, 종양 세포가 짧아진 텔로미어를 평균적으로 정상 수준 이상으로 다시 '연장(net elongation)'시켜 길이를 늘림으로써 불멸성을 얻기 때문이다.",
+      "텔로미어는 노화 인자인 동시에 고령에서 많은 암의 위험을 높이지만 80세 이후에는 오히려 암 발생률이 감소하는데, 이는 텔로미어 길이가 암에 대해 단순히 '길면 좋다'는 도식으로 환원되지 않음을 보여준다."
+    ],
+    "answer_index": 3,
+    "explanation": "정답은 4번입니다. 핵심 용어가 'elongation(연장)'으로 바꿔치기되어 있어요. 슬라이드(PAGE 12)는 'tumor progression requires stabilization of telomeres', 'the predominant mechanism of telomere stabilization in tumor cells is the activation of telomerase'라고 명시합니다. 즉 암세포가 얻는 것은 짧아진 텔로미어를 정상 이상으로 '늘리는 연장(net elongation)'이 아니라, 위기를 넘길 만큼 짧은 길이를 더 이상 닳지 않게 '붙잡아두는 유지·안정화(maintenance/stabilization)'입니다. 장 교수가 '이거 헷갈리시면 안 돼요'라며 못 박은 부분이 바로 이 elongation vs maintenance 구분이에요(PAGE 16: 가장 짧은 텔로미어만 우선 유지). 실제로 거의 모든 암 조직의 텔로미어는 정상 조직보다 '짧고'(PAGE 11·12), 평균 길이는 암 진행 동안 critically short를 지나 '유지(maintained)' 쪽으로 갈 뿐 정상 이상으로 늘어나지 않습니다(PAGE 18). 따라서 '정상 수준 이상으로 다시 연장한다'는 4번이 틀린 진술입니다. 나머지 1·2·3·5번은 슬라이드(PAGE 12·7·10)와 정확히 일치하는 옳은 진술입니다: 단축의 항암 방향(PAGE 12·7), 안정화=telomerase 활성(PAGE 12), 긴 TL 개인의 암위험↑이면서 암조직은 짧음(PAGE 10), 80세 이후 암 발생률 감소(PAGE 10).",
+    "correct_fact": "종양 세포가 얻는 것은 텔로미어의 '연장(net elongation, 정상 이상 증가)'이 아니라 짧은 상태에서의 '유지·안정화(maintenance/stabilization)'이며, 그 주된 기전이 telomerase 활성화이다. 암 조직의 텔로미어는 여전히 정상 조직보다 짧다(PAGE 12·11·16·18).",
+    "selection_reason": "Summary(III) p82 'Dual role of telomere shortening→DDR'에 명시된 take-home이자 마지막 요약장 항목. 교수가 '착각하면 안 되는 게'·'헷갈리시면 안 돼요'로 가장 강하게 반복 경고(S2·S5·S6)한 비교/역설 주제이며 개인 긴TL vs 암조직 짧은TL 비교(S7). 현 deck(tert-1/2/3) 어디에도 미커버된 박사 변별형 핵심 갭. exam_prob 90으로 recommend_add 갭 중 최상위.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "대학원합동강의-JJW-P20236 (1).pdf",
+      "page": 12,
+      "caption": "텔로미어 단축의 이중적 역할: TL shortening(염색체 불안정·암 개시) vs TL stabilization(종양 진행, telomerase 활성에 의한 maintenance). 'stabilization≠net elongation' 비교 도식"
+    }
+  },
+  {
+    "id": "tert-g2",
+    "lecture_key": "tert",
+    "lecture_label": "05-19 TERT·B형간염·간암 (장정원 교수)",
+    "topic": "HBV 통합의 cis-effect vs trans-effect 비교 (ctHBx, preS결실 표면항원/ER stress, HBV-MLL4 fusion, HBx-LINE1 lncRNA) + 염색체 불안정성",
+    "exam_probability": 88,
+    "tier": 1,
+    "stem": "다음 중 HBV 통합(integration)이 간암을 유발하는 cis-effect와 trans-effect에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "Cis-effect는 통합 부위 인근(nearby) DNA에 작용하여, 삽입된 HBV의 enhancer/promoter 서열이 인접 유전자(대표적으로 TERT 프로모터)의 발현을 직접 증가시키는 삽입성 돌연변이(insertional mutagenesis) 기전이다.",
+      "Trans-effect의 대표 분자인 C-말단 절단형 HBx(ctHBx)는 전장(full-length) HBx보다 발암성이 강해, 전장 HBx가 가진 성장 억제·아폽토시스 유도 기능을 잃고 항아폽토시스·세포주기 촉진·침윤·전이를 유도한다.",
+      "HBV 통합체는 preC/C 유전자의 점진적 증폭을 통해 과량의 정상 HBcAg를 만들어 소포체(ER)에 축적시키고, 이 ER stress가 trans-effect로서 발암을 촉진한다.",
+      "HBV-MLL4(KMT2B) 융합 전사체는 MLL4 발현을 수 배~수십 배 상향조절하며, HBx-LINE1 융합 전사체는 lncRNA로 기능하여 HCC 환자의 생존율 저하와 연관된다.",
+      "이러한 cis/trans-effect에 더해 다양한 염색체 위치로의 통합은 게놈 재배열을 일으켜 염색체 불안정성(chromosomal instability)을 유발하며, 이는 세 번째 발암 효과로 작용한다."
+    ],
+    "answer_index": 2,
+    "explanation": "정답은 3번입니다. 단백질 종류와 기전이 교묘하게 뒤바뀌어 있어요. 슬라이드(PAGE 56)는 trans-effect의 표면항원 관련 기전을 'preS partially deleted → truncated surface protein의 과생산 → ER 축적 → ER stress'라고 명시합니다. 즉 ER에 쌓여 stress를 유발하는 것은 'preS 결실 변형 표면(surface) 단백질'이지, 'preC/C에서 만든 정상 HBcAg'가 아닙니다. 또 HBV 통합체는 항상 완전한 preS/S ORF와 3' 절단된 X 유전자를 가져 surface·X 단백을 만드는 것이지(PAGE 56), core(HBcAg)를 증폭해 만드는 구조가 아닙니다. 따라서 'preC/C 증폭으로 정상 HBcAg가 ER에 축적된다'는 3번은 분자(core↔surface)와 기전(점진 증폭↔preS 결실 변형)이 모두 틀린 진술입니다. 나머지는 모두 옳아요: cis=인근 TERT 프로모터 직접 활성화·insertional mutagenesis(PAGE 45·53), ctHBx가 full-length HBx의 성장억제·아폽토시스 기능을 없애고 발암성↑(PAGE 57), HBV-MLL4 융합 전사체의 MLL4 수~수십배 상향(PAGE 58·59)과 HBx-LINE1 lncRNA의 생존 저하 연관(PAGE 60·61·51), 염색체 불안정성이 세 번째 효과(PAGE 45·73).",
+    "correct_fact": "ER stress를 일으키는 trans-effect 분자는 'preS가 부분 결실된 변형 표면(surface) 단백질'의 과생산·ER 축적이지(PAGE 56), preC/C에서 증폭된 정상 HBcAg가 아니다. 통합체는 완전한 preS/S ORF와 3'-절단 X(ctHBx)를 보유하여 surface·X 단백을 만든다.",
+    "selection_reason": "Summary(II) p81에 'Cis-effects/Trans-effects(HBS & ctHBX)/Chromosomal instability/fusion-transcripts'로 정리된 비교표 항목이며 교수가 표를 행/열 단위로 직접 읽어 설명(B2)+cis vs trans 비교(S7)+'굉장히 무서운 부분' 패턴전환 묘사(S4). 기존 tert-2가 통합 '기전·부위·상호배타성'에 치우쳐 trans-effect 분자기전(ctHBx/preS/MLL4/LINE1)은 미커버. exam_prob 88의 비교·적용형 고변별 갭.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "대학원합동강의-JJW-P20236 (1).pdf",
+      "page": 56,
+      "caption": "HBV 통합체 유래 펩타이드: C-truncated HBx(항아폽토시스·세포주기·침윤·전이) vs preS 부분결실 변형 표면단백질(과생산→ER 축적→ER stress). cis(TERT) vs trans 효과 비교"
+    }
+  },
+  {
+    "id": "tert-g3",
+    "lecture_key": "tert",
+    "lecture_label": "05-19 TERT·B형간염·간암 (장정원 교수)",
+    "topic": "세포노화(senescence) + p53 분기 (senescence vs apoptosis vs malignant transformation)",
+    "exam_probability": 85,
+    "tier": 1,
+    "stem": "다음 중 임계 단축 텔로미어에 대한 세포 반응과 세포노화(cellular senescence)·p53 분기에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "텔로미어 길이가 임계 크기까지 단축되어 텔로미어가 기능이상(dysfunctional) 상태가 되면 DNA 손상 반응(DDR) 경로가 활성화되어 세포는 '복제 노화(replicative senescence)'로 진입한다.",
+      "세포노화는 증식과 DNA 복제 과정에서 비롯되는 유전자 돌연변이를 차단함으로써 암에 대한 매우 효과적인 장벽으로 작용하는 종양 억제 기전이다.",
+      "임계 이하로 단축된 텔로미어는 세포의 운명을 senescence, apoptosis, malignant transformation의 어느 쪽으로도 분기시킬 수 있으며, 어느 방향으로 갈지는 평균 텔로미어 길이보다 critically short telomere가 방아쇠로 작용한다.",
+      "p53이 온전(intact)할 때 세포는 senescence 장벽을 우회하여 불멸화(immortalization)로 진입하는 반면, p53 기능이 소실되면 세포가 노화로 정지하여 악성 전환이 억제된다.",
+      "악성 세포의 특징인 불멸화(infinite proliferation)는 텔로미어 안정화를 통해 senescence 장벽을 극복함으로써 이루어지며, 이는 암 발생 과정에서 노화 방어를 뚫는 사건에 해당한다."
+    ],
+    "answer_index": 3,
+    "explanation": "정답은 4번입니다. p53의 역할(보호 vs 소실)이 정반대로 뒤집혀 있어요. 슬라이드(PAGE 7·74·82)와 교수 설명에 따르면 p53이 '온전(intact)'할 때 세포는 노화(replicative senescence) 또는 아폽토시스로 들어가 증식을 멈추므로, 이것이 바로 암을 막는 보호(종양 억제) 방향입니다. 반대로 p53 기능이 '소실'되면 세포가 노화·사멸 장벽을 우회·극복하고 malignant transformation(악성 전환)으로 진행합니다(Summary III p82 'p53 functioning?'). 따라서 4번은 'p53 온전→불멸화', 'p53 소실→노화로 정지하여 악성 전환 억제'라고 인과를 정확히 거꾸로 서술한 오류입니다. 장 교수가 'senescence cell은 죽지 않고 분열 안 하는 상태'라며 세 갈래(senescence/apoptosis/malignant transformation)를 3회 이상 반복 설명한 핵심이에요. 나머지는 모두 옳습니다: 임계 단축→DDR→replicative senescence(PAGE 7), senescence가 암 장벽=종양 억제(PAGE 7), critically short telomere(평균 TL이 아니라)가 senescence/apoptosis/malignant transformation을 촉발(PAGE 74), 불멸화는 텔로미어 안정화로 senescence 장벽을 극복(PAGE 7).",
+    "correct_fact": "p53이 '온전'하면 세포가 senescence/apoptosis로 진입해 악성 전환을 '억제'(보호 기전)하고, p53 기능이 '소실'되면 노화·사멸 장벽을 우회하여 malignant transformation·불멸화로 진행한다(PAGE 7·74·82 'p53 functioning?'). 4번은 이 인과가 정반대다.",
+    "selection_reason": "Summary(III) p82 마지막 요약장에 'Cell senescence and crisis(apoptosis)'와 'p53 functioning?'까지 명시된 take-home. 교수가 senescence vs apoptosis vs malignant transformation 3-way 분기를 3회 이상 반복 설명(S5·S7). 현 deck 미커버된 기전 설명형 고변별 갭으로 deck의 '통합/임상' 편중을 '텔로미어 생물학' 축으로 균형 보완. exam_prob 85.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": false,
+      "pdf": "대학원합동강의-JJW-P20236 (1).pdf",
+      "page": 74,
+      "caption": "Critically short telomere가 촉발하는 3-way 세포 반응(senescence / apoptosis / malignant transformation)과 p53 기능 여부에 따른 분기"
+    }
+  }
+]

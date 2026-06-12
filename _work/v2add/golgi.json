@@ -1,0 +1,30 @@
+[
+  {
+    "id": "golgi-g1",
+    "lecture_key": "golgi",
+    "lecture_label": "03-10 골지체 (김지윤 교수)",
+    "topic": "Aging — Golgi fragmentation이 cellular senescence의 '부산물'이 아니라 '시작(원인)'; ZIP13/Zinc·CREB3 cleavage·Golgi-MT 연결 (Developmental Cell 2025)",
+    "exam_probability": 86,
+    "tier": 1,
+    "stem": "다음 중 노화(aging)와 골지 스트레스(age-associated Golgi stress)에 관한 김지윤 교수의 연구 및 가설로 옳지 않은 것은?",
+    "options": [
+      "ZIP13은 골지체에 위치한 아연(Zinc) 수송체이며, ZIP13을 knockout하면 Golgi stress response가 감소하고 Golgi fragmentation이 유발된다.",
+      "TPEN 같은 아연 chelator로 세포 내 아연을 떨어뜨리면(senescence mimic) Golgi stress response와 microtubule dynamics가 감소하여, 노화 시 나타나는 아연 결핍 상태를 모사할 수 있다.",
+      "교수는 '닭이 먼저냐 알이 먼저냐'에 빗대어, 세포 소기관을 인위적으로 망가뜨리면 오히려 세포 노화가 가속화됨을 보였고, 이를 통해 Golgi fragmentation이 senescence의 시작(개시 사건)일 수 있다고 제안하였다.",
+      "이 연구는 골지 파편화가 노화를 가속한다는 개념을 아연 결핍과 연결하여 작년(2025)에 Developmental Cell에 발표되었다.",
+      "기존 정설과 마찬가지로 이 연구도 Golgi fragmentation을 세포 노화의 결과로 나타나는 부산물(by-product)로 결론지었으며, 따라서 골지 형태 변화는 노화의 원인이 아니라 하류(downstream) 현상으로 확정되었다."
+    ],
+    "answer_index": 4,
+    "explanation": "정답은 5번. 이 연구의 핵심 주장을 정반대로 뒤집은 인과 전도 함정입니다. 교수는 '지금까지의 정설은 골지체를 비롯한 세포 소기관의 형태학적 변형이 노화의 부산물로 알려져 있었는데, 저는 약간 거꾸로 뭐가 먼저일까(닭이 먼저냐 알이 먼저냐) 생각했다'며, 결론적으로 '세포 소기관을 망가뜨려도 노화가 굉장히 가속화된다', '이 Golgi fragmentation이 senescence의 시작이다'라고 명시했습니다. 즉 이 연구의 메시지는 골지 파편화가 노화의 '부산물(결과)'이 아니라 '시작(원인)'일 수 있다는 것이며, 5번은 이를 기존 정설 그대로 '부산물·하류 현상으로 확정'했다고 서술해 틀렸습니다. 나머지는 모두 슬라이드(강의원고 PAGE 28-30)와 녹음 그대로 옳은 진술입니다: ZIP13은 골지 아연 수송체이고 ZIP13 KO 시 GSR↓·Golgi fragmentation(1번), TPEN(아연 chelator)으로 아연을 떨어뜨리면 senescence mimic으로 GSR↓·microtubule dynamics↓(2번), 닭/알 비유와 소기관을 망가뜨리면 노화 가속→fragmentation이 senescence의 시작(3번), 아연 결핍과 골지 스트레스를 연결해 2025년 Developmental Cell 발표(4번).",
+    "correct_fact": "김지윤 교수의 노화 연구(Developmental Cell, 2025)의 핵심 주장은 Golgi fragmentation이 cellular senescence의 '부산물(결과)'이 아니라 '시작(개시 사건·원인)'이라는 것이다. 실제로 세포 소기관을 인위적으로 손상시키면 노화가 가속화되며, 이는 아연 결핍(ZIP13 KO/TPEN)·Golgi stress response 저하·Golgi-microtubule 약화와 연결된다. 즉 골지 형태 변화는 노화의 하류 현상으로 '확정'된 것이 아니라, upstream 원인일 수 있다는 가설이 이 연구의 메시지다.",
+    "selection_reason": "재감사에서 recommend_add=true로 유일하게 지정된 갭(exam_prob 86). 필수(요약) 슬라이드가 명시한 Part II '3대 질환축(Cancer·Aging·Alzheimer's)' 중 'Aging'만 기존 5문항이 단독으로 다루지 않아 비교표성 질환축 누락으로 커버 필수. 마지막 요약장 take-home 핵심이며, S4(닭/알 비유·연구 경험담)+S6('아무도 이걸 지적하지 않았다'는 반전)+S7(부산물 vs 원인 비교, 암/노화/AD 평행 논리) 발동. Developmental Cell(2025) 게재로 기전·인과 전도형 출제 1순위.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "2026_합동강의_약리학교실 김지윤_강의원고.pdf",
+      "page": 29,
+      "caption": "Age-associated Golgi stress: ZIP13(골지 Zinc 수송체) KO·TPEN(Zinc chelator)로 Zinc↓ → Golgi stress response↓·microtubule dynamics↓·Golgi fragmentation, senescence: Zinc↓ — 골지 파편화가 노화의 시작(원인)이라는 가설 도식"
+    }
+  }
+]

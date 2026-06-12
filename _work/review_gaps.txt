@@ -1,0 +1,444 @@
+
+============================================================================
+[golgi] golgi-g1 | prob 86 | ★★★
+TOPIC: Aging — age-associated Golgi stress: ZIP13/Zinc·CREB3 cleavage·Golgi-MT 연결, Golgi fragmentation을 senescence의 '하류 부산물'이 아니라 'upstream(원인)'으로 보는 가설 (Developmental Cell 2025)
+STEM : 다음 중 노화(aging)와 골지 스트레스(age-associated Golgi stress)에 관한 김지윤 교수의 연구(Developmental Cell, 2025)로 옳지 않은 것은?
+  ① ZIP13은 골지체에 위치한 아연(Zinc) 수송체이며, ZIP13을 knockout(KO)하면 Golgi stress response가 감소하고 Golgi fragmentation이 유발된다.
+  ② TPEN 같은 아연 chelator로 세포 내 아연을 떨어뜨리면(senescence mimic) Golgi stress response와 microtubule dynamics가 함께 감소하여, 노화 시 나타나는 아연 결핍 상태(senescence: Zinc↓)를 모사할 수 있다.
+  ③ 노화 세포(senescent cell)에서는 Golgi stress response가 감소하고 Golgi-associated microtubule이 감소하며, BFA(Brefeldin A) 처리 시 young 세포에 비해 CREB3 cleavage(Golgi stress response) 반응이 약하게 나타난다.
+  ④ 이 연구는 아연 결핍(zinc deficiency)과 골지 스트레스의 상호작용이 microtubule 의존성 신호전달 및 후성유전학적 조절을 저해한다는 내용으로 작년(2025)에 Developmental Cell에 발표되었다.
+  ⑤ 이 연구는 기존 정설과 마찬가지로 Golgi fragmentation을 세포 노화의 결과로 나타나는 부산물(by-product)·하류(downstream) 현상으로 결론지었으며, 따라서 골지 형태 변화가 노화의 원인일 가능성은 배제되었다.  ★틀림(정답)
+바로잡기: 김지윤 교수의 노화 연구(Developmental Cell, 2025; 슬라이드 PAGE 28-30)는 아연 결핍(ZIP13 KO/TPEN으로 Zinc↓)과 골지 스트레스의 상호작용이 microtubule 의존 신호전달·후성유전 조절을 저해함을 보였고, Golgi fragmentation을 노화의 단순 부산물(하류 결과)이 아니라 senescence를 가속·개시할 수 있는 upstream 요인으로 본다. 슬라이드 근거: ZIP13=Golgi Zinc transporter, ZIP13 KO→Golgi stress response↓·Golgi fragmentation, TPEN=Zinc chelator로 Zinc↓(senescence mimic)→Golgi stress response↓·microtubule dynamics↓, Senescent cell→Golgi stress response↓·Golgi-associated microtubule↓, 논문 제목에 'zinc deficiency and Golgi stress hinders ... signaling and epigenetic regulation' 명시. 따라서 '부산물·하류로 확정, 원인 가능성 배제'는 연구 메시지와 정반대다.
+선정 : 재감사에서 recommend_add=true로 지정된 갭(exam_prob 86). 필수(요약) 슬라이드가 명시한 Part II '3대 질환축(Cancer·Aging·Alzheimer's)' 중 'Aging'을 기존 5문항이 단독 커버하지 않아 질환축 누락 보완. S4(연구 사례)+S6('아무도 이걸 지적하지 않았다'는 반전)+S7(부산물 vs 원인 비교, 암/노화/AD 평행 논리) 발동. Developmental Cell(2025) 게재로 기전·인과 전도형 출제 1순위. [검수 교정] 원안 3번 선지가 스크립트 전용 일화('닭이 먼저냐 알이 먼저냐')에 의존해 C1(슬라이드 닫힌우주) 위반 소지가 있어, 동일 토픽(PAGE 28) Senescent cell의 GSR↓·Golgi-MT↓·CREB3 cleavage로 슬라이드 검증 가능한 옳은 distractor로 교체. 정답(5번)의 인과 전도는 슬라이드 PAGE 30 논문 제목·PAGE 29 도식으로 falsifiable 유지.
+
+============================================================================
+[bloodomics] bloodomics-g1 | prob 90 | ★★★
+TOPIC: Bone marrow organoid의 다발골수종(MM) 연구 활용 근거 (primary culture 곤란·동물모델 대체 → 환자 암세포 공배양 ex vivo 모델, drug screening·마커 기능검증)
+STEM : 다음 중 다발골수종(MM) 연구에 골수 오가노이드(bone marrow organoid)를 활용하려는 전략에 관한 설명으로 옳지 않은 것은?
+  ① 다발골수종은 환자 암세포를 체외에서 직접 배양하는 primary culture 자체가 잘 되지 않는 암종에 속하여, 종래의 단순 세포 배양 기반 drug screening이 어렵다.
+  ② 환자 유래 이종이식(PDX) 같은 동물 모델은 비용이 과다하고 최근 동물실험을 줄이려는 추세가 강해지면서 그 활용에 제약이 커지고 있다.
+  ③ 골수 오가노이드 자체를 환자별로 새로 제작하여 환자 특이적 오가노이드를 완성한 뒤, 거기에 정상 조혈세포를 공배양하여 정상 골수 미세환경을 재현하는 것이 핵심 전략이다.  ★틀림(정답)
+  ④ 치료 반응을 유전자 프로파일링으로 '예측'하는 것보다, 환자 모델에 직접 약물을 스크리닝하여 반응을 보는 것이 더 직접적이고 좋은 접근으로 평가된다.
+  ⑤ 실제 제작한 골수 오가노이드에서 혈관 형성, 조혈(hematopoiesis), 스폰지 형태의 bone 구조 등 골수 미세환경의 특성이 재현되는 것이 관찰되었다.
+바로잡기: 골수 오가노이드는 그 자체를 환자 특이적으로 만드는 것이 아니라, 표준화된 플랫폼(기술)으로 사용하고 거기에 환자에서 생검한 '암세포'를 공배양하여 환자를 대변하는 ex vivo 모델을 구축한다. 이를 통해 drug screening 및 오믹스로 발굴한 마커의 기능 검증을 수행한다.
+선정 : Summary 필수슬라이드(p63 및 단독 필수슬라이드.pdf) 4대 키워드 중 마지막 항목(Bone marrow organoid). 교수가 강의 종료부(58:42~59:17)에서 '제일 중요한 거'라 도입하며 4대 출제범위 중 하나로 직접 출제예고(S2+S6). 기존 3문항(ctDNA·ITH·UMI)이 전혀 커버하지 못한 유일한 Summary 키워드 갭으로 최우선 보완. 기전·전략 적용형으로 대학원 변별.
+
+============================================================================
+[bloodomics] bloodomics-g2 | prob 80 | ★★★
+TOPIC: Bulk vs single-cell(scRNA-seq) 비교 및 scRNA-seq의 ITH/TME 연구 장점(비편향·rare population 검출·TME 동시분석·cell-cell communication)
+STEM : 다음 중 bulk sequencing과 single-cell RNA sequencing(scRNA-seq)의 비교 및 scRNA-seq의 종양 내 이질성(ITH) 연구상 장점에 관한 설명으로 옳지 않은 것은?
+  ① 기존 bulk 분석은 조직을 통째로 분석하여 다양한 subclone·세포집단이 뒤섞인 채 측정되므로, 결국 집단의 '평균적' 특성만 잡아낼 수밖에 없다.
+  ② scRNA-seq는 조직 내 세포를 하나하나 분리해 개별 세포 수준에서 전사체를 측정하므로, ITH를 더 직접적으로 분석할 수 있다.
+  ③ bulk 분석은 개별 세포를 분리하지 않고도 평균이 아닌 세포별 발현을 그대로 보존하므로, scRNA-seq보다 rare population을 더 민감하게 검출하는 데 유리하다.  ★틀림(정답)
+  ④ scRNA-seq는 암세포뿐 아니라 주변 종양 미세환경(TME)의 T세포·NK세포 등 면역세포를 동시에 분석할 수 있어 면역항암제 반응 예측 마커 발굴에 활용된다.
+  ⑤ scRNA-seq는 각 세포의 ligand/receptor 발현 데이터를 바탕으로 암세포와 TME 세포 간의 cell-cell communication(상호작용)을 예측할 수 있다.
+바로잡기: rare population(희귀 소수 클론) 검출과 bias 없는 분석은 scRNA-seq(single-cell)의 장점이다. bulk는 조직을 통째로 분석해 세포집단이 뒤섞인 평균 특성만 측정하므로 소수 집단이 묻혀 검출이 어렵다.
+선정 : Summary 필수슬라이드 3번 'scRNA-seq' 항목의 핵심 비교·적용 축. 교수 출제예고(58:59)에서 'scRNA-seq'를 4대 출제범위로 명시. 기존 bloodomics-3은 바코드/UMI '원리'만 다루어 'bulk 대비 왜/언제 쓰나'라는 비교축(S7)+'rare population 잘 찾음' 강조(S2/S4)가 비커버였던 갭. bulk vs single-cell 명시적 비교(S7)는 비교 문제 출제 1순위. 기존 문항과 토픽 비중복.
+
+============================================================================
+[scrna] scrna-g1 | prob 85 | ★★★
+TOPIC: Drop-out 현상과 sparse matrix(.mtx) 저장 구조
+STEM : 다음 중 scRNA-seq의 drop-out 현상과 그로 인한 sparse matrix(barcodes.tsv/features.tsv/matrix.mtx) 저장 형식에 관한 설명으로 옳지 않은 것은?
+  ① drop-out은 세포 내에 실제로 존재하는 transcript임에도 검출되지 않아 발현값이 0으로 기록되는 현상으로, 세포 하나의 미량 cDNA를 증폭해 포착해야 하는 낮은 capture 효율이 주된 원인이다.
+  ② drop-out으로 기록된 0은 모두 명확한 비발현(true zero)이므로, 본래 발현이 낮은 유전자의 0과 기술적으로 완벽히 구분되어 별도의 결측 처리가 필요 없다.  ★틀림(정답)
+  ③ drop-out 때문에 Gene-Cell 행렬에는 0이 매우 많아 sparse(희소) 행렬이 되며, 모든 0을 일반 표 형태로 저장하면 0마다 공간을 차지해 파일 크기가 비효율적으로 커진다.
+  ④ Cell Ranger는 이를 0이 아닌 값만 좌표로 기록하는 sparse 형식으로 분리 저장하여, barcodes.tsv(세포 바코드)·features.tsv(유전자)·matrix.mtx(발현값) 세 파일로 출력한다.
+  ⑤ matrix.mtx 파일의 한 줄이 '154 1 21'이면, features.tsv의 154번째 유전자가 barcodes.tsv의 1번째 세포에서 UMI count 21로 발현되었음을 의미한다.
+바로잡기: 올바른 서술: drop-out으로 생긴 0(technical zero)과 본래 비발현인 0(true zero)은 행렬 안에서 섞여 있어 통계적으로 구분하기 어려우며, 이 때문에 별도의 모델링이 필요한 문제가 된다. 0이 모두 명확한 비발현인 것은 아니다.
+선정 : 선정사유: 2장뿐인 '필수슬라이드' 중 하나인 요약(마지막) Keywords 슬라이드의 단독 항목('Drop-out')으로, 교수가 강의 종반에 '이 용어들을 정확히 알고 있으면 된다'고 출제를 직접 예고. '154 1 21' 예시는 슬라이드 p.28에 그대로 명시되어 닫힌우주 근거 충족. 교수가 '0인 데가 되게 많아요', '놓치는 경우가 되게 많아요'라고 반복·경고(S2·S5·S6). DRAFT W=3 TIER1인데 기존 4문항(scrna-1~4)에 미커버.
+
+============================================================================
+[scrna] scrna-g2 | prob 84 | ★★★
+TOPIC: PCA(선형 차원축소) 원리 + Elbow plot으로 PC 수 결정 + PCA→UMAP/clustering 입력 관계
+STEM : 다음 중 scRNA-seq 분석에서 PCA(주성분분석)와 PC 수 결정(Elbow plot), 그리고 PCA가 downstream(UMAP/clustering)과 맺는 관계에 관한 설명으로 옳지 않은 것은?
+  ① PCA는 비선형(non-linear) 차원축소이므로 데이터의 굽은 manifold를 직접 학습해 2D 평면에 표현하며, UMAP은 그 PCA 결과를 선형으로 재투영하는 후처리 단계이다.  ★틀림(정답)
+  ② PCA는 함께 움직이는(상관된) feature들을 하나로 묶은 새로운 축(PC)을 정의하는 선형(linear) 차원축소 방법이다.
+  ③ 각 PC는 상관된 유전자 집합을 요약한 'metafeature'에 해당하므로, 수천~수만 차원을 상위 일부 PC로 줄여도 데이터의 주요 변이와 생물학적 정보를 압축해 보존한다.
+  ④ Elbow plot은 PC를 variance 설명력 순으로 늘어놓아 곡선이 완만해지는 '팔꿈치' 지점에서 사용할 PC 수를 정하는 heuristic 방법으로, PC 수를 달리해도 downstream 결과가 극적으로 달라지지는 않는 경우가 많다.
+  ⑤ graph-based clustering과 UMAP은 모두 PCA로 얻은 PC 값을 입력으로 사용하므로, 동일한 PC 집합을 입력으로 주면 두 결과가 서로 비슷하게 나오는 경향이 있다.
+바로잡기: 올바른 서술: PCA는 슬라이드 p.25/p.34에 명시된 대로 '선형(linear)' 차원축소이고, UMAP/tSNE가 '비선형(non-linear)' 방법이다. 분석 순서는 PCA로 먼저 PC를 뽑은 뒤 그 PC 값을 입력으로 UMAP/clustering을 수행하는 것이며(p.38), PCA가 UMAP 결과를 재투영하는 후처리가 아니다.
+선정 : 선정사유: 요약 Keywords 슬라이드('Principal component analysis', 'Data visualization, PCA, UMAP, tSNE')에 명기된 항목 + 전용 슬라이드 p.34('linear dimensional reduction'), p.35('metafeature'), p.36(Elbow plot 'heuristic'), p.25('PCA(Linear)' vs 'Non-linear'), p.38(PCA의 PC를 UMAP/clustering 입력으로). PCA linear vs UMAP/tSNE non-linear 대조(S7), PC 수 결정 heuristic 강조. DRAFT W=4 TIER1인데 기존 문항에서 독립 미커버(scrna-2는 UMAP/clustering 구분에 초점). 정답·오답 모두 슬라이드 직접 근거.
+
+============================================================================
+[scrna] scrna-g3 | prob 78 | ★★★
+TOPIC: Multi-modal data generation — CITE-seq의 ADT(Antibody-Derived Tag)로 표면 단백질 phenotype 동시 측정
+STEM : 다음 중 multi-modal scRNA-seq의 한 방식인 CITE-seq와 그 핵심 요소인 ADT(Antibody-Derived Tag)에 관한 설명으로 옳지 않은 것은?
+  ① CITE-seq에서 ADT는 항체의 결합 특이성(binding specificity)에 의존하므로, 검증 없이 많은 항체 패널을 무작정 적용하면 비특이 결합 때문에 데이터가 망가질 수 있어 항체별 specificity 확인이 필요하다.
+  ② ADT는 transcript보다 항상 세포 유형을 정확히 구분하므로, CITE-seq에서는 transcript(mRNA) 데이터를 버리고 ADT 정보만으로 세포 유형을 정의하는 것이 표준 절차이다.  ★틀림(정답)
+  ③ CITE-seq는 한 세포에서 transcript(mRNA)와 표면 단백질(surface protein) 정보를 함께 얻는 multi-modal data generation 방식의 하나이다.
+  ④ ADT는 세포 표면 단백질에 결합하는 항체에 시퀀싱 가능한 oligonucleotide 바코드를 붙인 것으로, 이를 통해 surface protein phenotype을 측정한다.
+  ⑤ ADT(표면 단백질)와 transcript는 서로를 대체하기보다 보완하는 정보로, 둘을 함께 분석하면 transcript 단독보다 세포 유형 해석이 더 정확해질 수 있다.
+바로잡기: 올바른 서술: CITE-seq는 한 세포에서 transcript와 표면 단백질을 동시에 측정하는 multi-modal 방식이며(슬라이드 p.52·p.54), ADT(표면 단백질)와 transcript는 서로 보완 관계로 함께 분석할 때 더 정확하다. ADT가 transcript를 대체하지 않으며, transcript를 버리고 ADT만 쓰는 것이 표준이 아니다.
+선정 : 선정사유: 요약(마지막) Keywords 슬라이드의 단독 항목('CITE-seq')이자 p.52 'Multi-modal data generation' 단원, p.54 'Antibody-derived Tags (ADT) for surface protein phenotype' 슬라이드에 직접 근거. 교수가 '항체 specificity 확인해야'(S6)·'transcript로 정의한 population이 surface protein sorting과 같음을 증명'(S2)을 강조. 정답·오답을 슬라이드의 ADT 정의('surface protein phenotype')와 multi-modal(동시측정) 정의에 맞춰 닫힌우주 안에서 판정 가능하도록 교정(원안의 CD4-monocyte 등 스크립트 단독 세부 의존 축소). DRAFT W=3 TIER1, 기존 문항 미커버.
+
+============================================================================
+[scrna] scrna-g4 | prob 75 | ★★★
+TOPIC: Spatial Transcriptomics(Visium) vs scRNA-seq — 위치 보존, Spatial Barcode × Gene, 해상도·feature 발전 방향
+STEM : 다음 중 Spatial Transcriptomics(공간 전사체)와 scRNA-seq의 비교, 그리고 Visium·Xenium 등 공간 전사체 기술에 관한 설명으로 옳지 않은 것은?
+  ① scRNA-seq는 조직을 단일세포 현탁액으로 dissociation하면서 세포의 위치 정보가 소실되는 반면, spatial transcriptomics는 위치 정보를 보존한 채 전사체를 측정한다.
+  ② Visium은 cell barcode 대신 spatial barcode를 슬라이드에 심어 둔 뒤 조직 mRNA를 포획하므로, 최종 데이터는 '어느 세포'가 아니라 '슬라이드의 어느 위치(spot)'에서 왔는지를 담은 Spatial Barcode × Gene 행렬이 된다.
+  ③ 공간 전사체 기술은 해상도와 측정 feature 수를 더 높이는 방향(higher resolution & more features)으로 발전하고 있으며, 이미 완성·정체된 분야가 아니라 여러 신기술이 계속 등장하는 영역이다.
+  ④ Xenium은 슬라이드에 명시된 대로 수백 개 규모의 panel 유전자(예: 약 476개)를 표적으로 측정하는 방식이므로, 모든 유전자를 포괄하는 whole-transcriptome 데이터가 그대로 나오지는 않는다.
+  ⑤ Visium은 처음부터 단일세포(~10μm) 수준의 해상도로 각 세포를 개별 분해하여 측정하므로, 한 spot에 여러 세포가 섞이는 문제는 발생하지 않는다.  ★틀림(정답)
+바로잡기: 올바른 서술: Visium은 슬라이드(p.57)대로 spatial barcode 기반으로 '위치(spot)' 단위로 측정하므로 한 spot에 여러 세포가 섞일 수 있어 처음부터 단일세포(~10μm) 해상도로 각 세포를 분해하는 방식이 아니다. 단일세포 수준의 분해는 Xenium 등 더 높은 해상도 기술이 지향하는 방향이다.
+선정 : 선정사유: 요약(마지막) Keywords 슬라이드의 단독 항목('Spatial transcriptomics')이며 본deck 마지막 단원(p.57 Visium 'Spatial Barcode × Gene', 'In situ'; p.58 Xenium '~476 genes' panel; p.62 'Towards higher resolution & more features')으로 '마지막 슬라이드 집중출제' 원칙 직접 적용. singlecell vs spatial 비교(S7). 정답·오답을 슬라이드에 실제 적힌 사실(Spatial Barcode × Gene, ~476 panel, higher resolution & more features)에 맞춰 판정 가능하도록 교정(원안의 정확한 μm/nm 수치·rolling circle 등 스크립트 단독 세부에 정오답을 걸지 않음). DRAFT W=3 TIER1, 기존 문항 미커버.
+
+============================================================================
+[llmngs] llmngs-g1 | prob 80 | ★★★
+TOPIC: 'Context matters' — AI/LLM 연구활용에서 사용자 context(도메인 지식)가 성능을 좌우하고, AI가 genomic big data 해석·multimodal 통합을 가속한다 (Summary bullet#1·#7, 강의 수미상관 thesis)
+STEM : 다음 중 이 강의가 제시한 'Context matters' 명제와 AI/LLM의 바이오·헬스케어 데이터 활용에 관한 설명으로 옳지 않은 것은?
+  ① AI/LLM은 biomedical research·coding·bio-big data 분석의 실용적 도구가 되었으나, 그 유용성(usefulness)은 사용자가 제공하는 'right context'의 질에 의존한다.
+  ② LLM을 'PhD 수준의 협업자'처럼 활용하려면 사용자가 자신만의 콘텐츠(전문 도메인 지식)를 갖추고 그 수준에 맞는 질문(context)을 줄 수 있어야 하며, 콘텐츠가 없으면 평균적 일반인과의 대화 수준에 머문다.
+  ③ AI는 genomic big data의 관리·해석을 가속하고, 유전체·EMR·영상 등 multimodal 데이터를 통합해 bioinformatics를 실세계 정밀의학으로 번역(translate)하는 데 기여할 수 있다.
+  ④ Burrows-Wheeler 알고리즘이 본래 데이터 압축('zipping')용이었다가 short-read를 genome에 정렬(mapping)하는 표준이 된 사례처럼, 서로 무관해 보이는 분야를 연결하는 통찰(connecting dots)은 현 단계에서 여전히 인간(사용자)의 context가 담당하는 역할로 제시된다.
+  ⑤ End-to-end AI 모델이 등장한 현 시점에서 핵심은 도메인 지식 없이도 쿼리를 가능한 한 좁고 구체적으로 여러 번 제한해 던지는 것이며, 사용자의 전문 context는 오히려 모델 성능의 병목(bottleneck)으로 작용한다.  ★틀림(정답)
+바로잡기: AI/LLM의 유용성은 사용자가 주는 'right context'(도메인 지식·콘텐츠)의 질에 의존하며, 쿼리를 좁게 제한하기보다 풍부한 context를 제공해야 PhD 수준 성능을 끌어낼 수 있다. 사용자의 전문 context는 병목이 아니라 오히려 성능을 좌우하는 핵심 자원이고, 무관해 보이는 분야를 잇는 통찰은 여전히 인간의 역할이다(슬라이드 PAGE 7·40 + 녹음 00:06:52·00:09:37·00:25:00 근거).
+선정 : Summary(마지막 슬라이드 PAGE 40)의 첫·마지막 bullet(#1·#7)이자 강의 도입(PAGE 7)과 결론(PAGE 28)을 잇는 수미상관 take-home thesis. 마지막 요약 슬라이드 take-home을 최우선 가중하고, 기존 NGS·정밀의학 문항이 이 AI/context 축을 묻지 않아 명백한 갭. 적용형(왜 좁은 쿼리가 병목인지)으로 박사 변별.
+
+============================================================================
+[llmngs] llmngs-g2 | prob 75 | ★★★
+TOPIC: 유전체 해독의 3단계(Sequencing→Annotate→functional Interpret)와 human/medical genetics의 궁극 목표인 'Genotype-based prediction of phenotype', SNP(개인 간 차이 ~0.1%)·BRCA1/2 genotype-phenotype 예시 (PAGE 30~34·39, Summary bullet#6)
+STEM : 다음 중 강의가 제시한 human/medical genetics(정밀의학)의 궁극 목표와 유전체 해독 과정에 관한 설명으로 옳지 않은 것은?
+  ① Human/medical genetics(및 정밀의학)의 궁극 목표는 개인의 유전형(genotype)에 기반해 표현형(phenotype)을 예측하는 'genotype-based prediction of phenotype'으로 제시되며, 이는 genotyping과 interpretation 두 축으로 나뉜다.
+  ② 유전체 해독(how to read the genome)은 (1) 염기서열 결정(sequencing nucleotides/base pairs) → (3) annotation → (2) functional interpretation 순서의 3단계로 진행되며, 마지막 functional interpretation이 먼저 끝나야 비로소 sequencing이 의미를 갖는다.  ★틀림(정답)
+  ③ 두 개인 사이의 유전체 차이(SNP, single nucleotide polymorphism)는 전체 genome의 약 0.1% 수준이며, 이는 genome-wide로 약 2~3백만 개에 해당한다.
+  ④ BRCA1/2는 표현형(유방암)과 유전형(BRCA1/2 변이) 사이의 관계를 보여주는 'perfect example'로 제시되지만, 이는 인간 유전체의 약 22,000개 유전자 중 하나의 예시에 불과하다.
+  ⑤ 질병의 이해를 위해서는 DNA의 어떤 letter 변화든 그것이 단백질 구조·splicing·발현 수준 등 생화학적 특성에 미치는 영향을 정밀하게 규명하고, 그 영향을 표현형적 결과(phenotypic consequence)로 해석해야 한다.
+바로잡기: 유전체 해독의 올바른 3단계는 (1) Sequencing → (2) Annotate → (3) functional Interpret이다(PAGE 39). Sequencing(genotyping)이 가장 먼저 수행되고 functional interpretation이 마지막·미해결 단계이며, 해석이 먼저 끝나야 sequencing이 의미를 갖는다는 것은 순서가 반대다. Human/medical genetics의 궁극 목표는 genotype-based prediction of phenotype이고(PAGE 34), 개인 간 SNP 차이는 genome의 ~0.1%(약 2~3백만 개)이며(PAGE 33), BRCA1/2는 22,000개 유전자 중 genotype-phenotype 관계의 대표 예시다(PAGE 30·31).
+선정 : Summary bullet#6('A central goal of human genetics is genotype-based prediction of phenotype through sequencing, annotation, and functional interpretation')의 핵심 축. PAGE 32·34·39가 정의·목표·3단계를, PAGE 30·31·33이 BRCA·SNP 예시를 모두 슬라이드로 제공하는 닫힌우주 내부 사실원. 기존 코호트 문항이 닫힌우주(슬라이드)에 UK Biobank·50만·FinnGen·deCODE·effect size가 전혀 없어 C1 위반으로 제거되었고, 그 자리를 이 슬라이드 근거 고출제 갭으로 대체. 비교·순서 변별(3단계 순서·인과 역전)으로 박사 수준 변별.
+
+============================================================================
+[genetherapy] genetherapy-g1 | prob 78 | ★★★
+TOPIC: Jesse Gelsinger 사례(1999) — adenovirus immunotoxicity 사망 기전 + 임상시험 윤리위반 + AAV 전환 영향
+STEM : 다음 중 1999년 Jesse Gelsinger 사례와 그것이 유전자치료 분야에 미친 영향에 관한 설명으로 옳지 않은 것은?
+  ① 전달체로 사용된 아데노바이러스는 면역원성(immunogenicity)이 매우 높은데, 당시 면역원성 개념이 정립되지 않은 상태에서 과량의 벡터를 간동맥에 투여하여 과도한 면역반응이 일어났고 4일 만에 사망에 이르렀다.
+  ② 그는 부분적 OTC(ornithine transcarbamylase) 결핍을 앓고 있었으나 비교적 잘 조절되던 경증이어서 반드시 유전자치료가 필요한 상태가 아니었음에도 시험에 포함된, 부적절한 대상 선정 문제가 있었다.
+  ③ 이전 참여자에게서 발생한 중대한 이상반응(Grade III 간독성)이 FDA에 신속히 보고되지 않았고, 중대 이상반응 발생 시 시험을 중단하도록 한 프로토콜이 지켜지지 않은 위반이 있었다.
+  ④ 그는 다른 환자들의 심각한 부작용이나 전임상 동물 사망에 대한 정보를 충분히 제공받지 못했고, 벡터 자체에 내재한 위험이 과소평가된 정보·동의상의 문제도 있었다.
+  ⑤ 그의 사망은 아데노바이러스가 숙주 유전체에 무작위로 삽입되어 세포 증식 유전자를 과활성화시킨 삽입성 genotoxicity 때문이었으며, 이 사건을 계기로 통합형 렌티바이러스 벡터 사용이 본격화되었다.  ★틀림(정답)
+바로잡기: Jesse Gelsinger의 사망 원인은 고면역원성 아데노바이러스 벡터의 과량 투여에 따른 immunotoxicity(과도한 면역반응)이며, 삽입성 genotoxicity가 아니다(슬라이드 p14). 아데노바이러스는 유전체에 통합되지 않는다. 이 사건의 여파로 유전자치료 개발이 일시 중단되었고 이후 면역원성이 낮은 비통합형 AAV 벡터 중심으로 전환되었다(렌티바이러스 본격화가 아님).
+선정 : 감사 gaps[] recommend_add=true 중 exam_prob 최상위(78). 필수슬라이드 외 항목이지만 교수가 '표시 외에 한 문제 정도 다른 데서 나온다'고 출제를 직접 예고한 비필수 1순위. 3분+ 분량 집중(S1)·18세 자원자 극적 사례전환(S4)·'뼈아픈 케이스' 경고성 발화(S6)로 스크립트 비중이 압도적이며, 슬라이드 p14-15에 사인·윤리위반 항목이 글머리표로 정리되어 C1 진위판정이 가능. 함정이 immunotoxicity↔genotoxicity 인과 전도 + AAV↔Lenti 방향 반전으로 박사 변별력 높음.
+
+============================================================================
+[genetherapy] genetherapy-g2 | prob 70 | ★★★
+TOPIC: Sickle cell disease / β-thalassemia — BCL11A knockout으로 fetal hemoglobin(α2γ2) 재활성화 (CRISPR knockout의 임상 적용)
+STEM : 다음 중 겸상적혈구병(sickle cell disease)·β-지중해빈혈에 대한 유전자치료, 특히 유전자가위를 이용한 치료 기전에 관한 설명으로 옳지 않은 것은?
+  ① 태아 헤모글로빈은 α-globin 2개와 γ-globin 2개(α2γ2)로 이루어지고, 출생 후에는 BCL11A라는 전사인자가 발현되어 γ-globin을 줄이고 β-globin을 늘려 성인형 헤모글로빈(α2β2)으로 전환된다.
+  ② 겸상적혈구병은 β-globin 유전자(HBB)의 c.20A>T 단일염기 치환으로 β-globin 사슬에 문제가 생겨 적혈구가 낫 모양으로 변형되는 상염색체 열성 질환이다.
+  ③ 유전자가위 치료는 BCL11A 유전자에 이중나선 절단을 일으켜 indel→frameshift→premature stop codon→NMD 경로로 BCL11A를 knockout시킴으로써 억눌려 있던 γ-globin 발현을 되살려 fetal hemoglobin을 재활성화한다.
+  ④ 이 환자들은 β-globin에는 결함이 있어도 γ-globin은 정상이므로, 재활성화된 fetal hemoglobin이 성인형을 대체해도 일상생활에 문제가 없어 증상이 소실된다.
+  ⑤ 이 치료는 환자의 조혈모세포를 채취해 체외(ex vivo)에서 편집한 뒤 되돌려주는 방식으로, 유전자가위로 BCL11A를 과발현시켜 γ-globin 억제를 강화함으로써 fetal hemoglobin을 늘리는 원리이며 2023년 FDA 승인을 받았다.  ★틀림(정답)
+바로잡기: BCL11A는 γ-globin을 '억제'하는 전사인자이므로, 유전자가위로 BCL11A를 knockout(과발현이 아님)해야 억제가 풀려 γ-globin이 재발현되고 fetal hemoglobin(α2γ2)이 재활성화된다(녹음 45:15~46:28). β-globin은 결함이 있어도 γ-globin은 정상이라 fetal Hb 대체만으로 증상이 소실된다.
+선정 : 감사 gaps[] recommend_add=true 항목(exam_prob 70). deck '마지막 질환 적용·결론부(take-home)' 슬라이드군에 해당해 써머리 가중 최우선 대상이며, 강의 클라이맥스로 분량 집중(S1)·5년 추적 수혈중단 결과 강조. 이미 출제된 Q4(indel→NMD knockout 기전)를 BCL11A에 '적용'하는 통합형이라 기전+적용 변별력이 높고, BCL11A의 억제자 역할을 모르면 빠지는 인과 전도(knockout↔과발현) 함정으로 박사 변별 포인트(γ-chain은 정상이라 fetal Hb로 증상 소실)를 직격.
+
+============================================================================
+[ev] ev-g1 | prob 78 | ★★★
+TOPIC: EV 마커 체계 — Tetraspanin(CD9/CD63/CD81), MISEV 마커 Category 1~5, 네거티브 마커, 권장 3 pos + 1~2 neg
+STEM : 다음 중 EV의 마커 체계(Tetraspanin, MISEV 마커 카테고리, 포지티브/네거티브 마커)에 관한 설명으로 옳지 않은 것은?
+  ① Tetraspanin(CD9·CD63·CD81)은 막을 4번 관통하는(4개의 transmembrane 도메인) 막단백질로, EV막에 발현되는 대표적 포지티브 마커이며 MISEV 분류상 막관통/GPI-고정 단백질(Category 1)에 해당한다.
+  ② MISEV 마커 Category 4(핵·미토콘드리아·ER·골지·오토파고솜·퍼옥시솜 구성성분)는 EV에서 검출되면 안 되는 네거티브 마커로, 분리 과정에서 깨진 세포소기관 찌꺼기의 오염 여부를 판정하는 데 쓰인다.
+  ③ EV 동정 시 권장되는 마커 조합은 네거티브 마커 3개와 포지티브 마커 1~2개로, 오염 배제를 우선 확인한 뒤 EV 존재를 보조적으로 확인하는 순서가 표준이다.  ★틀림(정답)
+  ④ Category 2는 세포 내부 물질을 둘러싼 지질이중막 구조를 갖는 세포질(cytosolic) 쪽 단백질, Category 5는 EV 자체에 존재하지 않지만 표면에 결합하여 함께 동정되는 분비/루멘 단백질로 구분된다.
+  ⑤ Tetraspanin은 세포질 쪽 아미노산이 palmitoylation 수식을 받으면 서로 가까이 군집하여 TEM(Tetraspanin-enriched microdomain)을 형성하고, 이 도메인에서 함입(endocytosis)·ILV 형성이 잘 일어난다.
+바로잡기: EV 동정 권장 조합은 포지티브 마커 3개 + 네거티브 마커 1~2개다(녹음 00:42). 선지는 포지티브/네거티브 개수가 정반대로 뒤바뀌어 있다.
+선정 : 감사 why_high_yield: p32에 Category 1~5 본문 텍스트가 직접 박힌 표 슬라이드(닫힌우주 진위 강함)이며 현재 4문항이 전혀 커버하지 못한 deck 중반 표 슬라이드. 포지티브 vs 네거티브 구분·권장 개수·Category 분류는 객관식 distractor 최적이고 마커는 summary 가중 영역. 교수가 카테고리와 권장 개수를 직접 읽어줌(녹음 00:41~00:42).
+
+============================================================================
+[ev] ev-g2 | prob 72 | ★★★
+TOPIC: EV 엔지니어링·탑재 전략 — pre vs post-isolation 로딩, PTGFRN/Tetraspanin scaffold, intein cleavable linker, endosomal escape용 viral protein, EV-bioPROTAC
+STEM : 다음 중 EV에 원하는 물질을 탑재하는 엔지니어링 전략(pre/post-isolation 로딩, scaffold, linker)에 관한 설명으로 옳지 않은 것은?
+  ① Pre-isolation(분리 전) 로딩은 부모세포(parent cell)에 원하는 물질을 유전적으로 발현시켜, EV가 생성되는 과정에서 자연스럽게 탑재되도록 하는 방법이다.
+  ② Post-isolation(분리 후, exogenous) 로딩은 분리해 낸 EV에 초음파(sonication)·전기천공(electroporation)·단순 인큐베이션 등으로 물질을 직접 넣어주는 방법이다.
+  ③ Pre-isolation 로딩에서는 PTGFRN, CD81·CD9 같은 EV막 표적 단백질(scaffold)에 원하는 단백질을 융합시키며, 그중 PTGFRN은 탑재 효율이 높아 벤처기업이 많이 활용한다.
+  ④ 탑재 단백질을 scaffold에 연결할 때 쓰는 intein 기반 절단성(cleavable) 링커는, 화물이 표적세포에 도달해도 절단되지 않고 scaffold에 결합된 상태를 유지하도록 설계해야 기능을 발휘할 수 있다.  ★틀림(정답)
+  ⑤ 엔도솜 탈출(endosomal escape) 효율을 높이기 위해 바이러스 유래 단백질을 EV에 공동 발현시키는 전략을 병행하기도 한다.
+바로잡기: intein 절단성 링커는 표적세포 진입 후 잘려서 화물을 scaffold로부터 분리·방출시켜야 화물이 기능한다(녹음 00:54~00:55). 결합 상태를 유지하면 기능할 수 없다. 선지는 절단 목적을 정반대로 뒤집었다.
+선정 : 감사 why_high_yield: deck 마지막 3~6장(p46~51)=take-home/교수 본인 연구 결론부 → 써머리 가중 강하게 적용. pre/post-isolation 구분과 cleavable linker(intein)·endosomal escape용 viral protein 공동발현은 적용형 변별문항으로 적합하며 현재 미커버. 교수가 EV-bioPROTAC 등 본인 연구로 결론부에 직접 설명(녹음 00:46~00:48, 00:54~00:58).
+
+============================================================================
+[ev] ev-g3 | prob 70 | ★★
+TOPIC: MISEV2023 분류 축·명명 — small/large EV vs 엑소좀 용어, 분류 6축, NVEP(엑소미어/슈퍼미어, 지질이중막 없음)
+STEM : 다음 중 MISEV2023의 EV 분류·명명 체계와 NVEP(엑소미어·슈퍼미어)에 관한 설명으로 옳지 않은 것은?
+  ① MISEV2023은 EV를 Size, Density, Biochemical composition, Biological function, Environmental condition, Cell of origin의 6가지 축으로 분류할 수 있다고 제시한다.
+  ② 실험실에서는 분리된 입자가 엔도솜 경로에서 왔는지 세포막 출아에서 왔는지 구분할 수 없으므로, '엑소좀' 대신 크기 기반의 'small EV', 'medium/large EV' 같은 용어 사용을 권장한다.
+  ③ 엑소미어(2018년 보고, 약 30~50 nm)와 슈퍼미어(2021년 보고)는 지질이중막에 둘러싸인 작은 소포로, 엑소좀보다 더 작은 EV 서브타입(NVEP)으로 분류된다.  ★틀림(정답)
+  ④ 표면 단백질 발현을 기준으로 명명할 때는 'CD9 positive EV'처럼 특정 마커를 명시하여 표현할 수 있다.
+  ⑤ 슈퍼미어는 엑소미어를 침전시킨 뒤 남은 상층액을 다시 침전시키는 과정에서 발견되었으며, 실제 존재 여부와 특성에 대해 아직 논란이 있다.
+바로잡기: 엑소미어·슈퍼미어(NVEP)는 지질이중막이 '없는' 비소포성 입자이므로 EV가 아니며, EV의 서브타입도 아니다(별도 NVEP 범주). 선지는 막의 유무와 분류를 정반대로 뒤집었다.
+선정 : 감사 why_high_yield: p27에 분류 6축(Size/Density/Biochemical composition/Biological function/Environmental condition/Cell of origin)이 본문 텍스트로 명시된 표 슬라이드(닫힌우주 진위 강함). '엑소좀 대신 small EV' 권고는 강의 처음·끝 반복(S5). NVEP=지질이중막 없어 EV 아님은 단답/객관식 distractor 고빈도이며 현재 미커버. 교수가 도입·결론에서 명명 권고를 반복(녹음 00:05~00:06, 00:36~00:38).
+
+============================================================================
+[nanomrna] nanomrna-g1 | prob 75 | ★★★
+TOPIC: mRNA-LNP의 4대 구성성분(ionizable cationic lipid / cholesterol / phospholipid / PEG-lipid)과 microfluidic encapsulation 제조 원리 (p19 ONPATTRO Components + p29 On-going projects)
+STEM : 다음 중 ONPATTRO 슬라이드(p19)와 On-going projects 슬라이드(p29)에 근거한 lipid nanoparticle(LNP)의 구성성분 및 제조 원리에 관한 설명으로 옳지 않은 것은?
+  ① LNP는 ionizable cationic lipid, cholesterol, phospholipid, 그리고 PEG-lipid를 핵심 지질 성분으로 포함하며, 여기에 봉입할 핵산(siRNA 또는 mRNA)이 함께 들어간다.
+  ② mRNA(또는 siRNA)를 여러 lipid와 함께 microfluidic device로 흘려보내며 포뮬레이션하면 LNP가 형성되고, 그 안에 핵산이 encapsulation되어 갇힌다.
+  ③ 교수 연구실은 on-going project로 새로운 ionizable lipid를 직접 합성하여, 어떤 화학 구조의 lipid가 독성은 낮추고 mRNA 전달 효율은 높이는지를 탐색하고 있다.
+  ④ ionizable cationic lipid는 봉입 자체에는 관여하지 않는 비활성 충전제이므로, 그 화학 구조를 바꾸어도 LNP의 mRNA 전달 효율이나 독성에는 거의 영향을 주지 않는다.  ★틀림(정답)
+  ⑤ 동일한 LNP 제조 플랫폼에 봉입 핵산만 siRNA에서 mRNA로 바꾸면 mRNA-LNP가 되며, ONPATTRO(siRNA)와 COVID-19 백신(mRNA)은 사실상 같은 LNP 기술 위에 서 있다.
+바로잡기: ionizable cationic lipid는 LNP의 핵심 기능성 성분으로, 그 화학 구조를 바꾸면 mRNA 전달 효율과 독성이 달라진다. 교수 연구실이 새로운 ionizable lipid를 합성해 '저독성·고효율'을 추구하는 on-going project(p29 'Developing new ionizable lipid & LNP')가 바로 이 점을 보여준다. LNP는 ionizable cationic lipid·cholesterol·phospholipid·PEG-lipid의 4대 지질과 봉입 핵산으로 구성되며(p19), microfluidic device로 핵산을 봉입(encapsulation)해 제조한다.
+선정 : 감사 gaps[] 중 exam_prob 최상위(75) 항목. 슬라이드 p19에 LNP 4대 구성성분이 텍스트로 '명시'되어 닫힌우주(C1) 진위판정이 가장 강하고, p29 On-going projects 슬라이드 텍스트에 'Developing new ionizable lipid & LNP'와 'Microfluidics & simulation for LNP optimization'이 명시됨(S1 분량집중+S5 반복). 기존 3문항이 LNP의 '봉입/전달 역할'만 다루고 '무엇으로 이뤄졌나(조성)'는 미커버한 갭. ionizable lipid의 역할을 비활성 충전제로 뒤바꾼 정밀 오류로 대학원 기전 변별.
+
+============================================================================
+[nanomrna] nanomrna-g2 | prob 70 | ★★★
+TOPIC: ONPATTRO(Patisiran): 최초 LNP siRNA 치료제(2018 FDA, COVID 이전), hATTR amyloidosis, 50nm IV LNP / siRNA(double-strand) vs mRNA(single-strand) 차이 (p19)
+STEM : 다음 중 ONPATTRO(Patisiran) 슬라이드(p19)와 LNP 기술史에 관한 설명으로 옳지 않은 것은?
+  ① ONPATTRO는 RNA interference(RNAi) 기반 치료제로, hereditary transthyretin-mediated(hATTR) amyloidosis의 다발신경병증 치료에 사용되며 정맥(IV) infusion으로 투여된다.
+  ② ONPATTRO는 약 50 nm 크기의 lipid nanoparticle(LNP) 제형으로, 2018년 미국(USA)에서 FDA 승인을 받아 COVID-19 백신보다 먼저 임상에 적용되었다.
+  ③ ONPATTRO가 봉입한 핵산은 double-strand의 짧은 siRNA이고, COVID-19 mRNA-LNP 백신이 봉입한 핵산은 single-strand의 mRNA로, 두 제형은 봉입 핵산의 형태에서 차이가 있다.
+  ④ ONPATTRO의 등장은 LNP 기술이 2000년대 초부터 이어진 오랜 역사 끝에 siRNA 제형으로 먼저 임상·제품화된 사례로, 이후 COVID로 같은 플랫폼이 mRNA에 전용되었다.
+  ⑤ ONPATTRO는 COVID-19 백신용 mRNA-LNP가 먼저 상용화된 뒤, 그 mRNA를 siRNA로 교체하여 만들어진 첫 후속 siRNA 치료제로서 2018년보다 나중에 승인되었다.  ★틀림(정답)
+바로잡기: ONPATTRO(Patisiran)는 p19에 명시된 대로 2018년 미국에서 FDA 승인된 siRNA-LNP 치료제(hATTR amyloidosis, 50nm, IV infusion)로 COVID-19 백신(mRNA-LNP, 2020)보다 먼저 등장했다. 즉 siRNA-LNP가 먼저이고, 그 LNP 플랫폼에 봉입 핵산만 mRNA로 바꿔 COVID 백신이 탄생했다(녹음 32:56). ONPATTRO는 double-strand siRNA, mRNA-LNP 백신은 single-strand mRNA를 봉입한다.
+선정 : 감사 gaps[] 중 exam_prob 70 항목. 슬라이드 p19는 deck에서 제약사(Alnylam)·승인연도(2018/USA)·적응증(hATTR)·구성·투여경로(IV)·형태(50nm LNP)가 텍스트로 가장 풍부하게 기재된 단일 슬라이드로 닫힌우주 진위판정이 매우 강함(틀린 선지의 핵심 사실 '2018'이 슬라이드에 명시). LNP 기술史의 핵심 앵커(2018 siRNA→2020 mRNA)로 기존 mRNA-LNP 문항과 비교 시너지가 크지만 ONPATTRO 세부는 미커버. 역사적 선후를 뒤집은 인과 전도형 오류로 대학원 변별.
+
+============================================================================
+[nanomrna] nanomrna-g3 | prob 64 | ★★★
+TOPIC: mRNA-LNP 응용: lung-targeting LNP로 TRAIL & BAK-mRNA를 IV 투여하여 폐암 치료 — luciferase 영상으로 lung-specific 발현 확인, 지질 조성·비율 튜닝으로 organ targeting (p25~27 'mRNA-LNP for lung cancer therapy')
+STEM : 다음 중 mRNA-LNP를 이용한 폐암 치료 연구 슬라이드(p25~27, 'Intravenous injection of TRAIL & BAK-mRNA by lung-targeting LNP')에 관한 설명으로 옳지 않은 것은?
+  ① 이 연구는 TRAIL과 BAK라는 두 가지 치료 단백질을 만들어내는 mRNA를 LNP에 실어, 정맥(IV) 주사로 혈액 순환을 통해 폐(lung)를 표적해 폐암을 치료한 것이다.
+  ② LNP를 이루는 lipid의 종류와 조성·비율을 잘 디자인하면, IV 주사로 혈액 순환을 시키더라도 lung·liver·spleen 중 원하는 한 장기로 전달을 어느 정도 조절(targeting)할 수 있다.
+  ③ luciferase를 발현하는 mRNA를 IV로 주사하고 luciferin substrate를 투여하면, mRNA가 전달·발현된 부위에서 luminescence가 떠 발현 위치를 영상으로 확인할 수 있다.
+  ④ TRAIL은 세포 바깥의 TRAIL receptor에 결합해 apoptosis를 일으키고, BAK은 cytosol 내부의 signaling pathway를 건드려 intrinsic하게 apoptosis를 유도하므로, 두 경로를 동시에 자극하는 combination therapy가 된다.
+  ⑤ 이 LNP는 폐에 직접(direct) 주사하여 약물을 국소 투여한 제형이므로 혈액 순환을 거치지 않으며, 따라서 lung 외의 다른 장기로 LNP가 분포할 가능성은 원리상 존재하지 않는다.  ★틀림(정답)
+바로잡기: p25~27의 mRNA-LNP 폐암 연구는 LNP에 직접 주사한 것이 아니라 'Intravenous injection'(IV, 정맥주사)으로 혈액 순환을 거쳐 lung을 표적한 lung-targeting LNP다. IV 경로는 본래 여러 장기로 분포할 수 있으나 lipid 조성·비율을 디자인해 lung·liver·spleen 중 lung 쪽으로 전달을 치우치게 만든 것이며, luciferase imaging으로 lung-specific 발현을 확인했다. TRAIL은 extrinsic(외부 TRAIL receptor), BAK은 intrinsic(cytosol signaling) 경로로 apoptosis를 일으키는 combination therapy다.
+선정 : g3(AAV vs LNP 장단점)이 닫힌우주(C1) 위반(슬라이드 p15는 'Gene delivery' 제목·인용만 있어 AAV/장단점 텍스트 부재, 비교 내용 전부 스크립트 단독)이며 기존 nanomrna-2(viral/non-viral 분류·각 장단점)와 내용 중복이라 제거하고, 같은 강의의 슬라이드-텍스트 기반 고출제 갭으로 대체. 슬라이드 p25~27 부제 'Intravenous injection of TRAIL & BAK-mRNA by lung-targeting LNP'는 추출 가능한 슬라이드 텍스트로 IV·lung-targeting·TRAIL/BAK가 명시되어 C1 진위판정이 강함(S1 분량집중: 녹음 34:46~37:14에서 가장 상세히 설명, S4 luciferase 영상 사례 전환). 투여경로/분포원리를 통째로 뒤집은 정밀 오류로 대학원 변별.
+
+============================================================================
+[dpath] dpath-g1 | prob 90 | ★★★
+TOPIC: Foundation Model vs CNN — 개념·차이·장단점 (단일모델 다중 downstream, 적은 라벨 fine-tuning, 컴퓨팅 비용↑; UNI로 EBV·MSI 성능 향상)
+STEM : 다음 중 병리 Foundation Model(FM)과 기존 CNN 기반 모델의 차이 및 특성에 관한 설명으로 옳지 않은 것은?
+  ① Foundation Model은 대규모 비지도(self/semi-supervised) 데이터로 사전학습(pre-training)을 완료한 범용 모델로, 사전학습 과정에서 데이터의 일반적 패턴·구조·상관관계를 학습한다.
+  ② 기존 CNN 기반 모델은 MSI 예측, EBV 예측, mutation 예측 등 task마다 별도의 모델을 각각 학습시켜야 하는 반면, Foundation Model은 한 번 사전학습한 뒤 적은 양의 레이블 데이터로 fine-tuning하여 여러 downstream task에 적용할 수 있다.
+  ③ 의료 WSI는 데이터 수집·라벨링 비용이 크기 때문에, 대신 task마다 처음부터 학습시키는 기존 CNN 방식이 Foundation Model 기반 self/semi-supervised 방식보다 적은 데이터에서도 더 좋은 성능을 기대할 수 있어 라벨 부족 상황에 유리하다.  ★틀림(정답)
+  ④ 실제 위암(gastric cancer) 데이터에서 CNN 기반 모델의 EBV classification AUROC는 약 0.94, MSI는 약 0.827이었으나, UNI Foundation Model로는 EBV 0.988, MSI 0.898로 오히려 CNN보다 향상된 성능을 보였다.
+  ⑤ Foundation Model은 하나의 모델로 다양한 task를 수행할 수 있는 장점이 있으나, 대규모 모델을 학습하고 유지하는 데 필요한 컴퓨팅 자원과 비용이 매우 크다는 단점이 있다.
+바로잡기: 라벨링 비용이 큰 의료 WSI 환경에서 적은 데이터로도 좋은 성능을 기대할 수 있어 유리한 쪽은 Self/Semi-supervised 기반 'Foundation Model'이다(슬라이드 p.81). 기존 CNN은 task마다 별도 모델을 처음부터 학습해야 하므로 라벨이 부족할수록 불리하다. 선지 3번은 FM과 CNN의 장점을 정반대로 뒤집은 오류이다. 실측에서도 UNI Foundation Model이 CNN을 능가했다(EBV 약 0.94→0.988, MSI 0.827→0.898, 녹음 00:46대).
+선정 : 마지막 1/3 deck의 핵심 비교 영역(pp.81-88)이며 p.83-84에 'CNN-based Model vs Foundation Model' 전용 비교 슬라이드가 배치(S7)+8장 분량(S1). 교수가 EBV/MSI AUROC 향상 수치를 직접 행 단위로 낭독(B2)하고 '요새 각광받는' 최신 트렌드로 강조. 써머리 가중 최우선 대상이나 기존 3문항이 전혀 미커버한 최대 갭(why_high_yield: exam_prob 90).
+
+============================================================================
+[dpath] dpath-g2 | prob 86 | ★★★
+TOPIC: Take-home / Conclusion (p.95) — AI=암병리 표준도구, 5년내 임상승인 바이오마커, 미개척: 예후·치료반응·morphology-genotype, 미래=multimodal dataset/DL로 response·resistance 예측
+STEM : 다음 중 강의 결론(Conclusion / Take-home) 슬라이드가 제시한 디지털병리 AI의 현황과 미래 전망에 관한 설명으로 옳지 않은 것은?
+  ① AI는 이미 암 조직병리(cancer histopathology)에서 표준 도구(standard tool)로 자리잡았으며, 향후 5년 이내에 임상적으로 승인된(clinically approved) 바이오마커를 다수 산출할 것으로 전망된다.
+  ② AI 도구를 지능적으로 활용하면 진단 워크플로를 개선하고 인적 오류(human error)를 줄이며, 관찰자 간 재현성(inter-observer reproducibility)을 향상시킬 수 있다.
+  ③ 예후 인자(prognostic feature)의 발견, 치료 성공 예측, 형태학적 표현형(morphology)과 유전형(genotype)의 관계 규명 등의 영역은 아직 'surface를 긁기 시작한' 초기 단계로 미개척 영역이 많다.
+  ④ 향후 연구는 개별 질환 모델을 위해 다양한 modality를 통합하는 더 큰 multimodal dataset을 구축하고, multimodal DL을 활용해 치료에 대한 반응(response)과 저항성(resistance)을 함께 예측하는 방향으로 진행될 것이다.
+  ⑤ 미래 핵심 과제는 여러 modality를 통합하기보다 H&E 단일 modality에 집중한 unimodal 모델의 정밀도를 높이는 것이며, 교수도 강의를 멀티모달이 아닌 단일모달 우위로 마무리하였다.  ★틀림(정답)
+바로잡기: 강의 결론(슬라이드 p.95)의 핵심 메시지는 multimodal 지향이다 — 미래 연구는 여러 modality를 통합한 더 큰 multimodal dataset 구축과 multimodal DL로 치료 반응(response)·저항성(resistance)을 예측하는 방향이다('Future work will focus on... curating larger multimodal datasets... using multimodal DL for predicting response and resistance', p.95). 교수도 녹음 마무리에서 '멀티모달 딥러닝을 하는 게 대세'(00:52대)라고 명시한다. 선지 5번의 'unimodal 단일 modality 집중·단일모달 우위 마무리'는 결론 방향을 정반대로 뒤집은 오류이다.
+선정 : 마지막 콘텐츠 슬라이드(p.95 Conclusion/Take-home, p.97 Thank you 직전)로 사실상 강의의 요약·결론. 전용 요약 deck이 없어 써머리 가중을 가장 강하게 적용해야 하는 대상이며, 교수가 멀티모달이 '대세'라고 직접 마무리 발화(녹음 00:52대)로 강조. 현황+미개척+미래를 묶는 종합형으로 출제 가능하나 기존 3문항이 전혀 미커버(why_high_yield: exam_prob 86).
+
+============================================================================
+[thyroid] thyroid-g1 | prob 88 | ★★★
+TOPIC: Take-home message 4가지 + On-going/Future study (마지막 요약 슬라이드 통합)
+STEM : 다음은 본 강의의 마지막 요약 슬라이드(TAKE-HOME MESSAGE)와 향후 연구 방향에 관한 설명이다. 다음 중 옳지 않은 것은?
+  ① 진단 바이오마커는 통계적 차이의 유무가 아니라 임상적 미충족 수요(clinical unmet needs)와 임상 의사결정에 미치는 영향(impact on clinical decision)에서 출발해야 한다.
+  ② 때로는 화려한("fancy") omics 신규 마커를 새로 발굴하기보다, 폐암 등에서 이미 잘 알려진 마커를 치료 상태(treatment status) 같은 다른 상황에 재적용하는 것이 더 효과적일 수 있다.
+  ③ 바이오마커를 적용하기 전에 그 분자의 생성(production)부터 제거(removal)까지 전 과정의 분자 특성을 항상 염두에 두어야 한다.
+  ④ 예비(preliminary) 논문 한 편으로도 마커의 임상적 유용성이 충분히 입증되므로, 별도의 독립적 검증(validation) 과정 없이 곧바로 임상에 도입할 수 있다.  ★틀림(정답)
+  ⑤ 향후 연구 방향으로는 washout fluid의 proteomics를 통한 추가 마커 발굴, washout CYFRA 21-1의 비용효과성 분석, CK-19/caspase-3의 IHC 기전 연구, 다기관 전향적 연구, 신의료기술 등재 신청 등이 제시되었다.
+바로잡기: Take-home 4번 메시지는 'Only one preliminary paper is not enough! Validation process is also important'(슬라이드 55), 즉 예비 논문 한 편으로는 부족하며 validation 과정이 반드시 필요하다는 것이다. 2019 pilot이 reject(슬라이드 43)된 뒤 validation study(슬라이드 44, Clin Cancer Res 2025)로 재현되어 임상 유용성이 확립되었다. '검증 없이 곧바로 도입 가능'은 강의 결론과 정반대다.
+선정 : 슬라이드 p55 TAKE-HOME MESSAGE는 deck 전체를 압축한 explicit 마지막 요약/결론 슬라이드로, 써머리 가중 최우선 갭(why_high_yield: explicit summary/last-slide). 교수가 마지막에 4개 bullet을 직접 읽어주며(B2) 강조(S2 'take-home message'·S5 반복)했고, on-going/future study까지 명시되어 통합 사고형 출제 1순위이나 현재 4문항 어디에도 take-home 메시지를 직접 묻는 문항이 없어 갭으로 식별됨.
+
+============================================================================
+[thyroid] thyroid-g2 | prob 84 | ★★★
+TOPIC: Washout CYFRA 21-1의 discordance rescue 임상적용 (불일치 22→90.9% 구제, 동일검체 추가측정, 양방향 정정)
+STEM : 다음 중 FNAC와 washout Tg 결과가 불일치(discordant)하는 환자에서 washout CYFRA 21-1을 적용해 진단을 구제(rescue)하는 임상 시나리오에 관한 설명으로 옳지 않은 것은?
+  ① 2019년 pilot study(130 LN)에서 FNAC와 washout Tg로 판단이 혼란스러웠던 불일치 림프절은 22개(16.9%)였고, 여기에 washout CYFRA 21-1 기준을 적용하자 그중 90.9%(20/22)가 정확한 진단으로 구제되었다.
+  ② 이 적용은 FNAC·washout Tg를 시행하고 남은 동일 검체로 CYFRA 21-1을 추가 측정하는 방식이므로, 환자에게 추가 천자나 시술을 요구하지 않는다.
+  ③ Washout CYFRA 21-1은 갑상선 수술 상태와 무관하게 FNAC와 washout Tg의 진단 정확도를 높일 수 있어, 특히 두 검사가 불일치할 때 추가로 평가하는 검사로 제시되었다.
+  ④ 2019년 pilot study(130 LN)에서 washout CYFRA 21-1 단독의 진단 정확도는 96.2%(민감도 92.9%, 특이도 97.7%)로, washout Tg 단독(정확도 86.2%, 특이도 83.0%)보다 림프절 전이 진단 성능이 더 우수했다.
+  ⑤ Washout CYFRA 21-1을 적용해 구제되는 불일치 케이스는 거의 전적으로 FNAC 음성·washout Tg 양성을 CYFRA로 '양성(전이)'으로 정정하는 경우로, CYFRA가 위음성 림프절을 추가로 찾아내는 데에만 기여한다.  ★틀림(정답)
+바로잡기: Discordance rescue는 양방향이다(슬라이드 37). washout Tg의 위양성(benign 88개 중 15개 오분류)을 CYFRA가 true negative로 정정해 불필요한 neck dissection을 막는 방향과, FNAC가 놓친 전이(42개 중 6개)를 회수하는 방향이 함께 작동한다. CYFRA가 위음성만 찾아낸다는 단정은 틀렸다.
+선정 : 초안 TIER1 T24(W=4). 13.9% 불필요수술을 실제로 해결하는 clinical-action 토픽으로 2019 결론 반복(S5)+경고성 발화(S6)가 발동된 고출제 적용형이나, 현재 문항은 성능 수치(thyroid-3)만 다루고 '불일치 환자를 실제로 어떻게 구제하는가'라는 적용 시나리오는 미커버라 갭으로 식별됨(audit why_high_yield). [검수 교정] 초안 선지4의 '검증연구(2025) 95.1% / FNAC+Tg ~89%' 수치는 슬라이드 44~53의 [SLIDE TEXT]에서 확인 불가(해당 페이지는 인용만 추출됨)하여 C1 닫힌우주 위반 → 슬라이드 38(2019 pilot, 닫힌우주 내)에서 확인되는 washout CYFRA 단독 vs washout Tg 단독 성능 비교(96.2% vs 86.2%)로 대체.
+
+============================================================================
+[thyroid] thyroid-g3 | prob 80 | ★★★
+TOPIC: Breast cancer vs Thyroid cancer washout biomarker 활용도 비교 (p54 전용 비교표)
+STEM : 다음 중 유방암과 갑상선암에서 US-guided FNA washout 바이오마커의 임상 활용도를 비교한 설명(슬라이드 54)으로 옳지 않은 것은?
+  ① 주 표적 림프절은 유방암이 액와 림프절(axillary LN), 갑상선암이 경부 림프절(cervical LN, 특히 재발·전이 결절)로 서로 다르다.
+  ② 유방암은 액와 초음파·core needle biopsy·감시림프절 생검(SLNB) 같은 효과적인 조직학적·외과적 병기설정법이 이미 확립되어 있어 washout 바이오마커에 대한 임상적 필요가 제한적이다.
+  ③ 갑상선암에서 정확한 림프절 진단은 재수술(reoperation), 방사성요오드(RAI) 전략, 국소치료, 적극적 감시 결정에 직접 영향을 주므로 washout 바이오마커의 임상적 효용이 상대적으로 높다.
+  ④ 유방암에서는 저용적 림프절 병변을 검출해도 액와 수술이 점차 축소(de-escalation)되는 추세여서 치료를 크게 바꾸지 않는 반면, 갑상선암에서는 정확한 경부 림프절 진단의 중요성이 커지고 있다.
+  ⑤ CYFRA 21-1은 유방암에 특이적인 마커여서 유방암 액와 림프절 진단에서는 활용도가 높지만, 갑상선암에서는 비특이적이어서 보완적 가치가 낮다.  ★틀림(정답)
+바로잡기: CYFRA 21-1은 유방암 특이 마커가 아니라 상피종양 활성을 반영하는 비특이 마커다(슬라이드 54 Marker specificity 행). washout 마커 효용은 유방암에서 낮고(supplemental tool; SLNB 등 이미 확립), 갑상선암에서 높다(Tg가 lineage-특이적이라 CYFRA가 보완, 특히 CK19+/dedifferentiated암). 선지5는 특이성과 효용 방향이 모두 뒤바뀌었다.
+선정 : 슬라이드 p54는 강의 후반부(마지막 3~6장) 전용 Breast vs Thyroid 비교 TABLE로, S7(체계적 비교·대조)+B2(행/열 단위 표를 직접 읽어줌)가 동시 충족되는 비교문제 최적 포맷이며 현재 4문항 미커버 갭(audit why_high_yield: 비교표 슬라이드, 박사 변별 적용·비교형). 마지막장 가중 강화 원칙 적용 대상.
+
+============================================================================
+[tert] tert-g1 | prob 90 | ★★★
+TOPIC: 텔로미어 단축의 이중적 역할(dual role) + Cancer Paradox + maintenance/stabilization vs elongation 용어 구분
+STEM : 다음 중 텔로미어 길이(단축)의 이중적 역할(dual role)과 암 발생의 역설(Cancer Paradox)에 관한 설명으로 옳지 않은 것은?
+  ① 비악성 세포에서 텔로미어 단축은 임계 길이에 도달하면 DNA 손상 반응을 활성화시켜 복제 노화로 증식을 차단하므로, 형질전환 세포·초기 종양의 성장을 막는 항암(종양 억제) 방향으로 작용한다.
+  ② 반대로 종양의 진행(progression) 단계에서는 텔로미어의 '안정화(stabilization)'가 요구되며, 종양 세포에서 이 안정화를 이루는 주된 기전은 텔로머레이즈(telomerase) 활성화이다.
+  ③ 선천적으로 텔로미어가 길거나 긴 텔로미어 관련 변이 유전자를 가진 개인은 오히려 주요 암의 발생 위험이 증가하지만, 정작 거의 모든 암 조직의 텔로미어는 인접 정상 조직보다 짧다.
+  ④ 거의 모든 암에서 텔로미어가 정상 조직보다 짧다는 사실은, 종양 세포가 짧아진 텔로미어를 평균적으로 정상 수준 이상으로 다시 '연장(net elongation)'시켜 길이를 늘림으로써 불멸성을 얻기 때문이다.  ★틀림(정답)
+  ⑤ 텔로미어는 노화 인자인 동시에 고령에서 많은 암의 위험을 높이지만 80세 이후에는 오히려 암 발생률이 감소하는데, 이는 텔로미어 길이가 암에 대해 단순히 '길면 좋다'는 도식으로 환원되지 않음을 보여준다.
+바로잡기: 종양 세포가 얻는 것은 텔로미어의 '연장(net elongation, 정상 이상 증가)'이 아니라 짧은 상태에서의 '유지·안정화(maintenance/stabilization)'이며, 그 주된 기전이 telomerase 활성화이다. 암 조직의 텔로미어는 여전히 정상 조직보다 짧다(PAGE 12·11·16·18).
+선정 : Summary(III) p82 'Dual role of telomere shortening→DDR'에 명시된 take-home이자 마지막 요약장 항목. 교수가 '착각하면 안 되는 게'·'헷갈리시면 안 돼요'로 가장 강하게 반복 경고(S2·S5·S6)한 비교/역설 주제이며 개인 긴TL vs 암조직 짧은TL 비교(S7). 현 deck(tert-1/2/3) 어디에도 미커버된 박사 변별형 핵심 갭. exam_prob 90으로 recommend_add 갭 중 최상위.
+
+============================================================================
+[tert] tert-g2 | prob 88 | ★★★
+TOPIC: HBV 통합의 cis-effect vs trans-effect 비교 (ctHBx, preS결실 표면항원/ER stress, HBV-MLL4 fusion, HBx-LINE1 lncRNA) + 염색체 불안정성
+STEM : 다음 중 HBV 통합(integration)이 간암을 유발하는 cis-effect와 trans-effect에 관한 설명으로 옳지 않은 것은?
+  ① Cis-effect는 통합 부위 인근(nearby) DNA에 작용하여, 삽입된 HBV의 enhancer/promoter 서열이 인접 유전자(대표적으로 TERT 프로모터)의 발현을 직접 증가시키는 삽입성 돌연변이(insertional mutagenesis) 기전이다.
+  ② Trans-effect의 대표 분자인 C-말단 절단형 HBx(ctHBx)는 전장(full-length) HBx보다 발암성이 강해, 전장 HBx가 가진 성장 억제·아폽토시스 유도 기능을 잃고 항아폽토시스·세포주기 촉진·침윤·전이를 유도한다.
+  ③ HBV 통합체는 preC/C 유전자의 점진적 증폭을 통해 과량의 정상 HBcAg를 만들어 소포체(ER)에 축적시키고, 이 ER stress가 trans-effect로서 발암을 촉진한다.  ★틀림(정답)
+  ④ HBV-MLL4(KMT2B) 융합 전사체는 MLL4 발현을 수 배~수십 배 상향조절하며, HBx-LINE1 융합 전사체는 lncRNA로 기능하여 HCC 환자의 생존율 저하와 연관된다.
+  ⑤ 이러한 cis/trans-effect에 더해 다양한 염색체 위치로의 통합은 게놈 재배열을 일으켜 염색체 불안정성(chromosomal instability)을 유발하며, 이는 세 번째 발암 효과로 작용한다.
+바로잡기: ER stress를 일으키는 trans-effect 분자는 'preS가 부분 결실된 변형 표면(surface) 단백질'의 과생산·ER 축적이지(PAGE 56), preC/C에서 증폭된 정상 HBcAg가 아니다. 통합체는 완전한 preS/S ORF와 3'-절단 X(ctHBx)를 보유하여 surface·X 단백을 만든다.
+선정 : Summary(II) p81에 'Cis-effects/Trans-effects(HBS & ctHBX)/Chromosomal instability/fusion-transcripts'로 정리된 비교표 항목이며 교수가 표를 행/열 단위로 직접 읽어 설명(B2)+cis vs trans 비교(S7)+'굉장히 무서운 부분' 패턴전환 묘사(S4). 기존 tert-2가 통합 '기전·부위·상호배타성'에 치우쳐 trans-effect 분자기전(ctHBx/preS/MLL4/LINE1)은 미커버. exam_prob 88의 비교·적용형 고변별 갭.
+
+============================================================================
+[tert] tert-g3 | prob 85 | ★★★
+TOPIC: 세포노화(senescence) + p53 분기 (senescence vs apoptosis vs malignant transformation)
+STEM : 다음 중 임계 단축 텔로미어에 대한 세포 반응과 세포노화(cellular senescence)·p53 분기에 관한 설명으로 옳지 않은 것은?
+  ① 텔로미어 길이가 임계 크기까지 단축되어 텔로미어가 기능이상(dysfunctional) 상태가 되면 DNA 손상 반응(DDR) 경로가 활성화되어 세포는 '복제 노화(replicative senescence)'로 진입한다.
+  ② 세포노화는 증식과 DNA 복제 과정에서 비롯되는 유전자 돌연변이를 차단함으로써 암에 대한 매우 효과적인 장벽으로 작용하는 종양 억제 기전이다.
+  ③ 임계 이하로 단축된 텔로미어는 세포의 운명을 senescence, apoptosis, malignant transformation의 어느 쪽으로도 분기시킬 수 있으며, 어느 방향으로 갈지는 평균 텔로미어 길이보다 critically short telomere가 방아쇠로 작용한다.
+  ④ p53이 온전(intact)할 때 세포는 senescence 장벽을 우회하여 불멸화(immortalization)로 진입하는 반면, p53 기능이 소실되면 세포가 노화로 정지하여 악성 전환이 억제된다.  ★틀림(정답)
+  ⑤ 악성 세포의 특징인 불멸화(infinite proliferation)는 텔로미어 안정화를 통해 senescence 장벽을 극복함으로써 이루어지며, 이는 암 발생 과정에서 노화 방어를 뚫는 사건에 해당한다.
+바로잡기: p53이 '온전'하면 세포가 senescence/apoptosis로 진입해 악성 전환을 '억제'(보호 기전)하고, p53 기능이 '소실'되면 노화·사멸 장벽을 우회하여 malignant transformation·불멸화로 진행한다(PAGE 7·74·82 'p53 functioning?'). 4번은 이 인과가 정반대다.
+선정 : Summary(III) p82 마지막 요약장에 'Cell senescence and crisis(apoptosis)'와 'p53 functioning?'까지 명시된 take-home. 교수가 senescence vs apoptosis vs malignant transformation 3-way 분기를 3회 이상 반복 설명(S5·S7). 현 deck 미커버된 기전 설명형 고변별 갭으로 deck의 '통합/임상' 편중을 '텔로미어 생물학' 축으로 균형 보완. exam_prob 85.
+
+============================================================================
+[brain] brain-g1 | prob 81 | ★★★
+TOPIC: CAR-T 합성 원리(MHC restriction 한계 vs 항체 항원인지) 및 1~3세대 신호 구조
+STEM : 다음 중 CAR(Chimeric Antigen Receptor)-T 세포가 고안된 이론적 배경(T세포의 항원 인지 한계 vs 항체의 항원 인지)과 CAR 분자의 구조 및 1~3세대 신호 구성에 관한 설명으로 옳지 않은 것은?
+  ① T세포는 항원을 직접 인지하지 못하고 MHC에 의해 processing된 짧은 펩타이드만 인식하는데, MHC는 개인마다 다양(polymorphic)하고 같은 MHC라도 결합 펩타이드가 달라 항원 제시가 불안정하다.
+  ② 항체-항원 반응은 클론 단위로 안정적으로 결합하여 인식이 정확하지만, 항체 단독의 직접적 세포 살해 능력은 T세포보다 약하다.
+  ③ CAR는 항체에서 따온 scFv(항원 인식부)와 T세포의 signaling domain(CD3ζ 등 살해부)을 융합한 키메라 수용체로, '인지는 항체처럼, 살해는 T세포처럼' 작동하도록 설계되었다.
+  ④ 1세대 CAR는 signal 1(CD3ζ) 단독, 2세대는 여기에 공동자극(costimulatory) 신호 1개(CD28 또는 4-1BB), 3세대는 공동자극 신호 2개를 추가한 구조이다.
+  ⑤ CAR는 scFv를 통해 MHC에 제시된 펩타이드를 인식하므로, 환자와 MHC 일치(HLA-matching)가 맞아야만 표적 항원을 인지할 수 있다는 점이 핵심 장점이다.  ★틀림(정답)
+바로잡기: CAR의 scFv는 세포 표면 항원에 직접 결합하므로 MHC 제시(presentation)에 의존하지 않으며 HLA-matching이 필요 없다. CAR가 고안된 이유 자체가 T세포의 'MHC restriction' 한계를 우회하기 위함이다.
+선정 : DRAFT W=5 TIER1(Q3)이나 현재 5문항 어디에도 미커버. 모든 세포치료(CAR-T·CAR-NK·γδ T) 단원의 기초 기전이며, Part2 도입부에서 교수가 'CAR가 나온 배경을 간단히' 직접 설명(S1 분량집중+S2 '왜 그러면'+S4 분자설계 비유로 전환+S7 T세포 vs 항체 비교). generation별 signal 배합은 TIER2 배합형(T2-9)으로도 예고된 직격 토픽.
+
+============================================================================
+[brain] brain-g2 | prob 80 | ★★★
+TOPIC: 면역항암치료 3시대(Coley→Rosenberg/사이토카인→Checkpoint 2018노벨상→세포치료) 및 GBM checkpoint 단독 실패(CheckMate 143)
+STEM : 다음 중 면역항암치료의 역사적 발전(Coley→사이토카인→면역관문억제제→세포치료)과, GBM에서 면역관문억제제(checkpoint inhibitor)가 실패한 이유에 관한 설명으로 옳지 않은 것은?
+  ① 1890년대 Coley는 세균 독소를 종양에 주입해 종양 퇴행을 관찰했는데, 실제 기전은 박테리아가 암을 직접 죽인 것이 아니라 독소로 모인 면역세포가 항종양 효과를 낸 것이었다.
+  ② 1980년대 Rosenberg는 멜라노마(면역치료에 잘 반응하는 암) 환자에게 IL-2 등 비특이적(non-specific) 고용량 사이토카인을 투여해 일부에서 극적 효과를 보였으나, 심한 부작용과 단기 재발이 한계였다.
+  ③ CTLA-4·PD-1 등 면역관문 차단제는 2018년 Allison과 Honjo의 노벨생리의학상으로 정점에 올랐으며, 흑색종 등에서 큰 성공을 거두었다.
+  ④ GBM에서는 CheckMate 143 등에서 면역관문억제제가 단독은 실패했으나 병용(combination)에서는 명확한 생존 개선을 보여, 현재 GBM 표준치료로 정착하였다.  ★틀림(정답)
+  ⑤ GBM에서 checkpoint inhibitor가 듣지 않는 주요 원인으로는 BBB 장벽, 면역억제적 종양미세환경(TME), 낮은 종양변이부담(TMB)이 제시된다.
+바로잡기: GBM에서 면역관문억제제는 단독(CheckMate 143)과 병용 모두 OS 개선에 실패했으며(슬라이드 p39 '재발성 GBM — OS 개선 없음'), 이것이 더 강력한 세포치료제(CAR-T·γδ T·NK)로 전환된 논리적 근거다. GBM 표준치료는 여전히 수술(Maximal safe resection)+방사선+Temozolomide이다(p14·p29).
+선정 : DRAFT W=5 TIER1(Q12)이나 현재 미커버. 'GBM에서 왜 checkpoint가 실패했는가'는 강의 전체(세포치료 전환)의 논리적 축으로 기전 설명형 1순위. S1(분량집중)+S2('로젠버그라는 분이','노벨상 받으면서')+S5(시대별 반복)+S7(시대 간 병렬비교)+B2(p38-39 연도/약제 타임라인 read-aloud). 슬라이드 p37-40에 시대별 비교가 정리된 출제 직격 구간.
+
+============================================================================
+[brain] brain-g3 | prob 78 | ★★★
+TOPIC: Brain immune privilege(면역특권) 및 면역억제 TME가 GBM 면역치료에 미치는 영향 / steroid 딜레마
+STEM : 다음 중 뇌의 면역특권(immune privilege)과 면역억제적 종양미세환경(TME)이 GBM 면역치료에 미치는 영향에 관한 설명으로 옳지 않은 것은?
+  ① 뇌 실질 내 농양(brain abscess)이 생겨도 발열 등 전신 알람 신호가 약한 것은, 뇌가 면역학적으로 특권화된(immune-privileged) 부위임을 보여주는 임상적 단서이다.
+  ② 뇌에 면역세포(microglia 등)가 전혀 없는 것은 아니나, 종양 주변은 면역을 억제하는 환경으로 둘러싸여 있어 면역치료가 잘 듣지 않는다.
+  ③ 임상에서 종양 부종 완화를 위해 사용하는 스테로이드는 투여된 T세포 등 면역세포를 억제하므로, 스테로이드 저항성 T세포를 개발하려는 시도가 있다.
+  ④ 면역억제적 TME 때문에 GBM은 'Why GBM Remains Incurable'의 핵심 생물학적 장벽(BBB·이질성(heterogeneity)·암줄기세포(cancer stem cell)·면역억제 TME) 중 하나로 면역억제 환경이 꼽힌다.
+  ⑤ 뇌는 면역특권 부위이므로 종양미세환경이 면역을 강하게 활성화하는 친(pro)염증 환경으로 유지되며, 이 때문에 checkpoint inhibitor 단독요법이 GBM에서 특히 잘 듣는다.  ★틀림(정답)
+바로잡기: GBM의 종양미세환경(TME)은 강력하게 '면역억제적'이며, 이것이 BBB·낮은 TMB와 함께 checkpoint inhibitor 단독요법이 GBM에서 실패하는 핵심 원인이다. (친염증·면역활성 환경이 아니다.)
+선정 : DRAFT W=5 TIER1(Q8/토픽#15)이나 현재 미커버. p70 'Why GBM Remains Incurable'의 4대 핵심 장벽(BBB·heterogeneity·cancer stem cell·immunosuppressive TME)을 한 장에 정리한 conclusion-type 슬라이드 직결. S4(뇌농양 비유로 패턴전환)+S6('회피')+B1(S4+S6 동시발생)으로 강조된 고변별 기전형. checkpoint 실패·세포치료 필요성의 기전적 토대.
+
+============================================================================
+[immuno] immuno-g1 | prob 88 | ★★★
+TOPIC: 면역관문억제제 반응을 결정하는 CD8+ T세포 분화상태 (terminal exhaustion vs progenitor/central memory) + 치료 후 동적 변화(expansion·TIGIT)
+STEM : 다음 중 간암(HCC) 면역관문억제제(ICI) 치료에서 PD-1+CD8+ T세포의 분화상태와 치료 반응성의 관계에 관한 설명으로 옳지 않은 것은?
+  ① 면역관문억제제는 종양 때문에 피로해진(exhausted) T세포의 브레이크(PD-1 등)를 풀어 재활성화·증식시켜 종양을 죽이는 원리이므로, 치료 전 T세포가 어떤 분화상태에 있느냐가 반응성을 좌우한다.
+  ② TCF-1·CCR7을 발현하는 progenitor-exhausted/central memory 표현형의 T세포는 reservoir 역할을 하여 anti-PD-1 투여 시 클론 증식(clonal expansion)을 일으키므로 반응자(responder)에서 우세하다.
+  ③ 고갈(exhaustion) 프로그램을 관장하는 master 전사인자는 TCF-1이며, TCF-1이 높을수록 terminal exhaustion이 심화되어 ICI에 반응하지 못한다.  ★틀림(정답)
+  ④ 이미 너무 심하게 피로해져 죽기 직전 상태인 terminally-exhausted T세포는 anti-PD-1을 주어도 증식·반응하지 못하므로 ICI 무반응(unresponsive)과 연관된다.
+  ⑤ 전향적 코호트에서 atezolizumab+bevacizumab 치료 후 말초혈 CD8+ T세포가 expansion하고 TIGIT가 상향조절되는 환자는 PFS·OS가 양호하여, 이들 동적 변화가 on-treatment biomarker로 활용된다.
+바로잡기: 고갈(exhaustion) 프로그램의 master 전사인자는 TOX이며, TCF-1·CCR7은 progenitor/central memory(반응자) 표현형의 마커로 anti-PD-1 투여 시 클론 증식을 일으켜 ICI 반응성과 연관된다.
+선정 : 슬라이드 p42(Central memory/Progenitor-exhausted='Responders to ICIs' vs Terminally-exhausted='ICI unresponsive')·p43(expansion·TIGIT on-treatment biomarker)에 근거하고, 교수가 강의 말미 핵심포인트 재정리(34:37~)에서 'dynamic expansion ... central memory phenotype ... terminal exhaustion'을 직접 재언급(S2·S5)하며 TOX를 master TF로 명시. 비교·기전형 박사 변별 문항으로 기존 4문항(immuno-1~4) 어디에도 미커버였던 최우선 갭.
+
+============================================================================
+[immuno] immuno-g2 | prob 86 | ★★★
+TOPIC: PD-L1 발현과 면역치료 반응성(상식 암기) + PD-L1 CPS(combined positive score) 계산식·임상 의의
+STEM : 다음 중 PD-L1 발현 및 PD-L1 CPS(combined positive score)에 관한 설명으로 옳지 않은 것은?
+  ① PD-L1은 종양세포 표면에 발현하여 T세포의 PD-1과 결합해 T세포 기능을 떨어뜨리며, 항-PD-1/PD-L1 면역항암제는 바로 이 축을 차단하므로 종양의 PD-L1 발현이 높을수록 면역치료 반응이 좋은 경향이 있다.
+  ② 종양이 염증을 잘 일으키고 면역원성이 좋을수록 그 결과로 PD-L1 발현이 높아지므로, PD-L1 고발현은 그 종양의 면역원성이 좋다는 간접 지표로 해석할 수 있다.
+  ③ CPS의 분자(numerator)는 PD-L1 양성으로 염색된 세포 수로, 종양세포뿐 아니라 림프구·대식세포까지 포함하며, 분모(denominator)는 전체 생존(viable) 종양세포 수이다.
+  ④ CPS는 분자÷분모에 100을 곱해 계산하며, 계산값이 100을 넘더라도 최대 점수는 CPS 100으로 정의한다.
+  ⑤ CPS의 분자(numerator)는 PD-L1 양성 '종양세포'만을 세며, 침윤 림프구·대식세포의 PD-L1 염색은 위양성을 줄이기 위해 분자에서 제외하는 것이 표준이다.  ★틀림(정답)
+바로잡기: CPS 분자에는 PD-L1 양성으로 염색된 종양세포 + 림프구 + 대식세포가 모두 포함된다(분자에서 면역세포를 제외하는 것은 TPS이며 CPS가 아니다).
+선정 : 교수가 강의 중 '이건 상식적으로 하나 기억해 놓으세요'라고 직접 암기 지시(S6)하고 'CPS는 임상에서 굉장히 많이 써요'라며 임상 의의를 강조(S2)한 항목. 계산식 슬라이드(p36)의 분자 구성요소(종양세포·림프구·대식세포)는 함정 출제 1순위이며 기존 문항 미커버.
+
+============================================================================
+[immuno] immuno-g3 | prob 84 | ★★★
+TOPIC: 면역치료 저항성 극복 3대 전략 (LRT/항암제 병용으로 cold→hot 전환·면역억제세포 depletion·입양세포치료) 및 각 기전
+STEM : 다음 중 간암(HCC)의 면역치료 저항성을 극복하기 위한 3대 전략과 그 기전에 관한 설명으로 옳지 않은 것은?
+  ① 국소치료(LRT; TACE/RFA)나 세포독성 항암제를 면역항암제와 병용하면 종양 괴사로 항원 방출과 전염증성 사이토카인이 증가하여, 면역세포가 부족한 'cold' 종양을 면역반응이 활발한 'hot' 종양으로 전환시킬 수 있다.
+  ② LRT/항암제 병용의 목적은 면역세포가 풍부한 'hot' 종양을 'cold'로 전환하여 과도한 자가면역 독성을 줄이는 데 있으며, 이를 통해 관문억제제 반응이 향상된다.  ★틀림(정답)
+  ③ TAM·CAF 같은 면역억제 세포를 표적·고갈(depletion)시키면 면역 장벽이 해제되어 관문억제제·세포치료의 종양 접근성과 효율이 향상되며, 이것이 두 번째 전략이다.
+  ④ 자가(autologous) 또는 동종(allogeneic) 입양세포치료(CAR-T 등)는 종양 표면 항원을 직접 인식해 공격하는 세 번째 전략으로, 종양 특이 표적 항원의 존재가 성공의 전제이다.
+  ⑤ 면역억제 세포는 처음부터 종양 친화적인 것이 아니라, 초기에는 종양을 제거하는 방향으로 기능하다가 종양세포의 조정으로 면역억제 표현형으로 전환되므로 'depletion'이 합리적 표적 전략이 된다.
+바로잡기: LRT/항암제 병용의 목적은 종양 괴사로 항원·사이토카인을 늘려 'cold' 종양을 'hot'으로 전환(cold→hot)하여 면역치료 반응을 높이는 것이며, 'hot→cold' 전환이 아니다.
+선정 : Summary 슬라이드(p62) 마지막 항목이자 'Feasible ways to overcome immunotherapy resistance' 슬라이드(p45·46·49·54)가 4회 반복(S5)되었고, 교수가 말미 핵심포인트 재정리에서 'Combination therapy 혹은 adoptive cell therapy가 임상시험 중'이라고 직접 재정리. 3전략 통합 나열+기전을 묻는 적용형은 기존 문항(immuno-1·2의 개별 터치) 너머의 미커버 갭.
+
+============================================================================
+[gastric] gastric-g1 | prob 88 | ★★★
+TOPIC: 항암제 다제내성(MDR) 다중기전과 차세대 신약 파이프라인(이중표적/dual-payload ADC, 기질분해 CAR-T)
+STEM : 다음 중 위암세포의 항암제 다제내성(MDR) 기전과 이를 극복하려는 차세대 신약 파이프라인에 관한 설명으로 옳지 않은 것은?
+  ① 위암의 내성은 단일 경로로 발생하는 것이 아니라, ABC 수송체 증폭·PI3K–AKT–mTOR 과활성화·TME 내 면역억제세포 침윤·EMT 유도·후성유전체 이상 등이 서로를 보완하며 구축하는 다중기전 네트워크로 진화한다.
+  ② ABC 수송체의 증폭은 세포 밖으로 약물을 퍼내는 약물유출펌프를 항진시켜 세포 내 약물 농도를 낮춤으로써 내성에 기여한다.
+  ③ PI3K–AKT–mTOR 하위 신호의 과활성화는 차단된 분자표적을 우회하는 경로를 제공하고, DNMT·HDAC로 대표되는 후성유전체 이상도 내성 네트워크의 한 축을 이룬다.
+  ④ 단일표적 약제의 한계를 넘기 위해, EGFR과 HER3처럼 상호보완적으로 우회 신호를 주고받는 두 수용체를 한 분자로 동시에 겨냥하는 이중표적 ADC와 이중페이로드(dual-payload) ADC가 개발되고 있다.
+  ⑤ 두꺼운 기질(stroma) 장벽 때문에 고형암 침투가 어려웠던 CAR-T 치료 영역에서는, 기질분해효소의 분비를 억제하도록 조작해 종양 주변 기질을 그대로 보존하는 차세대 CAR-T 모델이 전임상에서 성과를 보이고 있다.  ★틀림(정답)
+바로잡기: 차세대 CAR-T는 기질분해효소를 '스스로 분비하도록' 조작되어 두꺼운 기질(stroma) 장벽을 분해하고 고형암 내부로 침투하는 모델이다. 즉 기질분해효소 분비를 '억제'하거나 기질을 '보존'하는 것이 아니라, 분해하여 침투를 돕는 것이 핵심이다.
+선정 : why_high_yield: 본 강의의 '마지막 슬라이드'(p4)이자 4쪽 강의록 전체가 요약 성격인 구간. 교수가 '내성은 하나가 아니라 여러 기전으로 발생한다'를 경고성 발화(S6)로 직접 강조했고, 5기전 나열은 통합·비교형 출제 1순위로 박사 변별 기전문항에 최적. 기존 4문항(TCGA/ACRG, CLDN18.2, HER2 ADC, MATTERHORN)이 전혀 미커버한 갭이라 보완 1순위.
+
+============================================================================
+[gastric] gastric-g2 | prob 78 | ★★
+TOPIC: 액체생검(liquid biopsy)/ctDNA — MRD 감시, 클론진화·내성획득 실시간 포착, 조직생검 대비 시간해상도
+STEM : 다음 중 액체생검(liquid biopsy)과 순환종양DNA(ctDNA)를 활용한 위암 모니터링에 관한 설명으로 옳지 않은 것은?
+  ① 액체생검은 침습적 조직생검의 한계를 넘어서려는 노력으로 부상했으며, 혈류를 순환하는 종양 DNA(ctDNA)를 추적하는 방식이다.
+  ② ctDNA 추적을 통해 수술 후 미세잔존질환(MRD)을 감시하고, 종양의 클론진화에 따른 약물내성 획득 시점을 실시간으로 포착하려는 시도가 이루어지고 있다.
+  ③ 조직생검이 한 시점을 담은 사진에 가깝다면 ctDNA는 연속 촬영된 영상에 가까우며, 바로 이 높은 시간해상도가 재발과 내성을 앞질러 다루려는 임상의에게 결정적 무기가 된다.
+  ④ 조직생검은 시간에 따른 종양의 클론진화를 연속적으로 추적하는 동적(動的) 영상에 가깝고, ctDNA는 한 시점만 포착하는 정적(靜的) 사진에 가까워 시간해상도가 낮다.  ★틀림(정답)
+  ⑤ ctDNA 기반 MRD 감시는 강의록 도입부에서 제기된 '수술 후 미세잔존질환을 어떻게 감지·제어할 것인가'라는 중개연구 핵심 질문과 직접 맞닿아 있다.
+바로잡기: 조직생검은 한 시점을 담은 '사진'(정적)에, ctDNA는 연속 촬영된 '영상'(동적)에 비유된다. 따라서 높은 시간해상도로 클론진화·내성 획득을 실시간 추적할 수 있는 쪽은 ctDNA이며, 조직생검이 아니다.
+선정 : why_high_yield: 교수 본인 연구주제로의 패턴전환(S4)과 위액 메틸레이션 1억 실패담(S4)이 녹음에서 강하게 작동. p1 도입부의 MRD 감지·제어라는 중개연구 핵심질문과 직결되는 회귀 토픽이며, '사진 vs 영상' 시간해상도 비유는 적용형 출제에 적합. 기존 4문항 미커버 갭.
+
+============================================================================
+[wonjaelee] wonjaelee-g1 | prob 92 | ★★★
+TOPIC: 핵심 테제/Take-home: 암 = mutation 정의를 넘어선 동적·적응적 조직수준 생태계 (Genomic-centric→Cell state→Systemic→Data-driven 전환)
+STEM : 다음 중 강의의 결론 슬라이드(Emerging Concepts and Future Directions)가 제시하는 암생물학의 핵심 테제와 패러다임 전환에 관한 설명으로 옳지 않은 것은?
+  ① 암은 더 이상 돌연변이(mutation)만으로 정의되지 않으며, 진화·면역·공간조직이 빚어내는 동적이고 적응적인 '조직 수준(tissue-level) 생태계'로 이해된다.
+  ② 암 이해의 시각은 genomic-centric view에서 출발하여 cell state, systemic view를 거쳐 data-driven pattern recognition으로 이동해 왔다.
+  ③ 이 슬라이드가 남기는 미해결 질문에는 '암은 결코 낫지 않는 만성 상처인가', '암은 전신·장기 수준 질환인가', '암은 면역 교육의 실패인가', '왜 암은 치료가 어려운가', '다음 패러다임은 무엇인가'가 포함된다.
+  ④ 패러다임 전환의 종착점은 암을 단일 우성(dominant) driver 돌연변이 하나로 환원하는 genomic determinism의 재확립이며, 미세환경·면역·공간 맥락은 부차적 변수로 간주된다.  ★틀림(정답)
+  ⑤ 이러한 생태계적 관점은 암을 암세포 단독(cell-autonomous) 현상이 아니라 숙주·면역·공간조직과의 상호작용 속에서 형성되는 시스템으로 본다.
+바로잡기: 결론 슬라이드(PAGE 57)의 테제는 '암은 더 이상 돌연변이만으로 정의되지 않으며 진화·면역·공간조직이 빚어내는 동적·적응적 조직수준 생태계'이고, 시각의 이동은 Genomic-centric view → Cell state → Systemic view → Data-driven pattern recognition으로 genomic determinism에서 '벗어나는' 방향이다. genomic determinism의 재확립이 아니다.
+선정 : 강의의 단일 thesis가 적힌 마지막 결론 슬라이드(last-slide, PAGE 57). 감사파일 why_high_yield: 녹음 강조 부재 deck에서 시험은 이 결론 문장에서 서술형으로 거의 확실히 출제되며 기존 두 문항 모두 미커버 — 가장 큰 갭(exam_prob 92, 최우선).
+
+============================================================================
+[wonjaelee] wonjaelee-g2 | prob 86 | ★★★
+TOPIC: 기술이 만든 패러다임 전환 연대표(Sanger/NGS/Single-cell/Spatial multi-omics/AI) + Hypothesis-driven vs Data-driven oncology 비교
+STEM : 다음 중 '기술이 만든 패러다임 전환' 연대표(PAGE 54)와 Data-Based Oncology(PAGE 55)에 관한 설명으로 옳지 않은 것은?
+  ① 1990년대 Sanger sequencing은 driver mutation의 동정(identification)을, 2000년대 NGS는 cancer genome 차원의 해독을 가능하게 했다.
+  ② 2010년대 single-cell 기술은 종양 내 이질성(intra-tumoral heterogeneity)을, 2020년대 spatial multi-omics는 종양 생태계(tumor ecosystem)의 이해를 가능하게 했다.
+  ③ 현재(Now) AI/ML은 인간의 직관을 넘어선 패턴 발견(pattern discovery beyond human intuition)을 가능하게 하는 단계로 제시된다.
+  ④ old paradigm인 hypothesis-driven biology는 'KRAS가 중요한가?'와 같은 가설을 세워 표적 실험을 설계하고 특정 기전을 검증하는 방식이다.
+  ⑤ new paradigm인 data-driven oncology는 먼저 특정 가설을 확정한 뒤 그 가설에 맞는 multi-omics 데이터만 선별 수집하여 검증하며, 데이터는 가설을 뒷받침하는 보조 수단에 머문다.  ★틀림(정답)
+바로잡기: Data-driven oncology(new paradigm)의 본질은 'Data first → hypothesis generation'으로, 데이터가 먼저 인간 직관을 넘어선 패턴을 드러내고 거기서 가설이 생성되는 discovery-driven 방식이다(PAGE 55). 가설을 먼저 확정하고 맞는 데이터만 모으는 것은 정반대인 old(hypothesis-driven) 패러다임이다.
+선정 : 결론부 직전 정리 비교표(PAGE 54 연대표, PAGE 55 old vs new 비교표)로 비교표가 명확히 존재. 감사파일 why_high_yield: 기술↔발견의 매칭·비교는 객관식·서술 모두 출제 단골이며 닫힌우주 진위판정 용이, 현재 완전 미커버(exam_prob 86).
+
+============================================================================
+[wonjaelee] wonjaelee-g3 | prob 84 | ★★★
+TOPIC: Why is cancer so difficult to cure? 4기전 통합(유전이질성→클론선택 / 가소성→persister / 공간보호→hypoxic·stromal / 면역적응→exhaustion) + 바이러스 진화 유비
+STEM : 다음 중 '왜 암은 치료가 어려운가(Why is cancer so difficult to cure?)'의 4가지 통합 기전(PAGE 61)에 관한 설명으로 옳지 않은 것은?
+  ① 전체 논리는 종양 내 이질성 → 약물 압력(drug pressure) → 클론 선택(clonal selection) → 내성 클론의 확장(resistant expansion)이라는 진화적 흐름으로 정리된다.
+  ② 유전적 이질성(genetic heterogeneity)은 약물 압력 아래에서 '이미 존재하던(pre-existing)' 내성 클론의 선택을 통해 내성을 만든다.
+  ③ 세포 가소성(cellular plasticity)은 약물 내성 persister 상태의 출현(drug-tolerant persister)을 통해 치료를 회피하게 한다.
+  ④ 공간적 보호(spatial protection)는 약물 농도 구배·저산소 niche·stromal shielding을 통해 암세포를 보호하며, 면역 적응(immune adaptation)은 checkpoint 상향·T세포 소진(exhaustion)·관용(tolerance) 재프로그래밍으로 작용한다.
+  ⑤ 암세포는 바이러스 진화와 달리 돌연변이율이 낮고 선택압을 받지 않으며 실시간으로 적응하지 못하므로, 치료 저항은 주로 약물 자체의 약동학적 한계에서 비롯된다.  ★틀림(정답)
+바로잡기: PAGE 61은 암을 바이러스 진화에 유비한다: 높은 돌연변이율·선택압·약물 내성과 빠른 적응을 공유하며 'Cancer cells are evolving in real time'. 치료가 어려운 근본 이유는 암의 실시간 진화/적응이지, 돌연변이율이 낮거나 약물의 약동학적 한계 때문이 아니다.
+선정 : 마지막 정리 슬라이드(last-slide, PAGE 61)이면서 강의 전체 개념을 4축으로 통합 — 이유 서술/논술형 최적 소재. 감사파일 why_high_yield: summary 가중이 강하고 현재 미커버(exam_prob 84).
+
+============================================================================
+[wonjaelee] wonjaelee-g4 | prob 80 | ★★★
+TOPIC: Tumor Microenvironment(TME) 정의 및 4구성요소 / 세포 아키텍처(stromal·endothelial·immune·organ-resident)
+STEM : 다음 중 종양 미세환경(Tumor Microenvironment, TME)의 정의·구성요소 및 세포 아키텍처(PAGE 24, 25)에 관한 설명으로 옳지 않은 것은?
+  ① TME는 암세포를 둘러싼 복잡하고 동적인 생태계로, 면역세포·혈관·섬유아세포·신호분자·세포외기질(ECM) 등으로 구성된다.
+  ② TME의 구성요소는 세포 성분(immune/non-immune), 물리적 niche(ECM, vasculature), 분자 성분(cytokine, exosome), 대사 성분(ROS, pH)으로 분류된다.
+  ③ 섬유아세포/기질세포(fibroblastic/stromal cells)는 ECM 리모델링·TGF-β 신호·물리적 장벽 형성을 담당하고, 내피세포(endothelial cells)는 혈관신생과 저산소 구배를 형성한다.
+  ④ 기질세포(stromal)는 그리스어 strôma('침대/바닥')에서 유래했으며, 구조적 지지와 ECM 생산을 통해 장기 특이적 기능세포(실질세포)를 떠받친다.
+  ⑤ 내피세포(endothelial cells)는 TME에서 ECM 리모델링과 TGF-β 신호를 주도하는 핵심 면역감시 세포이며, 장기 특이적 거주세포(예: mesothelial cell)는 혈관신생과 저산소 구배 형성을 전담한다.  ★틀림(정답)
+바로잡기: PAGE 25의 세포-역할 매칭: fibroblastic/stromal=ECM 리모델링·TGF-β·물리적 장벽, endothelial=혈관신생·저산소 구배, immune=면역 감시/억제·cytokine, organ-resident(예: mesothelial)=부착·암세포 모집. 내피세포가 ECM 리모델링/TGF-β/면역감시를 주도하거나 mesothelial이 혈관신생을 전담하는 것이 아니다.
+선정 : 패러다임 전환(생태계)의 실질 핵심개념이자 Current landscape 진입의 정의 관문. 감사파일 why_high_yield: 구성요소 분류는 단답/매칭, 세포역할은 기전형 변별이며 PAGE 25는 역할 분류 비교표 성격, 현재 미커버(exam_prob 80).

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "dpath-1",
+    "lecture_key": "dpath",
+    "lecture_label": "04-28 디지털병리 WSI·AI (이성학 교수)",
+    "topic": "Computational pathology 4대 접근법 (Strongly/Weakly Supervised, Multimodal, Foundation Model)",
+    "exam_probability": 95,
+    "tier": 1,
+    "stem": "다음 중 딥러닝 기반 디지털병리의 4가지 모델 접근법(Strongly Supervised / Weakly Supervised / Multimodal / Foundation Model)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "Strongly Supervised model은 세포(cell) 단위로 어노테이션하여 종양세포·림프구 검출 및 카운팅, IHC 정량화 등 미리 정의된 구조를 탐지하는 데 사용된다.",
+      "Weakly Supervised model은 한 장의 슬라이드에 하나의 라벨(One whole slide ↔ One label)이 대응되며, 진단·그레이딩·서브타이핑·mutation·반응·예후 예측 등에 적용된다.",
+      "Strongly Supervised model은 슬라이드 단위 라벨만으로 학습이 가능하여 세포 단위의 정밀한 어노테이션이 필요 없는 반면, Weakly Supervised model은 병리의사가 세포 하나하나를 어노테이션해야 하므로 비용이 크다.",
+      "Multimodal model은 weakly supervision을 기반으로 하되 병리 이미지 외에 유전체(molecular) 데이터 등 추가 데이터를 함께 입력으로 활용하여 정밀도를 향상시킨다.",
+      "Foundation Model은 대규모 데이터로 한 번 pre-training한 뒤 적은 레이블 데이터로 fine-tuning하여 여러 downstream task에 적용할 수 있으나, 학습·유지에 필요한 컴퓨팅 자원과 비용이 매우 크다."
+    ],
+    "answer_index": 2,
+    "explanation": "정답은 3번입니다. 어노테이션 단위가 정반대로 뒤바뀐 전형적 함정 선지입니다. 슬라이드(pp.9·10·17·78·80, 5회 반복 등장)와 교수 발화에 따르면 Strongly Supervised는 '셀(cell) 단위로 디텍션'하는 모델로, 종양세포·TIL을 세포 단위로 일일이 검출·카운팅하므로 오히려 정밀한 세포 단위 어노테이션이 필요합니다. 반대로 Weakly Supervised는 '셀 단위가 아니고 영역별 또는 슬라이드별'로 라벨링(One slide ↔ One label)하므로 세포 단위 어노테이션이 불필요합니다. 따라서 3번은 두 모델의 어노테이션 부담을 정확히 반대로 서술한 오류입니다. 나머지 1·2·4·5번은 슬라이드 도표 그대로 옳은 진술입니다.",
+    "correct_fact": "Strongly Supervised는 세포(cell) 단위 어노테이션이 필요한 모델이고(세포 검출·카운팅·IHC 정량화), Weakly Supervised가 슬라이드 단위 라벨(1 slide ↔ 1 label)만으로 학습하여 세포 단위 어노테이션이 불필요한 모델이다. 두 모델의 어노테이션 단위가 선지 3번에서 정반대로 뒤바뀌어 있다.",
+    "selection_reason": "동일한 4대 접근법 도표가 슬라이드 pp.9/10/17/78/80에 5회 반복 등장(S5)하며 강의 전체의 뼈대 구조로 사용됨. 4개 모델을 나란히 비교(S7)하고 교수가 각 항목을 직접 행 단위로 읽어줌(B2). 거의 확정적 출제 토픽.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "DL_Pathology_2026-대학원-ver1.3 (1).pdf",
+      "page": 9,
+      "caption": "Strongly/Weakly Supervised, Multimodal, Foundation Model 4대 접근법 비교 도표 (어노테이션 단위와 적용 task 구분)"
+    }
+  },
+  {
+    "id": "dpath-2",
+    "lecture_key": "dpath",
+    "lecture_label": "04-28 디지털병리 WSI·AI (이성학 교수)",
+    "topic": "CNN 기반 WSI 분석 파이프라인 (Convolution·Pooling·FC Layer·Softmax)",
+    "exam_probability": 90,
+    "tier": 1,
+    "stem": "다음 중 CNN을 이용한 WSI 패치 분석 과정(전처리부터 분류까지)에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "WSI는 수십억 픽셀의 고해상도 이미지(파일 크기 약 1~4GB)로 너무 크기 때문에, 전체를 한 번에 처리하는 대신 보통 256×256~1024×1024 픽셀의 정사각형 패치(patch)로 분할하여 분석한다.",
+      "Convolution(합성곱)은 일정 크기의 필터를 일정 간격으로 이동시키며 입력 행렬의 각 위치에 필터 값을 곱하고 그 결과를 더해 새로운 행렬(feature map)을 만드는 연산으로, 작은 필터를 곱하면 차원이 축소된다.",
+      "Pooling은 컨볼루션으로 추출된 feature map의 크기를 확대하여 더 많은 세부 정보를 보존함으로써, 주요 특징의 손실을 막고 오버피팅을 방지하는 역할을 한다.",
+      "Fully Connected Layer(FC Layer)는 합성곱 신경망의 마지막 부분에서 평탄화(Flatten)된 특징들을 받아 가중치를 적용하고 활성화함수를 통해 최종 분류·예측 출력을 만든다.",
+      "Softmax 함수는 입력값에 대한 각 클래스의 확률을 구할 때 사용하며, 큰 값은 상대적으로 더 크게 작은 값은 더 작게 만들어 입력 이미지가 어떤 클래스인지 확률로 분류되도록 한다."
+    ],
+    "answer_index": 2,
+    "explanation": "정답은 3번입니다. Pooling의 작용 방향이 정반대로 서술된 함정입니다. 슬라이드(p.6)와 교수 발화에 따르면 Pooling은 feature map의 크기를 '축소(reduce)'하는 연산입니다('컨볼루션 해서 줄이고, 풀링 해서 또 줄이고'). 크기를 축소함으로써 필요한 주요 특징들만 남겨 오버피팅을 방지하는 것이 목적이므로, '크기를 확대하여 세부 정보를 보존한다'는 3번 서술은 명백한 오류입니다. Convolution→Pooling을 반복하면 핵 모양·선구조·세포밀도·기질 패턴 같은 형태학적 핵심 특징만 남게 됩니다. 나머지 1·2·4·5번은 슬라이드 pp.3·4·6·7 내용 그대로 옳은 진술입니다.",
+    "correct_fact": "Pooling은 feature map의 크기를 '축소'하는 연산으로, 필요한 주요 특징만 남겨 오버피팅을 방지한다. 선지 3번의 '크기를 확대하여 세부 정보를 보존'은 풀링의 작용을 정반대로 서술한 오류이다.",
+    "selection_reason": "슬라이드 pp.6-7 2장 분량(S1)에 걸친 핵심 기전이며, 교수가 얼룩말(zebra) 비유로 패턴 전환(S4)하고 '결국에는' 담화표지로 반복 설명(S5). 대학원 변별용 기전 문항으로 출제 1순위.",
+    "study_strength": "★★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "DL_Pathology_2026-대학원-ver1.3 (1).pdf",
+      "page": 6,
+      "caption": "Patch Classifier + CNN: Convolution(합성곱)과 Pooling(풀링)을 반복하며 feature map 크기를 축소하는 과정"
+    }
+  },
+  {
+    "id": "dpath-3",
+    "lecture_key": "dpath",
+    "lecture_label": "04-28 디지털병리 WSI·AI (이성학 교수)",
+    "topic": "Lunit SCOPE IO 기반 Immune Phenotype(TIL 공간분석)과 ICI 반응 예측",
+    "exam_probability": 82,
+    "tier": 1,
+    "stem": "다음 중 Lunit SCOPE IO를 이용한 종양 면역표현형(Immune Phenotype, IP) 분석과 ICI 치료 반응 예측에 관한 설명으로 옳지 않은 것은?",
+    "options": [
+      "WSI를 1 mm² 크기의 그리드로 나눈 뒤, 각 그리드를 cancer epithelium(CE)과 cancer stroma(CS)에서의 TIL density 비율에 따라 면역표현형으로 분류한다.",
+      "Inflamed 표현형은 CE 영역의 TIL density가 threshold(106/mm²) 이상인 경우로, ICI 치료 후 OS와 PFS가 가장 우수하다.",
+      "Immune-excluded 표현형은 CE 영역의 TIL density는 threshold 이상으로 충분히 높으나, CS 영역의 TIL density가 threshold(357/mm²) 미만으로 낮아 면역세포가 종양 상피에 갇혀 있는 상태이다.",
+      "Immune-desert 표현형은 CE와 CS 영역 모두에서 TIL density가 threshold 미만인 경우이다.",
+      "PD-L1 TPS 1~49% 서브그룹에서 IP 기반 ICI 반응 예측력(AUROC 0.761)이 PD-L1 TPS 기반 예측력(AUROC 0.556)보다 유의하게 우수하여, IP는 PD-L1 발현을 보완하는(complementary) 바이오마커로 활용될 수 있다."
+    ],
+    "answer_index": 2,
+    "explanation": "정답은 3번입니다. Immune-excluded의 정의에서 CE와 CS의 TIL density 조건이 정반대로 뒤바뀐 함정입니다. 슬라이드(p.13)에 따르면 Immune-excluded는 'CE 영역의 TIL은 threshold 미만(낮음)이지만 CS 영역의 TIL은 threshold(357/mm²) 이상(높음)'인 경우입니다. 즉 면역세포(TIL)가 종양 상피로 침투하지 못하고 stroma에만 머물러 '배제(excluded)'되어 있는 상태를 뜻합니다. 3번은 'CE는 높고 CS는 낮다'고 정반대로 서술했고, 이는 오히려 inflamed에 가까운 분포여서 명백한 오류입니다. 교수가 강조했듯 inflamed에서 ICI 후 OS·PFS가 가장 좋고, PD-L1 TPS 1~49%처럼 PD-L1만으로는 반응 예측이 애매한 회색지대에서 IP가 보완 바이오마커로 유용합니다. 나머지 1·2·4·5번은 슬라이드 pp.12-15 그대로 옳은 진술입니다.",
+    "correct_fact": "Immune-excluded는 'CE의 TIL density는 threshold 미만(낮음)이고 CS의 TIL density는 threshold(357/mm²) 이상(높음)'인 표현형으로, TIL이 stroma에 머물러 종양 상피로 침투하지 못한 상태이다. 선지 3번은 CE/CS의 고저 조건을 정반대로 뒤집은 오류이다.",
+    "selection_reason": "슬라이드 pp.12-15 4장 분량(S1)에 3가지 IP를 나란히 비교(S7)하고, 교수가 AUROC 수치(0.761 vs 0.556)를 직접 읽으며 PD-L1 보완 바이오마커임을 강조(B2). 임상 적용형 변별 문항.",
+    "study_strength": "★★",
+    "scope_confidence": "high",
+    "figure": {
+      "needed": true,
+      "pdf": "DL_Pathology_2026-대학원-ver1.3 (1).pdf",
+      "page": 13,
+      "caption": "Immune Phenotype 3분류 — CE/CS의 TIL density threshold 기준 (Inflamed / Immune-excluded / Immune-desert)"
+    }
+  }
+]

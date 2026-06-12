@@ -1,0 +1,135 @@
+{
+  "lecture_key": "golgi",
+  "lecture_label": "03-10 골지체 (김지윤)",
+  "summary_universe": [
+    {
+      "topic": "Conventional 기능: Trafficking + PTM(Glycosylation), 인간 유전자 1/3(~1만개)이 골지 통과",
+      "source": "필수슬라이드(요약) Part I 1항 / 강의원고 p4-5, p45 / 마지막장",
+      "exam_prob": 80,
+      "reason": "요약 슬라이드 첫 항목이자 닫힌우주의 출발점. 단답(1/3, glycosylation)+개괄 비교(conventional vs unconventional)의 토대. 교수가 '이것만으로도 매우 중요'라며 1/3 수치 반복(S5)."
+    },
+    {
+      "topic": "Unconventional secretion (Type 4, Golgi-bypassing UPS) — 골지 우회인데 골지단백이 관여하는 아이러니",
+      "source": "필수슬라이드(요약) Part I / 강의원고 p6, p45",
+      "exam_prob": 70,
+      "reason": "요약 슬라이드 명시 항목. 교수 박사학위 토픽(S4 패턴전환). 단답/객관식 distractor 빈출이나 단독 서술 비중은 중간."
+    },
+    {
+      "topic": "Unconventional 기능: DNA damage sensing (DNA-PK, GOLPH3), 소기관-염색체 crosstalk",
+      "source": "필수슬라이드(요약) Part I / 강의원고 p7, p45",
+      "exam_prob": 72,
+      "reason": "요약 슬라이드 명시 항목. 'DNA-PK/GOLPH3'는 고유명사 단답 표적. 비전형 기능 비교 문항의 한 선지로 고빈도."
+    },
+    {
+      "topic": "Signaling Hub — mTORC1 활성화 위치 = Trans-Golgi Network(TGN), 위치에 따라 mode 변화 (GRASP55, KIT)",
+      "source": "필수슬라이드(요약) Part I / 강의원고 p8, p45",
+      "exam_prob": 85,
+      "reason": "요약 명시 + 교수 주력 연구분야(S4)+반복(S5). 'mTORC1=TGN'은 단답·빈칸 1순위. 강의 핵심 메시지(타겟의 소기관 위치)와 직결."
+    },
+    {
+      "topic": "Cancer metastasis — Golgi microtubule(acentrosomal MT 30%, centrosome 70%), 세포이동 방향성 결정",
+      "source": "필수슬라이드(요약) Part I / 강의원고 p9, p45",
+      "exam_prob": 84,
+      "reason": "요약 명시 + 30/70 수치를 교수가 도식 직접 언급(B2). 위암 condensation→YAP 기전과 연결되는 핵심 가교. 수치 역전형 함정문항 단골."
+    },
+    {
+      "topic": "Innate immunity — NLRP3 inflammasome이 TGN에서 조립·생성 (Interferon/cytokine도 골지 연관)",
+      "source": "필수슬라이드(요약) Part I / 강의원고 p10, p45",
+      "exam_prob": 82,
+      "reason": "요약 명시 + 'NLRP3=TGN'은 단답 1순위. Nature 보고 강조(S2). signaling platform 결론의 대표 예시."
+    },
+    {
+      "topic": "Golgi morphodynamics — Condensation vs Fragmentation (위암 SRCC, YAP, 항암약물 MON/GCA/BFA/NIG)",
+      "source": "필수슬라이드(요약) Part II 핵심 / 강의원고 p14-20 / 마지막장",
+      "exam_prob": 97,
+      "reason": "요약 핵심 + draft 최고가중 W=7. 교수 수개월 직접연구 경험담(S4)+부친 SRCC 사례(S6)+조건반사적 비교(S7)+B1. 강의 최다 시간. Cancer Research 게재."
+    },
+    {
+      "topic": "GIST — Mutant KIT의 Golgi tethering(세포막 <10%)과 imatinib 내성, GRB2 recruit",
+      "source": "필수슬라이드(요약) Part II(Cancer) / 강의원고 p21-27",
+      "exam_prob": 90,
+      "reason": "요약 Cancer 항목 + draft W=6. '모든 제약회사 fail' 경고(S6)+세포막KIT vs 골지KIT 비교(S7)+B1. Cell Death & Differentiation(2023)."
+    },
+    {
+      "topic": "Aging — Golgi fragmentation이 senescence의 부산물이 아닌 '시작(원인)'; ZIP13/Zinc·CREB3·Golgi-MT 연결",
+      "source": "필수슬라이드(요약) Part II(Aging) / 강의원고 p28-30 / 마지막장",
+      "exam_prob": 86,
+      "reason": "요약 Part II '3대 질환(Cancer·Aging·AD)' 중 한 축이나 현재 문항이 단독으로 안 덮음. 닭/알 비유(S4)+'아무도 지적 안함' 반전(S6)+노화 부산물 vs 원인 비교(S7). Developmental Cell(2025) 게재 = 고변별 서술 표적."
+    },
+    {
+      "topic": "Pathological glycation & toxic proteins — 골지 손상→비정상 당화→amyloid-β·p-tau, amyloid-β는 골지를 '통과'",
+      "source": "필수슬라이드(요약) Part II / 강의원고 p31-36, p45",
+      "exam_prob": 88,
+      "reason": "요약 명시 항목. amyloid-β가 골지 통과→clearance 치료(레켐비) 한계 논리(S6). AD 가설의 기전 핵심."
+    },
+    {
+      "topic": "Alzheimer's disease — 골지 손상이 amyloid-β의 upstream(선행 원인)이라는 가설, 골지손상 마우스 치매표현형 재현",
+      "source": "필수슬라이드(요약) Part II(AD) / 강의원고 p31-44 / 마지막장",
+      "exam_prob": 95,
+      "reason": "draft 최고가중 W=7. 연구실 주력(S4)+레켐비 한계(S6)+기존가설 vs 새가설 비교(S7)+S1 최장분량+B1. 3대 질환 중 클라이맥스."
+    },
+    {
+      "topic": "Golgi Stress Response(GSR) & GOMED/EGAD — 막공급원 TGN(일반 autophagy는 ER), autophagy shutdown 시 작동하는 alternative autophagy",
+      "source": "필수슬라이드(요약) Part II / 강의원고 p37-39, p45",
+      "exam_prob": 80,
+      "reason": "요약 명시 항목. ER stress vs GSR / 일반 autophagy vs GOMED 비교구조(S7). 막공급원(TGN vs ER) 역전형 함정 단골. 교수 '밀고있는 키워드'(S4)."
+    },
+    {
+      "topic": "Golgi outpost — 수상돌기 분지점의 mini-Golgi, 톨게이트(폐기가설) 아닌 microtubule 방출, 소실→dendrite붕괴→신경퇴행(2018 Cell)",
+      "source": "필수슬라이드(요약) Part II 마지막 항목 / 강의원고 p40-43, p45",
+      "exam_prob": 78,
+      "reason": "요약 마지막 항목(take-home 마지막장 가중). 초기가설(톨게이트) vs 실제(MT방출) 정정(S4)+반전. 기능 오인형 함정 단골."
+    }
+  ],
+  "current_topics": [
+    {
+      "id": "golgi-1",
+      "topic": "Golgi morphodynamics — Condensation vs Fragmentation (위암 SRCC, YAP, 항암약물 방향)",
+      "exam_prob_reassessed": 97,
+      "keep": true,
+      "note": "요약 핵심·최고가중(W=7) 토픽을 정확히 직격. 약물처리 시 악성도 '감소'(p17 Migration↓/Invasion↓/Proliferation↓)를 '증가'로 뒤집은 정답선지가 슬라이드 표기에 직접 근거함. 최상급 변별. 그대로 유지."
+    },
+    {
+      "id": "golgi-2",
+      "topic": "Alzheimer's — 골지손상이 amyloid-β upstream 원인이라는 가설(amyloid-β는 골지 통과)",
+      "exam_prob_reassessed": 95,
+      "keep": true,
+      "note": "요약 AD 항목·최고가중(W=7) 직격. 'amyloid-β가 골지를 통과한다'는 녹음 핵심발화에 근거한 역전 정답선지. 레켐비는 옳은 distractor로만 사용(닫힌우주 내). 유지."
+    },
+    {
+      "id": "golgi-3",
+      "topic": "GIST — Mutant KIT의 Golgi tethering과 imatinib 내성",
+      "exam_prob_reassessed": 90,
+      "keep": true,
+      "note": "요약 Cancer 항목·W=6 직격. '세포막 <10%, 거의 골지'를 '세포막 과잉축적'으로 뒤집은 위치-역전 함정. 슬라이드 p21-27 닫힌우주 내. 유지."
+    },
+    {
+      "id": "golgi-4",
+      "topic": "골지 비전형 기능 통합 (mTORC1@TGN, DNA-PK/GOLPH3, NLRP3@TGN, microtubule 30/70, unconventional secretion)",
+      "exam_prob_reassessed": 88,
+      "keep": true,
+      "note": "요약 Part I 5개 항목을 한 문항으로 다중 커버하는 고효율 문항. 정답선지는 microtubule 30/70 비율 역전으로 B2 수치함정. 닫힌우주(p6-10,p45) 일치. 유지. (단 5개 항목을 1문항이 압축하므로 개별 단답 출제 여지는 남음)"
+    },
+    {
+      "id": "golgi-5",
+      "topic": "GSR / GOMED(alternative autophagy) / Golgi outpost",
+      "exam_prob_reassessed": 84,
+      "keep": true,
+      "note": "요약 Part II 후반 2개 항목(GSR/GOMED, outpost)을 한 문항으로 묶어 커버. 정답선지는 outpost 톨게이트(폐기가설)를 주된 기능으로 단정한 기능-오인 함정. 닫힌우주(p37-43,p45) 일치. 유지."
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "Aging — Golgi fragmentation이 cellular senescence의 '부산물'이 아니라 '원인(시작)'이라는 가설; ZIP13(골지 아연수송체)/Zinc 결핍·CREB3 cleavage·Golgi-MT 연결, Developmental Cell(2025)",
+      "source_slide": "강의원고 p28-30, 필수슬라이드(요약) Part II 'Aging' 축",
+      "exam_prob": 86,
+      "why_high_yield": "요약 슬라이드가 명시한 'Cancer·Aging·Alzheimer's' 3대 질환 축 중 'Aging'만 현재 5문항이 단독으로 다루지 않음(golgi-1/2에서 fragmentation 일반론으로만 스침). 마지막 요약장 take-home 핵심이며 비교구조(부산물 vs 원인, 노화/암/AD 평행 논리)+S6('아무도 지적 안함')로 서술형 변별 최적. Developmental Cell(2025) 게재로 기전·적용형 출제 1순위. 비교표성 질환축 누락이라 커버 필수.",
+      "recommend_add": true
+    }
+  ],
+  "weak_to_replace": [],
+  "verdict": "needs_additions",
+  "recommended_add_count": 1,
+  "recommended_drop_ids": [],
+  "notes": "교수 명시('맨 마지막 PPT 써머리에서 다 나온다')에 따라 필수슬라이드 요약 1장을 summary_universe로 최우선 가중함(강조도 high). 현재 5문항은 요약의 12/13 토픽을 직간접 커버하고 4개 문항이 최고가중(W=6~7) 핵심을 정확히 직격 — 약문항·단순암기·중복 없음(drop 불필요). 단 요약이 명시한 Part II 3대 질환축(Cancer·Aging·Alzheimer's) 중 'Aging(노화·senescence, ZIP13/Zinc, Developmental Cell 2025)'만 독립 문항 부재 → 1문항 보완 권장. golgi-4는 Part I 비전형기능 5종을, golgi-5는 GSR/GOMED+outpost를 각각 1문항에 압축하므로 시험이 단답형을 섞으면 mTORC1=TGN / NLRP3=TGN / microtubule 30% / GOMED 막공급원=TGN 등 개별 빈칸이 추가될 수 있음(현 문항으로 개념 커버는 충족, 단답 변형 여지만 잔존). 모든 후보·선지는 슬라이드(C1 닫힌우주)로 진위 판정 가능."
+}
