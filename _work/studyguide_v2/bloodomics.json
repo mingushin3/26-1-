@@ -1,0 +1,75 @@
+{
+ "code": "bloodomics",
+ "lecture_label": "03-17 혈액암 오믹스 (정승현)",
+ "professor": "정승현",
+ "essence": "혈액암을 '오믹스(omics = 유전자·전사체 등 생체정보를 통째로 대량 분석하는 기술)'로 해부하는 강의 — 한 종양 안에서도 세포마다 성질이 다르다는 '종양 내 이질성'을 어떻게 극복하느냐가 핵심이고, 그 무기가 액체생검(피 한 방울 분석)·단일세포 분석·골수 오가노이드(미니 골수 모형)다.",
+ "analogy": "조직생검은 도시의 한 동네만 보고 '서울 전체'를 판단하는 것(공간 편향). 액체생검과 단일세포 분석은 혈액 한 방울·세포 하나하나로 도시 전역의 인구 분포를 실시간 위성 스캔하는 셈이다. ctDNA(피 속 종양 유래 DNA 조각)는 정상 DNA 바다에 떠 있는 극소량 신호라 '초고감도 망원경'이 있어야 보인다.",
+ "scope": {
+  "declared": true,
+  "quote": "그 종양 내 이질성의 개념이 뭔지 Liquid biopsy 가 왜 좋은지 그리고 이런 이질성을 극복하는 싱글셀 RNA sequencing 이라는 게 있구나, 앞으로는 동물 모델도 대체해야 되고, 검증도 해야 되고, 환자 특이적인 모델을 만드는데 골수 오가노이드를 쓰면 좋겠다.",
+  "summary": "시험범위 = 교수 직접 예고 4대 키워드: ① 종양 내 이질성(ITH) 개념 ② Liquid biopsy(액체생검)가 왜 좋은지 ③ scRNA-seq(단일세포 RNA 시퀀싱) ④ 골수 오가노이드 — '이 개념만 알면 다 맞출 수 있다'고 명시."
+ },
+ "top_topics": [
+  {
+   "title": "종양 내 이질성(ITH = intratumor heterogeneity, 한 종양 안에서 암세포끼리 서로 다름)과 진화트리 — 표적은 trunk(몸통)에",
+   "plain_explanation": "ITH(종양 내 이질성)란 한 환자의 한 종양 덩어리 안에서도 모양·유전자가 서로 다른 암세포 무리가 섞여 사는 현상이다(환자끼리 다른 inter/interpatient heterogeneity = 환자 간 이질성과 구분). 암은 한 세포에서 시작해 가지치기하듯 진화하는데, 이를 나무 모양으로 그린 게 진화트리다. 표적치료의 과녁이 되는 drugable 마커(약을 붙일 수 있는 표지 = 변이)가 나무의 trunk(트렁크 = 몸통)에 있으면 거의 모든 암세포가 그 변이를 공유하므로 약이 잘 듣고, branch(브랜치 = 가지) 끝에만 있으면 일부 클론만 죽어 반응이 제한된다.",
+   "why_how": "한 부위만 떼어내는 조직생검은 종양의 한 동네만 보는 격이라 진단오류(공간 편향)·저항 클론 누락·재발을 부른다. 그래서 변이가 몸통에 있는지 가지에 있는지를 알아야 표적치료의 성공 여부를 예측할 수 있다.",
+   "exam_point": {
+    "correct": "✅ drugable 마커가 trunk(몸통)에 있을 때가 branch(가지)에 있을 때보다 치료 반응이 더 좋다(trunk 변이는 거의 모든 세포가 공유).",
+    "trap": "❌ 마커가 branch(가지)에 있을 때가 trunk(몸통)에 있을 때보다 더 우수한 반응을 보인다 — trunk/branch를 뒤바꾼 함정."
+   },
+   "qref": "bloodomics-2",
+   "exam_probability": 88
+  },
+  {
+   "title": "액체생검(Liquid biopsy)과 ctDNA(순환종양DNA) — 극소량이라 초고감도 기술 필요",
+   "plain_explanation": "액체생검은 조직을 째지 않고 혈액 등 체액에서 암 정보를 잡는 방법으로, 소스는 CTC(순환종양세포 = 피에 떠다니는 암세포, 크기·EpCAM으로 구분)·ctDNA(circulating tumor DNA = 순환종양DNA)·exosome(엑소좀 = 세포가 내보내는 작은 주머니, 안에 DNA·mRNA·miRNA·단백질)이다. ctDNA는 암세포가 apoptosis(아폽토시스 = 세포 자살)·necrosis(네크로시스 = 세포 괴사)로 죽을 때 DNA가 히스톤(DNA를 감는 단백질) 단위로 잘려 나와 약 160~170bp(염기쌍)의 짧은 단편으로 떠다니며 반감기가 짧다. 결정적으로, 혈중 cell-free DNA(세포유리DNA)의 대부분은 정상세포 유래이고 ctDNA는 극소량이라, 일반 NGS(차세대 염기서열분석)로는 부족하고 ultra high-depth(초고심도) 시퀀싱이나 digital PCR(디지털 PCR = 매우 민감한 정밀 증폭법) 같은 고감도 기술이 필요하다.",
+   "why_how": "정상 DNA 바다 속 극소량 종양 신호를 끄집어내야 하므로 초고감도 기술이 필수다. 대신 비침습이라 반복 채취가 쉬워 VAF(변이대립유전자빈도 = 변이가 섞인 비율)를 시간 따라 추적하면 이미징(영상검사)보다 빨리 치료 반응을 평가할 수 있다.",
+   "exam_point": {
+    "correct": "✅ cell-free DNA의 대부분은 정상세포 유래, ctDNA는 극소량 → 일반 NGS로는 부족하고 ultra high-depth 시퀀싱(또는 digital PCR) 같은 고감도 기술이 필요하다.",
+    "trap": "❌ ctDNA가 정상 DNA보다 양적으로 풍부해 일반 NGS로도 손쉽게 종양 변이를 검출할 수 있다 — 양·기술 방향이 반대인 함정."
+   },
+   "qref": "bloodomics-1",
+   "exam_probability": 92
+  },
+  {
+   "title": "골수 오가노이드(Bone marrow organoid = 미니 골수 모형) — 환자 암세포 공배양 ex vivo(체외) 모델",
+   "plain_explanation": "다발골수종(MM = multiple myeloma, 혈액암의 일종)은 환자 암세포를 그릇에서 직접 키우는 primary culture(초대배양)가 잘 안 되고, PDX(patient-derived xenograft = 환자유래 이종이식 동물모델)는 비용이 크고 동물실험 축소 추세라 제약이 많다. 그래서 골수 오가노이드 자체를 환자별로 새로 만드는 게 아니라, 표준화된 플랫폼(기술)로 만든 오가노이드에 환자에게서 골수 생검으로 얻은 '암세포'를 공배양해 그 환자를 대변하는 ex vivo(체외) 모델을 만든다. 실제 제작물에서 혈관 형성·hematopoiesis(조혈 = 혈액세포 생성)·spongy bone(스폰지 모양 뼈) 같은 골수 미세환경이 재현된다.",
+   "why_how": "치료 반응을 유전자 프로파일링으로 '예측'하는 것보다, 이 환자 대변 모델에 직접 약을 뿌려보는 drug screening(약물 스크리닝)이 더 직접적이고 우수하다. 오믹스로 찾은 마커의 기능 검증에도 쓴다.",
+   "exam_point": {
+    "correct": "✅ 오가노이드는 표준 플랫폼(기술)으로 쓰고 거기에 환자 생검 '암세포'를 공배양 → 환자 대변 ex vivo 모델(drug screening·마커 기능검증).",
+    "trap": "❌ 오가노이드 자체를 환자별로 새로 만들어 환자특이 오가노이드를 완성한 뒤 '정상 조혈세포'를 공배양한다 — 자체 제작+정상세포로 이중 뒤집힌 함정."
+   },
+   "qref": "bloodomics-g1",
+   "exam_probability": 90
+  }
+ ],
+ "checklist": [
+  {
+   "topic": "scRNA-seq(단일세포 RNA 시퀀싱) 바코드 체계 — Cell Barcode vs UMI 역할",
+   "correct": "✅ 세포 구분(cell demux = 어느 서열이 어느 세포에서 왔는지)은 10X(Cell) Barcode 역할. UMI(Unique Molecular Identifier = 고유분자식별자)는 PCR 전 각 mRNA에 붙어 동일 UMI를 중복제거해 분자 수를 정량. Sample index는 시료(환자) 구분.",
+   "trap": "❌ UMI가 같은 바코드 세포들을 한 클러스터로 묶어 세포 종류를 구분(demux)한다 — UMI에 Cell Barcode 기능을 잘못 부여한 함정.",
+   "qref": "bloodomics-3",
+   "is_exam50": false
+  },
+  {
+   "topic": "Bulk(조직 통째 평균) vs scRNA-seq의 rare population(희귀 소수집단) 검출",
+   "correct": "✅ rare population 검출과 bias 없는 분석, TME(종양 미세환경 = 암 주변 면역세포 등) 동시분석·cell-cell communication(세포 간 소통) 예측은 scRNA-seq의 장점. bulk는 조직 통째 평균이라 소수집단이 묻힌다.",
+   "trap": "❌ bulk가 세포별 발현을 그대로 보존해 scRNA-seq보다 rare population을 더 민감하게 검출한다 — bulk/single-cell 장점을 뒤바꾼 함정.",
+   "qref": "bloodomics-g2",
+   "is_exam50": false
+  }
+ ],
+ "memorize": [
+  "교수 직접 예고 출제범위 4대 = 종양 내 이질성(ITH) / Liquid biopsy 왜 좋은지 / scRNA-seq / 골수 오가노이드. '이 개념만 알면 다 맞춘다'.",
+  "표적(drugable 마커)은 trunk(몸통)에 있어야 굿, branch(가지)면 반응 제한.",
+  "ctDNA는 극소량(대부분 정상 DNA) → 일반 NGS 부족, ultra high-depth 시퀀싱·digital PCR 같은 초고감도 필요. ctDNA는 160~170bp.",
+  "세포 구분=Cell Barcode, mRNA 정량=UMI(중복제거로 amplification bias 보정). rare population·TME·cell-cell 소통=scRNA-seq 장점(bulk 아님).",
+  "골수 오가노이드=환자별 제작이 아니라 표준 플랫폼+환자 '암세포' 공배양 ex vivo 모델 → 직접 drug screening."
+ ],
+ "figure": {
+  "pdf": "합동강의_20260317.pdf",
+  "page": 11,
+  "caption": "Liquid biopsy 검출 소스 모식도 — CTC(크기·EpCAM)/ctDNA(160~170bp 단편)/exosome(DNA·mRNA·miRNA·protein)"
+ }
+}

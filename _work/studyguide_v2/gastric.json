@@ -1,0 +1,82 @@
+{
+ "code": "gastric",
+ "lecture_label": "06-09 위암 진단·분류·맞춤치료 (박재명 교수)",
+ "professor": "박재명",
+ "essence": "위암을 'TCGA(암유전체지도) 4아형 — EBV(엡스타인-바 바이러스)·MSI(미세위성체불안정)·GS(유전체안정형)·CIN(염색체불안정형)'으로 쪼개 보고, 각 아형에 맞는 바이오마커 표적(HER2·MSI/PD-L1·CLDN18.2)을 매칭하는 정밀의료 게임이다. 교수가 직접 못박은 시험 토픽 = HER2(상피세포성장인자수용체2)·MSI·PD-L1(예정사세포사멸리간드1)·Claudin(클라우딘).",
+ "analogy": "위암 분류는 '같은 교복(미만형 얼굴) 입어도 출신 학교(발암경로)는 다르다'와 같다 — TCGA의 GS와 ACRG(아시아암연구회)의 MSS/EMT는 얼굴은 닮았지만 CDH1(E-카드헤린 유전자) 변이율(약 37% vs 2.8%)이 정체를 가른다.",
+ "scope": {
+  "declared": true,
+  "quote": "고문은 Her2, MSI, PD-L1, 클라우드, 클라우드 펜",
+  "summary": "시험범위 = 교수가 명시한 핵심 토픽 HER2·MSI·PD-L1·Claudin(클라우딘) 중심 (스크립트에 직접 명시됨). 단, 시험문제는 '무지 쉽다'고 안내."
+ },
+ "top_topics": [
+  {
+   "title": "TCGA 4아형(EBV/MSI/GS/CIN)과 ACRG 분류의 어긋남",
+   "plain_explanation": "TCGA(암유전체지도)는 진행성 위암을 EBV(엡스타인-바 바이러스) 양성, MSI(미세위성체불안정)형, GS(유전체안정형), CIN(염색체불안정형)의 4덩어리로 나눈다. GS는 미만형(diffuse, 흩어져 퍼지는 형태)과 연관되고 세포를 서로 붙이는 CDH1(E-카드헤린 유전자) 변이가 약 37%로 흔해 강한 침윤성을 설명한다. CIN은 TP53(종양억제유전자) 변이가 흔하고 HER2·EGFR(상피세포성장인자수용체) 같은 RTK(수용체 타이로신키나아제) 증폭이 두드러져 표적치료 무대가 된다.",
+   "why_how": "ACRG(아시아암연구회)의 MSS/EMT 아형은 GS와 '얼굴(형태)'은 닮았지만 CDH1 변이가 단 2.8%에 그쳐 발암경로가 다르다 — 서구 가설을 한국인에게 그대로 이식하면 안 된다는 한국 중개연구의 당위.",
+   "exam_point": {
+    "correct": "✅ ACRG MSS/EMT는 GS와 형태만 닮았고 CDH1 변이율은 약 37%가 아니라 단 2.8%다(경로가 다름).",
+    "trap": "❌ MSS/EMT도 CDH1 변이가 약 37%로 GS와 동일하게 높다."
+   },
+   "qref": "gastric-1",
+   "exam_probability": 95
+  },
+  {
+   "title": "CLDN18.2(클라우딘 18.2)와 zolbetuximab의 표적 '노출' 기전",
+   "plain_explanation": "CLDN18.2(클라우딘 18.2)는 위점막 상피의 밀착연접(tight junction, 세포끼리 빈틈없이 잇는 구조)을 이루는 단백질이다. 정상 상피에서는 항원 부위가 구조 안에 묻혀 있어 항체가 접근하지 못한다. 그런데 암화로 세포 극성(polarity, 위·아래 방향성)이 무너지면 CLDN18.2가 표면으로 노출되어 공략 가능한 표적이 된다.",
+   "why_how": "단클론항체 zolbetuximab(졸베툭시맙)이 노출된 CLDN18.2를 겨냥하며 화학요법 병용으로 생존을 연장해 2024년 미국 FDA(식품의약국) 승인을 받았다. 본거지는 표적이 마땅찮아 '할 게 없던' GS(유전체안정형) 아형이다.",
+   "exam_point": {
+    "correct": "✅ CLDN18.2는 HER2 아형 마커가 아니라, 표적이 없어 포기했던 GS(유전체안정형)에서 새 표적으로 활용된다. 핵심은 '발현'을 넘어 '노출(접근 가능)' 여부를 함께 묻는 점.",
+    "trap": "❌ CLDN18.2는 주로 HER2 증폭 아형에서 발현되며 GS에서는 거의 활용 불가다."
+   },
+   "qref": "gastric-2",
+   "exam_probability": 92
+  },
+  {
+   "title": "HER2 표적치료의 진화: T-DXd(ADC)의 bystander effect와 면역항암제 병용",
+   "plain_explanation": "HER2(상피세포성장인자수용체2)는 위암에서 가장 오래된 핵심 표적이다. trastuzumab(트라스투주맙)은 HER2를 차단하는 항체이고, 여기에 ADC(항체-약물접합체) 방식인 T-DXd(trastuzumab deruxtecan, 엔허투)는 항체에 링커(연결고리)로 세포독성 항암제(페이로드)를 매달아 암세포까지 약을 끌고 간다. 단독 고용량으론 너무 독했던 약을 용량을 줄여 다시 쓸 수 있게 해준다.",
+   "why_how": "T-DXd의 bystander effect(인접세포효과)는 표적세포에서 방출된 페이로드가 세포막을 투과해 옆의 HER2 음성(항원 비발현) 세포까지 함께 죽이는 것. 1차 치료에서 pembrolizumab(펨브롤리주맙, 항-PD-1 면역항암제)+trastuzumab 병용 시 ORR(객관적반응률)이 70%를 넘는다.",
+   "exam_point": {
+    "correct": "✅ bystander effect는 방출 페이로드가 막을 투과해 인접 HER2(-) 세포까지 함께 죽인다(스크립트: '옆에는 항원 발현이 없는데 얘도 죽어').",
+    "trap": "❌ bystander effect는 페이로드가 표적세포 안에만 갇혀 인접 항원 비발현 세포엔 전혀 영향 없다."
+   },
+   "qref": "gastric-3",
+   "exam_probability": 90
+  }
+ ],
+ "checklist": [
+  {
+   "topic": "차세대 CAR-T의 기질분해 방향 + MDR 다중기전",
+   "correct": "✅ 차세대 CAR-T(키메라항원수용체 T세포)는 기질분해효소를 '스스로 분비'해 두꺼운 stroma(기질) 장벽을 뚫고 고형암에 침투한다. MDR(다제내성)은 단일경로가 아니라 ABC 수송체(약물유출펌프)·PI3K-AKT-mTOR 우회·TME(종양미세환경) 면역억제·EMT(상피-중간엽 전환)·DNMT/HDAC 후성유전의 다중기전 네트워크다.",
+   "trap": "❌ 기질분해효소 분비를 '억제'해 종양 주변 기질을 그대로 보존하는 CAR-T다 / MDR은 단일경로(예: 펌프 하나)로만 생긴다.",
+   "qref": "gastric-g1",
+   "is_exam50": true
+  },
+  {
+   "topic": "글로벌 진료지침 분화 · MATTERHORN 36개월 OS 방향",
+   "correct": "✅ 검진강국 한국·일본은 조기위암 ESD(내시경 점막하 박리술)·MIS(최소침습수술), 진행기 비율 높은 미국 NCCN·유럽 ESMO는 수술전후 화학요법+다학제. 림프절은 D2(노드를 더 떼니 더 오래 삼)가 동아시아 표준. MATTERHORN 3상: FLOT(화학요법)+durvalumab(항-PD-L1) 수술전후 → 병용군 36개월 OS(전체생존율) 68.6% > 대조군 61.9%, HR(사망위험비) 약 22%↓.",
+   "trap": "❌ durvalumab 병용군이 61.9%로 대조군 68.6%보다 낮아 한계를 드러냈다(수치 뒤바꿈) / 서양 D2가 동아시아보다 표준이다.",
+   "qref": "gastric-4",
+   "is_exam50": false
+  },
+  {
+   "topic": "액체생검 ctDNA vs 조직생검 시간해상도 비유",
+   "correct": "✅ ctDNA(순환종양DNA) 액체생검은 MRD(미세잔존질환) 감시와 내성획득 실시간 포착이 목표. 조직생검=한 시점 '사진'(정적), ctDNA=연속 '영상'(동적, 시간해상도 높음).",
+   "trap": "❌ 조직생검이 동적 영상, ctDNA가 정적 사진이라 ctDNA의 시간해상도가 낮다(비유 뒤바꿈).",
+   "qref": "gastric-g2",
+   "is_exam50": false
+  }
+ ],
+ "memorize": [
+  "GS=CDH1 약 37% vs ACRG MSS/EMT=CDH1 2.8% (얼굴 같아도 경로 다름)",
+  "CLDN18.2 본거지=GS(포기했던 아형), zolbetuximab 2024 FDA / bystander=인접 HER2(-)세포까지 죽임",
+  "MATTERHORN: durvalumab 병용 36개월 OS 68.6% > 61.9%, HR 약 22%↓ / D2가 동아시아 표준",
+  "MDR은 단일경로 아님(ABC·PI3K·TME·EMT·후성유전) / CAR-T는 기질분해효소 '분비'해 침투",
+  "교수 명시 시험토픽 = HER2·MSI·PD-L1·Claudin"
+ ],
+ "figure": {
+  "pdf": "합동강의_강의록__박재명_1.pdf",
+  "page": 1,
+  "caption": "TCGA 4아형(EBV/MSI/GS/CIN)의 분자특징과 ACRG MSS/EMT(CDH1 2.8% vs GS 약 37%) 비교 도식"
+ }
+}

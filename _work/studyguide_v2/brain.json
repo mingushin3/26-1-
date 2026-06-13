@@ -1,0 +1,96 @@
+{
+ "code": "brain",
+ "lecture_label": "05-26 신경외과·뇌종양 (Stephen Ahn)",
+ "professor": "Stephen Ahn",
+ "essence": "교모세포종(GBM, glioblastoma·가장 악성인 원발성 뇌암)은 '수술로 다 못 떼고(침윤·뇌는 vital organ·면역특권), 약도 잘 못 들어가고(BBB[혈액뇌장벽]·면역억제 환경 탓에 면역관문억제제 단독·병용 다 실패)' → 그래서 '줄기세포·CAR(키메라 항원 수용체)-γδ T세포가 종양을 직접 찾아가 죽이는' 세포치료로 패러다임이 넘어간 흐름이 강의의 뼈대다.",
+ "analogy": "GBM 수술은 '잉크가 번진 휴지에서 잉크만 도려내기' — 경계가 없어 1~2mm만 더 떼도 생존이 몇 달 늘지만, 뇌는 생명에 필수인 장기(vital organ)라 무한정 못 뗀다. 그래서 약을 종양까지 '택배(줄기세포가 종양을 찾아가는 pathotropism[병변 추적성], 뇌실 내 ICV[뇌실내 투여] 배송)'로 보내는 게 핵심이다.",
+ "scope": {
+  "declared": false,
+  "quote": "",
+  "summary": "명시 없음 — 강조신호 기반 선정"
+ },
+ "top_topics": [
+  {
+   "title": "CAR-γδ T 항원 선택 — GD2 vs B7-H3 발현 방향",
+   "plain_explanation": "GBM(교모세포종)을 죽이는 CAR(키메라 항원 수용체) 치료는 종양 표면에 붙는 '표적 항원'을 골라야 한다. 후보는 HER2(인간 상피세포 성장인자 수용체 2), GD2(당지질 항원), B7-H3(면역조절 단백) 세 가지였다. GD2는 이상하게도 종양 등급(grade)이 높을수록 발현이 오히려 줄고 정상 조직에서 더 많이 나와 정상까지 공격하는 독성(off-tumor toxicity·표적 외 독성) 우려가 있었다. 반대로 B7-H3는 가장 악성인 GBM에서 발현이 제일 높아 specificity(특이성)가 좋고 면역억제가 심한 '가장 안 좋은' 종양에서 효과를 기대할 수 있어 최종 표적으로 채택됐다.",
+   "why_how": "발현 방향이 거꾸로라는 점이 핵심이다. '가장 필요한(가장 악성·면역억제 심한) 환자'에서 표적이 잘 발현돼야 약이 듣는데, 그 조건을 만족하는 게 B7-H3이고 GD2는 정반대라 불리하다.",
+   "exam_point": {
+    "correct": "✅ GD2는 grade↑일수록 발현 '감소'하고 정상 발현↑ → 독성 우려. 고악성서 발현 최고인 건 B7-H3(채택).",
+    "trap": "❌ 'GD2는 grade가 높을수록 발현이 증가해 악성도 높은 종양에서 표적 효율이 극대화된다' (방향 정반대)"
+   },
+   "qref": "brain-1",
+   "exam_probability": 92
+  },
+  {
+   "title": "줄기세포 IL-12 + anti-PD-1 병용 — 면역기억(rechallenge 거부)",
+   "plain_explanation": "줄기세포(MSC, 중간엽 줄기세포)에 IL-12(인터루킨-12·면역활성 사이토카인)를 실어 종양에 보내고, anti-PD-1(항 PD-1 항체·면역관문억제제)을 함께 쓰는 병용 전략이다. anti-PD-1은 주로 CD8 T세포와 Treg(조절 T세포)에 작용하고 IL-12는 주로 CD4 T세포 등에 작용해 작용 세포군이 겹치지 않아(non-overlapping) 시너지가 난다. IL-12는 전신 투여하면 독성이 크지만 줄기세포가 종양에 도달해 국소 발현시키면 독성을 줄인다. 가장 중요한 결과는, 병용치료로 한번 종양이 제거된 개체에 같은 종양을 다시 넣어도(rechallenge·재투여) 종양이 다시 생기지 않는 '지속 항종양 면역기억'이다.",
+   "why_how": "두 약이 서로 다른 면역세포를 건드리니 효과가 더해지고, 한번 형성된 면역기억이 재발을 막는다. '면역이 한번 암에서 생기면 다시 암세포를 줘도 안 생긴다'는 강의 발화가 근거다.",
+   "exam_point": {
+    "correct": "✅ 병용치료는 지속적 항종양 면역기억 유도 → rechallenge 시 종양 재형성 안 됨(Sustained Tumor Rejection).",
+    "trap": "❌ '병용은 면역기억을 형성하지 못해 재투여하면 종양이 다시 생긴다' (결과 정반대)"
+   },
+   "qref": "brain-2",
+   "exam_probability": 90
+  },
+  {
+   "title": "BBB(혈액뇌장벽)와 뇌 약물전달 — ICV(뇌실내 투여) 우월성",
+   "plain_explanation": "BBB(blood-brain barrier·혈액뇌장벽)는 혈액 속 물질이 뇌로 함부로 못 들어가게 막는 장벽이라 뇌종양에는 약이 잘 전달되지 않는다. 종양 부위에서 BBB가 일부 깨져 있어도 약은 정상의 절반 정도만 진입한다. 폐·간·장 같은 다른 장기는 혈류가 전부 통과하고 면적도 넓어 전달을 크게 고민하지 않는다. 줄기세포 치료에서는 약을 뇌실 안으로 직접 넣는 ICV(intraventricular·뇌실내 투여)가 임상적으로 의미 있는(Clinically Relevant) 경로로, 동일·유사 용량에서 전신 투여보다 효과적임이 확인됐다.",
+   "why_how": "장벽 너머로 약을 보내는 '배송 경로'가 치료 성패를 가르며, 뇌실로 직접 넣는 ICV가 같은 용량 대비 더 잘 들어간다는 점이 핵심 전달 전략이다.",
+   "exam_point": {
+    "correct": "✅ ICV(뇌실내) 전달은 임상적으로 유의미한 경로로, 동일·유사 용량서 전신보다 우월(줄기세포 핵심 전달전략).",
+    "trap": "❌ '뇌실 전달은 효과가 거의 없고 정맥(전신) 용량을 크게 올려야만 효과가 난다' (사실 정반대)"
+   },
+   "qref": "brain-3",
+   "exam_probability": 88
+  }
+ ],
+ "checklist": [
+  {
+   "topic": "Maximal Safe Resection — 절제량↑=예후↑ 이지만 trade-off",
+   "correct": "✅ 절제량↑=종양학적 예후↑ 이나 기능손상이 한계 → trade-off 균형점을 찾는 '최대 안전 절제'가 표준. MRI상 T2 high는 단순 부종이 아니라 microscopic infiltration(현미경적 침윤), 1~2mm 추가 절제가 수개월 생존차를 만든다. 뇌는 vital organ이라 폐(lobectomy)·위/대장처럼 광범위 동반절제 불가.",
+   "trap": "❌ '절제량과 예후는 무관하므로 절제 범위를 최소화하는 것이 표준 전략이다' (핵심개념 정면 부정)",
+   "qref": "brain-4",
+   "is_exam50": true
+  },
+  {
+   "topic": "뇌종양 3분류 — 전이성 '악성'이 ~50%",
+   "correct": "✅ 전체 뇌종양 ~50%를 차지하는 흔한 범주는 '전이성 악성'(폐·유방·흑색종 전이). '전이성 양성'은 거의 없는 개념. 원발 양성(수막종·신경초종·뇌하수체선종)=extra-axial·경계 명확, 원발 악성(glioma·GBM)=intra-axial·침윤성·경계 불명확.",
+   "trap": "❌ '전이성 양성이 가장 흔하며 전체의 약 50%를 차지' (희박한 범주를 최다라고 + 양성/악성 뒤바꿈)",
+   "qref": "brain-5",
+   "is_exam50": false
+  },
+  {
+   "topic": "CAR의 본질 — MHC restriction 우회",
+   "correct": "✅ CAR(키메라 항원 수용체)의 scFv(단일사슬 가변영역·항원 인식부)는 표면 항원에 직접 결합 → MHC(주조직적합복합체) 제시에 비의존, HLA-matching(조직형 일치) 불필요. CAR 고안 이유 자체가 T세포의 MHC restriction(MHC 제약) 우회. 1세대=CD3ζ 단독 / 2세대=+공동자극 1개(CD28 or 4-1BB) / 3세대=+공동자극 2개.",
+   "trap": "❌ 'scFv가 MHC에 제시된 펩타이드를 인식하므로 HLA가 일치해야 표적을 인지할 수 있다' (CAR 본질 정반대)",
+   "qref": "brain-g1",
+   "is_exam50": false
+  },
+  {
+   "topic": "GBM에서 면역관문억제제 실패(CheckMate 143)",
+   "correct": "✅ GBM에서 면역관문억제제(checkpoint inhibitor)는 단독·병용 모두 OS(overall survival·전체 생존) 개선 실패(CheckMate 143) → 세포치료 전환 근거. 1세대=사이토카인(IL-2 고용량, Rosenberg, 흑색종), 2세대=관문억제제(CTLA-4/PD-1, 2018 노벨상 Allison·Honjo). GBM 표준은 여전히 수술(최대 안전 절제)+방사선+TMZ(테모졸로마이드).",
+   "trap": "❌ 'GBM에서 단독은 실패했으나 병용은 명확한 생존 개선을 보여 GBM 표준치료로 정착했다' (병용도 실패가 사실)",
+   "qref": "brain-g2",
+   "is_exam50": false
+  },
+  {
+   "topic": "뇌 면역특권·면역억제 TME",
+   "correct": "✅ GBM의 TME(tumor microenvironment·종양미세환경)는 강력하게 '면역억제적' → BBB·낮은 TMB(tumor mutational burden·종양변이부담)와 함께 면역관문억제제 단독 실패의 핵심 원인. 뇌농양에도 발열이 약한 것이 뇌의 면역특권(immune privilege) 단서.",
+   "trap": "❌ '뇌는 면역특권 부위라 TME가 친염증·면역활성 환경이어서 checkpoint 단독이 GBM에서 특히 잘 듣는다' (방향·인과 정반대)",
+   "qref": "brain-g3",
+   "is_exam50": false
+  }
+ ],
+ "memorize": [
+  "전이성 '악성'이 전체 뇌종양 ~50% (전이성 양성은 거의 없는 개념)",
+  "절제량↑=예후↑ but 뇌는 vital organ → Maximal Safe Resection / 1~2mm가 수개월 가른다",
+  "GBM에서 면역관문억제제는 단독+병용 다 실패(BBB·면역억제 TME·낮은 TMB) → 세포치료로 전환",
+  "B7-H3=고악성서 발현↑(채택) / GD2=grade↑면 발현↓·정상↑(불리), CAR=MHC restriction 우회·HLA 불필요",
+  "ICV(뇌실내) 전달이 전신보다 우월, 병용치료→면역기억(rechallenge 거부)"
+ ],
+ "figure": {
+  "pdf": "260526_대학원강의자료.pdf",
+  "page": 96,
+  "caption": "B7H3 CAR γδ T cells — Normal/Other Glioma/GBM 간 B7-H3 발현 비교(고악성 GBM에서 최고 발현). GD2는 반대로 grade↑면 발현↓."
+ }
+}

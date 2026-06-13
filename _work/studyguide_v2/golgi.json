@@ -1,0 +1,82 @@
+{
+ "code": "golgi",
+ "lecture_label": "03-10 골지체 (김지윤)",
+ "professor": "김지윤",
+ "essence": "골지체는 단순 단백질 분류·배송 창고가 아니라 신호·면역·DNA감지·세포이동을 총괄하는 신호 플랫폼(signaling platform)이며, 골지체의 형태 변화(응축 condensation vs 파편화 fragmentation)가 암·노화·알츠하이머의 상류 원인(upstream)으로 작동한다는 것이 이 강의의 핵심이다.",
+ "analogy": "골지체는 단순 택배 분류센터가 아니라 도시 전체를 통제하는 관제탑이다. 관제탑이 빽빽하게 응축(condensation)되면 암이 폭주하고, 부서지면(fragmentation) 노화·치매가 시작된다.",
+ "scope": {
+  "declared": true,
+  "quote": "시험 문제는 매우 쉽게 됐고요. 여기서 다 나옵니다. 이것만 보시면 충분히 다 나옵니다.",
+  "summary": "시험범위 = 맨 마지막 요약(써머리) PPT 슬라이드 1장 — 교수가 '여기서 다 나온다'고 명시"
+ },
+ "top_topics": [
+  {
+   "title": "골지 형태 변화: 응축(condensation) vs 파편화(fragmentation)와 위암 (최고 출제)",
+   "plain_explanation": "골지체(세포 안에서 단백질을 가공·배송하는 소기관)는 모양이 바뀐다. 지금까지 알려진 거의 모든 암에서는 골지체가 잘게 부서진(fragmentation, 파편화) 상태인데, 정상 세포라면 죽어야(apoptosis, 세포자살) 하지만 암세포는 ROS(활성산소종, 세포 안의 산화 스트레스 물질)에 적응해 이를 생존에 역이용한다. 반대로 일부 난치성 위암(특히 SRCC=반지세포암 signet ring cell carcinoma, 위암 중 가장 악성)에서는 골지가 빽빽하게 뭉친 응축(condensation) 상태로 관찰되며, 응축이 심할수록 악성도가 높다.",
+   "why_how": "응축이 심하면 골지 유래 미세소관(microtubule, 세포 골격 섬유)의 정렬이 강해지고, 이것이 YAP(Hippo 신호경로의 전사조절 종양유발 단백)을 핵 안으로 더 잘 들여보내 이동·침윤·증식을 촉진한다. 그래서 골지 붕괴 약물(MON 모넨신/GCA 골지사이드A/BFA 브레펠딘A/NIG 니제리신)로 응축을 일부러 파편화시키면 YAP 핵이동이 막혀 악성도가 오히려 줄어드는 항암 효과가 난다.",
+   "exam_point": {
+    "correct": "골지 붕괴 약물로 condensation을 fragmentation으로 유도하면 migration·invasion·proliferation 등 악성 표현형이 '감소'한다(항암 효과, 슬라이드 PAGE17의 Migration↓·Invasion↓·Proliferation↓ 표기).",
+    "trap": "골지 붕괴 약물로 fragmentation을 유도하면 YAP 핵이동이 더 촉진되어 악성 표현형이 오히려 '증가'하고 종양 악성도가 높아진다(인과·효과 방향을 거꾸로 뒤집은 함정)."
+   },
+   "qref": "golgi-1",
+   "exam_probability": 96
+  },
+  {
+   "title": "알츠하이머 치매: 골지 손상이 amyloid-β의 상류(upstream) 원인이라는 가설",
+   "plain_explanation": "amyloid-β(아밀로이드 베타, 알츠하이머 환자 뇌에 쌓이는 독성 단백)와 phospho-tau(인산화 타우 단백)는 핵심 병인 물질이다. 알츠하이머·파킨슨·ALS(근위축성측삭경화증) 환자의 사후 뇌에서 골지체가 손상돼 있다는 사실은 30년 넘게 알려졌으나 단순 부산물(결과)로만 해석돼 왔다. 김지윤 교수는 이를 뒤집어, 골지 손상이 독성 단백 축적보다 먼저 일어나는 상류 원인일 수 있다고 본다. 실제 젊은 뉴런(neuron, 신경세포)에 골지 파편화 약물을 처리하면 amyloid-β가 생기고, 골지를 손상시킨 마우스에서 치매 표현형이 재현됐다.",
+   "why_how": "amyloid-β는 골지체를 '통과(processing)'하기 때문에, 골지가 망가지면 가공 자체가 비정상화되어 amyloid-β가 계속 만들어진다. 그래서 레켐비(lecanemab, FDA 승인 아밀로이드 제거 항체치료제)처럼 amyloid-β만 제거(clearance)하는 전략은 골지가 망가진 한 효과가 제한적이라는 것이 핵심 논리다.",
+   "exam_point": {
+    "correct": "amyloid-β는 골지체를 '통과'하므로, 골지가 손상되면 amyloid-β 생성 자체가 계속되어 clearance(제거)만으로는 한계가 있다.",
+    "trap": "amyloid-β는 골지체를 통과하지 않으므로 골지 손상은 생성에 영향이 없고 clearance 단계만 문제가 된다(통과 여부를 거꾸로 뒤집은 함정)."
+   },
+   "qref": "golgi-2",
+   "exam_probability": 94
+  },
+  {
+   "title": "GIST(위장관 기질 종양): mutant KIT의 골지 tethering과 imatinib 내성",
+   "plain_explanation": "GIST(위장관 기질 종양, gastrointestinal stromal tumor)는 위장관 악성종양의 약 1~3%를 차지하는 희귀암으로, 상피세포(epithelial)가 아니라 기질세포(stromal) 기원이며 근육층에서 발생한다. 일반 암은 여러 돌연변이가 쌓여 생기지만, GIST는 KIT(수용체 티로신 인산화효소 receptor tyrosine kinase)의 단일 돌연변이만으로 암이 될 수 있다.",
+   "why_how": "돌연변이 KIT(mutant KIT)는 세포막이 아니라 골지체에 붙어 머물면서(Golgi tethering) GRB2(신호전달 어댑터 단백) 같은 단백을 골지로 끌어모아 암 신호를 켠다. imatinib(이마티닙, 글리벡; 1차 표적치료제)은 세포막의 KIT를 겨냥해 설계됐는데, 정작 표적이 세포막에는 10%도 없고 거의 골지에 있어 약이 접근하지 못해 내성이 생긴다.",
+   "exam_point": {
+    "correct": "imatinib 내성은 mutant KIT가 '골지체에 tethering'되어 세포막 표적약이 접근하지 못해 생긴다(세포막엔 10%도 존재하지 않음).",
+    "trap": "mutant KIT가 골지를 떠나 세포막으로 과도하게 이동·과잉 축적되어 imatinib 내성이 생긴다(위치를 정반대로 뒤집은 함정)."
+   },
+   "qref": "golgi-3",
+   "exam_probability": 90
+  }
+ ],
+ "checklist": [
+  {
+   "topic": "노화: Golgi fragmentation이 senescence의 '원인(upstream)' 가설 (Developmental Cell 2025, ZIP13/Zinc)",
+   "correct": "이 연구는 Golgi fragmentation을 노화의 부산물이 아니라 senescence(세포노화)를 가속·개시하는 상류(upstream) 요인으로 봄. ZIP13(골지 아연 수송체) KO 시 골지 스트레스반응↓·골지 파편화 유발.",
+   "trap": "이 연구는 Golgi fragmentation을 노화의 부산물·하류(downstream) 현상으로 결론짓고 원인 가능성을 배제했다.",
+   "qref": "golgi-g1",
+   "is_exam50": true
+  },
+  {
+   "topic": "골지체의 비전형(unconventional) 기능 — 골지 유래 미세소관 비율, mTORC1, NLRP3, DNA-PK",
+   "correct": "골지 유래 acentrosomal microtubule(비중심체성 미세소관)=약 30%, 중심체(centrosome)=약 70%. mTORC1(에너지대사 마스터키)·NLRP3 inflammasome(선천면역 염증복합체)은 TGN(트랜스골지망 trans-Golgi network)에서 활성화·조립되고, DNA-PK(DNA의존 단백인산화효소)는 DNA 손상 시 골지를 직접 조절한다.",
+   "trap": "세포 내 microtubule의 약 70%가 골지체에서 생성되는 acentrosomal microtubule이다(30%와 70% 수치를 뒤바꾼 함정).",
+   "qref": "golgi-4",
+   "is_exam50": true
+  },
+  {
+   "topic": "GSR / GOMED / Golgi outpost",
+   "correct": "GSR(골지 스트레스반응 Golgi stress response)는 골지 파편화 시 복구 시도. GOMED(대체 자가포식 alternative autophagy)는 일반 autophagy가 shutdown된 절체절명 상황에서 작동하며 막 공급원이 TGN(일반 autophagy는 ER). Golgi outpost는 수상돌기로 microtubule을 '방출'하는 것이 실제 역할이며 트래피킹 톨게이트는 폐기된 초기 가설.",
+   "trap": "Golgi outpost의 주된 역할은 수상돌기 트래피킹의 톨게이트(gateway)이다(폐기된 초기 가설을 실제 기능으로 단정한 함정).",
+   "qref": "golgi-5",
+   "is_exam50": false
+  }
+ ],
+ "memorize": [
+  "Condensation→악성↑(YAP 핵이동), 약물로 깨면(fragmentation)→migration·invasion·proliferation↓ = 항암. SRCC=위암 최고 악성",
+  "골지 유래 microtubule = 30%, 중심체(centrosome) = 70% (수치 뒤집지 말 것)",
+  "mutant KIT는 '골지에 tethering'(세포막엔 10%도 없음) → imatinib(글리벡) 내성",
+  "amyloid-β는 골지를 '통과' → 골지 손상 시 계속 생성(레켐비 clearance의 한계)",
+  "노화: Golgi fragmentation = senescence의 부산물 아닌 upstream(원인) 가설 (Developmental Cell 2025)"
+ ],
+ "figure": {
+  "pdf": "2026_합동강의_약리학교실 김지윤_강의원고.pdf",
+  "page": 19,
+  "caption": "위암에서 Golgi condensation↑ → YAP↑ → Malignancy↑ 모식도 (SRCC가 최고 악성)"
+ }
+}

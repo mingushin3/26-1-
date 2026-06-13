@@ -1,0 +1,82 @@
+{
+ "code": "tert",
+ "lecture_label": "05-19 TERT·B형간염·간암 (장정원)",
+ "professor": "장정원",
+ "essence": "간암 발암의 핵심은 '텔로미어(염색체 끝 보호 캡) 유지=세포 불멸화'이고, 그 스위치인 TERT(텔로머레이즈 촉매 효소)를 켜는 두 길(① TERT 프로모터 돌연변이, ② B형간염바이러스(HBV)의 TERT 부위 끼어들기)이 둘 중 하나만 일어나는 '상호배타적' 관계라는 것이다.",
+ "analogy": "텔로미어는 세포 수명을 재는 모래시계다. 정상 세포는 분열할수록 모래가 줄어 멈추지만(노화 장벽), 암세포는 TERT라는 '모래 보충 정비공'을 불법 가동해 짧은 길이라도 더 안 줄게 '고정'시켜 영생을 얻는다. 정비공을 부르는 방법이 돌연변이든 바이러스 끼어들기든, 둘 중 하나면 충분하다.",
+ "scope": {
+  "declared": false,
+  "quote": "",
+  "summary": "명시 없음 — 강조신호 기반 선정('반드시 꼭 아셔야 합니다', '이것은 반드시 우리가 알고 있어야 해요' 등 반복 강조)"
+ },
+ "top_topics": [
+  {
+   "title": "TERT 프로모터 돌연변이 기전 (G-quadruplex·ETS/TCF)",
+   "plain_explanation": "TERT(텔로미어를 늘려주는 효소의 촉매 단위)는 평소 꺼져 있는데, TERT 프로모터(유전자 스위치 영역)의 핫스팟 자리에서 C라는 염기가 T로 바뀌는 돌연변이가 생기면 켜진다. 이때 두 가지 일이 일어난다: ① ETS/TCF(전사인자, 유전자를 켜는 단백질)가 새로 붙을 자리가 생겨 전사가 늘고, ② 평소 발현을 억눌러 두던 G-quadruplex(구아닌이 겹겹이 쌓인 4중 구조)가 '불안정화·소실'되면서 억제가 풀린다. 결과적으로 TERT 발현이 증가한다.",
+   "why_how": "C→T 변이로 자리가 '뾰족→뭉툭'해져 전사인자가 붙기 쉬워지고, 동시에 발현을 막던 4중 구조가 무너져 억제(gene silencing)가 해제되기 때문에 TERT가 켜진다. 간암(HCC, 간세포암)에서는 거의 -124(C228T) 한 자리만 나오고, 자외선(UV) 관련 멜라노마는 -146(C250T)이 우세하다.",
+   "exam_point": {
+    "correct": "✅ 돌연변이는 G-quadruplex 4중 구조를 '불안정화(소실)'시켜 gene silencing을 해제(abrogate)→ TERT 발현 증가. TERT 프로모터 돌연변이는 암 전체에서 가장 흔한 비암호화(non-coding) 체세포 돌연변이이며 간암의 gate-keeper(최초 driver) 변이다.",
+    "trap": "❌ 4중 구조가 '안정화되어 silencing이 강화되는데도' TERT 발현이 증가한다(기전 방향 정반대)."
+   },
+   "qref": "tert-1",
+   "exam_probability": 95
+  },
+  {
+   "title": "HBV 통합 기전과 상호배타성 (dslDNA·NHEJ·TERT 부위)",
+   "plain_explanation": "HBV(B형간염바이러스)는 복제 중 에러로 생긴 이중가닥 선형 DNA(dslDNA)만 숙주 유전체에 끼어든다(통합). 둥근 형태인 이완형 원형 DNA(rcDNA)는 통합되지 않는다. 통합은 숙주 게놈에 저절로 생기는 이중가닥 절단(DSB) 자리에, 서열 유사성과 무관하게 비상동성 말단결합(NHEJ)으로 무작위하게 끼어드는 방식이 주된 기전이다. 숙주 측에서 가장 자주 끼어드는 부위가 바로 TERT 프로모터다.",
+   "why_how": "한 종양에서 TERT 프로모터 돌연변이와 HBV-TERT 통합은 둘 다 똑같이 'TERT 활성화'가 목적이라, 한 경로만으로도 이미 암을 일으킬 수 있어 둘이 함께 올 필요가 없다. 그래서 둘은 상호배타적(mutually exclusive)으로 나타난다.",
+   "exam_point": {
+    "correct": "✅ TERT 프로모터 돌연변이와 HBV-TERT 통합은 mutually exclusive — 둘 다 TERT 활성화라 한 종양에 함께 오지 않는다. 종양은 비무작위·암 관련 유전자(genic) 선택적 통합, 비종양은 무작위·intergenic 통합.",
+    "trap": "❌ 둘이 흔히 동일 종양에서 함께 발생해 상승작용으로 TERT 발현을 극대화한다."
+   },
+   "qref": "tert-2",
+   "exam_probability": 92
+  },
+  {
+   "title": "HBsAg 혈청소실(기능적 완치) 후에도 지속되는 HCC 위험",
+   "plain_explanation": "HBsAg(B형간염 표면항원)가 혈액에서 사라지면(혈청소실=기능적 완치) 다 나은 것 같지만, 핵 안에는 통합된 HBV DNA와 cccDNA(핵 안에 안정적으로 자리잡은 바이러스 DNA)가 그대로 남아 있다. 통합 HBV는 cccDNA보다도 안정적으로 잔존해 ctHBx(C-말단이 잘린 HBx 단백질) 같은 종양 단백질을 계속 만들어내, 직접 발암 잠재성(direct oncogenic potential)이 유지된다.",
+   "why_how": "현재 항바이러스제는 역전사 단계만 차단할 뿐 이미 핵에 끼어든 통합 DNA는 제거하지 못한다. 교수가 HBsAg 소실 후 간암이 생긴 7명을 추적했더니 모두 TERT-HBV 통합이 있었고 통합 부위가 모두 암 관련 유전자였다. 그래서 표면항원이 음성이어도 감시를 멈추면 안 된다.",
+   "exam_point": {
+    "correct": "✅ HBsAg 소실 후에도 통합 HBV·cccDNA 잔존 → direct oncogenic potential 지속 → 연 약 0.38~0.86% HCC 발생 → 6개월 간격 초음파 감시를 지속해야 한다.",
+    "trap": "❌ HBsAg 소실 시 직접 발암 잠재성도 소멸하므로 정기 초음파 감시를 중단해도 된다."
+   },
+   "qref": "tert-3",
+   "exam_probability": 88
+  }
+ ],
+ "checklist": [
+  {
+   "topic": "유지(maintenance/stabilization) vs 연장(net elongation)",
+   "correct": "✅ 암세포가 얻는 것은 짧은 텔로미어의 '유지·안정화(stabilization, telomerase 활성)'이며 암 조직 텔로미어 길이(TL)는 여전히 정상보다 짧다. TERT는 가장 짧은 텔로미어에 우선 작동한다.",
+   "trap": "❌ 암세포가 짧아진 텔로미어를 평균적으로 정상 수준 '이상으로 다시 연장(net elongation)'시켜 불멸성을 얻는다.",
+   "qref": "tert-g1",
+   "is_exam50": true
+  },
+  {
+   "topic": "ER stress 유발 분자 (surface vs core)",
+   "correct": "✅ ER stress(소포체 스트레스)는 'preS 부분결실 변형 표면(surface) 단백질'의 과생산·ER 축적으로 발생. 통합체는 완전한 preS/S ORF(유전자 읽음틀)와 3' 절단된 X(ctHBx)를 보유한다.",
+   "trap": "❌ preC/C 증폭으로 만든 정상 HBcAg(core, 핵심항원)가 ER에 축적되어 ER stress를 일으킨다(분자·기전 모두 뒤바뀜).",
+   "qref": "tert-g2",
+   "is_exam50": true
+  },
+  {
+   "topic": "p53 분기 방향 (senescence/apoptosis vs malignant transformation)",
+   "correct": "✅ p53(종양 억제 유전자)이 '온전'→ senescence(노화 정지)/apoptosis(세포 자살)로 악성전환을 '억제'(보호). p53 '소실'→ 노화·사멸 장벽을 우회 → malignant transformation·불멸화.",
+   "trap": "❌ p53 온전 시 노화 장벽을 우회해 불멸화로 가고, p53 소실 시 노화로 정지해 악성전환이 억제된다(인과 정반대).",
+   "qref": "tert-g3",
+   "is_exam50": true
+  }
+ ],
+ "memorize": [
+  "TERT 켜기 두 길 = 프로모터 돌연변이 OR HBV-TERT 통합 → mutually exclusive(하나면 충분)",
+  "암 텔로미어 = 정상보다 '짧다', 얻는 건 '유지(고정)'지 '연장' 아님. C228T(-124)=가장 흔함·간암, C250T(-146)=UV·멜라노마",
+  "통합 기질=dslDNA(rcDNA X), 기전=NHEJ@자발 DSB, 숙주 최다 부위=TERT 프로모터·HBV 최다 절단점=nt1600~1800 ctHBx",
+  "HBsAg 소실해도 통합 HBV·cccDNA 잔존→발암 지속→연 0.38~0.86%, 6개월 초음파 감시 절대 중단 금지",
+  "ER stress=preS 결실 변형 surface 단백(HBcAg core 아님), p53 온전=보호(노화·사멸)/소실=악성전환"
+ ],
+ "figure": {
+  "pdf": "대학원합동강의-JJW-P20236 (1).pdf",
+  "page": 21,
+  "caption": "TERT 프로모터 핫스팟(-124 C228T, -146 C250T): C→T로 ETS/TCF 결합모티프 신생 + G-quadruplex 불안정화(loss of quadruplex stability) → gene silencing 해제 → TERT 발현 증가 기전 도식"
+ }
+}

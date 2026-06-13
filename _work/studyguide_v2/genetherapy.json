@@ -1,0 +1,96 @@
+{
+ "code": "genetherapy",
+ "lecture_label": "04-07 유전자치료 (김영광)",
+ "professor": "김영광",
+ "essence": "유전질환을 DNA/RNA를 세포에 직접 넣어 고치는 것이 유전자치료의 핵심이고, 시험은 전달체(AAV 대 렌티바이러스), 발현억제(ASO 대 siRNA), 유전체교정(베이스에디터 대 프라임에디터)의 'A 대 B' 짝을 정반대로 뒤집는 함정으로 나온다.",
+ "analogy": "유전자치료는 고장난 글자(유전자)를 고치는 작업이다. AAV(아데노부속바이러스)는 메모지를 책상 위에 따로 올려두듯(에피솜) 유전체에 끼어들지 않고, 렌티바이러스는 책 본문에 직접 글을 끼워 넣다가 다른 문장(LMO2 유전자)을 망가뜨린다. Cas9은 가위처럼 자르고, 베이스에디터는 지우개로 한 글자만 바꾸며, 프라임에디터는 펜으로 원하는 글자를 새로 써 넣는다.",
+ "scope": {
+  "declared": true,
+  "quote": "시험은 제가 가족에 표시를 해놨으니까 그 부분 위주로 보시면 될 것 같고요",
+  "summary": "시험범위 = 슬라이드에 교수가 직접 표시(가족=괄호/마크)해 둔 부분 위주. 유전자 가위 파트도 '객관식으로 어렵지 않게' 출제하겠다고 명시."
+ },
+ "top_topics": [
+  {
+   "title": "전달체 비교 — AAV vs 렌티바이러스(Lentivirus)와 genotoxicity 방향",
+   "plain_explanation": "생체 내(in vivo) 유전자치료에 실제로 거의 이 두 가지만 쓴다. AAV(아데노부속바이러스, adeno-associated virus)는 숙주 유전체에 끼어들지 않고 세포 핵 안에 에피솜(episome, 염색체와 별개로 떠 있는 DNA 조각)으로 따로 존재해서 삽입돌연변이 위험이 낮다. 반대로 렌티바이러스는 RNA 바이러스로, 역전사효소(reverse transcriptase, RNA를 DNA로 베끼는 효소)로 자기 유전물질을 DNA로 만든 뒤 숙주 유전체(약 30억 염기쌍) 무작위 부위에 끼워 넣는다.",
+   "why_how": "렌티바이러스가 LMO2(세포 증식을 조절하는 유전자) 주위에 끼어들면 강한 프로모터/인핸서가 LMO2를 과활성화해 백혈병을 일으키거나, 멀쩡한 유전자를 망가뜨리는(knockout) 삽입성 genotoxicity(유전체 독성)가 생긴다. 그래서 통합 여부가 핵심 차이다.",
+   "exam_point": {
+    "correct": "✅ AAV는 비통합(핵 내 에피솜)이라 삽입성 genotoxicity가 낮고, LMO2 과활성화→백혈병·정상유전자 knockout 같은 삽입성 genotoxicity는 렌티바이러스의 문제다.",
+    "trap": "❌ AAV가 숙주 유전체에 안정 통합되어 genotoxicity가 렌티바이러스보다 더 크다 (AAV와 렌티바이러스를 정반대로 뒤집은 함정)."
+   },
+   "qref": "genetherapy-1",
+   "exam_probability": 95
+  },
+  {
+   "title": "Gene silencing(발현억제) — ASO(RNase H) vs siRNA(RISC)",
+   "plain_explanation": "과발현된 유전자를 끄는 방법이다. ASO(안티센스올리고뉴클레오타이드, antisense oligonucleotide)는 단일가닥 DNA로 표적 mRNA에 붙어 DNA:RNA 하이브리드를 만든다. siRNA(소간섭RNA, small interfering RNA)는 이중가닥 RNA로 들어와 가공을 거쳐 단일가닥이 된 뒤 단백질 복합체에 실린다. 둘이 동원하는 분해 장치가 서로 다른 것이 시험의 핵심이다.",
+   "why_how": "ASO가 만든 DNA:RNA 하이브리드는 RNase H(알엔에이즈 에이치, 하이브리드 속 RNA를 자르는 효소)가 인식해 mRNA를 분해한다. siRNA는 RISC(아르아이에스씨, RNA-유도 침묵 복합체)에 결합해 상보적 mRNA를 절단한다. 임상 예로 인클리시란(Inclisiran)은 PCSK9 mRNA를 표적하는 siRNA로, PCSK9을 줄여 간세포 표면 LDL(저밀도지단백) 수용체를 늘려 혈중 LDL 콜레스테롤을 낮춘다.",
+   "exam_point": {
+    "correct": "✅ RNase H를 모집하는 것은 단일가닥 DNA인 ASO(하이브리드 형성)이고, RISC에 결합해 mRNA를 자르는 것은 이중가닥 RNA인 siRNA다.",
+    "trap": "❌ siRNA가 RNase H를 모집해 분해하고, ASO가 RISC에 결합해 절단한다 (복합체와 핵산 종류를 서로 뒤바꾼 함정)."
+   },
+   "qref": "genetherapy-2",
+   "exam_probability": 88
+  },
+  {
+   "title": "유전체교정 — 베이스에디터(Base Editor) vs 프라임에디터(Prime Editor)",
+   "plain_explanation": "기존 Cas9(크리스퍼 연관 단백질 9)은 이중나선을 잘라(DSB, double-strand break, 양가닥 절단) 세포가 죽을(p53 활성화→apoptosis, 세포자멸사) 위험이 있어 차세대 도구가 나왔다. 베이스에디터는 nCas9(니카아제 Cas9, 한 가닥만 자르는 Cas9)에 디아미네이즈(deaminase, 염기에서 아미노기를 떼는 효소)를 붙여 C→T, A→G 같은 단일염기 치환만 만든다. 프라임에디터는 nCas9에 역전사효소와 pegRNA(프라임에디팅 가이드RNA)를 붙여 원하는 모든 편집을 한다.",
+   "why_how": "프라임에디터는 pegRNA에 우리가 원하는 서열을 담아 역전사로 유전체에 복사해 넣으므로, 단일염기 치환뿐 아니라 삽입(insertion)·결실(deletion)까지 모두 가능하다. 베이스에디터는 디아미네이즈 작용만 하므로 단일염기 치환에 한정된다. 둘 다 양가닥을 자르지 않는다.",
+   "exam_point": {
+    "correct": "✅ 단일염기 치환만 가능한 것은 베이스에디터, 삽입·결실 포함 원하는 모든 편집이 가능한 것은 역전사효소+pegRNA를 쓰는 프라임에디터다.",
+    "trap": "❌ 프라임에디터가 단일염기 치환만 가능하고, 삽입/결실에는 베이스에디터를 써야 한다 (둘의 역할을 정반대로 뒤집은 함정)."
+   },
+   "qref": "genetherapy-3",
+   "exam_probability": 85
+  }
+ ],
+ "checklist": [
+  {
+   "topic": "CRISPR-Cas9 구성과 PAM의 위치·길이",
+   "correct": "✅ PAM(NGG, 프로토스페이서 인접 모티프)은 sgRNA가 아니라 표적 DNA에, 표적 서열 바로 옆에 있는 짧은 모티프다. 20bp는 PAM이 아니라 표적과 상보결합하는 guide sequence(crRNA, 크리스퍼RNA)의 길이다. 절단은 가이드 서열 17·18번째 사이.",
+   "trap": "❌ PAM은 sgRNA 내부에 위치하는 20bp 인식 모티프로 가이드RNA 조립에 필요하다 (위치를 DNA→RNA, 길이를 NGG→20bp로 왜곡).",
+   "qref": "genetherapy-4",
+   "is_exam50": false
+  },
+  {
+   "topic": "Cas9 knockout 경로 (NHEJ→indel→PTC→NMD)",
+   "correct": "✅ DSB(양가닥 절단) 후 NHEJ(비상동말단연결, non-homologous end joining)는 error-prone(실수가 잦은) 복구라 indel(삽입·결실)을 만들고, 그 frameshift(틀이동)가 premature stop codon(PTC, 조기종결코돈)을 만들면 NMD(난센스매개붕괴, nonsense-mediated decay)로 mRNA가 분해되어 유전자가 knockout된다.",
+   "trap": "❌ NHEJ는 정확한 복구라 indel이 거의 생기지 않으며 NMD는 정상 mRNA를 늘린다 (오류성 복구·분해 방향을 뒤집음).",
+   "qref": "genetherapy-4b",
+   "is_exam50": false
+  },
+  {
+   "topic": "Jesse Gelsinger 사망 기전",
+   "correct": "✅ Gelsinger 사망 원인은 고면역원성 아데노바이러스(adenovirus, 감기 바이러스 계열) 과량 투여에 의한 immunotoxicity(면역독성, 과도한 면역반응)다. 아데노바이러스는 유전체에 통합되지 않으며, 이후 면역원성 낮은 비통합형 AAV 중심으로 전환됐다.",
+   "trap": "❌ 사망은 아데노바이러스의 유전체 무작위 삽입(genotoxicity) 때문이었고, 이를 계기로 통합형 렌티바이러스 사용이 본격화됐다 (immuno↔geno, AAV↔렌티바이러스 모두 뒤집음).",
+   "qref": "genetherapy-g1",
+   "is_exam50": false
+  },
+  {
+   "topic": "Sickle cell / β-thalassemia — BCL11A knockout으로 fetal Hb 재활성화",
+   "correct": "✅ BCL11A는 γ-글로빈을 억제하는 전사인자(transcription factor)라서, 유전자가위로 BCL11A를 knockout해야 억제가 풀려 γ-글로빈이 재발현되고 fetal hemoglobin(태아헤모글로빈, α2γ2)이 다시 만들어져 증상이 완화된다.",
+   "trap": "❌ BCL11A를 과발현시켜 γ-글로빈 억제를 강화함으로써 fetal hemoglobin을 늘린다 (knockout↔과발현 인과 정반대).",
+   "qref": "genetherapy-g2",
+   "is_exam50": false
+  },
+  {
+   "topic": "ssASO splicing 조절 (DMD exon 51 skipping)",
+   "correct": "✅ splice-switching ASO(ssASO)는 pre-mRNA에 결합해 splicing을 조절하며, DMD(뒤셴근이영양증)에서 exon 51 skipping을 유도해 frame을 맞춘 짧지만 기능하는 dystrophin을 만들게 한다.",
+   "trap": "❌ ssASO는 RNase H를 모집해 표적 mRNA를 분해함으로써 작동한다 (splicing 조절↔mRNA 분해 혼동, ssASO는 분해가 아니라 splicing 조절).",
+   "qref": "genetherapy-g3",
+   "is_exam50": false
+  }
+ ],
+ "memorize": [
+  "통합(genotoxicity)=렌티바이러스 / 비통합 에피솜=AAV. Gelsinger 사망=immunotoxicity(아데노바이러스).",
+  "ASO=단일가닥 DNA→RNase H / siRNA=이중가닥 RNA→RISC / ssASO=splicing 조절(DMD exon 51 skip).",
+  "PAM=NGG, 표적 DNA에·표적 바로 옆 / 20bp는 guide(crRNA) 길이 / 절단은 17·18번째 사이.",
+  "베이스에디터=단일염기만(deaminase) / 프라임에디터=무엇이든(역전사효소+pegRNA), 둘 다 DSB 없음(nCas9).",
+  "BCL11A는 knockout해야 fetal Hb 부활(γ-글로빈 억제 해제)."
+ ],
+ "figure": {
+  "pdf": "2026_대학원합동강의_김영광_시험_필수슬라이드.pdf",
+  "page": 2,
+  "caption": "GENE THERAPY DELIVERY METHODS 비교표 — AAV(비통합/에피솜·long expression·저면역원성) vs Lentivirus(통합·genotoxicity, LMO2→백혈병)"
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "code": "llmngs",
+ "lecture_label": "03-31 LLM·NGS·정밀의료·바이오인포",
+ "professor": "(의료정보학)",
+ "essence": "시퀀싱 비용이 폭락해 '읽기(genotyping, 유전형 분석)'는 끝났고, 남은 숙제는 '뜻 풀이(interpretation, 표현형 해석)'다. 그 해석을 AI/LLM(거대언어모델)이 가속하되, 성능은 사용자가 주는 맥락(context)에 달렸다.",
+ "analogy": "NGS(차세대 시퀀싱)는 30억 글자짜리 책을 잘게 찢어 한꺼번에 읽는 것이고, 찢긴 조각을 원본으로 다시 붙이는 게 BWA(버로우즈-휠러 정렬기)다. 다 읽어도 무슨 뜻인지 푸는 건 아직 숙제이고, 그 해석을 도와줄 '박사 10명'이 LLM인데 좋은 질문(맥락)을 줘야 박사처럼 일한다.",
+ "scope": {
+  "declared": false,
+  "quote": "",
+  "summary": "명시 없음 — 강조신호 기반 선정 (스크립트의 '시험' 언급은 모두 임상시험을 가리킴, 출제범위 선언 아님)"
+ },
+ "top_topics": [
+  {
+   "title": "BWA(Burrows-Wheeler Aligner, 버로우즈-휠러 정렬기) 기원 방향: 압축 → 정렬",
+   "plain_explanation": "NGS(차세대 시퀀싱)는 유전체(약 30억 글자)를 짧은 조각(short read, 단편)으로 찢어 한꺼번에 읽는다. 이 조각들은 그대로는 무의미해서 참조 유전체에 맞춰 붙이는 정렬(alignment) 과정이 필요하다. 이때 표준 도구가 BWA인데, 그 핵심 알고리즘인 Burrows-Wheeler는 원래 1970~80년대에 데이터 압축(zipping, 파일 용량 줄이기) 용도로 만들어진 것이다. 나중에 사람들이 이리저리 써보다가 정렬에서 가장 빠른 방법임을 발견해 차용한 것이다.",
+   "why_how": "교수는 '압축하려고 만든 기술인데 이후 사람들이 돌리고 돌리다가 정렬에서 가장 빠른 알고리즘이 됐다'고 강조하며, 전혀 무관해 보이는 분야를 잇는 통찰(connecting dots)은 여전히 인간의 역할이라고 못박았다. 그래서 '압축 → 정렬' 순서가 핵심이다.",
+   "exam_point": {
+    "correct": "✅ Burrows-Wheeler는 압축용으로 먼저 개발 → 이후 NGS short read 정렬에 차용되어 가장 빠른 매핑 표준(BWA)이 됨. 메모리 3Gb 미만으로 동작. (두 서열 비교의 정렬 알고리즘은 Smith-Waterman = 동적계획법/dynamic programming)",
+    "trap": "❌ '처음부터 유전체 정렬을 목표로 설계됐다가 나중에 데이터 압축으로 응용됐다'처럼 인과·방향을 정반대로 뒤집는 진술."
+   },
+   "qref": "llmngs-1",
+   "exam_probability": 92
+  },
+  {
+   "title": "정밀의학: Genotyping(유전형 분석)은 됐다, Interpretation(해석)이 숙제 / PRS",
+   "plain_explanation": "인간 유전학의 궁극 목표는 유전형(genotype) 기반의 표현형(phenotype, 겉으로 나타나는 형질) 예측이다. 유전체를 (1)시퀀싱 → (2)주석(annotate) → (3)기능 해석(functional interpretation) 3단계로 읽는데, 1단계인 genotyping은 NGS로 수일 내 $100~$1,000에 가능하지만 마지막 해석 단계는 대부분 근거가 부족해 여전히 제한적이다. PRS(Polygenic Risk Score, 다유전자 위험점수)는 수많은 SNP(단일염기다형성, 개인 간 1글자 차이)의 작은 효과를 합산해 질환 위험을 확률로 추정하는 다유전자 방법이다.",
+   "why_how": "개별 SNP의 효과크기(effect size)가 작아 1,000명 정도로는 신호가 안 보이고, 만 명·십만 명·국가 100만 명급 코호트(GWAS, 전장유전체연관분석)까지 키워야 robust(견고)한 연관이 드러난다. 그래서 PRS는 아직 일부 major 질환을 빼면 임상 표준이 아니다.",
+   "exam_point": {
+    "correct": "✅ PRS는 다수 SNP 효과를 합산해 위험도를 확률적으로 추정하는 다유전자 방법이고, 대규모 코호트가 필요하며, 일부 질환 외엔 아직 임상 표준이 아니다.",
+    "trap": "❌ 'PRS는 단일 유전자 변이만으로 질환을 확정 진단하고, 수백 명 소수 코호트 기반이며, 이미 거의 모든 복합질환에서 임상 표준'이라는 정의·규모·과장 3중 오류."
+   },
+   "qref": "llmngs-2",
+   "exam_probability": 88
+  },
+  {
+   "title": "Context matters: LLM 성능은 사용자가 주는 맥락에 달렸다",
+   "plain_explanation": "AI/LLM(거대언어모델)은 연구·코딩·바이오 빅데이터 분석의 실용 도구가 됐지만, 그 유용성은 사용자가 제공하는 '제대로 된 맥락(right context, 전문 도메인 지식)'의 질에 달려 있다. 자기 콘텐츠(전문 지식)가 없으면 LLM은 그냥 평범한 사람과의 잡담 수준에 머문다.",
+   "why_how": "교수는 '질문을 너무 (좁게) 하려 하지 말고 컨텍스트를 줘라', 그래야 박사 10명을 부린 듯 파워풀해진다고 강조했다. 쿼리를 좁게 제한하는 게 핵심이 아니라 풍부한 맥락을 주는 것이 핵심이며, AI는 유전체·EMR(전자의무기록)·영상 등 multimodal(다중모달) 데이터 통합·해석을 가속한다.",
+   "exam_point": {
+    "correct": "✅ LLM 유용성은 사용자가 주는 풍부한 맥락(context)에 의존하며, 무관해 보이는 분야를 잇는 통찰은 여전히 인간의 역할이다.",
+    "trap": "❌ '도메인 지식 없이 쿼리를 좁게 여러 번 던지는 게 핵심이고, 사용자의 전문 맥락은 오히려 모델 성능의 병목(bottleneck)'이라는 정반대 진술."
+   },
+   "qref": "llmngs-g1",
+   "exam_probability": 80
+  }
+ ],
+ "checklist": [
+  {
+   "topic": "BWA 압축→정렬 차용 (exam50 핵심 재확인)",
+   "correct": "✅ Burrows-Wheeler = 압축(zipping)용으로 70~80년대 개발 후 NGS 정렬에 차용된 가장 빠른 매핑 표준. '압축 → 정렬' 순서.",
+   "trap": "❌ '정렬용으로 먼저 설계됐다가 압축으로 응용'이라는 방향 역전.",
+   "qref": "llmngs-1",
+   "is_exam50": true
+  },
+  {
+   "topic": "PRS·Genotyping vs Interpretation (exam50 핵심 재확인)",
+   "correct": "✅ PRS는 다수 SNP 합산 확률 추정(다유전자), 대규모 코호트 필요, 일부 질환 외 임상 표준 아님. genotyping은 됐고 interpretation이 숙제.",
+   "trap": "❌ PRS를 '단일유전자 확정진단·소수 코호트·전 복합질환 임상 표준'으로 서술.",
+   "qref": "llmngs-2",
+   "is_exam50": true
+  },
+  {
+   "topic": "WGS(전장유전체) 비용 폭락",
+   "correct": "✅ HGP(인간게놈프로젝트, 1990~2000, 약 10년·약 $30억) → 2015 약 $1,000 → 2022 약 $100. 이후 desktop sequencer로 약 2일 만에 해독.",
+   "trap": "❌ 비용이 NGS 등장에도 거의 그대로거나, HGP가 단기·저비용으로 끝났다는 서술.",
+   "qref": "llmngs-1",
+   "is_exam50": false
+  },
+  {
+   "topic": "대규모 코호트 규모·설계 (All of Us vs UK Biobank)",
+   "correct": "✅ All of Us(미국) 약 100만 명(broad한 자원자), UK Biobank(영국) 약 50만 명(처음부터 대상자/표현형을 define하고 출발). FinnGen·deCODE·한국 바이오뱅크 등.",
+   "trap": "❌ 규모(100만↔50만)나 설계 특성(broad↔define)을 두 코호트 간에 뒤바꾸는 서술.",
+   "qref": "llmngs-g2",
+   "is_exam50": false
+  },
+  {
+   "topic": "DTC(소비자 직접의뢰) 유전자검사의 한계",
+   "correct": "✅ 의료진·유전상담사 없이 소비자가 직접 검체를 보내 결과를 받음(예: 23andMe). 임상 제한 이유 = 변이-표현형 연관의 집단 수준(population-level) 근거 부족.",
+   "trap": "❌ DTC가 근거가 충분해 임상 진단에 바로 쓸 수 있다는 서술.",
+   "qref": "llmngs-2",
+   "is_exam50": false
+  },
+  {
+   "topic": "Smith-Waterman vs BWA 구분",
+   "correct": "✅ Smith-Waterman = 두 서열 비교(pairwise alignment)용 동적계획법(dynamic programming). BWA = 파편(short read)을 참조 유전체에 재조립하는 short-read 매핑.",
+   "trap": "❌ Smith-Waterman을 short-read 매핑 표준으로, BWA를 두 서열 비교 알고리즘으로 뒤바꾸는 서술.",
+   "qref": "llmngs-1",
+   "is_exam50": false
+  }
+ ],
+ "memorize": [
+  "BWA 방향: 압축(zipping, 70~80년대) → 정렬(alignment) 차용 = 가장 빠름. (두 서열 비교 = Smith-Waterman/동적계획법)",
+  "비용: HGP 약 $30억/10년 → 2015 $1,000 → 2022 $100. NGS = massively parallel(대규모 병렬) short-read.",
+  "3단계: Sequencing → Annotate → Interpret. genotyping은 됐고, interpretation이 숙제.",
+  "PRS = 다수 SNP 합산 확률(다유전자), 만~100만 명급 코호트 필요. 일부 major 질환 외 임상 표준 아님.",
+  "Context matters: 풍부한 맥락을 줘라(쿼리 좁히기가 핵심 아님). All of Us 100만, UK Biobank 50만(처음부터 define)."
+ ],
+ "figure": {
+  "pdf": "3월 31일_대학원공개강의 (1).pdf",
+  "page": 11,
+  "caption": "WGS 비용 곡선: HGP(약 13년, 약 $30억) vs NGS(Illumina X10, 약 2일, 약 $1,000). NGS 등장 시점에서 비용이 급락하는 그래프."
+ }
+}

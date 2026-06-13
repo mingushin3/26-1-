@@ -1,0 +1,117 @@
+{
+ "code": "scrna",
+ "lecture_label": "03-24 단일세포 전사체 scRNA-seq (이혜옥)",
+ "professor": "이혜옥",
+ "essence": "scRNA-seq(단일세포 RNA 시퀀싱 = 세포 하나하나의 유전자 발현을 따로 읽는 기술)는 세포 한 개 단위로 어떤 유전자가 얼마나 켜져 있는지를 측정해 세포의 정체와 상태를 정의하는 기술이다.",
+ "analogy": "raw 데이터는 단톡방 로그와 같다. Cell Barcode(세포 바코드 = 발신자 표지)는 '누가 보냈나(어느 세포)', UMI(고유분자식별자 = 원본 분자 꼬리표)는 '원본 메시지냐 복붙(증폭본)이냐'를 알려준다. 같은 UMI는 복붙이니 1개로 합치고, 다른 UMI는 진짜 다른 분자라 따로 센다.",
+ "scope": {
+  "declared": true,
+  "quote": "그래서 아마 대부분 시험문제 이 용어들을 정확히 알고 있으면 되지 않을까 싶습니다.",
+  "summary": "시험범위 = 마지막 요약(Keywords) 슬라이드의 핵심 용어들(UMI/barcode, QC, normalization, PCA·UMAP/tSNE, clustering, drop-out, CITE-seq, spatial 등) 정확한 정의 — 특히 교수가 'UMI는 꼭 낸다'고 직접 못박음."
+ },
+ "top_topics": [
+  {
+   "title": "UMI vs Cell Barcode (정량의 심장)",
+   "plain_explanation": "Cell Barcode(세포 바코드 = 어느 세포에서 왔는지 표지)는 한 oil droplet(기름방울 = 세포 1개를 가두는 미세 방울, GEM이라고도 함) 안 bead(구슬)에 붙은 모든 oligo(짧은 DNA 조각)가 '동일한' 서열을 가져 세포를 식별한다. UMI(Unique Molecular Identifier = 고유분자식별자)는 같은 bead라도 oligo마다 '서로 다른' 서열이라 원본 mRNA 분자 하나하나를 식별한다. 그래서 같은 유전자 read(시퀀싱으로 읽힌 한 조각) 중 '같은 UMI'는 PCR 증폭으로 생긴 복제물이므로 묶어서 1개로 세고, '다른 UMI'는 진짜 다른 분자이므로 각각 센다.",
+   "why_how": "PCR 증폭은 한 분자를 수십~수백 배로 불리는데, 단순히 read를 세면 발현이 부풀려진다. 같은 UMI를 1개로 합치면 증폭 편향을 제거해 실제 분자 수에 가깝게 정량할 수 있다(그래서 count가 단순 read 수보다 낮게 나오는 게 정상).",
+   "exam_point": {
+    "correct": "✅ 같은 유전자 read 중 '동일 UMI'는 증폭 중복으로 묶어 1개로, '다른 UMI'는 각각 원본 분자로 계수 → read 20개라도 UMI 5종이면 발현값 5",
+    "trap": "❌ 다른 UMI를 제거하고 동일 UMI만 개별 분자로 센다(방향 정반대)"
+   },
+   "qref": "scrna-1",
+   "exam_probability": 95
+  },
+  {
+   "title": "UMAP/tSNE(비선형 차원축소)와 clustering(군집화)은 별개",
+   "plain_explanation": "UMAP/tSNE는 수많은 차원의 세포 데이터를 사람이 볼 수 있게 2차원 그림으로 줄여 보여주는 '비선형(non-linear, 굽은 관계까지 학습) 차원축소·시각화' 방법이고, clustering(군집화)은 세포를 묶어 집단을 정의하는 별개의 알고리즘이다. UMAP과 clustering 모두 PCA(주성분분석)로 얻은 PC 값을 입력으로 쓰기 때문에 그림과 군집이 비슷하게 보일 뿐, 같은 것이 아니다. UMAP 그림에서 한 클러스터 안에 모인 세포끼리 비슷하다는 '국소(local) 구조'는 믿을 수 있지만, 떨어져 있는 클러스터 사이의 2D 거리는 생물학적 의미가 없다.",
+   "why_how": "UMAP은 '가까운 이웃(neighbor)이 몇 개냐'를 기준으로 그림을 그려서 국소 관계는 잘 보존하지만 전체 거리(global)는 왜곡한다. 그래서 멀리 떨어진 두 군집의 거리를 분화 거리처럼 해석하면 안 된다.",
+   "exam_point": {
+    "correct": "✅ UMAP은 국소(local) 구조만 신뢰 가능, 떨어진 클러스터 간 2D 거리는 생물학적 의미 없음. UMAP=시각화, clustering=군집정의로 용어 혼용 금지",
+    "trap": "❌ UMAP은 전역(global) 거리를 잘 보존하므로 클러스터 간 거리를 분화 거리로 직접 해석해도 된다"
+   },
+   "qref": "scrna-2",
+   "exam_probability": 90
+  },
+  {
+   "title": "3' vs 5' scRNA-seq + TCR/BCR immune profiling",
+   "plain_explanation": "3'·5' 방식 모두 mRNA의 poly-A 꼬리를 oligo-dT(T가 줄지은 미끼 서열)로 붙잡아 cDNA(상보 DNA) 합성을 시작한다. 차이는 어느 끝을 읽느냐인데, 3' 방식은 cDNA를 잘라 3' 말단 약 100bp(염기쌍)만 읽어 '어느 유전자인지'는 충분히 알 수 있다. 5' 방식은 TSO(Template Switch Oligo = 주형 전환 올리고)로 full-length(전장) cDNA를 만들어, 면역세포 수용체 TCR(T세포 수용체)/BCR(B세포 수용체)의 항원 특이성을 결정하는 V(D)J 부위(수용체 앞쪽 가변영역)까지 읽을 수 있다.",
+   "why_how": "V(D)J 정보는 길어서 100bp만 읽으면 다 담기지 않는다. 그래서 TCR/BCR 분석용 라이브러리는 일반 발현용(약 100bp)보다 '더 길게' 약 400bp로 만들어 V·D·J 서열을 모두 담고 세포의 clonality(클론 다양성)를 본다.",
+   "exam_point": {
+    "correct": "✅ 5' TCR/BCR은 V(D)J를 다 담으려고 일반(~100bp)보다 긴 ~400bp 라이브러리 제작. 3'은 3'말단만 읽어 V(D)J clonality는 못 봄",
+    "trap": "❌ TCR/BCR 분석 시 일반 발현용보다 짧은 ~100bp 라이브러리를 제작한다"
+   },
+   "qref": "scrna-3",
+   "exam_probability": 88
+  }
+ ],
+ "checklist": [
+  {
+   "topic": "QC 임계값 고정 여부 + %mito 계산",
+   "correct": "✅ %mito(미토콘드리아 유전자 비율) = (MT-gene UMI 합 / 전체 UMI)×100. QC 임계값은 조직·세포별 분포가 달라 violin/scatter plot으로 분포 확인 후 데이터마다 개별 결정",
+   "trap": "❌ QC 임계값(%mito)을 조직·세포와 무관하게 모든 데이터셋에서 5%로 고정 적용한다",
+   "qref": "scrna-4",
+   "is_exam50": true
+  },
+  {
+   "topic": "drop-out의 0 구분",
+   "correct": "✅ drop-out(검출 누락)의 0(technical zero, 기술적 0)과 본래 비발현 0(true zero)은 섞여 있어 구분이 어려워 별도 모델링이 필요",
+   "trap": "❌ drop-out의 0은 모두 명확한 비발현(true zero)이라 완벽히 구분돼 별도 처리가 필요 없다",
+   "qref": "scrna-g1",
+   "is_exam50": true
+  },
+  {
+   "topic": "분석 워크플로우 순서·각 단계 역할",
+   "correct": "✅ QC→Normalization(LogNormalize: total UMI로 나눈 뒤 scalefactor 기본 10,000 곱하고 자연로그)→FeatureSelection(HVG 기본 2,000개)→Scaling(Z-변환: 평균0·SD1)→PCA",
+   "trap": "❌ Scaling은 고발현 housekeeping 유전자를 더 부각시키려고 한다(반대: PCA를 dominate하지 못하게 막으려는 것)",
+   "qref": "scrna-4",
+   "is_exam50": false
+  },
+  {
+   "topic": "PCA(선형 차원축소)·순서·Elbow plot",
+   "correct": "✅ PCA(주성분분석)는 '선형(linear)' 차원축소로 상관 유전자를 묶은 PC(metafeature)를 먼저 뽑고, 그 PC를 UMAP/clustering 입력으로 씀. PC 수는 Elbow plot(heuristic)으로 결정",
+   "trap": "❌ PCA가 비선형 차원축소이고 UMAP은 PCA 결과를 선형 재투영하는 후처리 단계다(선형/비선형·순서 모두 반대)",
+   "qref": "scrna-g2",
+   "is_exam50": false
+  },
+  {
+   "topic": "graph-based clustering",
+   "correct": "✅ PCA 공간에서 KNN(최근접이웃) graph 구성 → Jaccard similarity로 edge weight 보정 → Louvain(기본) 등 modularity 최적화로 군집화",
+   "trap": "❌ clustering이 UMAP 2D 좌표 위에서 직접 군집을 정의한다(실제론 PC 공간 그래프 기반)",
+   "qref": "scrna-2",
+   "is_exam50": false
+  },
+  {
+   "topic": "CITE-seq(ADT)의 역할",
+   "correct": "✅ CITE-seq는 transcript(전사체)+표면단백질을 동시 측정(multi-modal). ADT(Antibody-Derived Tag = 항체에 붙인 시퀀싱 가능한 oligo 바코드)와 transcript는 보완 관계로 함께 분석, 항체 specificity(특이성) 검증 필요",
+   "trap": "❌ ADT가 transcript보다 항상 정확해 transcript를 버리고 ADT만으로 세포 유형을 정의하는 것이 표준이다",
+   "qref": "scrna-g3",
+   "is_exam50": false
+  },
+  {
+   "topic": "sparse matrix(.mtx) 저장 구조",
+   "correct": "✅ 0이 아닌 값만 좌표로 저장 → barcodes.tsv(세포)/features.tsv(유전자)/matrix.mtx(발현값). '154 1 21'=154번 유전자, 1번 세포, UMI count 21",
+   "trap": "❌ 0을 포함한 모든 칸을 일반 표 형태로 통째 저장하는 것이 표준이다(실제론 0이 많아 비효율 → sparse 저장)",
+   "qref": "scrna-g1",
+   "is_exam50": false
+  },
+  {
+   "topic": "Spatial Transcriptomics(Visium) 해상도",
+   "correct": "✅ Visium은 spatial barcode(위치 바코드)로 위치(spot) 단위 측정 → 한 spot(~100μm)에 여러 세포 섞임(단일세포 해상도 아님, regional). Xenium(~2μm) 등 고해상도일수록 비용↑·검출영역↓ trade-off",
+   "trap": "❌ Visium은 처음부터 단일세포(~10μm) 해상도라 한 spot에 한 세포만 담긴다",
+   "qref": "scrna-g4",
+   "is_exam50": false
+  }
+ ],
+ "memorize": [
+  "같은 UMI=복제물 1개로, 다른 UMI=따로 센다. read 20·UMI 5종 → 발현값 5.",
+  "PCA=선형(먼저)→UMAP/tSNE=비선형(시각화). UMAP은 국소만 믿고 클러스터 간 거리는 무의미. UMAP=시각화 vs clustering=군집정의(별개).",
+  "5' TCR/BCR=400bp(길게), 일반 3'=100bp. 3'은 V(D)J clonality 못 봄.",
+  "%mito=(MT UMI/Total UMI)×100, QC 임계값은 데이터마다 다름(5% 고정 X). HVG 기본 2000개, LogNormalize scalefactor 10000.",
+  "drop-out 0(기술적)과 true zero가 섞임 → 구분 어려워 별도 처리 필요."
+ ],
+ "figure": {
+  "pdf": "20260324_대학원합동강의_필수슬라이드_.pdf",
+  "page": 1,
+  "caption": "UMI/Cell Barcode 도식 — 동일 UMI(AGCTTATGCT)는 O/X로 중복 제거되어 1개로 계수되는 정량 원리(필수슬라이드)"
+ }
+}

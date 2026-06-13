@@ -1,0 +1,78 @@
+{
+ "code": "wonjaelee",
+ "lecture_label": "03-03 암생물학 패러다임 (이원재)",
+ "professor": "이원재",
+ "essence": "암을 '나쁜 세포 하나의 돌연변이 문제'로 보던 시각에서, 진화·면역·공간이 함께 빚어내는 '동적인 조직 생태계'로 보는 시각으로 패러다임이 바뀌었다.",
+ "analogy": "암을 '동네에 들어온 나쁜 세포 한 마리'로 보던 시대에서 '동네 전체(주변 세포·면역·조직·공간)가 공범인 생태계'로 보는 시대로. 그래서 표적 하나만 때려도 동네가 암을 다시 키운다.",
+ "scope": {
+  "declared": false,
+  "quote": "",
+  "summary": "명시적 범위 선언 없음 — 강조신호(반복·비교·결론 테제) 기반 선정 (이 강의는 녹음/전사 txt 없음, 슬라이드만)."
+ },
+ "top_topics": [
+  {
+   "title": "결론 테제: 암 = 돌연변이를 넘어선 동적 조직 생태계 (시각 이동 = genomic determinism에서 '벗어남')",
+   "plain_explanation": "강의 마지막 결론 슬라이드(PAGE 57)의 단 하나의 핵심 문장은 '암은 더 이상 돌연변이(mutation = 유전자 변이)만으로 정의되지 않는다'이다. 암은 진화·면역·공간 조직이 함께 만들어내는 '살아 움직이는 조직 수준 생태계'로 이해된다. 이를 보는 시각도 genomic-centric(유전자 중심) → cell state(세포 상태) → systemic(전신적) → data-driven(데이터 기반 패턴 인식)으로 이동해 왔다. 즉 '돌연변이 하나로 모든 걸 설명한다'는 genomic determinism(유전체 결정론)에서 '벗어나는' 방향이다.",
+   "why_how": "유전자 변이 하나만 보면 같은 돌연변이라도 환자마다 결과가 다른 이유나 새 돌연변이 없이 약에 듣지 않게 되는 현상을 설명할 수 없어서, 주변 환경·면역·공간까지 포함하는 생태계 관점이 필요해졌기 때문이다.",
+   "exam_point": {
+    "correct": "✅ 암은 돌연변이만으로 정의되지 않으며, 시각은 genomic-centric→cell state→systemic→data-driven으로 genomic determinism(유전체 결정론)에서 '벗어나는' 방향이다.",
+    "trap": "❌ '패러다임의 종착점은 단일 driver 돌연변이로 환원하는 genomic determinism의 재확립이며, 미세환경·면역은 부차적'이라고 화살표를 거꾸로 뒤집는다."
+   },
+   "qref": "wonjaelee-g1",
+   "exam_probability": 92
+  },
+  {
+   "title": "기술 연대표 + Data-driven oncology(데이터 기반 종양학): '데이터 먼저 → 가설 생성'",
+   "plain_explanation": "기술이 패러다임을 바꿔온 연대표(PAGE 54): 1990년대 Sanger sequencing(생어 염기서열분석 = 1세대 시퀀싱)이 driver mutation(운전자 돌연변이 = 암을 실제로 일으키는 변이)을 찾아냈고, 2000년대 NGS(차세대 염기서열분석)가 암 유전체 전체를, 2010년대 single-cell(단일세포 분석)이 종양 내 이질성을, 2020년대 spatial multi-omics(공간 다중오믹스 = 위치 정보를 유지한 채 여러 분자층을 보는 분석)가 종양 생태계를, 지금은 AI/ML(인공지능/기계학습)이 인간 직관을 넘는 패턴 발견을 가능하게 한다. 그리고 PAGE 55의 핵심 대조: 옛 패러다임(hypothesis-driven = 가설 주도, '가설 먼저 → 실험')과 새 패러다임(data-driven = 데이터 주도)은 흐름의 '방향'이 정반대다. data-driven은 'Data first → hypothesis generation', 즉 데이터가 먼저 패턴을 드러내고 거기서 가설이 생성되는 discovery-driven(발견 주도) 방식이다.",
+   "why_how": "다중오믹스·공간 데이터가 인간이 미리 세운 가설보다 더 미묘한 패턴(예: 면역세포 이웃 구조)을 먼저 보여주기 때문에, 가설을 먼저 확정하지 않고 데이터에서 가설을 끌어내는 쪽으로 연구 방식이 뒤집혔다.",
+   "exam_point": {
+    "correct": "✅ Data-driven oncology(데이터 기반 종양학)의 본질은 'Data first → hypothesis generation'(데이터가 먼저 패턴을 드러내고 가설을 생성하는 discovery-driven)이다.",
+    "trap": "❌ '데이터 기반은 가설을 먼저 확정한 뒤 맞는 multi-omics 데이터만 선별 수집해 검증하며 데이터는 보조 수단'이라고 적는다(이건 정반대인 옛 hypothesis-driven 패러다임)."
+   },
+   "qref": "wonjaelee-g2",
+   "exam_probability": 86
+  }
+ ],
+ "checklist": [
+  {
+   "topic": "Oncogene addiction(종양유전자 중독) 방향",
+   "correct": "✅ 특정 활성 oncogene(종양유전자)/신호경로에 생존·증식을 '의존'→그 표적을 막으면 유독 취약(표적치료가 듣는 근거).",
+   "trap": "❌ '의존에서 벗어나 경로를 분산시켜 표적치료에 내성을 갖는 현상'이라며 방향을 정반대로 뒤집음(내성 기전이 아님).",
+   "qref": "wonjaelee-1",
+   "is_exam50": false
+  },
+  {
+   "topic": "암 진화 양상 (clonal 선형 vs branching 분지)",
+   "correct": "✅ 암 진화는 stepwise/clonal(단계적·선형)만이 아니라 branching(분지진화·폭발적 in bursts·최소 선택압)으로도 일어남 — 암은 자기 고유의 진화 동역학.",
+   "trap": "❌ '진화는 점진적·선형으로만 일어나며 분지진화·폭발적 양상은 없고 항상 선형 계통수를 따른다'고 함.",
+   "qref": "wonjaelee-2",
+   "is_exam50": false
+  },
+  {
+   "topic": "치료 어려움 = 바이러스처럼 실시간 진화",
+   "correct": "✅ 암은 바이러스처럼 높은 돌연변이율·선택압·빠른 적응으로 'real time(실시간)' 진화→이질성·가소성·공간보호·면역적응 4축으로 치료가 어렵다.",
+   "trap": "❌ '암세포는 돌연변이율이 낮고 선택압이 없으며 실시간 적응을 못하고, 저항은 주로 약물의 약동학적 한계 탓'이라고 함.",
+   "qref": "wonjaelee-g3",
+   "is_exam50": false
+  },
+  {
+   "topic": "TME(종양 미세환경) 세포-역할 매칭",
+   "correct": "✅ stromal/fibroblastic(기질·섬유아세포)=ECM(세포외기질) 리모델링·TGF-β(전환성장인자 베타) 신호·물리적 장벽 / endothelial(내피)=혈관신생·저산소 구배 / immune(면역)=면역감시·억제 / organ-resident(장기거주, 예: mesothelial 중피세포)=부착·암세포 모집.",
+   "trap": "❌ '내피세포가 ECM 리모델링·TGF-β·면역감시를 주도하고, 중피세포가 혈관신생·저산소를 전담'이라며 세포 역할을 뒤바꿈.",
+   "qref": "wonjaelee-g4",
+   "is_exam50": false
+  }
+ ],
+ "memorize": [
+  "Oncogene addiction = 의존 → 표적치료가 '듣는 근거'(내성 기전 아님). 화살표 거꾸로 적으면 함정.",
+  "암 진화는 stepwise(선형) + branching(폭발적 bursts). '선형으로만'은 틀림.",
+  "Data-driven = Data first → 가설 생성(discovery-driven). '가설 먼저'는 옛 패러다임.",
+  "결론 테제: 암 = 돌연변이만으로 정의 안 됨; 시각은 genomic→cell state→systemic→data-driven(결정론에서 벗어남).",
+  "TME 역할: stromal=ECM/TGF-β, endothelial=혈관신생/저산소, immune=감시, organ-resident(중피)=부착/모집."
+ ],
+ "figure": {
+  "pdf": "3월 3일 합동강의 (1).pdf",
+  "page": 20,
+  "caption": "Clonal evolution(stepwise) vs Branching evolution(phylogenetic tree, in bursts) 대조 — 유전적 이질성의 발생 방식"
+ }
+}

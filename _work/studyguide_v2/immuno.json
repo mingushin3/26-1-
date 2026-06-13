@@ -1,0 +1,85 @@
+{
+ "code": "immuno",
+ "lecture_label": "06-02 면역항암·간암저항성 (성필수)",
+ "professor": "성필수",
+ "essence": "간암(HCC, 간세포암) 면역치료가 잘 안 듣는 핵심 이유는 종양 미세환경(TME, tumor microenvironment·종양을 둘러싼 주변 세포 환경)의 면역억제 세력(TAM·CAF·IgA)과 환자 T세포의 고갈 상태이며, 시험은 '왜 저항하는가'와 '어떻게 차가운 종양(cold)을 뜨거운 종양(hot)으로 바꿔 극복하는가'의 방향을 거꾸로 뒤집지 않는지를 묻는다.",
+ "analogy": "종양은 CAF(암관련 섬유아세포)가 콜라겐으로 쌓은 '성벽' 안에 숨은 성이다. 면역관문억제제(ICI)는 지친 군대(T세포)의 브레이크를 풀어주는 것이고, 국소치료(LRT)·항암제 병용은 성에 불을 질러 '차가운 성(cold)'을 '뜨거운 전장(hot)'으로 바꾸는 작전이다.",
+ "scope": {
+  "declared": false,
+  "quote": "",
+  "summary": "명시 없음 — 강조신호 기반 선정 (교수는 '시험에 나올 거는 벌써 얘기 다 지나갔다'고만 언급, 구체적 범위 목록은 못박지 않음)"
+ },
+ "top_topics": [
+  {
+   "title": "Matrix CAF의 예후·종양 비특이성과 FAP-STAT3 축",
+   "plain_explanation": "CAF(cancer-associated fibroblast·암관련 섬유아세포)는 종양 주변에 콜라겐 같은 세포외기질(ECM·세포 바깥을 채우는 구조 단백질)로 '성벽'을 쌓아 면역세포와 CAR-T(키메라항원수용체 T세포·암을 인식하도록 유전자 조작한 T세포) 접근을 물리적으로 막고, PD-L1(면역관문 단백질)·억제 사이토카인으로 면역을 억제한다. 종양을 공격적으로 둘러싸는 Matrix CAF 표현형이 우세할수록 환자 예후는 나쁘며, 이는 간암뿐 아니라 위암·폐암 등 다른 고형암에도 공통된 현상이다.",
+   "why_how": "FAP(fibroblast activation protein·섬유아세포 활성화 단백질)가 CAF에서 STAT3(세포 생존을 켜는 신호전달 전사인자)를 활성화해 CAF 생존을 자극하고, FAP를 억제하면 STAT3가 줄고 세포자멸(apoptosis)이 늘어(Bcl-2 감소) CAF가 사멸하므로 CAF는 제거(depletion)의 표적이 된다.",
+   "exam_point": {
+    "correct": "✅ Matrix CAF 우세 → 예후 나쁨, 간암에 국한되지 않고 위암·폐암 공통 현상",
+    "trap": "❌ Matrix CAF가 많을수록 예후가 좋고, 간암에만 국한된 간암 특이적 현상이다"
+   },
+   "qref": "immuno-1",
+   "exam_probability": 92
+  },
+  {
+   "title": "CAR-T의 HCC 표적 GPC-3 발현 양상",
+   "plain_explanation": "CAR-T(키메라항원수용체 T세포)는 종양 표면에만 있는 특이 항원을 인식해 선택적으로 암을 죽이므로, 성공의 핵심 조건은 좋은 표적 항원이다. 간암의 대표 표적 GPC-3(글리피칸-3·간암 표면 항원)는 정상 장기에 거의 발현하지 않아 off-tumor 독성(정상조직 공격) 위험이 낮은 장점이 있다. 그러나 GPC-3는 HCC 환자의 약 50%에서만 발현하고, 발현해도 이질적(heterogeneous·부위마다 다름)으로 나타나 모든 환자·전 종양에서 균일한 반응을 기대하기 어렵다.",
+   "why_how": "고형암은 표적이 50%·이질적으로만 발현해 100% 반응이 어렵다. 이것이 종양 항원이 균일한 혈액암(림프종·다발성 골수종) 대비 고형암 CAR-T가 어려운 핵심 이유다.",
+   "exam_point": {
+    "correct": "✅ GPC-3는 HCC 약 50%에서만, 발현해도 heterogeneous → 균일 반응 기대 어려움",
+    "trap": "❌ GPC-3는 HCC 거의 100%에서 균일(homogeneous)하게 발현해 모든 환자에 균일 반응한다"
+   },
+   "qref": "immuno-2",
+   "exam_probability": 90
+  }
+ ],
+ "checklist": [
+  {
+   "topic": "고갈 master 전사인자(TOX) vs TCF-1 역할",
+   "correct": "✅ 고갈(exhaustion) master 전사인자 = TOX. TCF-1·CCR7은 progenitor/central memory(반응자) 마커로 클론증식·ICI 반응과 연관된다",
+   "trap": "❌ 고갈 master 전사인자는 TCF-1이며, TCF-1↑일수록 terminal exhaustion이 심화돼 ICI 무반응이다",
+   "qref": "immuno-g1",
+   "is_exam50": true
+  },
+  {
+   "topic": "CPS 분자 구성",
+   "correct": "✅ CPS(Combined Positive Score·PD-L1 종합양성점수) 분자 = PD-L1 양성 종양세포 + 림프구 + 대식세포 모두 포함, ×100, 최대 100으로 cap",
+   "trap": "❌ CPS 분자는 PD-L1 양성 종양세포만 세고 림프구·대식세포는 제외한다(=종양세포만 보는 TPS와 혼동)",
+   "qref": "immuno-g2",
+   "is_exam50": true
+  },
+  {
+   "topic": "간내 IgA의 PD-L1 방향",
+   "correct": "✅ 장 dysbiosis로 과다 생성된 IgA(면역글로불린 A)가 문맥 통해 간에 축적 → 대식세포·CAF 결합 → PD-L1 upregulation(상향조절)·T세포 독성↓ → 면역치료 효능 저하",
+   "trap": "❌ 간내 IgA가 PD-L1을 downregulation해 항종양 T세포 반응을 증강시켜 면역치료 효능을 높인다",
+   "qref": "immuno-3",
+   "is_exam50": false
+  },
+  {
+   "topic": "흑색종 면역원성·반응률",
+   "correct": "✅ 흑색종은 신항원(neoantigen) 부하↑·면역원성 최상 → 단일 ICI 반응률 ~60–70%(고반응성). 흑색종>HCC(~35%)>췌장암",
+   "trap": "❌ 흑색종은 신항원 부하가 낮아 면역원성 최저, 반응률 10~20%의 면역치료 불응성 종양이다",
+   "qref": "immuno-4",
+   "is_exam50": false
+  },
+  {
+   "topic": "LRT/항암제 병용의 전환 방향",
+   "correct": "✅ LRT(국소치료, TACE·RFA)/항암제 병용 → 괴사·항원·사이토카인↑ → cold→hot 전환으로 반응↑",
+   "trap": "❌ 병용의 목적은 hot→cold 전환으로 자가면역 독성을 줄여 ICI 반응을 높이는 것이다",
+   "qref": "immuno-g3",
+   "is_exam50": false
+  }
+ ],
+ "memorize": [
+  "신항원↑→면역원성↑→반응↑ : 흑색종(~60–70%) > HCC(~35%) > 췌장암",
+  "고갈 master 전사인자 = TOX / 반응자 마커 = TCF-1·CCR7(progenitor·central memory)",
+  "CPS 분자 = 종양세포+림프구+대식세포(모두), 최대 100 (TPS=종양세포만)",
+  "Matrix CAF↑ → 예후 나쁨(간암 특이 아님, 위암·폐암 공통) / FAP→STAT3가 CAF 생존 조절",
+  "GPC-3 = HCC 50%·heterogeneous 발현 / IgA는 간 대식세포 PD-L1 upregulation → 면역치료 저하"
+ ],
+ "figure": {
+  "pdf": "202606 대학원 통합강의_ 종양면역학 (1).pdf",
+  "page": 36,
+  "caption": "PD-L1 CPS 계산식: 분자=PD-L1 염색세포(종양세포·림프구·대식세포), 분모=생존 종양세포, ×100(최대 100)"
+ }
+}

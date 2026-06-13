@@ -1,0 +1,82 @@
+{
+ "code": "dpath",
+ "lecture_label": "04-28 디지털병리 WSI·AI (이성학)",
+ "professor": "이성학",
+ "essence": "유리슬라이드를 통째로 스캔한 WSI(Whole Slide Image, 전체 슬라이드 영상)를 작은 패치로 잘라 CNN(Convolutional Neural Network, 합성곱 신경망)으로 분석해 암 검출·서브타이핑·돌연변이·예후·치료반응까지 예측하는 게 핵심이며, 모델은 어노테이션(주석 라벨링) 강도에 따라 Strongly→Weakly→Multimodal→Foundation 4단계로 발전하고 미래는 멀티모달이 대세다.",
+ "analogy": "WSI는 통째로는 못 먹는 거대 피자라 한입 크기 '패치'로 자른다. CNN의 컨볼루션→풀링 반복은 큰 사진을 점점 작은 썸네일로 줄여 '핵심 윤곽'만 남기는 과정이고, 어노테이션은 '세포 하나하나 표시(Strongly) vs 슬라이드 한 장에 라벨 하나만 붙이기(Weakly)'의 손품 차이다.",
+ "scope": {
+  "declared": false,
+  "quote": "",
+  "summary": "명시 없음 — 강조신호 기반 선정 (교수가 시험범위·출제를 못박은 발화가 스크립트에 존재하지 않음; '중요한' 등은 일반 강조 표지일 뿐)"
+ },
+ "top_topics": [
+  {
+   "title": "Computational Pathology 4대 모델 접근법 (Strongly/Weakly Supervised, Multimodal, Foundation)",
+   "plain_explanation": "딥러닝 병리 모델은 어노테이션(전문가가 정답을 표시해 주는 라벨링)을 얼마나 촘촘히 하느냐에 따라 4단계로 나뉜다. Strongly Supervised(강지도학습)는 세포(cell) 하나하나를 표시해 종양세포·림프구 검출, 세포 카운팅, IHC(Immunohistochemistry, 면역조직화학) 정량화에 쓰고, Weakly Supervised(약지도학습)는 슬라이드 한 장에 라벨 하나(1 slide ↔ 1 label)만 붙여 세포 단위 어노테이션 없이 진단·그레이딩·서브타이핑·mutation(돌연변이)·치료반응·예후를 예측한다. Multimodal(다중모달)은 Weakly 기반에 분자(molecular) 데이터를 더해 정밀도를 높이고, Foundation Model(파운데이션/기반 모델)은 대규모 자기지도(self/semi-supervised) 사전학습 후 적은 라벨로 여러 task에 fine-tuning(미세조정)한다.",
+   "why_how": "어노테이션 단위(세포 vs 슬라이드)가 모델을 가르는 기준이라, 손이 가장 많이 가는 Strongly가 세포 단위, 가장 덜 가는 Weakly가 슬라이드 단위라는 방향만 잡으면 표 전체가 풀린다. 강의 전체의 뼈대로 동일 도표가 5회 반복된다.",
+   "exam_point": {
+    "correct": "✅ Strongly Supervised = 세포(cell) 단위 어노테이션 필요(세포 검출·카운팅·IHC 정량화), Weakly Supervised = 1 slide↔1 label로 세포 어노테이션 불필요.",
+    "trap": "❌ Strongly가 슬라이드 단위 라벨만으로 학습해 세포 어노테이션이 불필요하고, Weakly가 세포 하나하나를 어노테이션한다(두 모델 어노테이션 단위를 정반대로 뒤바꿈)."
+   },
+   "qref": "dpath-1",
+   "exam_probability": 95
+  },
+  {
+   "title": "CNN 기반 WSI 분석 파이프라인 — Convolution·Pooling·FC·Softmax",
+   "plain_explanation": "WSI는 수십억 픽셀, 파일 1~4GB라 통째로 못 돌리고 256×256~1024×1024 정사각 패치로 잘라 분석한다. Convolution(합성곱)은 작은 필터를 이동시키며 곱·합해 feature map(특징지도)을 만들고 차원을 축소한다. Pooling(풀링)은 그 feature map의 크기를 '축소'해 주요 특징만 남겨 오버피팅(과적합)을 막는다. FC Layer(Fully Connected Layer, 완전연결층)는 Flatten(평탄화)된 특징을 받아 최종 분류하고, Softmax(소프트맥스)는 각 클래스 점수를 확률로 바꿔(큰 값은 더 크게, 작은 값은 더 작게) 어떤 클래스인지 정한다.",
+   "why_how": "컨볼루션·풀링을 반복할수록 영상이 점점 작아지며 '형태학적 핵심 특징'만 남는데(교수: 'convolution 해가지고 줄이고 풀링 해가지고 줄어듭니다'), 풀링이 '축소'라는 방향만 외우면 함정을 피한다.",
+   "exam_point": {
+    "correct": "✅ Pooling은 feature map 크기를 '축소'하여 주요 특징만 남기고 오버피팅을 방지한다.",
+    "trap": "❌ Pooling이 feature map 크기를 '확대'하여 세부정보를 보존함으로써 오버피팅을 방지한다(작용 방향 정반대)."
+   },
+   "qref": "dpath-2",
+   "exam_probability": 90
+  },
+  {
+   "title": "Foundation Model vs CNN — 라벨 부족 의료 WSI에서의 유불리",
+   "plain_explanation": "Foundation Model(FM, 기반 모델)은 대규모 비지도(self/semi-supervised, 자기/준지도) 데이터로 한 번 사전학습한 뒤 적은 라벨로 fine-tuning(미세조정)해 MSI(Microsatellite Instability, 미세부수체 불안정성)·EBV(Epstein-Barr Virus, 엡스타인-바 바이러스)·mutation 예측 등 여러 downstream task(후속 과제)에 적용한다. 라벨링 비용이 큰 의료 WSI에서는 적은 데이터로도 좋은 성능을 기대하는 FM이 유리하고, task마다 처음부터 새로 학습하는 기존 CNN은 라벨 부족 시 불리하다. 실제 위암 데이터에서 UNI(병리 파운데이션 모델)가 CNN을 능가했다(EBV 0.947→0.988, MSI 0.827→0.898). 단, FM은 컴퓨팅 자원·비용이 매우 크다.",
+   "why_how": "의료 영상은 정답 라벨 만드는 데 전문의 손이 많이 들어 데이터가 귀한데, FM은 '라벨 없는 데이터로 미리 패턴을 익혀두는' 방식이라 라벨이 적어도 버틴다. 그래서 라벨 부족 상황에서 FM이 유리하다는 방향이 핵심.",
+   "exam_point": {
+    "correct": "✅ 라벨 부족 의료 WSI에서 적은 데이터로도 좋은 성능을 기대하는 쪽은 self/semi-supervised 기반 Foundation Model이고, task마다 새로 학습하는 CNN이 불리하다.",
+    "trap": "❌ task마다 처음부터 학습하는 기존 CNN이 적은 데이터에서 FM보다 좋은 성능을 기대할 수 있어 라벨 부족에 유리하다(FM·CNN 장점 정반대로 뒤바꿈)."
+   },
+   "qref": "dpath-g1",
+   "exam_probability": 90
+  }
+ ],
+ "checklist": [
+  {
+   "topic": "강의 결론의 미래 방향 — THE FUTURE IS MULTIMODAL",
+   "correct": "✅ 결론(p.95): AI는 암병리 표준도구·5년내 임상승인 바이오마커, 미래는 더 큰 multimodal(다중모달) dataset 구축 + multimodal DL(딥러닝)로 치료 response(반응)·resistance(저항성) 예측이 대세(교수 '멀티모달 딥러닝이 대세다').",
+   "trap": "❌ 미래 핵심은 멀티모달이 아니라 H&E(Hematoxylin & Eosin, 헤마톡실린-에오신 염색) 단일 modality에 집중한 unimodal(단일모달) 정밀도 향상이며 교수도 단일모달 우위로 마무리했다(결론 방향 정반대).",
+   "qref": "dpath-g2",
+   "is_exam50": true
+  },
+  {
+   "topic": "Lunit SCOPE IO 면역표현형 — Immune-excluded 정의 (CE/CS의 TIL density)",
+   "correct": "✅ Immune-excluded = CE(Cancer Epithelium, 암 상피)의 TIL(Tumor-Infiltrating Lymphocyte, 종양침윤림프구) density는 threshold 미만(낮음) & CS(Cancer Stroma, 암 기질)의 TIL density는 threshold(357/mm²) 이상(높음) → TIL이 stroma에 갇혀 상피로 침투 못함(교수 'epithelium TIL 낮은데 stroma TIL 높은 것'). Inflamed=CE TIL 높음(≥106/mm², ICI 후 OS·PFS 개선), Immune-desert=둘 다 낮음.",
+   "trap": "❌ Immune-excluded는 CE TIL이 충분히 높고 CS TIL이 낮은 상태다(CE/CS 고저 조건 정반대로 뒤집음; 오히려 inflamed에 가까움).",
+   "qref": "dpath-3",
+   "is_exam50": false
+  },
+  {
+   "topic": "WSI 전처리 3종 (배경제거·조직/세포분할·색상정규화)",
+   "correct": "✅ 패치추출 전 전처리로 배경제거(계산부담↓), 조직/세포분할, 색상정규화(슬라이드 간 색차 보정→학습 불균형↓)를 수행한다.",
+   "trap": "❌ 색상정규화는 슬라이드 간 색 차이를 일부러 키워 다양성을 늘리는 과정이다(목적 반대; 정규화는 색차를 줄이는 것).",
+   "qref": "dpath-pre",
+   "is_exam50": false
+  }
+ ],
+ "memorize": [
+  "Strongly=세포(cell) 단위 / Weakly=1슬라이드 1라벨. (어노테이션 단위 뒤바꿈이 1순위 함정)",
+  "Pooling=축소(↓)로 주요특징만 남겨 오버피팅 방지. '확대' 아님.",
+  "Immune-excluded=CE TIL 낮음·CS TIL 높음(TIL이 기질에 갇힘), CS threshold 357/mm².",
+  "Foundation Model=라벨 적어도 OK·1회 사전학습 다중 task, 컴퓨팅 비용↑. CNN은 task마다 새로 학습해 라벨 부족 시 불리.",
+  "결론=THE FUTURE IS MULTIMODAL — multimodal dataset+multimodal DL로 response·resistance 예측이 대세."
+ ],
+ "figure": {
+  "pdf": "DL_Pathology_2026-대학원-ver1.3 (1).pdf",
+  "page": 9,
+  "caption": "Strongly/Weakly Supervised·Multimodal·Foundation Model 4대 접근법 비교 도표 (어노테이션 단위와 적용 task) — 강의 뼈대, 5회 반복"
+ }
+}
